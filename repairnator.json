@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "debezium/debezium",
-  "failingModule": "/root/workspace/debezium/debezium/387377904/debezium-connector-mongodb",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 598,
-  "failing-test-cases": [
-    {
-      "className": "io.debezium.connector.mongodb.transforms.MongoDataConverterTest",
-      "failingMethods": [
-        "shouldCreateCorrectSchemaFromInsertJson"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-debezium-debezium-387377904-20180603-135547-firstCommit/debezium-connector-mongodb",
+    "overallMetrics": {
+      "numberRunning": 597,
+      "numberPassing": 596,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected: java.lang.String\u003cSchema{pub:STRUCT}\u003e but was: java.lang.String\u003cSchema{pub:STRUCT}\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.connector.mongodb.transforms.MongoDataConverterTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.connector.mongodb.transforms.MongoDataConverterTest",
+        "testMethod": "shouldCreateCorrectSchemaFromInsertJson",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected: java.lang.String\u003cSchema{pub:STRUCT}\u003e but was: java.lang.String\u003cSchema{pub:STRUCT}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 247,
+    "numberTestFiles": 133,
+    "numberLibrariesFailingModule": 78,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:45 PM",
+    "reproductionDateEnd": "Feb 16, 2020 12:57:42 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 30790368,
+      "totalMemory": 102375424
+    },
+    "totalDuration": 6235,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-debezium-debezium-387377904-20180603-135547-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
