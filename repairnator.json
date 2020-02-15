@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "EMResearch/EvoMaster",
-  "bugCommit": "https://github.com/EMResearch/EvoMaster/compare/d77bda154add...27ae1dc274f0",
-  "failingModule": "/root/workspace/EMResearch/EvoMaster/390340299/e2e-tests/spring-examples",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.opentest4j.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 335,
-  "failing-test-cases": [
-    {
-      "className": "org.evomaster.e2etests.spring.examples.headerlocation.HLEMTest",
-      "failingMethods": [
-        "testRunEM"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:27 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:52:27 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 31448608,
+      "totalMemory": 115568640
+    },
+    "totalDuration": 416,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-EMResearch-EvoMaster-390340299-20180610-110511-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-EMResearch-EvoMaster-390340299-20180610-110511-firstCommit/e2e-tests/spring-examples",
+    "overallMetrics": {
+      "numberRunning": 331,
+      "numberPassing": 330,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "org.opentest4j.AssertionFailedError",
-          "failureDetail": "REST calls:\nPATCH /api/hl/nH6t , auth\u003dNoAuth\nDELETE /api/hl/dH , auth\u003dNoAuth\nPUT /api/hl/EDx , auth\u003dNoAuth\nPUT /api/hl/ED%C2%8C , auth\u003dNoAuth\nGET /api/hl/LbDN1KBjbX6N , auth\u003dNoAuth\nPOST /api/hl , auth\u003dNoAuth\nPOST /api/hl , auth\u003dNoAuth\nPOST /api/hl , auth\u003dNoAuth\nDELETE /api/hl/uJSN , auth\u003dNoAuth\nPOST /api/hl , auth\u003dNoAuth\nGET /api/hl/R6Mv5yx8r3 , auth\u003dNoAuth\nPUT /api/hl/;D%C2%8C , auth\u003dNoAuth\nPOST /api/hl , auth\u003dNoAuth\nPATCH /api/hl/3xeUVopq4 , auth\u003dNoAuth\nPATCH /api/hl/3xeUVopq4 , auth\u003dNoAuth\n \u003d\u003d\u003e expected: \u003ctrue\u003e but was: \u003cfalse\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.evomaster.e2etests.spring.examples.db.directint.DbDirectIntEMTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.evomaster.e2etests.spring.examples.db.directint.DbDirectIntEMTest",
+        "testMethod": "testRunEM",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "REST calls:\nGET /api/db/directint/-129/540056654 , auth\u003dNoAuth\nPOST /api/db/directint , auth\u003dNoAuth\n \u003d\u003d\u003e expected: \u003ctrue\u003e but was: \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 126,
+    "numberTestFiles": 101,
+    "numberLibrariesFailingModule": 140,
+    "numberLines": 0
+  }
 }
