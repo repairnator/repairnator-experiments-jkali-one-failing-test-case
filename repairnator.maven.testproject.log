@@ -1,0 +1,899 @@
+2015-09-15T00:00:00Z
+2015-09-15T11:37:56Z
+Feb 15, 2020 2:55:22 PM edu.harvard.iq.dataverse.util.json.JsonParser getCategories
+INFO: ClassCastException caught in getCategories: java.lang.ClassCastException: org.glassfish.json.JsonNumberImpl$JsonBigDecimalNumber cannot be cast to javax.json.JsonString
+Feb 15, 2020 2:55:22 PM edu.harvard.iq.dataverse.util.json.JsonUtil prettyPrint
+INFO: Returning original string due to exception: java.lang.NullPointerException
+Feb 15, 2020 2:55:22 PM edu.harvard.iq.dataverse.util.json.JsonUtil prettyPrint
+INFO: Returning original string due to exception: java.lang.IllegalStateException: Not a JSON Object: null
+Feb 15, 2020 2:55:22 PM edu.harvard.iq.dataverse.util.json.JsonUtil prettyPrint
+INFO: Returning original string due to exception: java.lang.IllegalStateException: Not a JSON Object: "junk"
+[Fatal Error] :1:1: Content is not allowed in prolog.
+Feb 15, 2020 2:55:22 PM edu.harvard.iq.dataverse.util.xml.XmlPrinter prettyPrintXml
+INFO: Returning XML as-is due to problem pretty printing it: javax.xml.transform.TransformerException: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+Feb 15, 2020 2:55:25 PM edu.harvard.iq.dataverse.util.FileUtil getCiteDataFileFilename
+INFO: In getCitationBibtex but FileMetadata is null!
+Feb 15, 2020 2:55:25 PM edu.harvard.iq.dataverse.util.FileUtil getCiteDataFileFilename
+INFO: In getCitationBibtex but fileCitationExtension is null!
+Feb 15, 2020 2:55:25 PM edu.harvard.iq.dataverse.util.FileUtil getPublicDownloadUrl
+INFO: In getPublicDownloadUrl but fileId is null!
+Feb 15, 2020 2:55:26 PM edu.harvard.iq.dataverse.util.JhoveFileType checkFileType
+INFO: Called getJhoveConfigFile but the result was null! Configuring JHOVE is highly recommended to determine file types.
+edu.harvard.hul.ois.jhove.JhoveException: Initialization exception; location not specified for configuration file.
+	at edu.harvard.hul.ois.jhove.JhoveBase.init(Unknown Source)
+	at edu.harvard.iq.dataverse.util.JhoveFileType.checkFileType(JhoveFileType.java:92)
+	at edu.harvard.iq.dataverse.util.JhoveFileType.getFileMimeType(JhoveFileType.java:192)
+	at edu.harvard.iq.dataverse.util.FileUtil.determineFileType(FileUtil.java:313)
+	at edu.harvard.iq.dataverse.util.FileUtilTest.testDetermineFileType(FileUtilTest.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Feb 15, 2020 2:55:26 PM edu.harvard.iq.dataverse.util.JsfHelper enumValue
+WARNING: Illegal value for enum edu.harvard.iq.dataverse.util.JsfHelperTest$TestEnum: 'THIS IS A BAD VALUE'
+Feb 15, 2020 2:55:26 PM edu.harvard.iq.dataverse.util.BundleUtil getStringFromBundle
+WARNING: Could not find key "junkKeyWeDoNotExpectToFind" in bundle file.
+Feb 15, 2020 2:55:26 PM edu.harvard.iq.dataverse.util.MailUtil parseSystemAddress
+INFO: Email will not be sent due to invalid value in :SystemEmail setting: javax.mail.internet.AddressException: Null address (,0)
+Feb 15, 2020 2:55:26 PM edu.harvard.iq.dataverse.util.MailUtil parseSystemAddress
+INFO: Email will not be sent due to invalid value in :SystemEmail setting: javax.mail.internet.AddressException: Illegal Address (LibraScholar Support Team support@librascholar.edu,13)
+Feb 15, 2020 2:55:26 PM edu.harvard.iq.dataverse.util.MailUtil parseSystemAddress
+INFO: Email will not be sent due to invalid value in :SystemEmail setting: javax.mail.internet.AddressException: Missing '"' ("LibraScholar Support Team <support@librascholar.edu>,53)
+Feb 15, 2020 2:55:26 PM edu.harvard.iq.dataverse.util.MailUtil parseSystemAddress
+INFO: Email will not be sent due to invalid value in :SystemEmail setting: javax.mail.internet.AddressException: Illegal Address (support1@dataverse.org, support@librascholar.edu,22)
+Feb 15, 2020 2:55:27 PM edu.harvard.iq.dataverse.api.AbstractApiBeanTest testMessagesNoJsonObject
+INFO: 
+{
+    "status":"OK",
+    "data":{
+        "message":"myMessage"
+    }
+}
+Feb 15, 2020 2:55:27 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 55
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 82
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.engine.command.impl.DeletePrivateUrlCommand executeImpl
+INFO: Can't delete Private URL. Dataset is null.
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 114
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 359
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 626
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.engine.command.impl.CreatePrivateUrlCommand execute
+INFO: Private URL already exists for dataset id 1.
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.engine.command.impl.CreatePrivateUrlCommand execute
+INFO: Can't create Private URL because the latest version of dataset id 2 is not a draft.
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.engine.command.impl.CreatePrivateUrlCommand execute
+INFO: Can't create Private URL. Dataset is null.
+Feb 15, 2020 2:55:28 PM edu.harvard.iq.dataverse.engine.command.impl.UpdateDatasetThumbnailCommand execute
+INFO: Can't update dataset thumbnail. Dataset is null.
+Feb 15, 2020 2:55:30 PM edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReader readFile
+INFO: Tmp File: /tmp/firstpass-8946906459586547805.tab
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest testHardRead
+INFO: on line:1391
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest testHardRead
+INFO: expected: "Zhanggong"	"2"	"0094.eml"	"区人社局"	"UNKNOWN"	"　  他们是英雄，他们是路标，他们是丰碑！一个个可歌可泣的事迹，一个个可赞可叹的信念，一个个可敬可畏的军魂！向他们致敬！（区人社局）"	"red.newskj.com"	"UNKNOWN"	2014-10-08		" 他们 是 英雄 ， 他们 是 路标 ， 他们 是 丰碑 ！ 一 个个 可歌可泣 的 事迹 ， 一个个 可赞 可叹 的 信念 ， 一 个个 可敬 可畏 的 军魂 ！ 向 他们 致敬 ！ （ 区 人社局 ） "
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest testHardRead
+INFO: found : "Zhanggong"	"2"	"0094.eml"	"区人社局"	"UNKNOWN"	"他们是英雄，他们是路标，他们是丰碑！一个个可歌可泣的事迹，一个个可赞可叹的信念，一个个可敬可畏的军魂！向他们致敬！（区人社局）"	"red.newskj.com"	"UNKNOWN"	2014-10-08		" 他们 是 英雄 ， 他们 是 路标 ， 他们 是 丰碑 ！ 一 个个 可歌可泣 的 事迹 ， 一个个 可赞 可叹 的 信念 ， 一 个个 可敬 可畏 的 军魂 ！ 向 他们 致敬 ！ （ 区 人社局 ） "
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReader readFile
+INFO: Tmp File: /tmp/firstpass-5154871023210591091.tab
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 697
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 723
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 749
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.Dataset setFiles
+INFO: setFiles() on dataset 775
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.DatasetVersion validate
+INFO: Constraint violation found in FileMetadata. Directory Name cannot contain leading or trailing file separators. The invalid value is "/has/leading/slash".
+Feb 15, 2020 2:55:32 PM edu.harvard.iq.dataverse.DatasetVersion validate
+INFO: Constraint violation found in FileMetadata. Directory Name cannot contain leading or trailing file separators. The invalid value is "has/trailing/slash/".
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.DatasetVersion validate
+INFO: Constraint violation found in FileMetadata. Directory Name cannot contain leading or trailing file separators. The invalid value is "/leadingAndTrailing/".
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest testDatasetJson2dublincore
+INFO: <?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns="http://dublincore.org/documents/dcmi-terms/">
+  <dcterms:title>Darwin's Finches</dcterms:title>
+  <dcterms:identifier>http://dx.doi.org/10.5072/FK2/PCA2E3</dcterms:identifier>
+  <dcterms:creator>Finch, Fiona</dcterms:creator>
+  <dcterms:modified>2015-09-24T17:07:57Z</dcterms:modified>
+  <dcterms:description>Darwin's finches (also known as the Galápagos finches) are a group of about fifteen species of passerine birds.</dcterms:description>
+  <dcterms:subject>Medicine, Health and Life Sciences</dcterms:subject>
+  <dcterms:subject>Keyword Value 1</dcterms:subject>
+  <dcterms:subject>Keyword Value Two</dcterms:subject>
+  <dcterms:contributor>Added, Depositor</dcterms:contributor>
+  <dcterms:temporal>20020816</dcterms:temporal>
+  <dcterms:temporal>20160630</dcterms:temporal>
+  <dcterms:temporal>20070831</dcterms:temporal>
+  <dcterms:temporal>20130630</dcterms:temporal>
+  <dcterms:type>Kind of Data</dcterms:type>
+  <dcterms:spatial>Cambridge</dcterms:spatial>
+  <dcterms:spatial>USA</dcterms:spatial>
+  <dcterms:spatial>MA</dcterms:spatial>
+  <dcterms:spatial>Other Geographic Coverage</dcterms:spatial>
+</metadata>
+
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest testDatasetJson2dublincore
+INFO: <?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns="http://dublincore.org/documents/dcmi-terms/">
+  <dcterms:title>Darwin's Finches</dcterms:title>
+  <dcterms:identifier>http://dx.doi.org/10.5072/FK2/PCA2E3</dcterms:identifier>
+  <dcterms:creator>Finch, Fiona</dcterms:creator>
+  <dcterms:modified>2015-09-24T17:07:57Z</dcterms:modified>
+  <dcterms:description>Darwin's finches (also known as the Galápagos finches) are a group of about fifteen species of passerine birds.</dcterms:description>
+  <dcterms:subject>Medicine, Health and Life Sciences</dcterms:subject>
+  <dcterms:subject>Keyword Value 1</dcterms:subject>
+  <dcterms:subject>Keyword Value Two</dcterms:subject>
+  <dcterms:contributor>Added, Depositor</dcterms:contributor>
+  <dcterms:temporal>20020816</dcterms:temporal>
+  <dcterms:temporal>20160630</dcterms:temporal>
+  <dcterms:temporal>20070831</dcterms:temporal>
+  <dcterms:temporal>20130630</dcterms:temporal>
+  <dcterms:type>Kind of Data</dcterms:type>
+  <dcterms:spatial>Cambridge</dcterms:spatial>
+  <dcterms:spatial>USA</dcterms:spatial>
+  <dcterms:spatial>MA</dcterms:spatial>
+  <dcterms:spatial>Other Geographic Coverage</dcterms:spatial>
+</metadata>
+
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest testJson2DdiNoFiles
+INFO: <?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Darwin's Finches</titl>
+        <IDNo agency="DOI">doi:10.5072/FK2/PCA2E3</IDNo>
+      </titlStmt>
+      <distStmt/>
+      <verStmt source="DVN">
+        <version date="2015-09-24" type="RELEASED">1</version>
+      </verStmt>
+      <biblCit>Finch, Fiona, 2015, "Darwin's Finches", http://dx.doi.org/10.5072/FK2/PCA2E3,  Root Dataverse,  V1</biblCit>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Darwin's Finches</titl>
+        <IDNo agency="DOI">doi:10.5072/FK2/PCA2E3</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="Birds Inc.">Finch, Fiona</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer affiliation="Hawk Institute" abbr="ProdAbb" role="http://www.hawk.edu/logo" URI="http://www.hawk.edu/url">Johnny Hawk</producer>
+      </prodStmt>
+      <distStmt/>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword>Medicine, Health and Life Sciences</keyword>
+        <keyword vocab="Keyword Vocabulary" URI="http://www.keyword.com/one">Keyword Value 1</keyword>
+        <keyword vocab="Keyword Vocabulary" URI="http://www.keyword.com/one">Keyword Value Two</keyword>
+        <topcClas vocab="TC Vocabulary" URI="http://www.topicClass.com/one">TC Value 1</topcClas>
+      </subject>
+      <abstract>Darwin's finches (also known as the Galápagos finches) are a group of about fifteen species of passerine birds.</abstract>
+      <sumDscr>
+        <timePrd cycle="P1" event="start" date="20020816">20020816</timePrd>
+        <timePrd cycle="P1" event="end" date="20160630">20160630</timePrd>
+        <collDate cycle="P1" event="start" date="20070831">20070831</collDate>
+        <collDate cycle="P1" event="end" date="20130630">20130630</collDate>
+        <dataKind>Kind of Data</dataKind>
+        <geogCover>Cambridge</geogCover>
+        <nation>USA</nation>
+        <geogCover>MA</geogCover>
+        <geogCover>Other Geographic Coverage</geogCover>
+        <southBL>41.6</southBL>
+        <westBL>60.3</westBL>
+        <eastBL>59.8</eastBL>
+        <northBL>43.8</northBL>
+      </sumDscr>
+      <distrbtr>
+        <distrbtr affiliation="Valhalla Polytechnic" abbr="Dist-Abb" URI="http://www.valhalla.edu/url" role="http://www.valhalla.edu/logo">Odin Raven</distrbtr>
+      </distrbtr>
+      <contact affiliation="Finch Academy" email="finch@mailinator.com">Jimmy Finch</contact>
+      <depositr>Added, Depositor</depositr>
+    </stdyInfo>
+    <method>
+      <dataColl/>
+      <anlyInfo/>
+    </method>
+  </stdyDscr>
+</codeBook>
+
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest testJson2DdiNoFiles
+INFO: <?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Darwin's Finches</titl>
+        <IDNo agency="DOI">doi:10.5072/FK2/PCA2E3</IDNo>
+      </titlStmt>
+      <distStmt/>
+      <verStmt source="DVN">
+        <version date="2015-09-24" type="RELEASED">1</version>
+      </verStmt>
+      <biblCit>Finch, Fiona, 2015, "Darwin's Finches", http://dx.doi.org/10.5072/FK2/PCA2E3,  Root Dataverse,  V1</biblCit>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Darwin's Finches</titl>
+        <IDNo agency="DOI">doi:10.5072/FK2/PCA2E3</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="Birds Inc.">Finch, Fiona</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer affiliation="Hawk Institute" abbr="ProdAbb" role="http://www.hawk.edu/logo" URI="http://www.hawk.edu/url">Johnny Hawk</producer>
+      </prodStmt>
+      <distStmt/>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword>Medicine, Health and Life Sciences</keyword>
+        <keyword vocab="Keyword Vocabulary" URI="http://www.keyword.com/one">Keyword Value 1</keyword>
+        <keyword vocab="Keyword Vocabulary" URI="http://www.keyword.com/one">Keyword Value Two</keyword>
+        <topcClas vocab="TC Vocabulary" URI="http://www.topicClass.com/one">TC Value 1</topcClas>
+      </subject>
+      <abstract>Darwin's finches (also known as the Galápagos finches) are a group of about fifteen species of passerine birds.</abstract>
+      <sumDscr>
+        <timePrd cycle="P1" event="start" date="20020816">20020816</timePrd>
+        <timePrd cycle="P1" event="end" date="20160630">20160630</timePrd>
+        <collDate cycle="P1" event="start" date="20070831">20070831</collDate>
+        <collDate cycle="P1" event="end" date="20130630">20130630</collDate>
+        <dataKind>Kind of Data</dataKind>
+        <geogCover>Cambridge</geogCover>
+        <nation>USA</nation>
+        <geogCover>MA</geogCover>
+        <geogCover>Other Geographic Coverage</geogCover>
+        <southBL>41.6</southBL>
+        <westBL>60.3</westBL>
+        <eastBL>59.8</eastBL>
+        <northBL>43.8</northBL>
+      </sumDscr>
+      <distrbtr>
+        <distrbtr affiliation="Valhalla Polytechnic" abbr="Dist-Abb" URI="http://www.valhalla.edu/url" role="http://www.valhalla.edu/logo">Odin Raven</distrbtr>
+      </distrbtr>
+      <contact affiliation="Finch Academy" email="finch@mailinator.com">Jimmy Finch</contact>
+      <depositr>Added, Depositor</depositr>
+    </stdyInfo>
+    <method>
+      <dataColl/>
+      <anlyInfo/>
+    </method>
+  </stdyDscr>
+</codeBook>
+
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest testJson2ddiHasFiles
+INFO: <?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Spruce Goose</titl>
+        <IDNo agency="DOI">doi:10.5072/FK2/OZDVMO</IDNo>
+      </titlStmt>
+      <distStmt/>
+      <verStmt source="DVN">
+        <version date="2015-09-29" type="RELEASED">1</version>
+      </verStmt>
+      <biblCit>Spruce, Sabrina, 2015, "Spruce Goose", http://dx.doi.org/10.5072/FK2/OZDVMO,  Root Dataverse,  V1</biblCit>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Spruce Goose</titl>
+        <IDNo agency="DOI">doi:10.5072/FK2/OZDVMO</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty>Spruce, Sabrina</AuthEnty>
+      </rspStmt>
+      <prodStmt/>
+      <distStmt/>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword>Other</keyword>
+      </subject>
+      <abstract>What the Spruce Goose was really made of.</abstract>
+      <sumDscr/>
+      <depositr>Spruce, Sabrina</depositr>
+    </stdyInfo>
+    <method>
+      <dataColl/>
+      <anlyInfo/>
+    </method>
+  </stdyDscr>
+  <dataDscr/>
+  <otherMat ID="f12" level="datafile">
+    <labl>trees.png</labl>
+    <txt/>
+  </otherMat>
+</codeBook>
+
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest testJson2ddiHasFiles
+INFO: <?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Spruce Goose</titl>
+        <IDNo agency="DOI">doi:10.5072/FK2/OZDVMO</IDNo>
+      </titlStmt>
+      <distStmt/>
+      <verStmt source="DVN">
+        <version date="2015-09-29" type="RELEASED">1</version>
+      </verStmt>
+      <biblCit>Spruce, Sabrina, 2015, "Spruce Goose", http://dx.doi.org/10.5072/FK2/OZDVMO,  Root Dataverse,  V1</biblCit>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Spruce Goose</titl>
+        <IDNo agency="DOI">doi:10.5072/FK2/OZDVMO</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty>Spruce, Sabrina</AuthEnty>
+      </rspStmt>
+      <prodStmt/>
+      <distStmt/>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword>Other</keyword>
+      </subject>
+      <abstract>What the Spruce Goose was really made of.</abstract>
+      <sumDscr/>
+      <depositr>Spruce, Sabrina</depositr>
+    </stdyInfo>
+    <method>
+      <dataColl/>
+      <anlyInfo/>
+    </method>
+  </stdyDscr>
+  <otherMat ID="f12" URI="https://b-cn0435.hpc2n.umu.se/api/access/datafile/12" level="datafile">
+    <labl>15000410d28-890ffa5c23c6</labl>
+    <txt/>
+    <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">image/png</notes>
+  </otherMat>
+</codeBook>
+
+[Fatal Error] :-1:-1: Premature end of file.
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.util.xml.XmlPrinter prettyPrintXml
+INFO: Returning XML as-is due to problem pretty printing it: javax.xml.transform.TransformerException: org.xml.sax.SAXParseException; Premature end of file.
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.privateurl.PrivateUrlUtil getPrivateUrlRedirectData
+INFO: Exception caught trying to instantiate PrivateUrlRedirectData: java.lang.Exception: PrivateUrlUser cannot be null
+Feb 15, 2020 2:55:33 PM edu.harvard.iq.dataverse.privateurl.PrivateUrlUtil getPrivateUrlFromRoleAssignment
+INFO: dataverseSiteUrl was null. Can not instantiate a PrivateUrl object.
+psed: 0.535 sec - in edu.harvard.iq.dataverse.util.StringUtilTest
+Running edu.harvard.iq.dataverse.util.JsfHelperTest
+enumValue
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.harvard.iq.dataverse.util.JsfHelperTest
+Running edu.harvard.iq.dataverse.util.MarkupCheckerTest
+sanitizeBasicHTML
+--------------------------------------
+safeStr: <script>alert('hi')</script>
+sanitized: 
+--------------------------------------
+safeStr: <map name="rtdcCO"></map>
+sanitized: <map name="rtdcCO"></map>
+--------------------------------------
+safeStr: <area shape="rect" coords="42,437,105,450" href="/dvn/dv/rtdc/faces/study/StudyPage.xhtml?globalId=hdl:10904/10006" title="Galactic Center (DHT02)" alt="Galactic Center (DHT02)">
+sanitized: <area shape="rect" coords="42,437,105,450" href="/dvn/dv/rtdc/faces/study/StudyPage.xhtml?globalId=hdl:10904/10006" title="Galactic Center (DHT02)" alt="Galactic Center (DHT02)">
+--------------------------------------
+safeStr: <map name="rtdcCO"><area shape="rect" coords="42,437,105,450" href="/dvn/dv/rtdc/faces/study/StudyPage.xhtml?globalId=hdl:10904/10006" title="Galactic Center (DHT02)" alt="Galactic Center (DHT02)"></map>
+sanitized: <map name="rtdcCO"><area shape="rect" coords="42,437,105,450" href="/dvn/dv/rtdc/faces/study/StudyPage.xhtml?globalId=hdl:10904/10006" title="Galactic Center (DHT02)" alt="Galactic Center (DHT02)"></map>
+--------------------------------------
+safeStr: <p>hello&lt;/</p>
+sanitized: <p>hello&lt;/</p>
+--------------------------------------
+safeStr: <h1>hello</h1>
+sanitized: <h1>hello</h1>
+--------------------------------------
+safeStr: the 
+<a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
+sanitized: the 
+<a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
+--------------------------------------
+safeStr: the 
+<a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
+sanitized: the 
+<a href="http://dataverse.org" rel="nofollow" target="_blank">Dataverse project</a> in a new window
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in edu.harvard.iq.dataverse.util.MarkupCheckerTest
+Running edu.harvard.iq.dataverse.util.LruCacheTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in edu.harvard.iq.dataverse.util.LruCacheTest
+Running edu.harvard.iq.dataverse.util.BundleUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in edu.harvard.iq.dataverse.util.BundleUtilTest
+Running edu.harvard.iq.dataverse.util.FileSortFieldAndOrderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.harvard.iq.dataverse.util.FileSortFieldAndOrderTest
+Running edu.harvard.iq.dataverse.util.MailUtilTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in edu.harvard.iq.dataverse.util.MailUtilTest
+Running edu.harvard.iq.dataverse.dataverse.DataverseUtilTest
+getSuggestedDataverseNameOnCreate
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in edu.harvard.iq.dataverse.dataverse.DataverseUtilTest
+Running edu.harvard.iq.dataverse.api.dto.FieldDTOTest
+Top
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in edu.harvard.iq.dataverse.api.dto.FieldDTOTest
+Running edu.harvard.iq.dataverse.api.LazyRefTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.harvard.iq.dataverse.api.LazyRefTest
+Running edu.harvard.iq.dataverse.api.AbstractApiBeanTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.589 sec - in edu.harvard.iq.dataverse.api.AbstractApiBeanTest
+Running edu.harvard.iq.dataverse.engine.command.impl.GetPrivateUrlCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in edu.harvard.iq.dataverse.engine.command.impl.GetPrivateUrlCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.UpdatePermissionRootCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in edu.harvard.iq.dataverse.engine.command.impl.UpdatePermissionRootCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.CreateDatasetVersionCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.554 sec - in edu.harvard.iq.dataverse.engine.command.impl.CreateDatasetVersionCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.CreateRoleCommandTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in edu.harvard.iq.dataverse.engine.command.impl.CreateRoleCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.DeletePrivateUrlCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in edu.harvard.iq.dataverse.engine.command.impl.DeletePrivateUrlCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.RequestRsyncScriptCommandTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.52 sec - in edu.harvard.iq.dataverse.engine.command.impl.RequestRsyncScriptCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.GetLatestPublishedDatasetVersionCommandTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in edu.harvard.iq.dataverse.engine.command.impl.GetLatestPublishedDatasetVersionCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.CreatePrivateUrlCommandTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in edu.harvard.iq.dataverse.engine.command.impl.CreatePrivateUrlCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.MoveDataverseCommandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in edu.harvard.iq.dataverse.engine.command.impl.MoveDataverseCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.UpdateDatasetThumbnailCommandTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in edu.harvard.iq.dataverse.engine.command.impl.UpdateDatasetThumbnailCommandTest
+Running edu.harvard.iq.dataverse.engine.command.impl.CreateDataverseCommandTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in edu.harvard.iq.dataverse.engine.command.impl.CreateDataverseCommandTest
+Running edu.harvard.iq.dataverse.engine.PermissionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.harvard.iq.dataverse.engine.PermissionTest
+Running edu.harvard.iq.dataverse.search.IndexUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.harvard.iq.dataverse.search.IndexUtilTest
+Running edu.harvard.iq.dataverse.search.SearchUtilTest
+sanitizeQuery
+SolrInputDocument(fields: [id=dataset_12345_permission, definitionPointDocId=dataset_12345, definitionPointDvObjectId=12345, discoverableBy=[group_public]])
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in edu.harvard.iq.dataverse.search.SearchUtilTest
+Running edu.harvard.iq.dataverse.search.SolrSearchResultTest
+actual: {"type":"dataverse"}
+expect: {"type":"dataverse"}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in edu.harvard.iq.dataverse.search.SolrSearchResultTest
+Running edu.harvard.iq.dataverse.search.SearchFilesServiceBeanTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.harvard.iq.dataverse.search.SearchFilesServiceBeanTest
+Running edu.harvard.iq.dataverse.confirmemail.ConfirmEmailUtilTest
+Friendly expiration timestamp / measurement test
+1440 Minutes: 24 hours
+60 Minutes: 1 hour
+30 Minutes: 30 minutes
+90 Minutes: 1.5 hours
+2880 minutes: 48 hours
+150 minutes: 2.5 hours
+165 minutes: 2.75 hours
+1 Minute: 1 minute
+
+
+Grandfathered account timestamp test
+Grandfathered Time (y2k): 2000-01-01 00:00:00.0
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in edu.harvard.iq.dataverse.confirmemail.ConfirmEmailUtilTest
+Running edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.008 sec <<< FAILURE! - in edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest
+testHardRead(edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest)  Time elapsed: 3.969 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<..."	"区人社局"	"UNKNOWN"	"[　  ]他们是英雄，他们是路标，他们是丰碑！一个...> but was:<..."	"区人社局"	"UNKNOWN"	"[]他们是英雄，他们是路标，他们是丰碑！一个...>
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest.testHardRead(CSVFileReaderTest.java:99)
+
+Running edu.harvard.iq.dataverse.ingest.IngestUtilTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in edu.harvard.iq.dataverse.ingest.IngestUtilTest
+Running edu.harvard.iq.dataverse.ingest.IngestableDataCheckerTest
+---------------------------
+(1) testDTAformat
+---------------------------
+---------------------------
+(1a) Mock a Legit Stata File (application/x-stata)
+---------------------------
+result 1a: application/x-stata
+---------------------------
+(1b) File is empty string (non-DTA)
+---------------------------
+result 1b: null
+---------------------------
+(1c) File is some random text (non-DTA)
+---------------------------
+result 1c: null
+---------------------------
+(1d) Mock a Legit Stata File with STATA_13_HEADER
+---------------------------
+result 1d: application/x-stata-13
+---------------------------
+(2) testSAVformat
+---------------------------
+---------------------------
+(2a) Mock a Legit SPSS-SAV File (application/x-spss-sav)
+---------------------------
+result 2a: application/x-spss-sav
+---------------------------
+(2b) File is empty string
+---------------------------
+result 2b: null
+---------------------------
+(2c) File is non-SAV string
+---------------------------
+result 2c: null
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in edu.harvard.iq.dataverse.ingest.IngestableDataCheckerTest
+Running edu.harvard.iq.dataverse.worldmapauth.WorldMapTokenTest
+------------------------------------------------------------
+WorldMapTokenTest!
+------------------------------------------------------------
+------------------------------------------------------------
+testTokenTimes
+------------------------------------------------------------
+time limit seconds: 1800
+time limit seconds (2): 60
+token time limit (minutes): 30
+Did token expire in 10 minutes? (should be no)
+Did token expire? (automatically check current time)
+Did token expire at 30 minutes? (should be no)
+Did token expire in 31 minutes? (should be yes)
+Did token expire in 45 minutes? (should be yes)
+token time limit (minutes): 10 minutes
+Did token expire if null sent? (should be yes)
+Refresh token (but fails b/c sending null automatically expires it
+Did token expire in 5 minutes? (should be no)
+Did token expire? (auto-check current time)
+------------------------------------------------------------
+Get a new Token
+------------------------------------------------------------
+Did token expire? (automatically check current time)
+Manually expire token: setHasExpired(true)
+Did token expire in 1 minute? (should be yes--b/c manually expired)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in edu.harvard.iq.dataverse.worldmapauth.WorldMapTokenTest
+Running edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec - in edu.harvard.iq.dataverse.export.dublincore.DublinCoreExportUtilTest
+Running edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in edu.harvard.iq.dataverse.export.ddi.DdiExportUtilTest
+Running edu.harvard.iq.dataverse.export.DDIExporterTest
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Darwin's Finches</titl>
+        <IDNo>null:null/null</IDNo>
+      </titlStmt>
+      <distStmt/>
+      <verStmt source="DVN">
+        <version date="2016-09-29" type="RELEASED">1</version>
+      </verStmt>
+      <biblCit>Finch, Fiona, 2016, "Darwin's Finches", http://dx.doi.org/10.5072/FK2/G2VPE7, Root Dataverse, V1</biblCit>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Darwin's Finches</titl>
+        <IDNo>null:null/null</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="Birds Inc.">Finch, Fiona</AuthEnty>
+      </rspStmt>
+      <prodStmt/>
+      <distStmt/>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword>Medicine, Health and Life Sciences</keyword>
+      </subject>
+      <abstract>Darwin's finches (also known as the Galápagos finches) are a group of about fifteen species of passerine birds.</abstract>
+      <sumDscr/>
+      <contact email="finch@mailinator.com">Finch, Fiona</contact>
+    </stdyInfo>
+    <method>
+      <dataColl/>
+      <anlyInfo/>
+    </method>
+  </stdyDscr>
+</codeBook>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Darwin's Finches</titl>
+        <IDNo>null:null/null</IDNo>
+      </titlStmt>
+      <distStmt/>
+      <verStmt source="DVN">
+        <version date="2016-09-29" type="RELEASED">1</version>
+      </verStmt>
+      <biblCit>Finch, Fiona, 2016, "Darwin's Finches", http://dx.doi.org/10.5072/FK2/G2VPE7, Root Dataverse, V1</biblCit>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Darwin's Finches</titl>
+        <IDNo>null:null/null</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="Birds Inc.">Finch, Fiona</AuthEnty>
+      </rspStmt>
+      <prodStmt/>
+      <distStmt/>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword>Medicine, Health and Life Sciences</keyword>
+      </subject>
+      <abstract>Darwin's finches (also known as the Galápagos finches) are a group of about fifteen species of passerine birds.</abstract>
+      <sumDscr/>
+      <contact>Finch, Fiona</contact>
+    </stdyInfo>
+    <method>
+      <dataColl/>
+      <anlyInfo/>
+    </method>
+  </stdyDscr>
+</codeBook>
+
+exportDataset
+out: 
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in edu.harvard.iq.dataverse.export.DDIExporterTest
+Running edu.harvard.iq.dataverse.mydata.PagerTest
+getNumResults
+-------------------------------
+Test: 102 results, 10 per page, page 1
+-------------------------------
+page list: [1, 2, 3, 4, 5]
+-------------------------------
+Test: 102 results, 10 per page, page 6
+-------------------------------
+page list: [4, 5, 6, 7, 8]
+-------------------------------
+Test: 100 results, 10 per page, page 9
+-------------------------------
+page list: [6, 7, 8, 9, 10]
+-------------------------------
+Test: 100 results, 10 per page, page 10
+-------------------------------
+page list: [6, 7, 8, 9, 10]
+-------------------------------
+Test: 102 results, 10 per page, page 9
+-------------------------------
+page list: [7, 8, 9, 10, 11]
+getNumResults
+-------------------------------
+page list: null
+-------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in edu.harvard.iq.dataverse.mydata.PagerTest
+Running edu.harvard.iq.dataverse.mydata.SolrQueryFormatterTest
+-------------------------------
+Set group size to 10--it's usually, 1,000
+-------------------------------
+-------------------------------
+List of 10 ids from 1, 10
+-------------------------------
+-------------------------------
+query clause: (entityId:(1 2 3 4 5 6 7 8 9 10))
+-------------------------------
+-------------------------------
+List of 11 ids from 1, 11
+-------------------------------
+-------------------------------
+query clause: (entityId:(1 2 3 4 5 6 7 8 9 10)) OR (entityId:(11))
+-------------------------------
+-------------------------------
+List of 21 ids from 1, 21
+-------------------------------
+-------------------------------
+query clause: (entityId:(1 2 3 4 5 6 7 8 9 10)) OR (entityId:(11 12 13 14 15 16 17 18 19 20)) OR (entityId:(21))
+-------------------------------
+-------------------------------
+List of ids is empty
+-------------------------------
+-------------------------------
+query clause: null
+-------------------------------
+-------------------------------
+List of ids from 1 to 11
+-------------------------------
+-------------------------------
+Set to groups of 3
+-------------------------------
+-------------------------------
+query clause: (parentId:(1 2 3)) OR (parentId:(4 5 6)) OR (parentId:(7 8 9)) OR (parentId:(10 11))
+-------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in edu.harvard.iq.dataverse.mydata.SolrQueryFormatterTest
+Running edu.harvard.iq.dataverse.passwordreset.PasswordResetDataTest
+newTokenNotExpired
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in edu.harvard.iq.dataverse.passwordreset.PasswordResetDataTest
+Running edu.harvard.iq.dataverse.branding.BrandingUtilTest
+testGetSupportTeamName
+testGetSupportEmailAddress
+testWelcomeInAppNotification
+message: Welcome to LibraScholar! Get started by adding or finding data. Have questions? Check out the <a href="http://guides.dataverse.org/en/4.3/user/index.html">User Guide</a>. Want to test out Dataverse features? Use our <a href="https://demo.dataverse.org">Demo Site</a>. Also, check for your welcome email to verify your address.
+testWelcomeEmail
+message: Welcome to LibraScholar! Get started by adding or finding data. Have questions? Check out the User Guide at http://guides.librascholar.edu/en/4.3/user or contact LibraScholar Support at support@librascholar.edu for assistance.
+testEmailClosing
+message: 
+
+Thank you,
+LibraScholar
+testEmailSubject
+message: LibraScholar: Your account has been created
+testGetContactHeader
+testGetInstallationBrandName
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in edu.harvard.iq.dataverse.branding.BrandingUtilTest
+Running edu.harvard.iq.dataverse.datacapturemodule.DataCaptureModuleUtilTest
+getScriptFromRequestOk
+rsyncSupportEnabled
+generateJsonForUploadRequest
+getScriptFromRequestNotFound
+makeUploadRequest
+getMessageFromException
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec - in edu.harvard.iq.dataverse.datacapturemodule.DataCaptureModuleUtilTest
+Running edu.harvard.iq.dataverse.dataset.DatasetUtilTest
+getDefaultThumbnailFile
+persistDatasetLogoToDiskAndCreateThumbnail
+getThumbnailAsInputStream
+isDatasetLogoPresent
+testGetThumbnailNullDatasetNullDatasetVersion
+deleteDatasetLogo
+testGetThumbnailUseGeneric
+testGetThumbnailRestricted
+getThumbnailCandidates
+testGetThumbnailNullDataset
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in edu.harvard.iq.dataverse.dataset.DatasetUtilTest
+Running edu.harvard.iq.dataverse.privateurl.PrivateUrlUtilTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in edu.harvard.iq.dataverse.privateurl.PrivateUrlUtilTest
+Running edu.harvard.iq.dataverse.datasetutility.OptionalFileParamsTest
+-------------------------------
+test_01_jsonDescription
+-------------------------------
+-------------------------------
+jsonData: {"description": "A new file"}
+-------------------------------
+-------------------------------
+test_02_jsonDescriptionNumeric
+-------------------------------
+-------------------------------
+jsonData: {"description": 250 }
+-------------------------------
+-------------------------------
+test_03_jsonNull
+-------------------------------
+-------------------------------
+test_04_jsonTagsGood
+-------------------------------
+-------------------------------
+jsonData: {"description": "A new file", "categories": ["dog", "cat", "mouse"]}
+-------------------------------
+-------------------------------
+test_05_jsonTabularTagsGood
+-------------------------------
+-------------------------------
+jsonData: {"dataFileTags": ["Survey", "Event", "Panel"], "description": "A new file"}
+-------------------------------
+-------------------------------
+test_06_jsonTabularTagsBad
+-------------------------------
+-------------------------------
+jsonData: {"dataFileTags": ["Survey", "Event", "xPanel"], "description": "A new file"}
+-------------------------------
+-------------------------------
+errMsg: Not a valid Tabular Data Tag: 
+-------------------------------
+-------------------------------
+test_07_regularInstanceGood
+-------------------------------
+-------------------------------
+test_08_regularInstanceGoodWithNulls
+-------------------------------
+-------------------------------
+test_08_regularInstanceGoodWithNulls
+-------------------------------
+-------------------------------
+jsonData: {"forceReplace": "unused within OptionalFileParams", "oldFileId": "unused within OptionalFileParams", "description": null, "unusedParam1": "haha", "categories": []}
+-------------------------------
+-------------------------------
+test_10_emptyString
+-------------------------------
+-------------------------------
+jsonData: 
+-------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in edu.harvard.iq.dataverse.datasetutility.OptionalFileParamsTest
+Running edu.harvard.iq.dataverse.GlobalIdTest
+testValidDOI
+testValidDOI
+testInject (weak test)
+testUnknownProtocol
+testBadIdentifierOnePart
+testBadIdentifierTwoParts
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in edu.harvard.iq.dataverse.GlobalIdTest
+Running edu.harvard.iq.dataverse.DataFileServiceBeanTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in edu.harvard.iq.dataverse.DataFileServiceBeanTest
+Running edu.harvard.iq.dataverse.DatasetVersionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.harvard.iq.dataverse.DatasetVersionTest
+Running edu.harvard.iq.dataverse.EMailValidatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in edu.harvard.iq.dataverse.EMailValidatorTest
+
+Results :
+
+Failed tests: 
+  CSVFileReaderTest.testHardRead:99 expected:<..."	"区人社局"	"UNKNOWN"	"[　  ]他们是英雄，他们是路标，他们是丰碑！一个...> but was:<..."	"区人社局"	"UNKNOWN"	"[]他们是英雄，他们是路标，他们是丰碑！一个...>
+
+Tests run: 334, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 40.844 s
+[INFO] Finished at: 2020-02-15T14:55:34+01:00
+[INFO] Final Memory: 56M/292M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project dataverse: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-247257858-20170626-225459_bugonly-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project dataverse: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-247257858-20170626-225459_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-247257858-20170626-225459_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
