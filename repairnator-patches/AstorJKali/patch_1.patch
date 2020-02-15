@@ -1,0 +1,19 @@
+--- /src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
++++ /src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
+@@ -28,12 +28,12 @@
+ 								}
+ 							}
+ 						}
+-						if (count >= 2) {
++						if (true) {
+ 							for (int x = section.getMinX(); x < section.getMaxX(); x++) {
+ 								for (int y = section.getMinY(); y < section.getMaxY(); y++) {
+ 									if (squares[x][y] != 'x') {
+-										board.getSquare(x, y).removePossibleValue(a);
+-										board.getSquare(x, y).removePossibleValue(b);
++										this.board.getSquare(x, y).removePossibleValue(a);
++										this.board.getSquare(x, y).removePossibleValue(b);
+ 									}
+ 								}
+ 							}
+
