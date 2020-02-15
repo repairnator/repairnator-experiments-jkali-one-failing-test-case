@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "OpenGamma/Strata",
-  "bugCommit": "https://github.com/OpenGamma/Strata/compare/ea1cff733803...874d7e93494a",
-  "failingModule": "/root/workspace/OpenGamma/Strata/255330052/modules/loader",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 10365,
-  "failing-test-cases": [
-    {
-      "className": "com.opengamma.strata.loader.csv.FraTradeCsvLoaderTest",
-      "failingMethods": [
-        "com.opengamma.strata.loader.csv.FraTradeCsvLoaderTest#test_load_fra"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:48 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:36:52 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 407356352,
+      "totalMemory": 1077403648
+    },
+    "totalDuration": 1380,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 944,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          944
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-255758736-20170720-193734-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-255758736-20170720-193734-firstCommit/modules/loader",
+    "overallMetrics": {
+      "numberRunning": 10365,
+      "numberPassing": 10364,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected [0] but found [1]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.opengamma.strata.loader.csv.FraTradeCsvLoaderTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.opengamma.strata.loader.csv.FraTradeCsvLoaderTest",
+        "testMethod": "test_load_fra",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [0] but found [1]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1596,
+    "numberTestFiles": 1108,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  },
+  "commits": {}
 }
