@@ -1,39 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "OpenSextant/SolrTextTagger",
-  "bugCommit": "https://github.com/OpenSextant/SolrTextTagger/compare/359300c9e49a...e205aaf8937c",
-  "failingModule": "/root/workspace/OpenSextant/SolrTextTagger/271801364",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError",
-    "skipped"
-  ],
-  "totalNumberRunningTests": 35,
-  "failing-test-cases": [
-    {
-      "className": "org.opensextant.solrtexttagger.Tagger2Test",
-      "failingMethods": [
-        "org.opensextant.solrtexttagger.Tagger2Test#testVeryLongWord",
-        "org.opensextant.solrtexttagger.Tagger2Test#testMultibyteChar"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:59 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:47:00 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 188086992,
+      "totalMemory": 855711744
+    },
+    "totalDuration": 1979,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1883,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1883
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenSextant-SolrTextTagger-271811236-20170904-213957-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenSextant-SolrTextTagger-271811236-20170904-213957-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 32,
+      "numberPassing": 31,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
       "failures": [
         {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c80\u003e but was:\u003c82\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 2,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.opensextant.solrtexttagger.Tagger2Test",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.opensextant.solrtexttagger.Tagger2Test",
+        "testMethod": "testMultibyteChar",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c80\u003e but was:\u003c82\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 13,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "commits": {}
 }
