@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "cpesch/RouteConverter",
-  "bugCommit": "https://github.com/cpesch/RouteConverter/compare/f8b8b1a1e430...55b9588540da",
-  "failingModule": "/root/workspace/cpesch/RouteConverter/398776678/navigation-formats",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 426,
-  "failing-test-cases": [
-    {
-      "className": "slash.navigation.columbus.ColumbusGpsType1FormatTest",
-      "failingMethods": [
-        "testParseTypeBPOIPosition"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-cpesch-RouteConverter-398776678-20180701-123807-firstCommit/navigation-formats",
+    "overallMetrics": {
+      "numberRunning": 426,
+      "numberPassing": 425,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003cPointOfInterest[] 7\u003e but was:\u003cPointOfInterest[C] 7\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "slash.navigation.columbus.ColumbusGpsType1FormatTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "slash.navigation.columbus.ColumbusGpsType1FormatTest",
+        "testMethod": "testParseTypeBPOIPosition",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cPointOfInterest[] 7\u003e but was:\u003cPointOfInterest[C] 7\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 47,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1431,
+    "numberTestFiles": 168,
+    "numberLibrariesFailingModule": 49,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:46 PM",
+    "reproductionDateEnd": "Feb 16, 2020 1:00:58 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 441477408,
+      "totalMemory": 1121771520
+    },
+    "totalDuration": 6429,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-cpesch-RouteConverter-398776678-20180701-123807-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
