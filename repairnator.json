@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "dangdangdotcom/sharding-jdbc",
-  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/a9c5a6ca602c...60a45da182ae",
-  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/274867420/sharding-jdbc-orchestration",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 7937,
-  "failing-test-cases": [
-    {
-      "className": "com.dangdang.ddframe.rdb.sharding.json.DataSourceJsonConverterTest",
-      "failingMethods": [
-        "com.dangdang.ddframe.rdb.sharding.json.DataSourceJsonConverterTest#assertToJson"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-274888837-20170913-063713-firstCommit/sharding-jdbc-orchestration",
+    "overallMetrics": {
+      "numberRunning": 7933,
+      "numberPassing": 7932,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: is \"[{\\\"name\\\":\\\"ds_jdbc_1\\\",\\\"clazz\\\":\\\"org.apache.commons.dbcp.BasicDataSource\\\",\\\"maxIdle\\\":\\\"8\\\",\\\"testOnBorrow\\\":\\\"true\\\",\\\"defaultTransactionIsolation\\\":\\\"-1\\\",\\\"password\\\":\\\"\\\",\\\"testOnReturn\\\":\\\"false\\\",\\\"maxActive\\\":\\\"8\\\",\\\"username\\\":\\\"root\\\",\\\"numTestsPerEvictionRun\\\":\\\"3\\\",\\\"minIdle\\\":\\\"0\\\",\\\"maxWait\\\":\\\"-1\\\",\\\"defaultAutoCommit\\\":\\\"true\\\",\\\"validationQueryTimeout\\\":\\\"-1\\\",\\\"testWhileIdle\\\":\\\"false\\\",\\\"driverClassName\\\":\\\"com.mysql.jdbc.Driver\\\",\\\"url\\\":\\\"jdbc:mysql://localhost:3306/ds_jdbc_1\\\",\\\"removeAbandonedTimeout\\\":\\\"300\\\",\\\"defaultReadOnly\\\":\\\"false\\\",\\\"logAbandoned\\\":\\\"false\\\",\\\"maxOpenPreparedStatements\\\":\\\"-1\\\",\\\"removeAbandoned\\\":\\\"false\\\",\\\"timeBetweenEvictionRunsMillis\\\":\\\"-1\\\",\\\"minEvictableIdleTimeMillis\\\":\\\"1800000\\\",\\\"initialSize\\\":\\\"0\\\"},{\\\"name\\\":\\\"ds_jdbc_0\\\",\\\"clazz\\\":\\\"org.apache.commons.dbcp.BasicDataSource\\\",\\\"maxIdle\\\":\\\"8\\\",\\\"testOnBorrow\\\":\\\"true\\\",\\\"defaultTransactionIsolation\\\":\\\"-1\\\",\\\"password\\\":\\\"\\\",\\\"testOnReturn\\\":\\\"false\\\",\\\"maxActive\\\":\\\"8\\\",\\\"username\\\":\\\"root\\\",\\\"numTestsPerEvictionRun\\\":\\\"3\\\",\\\"minIdle\\\":\\\"0\\\",\\\"maxWait\\\":\\\"-1\\\",\\\"defaultAutoCommit\\\":\\\"true\\\",\\\"validationQueryTimeout\\\":\\\"-1\\\",\\\"testWhileIdle\\\":\\\"false\\\",\\\"driverClassName\\\":\\\"com.mysql.jdbc.Driver\\\",\\\"url\\\":\\\"jdbc:mysql://localhost:3306/ds_jdbc_0\\\",\\\"removeAbandonedTimeout\\\":\\\"300\\\",\\\"defaultReadOnly\\\":\\\"false\\\",\\\"logAbandoned\\\":\\\"false\\\",\\\"maxOpenPreparedStatements\\\":\\\"-1\\\",\\\"removeAbandoned\\\":\\\"false\\\",\\\"timeBetweenEvictionRunsMillis\\\":\\\"-1\\\",\\\"minEvictableIdleTimeMillis\\\":\\\"1800000\\\",\\\"initialSize\\\":\\\"0\\\"}]\"      but: was \"[{\\\"name\\\":\\\"ds_jdbc_1\\\",\\\"clazz\\\":\\\"org.apache.commons.dbcp.BasicDataSource\\\",\\\"logAbandoned\\\":\\\"false\\\",\\\"password\\\":\\\"\\\",\\\"maxIdle\\\":\\\"8\\\",\\\"testWhileIdle\\\":\\\"false\\\",\\\"maxOpenPreparedStatements\\\":\\\"-1\\\",\\\"removeAbandoned\\\":\\\"false\\\",\\\"removeAbandonedTimeout\\\":\\\"300\\\",\\\"defaultAutoCommit\\\":\\\"true\\\",\\\"minIdle\\\":\\\"0\\\",\\\"defaultReadOnly\\\":\\\"false\\\",\\\"initialSize\\\":\\\"0\\\",\\\"maxWait\\\":\\\"-1\\\",\\\"defaultTransactionIsolation\\\":\\\"-1\\\",\\\"url\\\":\\\"jdbc:mysql://localhost:3306/ds_jdbc_1\\\",\\\"numTestsPerEvictionRun\\\":\\\"3\\\",\\\"testOnBorrow\\\":\\\"true\\\",\\\"timeBetweenEvictionRunsMillis\\\":\\\"-1\\\",\\\"minEvictableIdleTimeMillis\\\":\\\"1800000\\\",\\\"testOnReturn\\\":\\\"false\\\",\\\"driverClassName\\\":\\\"com.mysql.jdbc.Driver\\\",\\\"validationQueryTimeout\\\":\\\"-1\\\",\\\"maxActive\\\":\\\"8\\\",\\\"username\\\":\\\"root\\\"},{\\\"name\\\":\\\"ds_jdbc_0\\\",\\\"clazz\\\":\\\"org.apache.commons.dbcp.BasicDataSource\\\",\\\"logAbandoned\\\":\\\"false\\\",\\\"password\\\":\\\"\\\",\\\"maxIdle\\\":\\\"8\\\",\\\"testWhileIdle\\\":\\\"false\\\",\\\"maxOpenPreparedStatements\\\":\\\"-1\\\",\\\"removeAbandoned\\\":\\\"false\\\",\\\"removeAbandonedTimeout\\\":\\\"300\\\",\\\"defaultAutoCommit\\\":\\\"true\\\",\\\"minIdle\\\":\\\"0\\\",\\\"defaultReadOnly\\\":\\\"false\\\",\\\"initialSize\\\":\\\"0\\\",\\\"maxWait\\\":\\\"-1\\\",\\\"defaultTransactionIsolation\\\":\\\"-1\\\",\\\"url\\\":\\\"jdbc:mysql://localhost:3306/ds_jdbc_0\\\",\\\"numTestsPerEvictionRun\\\":\\\"3\\\",\\\"testOnBorrow\\\":\\\"true\\\",\\\"timeBetweenEvictionRunsMillis\\\":\\\"-1\\\",\\\"minEvictableIdleTimeMillis\\\":\\\"1800000\\\",\\\"testOnReturn\\\":\\\"false\\\",\\\"driverClassName\\\":\\\"com.mysql.jdbc.Driver\\\",\\\"validationQueryTimeout\\\":\\\"-1\\\",\\\"maxActive\\\":\\\"8\\\",\\\"username\\\":\\\"root\\\"}]\"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.json.DataSourceJsonConverterTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.json.DataSourceJsonConverterTest",
+        "testMethod": "assertToJson",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"[{\\\"name\\\":\\\"ds_jdbc_1\\\",\\\"clazz\\\":\\\"org.apache.commons.dbcp.BasicDataSource\\\",\\\"maxIdle\\\":\\\"8\\\",\\\"testOnBorrow\\\":\\\"true\\\",\\\"defaultTransactionIsolation\\\":\\\"-1\\\",\\\"password\\\":\\\"\\\",\\\"testOnReturn\\\":\\\"false\\\",\\\"maxActive\\\":\\\"8\\\",\\\"username\\\":\\\"root\\\",\\\"numTestsPerEvictionRun\\\":\\\"3\\\",\\\"minIdle\\\":\\\"0\\\",\\\"maxWait\\\":\\\"-1\\\",\\\"defaultAutoCommit\\\":\\\"true\\\",\\\"validationQueryTimeout\\\":\\\"-1\\\",\\\"testWhileIdle\\\":\\\"false\\\",\\\"driverClassName\\\":\\\"com.mysql.jdbc.Driver\\\",\\\"url\\\":\\\"jdbc:mysql://localhost:3306/ds_jdbc_1\\\",\\\"removeAbandonedTimeout\\\":\\\"300\\\",\\\"defaultReadOnly\\\":\\\"false\\\",\\\"logAbandoned\\\":\\\"false\\\",\\\"maxOpenPreparedStatements\\\":\\\"-1\\\",\\\"removeAbandoned\\\":\\\"false\\\",\\\"timeBetweenEvictionRunsMillis\\\":\\\"-1\\\",\\\"minEvictableIdleTimeMillis\\\":\\\"1800000\\\",\\\"initialSize\\\":\\\"0\\\"},{\\\"name\\\":\\\"ds_jdbc_0\\\",\\\"clazz\\\":\\\"org.apache.commons.dbcp.BasicDataSource\\\",\\\"maxIdle\\\":\\\"8\\\",\\\"testOnBorrow\\\":\\\"true\\\",\\\"defaultTransactionIsolation\\\":\\\"-1\\\",\\\"password\\\":\\\"\\\",\\\"testOnReturn\\\":\\\"false\\\",\\\"maxActive\\\":\\\"8\\\",\\\"username\\\":\\\"root\\\",\\\"numTestsPerEvictionRun\\\":\\\"3\\\",\\\"minIdle\\\":\\\"0\\\",\\\"maxWait\\\":\\\"-1\\\",\\\"defaultAutoCommit\\\":\\\"true\\\",\\\"validationQueryTimeout\\\":\\\"-1\\\",\\\"testWhileIdle\\\":\\\"false\\\",\\\"driverClassName\\\":\\\"com.mysql.jdbc.Driver\\\",\\\"url\\\":\\\"jdbc:mysql://localhost:3306/ds_jdbc_0\\\",\\\"removeAbandonedTimeout\\\":\\\"300\\\",\\\"defaultReadOnly\\\":\\\"false\\\",\\\"logAbandoned\\\":\\\"false\\\",\\\"maxOpenPreparedStatements\\\":\\\"-1\\\",\\\"removeAbandoned\\\":\\\"false\\\",\\\"timeBetweenEvictionRunsMillis\\\":\\\"-1\\\",\\\"minEvictableIdleTimeMillis\\\":\\\"1800000\\\",\\\"initialSize\\\":\\\"0\\\"}]\"\n     but: was \"[{\\\"name\\\":\\\"ds_jdbc_1\\\",\\\"clazz\\\":\\\"org.apache.commons.dbcp.BasicDataSource\\\",\\\"logAbandoned\\\":\\\"false\\\",\\\"password\\\":\\\"\\\",\\\"maxIdle\\\":\\\"8\\\",\\\"testWhileIdle\\\":\\\"false\\\",\\\"maxOpenPreparedStatements\\\":\\\"-1\\\",\\\"removeAbandoned\\\":\\\"false\\\",\\\"removeAbandonedTimeout\\\":\\\"300\\\",\\\"defaultAutoCommit\\\":\\\"true\\\",\\\"minIdle\\\":\\\"0\\\",\\\"defaultReadOnly\\\":\\\"false\\\",\\\"initialSize\\\":\\\"0\\\",\\\"maxWait\\\":\\\"-1\\\",\\\"defaultTransactionIsolation\\\":\\\"-1\\\",\\\"url\\\":\\\"jdbc:mysql://localhost:3306/ds_jdbc_1\\\",\\\"numTestsPerEvictionRun\\\":\\\"3\\\",\\\"testOnBorrow\\\":\\\"true\\\",\\\"timeBetweenEvictionRunsMillis\\\":\\\"-1\\\",\\\"minEvictableIdleTimeMillis\\\":\\\"1800000\\\",\\\"testOnReturn\\\":\\\"false\\\",\\\"driverClassName\\\":\\\"com.mysql.jdbc.Driver\\\",\\\"validationQueryTimeout\\\":\\\"-1\\\",\\\"maxActive\\\":\\\"8\\\",\\\"username\\\":\\\"root\\\"},{\\\"name\\\":\\\"ds_jdbc_0\\\",\\\"clazz\\\":\\\"org.apache.commons.dbcp.BasicDataSource\\\",\\\"logAbandoned\\\":\\\"false\\\",\\\"password\\\":\\\"\\\",\\\"maxIdle\\\":\\\"8\\\",\\\"testWhileIdle\\\":\\\"false\\\",\\\"maxOpenPreparedStatements\\\":\\\"-1\\\",\\\"removeAbandoned\\\":\\\"false\\\",\\\"removeAbandonedTimeout\\\":\\\"300\\\",\\\"defaultAutoCommit\\\":\\\"true\\\",\\\"minIdle\\\":\\\"0\\\",\\\"defaultReadOnly\\\":\\\"false\\\",\\\"initialSize\\\":\\\"0\\\",\\\"maxWait\\\":\\\"-1\\\",\\\"defaultTransactionIsolation\\\":\\\"-1\\\",\\\"url\\\":\\\"jdbc:mysql://localhost:3306/ds_jdbc_0\\\",\\\"numTestsPerEvictionRun\\\":\\\"3\\\",\\\"testOnBorrow\\\":\\\"true\\\",\\\"timeBetweenEvictionRunsMillis\\\":\\\"-1\\\",\\\"minEvictableIdleTimeMillis\\\":\\\"1800000\\\",\\\"testOnReturn\\\":\\\"false\\\",\\\"driverClassName\\\":\\\"com.mysql.jdbc.Driver\\\",\\\"validationQueryTimeout\\\":\\\"-1\\\",\\\"maxActive\\\":\\\"8\\\",\\\"username\\\":\\\"root\\\"}]\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 371,
+    "numberTestFiles": 239,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:47 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:22:35 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 20329496,
+      "totalMemory": 130883584
+    },
+    "totalDuration": 524,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 77,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          77
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-274888837-20170913-063713-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
