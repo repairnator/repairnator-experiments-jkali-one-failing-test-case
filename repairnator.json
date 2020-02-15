@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "FasterXML/jackson-databind",
-  "bugCommit": "https://github.com/FasterXML/jackson-databind/compare/13836d7d7aca...ef17f26b4ad3",
-  "failingModule": "/root/workspace/FasterXML/jackson-databind/208835510",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 1698,
-  "failing-test-cases": [
-    {
-      "className": "com.fasterxml.jackson.databind.struct.EnumFormatShapeTest",
-      "failingMethods": [
-        "com.fasterxml.jackson.databind.struct.EnumFormatShapeTest#testEnumAsNumber"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:28 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:48:44 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 924002952,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 194,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 95,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          95
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-FasterXML-jackson-databind-208840427-20170308-045647-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-FasterXML-jackson-databind-208840427-20170308-045647-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1698,
+      "numberPassing": 1697,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.ComparisonFailure",
-          "failureDetail": "expected:\u003c{\"color\":\"[2]\"}\u003e but was:\u003c{\"color\":\"[GREEN]\"}\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.struct.EnumFormatShapeTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.struct.EnumFormatShapeTest",
+        "testMethod": "testEnumAsNumber",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "expected:\u003c{\"color\":\"[2]\"}\u003e but was:\u003c{\"color\":\"[GREEN]\"}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 386,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  }
 }
