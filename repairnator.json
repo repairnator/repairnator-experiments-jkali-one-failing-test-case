@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "boyter/searchcode-server",
-  "bugCommit": "https://github.com/boyter/searchcode-server/commit/313509a2002f",
-  "failingModule": "/root/workspace/boyter/searchcode-server/371796110",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 344,
-  "failing-test-cases": [
-    {
-      "className": "com.searchcode.app.service.IndexServiceTest",
-      "failingMethods": [
-        "com.searchcode.app.service.IndexServiceTest#testBuildDocument"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-boyter-searchcode-server-371796110-20180427-004924-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 344,
+      "numberPassing": 343,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c\" [filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents]  \"\u003e but was:\u003c\" [ filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents ]  \"\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.searchcode.app.service.IndexServiceTest",
+        "numberRunning": 30,
+        "numberPassing": 29,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.searchcode.app.service.IndexServiceTest",
+        "testMethod": "testBuildDocument",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\" [filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents]  \"\u003e but was:\u003c\" [ filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents     filename filename filename filename filename filename emanelif  file name file filename filelocationfilename filelocation   contents contents contents contents contents contents ]  \"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 86,
+    "numberTestFiles": 36,
+    "numberLibrariesFailingModule": 50,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:44 PM",
+    "reproductionDateEnd": "Feb 16, 2020 12:56:16 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 185128400,
+      "totalMemory": 445997056
+    },
+    "totalDuration": 6149,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-boyter-searchcode-server-371796110-20180427-004924-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
