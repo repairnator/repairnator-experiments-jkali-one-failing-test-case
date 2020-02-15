@@ -1,0 +1,509 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 4.15
+[INFO] os.detected.version.major: 4
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 16.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] mixin-maven-plugin: Merging Mixins
+[INFO] mixin-maven-plugin: Mixins were merged
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ServiceComb Saga
+[INFO] Saga::Docker Build Config
+[INFO] Saga::Pack Common
+[INFO] Saga::Omega
+[INFO] Saga::Omega::Context
+[INFO] Saga::Omega::Transaction
+[INFO] saga-persistence
+[INFO] saga-persistence-jpa
+[INFO] Saga::Omega::Spring TX
+[INFO] Saga::Omega::Transport
+[INFO] Saga::Omega::Transport::Rest Template
+[INFO] omega-transport-servicecomb
+[INFO] omega-transport-dubbo
+[INFO] Saga::Pack Contracts
+[INFO] Saga::Pack Contracts::Grpc
+[INFO] Saga::Omega::Connector
+[INFO] Saga::Omega::Connector::GRPC
+[INFO] Saga::Omega::Format
+[INFO] Saga::Omega::Spring Starter
+[INFO] Saga::Alpha
+[INFO] Saga::Alpha::Core
+[INFO] Saga::Alpha::Server
+[INFO] Saga::Integration Tests
+[INFO] Saga::Integration Tests::Pack Tests
+[INFO] Saga::Integration Tests::Coverage Aggregate
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ServiceComb Saga 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Docker Build Config 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ docker-build-config ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ docker-build-config ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Pack Common 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ pack-common ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ pack-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ pack-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/pack-common/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ pack-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ pack-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/pack-common/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ pack-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ pack-common ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Omega 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ omega ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ omega ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Omega::Context 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ omega-context ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ omega-context ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ omega-context ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-context/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ omega-context ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ omega-context ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-context/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ omega-context ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ omega-context ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-context/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 6.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 104.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1473.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.omega.context.UniqueIdGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in org.apache.servicecomb.saga.omega.context.UniqueIdGeneratorTest
+Running org.apache.servicecomb.saga.omega.context.OmegaContextTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.servicecomb.saga.omega.context.OmegaContextTest
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Omega::Transaction 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ omega-transaction ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ omega-transaction ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ omega-transaction ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transaction/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ omega-transaction ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ omega-transaction ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ omega-transaction ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ omega-transaction ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transaction/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.omega.transaction.SagaStartAspectTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.548 sec - in org.apache.servicecomb.saga.omega.transaction.SagaStartAspectTest
+Running org.apache.servicecomb.saga.omega.transaction.ForwardRecoveryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in org.apache.servicecomb.saga.omega.transaction.ForwardRecoveryTest
+Running org.apache.servicecomb.saga.omega.transaction.TransactionAspectTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.apache.servicecomb.saga.omega.transaction.TransactionAspectTest
+Running org.apache.servicecomb.saga.omega.transaction.CompensationMessageHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.apache.servicecomb.saga.omega.transaction.CompensationMessageHandlerTest
+Running org.apache.servicecomb.saga.omega.transaction.SagaStartAnnotationProcessorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.servicecomb.saga.omega.transaction.SagaStartAnnotationProcessorTest
+Running org.apache.servicecomb.saga.omega.transaction.CompensableInterceptorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.apache.servicecomb.saga.omega.transaction.CompensableInterceptorTest
+Running org.apache.servicecomb.saga.omega.transaction.DefaultRecoveryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.apache.servicecomb.saga.omega.transaction.DefaultRecoveryTest
+
+Results :
+
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building saga-persistence 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-persistence ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-persistence ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building saga-persistence-jpa 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ saga-persistence-jpa ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ saga-persistence-jpa ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ saga-persistence-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ saga-persistence-jpa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- eclipselink-maven-plugin:2.7.0:weave (default) @ saga-persistence-jpa ---
+[INFO] Entities found : 12
+[INFO] persistence.xml location: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/saga-persistence/saga-persistence-jpa/target/classes/META-INF/persistence.xml
+[INFO] Source classes dir: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/saga-persistence/saga-persistence-jpa/target/classes
+[INFO] Target classes dir: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/saga-persistence/saga-persistence-jpa/target/classes
+[INFO] Eclipselink weaving completed
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ saga-persistence-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/saga-persistence/saga-persistence-jpa/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ saga-persistence-jpa ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ saga-persistence-jpa ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Omega::Spring TX 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ omega-spring-tx ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ omega-spring-tx ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ omega-spring-tx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-spring-tx/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ omega-spring-tx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ omega-spring-tx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ omega-spring-tx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ omega-spring-tx ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-spring-tx/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.omega.transaction.spring.CompensableAnnotationCheckingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.841 sec - in org.apache.servicecomb.saga.omega.transaction.spring.CompensableAnnotationCheckingTest
+Running org.apache.servicecomb.saga.omega.transaction.spring.TransactionInterceptionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.597 sec - in org.apache.servicecomb.saga.omega.transaction.spring.TransactionInterceptionTest
+
+Results :
+
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Omega::Transport 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ omega-transport ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ omega-transport ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Saga::Omega::Transport::Rest Template 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ omega-transport-resttemplate ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ omega-transport-resttemplate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ omega-transport-resttemplate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ omega-transport-resttemplate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ omega-transport-resttemplate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-resttemplate/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ omega-transport-resttemplate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ omega-transport-resttemplate ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-resttemplate/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.omega.transport.resttemplate.TransactionClientHttpRequestInterceptorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.041 sec - in org.apache.servicecomb.saga.omega.transport.resttemplate.TransactionClientHttpRequestInterceptorTest
+Running org.apache.servicecomb.saga.omega.transport.resttemplate.TransactionHandlerInterceptorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.499 sec - in org.apache.servicecomb.saga.omega.transport.resttemplate.TransactionHandlerInterceptorTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building omega-transport-servicecomb 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ omega-transport-servicecomb ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ omega-transport-servicecomb ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ omega-transport-servicecomb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ omega-transport-servicecomb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ omega-transport-servicecomb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-servicecomb/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ omega-transport-servicecomb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ omega-transport-servicecomb ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-servicecomb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.saga.omega.transport.servicecomb.SagaConsumerHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.566 sec - in org.apache.servicecomb.saga.omega.transport.servicecomb.SagaConsumerHandlerTest
+Running org.apache.servicecomb.saga.omega.transport.servicecomb.SagaProviderHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.servicecomb.saga.omega.transport.servicecomb.SagaProviderHandlerTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building omega-transport-dubbo 0.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ omega-transport-dubbo ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ omega-transport-dubbo ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ omega-transport-dubbo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ omega-transport-dubbo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ omega-transport-dubbo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-dubbo/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ omega-transport-dubbo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ omega-transport-dubbo ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-dubbo/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running SagaDubboProviderFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.323 sec - in SagaDubboProviderFilterTest
+Running SagaDubboConsumerFilterTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in SagaDubboConsumerFilterTest
+interceptTransactionIdInHeaderIfContextPresent(SagaDubboConsumerFilterTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: is "46ae486c-7ac1-40b8-9538-cef757dc5895"
+     but: was "75d51858-541b-4ff9-a0e6-ea15d477dab1"
+	at SagaDubboConsumerFilterTest.interceptTransactionIdInHeaderIfContextPresent(SagaDubboConsumerFilterTest.java:82)
+
+
+Results :
+
+Failed tests: 
+  SagaDubboConsumerFilterTest.interceptTransactionIdInHeaderIfContextPresent:82 
+Expected: is "46ae486c-7ac1-40b8-9538-cef757dc5895"
+     but: was "75d51858-541b-4ff9-a0e6-ea15d477dab1"
+
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] ServiceComb Saga ................................... SUCCESS [  1.453 s]
+[INFO] Saga::Docker Build Config .......................... SUCCESS [  0.063 s]
+[INFO] Saga::Pack Common .................................. SUCCESS [  0.795 s]
+[INFO] Saga::Omega ........................................ SUCCESS [  0.065 s]
+[INFO] Saga::Omega::Context ............................... SUCCESS [  4.003 s]
+[INFO] Saga::Omega::Transaction ........................... SUCCESS [  4.339 s]
+[INFO] saga-persistence ................................... SUCCESS [  0.041 s]
+[INFO] saga-persistence-jpa ............................... SUCCESS [  5.483 s]
+[INFO] Saga::Omega::Spring TX ............................. SUCCESS [ 20.096 s]
+[INFO] Saga::Omega::Transport ............................. SUCCESS [  0.371 s]
+[INFO] Saga::Omega::Transport::Rest Template .............. SUCCESS [  4.318 s]
+[INFO] omega-transport-servicecomb ........................ SUCCESS [  6.962 s]
+[INFO] omega-transport-dubbo .............................. FAILURE [  3.711 s]
+[INFO] Saga::Pack Contracts ............................... SKIPPED
+[INFO] Saga::Pack Contracts::Grpc ......................... SKIPPED
+[INFO] Saga::Omega::Connector ............................. SKIPPED
+[INFO] Saga::Omega::Connector::GRPC ....................... SKIPPED
+[INFO] Saga::Omega::Format ................................ SKIPPED
+[INFO] Saga::Omega::Spring Starter ........................ SKIPPED
+[INFO] Saga::Alpha ........................................ SKIPPED
+[INFO] Saga::Alpha::Core .................................. SKIPPED
+[INFO] Saga::Alpha::Server ................................ SKIPPED
+[INFO] Saga::Integration Tests ............................ SKIPPED
+[INFO] Saga::Integration Tests::Pack Tests ................ SKIPPED
+[INFO] Saga::Integration Tests::Coverage Aggregate ........ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 55.124 s
+[INFO] Finished at: 2020-02-15T23:16:35+01:00
+[INFO] Final Memory: 59M/184M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project omega-transport-dubbo: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-dubbo/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project omega-transport-dubbo: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-dubbo/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-dubbo/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :omega-transport-dubbo
