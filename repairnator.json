@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:27 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:48:14 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 35566944,
+      "totalMemory": 94425088
+    },
+    "totalDuration": 163,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-EMResearch-EvoMaster-416794383-20180816-144233-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-EMResearch-EvoMaster-416794383-20180816-144233-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 288,
+      "numberPassing": 287,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.evomaster.core.database.SqlInsertBuilderTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.evomaster.core.database.SqlInsertBuilderTest",
+        "testMethod": "testColumnSelection",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cfalse\u003e but was: \u003ctrue\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 126,
+    "numberTestFiles": 105,
+    "numberLibrariesFailingModule": 84,
+    "numberLines": 0
+  }
+}
