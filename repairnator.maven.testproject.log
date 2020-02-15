@@ -1,0 +1,165 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dataalalgorithm_in_java 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ dataalalgorithm_in_java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ dataalalgorithm_in_java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/target/classes
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/src/main/java/datastructure/tree/MyTrie.java: Some input files use unchecked or unsafe operations.
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/src/main/java/datastructure/tree/MyTrie.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> maven-source-plugin:2.1:jar (default) > generate-sources @ dataalalgorithm_in_java >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.1:jar (default) < generate-sources @ dataalalgorithm_in_java <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.1:jar (default) @ dataalalgorithm_in_java ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ dataalalgorithm_in_java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ dataalalgorithm_in_java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/target/test-classes
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/src/test/java/datastructure/linkedlist/LinkedListTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/src/test/java/datastructure/linkedlist/LinkedListTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ dataalalgorithm_in_java ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 7.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 105.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1336.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running datastructure.queue.MyLinkedQueueTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec <<< FAILURE! - in datastructure.queue.MyLinkedQueueTest
+testFirst(datastructure.queue.MyLinkedQueueTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at datastructure.queue.MyLinkedQueueTest.testFirst(MyLinkedQueueTest.java:38)
+
+Running datastructure.linkedlist.LinkedListTest
+a
+b
+c
+d
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in datastructure.linkedlist.LinkedListTest
+Running datastructure.hash.MyHashTest
+17
+17
+17
+linuxea
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in datastructure.hash.MyHashTest
+Running datastructure.tree.BinaryTreeTest
+水平遍历开始
+1 => -9 => 101 => -7 => 2 => 3 => 100 => 47 => 36 => 
+水平遍历结束
+后序遍历开始
+-7 => -9 => 36 => 47 => 100 => 3 => 2 => 101 => 1 => 
+后序遍历结束
+水平遍历开始
+1 => -9 => 101 => -7 => 2 => 3 => 100 => 47 => 36 => 
+水平遍历结束
+1
+水平遍历开始
+1 => -9 => 101 => -7 => 2 => 3 => 100 => 47 => 36 => 
+水平遍历结束
+先序遍历开始
+1 => -9 => -7 => 101 => 2 => 3 => 100 => 47 => 36 => 
+先序遍历结束
+水平遍历开始
+1 => -9 => 101 => -7 => 2 => 3 => 100 => 47 => 36 => 
+水平遍历结束
+中序遍历开始
+-9 => -7 => 1 => 2 => 3 => 36 => 47 => 100 => 101 => 
+中序遍历结束
+水平遍历开始
+1 => -9 => 101 => -7 => 2 => 3 => 100 => 47 => 36 => 
+水平遍历结束
+max:101
+水平遍历开始
+1 => -9 => 101 => -7 => 2 => 3 => 100 => 47 => 36 => 
+水平遍历结束
+min:-9
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in datastructure.tree.BinaryTreeTest
+Running others.ObjectTest
+java.lang.Object@4361bd48
+java.lang.Object@4361bd48
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in others.ObjectTest
+Running others.StringTest
+magic String
+copy magic String
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in others.StringTest
+
+Results :
+
+Failed tests: 
+  MyLinkedQueueTest.testFirst:38 expected:<2> but was:<1>
+
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.267 s
+[INFO] Finished at: 2020-02-15T18:14:15+01:00
+[INFO] Final Memory: 21M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project dataalalgorithm_in_java: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project dataalalgorithm_in_java: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-337417973-20180205-071521-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
