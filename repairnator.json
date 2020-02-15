@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Schrotty/DoIT",
-  "bugCommit": "https://github.com/Schrotty/DoIT/compare/d0d3179ddb6c...01809d8c9a5c",
-  "failingModule": "/root/workspace/Schrotty/DoIT/392650533",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 31,
-  "failing-test-cases": [
-    {
-      "className": "ToDoTest",
-      "failingMethods": [
-        "priorityTest"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:15 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:17:46 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 22403368,
+      "totalMemory": 84316160
+    },
+    "totalDuration": 208,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 158,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          158
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-392650533-20180615-122021-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-392650533-20180615-122021-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 31,
+      "numberPassing": 30,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003cDringend\u003e but was:\u003c3\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ToDoTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ToDoTest",
+        "testMethod": "priorityTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cDringend\u003e but was:\u003c3\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 19,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {}
 }
