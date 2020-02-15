@@ -1,0 +1,271 @@
+Creating dataDir: /tmp/org.opensextant.solrtexttagger.RandomizedTaggerTest_DD7A1057BD54A52D-001/init-core-data-001
+Creating dataDir: /tmp/org.opensextant.solrtexttagger.HtmlInterpolationTest_2AE508B6C5D0B7C2-001/init-core-data-001
+Creating dataDir: /tmp/org.opensextant.solrtexttagger.XmlInterpolationTest_1507A987A39B5B0B-001/init-core-data-001
+Warning: validation was turned on but an org.xml.sax.ErrorHandler was not set, which is probably not what is desired.  Parser will use a default ErrorHandler to print the first 0  errors.  Please call the setErrorHandler method to fix this.
+Error: URI=null Line=1: Document is invalid: no grammar found.
+Error: URI=null Line=1: Document root element "doc", must match DOCTYPE root "null".
+Error: URI=null Line=1: Document is invalid: no grammar found.
+Error: URI=null Line=1: Document root element "doc", must match DOCTYPE root "null".
+Error: URI=null Line=1: Document is invalid: no grammar found.
+Error: URI=null Line=1: Document root element "doc", must match DOCTYPE root "null".
+Error: URI=null Line=1: Document is invalid: no grammar found.
+Error: URI=null Line=1: Document root element "doc", must match DOCTYPE root "null".
+Error: URI=null Line=1: Document is invalid: no grammar found.
+Error: URI=null Line=1: Document root element "doc", must match DOCTYPE root "null".
+Creating dataDir: /tmp/org.opensextant.solrtexttagger.Tagger2Test_296302CC667E0877-001/init-core-data-001
+NOTE: reproduce with: ant test  -Dtestcase=Tagger2Test -Dtests.method=testMultibyteChar -Dtests.seed=296302CC667E0877 -Dtests.locale=sr -Dtests.timezone=Etc/GMT+7 -Dtests.asserts=true -Dtests.file.encoding=UTF-8
+NOTE: leaving temporary files on disk at: /tmp/org.opensextant.solrtexttagger.Tagger2Test_296302CC667E0877-001
+Feb 15, 2020 6:15:18 PM com.carrotsearch.randomizedtesting.ThreadLeakControl checkThreadLeaks
+WARNING: Will linger awaiting termination of 1 leaked thread(s).
+NOTE: test params are: codec=Asserting(Lucene62), sim=RandomSimilarity(queryNorm=true,coord=yes): {}, locale=sr, timezone=Etc/GMT+7
+NOTE: Linux 4.15.0-76-generic amd64/Oracle Corporation 1.8.0_202 (64-bit)/cpus=1,threads=1,free=39031584,total=71041024
+NOTE: All tests run in this JVM: [RandomizedTaggerTest, HtmlInterpolationTest, XmlInterpolationTest, Tagger2Test]
+Creating dataDir: /tmp/org.opensextant.solrtexttagger.TaggingAttributeTest_D4F41AAD526C5C9-001/init-core-data-001
+Creating dataDir: /tmp/org.opensextant.solrtexttagger.TaggerTest_4BBFF9229999B877-001/init-core-data-001
+Creating dataDir: /tmp/org.opensextant.solrtexttagger.EmbeddedSolrNoSerializeTest_3D36DA3F79D5B426-001/init-core-data-001
+ire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 766.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.opensextant.solrtexttagger.RandomizedTaggerTest
+18:15:11.168 [SUITE-RandomizedTaggerTest-seed#[DD7A1057BD54A52D]-worker] INFO  org.eclipse.jetty.util.log - Logging initialized @2476ms
+18:15:11.297 [SUITE-RandomizedTaggerTest-seed#[DD7A1057BD54A52D]-worker] WARN  org.apache.solr.core.Config - You should not use LATEST as luceneMatchVersion property: if you use this setting, and then Solr upgrades to a newer release of Lucene, sizable changes may happen. If precise back compatibility is important then you should instead explicitly specify an actual Lucene version.
+18:15:12.351 [SUITE-RandomizedTaggerTest-seed#[DD7A1057BD54A52D]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:12.990 [SUITE-RandomizedTaggerTest-seed#[DD7A1057BD54A52D]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:13.017 [SUITE-RandomizedTaggerTest-seed#[DD7A1057BD54A52D]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:13.303 [coreLoadExecutor-6-thread-1] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:13.925 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:552E2F8D13A8C8D5]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:14.633 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:E1789371276A03F9]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:14.784 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:6F9105AD76AE4B32]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:14.944 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:5E7FAE481A50101B]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:15.073 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:12BE2BE5BB58D0A0]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:15.186 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:8344F8BAC6E49DA0]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:15.269 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:BD9A9C3CD4D48DA6]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:15.363 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:21290646F7C01908]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:15.461 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:1385E328800B0E52]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+18:15:15.552 [TEST-RandomizedTaggerTest.test-seed#[DD7A1057BD54A52D]] INFO  o.o.s.RandomizedTaggerTest - test { seed=[DD7A1057BD54A52D:C40EB592E45C3900]}(org.opensextant.solrtexttagger.RandomizedTaggerTest) being run...
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.67 sec - in org.opensextant.solrtexttagger.RandomizedTaggerTest
+Running org.opensextant.solrtexttagger.HtmlInterpolationTest
+18:15:16.891 [SUITE-HtmlInterpolationTest-seed#[2AE508B6C5D0B7C2]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:16.895 [SUITE-HtmlInterpolationTest-seed#[2AE508B6C5D0B7C2]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:16.895 [SUITE-HtmlInterpolationTest-seed#[2AE508B6C5D0B7C2]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:17.011 [coreLoadExecutor-18-thread-1] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:17.111 [TEST-HtmlInterpolationTest.testHtml-seed#[2AE508B6C5D0B7C2]] INFO  o.o.s.HtmlInterpolationTest - testHtml(org.opensextant.solrtexttagger.HtmlInterpolationTest) being run...
+18:15:17.234 [TEST-HtmlInterpolationTest.testLuceneHtmlFilterBehavior-seed#[2AE508B6C5D0B7C2]] INFO  o.o.s.HtmlInterpolationTest - testLuceneHtmlFilterBehavior(org.opensextant.solrtexttagger.HtmlInterpolationTest) being run...
+18:15:17.256 [TEST-HtmlInterpolationTest.test-seed#[2AE508B6C5D0B7C2]] INFO  o.o.s.HtmlInterpolationTest - test(org.opensextant.solrtexttagger.HtmlInterpolationTest) being run...
+18:15:17.313 [TEST-HtmlInterpolationTest.testHtmlNonTaggable-seed#[2AE508B6C5D0B7C2]] INFO  o.o.s.HtmlInterpolationTest - testHtmlNonTaggable(org.opensextant.solrtexttagger.HtmlInterpolationTest) being run...
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.695 sec - in org.opensextant.solrtexttagger.HtmlInterpolationTest
+Running org.opensextant.solrtexttagger.XmlInterpolationTest
+18:15:17.608 [SUITE-XmlInterpolationTest-seed#[1507A987A39B5B0B]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:17.613 [SUITE-XmlInterpolationTest-seed#[1507A987A39B5B0B]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:17.613 [SUITE-XmlInterpolationTest-seed#[1507A987A39B5B0B]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:17.732 [coreLoadExecutor-30-thread-1] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:17.778 [TEST-XmlInterpolationTest.testInvalidXml-seed#[1507A987A39B5B0B]] INFO  o.o.s.XmlInterpolationTest - testInvalidXml(org.opensextant.solrtexttagger.XmlInterpolationTest) being run...
+18:15:17.783 [TEST-XmlInterpolationTest.testInvalidXml-seed#[1507A987A39B5B0B]] ERROR o.a.solr.handler.RequestHandlerBase - org.apache.solr.common.SolrException: Expecting XML but wasn't: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character 'n' (code 110) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at org.opensextant.solrtexttagger.TaggerRequestHandler.initOffsetCorrector(TaggerRequestHandler.java:264)
+	at org.opensextant.solrtexttagger.TaggerRequestHandler.handleRequestBody(TaggerRequestHandler.java:159)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:166)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2306)
+	at org.apache.solr.util.TestHarness.queryAndResponse(TestHarness.java:358)
+	at org.opensextant.solrtexttagger.XmlInterpolationTest.assertXmlTag(XmlInterpolationTest.java:79)
+	at org.opensextant.solrtexttagger.XmlInterpolationTest.testInvalidXml(XmlInterpolationTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner.invoke(RandomizedRunner.java:1713)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$8.evaluate(RandomizedRunner.java:907)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$11.evaluate(RandomizedRunner.java:1004)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$9.evaluate(RandomizedRunner.java:943)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$10.evaluate(RandomizedRunner.java:957)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:47)
+	at com.carrotsearch.randomizedtesting.rules.SystemPropertiesRestoreRule$1.evaluate(SystemPropertiesRestoreRule.java:57)
+	at org.apache.lucene.util.TestRuleSetupTeardownChained$1.evaluate(TestRuleSetupTeardownChained.java:49)
+	at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:45)
+	at org.apache.lucene.util.TestRuleThreadAndTestName$1.evaluate(TestRuleThreadAndTestName.java:48)
+	at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:64)
+	at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:47)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl.forkTimeoutingTask(ThreadLeakControl.java:811)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$3.evaluate(ThreadLeakControl.java:462)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner.runSingleTest(RandomizedRunner.java:916)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$5.evaluate(RandomizedRunner.java:802)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$6.evaluate(RandomizedRunner.java:852)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$7.evaluate(RandomizedRunner.java:863)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.SystemPropertiesRestoreRule$1.evaluate(SystemPropertiesRestoreRule.java:57)
+	at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:45)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleStoreClassName$1.evaluate(TestRuleStoreClassName.java:41)
+	at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)
+	at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleAssertionsRequired$1.evaluate(TestRuleAssertionsRequired.java:53)
+	at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:47)
+	at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:64)
+	at org.apache.lucene.util.TestRuleIgnoreTestSuites$1.evaluate(TestRuleIgnoreTestSuites.java:54)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character 'n' (code 110) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:647)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2054)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1131)
+	at org.opensextant.solrtexttagger.XmlOffsetCorrector.<init>(XmlOffsetCorrector.java:83)
+	at org.opensextant.solrtexttagger.TaggerRequestHandler.initOffsetCorrector(TaggerRequestHandler.java:262)
+	... 47 more
+
+18:15:17.868 [TEST-XmlInterpolationTest.test-seed#[1507A987A39B5B0B]] INFO  o.o.s.XmlInterpolationTest - test(org.opensextant.solrtexttagger.XmlInterpolationTest) being run...
+18:15:17.992 [TEST-XmlInterpolationTest.testValidatingXml-seed#[1507A987A39B5B0B]] INFO  o.o.s.XmlInterpolationTest - testValidatingXml(org.opensextant.solrtexttagger.XmlInterpolationTest) being run...
+18:15:18.013 [TEST-XmlInterpolationTest.testLuceneHtmlFilterBehavior-seed#[1507A987A39B5B0B]] INFO  o.o.s.XmlInterpolationTest - testLuceneHtmlFilterBehavior(org.opensextant.solrtexttagger.XmlInterpolationTest) being run...
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.684 sec - in org.opensextant.solrtexttagger.XmlInterpolationTest
+Running org.opensextant.solrtexttagger.Tagger2Test
+18:15:18.229 [SUITE-Tagger2Test-seed#[296302CC667E0877]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:18.232 [SUITE-Tagger2Test-seed#[296302CC667E0877]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:18.232 [SUITE-Tagger2Test-seed#[296302CC667E0877]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:18.374 [coreLoadExecutor-42-thread-1] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:18.453 [TEST-Tagger2Test.testMultibyteChar-seed#[296302CC667E0877]] INFO  o.o.solrtexttagger.Tagger2Test - testMultibyteChar(org.opensextant.solrtexttagger.Tagger2Test) being run...
+18:15:18.468 [TEST-Tagger2Test.testLongestDominantRight-seed#[296302CC667E0877]] INFO  o.o.solrtexttagger.Tagger2Test - testLongestDominantRight(org.opensextant.solrtexttagger.Tagger2Test) being run...
+18:15:18.547 [TEST-Tagger2Test.testStopWords-seed#[296302CC667E0877]] INFO  o.o.solrtexttagger.Tagger2Test - testStopWords(org.opensextant.solrtexttagger.Tagger2Test) being run...
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.816 sec <<< FAILURE! - in org.opensextant.solrtexttagger.Tagger2Test
+testMultibyteChar(org.opensextant.solrtexttagger.Tagger2Test)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<80> but was:<82>
+	at __randomizedtesting.SeedInfo.seed([296302CC667E0877:4D8C366CE9C6698C]:0)
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at org.opensextant.solrtexttagger.Tagger2Test.testMultibyteChar(Tagger2Test.java:118)
+
+Running org.opensextant.solrtexttagger.TaggingAttributeTest
+18:15:18.957 [SUITE-TaggingAttributeTest-seed#[D4F41AAD526C5C9]-worker] WARN  org.apache.solr.SolrTestCaseJ4 - startTrackingSearchers: numOpens=3 numCloses=3
+18:15:19.018 [SUITE-TaggingAttributeTest-seed#[D4F41AAD526C5C9]-worker] INFO  o.o.s.WordLengthTaggingFilterFactory - set minLength=4
+18:15:19.040 [SUITE-TaggingAttributeTest-seed#[D4F41AAD526C5C9]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:19.041 [SUITE-TaggingAttributeTest-seed#[D4F41AAD526C5C9]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:19.042 [SUITE-TaggingAttributeTest-seed#[D4F41AAD526C5C9]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:19.100 [coreLoadExecutor-54-thread-1] INFO  o.o.s.WordLengthTaggingFilterFactory - set minLength=4
+18:15:19.142 [coreLoadExecutor-54-thread-1] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:19.162 [coreLoadExecutor-54-thread-1] WARN  org.apache.solr.core.RequestHandlers - no default request handler is registered (either '/select' or 'standard')
+18:15:19.188 [TEST-TaggingAttributeTest.testTaggingAttribute-seed#[D4F41AAD526C5C9]] INFO  o.o.s.TaggingAttributeTest - testTaggingAttribute(org.opensextant.solrtexttagger.TaggingAttributeTest) being run...
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec - in org.opensextant.solrtexttagger.TaggingAttributeTest
+Running org.opensextant.solrtexttagger.ConcatenateFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.opensextant.solrtexttagger.ConcatenateFilterTest
+Running org.opensextant.solrtexttagger.TaggerTest
+18:15:19.490 [SUITE-TaggerTest-seed#[4BBFF9229999B877]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:19.491 [SUITE-TaggerTest-seed#[4BBFF9229999B877]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:19.492 [SUITE-TaggerTest-seed#[4BBFF9229999B877]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:19.577 [coreLoadExecutor-66-thread-1] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:19.624 [TEST-TaggerTest.testFormatMatchText-seed#[4BBFF9229999B877]] INFO  o.o.solrtexttagger.TaggerTest - testFormatMatchText(org.opensextant.solrtexttagger.TaggerTest) being run...
+18:15:19.653 [TEST-TaggerTest.testFormatMatchText-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school
+18:15:19.681 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] INFO  o.o.solrtexttagger.TaggerTest - testPartialMatching(org.opensextant.solrtexttagger.TaggerTest) being run...
+18:15:19.705 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: 
+18:15:19.709 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc:  
+18:15:19.720 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: the
+18:15:19.735 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school
+18:15:19.741 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: a school
+18:15:19.746 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school a
+18:15:19.763 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school City
+18:15:19.764 [TEST-TaggerTest.testPartialMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: City of London Business School
+18:15:19.767 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] INFO  o.o.solrtexttagger.TaggerTest - testWholeMatching(org.opensextant.solrtexttagger.TaggerTest) being run...
+18:15:19.782 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: 
+18:15:19.797 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc:  
+18:15:19.805 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: the
+18:15:19.810 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school
+18:15:19.815 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: a school
+18:15:19.820 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school a
+18:15:19.825 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school City
+18:15:19.828 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school business london
+18:15:19.833 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: of London Business School
+18:15:19.836 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: City of London Business School
+18:15:19.840 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: City of London Business
+18:15:19.844 [TEST-TaggerTest.testWholeMatching-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: London Business magazine
+18:15:19.858 [TEST-TaggerTest.testFormat-seed#[4BBFF9229999B877]] INFO  o.o.solrtexttagger.TaggerTest - testFormat(org.opensextant.solrtexttagger.TaggerTest) being run...
+18:15:19.879 [TEST-TaggerTest.testFormat-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school
+18:15:19.894 [TEST-TaggerTest.testMultipleFilterQueries-seed#[4BBFF9229999B877]] INFO  o.o.solrtexttagger.TaggerTest - testMultipleFilterQueries(org.opensextant.solrtexttagger.TaggerTest) being run...
+18:15:19.927 [TEST-TaggerTest.testMultipleFilterQueries-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: City of London Business School in Boston
+18:15:19.935 [TEST-TaggerTest.testMultipleFilterQueries-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: City of London Business School in Boston
+18:15:19.943 [TEST-TaggerTest.testMultipleFilterQueries-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: City of London Business School in Boston
+18:15:19.957 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] INFO  o.o.solrtexttagger.TaggerTest - testSubTags(org.opensextant.solrtexttagger.TaggerTest) being run...
+18:15:19.988 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: 
+18:15:19.993 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc:  
+18:15:19.998 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: the
+18:15:20.003 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school
+18:15:20.007 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: a school
+18:15:20.010 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school a
+18:15:20.010 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school City
+18:15:20.013 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: school business london
+18:15:20.020 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: City of London Business School
+18:15:20.027 [TEST-TaggerTest.testSubTags-seed#[4BBFF9229999B877]] DEBUG o.o.solrtexttagger.TaggerTest - Test doc: City of London Business
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.758 sec - in org.opensextant.solrtexttagger.TaggerTest
+Running org.opensextant.solrtexttagger.EmbeddedSolrNoSerializeTest
+18:15:20.194 [SUITE-EmbeddedSolrNoSerializeTest-seed#[3D36DA3F79D5B426]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:20.195 [SUITE-EmbeddedSolrNoSerializeTest-seed#[3D36DA3F79D5B426]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:20.196 [SUITE-EmbeddedSolrNoSerializeTest-seed#[3D36DA3F79D5B426]-worker] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+18:15:20.269 [coreLoadExecutor-78-thread-1] WARN  o.a.s.m.reporters.SolrJmxReporter - No serviceUrl or agentId was configured, using first MBeanServer.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec - in org.opensextant.solrtexttagger.EmbeddedSolrNoSerializeTest
+
+Results :
+
+Failed tests: 
+  Tagger2Test.testMultibyteChar:118->Assert.assertEquals:456->Assert.assertEquals:472->Assert.assertEquals:128->Assert.failNotEquals:647->Assert.fail:93 expected:<80> but was:<82>
+
+Tests run: 35, Failures: 1, Errors: 0, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.298 s
+[INFO] Finished at: 2020-02-15T18:15:20+01:00
+[INFO] Final Memory: 38M/93M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project solr-text-tagger: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenSextant-SolrTextTagger-271811236-20170904-213957-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project solr-text-tagger: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenSextant-SolrTextTagger-271811236-20170904-213957-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenSextant-SolrTextTagger-271811236-20170904-213957-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
