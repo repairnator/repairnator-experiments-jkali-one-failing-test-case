@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Axway/iron",
-  "failingModule": "/root/workspace/Axway/iron/349269585/iron-spi-aws",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "mockit.internal.UnexpectedInvocation"
-  ],
-  "totalNumberRunningTests": 92,
-  "failing-test-cases": [
-    {
-      "className": "io.axway.iron.spi.aws.s3.AwsS3SnapshotStoreTest",
-      "failingMethods": [
-        "io.axway.iron.spi.aws.s3.AwsS3SnapshotStoreTest#shouldCreateS3Bucket"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:47:27 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 19466984,
+      "totalMemory": 126496768
+    },
+    "totalDuration": 120,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 25,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          25
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-aws",
+    "overallMetrics": {
+      "numberRunning": 92,
+      "numberPassing": 91,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "mockit.internal.UnexpectedInvocation",
-          "failureDetail": "Unexpected invocation of:\ncom.amazonaws.services.s3.AmazonS3#listObjectsV2(String, String)\n   with arguments: \"iron-bucket-3d9d670c-a043-4d20-9738-5c5dd05a87f7\", \"iron-store-08ca95d3-e360-4ac7-9e61-61d92786c1c7/snapshot\"\n   on instance: com.amazonaws.services.s3.$Impl_AmazonS3@1e9e725a\nwhen was expecting an invocation of:\ncom.amazonaws.services.s3.AmazonS3#headBucket(com.amazonaws.services.s3.model.HeadBucketRequest)\n   with arguments: any com.amazonaws.services.s3.model.HeadBucketRequest\n   on mock instance: com.amazonaws.services.s3.$Impl_AmazonS3@1e9e725a",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.axway.iron.spi.aws.s3.AwsS3SnapshotStoreTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.axway.iron.spi.aws.s3.AwsS3SnapshotStoreTest",
+        "testMethod": "shouldCreateS3Bucket",
+        "failureName": "mockit.internal.UnexpectedInvocation",
+        "detail": "Unexpected invocation of:\ncom.amazonaws.services.s3.AmazonS3#listObjectsV2(String, String)\n   with arguments: \"iron-bucket-8a0afa56-441c-47cf-8efd-df7f298018d4\", \"iron-store-de19daca-4e66-4ca2-9779-2de0e48d442b/snapshot\"\n   on instance: com.amazonaws.services.s3.$Impl_AmazonS3@7f13d6e\nwhen was expecting an invocation of:\ncom.amazonaws.services.s3.AmazonS3#headBucket(com.amazonaws.services.s3.model.HeadBucketRequest)\n   with arguments: any com.amazonaws.services.s3.model.HeadBucketRequest\n   on mock instance: com.amazonaws.services.s3.$Impl_AmazonS3@7f13d6e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberPlugins": 0,
+    "numberSourceFiles": 141,
+    "numberTestFiles": 120,
+    "numberLibrariesFailingModule": 0,
+    "numberLines": 0
+  },
+  "commits": {}
 }
