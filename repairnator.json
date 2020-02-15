@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "SonarSource/sonar-java",
-  "bugCommit": "https://github.com/SonarSource/sonar-java/compare/91e197a7c1ed...682924c02ba4",
-  "failingModule": "/root/workspace/SonarSource/sonar-java/342232103/java-checks",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2265,
-  "failing-test-cases": [
-    {
-      "className": "org.sonar.java.checks.UndocumentedApiCheckTest",
-      "failingMethods": [
-        "org.sonar.java.checks.UndocumentedApiCheckTest#testInvalidDeclaredException"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:15 PM",
+    "reproductionDateEnd": "Feb 15, 2020 7:27:28 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 699230232,
+      "totalMemory": 1081872384
+    },
+    "totalDuration": 4389,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4088,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4088
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarSource-sonar-java-342232103-20180216-090752-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarSource-sonar-java-342232103-20180216-090752-firstCommit/java-checks",
+    "overallMetrics": {
+      "numberRunning": 2265,
+      "numberPassing": 2264,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpecting:\n \u003corg.sonar.java.AnalysisException: SonarQube is unable to analyze file : \u0027/root/workspace/SonarSource/sonar-java/342232103/java-checks/src/test/files/checks/UndocumentedApiCheck/UndocumentedApiInvalidException.java\u0027\u003e\nto be an instance of:\n \u003corg.sonar.squidbridge.api.AnalysisException\u003e\nbut was instance of:\n \u003corg.sonar.java.AnalysisException\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.java.checks.UndocumentedApiCheckTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.java.checks.UndocumentedApiCheckTest",
+        "testMethod": "testInvalidDeclaredException",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003corg.sonar.java.AnalysisException: SonarQube is unable to analyze file : \u0027/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarSource-sonar-java-342232103-20180216-090752-firstCommit/java-checks/src/test/files/checks/UndocumentedApiCheck/UndocumentedApiInvalidException.java\u0027\u003e\nto be an instance of:\n \u003corg.sonar.squidbridge.api.AnalysisException\u003e\nbut was instance of:\n \u003corg.sonar.java.AnalysisException\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberPlugins": 0,
+    "numberSourceFiles": 907,
+    "numberTestFiles": 785,
+    "numberLibrariesFailingModule": 60,
+    "numberLines": 0
+  },
+  "commits": {}
 }
