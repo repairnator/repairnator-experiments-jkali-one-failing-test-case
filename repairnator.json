@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Raphaaal/XM-GUI",
-  "bugCommit": "https://github.com/Raphaaal/XM-GUI/compare/84cdfb96d4c5...a59108976bec",
-  "failingModule": "/root/workspace/Raphaaal/XM-GUI/386285192",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2,
-  "failing-test-cases": [
-    {
-      "className": "io.github.oliviercailloux.y2018.xmgui.file1.File1Test",
-      "failingMethods": [
-        "test"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:01 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:19:23 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 49319640,
+      "totalMemory": 169881600
+    },
+    "totalDuration": 318,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 267,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          267
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Raphaaal-XM-GUI-386285192-20180531-192847-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Raphaaal-XM-GUI-386285192-20180531-192847-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c100000\u003e but was:\u003c2\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.github.oliviercailloux.y2018.xmgui.file1.File1Test",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.github.oliviercailloux.y2018.xmgui.file1.File1Test",
+        "testMethod": "test",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c100000\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 14,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  },
+  "commits": {}
 }
