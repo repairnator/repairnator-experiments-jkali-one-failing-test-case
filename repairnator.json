@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "CorfuDB/CorfuDB",
-  "failingModule": "/root/workspace/CorfuDB/CorfuDB/322548182/test",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 488,
-  "failing-test-cases": [
-    {
-      "className": "org.corfudb.infrastructure.BaseServerTest",
-      "failingMethods": [
-        "org.corfudb.infrastructure.BaseServerTest#shutdownServerDoesNotRespond"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:25 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:57:38 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 39650280,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 730,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-322548182-20171228-150154_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-322548182-20171228-150154_bugonly-firstCommit/test",
+    "overallMetrics": {
+      "numberRunning": 487,
+      "numberPassing": 486,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003cnull\u003e but was:\u003cCorfuMsg(clientID\u003dd52c75e4-178f-3ffe-9080-6881997b806c, requestID\u003d0, epoch\u003d0, buf\u003dnull, msgType\u003dERROR_SHUTDOWN_EXCEPTION)\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.corfudb.infrastructure.BaseServerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.corfudb.infrastructure.BaseServerTest",
+        "testMethod": "shutdownServerDoesNotRespond",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cnull\u003e but was:\u003cCorfuMsg(clientID\u003dd52c75e4-178f-3ffe-9080-6881997b806c, requestID\u003d0, epoch\u003d0, buf\u003dnull, msgType\u003dERROR_SHUTDOWN_EXCEPTION)\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 296,
+    "numberTestFiles": 111,
+    "numberLibrariesFailingModule": 97,
+    "numberLines": 0
+  },
+  "commits": {}
 }
