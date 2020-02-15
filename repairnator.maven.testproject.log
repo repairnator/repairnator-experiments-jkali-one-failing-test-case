@@ -1,0 +1,301 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] junior
+[INFO] chapter_001
+[INFO] chapter_002
+[INFO] chapter_003
+[INFO] chapter_101
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building junior 2.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ junior ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ junior ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/target/jacoco.exec
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (report) @ junior ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building chapter_001 2.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ chapter_001 ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ chapter_001 ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_001/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ chapter_001 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_001/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ chapter_001 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_001/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ chapter_001 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_001/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ chapter_001 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_001/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ chapter_001 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_001/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 7.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 58.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1336.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ru.job4j.array.ArrayCharTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in ru.job4j.array.ArrayCharTest
+Running ru.job4j.array.ArrayDuplicateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ru.job4j.array.ArrayDuplicateTest
+Running ru.job4j.array.MatrixTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in ru.job4j.array.MatrixTest
+Running ru.job4j.array.ArrayCharLikeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in ru.job4j.array.ArrayCharLikeTest
+Running ru.job4j.array.BubbleSortTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in ru.job4j.array.BubbleSortTest
+Running ru.job4j.array.TurnTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in ru.job4j.array.TurnTest
+Running ru.job4j.array.MergeArraysTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in ru.job4j.array.MergeArraysTest
+Running ru.job4j.array.FindLoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in ru.job4j.array.FindLoopTest
+Running ru.job4j.array.SquareTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in ru.job4j.array.SquareTest
+Running ru.job4j.max.MaxTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in ru.job4j.max.MaxTest
+Running ru.job4j.calculator.ConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in ru.job4j.calculator.ConverterTest
+Running ru.job4j.calculator.CalculatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in ru.job4j.calculator.CalculatorTest
+Running ru.job4j.calculator.FitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ru.job4j.calculator.FitTest
+Running ru.job4j.loop.PaintTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in ru.job4j.loop.PaintTest
+Running ru.job4j.loop.BoardTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in ru.job4j.loop.BoardTest
+Running ru.job4j.loop.CounterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ru.job4j.loop.CounterTest
+Running ru.job4j.loop.FactorialTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in ru.job4j.loop.FactorialTest
+Running ru.job4j.condition.DummyBotTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in ru.job4j.condition.DummyBotTest
+Running ru.job4j.condition.TriangleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in ru.job4j.condition.TriangleTest
+Running ru.job4j.CalculateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in ru.job4j.CalculateTest
+
+Results :
+
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (report) @ chapter_001 ---
+[INFO] Loading execution data file /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_001/target/jacoco.exec
+[INFO] Analyzed bundle 'chapter_001' with 21 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building chapter_002 2.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ chapter_002 ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ chapter_002 ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_002/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ chapter_002 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_002/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ chapter_002 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 35 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_002/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ chapter_002 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_002/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ chapter_002 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_002/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ chapter_002 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_002/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ru.job4j.tracker.StartUITest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 sec - in ru.job4j.tracker.StartUITest
+Running ru.job4j.tracker.ValidateInputTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in ru.job4j.tracker.ValidateInputTest
+Running ru.job4j.tracker.TrackerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in ru.job4j.tracker.TrackerTest
+Running ru.job4j.strategy.PaintTest
+execute before method
+execute after method
+execute before method
+execute after method
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in ru.job4j.strategy.PaintTest
+Running ru.job4j.professions.ProfessionsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in ru.job4j.professions.ProfessionsTest
+Running ru.job4j.chess.BoardTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in ru.job4j.chess.BoardTest
+
+Results :
+
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (report) @ chapter_002 ---
+[INFO] Loading execution data file /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_002/target/jacoco.exec
+[INFO] Analyzed bundle 'chapter_002' with 33 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building chapter_003 2.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ chapter_003 ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ chapter_003 ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ chapter_003 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ chapter_003 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ chapter_003 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ chapter_003 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ chapter_003 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ru.job4j.bank.BankTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec <<< FAILURE! - in ru.job4j.bank.BankTest
+whenDeleteUserThenNoAccounts(ru.job4j.bank.BankTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<[]>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at ru.job4j.bank.BankTest.whenDeleteUserThenNoAccounts(BankTest.java:35)
+
+Running ru.job4j.search.PriorityQueueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in ru.job4j.search.PriorityQueueTest
+Running ru.job4j.search.UserConvertTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in ru.job4j.search.UserConvertTest
+Running ru.job4j.search.PhoneDictionaryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in ru.job4j.search.PhoneDictionaryTest
+Running ru.job4j.search.ConvertListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in ru.job4j.search.ConvertListTest
+Running ru.job4j.comparator.ListCompareTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in ru.job4j.comparator.ListCompareTest
+Running ru.job4j.coffe.CoffeeMachineTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in ru.job4j.coffe.CoffeeMachineTest
+Running ru.job4j.sort.SortUserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in ru.job4j.sort.SortUserTest
+Running ru.job4j.sort.SortDepartmentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in ru.job4j.sort.SortDepartmentTest
+
+Results :
+
+Failed tests: 
+  BankTest.whenDeleteUserThenNoAccounts:35 expected null, but was:<[]>
+
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] junior ............................................. SUCCESS [  3.995 s]
+[INFO] chapter_001 ........................................ SUCCESS [  6.914 s]
+[INFO] chapter_002 ........................................ SUCCESS [  3.729 s]
+[INFO] chapter_003 ........................................ FAILURE [  2.275 s]
+[INFO] chapter_101 ........................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17.173 s
+[INFO] Finished at: 2020-02-15T18:15:08+01:00
+[INFO] Final Memory: 28M/68M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project chapter_003: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project chapter_003: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :chapter_003
