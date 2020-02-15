@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "SzFMV2018-Tavasz/AutomatedCar",
-  "bugCommit": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/compare/31e65a37b7ba...30eca33e9a50",
-  "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/372299640",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 104,
-  "failing-test-cases": [
-    {
-      "className": "hu.oe.nik.szfmv.environment.WorldTest",
-      "failingMethods": [
-        "hu.oe.nik.szfmv.environment.WorldTest#isGameOver"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:18 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:36:11 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 77537632,
+      "totalMemory": 318722048
+    },
+    "totalDuration": 1310,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1258,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1258
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SzFMV2018-Tavasz-AutomatedCar-372299640-20180428-045359-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SzFMV2018-Tavasz-AutomatedCar-372299640-20180428-045359-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 104,
+      "numberPassing": 103,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.environment.WorldTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.environment.WorldTest",
+        "testMethod": "isGameOver",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 72,
+    "numberTestFiles": 22,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {}
 }
