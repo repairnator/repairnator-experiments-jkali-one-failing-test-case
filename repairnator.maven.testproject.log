@@ -1,0 +1,402 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for de.felix_klauke:doctrin-server:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ de.felix_klauke:doctrin-server:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/server/pom.xml, line 33, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for de.felix_klauke:doctrin-commons:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ de.felix_klauke:doctrin-commons:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/commons/pom.xml, line 34, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for de.felix_klauke:doctrin-client:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ de.felix_klauke:doctrin-client:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/client/pom.xml, line 34, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for de.felix_klauke:doctrin-core:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ de.felix_klauke:doctrin-core:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/core/pom.xml, line 34, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] doctrin-parent
+[INFO] doctrin-commons
+[INFO] doctrin-core
+[INFO] doctrin-server
+[INFO] doctrin-client
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building doctrin-parent 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building doctrin-commons 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ doctrin-commons ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/commons/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ doctrin-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ doctrin-commons ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ doctrin-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ doctrin-commons ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/commons/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 82.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1308.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.felix_klauke.doctrin.commons.codec.JsonDecoderTest
+14:46:06.722 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+14:46:06.729 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+14:46:06.731 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+14:46:06.731 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+14:46:06.732 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+14:46:06.732 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+14:46:06.733 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+14:46:06.733 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+14:46:06.733 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+14:46:06.734 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+14:46:06.734 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+14:46:06.734 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+14:46:06.734 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+14:46:06.737 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+14:46:06.738 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1131216896 bytes
+14:46:06.738 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+14:46:06.742 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+14:46:06.754 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+14:46:06.760 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+14:46:06.760 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+14:46:06.761 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3cbbc1e0
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 sec - in de.felix_klauke.doctrin.commons.codec.JsonDecoderTest
+Running de.felix_klauke.doctrin.commons.codec.JsonEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.felix_klauke.doctrin.commons.codec.JsonEncoderTest
+Running de.felix_klauke.doctrin.commons.message.DoctrinMessageWrapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 sec - in de.felix_klauke.doctrin.commons.message.DoctrinMessageWrapperTest
+Running de.felix_klauke.doctrin.commons.message.DoctrinMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.felix_klauke.doctrin.commons.message.DoctrinMessageTest
+Running de.felix_klauke.doctrin.commons.DoctrinCommonsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.felix_klauke.doctrin.commons.DoctrinCommonsTest
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building doctrin-core 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ doctrin-core ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ doctrin-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ doctrin-core ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ doctrin-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ doctrin-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.felix_klauke.doctrin.core.subscription.SubscriptionManagerImplTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.767 sec - in de.felix_klauke.doctrin.core.subscription.SubscriptionManagerImplTest
+Running de.felix_klauke.doctrin.core.subscription.SubscriberImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in de.felix_klauke.doctrin.core.subscription.SubscriberImplTest
+Running de.felix_klauke.doctrin.core.DoctrinCoreApplicationImplTest
+14:46:08,686 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:46:08,686 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+14:46:08,686 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/core/target/classes/logback.xml]
+14:46:08,731 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:46:08,731 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:46:08,736 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+14:46:08,741 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:46:08,785 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:46:08,787 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+14:46:08,795 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@1750fbeb - Will use zip compression
+14:46:08,795 |-WARN in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@1750fbeb - Large window sizes are not allowed.
+14:46:08,795 |-WARN in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@1750fbeb - MaxIndex reduced to 21
+14:46:08,797 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: log/doctrin-core.log
+14:46:08,797 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [log/doctrin-core.log]
+14:46:08,802 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [de.felix_klauke.doctrin.core] to DEBUG
+14:46:08,802 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [de.felix_klauke.doctrin.core] to false
+14:46:08,802 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[de.felix_klauke.doctrin.core]
+14:46:08,802 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[de.felix_klauke.doctrin.core]
+14:46:08,802 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to ERROR
+14:46:08,802 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+14:46:08,802 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:46:08,803 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5b247367 - Registering current configuration as safe fallback point
+
+14:46:08 [main] INFO  DoctrinCoreApplicationImpl - Handling {"targetChannel":"test-channel"} for remote subscriber-01 and action SUBSCRIBE.
+14:46:08 [main] INFO  DoctrinCoreApplicationImpl - No suitable subscriber found for remote name subscriber-01.
+14:46:08 [main] INFO  DoctrinCoreApplicationImpl - Handling that subscriber-01 subscribes on channel test-channel via message {}.
+14:46:08 [main] INFO  DoctrinCoreApplicationImpl - Handling {"Felix":"Klauke"} for remote subscriber-01 and action UPDATE_SUBSCRIBER_NAME.
+14:46:08 [main] INFO  DoctrinCoreApplicationImpl - No suitable subscriber found for remote name subscriber-01.
+14:46:08 [main] INFO  DoctrinCoreApplicationImpl - Handling that subscriber-01 updates his name to f5fa87ca-56e4-4d65-8d17-750bbacb8489 via message {"Felix":"Klauke"}.
+14:46:08 [main] INFO  DoctrinCoreApplicationImpl - Handling {"Felix":"Klauke"} for remote subscriber-01 and action UNKNOWN.
+14:46:08 [main] INFO  DoctrinCoreApplicationImpl - No suitable subscriber found for remote name subscriber-01.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 sec - in de.felix_klauke.doctrin.core.DoctrinCoreApplicationImplTest
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building doctrin-server 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ doctrin-server ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ doctrin-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ doctrin-server ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ doctrin-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ doctrin-server ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.felix_klauke.doctrin.server.channel.DoctrinServerChannelInitializerTest
+14:46:09,525 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:46:09,525 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+14:46:09,525 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/server/target/classes/logback.xml]
+14:46:09,525 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+14:46:09,527 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/core/target/classes/logback.xml]
+14:46:09,527 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/server/target/classes/logback.xml]
+14:46:09,616 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:46:09,616 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:46:09,621 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+14:46:09,646 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:46:09,704 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:46:09,707 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+14:46:09,720 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@6fd02e5 - Will use zip compression
+14:46:09,720 |-WARN in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@6fd02e5 - Large window sizes are not allowed.
+14:46:09,720 |-WARN in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@6fd02e5 - MaxIndex reduced to 21
+14:46:09,722 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: log/doctrin-server.log
+14:46:09,722 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [log/doctrin-server.log]
+14:46:09,727 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [de.felix_klauke.doctrin.server] to DEBUG
+14:46:09,727 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [de.felix_klauke.doctrin.server] to false
+14:46:09,727 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[de.felix_klauke.doctrin.server]
+14:46:09,728 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[de.felix_klauke.doctrin.server]
+14:46:09,728 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [de.felix_klauke.doctrin.core] to DEBUG
+14:46:09,728 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [de.felix_klauke.doctrin.core] to false
+14:46:09,728 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[de.felix_klauke.doctrin.core]
+14:46:09,728 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[de.felix_klauke.doctrin.core]
+14:46:09,728 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to ERROR
+14:46:09,728 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+14:46:09,728 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:46:09,728 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5bcab519 - Registering current configuration as safe fallback point
+
+14:46:10 [main] INFO  DoctrinServerApplicationImpl - New Connection was established.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.097 sec - in de.felix_klauke.doctrin.server.channel.DoctrinServerChannelInitializerTest
+Running de.felix_klauke.doctrin.server.config.DoctrinServerConfigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.felix_klauke.doctrin.server.config.DoctrinServerConfigTest
+Running de.felix_klauke.doctrin.server.provider.ServerBootstrapProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.felix_klauke.doctrin.server.provider.ServerBootstrapProviderTest
+Running de.felix_klauke.doctrin.server.DoctrinServerApplicationImplTest
+14:46:10 [main] INFO  DoctrinServerApplicationImpl - New Connection was established.
+14:46:10 [main] INFO  DoctrinServerApplicationImpl - Initializing doctrin server application.
+14:46:10 [main] INFO  DoctrinServerApplicationImpl - Initialized doctrin server application.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec - in de.felix_klauke.doctrin.server.DoctrinServerApplicationImplTest
+Running de.felix_klauke.doctrin.server.DoctrinServerBootstrapTest
+14:46:11 [main] INFO  DoctrinServerApplicationImpl - Initializing doctrin server application.
+14:46:11 [main] INFO  DoctrinNettyServer - Initializing server bootstrap.
+14:46:11 [main] INFO  DoctrinNettyServer - Binding server bootstrap on localhost:8085.
+14:46:11 [main] INFO  DoctrinNettyServer - Bound server bootstrap on localhost:8085.
+14:46:11 [main] INFO  DoctrinServerApplicationImpl - Initialized doctrin server application.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.336 sec - in de.felix_klauke.doctrin.server.DoctrinServerBootstrapTest
+Running de.felix_klauke.doctrin.server.network.DoctrinNettyServerTest
+14:46:11 [main] INFO  DoctrinNettyServer - Initializing server bootstrap.
+14:46:11 [main] INFO  DoctrinNettyServer - Binding server bootstrap on localhost:9999.
+14:46:11 [main] INFO  DoctrinNettyServer - Bound server bootstrap on localhost:9999.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 sec - in de.felix_klauke.doctrin.server.network.DoctrinNettyServerTest
+Running de.felix_klauke.doctrin.server.connection.DoctrinNettyServerConnectionTest
+14:46:12 [main] DEBUG DoctrinNettyServerConnection - Handling incoming raw message {"felix":"klauke"} for 4f6bb73a-09b0-4d9d-b304-db8d17d41944.
+14:46:12 [main] DEBUG DoctrinNettyServerConnection - Sending message {"felix":"klauke"} to client 9d005a06-ffef-40cd-bc14-1d50f65cd2b9.
+14:46:12 [main] DEBUG DoctrinNettyServerConnection - Setting remote name from d1ee0327-7b6a-467d-9eee-af818184076b to test-01.
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 sec - in de.felix_klauke.doctrin.server.connection.DoctrinNettyServerConnectionTest
+Running de.felix_klauke.doctrin.server.connection.DoctrinNettyMessageContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in de.felix_klauke.doctrin.server.connection.DoctrinNettyMessageContextTest
+
+Results :
+
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building doctrin-client 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ doctrin-client ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ doctrin-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ doctrin-client ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ doctrin-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ doctrin-client ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.felix_klauke.doctrin.client.net.NetworkClientImplTest
+14:46:13,624 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:46:13,624 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+14:46:13,624 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/client/target/classes/logback.xml]
+14:46:13,740 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:46:13,741 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:46:13,755 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+14:46:13,771 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:46:13,847 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:46:13,850 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+14:46:13,860 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@5f341870 - Will use zip compression
+14:46:13,860 |-WARN in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@5f341870 - Large window sizes are not allowed.
+14:46:13,860 |-WARN in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@5f341870 - MaxIndex reduced to 21
+14:46:13,862 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: log/doctrin-client.log
+14:46:13,862 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [log/doctrin-client.log]
+14:46:13,863 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [de.felix_klauke.doctrin.client] to DEBUG
+14:46:13,863 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [de.felix_klauke.doctrin.client] to false
+14:46:13,863 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[de.felix_klauke.doctrin.client]
+14:46:13,864 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[de.felix_klauke.doctrin.client]
+14:46:13,864 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to ERROR
+14:46:13,864 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+14:46:13,864 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:46:13,864 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@553f17c - Registering current configuration as safe fallback point
+
+14:46:15 [main] INFO  NetworkClientImpl - It seems like there is no connection to the server. Storing message Mock for JSONObject, hashCode: 873827336 in sending queue.
+14:46:15 [main] INFO  NetworkClientImpl - Connecting to 0.0.0.0:25569.
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.792 sec - in de.felix_klauke.doctrin.client.net.NetworkClientImplTest
+Running de.felix_klauke.doctrin.client.DoctrinClientFactoryTest
+14:46:15 [main] INFO  DoctrinClientFactory - Creating new client against 0.0.0.0:25568.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in de.felix_klauke.doctrin.client.DoctrinClientFactoryTest
+Running de.felix_klauke.doctrin.client.DoctrinClientImplTest
+14:46:15 [main] INFO  DoctrinClientImpl - A subscription on the channel test was scheduled.
+14:46:15 [main] INFO  DoctrinClientImpl - Unsubscribing from channel test.
+14:46:15 [main] INFO  DoctrinClientImpl - A subscription on the channel test was scheduled.
+14:46:15 [main] INFO  DoctrinClientImpl - Unsubscribing from channel test.
+14:46:15 [main] INFO  DoctrinClientImpl - Unsubscribed from channel test.
+14:46:16 [main] INFO  DoctrinClientImpl - A subscription on the channel test was scheduled.
+14:46:16 [main] INFO  DoctrinClientImpl - A subscription on the channel test was scheduled.
+14:46:16 [main] INFO  DoctrinClientImpl - Found existing subscription on channel test, restoring.
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.318 sec <<< FAILURE! - in de.felix_klauke.doctrin.client.DoctrinClientImplTest
+testSubscribeChannelWithCacheHit(de.felix_klauke.doctrin.client.DoctrinClientImplTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<io.reactivex.internal.operators.observable.ObservableDoOnEach@5b057c8c> but was:<io.reactivex.subjects.PublishSubject@1eb6749b>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.felix_klauke.doctrin.client.DoctrinClientImplTest.testSubscribeChannelWithCacheHit(DoctrinClientImplTest.java:51)
+
+Running de.felix_klauke.doctrin.client.connection.DoctrinClientConnectionImplTest
+14:46:16 [main] DEBUG DoctrinClientConnectionImpl - Received raw message: Mock for JSONObject, hashCode: 197491520.
+14:46:16 [Doctrin Publisher Worker #0] DEBUG DoctrinClientConnectionImpl - Sending object to server: Mock for JSONObject, hashCode: 1033487927.
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 sec - in de.felix_klauke.doctrin.client.connection.DoctrinClientConnectionImplTest
+
+Results :
+
+Failed tests: 
+  DoctrinClientImplTest.testSubscribeChannelWithCacheHit:51 expected:<io.reactivex.internal.operators.observable.ObservableDoOnEach@5b057c8c> but was:<io.reactivex.subjects.PublishSubject@1eb6749b>
+
+Tests run: 19, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] doctrin-parent ..................................... SUCCESS [  0.016 s]
+[INFO] doctrin-commons .................................... SUCCESS [  4.261 s]
+[INFO] doctrin-core ....................................... SUCCESS [  1.652 s]
+[INFO] doctrin-server ..................................... SUCCESS [  3.855 s]
+[INFO] doctrin-client ..................................... FAILURE [  4.354 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.343 s
+[INFO] Finished at: 2020-02-15T14:46:17+01:00
+[INFO] Final Memory: 13M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project doctrin-client: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/client/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project doctrin-client: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/client/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-FelixKlauke-doctrin-353685522-20180315-073755-firstCommit/client/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :doctrin-client
