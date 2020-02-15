@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "abel533/Mapper",
-  "bugCommit": "https://github.com/abel533/Mapper/compare/30f65de20466...75792939bf78",
-  "failingModule": "/root/workspace/abel533/Mapper/350695821/core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 28,
-  "failing-test-cases": [
-    {
-      "className": "tk.mybatis.mapper.annotation.KeySqlTest",
-      "failingMethods": [
-        "tk.mybatis.mapper.annotation.KeySqlTest#testSql"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:12 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:16:11 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 18911584,
+      "totalMemory": 107925504
+    },
+    "totalDuration": 115,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          34
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-abel533-Mapper-350695821-20180308-075333-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-abel533-Mapper-350695821-20180308-075333-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 28,
+      "numberPassing": 27,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003cselect seq.nextval from dual\u003e but was:\u003cnull\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "tk.mybatis.mapper.annotation.KeySqlTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "tk.mybatis.mapper.annotation.KeySqlTest",
+        "testMethod": "testSql",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cselect seq.nextval from dual\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberPlugins": 0,
+    "numberSourceFiles": 133,
+    "numberTestFiles": 139,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  }
 }
