@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "EnMasseProject/enmasse",
-  "failingModule": "/root/workspace/EnMasseProject/enmasse/353457987/k8s-api",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.mockito.exceptions.verification.TooLittleActualInvocations"
-  ],
-  "totalNumberRunningTests": 26,
-  "failing-test-cases": [
-    {
-      "className": "io.enmasse.k8s.api.cache.FifoQueueTest",
-      "failingMethods": [
-        "io.enmasse.k8s.api.cache.FifoQueueTest#testRemove"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:28 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:49:48 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 81479784,
+      "totalMemory": 212066304
+    },
+    "totalDuration": 257,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 97,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          97
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit/k8s-api",
+    "overallMetrics": {
+      "numberRunning": 26,
+      "numberPassing": 25,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.mockito.exceptions.verification.TooLittleActualInvocations",
-          "failureDetail": "\nprocessor.process(\"k1\");\nWanted 2 times:\n-\u003e at io.enmasse.k8s.api.cache.FifoQueueTest.testRemove(FifoQueueTest.java:64)\nBut was 1 time:\n-\u003e at io.enmasse.k8s.api.cache.FifoQueue.pop(FifoQueue.java:65)\n",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.enmasse.k8s.api.cache.FifoQueueTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.enmasse.k8s.api.cache.FifoQueueTest",
+        "testMethod": "testRemove",
+        "failureName": "org.mockito.exceptions.verification.TooLittleActualInvocations",
+        "detail": "\nprocessor.process(\"k1\");\nWanted 2 times:\n-\u003e at io.enmasse.k8s.api.cache.FifoQueueTest.testRemove(FifoQueueTest.java:64)\nBut was 1 time:\n-\u003e at io.enmasse.k8s.api.cache.FifoQueue.pop(FifoQueue.java:65)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberPlugins": 0,
+    "numberSourceFiles": 329,
+    "numberTestFiles": 130,
+    "numberLibrariesFailingModule": 36,
+    "numberLines": 0
+  }
 }
