@@ -1,0 +1,379 @@
+[beforeClass][before][a][after][before][b][after][afterClass]
+ojects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] TestAnalyzer Parent
+[INFO] TestAnalyzer Core
+[INFO] TestAnalyzer Runner
+[INFO] TestAnalyzer StackDistance
+[INFO] TestAnalyzer Extensions
+[INFO] TestAnalyzer StackDistance Maven-Plugin
+[INFO] TestAnalyzer Integration Tests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TestAnalyzer Parent 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ test-analyzer-parent ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TestAnalyzer Core 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ test-analyzer-core ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-core/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-test-source (default) @ test-analyzer-core ---
+[INFO] Test Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-core/src/test/resources added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test-analyzer-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ test-analyzer-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 105 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test-analyzer-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ test-analyzer-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ test-analyzer-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 5.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 101.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1029.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.tum.in.niedermr.ta.core.code.tests.detector.junit.TestClassWithInnerClass
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 sec - in de.tum.in.niedermr.ta.core.code.tests.detector.junit.TestClassWithInnerClass
+Running de.tum.in.niedermr.ta.core.code.tests.detector.junit.JUnitTestClassDetectorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.352 sec - in de.tum.in.niedermr.ta.core.code.tests.detector.junit.JUnitTestClassDetectorTest
+Running de.tum.in.niedermr.ta.core.code.tests.collector.TestCollectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in de.tum.in.niedermr.ta.core.code.tests.collector.TestCollectorTest
+Running de.tum.in.niedermr.ta.core.code.tests.runner.junit.ClassUnderJUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in de.tum.in.niedermr.ta.core.code.tests.runner.junit.ClassUnderJUnitTest
+Running de.tum.in.niedermr.ta.core.code.tests.runner.junit.JUnitTestRunnerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in de.tum.in.niedermr.ta.core.code.tests.runner.junit.JUnitTestRunnerTest
+Running de.tum.in.niedermr.ta.core.code.tests.runner.junit.JUnitTestRunResultTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in de.tum.in.niedermr.ta.core.code.tests.runner.junit.JUnitTestRunResultTest
+Running de.tum.in.niedermr.ta.core.code.util.OpcodesUtilityTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.tum.in.niedermr.ta.core.code.util.OpcodesUtilityTest
+Running de.tum.in.niedermr.ta.core.code.util.JavaUtilityTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in de.tum.in.niedermr.ta.core.code.util.JavaUtilityTest
+Running de.tum.in.niedermr.ta.core.code.util.BytecodeUtilityTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in de.tum.in.niedermr.ta.core.code.util.BytecodeUtilityTest
+Running de.tum.in.niedermr.ta.core.code.util.IdentificationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.tum.in.niedermr.ta.core.code.util.IdentificationTest
+Running de.tum.in.niedermr.ta.core.code.identifier.MethodIdentifierTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in de.tum.in.niedermr.ta.core.code.identifier.MethodIdentifierTest
+Running de.tum.in.niedermr.ta.core.code.identifier.TestcaseIdentifierTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.tum.in.niedermr.ta.core.code.identifier.TestcaseIdentifierTest
+Running de.tum.in.niedermr.ta.core.artifacts.jars.JarIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in de.tum.in.niedermr.ta.core.artifacts.jars.JarIteratorTest
+Running de.tum.in.niedermr.ta.core.common.util.CommonUtilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in de.tum.in.niedermr.ta.core.common.util.CommonUtilityTest
+Running de.tum.in.niedermr.ta.core.common.util.FileUtilityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in de.tum.in.niedermr.ta.core.common.util.FileUtilityTest
+Running de.tum.in.niedermr.ta.core.common.util.StringUtilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.tum.in.niedermr.ta.core.common.util.StringUtilityTest
+Running de.tum.in.niedermr.ta.core.common.util.ClasspathUtilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.tum.in.niedermr.ta.core.common.util.ClasspathUtilityTest
+Running de.tum.in.niedermr.ta.core.common.io.TextFileUtilityTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in de.tum.in.niedermr.ta.core.common.io.TextFileUtilityTest
+Running de.tum.in.niedermr.ta.core.analysis.filter.MethodFilterListTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.tum.in.niedermr.ta.core.analysis.filter.MethodFilterListTest
+Running de.tum.in.niedermr.ta.core.analysis.filter.FilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in de.tum.in.niedermr.ta.core.analysis.filter.FilterTest
+Running de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.base.AbstractSimpleReturnValueGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.base.AbstractSimpleReturnValueGeneratorTest
+Running de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.base.AbstractFactoryReturnValueGeneratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.base.AbstractFactoryReturnValueGeneratorTest
+Running de.tum.in.niedermr.ta.core.analysis.result.receiver.ResultReceiverFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.tum.in.niedermr.ta.core.analysis.result.receiver.ResultReceiverFactoryTest
+Running de.tum.in.niedermr.ta.core.analysis.result.receiver.FileResultReceiverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.tum.in.niedermr.ta.core.analysis.result.receiver.FileResultReceiverTest
+Running de.tum.in.niedermr.ta.core.analysis.result.receiver.MultiFileResultReceiverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in de.tum.in.niedermr.ta.core.analysis.result.receiver.MultiFileResultReceiverTest
+Running de.tum.in.niedermr.ta.core.analysis.result.receiver.InMemoryResultReceiverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.tum.in.niedermr.ta.core.analysis.result.receiver.InMemoryResultReceiverTest
+Running de.tum.in.niedermr.ta.core.analysis.instrumentation.InvocationLoggerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.tum.in.niedermr.ta.core.analysis.instrumentation.InvocationLoggerTest
+
+Results :
+
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TestAnalyzer Runner 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ test-analyzer-runner ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-runner/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-test-source (default) @ test-analyzer-runner ---
+[INFO] Test Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-runner/src/test/resources added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test-analyzer-runner ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-runner/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ test-analyzer-runner ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test-analyzer-runner ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ test-analyzer-runner ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ test-analyzer-runner ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-runner/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.SimpleReturnValueGeneratorWith0Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.298 sec - in de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.SimpleReturnValueGeneratorWith0Test
+Running de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.SimpleInstancesReturnValueGeneratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.SimpleInstancesReturnValueGeneratorTest
+Running de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.SimpleAndWrapperReturnValueGeneratorWith0Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.SimpleAndWrapperReturnValueGeneratorWith0Test
+Running de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.NullReturnValueGeneratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.NullReturnValueGeneratorTest
+Running de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.VoidReturnValueGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.VoidReturnValueGeneratorTest
+Running de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.SimpleReturnValueGeneratorWith1Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.tum.in.niedermr.ta.core.analysis.mutation.returnvalues.SimpleReturnValueGeneratorWith1Test
+Running de.tum.in.niedermr.ta.runner.analysis.instrumentation.source.SourceInstrumentationOperationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in de.tum.in.niedermr.ta.runner.analysis.instrumentation.source.SourceInstrumentationOperationTest
+Running de.tum.in.niedermr.ta.runner.analysis.result.presentation.sql.SqlMultiInsertStatementBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in de.tum.in.niedermr.ta.runner.analysis.result.presentation.sql.SqlMultiInsertStatementBuilderTest
+Running de.tum.in.niedermr.ta.runner.analysis.result.presentation.DatabaseResultPresentationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in de.tum.in.niedermr.ta.runner.analysis.result.presentation.DatabaseResultPresentationTest
+Running de.tum.in.niedermr.ta.runner.analysis.result.presentation.PresentationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in de.tum.in.niedermr.ta.runner.analysis.result.presentation.PresentationTest
+Running de.tum.in.niedermr.ta.runner.analysis.workflow.steps.testworkflow.MethodMutationTestStateStatisticsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.tum.in.niedermr.ta.runner.analysis.workflow.steps.testworkflow.MethodMutationTestStateStatisticsTest
+Running de.tum.in.niedermr.ta.runner.execution.ProcessExecutionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in de.tum.in.niedermr.ta.runner.execution.ProcessExecutionTest
+Running de.tum.in.niedermr.ta.runner.execution.args.ProgramArgsReaderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.tum.in.niedermr.ta.runner.execution.args.ProgramArgsReaderTest
+Running de.tum.in.niedermr.ta.runner.execution.args.ProgramArgsWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.tum.in.niedermr.ta.runner.execution.args.ProgramArgsWriterTest
+Running de.tum.in.niedermr.ta.runner.execution.id.ExecutionIdTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.tum.in.niedermr.ta.runner.execution.id.ExecutionIdTest
+Running de.tum.in.niedermr.ta.runner.execution.environment.EnvironmentTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.tum.in.niedermr.ta.runner.execution.environment.EnvironmentTest
+Running de.tum.in.niedermr.ta.runner.execution.JavaProcessCommandBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.tum.in.niedermr.ta.runner.execution.JavaProcessCommandBuilderTest
+Running de.tum.in.niedermr.ta.runner.execution.infocollection.CollectedInformationUtilityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in de.tum.in.niedermr.ta.runner.execution.infocollection.CollectedInformationUtilityTest
+Running de.tum.in.niedermr.ta.runner.configuration.property.templates.ClasspathPropertyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.tum.in.niedermr.ta.runner.configuration.property.templates.ClasspathPropertyTest
+Running de.tum.in.niedermr.ta.runner.configuration.property.templates.BooleanPropertyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in de.tum.in.niedermr.ta.runner.configuration.property.templates.BooleanPropertyTest
+Running de.tum.in.niedermr.ta.runner.configuration.property.templates.GenericConfigurationPropertyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.tum.in.niedermr.ta.runner.configuration.property.templates.GenericConfigurationPropertyTest
+Running de.tum.in.niedermr.ta.runner.configuration.property.templates.MultiStringPropertyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.tum.in.niedermr.ta.runner.configuration.property.templates.MultiStringPropertyTest
+Running de.tum.in.niedermr.ta.runner.configuration.property.templates.ClassnamePropertyTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.tum.in.niedermr.ta.runner.configuration.property.templates.ClassnamePropertyTest
+Running de.tum.in.niedermr.ta.runner.configuration.property.templates.MultiClassnamePropertyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.tum.in.niedermr.ta.runner.configuration.property.templates.MultiClassnamePropertyTest
+Running de.tum.in.niedermr.ta.runner.configuration.parser.migration.ConfigurationMigrationManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in de.tum.in.niedermr.ta.runner.configuration.parser.migration.ConfigurationMigrationManagerTest
+Running de.tum.in.niedermr.ta.runner.configuration.parser.ConfigurationParserTest
+INFO Configuration 'C' inherits 'D'
+INFO Configuration 'B' inherits 'C'
+INFO Configuration 'A' inherits 'B'
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in de.tum.in.niedermr.ta.runner.configuration.parser.ConfigurationParserTest
+Running de.tum.in.niedermr.ta.runner.configuration.ConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in de.tum.in.niedermr.ta.runner.configuration.ConfigurationTest
+Running de.tum.in.niedermr.ta.runner.configuration.ConfigurationManagerTest
+INFO Configuration from file: ./src/test/data/ConfigurationLoaderTest/testConfigurationFromFile.config
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.022 sec - in de.tum.in.niedermr.ta.runner.configuration.ConfigurationManagerTest
+Running de.tum.in.niedermr.ta.runner.configuration.extension.DynamicConfigurationValuesManagerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.tum.in.niedermr.ta.runner.configuration.extension.DynamicConfigurationValuesManagerTest
+Running de.tum.in.niedermr.ta.runner.logging.LoggingUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.tum.in.niedermr.ta.runner.logging.LoggingUtilTest
+Running de.tum.in.niedermr.ta.runner.factory.FactoryUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.tum.in.niedermr.ta.runner.factory.FactoryUtilTest
+
+Results :
+
+Tests run: 84, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TestAnalyzer StackDistance 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ test-analyzer-sdist ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-sdist/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-test-source (default) @ test-analyzer-sdist ---
+[INFO] Test Source directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-sdist/src/test/resources added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test-analyzer-sdist ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-sdist/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ test-analyzer-sdist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test-analyzer-sdist ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ test-analyzer-sdist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ test-analyzer-sdist ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-sdist/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.instrumentation.StackDistanceInstrumentationWithDummyRecorderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.491 sec - in de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.instrumentation.StackDistanceInstrumentationWithDummyRecorderTest
+Running de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.instrumentation.StackDistanceInstrumentationWithRecorderV3Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.instrumentation.StackDistanceInstrumentationWithRecorderV3Test
+Running de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.maven.SurefireCsvTestListenerTest
+INFO Registered StackManager at the ThreadNotifier.
+WARN Thread class verification is disabled!
+INFO ThreadStackManager is set and verified.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.maven.SurefireCsvTestListenerTest
+Running de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.maven.SurefireJsonTestListenerTest
+INFO Registered StackManager at the ThreadNotifier.
+WARN Thread class verification is disabled!
+INFO ThreadStackManager is set and verified.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.maven.SurefireJsonTestListenerTest
+Running de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.maven.SurefireTestListenerTest
+INFO Registered StackManager at the ThreadNotifier.
+WARN Thread class verification is disabled!
+INFO ThreadStackManager is set and verified.
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec <<< FAILURE! - in de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.maven.SurefireTestListenerTest
+testOutputGeneration(de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.maven.SurefireTestListenerTest)  Time elapsed: 0.022 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...ss.a()', '1', '2'); []> but was:<...ss.a()', '1', '2'); [
+#Failing test case: de.tum.in.niedermr.ta.sample.junit.SampleJUnitTestClass;testCase2]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at de.tum.in.niedermr.ta.core.common.TestUtility.assertFileContentMatchesResultReceiver(TestUtility.java:43)
+	at de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.maven.AbstractSurefireTestListenerTest.testOutputGeneration(AbstractSurefireTestListenerTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Running de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.recording.v1.StackLogRecorderV1Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.recording.v1.StackLogRecorderV1Test
+Running de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.datamanager.threading.ThreadStackManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.datamanager.threading.ThreadStackManagerTest
+Running de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.datamanager.StackLogDataManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in de.tum.in.niedermr.ta.extensions.analysis.workflows.stackdistance.datamanager.StackLogDataManagerTest
+
+Results :
+
+Failed tests: 
+  SurefireTestListenerTest>AbstractSurefireTestListenerTest.testOutputGeneration:48 expected:<...ss.a()', '1', '2'); []> but was:<...ss.a()', '1', '2'); [
+#Failing test case: de.tum.in.niedermr.ta.sample.junit.SampleJUnitTestClass;testCase2]>
+
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] TestAnalyzer Parent ................................ SUCCESS [  1.932 s]
+[INFO] TestAnalyzer Core .................................. SUCCESS [  9.617 s]
+[INFO] TestAnalyzer Runner ................................ SUCCESS [  3.297 s]
+[INFO] TestAnalyzer StackDistance ......................... FAILURE [  3.250 s]
+[INFO] TestAnalyzer Extensions ............................ SKIPPED
+[INFO] TestAnalyzer StackDistance Maven-Plugin ............ SKIPPED
+[INFO] TestAnalyzer Integration Tests ..................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.385 s
+[INFO] Finished at: 2020-02-15T23:14:47+01:00
+[INFO] Final Memory: 22M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project test-analyzer-sdist: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-sdist/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project test-analyzer-sdist: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-sdist/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-sdist/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :test-analyzer-sdist
