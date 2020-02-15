@@ -1,0 +1,859 @@
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+Feb 15, 2020 11:15:13 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.0.4 (Final)
+Feb 15, 2020 11:15:13 PM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.1.0.Final
+Feb 15, 2020 11:15:14 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+INFO: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+Feb 15, 2020 11:15:14 PM org.jboss.weld.bootstrap.events.BeforeBeanDiscoveryImpl addAnnotatedType
+WARN: WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor is deprecated from CDI 1.1!
+Feb 15, 2020 11:15:15 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.gson.JsonSerializer<java.lang.Enum<?>> ignored on [EnhancedAnnotatedTypeImpl] static  class br.com.caelum.vraptor.serialization.gson.GsonJSONSerializationTest$EnumSerializer
+Feb 15, 2020 11:15:15 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.http.iogi.IogiParametersProviderTest$NullVRaptorInstantiator is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 11:15:15 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.serialization.gson.GsonJSONPSerialization$1 is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 11:15:15 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.common.collect.ForwardingMap<java.lang.Class<?>, java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 11:15:15 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type interface java.util.Map<java.lang.Class<?>,class java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 11:15:16 PM org.jboss.weld.environment.se.WeldContainer fireContainerInitializedEvent
+INFO: WELD-ENV-002003: Weld SE container 4b0ddbcd-1ed3-4086-9821-432298b76ee8 initialized
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /abc/{abc:[0-9A-Z]*}/def/{def}                    [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$MyResource.method(java.lang.String,java.lang.Integer,java.math.BigDecimal)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /abc/{abc:[0-9A-Z]{5}}/                           [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$MyResource.method(java.lang.String,java.lang.Integer,java.math.BigDecimal)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /abc/{abc:[0-9A-Z]{5}}{def}{xxx:[0-9A-Z]{5}}      [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$MyResource.method(java.lang.String,java.lang.Integer,java.math.BigDecimal)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /abc/{abc:[0-9A-Z]{5}}/def/{def}                  [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$MyResource.method(java.lang.String,java.lang.Integer,java.math.BigDecimal)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /abc/{abc}/def/{def}/ghi/{ghi}                    [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$MyResource.method(java.lang.String,java.lang.Integer,java.math.BigDecimal)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /my/{abc.def*}                                    [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$AbcResource.abc(br.com.caelum.vraptor.http.route.RouteBuilderTest$Abc)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /abc/{abc:a+b+c+}/def/{def}/ghi/{ghi}             [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$MyResource.method(java.lang.String,java.lang.Integer,java.math.BigDecimal)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /abc/{abc:[0-9A-Z]{5}}                            [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$MyResource.method(java.lang.String,java.lang.Integer,java.math.BigDecimal)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /abc/{abc}/def/{def}/ghi/{ghi}                    [ALL] -> public void br.com.caelum.vraptor.http.route.RouteBuilderTest$MyResource.method(java.lang.String,java.lang.Integer,java.math.BigDecimal)
+[main] WARN br.com.caelum.vraptor.http.route.DefaultParametersControl - Can't encode parameter : Anything with encoding : null
+[main] WARN br.com.caelum.vraptor.http.route.DefaultParametersControl - Can't encode parameter : 123 with encoding : null
+[main] WARN br.com.caelum.vraptor.http.route.DefaultParametersControl - Can't encode parameter : 123.45 with encoding : null
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /myPath                                           [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.customizedPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /dogs/{page}                                      [GET] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.listDogs(java.lang.Integer)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /dogs                                             [GET] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.listDogs(java.lang.Integer)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /*/customPath                                     [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.starPatTests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in br.com.caelum.vraptor.http.route.DefaultRouterTest
+Running br.com.caelum.vraptor.http.route.DefaultParametersControlTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in br.com.caelum.vraptor.http.route.DefaultParametersControlTest
+Running br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest
+Running br.com.caelum.vraptor.http.EncodingHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.http.EncodingHandlerTest
+Running br.com.caelum.vraptor.http.DefaultControllerTranslatorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in br.com.caelum.vraptor.http.DefaultControllerTranslatorTest
+Running br.com.caelum.vraptor.http.VRaptorRequestTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in br.com.caelum.vraptor.http.VRaptorRequestTest
+Running br.com.caelum.vraptor.http.ParanamerNameProviderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in br.com.caelum.vraptor.http.ParanamerNameProviderTest
+Running br.com.caelum.vraptor.http.DefaultFormatResolverTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in br.com.caelum.vraptor.http.DefaultFormatResolverTest
+Running br.com.caelum.vraptor.interceptor.CustomAndInternalAcceptsValidationRuleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.interceptor.CustomAndInternalAcceptsValidationRuleTest
+Running br.com.caelum.vraptor.interceptor.PackageAcceptorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in br.com.caelum.vraptor.interceptor.PackageAcceptorTest
+Running br.com.caelum.vraptor.interceptor.AspectStyleInterceptorHandlerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in br.com.caelum.vraptor.interceptor.AspectStyleInterceptorHandlerTest
+Running br.com.caelum.vraptor.interceptor.AcceptsNeedReturnBooleanValidationRuleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in br.com.caelum.vraptor.interceptor.AcceptsNeedReturnBooleanValidationRuleTest
+Running br.com.caelum.vraptor.interceptor.TopologicalSortedInterceptorRegistryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in br.com.caelum.vraptor.interceptor.TopologicalSortedInterceptorRegistryTest
+Running br.com.caelum.vraptor.interceptor.NoStackParamValidationRuleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.interceptor.NoStackParamValidationRuleTest
+Running br.com.caelum.vraptor.interceptor.NoInterceptMethodsValidationRuleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.interceptor.NoInterceptMethodsValidationRuleTest
+Running br.com.caelum.vraptor.interceptor.WithAnnotationAcceptorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in br.com.caelum.vraptor.interceptor.WithAnnotationAcceptorTest
+Running br.com.caelum.vraptor.interceptor.StepInvokerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in br.com.caelum.vraptor.interceptor.StepInvokerTest
+Running br.com.caelum.vraptor.interceptor.CustomAcceptsVerifierTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in br.com.caelum.vraptor.interceptor.CustomAcceptsVerifierTest
+Running br.com.caelum.vraptor.interceptor.ExecuteMethodExceptionHandlerInterceptorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in br.com.caelum.vraptor.interceptor.ExecuteMethodExceptionHandlerInterceptorTest
+Running br.com.caelum.vraptor.interceptor.DefaultTypeNameExtractorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.interceptor.DefaultTypeNameExtractorTest
+Running br.com.caelum.vraptor.interceptor.FlashInterceptorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in br.com.caelum.vraptor.interceptor.FlashInterceptorTest
+Running br.com.caelum.vraptor.ioc.cdi.CDIBasedContainerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.366 sec - in br.com.caelum.vraptor.ioc.cdi.CDIBasedContainerTest
+Running br.com.caelum.vraptor.ioc.InterceptorStereotypeHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.ioc.InterceptorStereotypeHandlerTest
+Running br.com.caelum.vraptor.ioc.RequestStartedFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.568 sec - in br.com.caelum.vraptor.ioc.RequestStartedFactoryTest
+Running br.com.caelum.vraptor.converter.EnumConverterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.converter.EnumConverterTest
+Running br.com.caelum.vraptor.converter.BigIntegerConverterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in br.com.caelum.vraptor.converter.BigIntegerConverterTest
+Running br.com.caelum.vraptor.converter.PrimitiveCharConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in br.com.caelum.vraptor.converter.PrimitiveCharConverterTest
+Running br.com.caelum.vraptor.converter.LongConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.converter.LongConverterTest
+Running br.com.caelum.vraptor.converter.BooleanConverterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in br.com.caelum.vraptor.converter.BooleanConverterTest
+Running br.com.caelum.vraptor.converter.FloatConverterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in br.com.caelum.vraptor.converter.FloatConverterTest
+Running br.com.caelum.vraptor.converter.CharacterConverterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.converter.CharacterConverterTest
+Running br.com.caelum.vraptor.converter.PrimitiveBooleanConverterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.converter.PrimitiveBooleanConverterTest
+Running br.com.caelum.vraptor.converter.PrimitiveDoubleConverterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.converter.PrimitiveDoubleConverterTest
+Running br.com.caelum.vraptor.converter.DoubleConverterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in br.com.caelum.vraptor.converter.DoubleConverterTest
+Running br.com.caelum.vraptor.converter.IntegerConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in br.com.caelum.vraptor.converter.IntegerConverterTest
+Running br.com.caelum.vraptor.converter.PrimitiveFloatConverterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in br.com.caelum.vraptor.converter.PrimitiveFloatConverterTest
+Running br.com.caelum.vraptor.converter.PrimitiveShortConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in br.com.caelum.vraptor.converter.PrimitiveShortConverterTest
+Running br.com.caelum.vraptor.converter.ShortConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.converter.ShortConverterTest
+Running br.com.caelum.vraptor.converter.BigDecimalConverterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.converter.BigDecimalConverterTest
+Running br.com.caelum.vraptor.converter.CalendarConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.converter.CalendarConverterTest
+Running br.com.caelum.vraptor.converter.ByteConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.converter.ByteConverterTest
+Running br.com.caelum.vraptor.converter.PrimitiveLongConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in br.com.caelum.vraptor.converter.PrimitiveLongConverterTest
+Running br.com.caelum.vraptor.converter.PrimitiveByteConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in br.com.caelum.vraptor.converter.PrimitiveByteConverterTest
+Running br.com.caelum.vraptor.converter.PrimitiveIntConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in br.com.caelum.vraptor.converter.PrimitiveIntConverterTest
+Running br.com.caelum.vraptor.converter.DateConverterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in br.com.caelum.vraptor.converter.DateConverterTest
+Running br.com.caelum.vraptor.serialization.DeserializesHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in br.com.caelum.vraptor.serialization.DeserializesHandlerTest
+Running br.com.caelum.vraptor.serialization.xstream.XStreamSerializerTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 sec - in br.com.caelum.vraptor.serialization.xstream.XStreamSerializerTest
+Running br.com.caelum.vraptor.serialization.xstream.XStreamXMLSerializationTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec - in br.com.caelum.vraptor.serialization.xstream.XStreamXMLSerializationTest
+Running br.com.caelum.vraptor.serialization.xstream.XStreamXmlDeserializerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in br.com.caelum.vraptor.serialization.xstream.XStreamXmlDeserializerTest
+Running br.com.caelum.vraptor.serialization.gson.GsonJSONSerializationTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in br.com.caelum.vraptor.serialization.gson.GsonJSONSerializationTest
+Running br.com.caelum.vraptor.serialization.gson.GsonBuilderWrapperTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.458 sec <<< FAILURE! - in br.com.caelum.vraptor.serialization.gson.GsonBuilderWrapperTest
+test(br.com.caelum.vraptor.serialization.gson.GsonBuilderWrapperTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<{["test123":{}]}> but was:<{[]}>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at br.com.caelum.vraptor.serialization.gson.GsonBuilderWrapperTest.test(GsonBuilderWrapperTest.java:35)
+
+Running br.com.caelum.vraptor.serialization.gson.GsonDeserializerTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 sec - in br.com.caelum.vraptor.serialization.gson.GsonDeserializerTest
+Running br.com.caelum.vraptor.serialization.DefaultDeserializersTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.serialization.DefaultDeserializersTest
+Running br.com.caelum.vraptor.serialization.I18nMessageSerializationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in br.com.caelum.vraptor.serialization.I18nMessageSerializationTest
+Running br.com.caelum.vraptor.serialization.DefaultRepresentationResultTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in br.com.caelum.vraptor.serialization.DefaultRepresentationResultTest
+Running br.com.caelum.vraptor.serialization.HTMLSerializationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in br.com.caelum.vraptor.serialization.HTMLSerializationTest
+Running br.com.caelum.vraptor.view.LinkToHandlerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in br.com.caelum.vraptor.view.LinkToHandlerTest
+Running br.com.caelum.vraptor.view.DefaultStatusTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in br.com.caelum.vraptor.view.DefaultStatusTest
+Running br.com.caelum.vraptor.view.DefaultHttpResultTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in br.com.caelum.vraptor.view.DefaultHttpResultTest
+Running br.com.caelum.vraptor.view.DefaultValidationViewsFactoryTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in br.com.caelum.vraptor.view.DefaultValidationViewsFactoryTest
+Running br.com.caelum.vraptor.view.DefaultAcceptHeaderToFormatTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in br.com.caelum.vraptor.view.DefaultAcceptHeaderToFormatTest
+Running br.com.caelum.vraptor.view.DefaultLogicResultTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in br.com.caelum.vraptor.view.DefaultLogicResultTest
+Running br.com.caelum.vraptor.view.DefaultPathResolverTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.view.DefaultPathResolverTest
+Running br.com.caelum.vraptor.view.DefaultPageResultTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in br.com.caelum.vraptor.view.DefaultPageResultTest
+Running br.com.caelum.vraptor.view.DefaultRefererResultTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in br.com.caelum.vraptor.view.DefaultRefererResultTest
+Running br.com.caelum.vraptor.observer.InstantiateObserverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.observer.InstantiateObserverTest
+Running br.com.caelum.vraptor.observer.ForwardToDefaultViewTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in br.com.caelum.vraptor.observer.ForwardToDefaultViewTest
+Running br.com.caelum.vraptor.observer.RequestHandlerObserverTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in br.com.caelum.vraptor.observer.RequestHandlerObserverTest
+Running br.com.caelum.vraptor.observer.download.ZipDownloadTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in br.com.caelum.vraptor.observer.download.ZipDownloadTest
+Running br.com.caelum.vraptor.observer.download.ByteArrayDownloadTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in br.com.caelum.vraptor.observer.download.ByteArrayDownloadTest
+Running br.com.caelum.vraptor.observer.download.DownloadObserverTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in br.com.caelum.vraptor.observer.download.DownloadObserverTest
+Running br.com.caelum.vraptor.observer.download.FileDownloadTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in br.com.caelum.vraptor.observer.download.FileDownloadTest
+Running br.com.caelum.vraptor.observer.download.InputStreamDownloadTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in br.com.caelum.vraptor.observer.download.InputStreamDownloadTest
+Running br.com.caelum.vraptor.observer.OutjectResultTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in br.com.caelum.vraptor.observer.OutjectResultTest
+Running br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserverTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserverTest
+Running br.com.caelum.vraptor.observer.upload.UploadedFileConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in br.com.caelum.vraptor.observer.upload.UploadedFileConverterTest
+Running br.com.caelum.vraptor.observer.DeserializingAndInstantiatorIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in br.com.caelum.vraptor.observer.DeserializingAndInstantiatorIntegrationTest
+Running br.com.caelum.vraptor.observer.DeserializingObserverTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in br.com.caelum.vraptor.observer.DeserializingObserverTest
+Running br.com.caelum.vraptor.observer.ExecuteMethodTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in br.com.caelum.vraptor.observer.ExecuteMethodTest
+Running br.com.caelum.vraptor.observer.ParametersInstantiatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in br.com.caelum.vraptor.observer.ParametersInstantiatorTest
+Running br.com.caelum.vraptor.validator.I18nMessageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in br.com.caelum.vraptor.validator.I18nMessageTest
+Running br.com.caelum.vraptor.validator.MethodValidatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in br.com.caelum.vraptor.validator.MethodValidatorTest
+Running br.com.caelum.vraptor.validator.ReplicatorOutjectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.validator.ReplicatorOutjectorTest
+Running br.com.caelum.vraptor.validator.MessagesTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in br.com.caelum.vraptor.validator.MessagesTest
+Running br.com.caelum.vraptor.validator.DefaultValidatorTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in br.com.caelum.vraptor.validator.DefaultValidatorTest
+Running br.com.caelum.vraptor.proxy.JavassistProxifierTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in br.com.caelum.vraptor.proxy.JavassistProxifierTest
+Running br.com.caelum.vraptor.proxy.CDIProxiesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec - in br.com.caelum.vraptor.proxy.CDIProxiesTest
+Running br.com.caelum.vraptor.util.test.MockSerializationResultTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.util.test.MockSerializationResultTest
+Running br.com.caelum.vraptor.util.test.MockHttpServletResponseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in br.com.caelum.vraptor.util.test.MockHttpServletResponseTest
+Running br.com.caelum.vraptor.util.test.MockValidatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in br.com.caelum.vraptor.util.test.MockValidatorTest
+Running br.com.caelum.vraptor.util.test.MockHttpResultTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in br.com.caelum.vraptor.util.test.MockHttpResultTest
+Running br.com.caelum.vraptor.util.test.MockResultTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in br.com.caelum.vraptor.util.test.MockResultTest
+Running br.com.caelum.vraptor.util.SafeResourceBundleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in br.com.caelum.vraptor.util.SafeResourceBundleTest
+Running br.com.caelum.vraptor.controller.DefaultControllerInstanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in br.com.caelum.vraptor.controller.DefaultControllerInstanceTest
+Running br.com.caelum.vraptor.controller.HttpMethodTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in br.com.caelum.vraptor.controller.HttpMethodTest
+Running br.com.caelum.vraptor.controller.ControllerNotFoundHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in br.com.caelum.vraptor.controller.ControllerNotFoundHandlerTest
+Running br.com.caelum.vraptor.controller.DefaultMethodNotAllowedHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.controller.DefaultMethodNotAllowedHandlerTest
+Running br.com.caelum.vraptor.config.ApplicationConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in br.com.caelum.vraptor.config.ApplicationConfigurationTest
+Running br.com.caelum.vraptor.VRaptorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 sec - in br.com.caelum.vraptor.VRaptorTest
+Running br.com.caelum.vraptor.environment.EnvironmentPropertyProducerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.669 sec - in br.com.caelum.vraptor.environment.EnvironmentPropertyProducerTest
+Running br.com.caelum.vraptor.environment.DefaultEnvironmentTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in br.com.caelum.vraptor.environment.DefaultEnvironmentTest
+Weld SE container 4b0ddbcd-1ed3-4086-9821-432298b76ee8 shut down by shutdown hook
+Weld SE container 3433c3a1-4f1a-4c54-a819-e9e3739b746e shut down by shutdown hook
+Weld SE container 01697da0-14c4-49e7-9403-ad96c04f96c9 shut down by shutdown hook
+
+Results :
+
+Failed tests: 
+  GsonBuilderWrapperTest.test:35 expected:<{["test123":{}]}> but was:<{[]}>
+
+Tests run: 879, Failures: 1, Errors: 0, Skipped: 7
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] VRaptor4 ........................................... SUCCESS [  1.019 s]
+[INFO] vraptor ............................................ FAILURE [ 18.422 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.760 s
+[INFO] Finished at: 2020-02-15T23:15:25+01:00
+[INFO] Final Memory: 19M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project vraptor: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-caelum-vraptor4-397760906-20180628-135348-firstCommit/vraptor-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project vraptor: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-caelum-vraptor4-397760906-20180628-135348-firstCommit/vraptor-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-caelum-vraptor4-397760906-20180628-135348-firstCommit/vraptor-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :vraptor
+            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/relativePath                            [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedGetController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/absolutePath                            [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedGetController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/                                        [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedGetController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash//withoutPath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedGetController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/relativePath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/absolutePath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/                                        [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash//withoutPath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /niceClients/add                                  [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$NiceClients.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /niceClients/toInherit                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /annotated/overridden                             [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$AnnotatedController.overridden()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /annotated/test                                   [POST] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$AnnotatedController.test()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/relativePath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/absolutePath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/                                        [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash//withoutPath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /annotated/overridden                             [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$AnnotatedController.overridden()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /annotated/test                                   [POST] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$AnnotatedController.test()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] WARN br.com.caelum.vraptor.interceptor.FlashInterceptor - HTTP Session was invalidated. It is not possible to include Result parameters on Flash Scope
+java.lang.IllegalStateException
+	at br.com.caelum.vraptor.interceptor.FlashInterceptor$1.beforeRedirect(FlashInterceptor.java:90)
+	at br.com.caelum.vraptor.http.VRaptorResponse.sendRedirect(VRaptorResponse.java:46)
+	at br.com.caelum.vraptor.interceptor.FlashInterceptorTest.shouldNotCrashWhenSessionIsInvalid(FlashInterceptorTest.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Feb 15, 2020 11:15:18 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+WARN: WELD-000135: Legacy deployment metadata provided by the integrator. Certain functionality will not be available.
+Feb 15, 2020 11:15:18 PM org.jboss.weld.bootstrap.events.BeforeBeanDiscoveryImpl addAnnotatedType
+WARN: WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor is deprecated from CDI 1.1!
+Feb 15, 2020 11:15:19 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.gson.JsonSerializer<java.lang.Enum<?>> ignored on [EnhancedAnnotatedTypeImpl] static  class br.com.caelum.vraptor.serialization.gson.GsonJSONSerializationTest$EnumSerializer
+Feb 15, 2020 11:15:19 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.http.iogi.IogiParametersProviderTest$NullVRaptorInstantiator is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 11:15:19 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.serialization.gson.GsonJSONPSerialization$1 is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 11:15:19 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.common.collect.ForwardingMap<java.lang.Class<?>, java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 11:15:19 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type interface java.util.Map<java.lang.Class<?>,class java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.core.DefaultConverters - Registering bundled converters
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$GetAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /myControl/show                                   [ALL] -> public void br.com.caelum.vraptor.http.route.FixedMethodStrategyTest$MyControl.show(br.com.caelum.vraptor.http.route.FixedMethodStrategyTest$Dog)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /myControl/unknownMethod                          [ALL] -> public void br.com.caelum.vraptor.http.route.FixedMethodStrategyTest$MyControl.unknownMethod()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /myControl/add                                    [ALL] -> public void br.com.caelum.vraptor.http.route.FixedMethodStrategyTest$MyControl.add(br.com.caelum.vraptor.http.route.FixedMethodStrategyTest$Dog)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /myControl/list                                   [ALL] -> public void br.com.caelum.vraptor.http.route.FixedMethodStrategyTest$MyControl.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/relativePath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/absolutePath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/                                        [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash//withoutPath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/options                                  [OPTIONS] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.options()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /noSlash                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.noSlash()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /move/*/child                                     [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.move()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path1                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /path2                                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.manyPaths()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/toInherit                                [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.toInherit()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/add                                      [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.add()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/remove                                   [DELETE] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.remove()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/update                                   [PATCH] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.update()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients/head                                     [HEAD] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.head()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /clients                                          [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$ClientsController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /myPath                                           [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.customizedPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /dogs/{page}                                      [GET] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.listDogs(java.lang.Integer)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /dogs                                             [GET] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.listDogs(java.lang.Integer)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /*/customPath                                     [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.starPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /my/notAnnotated                                  [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$MyController.notAnnotated()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/relativePath                            [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedGetController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/absolutePath                            [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedGetController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash/                                        [GET] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedGetController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /endSlash//withoutPath                            [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$EndSlashAnnotatedGetController.withoutPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /some/show                                        [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$SomeController.show(br.com.caelum.vraptor.http.route.DefaultRouterTest$Dog)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /some/unknownMethod                               [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$SomeController.unknownMethod()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /some/add                                         [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$SomeController.add(br.com.caelum.vraptor.http.route.DefaultRouterTest$Dog)
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /some/list                                        [ALL] -> public void br.com.caelum.vraptor.http.route.DefaultRouterTest$SomeController.list()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /methodLevelAccepts/notAllowed                    [ALL] -> public void br.com.caelum.vraptor.interceptor.example.MethodLevelAcceptsController.notAllowed()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /methodLevelAccepts/home                          [ALL] -> public void br.com.caelum.vraptor.interceptor.example.MethodLevelAcceptsController.home()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /controllerInTheClasspath/logicMethod             [GET] -> public void br.com.caelum.vraptor.ioc.fixture.ControllerInTheClasspath.logicMethod()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /classLevelAccepts/method1                        [ALL] -> public void br.com.caelum.vraptor.interceptor.example.ClassLevelAcceptsController.method1()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/noSlashPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$WrongPathAnnotatedController.noSlashPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /random/method                                    [ALL] -> public void br.com.caelum.vraptor.view.DefaultHttpResultTest$RandomController.method()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/relativePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withRelativePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/absolutePath                              [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withAbsolutePath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix                                           [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withEmptyPath()
+[main] INFO br.com.caelum.vraptor.http.route.DefaultRouteBuilder - /prefix/withoutPath                               [ALL] -> public void br.com.caelum.vraptor.http.route.PathAnnotationRoutesParserTest$PathAnnotatedController.withoutPath()
+Feb 15, 2020 11:15:20 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+INFO: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+Feb 15, 2020 11:15:20 PM org.jboss.weld.bootstrap.events.BeforeBeanDiscoveryImpl addAnnotatedType
+WARN: WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor is deprecated from CDI 1.1!
+Feb 15, 2020 11:15:20 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.http.iogi.IogiParametersProviderTest$NullVRaptorInstantiator is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 11:15:20 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.gson.JsonSerializer<java.lang.Enum<?>> ignored on [EnhancedAnnotatedTypeImpl] static  class br.com.caelum.vraptor.serialization.gson.GsonJSONSerializationTest$EnumSerializer
+Feb 15, 2020 11:15:20 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.serialization.gson.GsonJSONPSerialization$1 is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 11:15:20 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.common.collect.ForwardingMap<java.lang.Class<?>, java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 11:15:20 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type interface java.util.Map<java.lang.Class<?>,class java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 11:15:20 PM org.jboss.weld.environment.se.WeldContainer fireContainerInitializedEvent
+INFO: WELD-ENV-002003: Weld SE container 3433c3a1-4f1a-4c54-a819-e9e3739b746e initialized
+Feb 15, 2020 11:15:20 PM org.jboss.weld.environment.se.WeldSEProvider getCDI
+INFO: WELD-ENV-002006: Multiple containers running - CDI.current() may not work properly: [4b0ddbcd-1ed3-4086-9821-432298b76ee8, 3433c3a1-4f1a-4c54-a819-e9e3739b746e]
+Feb 15, 2020 11:15:20 PM org.jboss.weld.environment.se.WeldSEProvider getCDI
+INFO: WELD-ENV-002006: Multiple containers running - CDI.current() may not work properly: [4b0ddbcd-1ed3-4086-9821-432298b76ee8, 3433c3a1-4f1a-4c54-a819-e9e3739b746e]
+Feb 15, 2020 11:15:20 PM org.jboss.weld.environment.se.WeldSEProvider getCDI
+INFO: WELD-ENV-002006: Multiple containers running - CDI.current() may not work properly: [4b0ddbcd-1ed3-4086-9821-432298b76ee8, 3433c3a1-4f1a-4c54-a819-e9e3739b746e]
+Feb 15, 2020 11:15:20 PM org.jboss.weld.environment.se.WeldSEProvider getCDI
+INFO: WELD-ENV-002006: Multiple containers running - CDI.current() may not work properly: [4b0ddbcd-1ed3-4086-9821-432298b76ee8, 3433c3a1-4f1a-4c54-a819-e9e3739b746e]
+Feb 15, 2020 11:15:20 PM org.jboss.weld.environment.se.WeldSEProvider getCDI
+INFO: WELD-ENV-002006: Multiple containers running - CDI.current() may not work properly: [4b0ddbcd-1ed3-4086-9821-432298b76ee8, 3433c3a1-4f1a-4c54-a819-e9e3739b746e]
+Security framework of XStream not initialized, XStream is probably vulnerable.
+Security framework of XStream not initialized, XStream is probably vulnerable.
+Security framework of XStream not initialized, XStream is probably vulnerable.
+Security framework of XStream not initialized, XStream is probably vulnerable.
+Security framework of XStream not initialized, XStream is probably vulnerable.
+Security framework of XStream not initialized, XStream is probably vulnerable.
+Security framework of XStream not initialized, XStream is probably vulnerable.
+Feb 15, 2020 7:15:21 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+INFO: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+Feb 15, 2020 7:15:21 PM org.jboss.weld.bootstrap.events.BeforeBeanDiscoveryImpl addAnnotatedType
+WARN: WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor is deprecated from CDI 1.1!
+Feb 15, 2020 7:15:22 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.gson.JsonSerializer<java.lang.Enum<?>> ignored on [EnhancedAnnotatedTypeImpl] static  class br.com.caelum.vraptor.serialization.gson.GsonJSONSerializationTest$EnumSerializer
+Feb 15, 2020 7:15:22 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.http.iogi.IogiParametersProviderTest$NullVRaptorInstantiator is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 7:15:22 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.serialization.gson.GsonJSONPSerialization$1 is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 7:15:22 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.common.collect.ForwardingMap<java.lang.Class<?>, java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 7:15:22 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type interface java.util.Map<java.lang.Class<?>,class java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 7:15:22 PM org.jboss.weld.environment.se.WeldContainer fireContainerInitializedEvent
+INFO: WELD-ENV-002003: Weld SE container 01697da0-14c4-49e7-9403-ad96c04f96c9 initialized
+Feb 15, 2020 7:15:22 PM org.jboss.weld.environment.se.WeldSEProvider getCDI
+INFO: WELD-ENV-002006: Multiple containers running - CDI.current() may not work properly: [4b0ddbcd-1ed3-4086-9821-432298b76ee8, 3433c3a1-4f1a-4c54-a819-e9e3739b746e, 01697da0-14c4-49e7-9403-ad96c04f96c9]
+Feb 15, 2020 7:15:22 PM org.jboss.weld.environment.se.WeldSEProvider getCDI
+INFO: WELD-ENV-002006: Multiple containers running - CDI.current() may not work properly: [4b0ddbcd-1ed3-4086-9821-432298b76ee8, 3433c3a1-4f1a-4c54-a819-e9e3739b746e, 01697da0-14c4-49e7-9403-ad96c04f96c9]
+[main] WARN br.com.caelum.vraptor.view.DefaultRefererResult - Could not find or doesn't allowed to get controller method
+br.com.caelum.vraptor.http.route.ControllerNotFoundException
+	at br.com.caelum.vraptor.view.DefaultRefererResult.forward(DefaultRefererResult.java:78)
+	at br.com.caelum.vraptor.view.DefaultRefererResultTest.whenRefererDontMatchAControllerShouldForwardToPage(DefaultRefererResultTest.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] WARN br.com.caelum.vraptor.view.DefaultRefererResult - Could not find or doesn't allowed to get controller method
+br.com.caelum.vraptor.http.route.ControllerNotFoundException
+	at br.com.caelum.vraptor.view.DefaultRefererResult.redirect(DefaultRefererResult.java:95)
+	at br.com.caelum.vraptor.view.DefaultRefererResultTest.whenRefererDontMatchAControllerShouldRedirectToPage(DefaultRefererResultTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] WARN br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - The file size limit was exceeded. Actual 3 permitted 2
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] WARN br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - There was some problem parsing this multipart request, or someone is not sending a RFC1867 compatible multipart request.
+org.apache.commons.fileupload.FileUploadException
+	at br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserverTest.handleValidatorMessageWhenFileUploadExceptionOccurs(CommonsUploadMultipartObserverTest.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:168)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] WARN br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - There was some problem parsing this multipart request, or someone is not sending a RFC1867 compatible multipart request.
+org.apache.commons.fileupload.FileUploadException
+	at br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserverTest.doNothingWhenFileUploadExceptionOccurs(CommonsUploadMultipartObserverTest.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:168)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] WARN br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - There was some problem parsing this multipart request, or someone is not sending a RFC1867 compatible multipart request.
+org.apache.commons.fileupload.FileUploadException: the request was rejected because no multipart boundary was found
+	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.<init>(FileUploadBase.java:990)
+	at org.apache.commons.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:310)
+	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:334)
+	at org.apache.commons.fileupload.servlet.ServletFileUpload.parseRequest(ServletFileUpload.java:115)
+	at br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver.upload(CommonsUploadMultipartObserver.java:81)
+	at br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver$$EnhancerByMockitoWithCGLIB$$a4e9f7bd.CGLIB$upload$0(<generated>)
+	at br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver$$EnhancerByMockitoWithCGLIB$$a4e9f7bd$$FastClassByMockitoWithCGLIB$$1e399c6c.invoke(<generated>)
+	at org.mockito.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:216)
+	at org.mockito.internal.creation.AbstractMockitoMethodProxy.invokeSuper(AbstractMockitoMethodProxy.java:10)
+	at org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod.invoke(CGLIBProxyRealMethod.java:22)
+	at org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod.invoke(FilteredCGLIBProxyRealMethod.java:27)
+	at org.mockito.internal.invocation.InvocationImpl.callRealMethod(InvocationImpl.java:108)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:36)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:93)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:38)
+	at org.mockito.internal.creation.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:51)
+	at br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver$$EnhancerByMockitoWithCGLIB$$a4e9f7bd.upload(<generated>)
+	at br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserverTest.shouldCreateDirInsideAppIfTempDirAreNotAvailable(CommonsUploadMultipartObserverTest.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:168)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+[main] INFO br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - Request contains multipart data. Try to parse with commons-upload.
+[main] WARN br.com.caelum.vraptor.observer.upload.CommonsUploadMultipartObserver - The file size limit was exceeded. Actual 3 permitted 2
+[main] WARN br.com.caelum.vraptor.observer.DeserializingObserver - Request does not have Content-Type and parameters will be not deserialized
+Feb 15, 2020 7:15:23 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+WARN: WELD-000135: Legacy deployment metadata provided by the integrator. Certain functionality will not be available.
+Feb 15, 2020 7:15:23 PM org.jboss.weld.bootstrap.events.BeforeBeanDiscoveryImpl addAnnotatedType
+WARN: WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor is deprecated from CDI 1.1!
+[main] WARN br.com.caelum.vraptor.util.SafeResourceBundle - Resource missed while calling delegate
+java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key any key
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:450)
+	at java.util.ResourceBundle.getString(ResourceBundle.java:407)
+	at br.com.caelum.vraptor.util.SafeResourceBundle.handleGetObject(SafeResourceBundle.java:64)
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:441)
+	at java.util.ResourceBundle.getString(ResourceBundle.java:407)
+	at br.com.caelum.vraptor.util.SafeResourceBundleTest.shouldReturnKeyBetweenQuestionMarksWhenKeyDoesntExist(SafeResourceBundleTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Feb 15, 2020 7:15:23 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+WARN: WELD-000135: Legacy deployment metadata provided by the integrator. Certain functionality will not be available.
+Feb 15, 2020 7:15:23 PM org.jboss.weld.bootstrap.events.BeforeBeanDiscoveryImpl addAnnotatedType
+WARN: WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor is deprecated from CDI 1.1!
+Feb 15, 2020 7:15:24 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+WARN: WELD-000135: Legacy deployment metadata provided by the integrator. Certain functionality will not be available.
+Feb 15, 2020 7:15:24 PM org.jboss.weld.bootstrap.events.BeforeBeanDiscoveryImpl addAnnotatedType
+WARN: WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor is deprecated from CDI 1.1!
+Feb 15, 2020 7:15:24 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.common.collect.ForwardingMap<java.lang.Class<?>, java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 7:15:24 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type interface java.util.Map<java.lang.Class<?>,class java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 7:15:24 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.gson.JsonSerializer<java.lang.Enum<?>> ignored on [EnhancedAnnotatedTypeImpl] static  class br.com.caelum.vraptor.serialization.gson.GsonJSONSerializationTest$EnumSerializer
+Feb 15, 2020 7:15:24 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.serialization.gson.GsonJSONPSerialization$1 is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 7:15:24 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.http.iogi.IogiParametersProviderTest$NullVRaptorInstantiator is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 7:15:24 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+WARN: WELD-000135: Legacy deployment metadata provided by the integrator. Certain functionality will not be available.
+Feb 15, 2020 7:15:24 PM org.jboss.weld.bootstrap.events.BeforeBeanDiscoveryImpl addAnnotatedType
+WARN: WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor is deprecated from CDI 1.1!
+Feb 15, 2020 7:15:25 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.gson.JsonSerializer<java.lang.Enum<?>> ignored on [EnhancedAnnotatedTypeImpl] static  class br.com.caelum.vraptor.serialization.gson.GsonJSONSerializationTest$EnumSerializer
+Feb 15, 2020 7:15:25 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.serialization.gson.GsonJSONPSerialization$1 is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 7:15:25 PM org.jboss.weld.bootstrap.BeanDeployer createClassBean
+WARN: WELD-000167: Class br.com.caelum.vraptor.http.iogi.IogiParametersProviderTest$NullVRaptorInstantiator is annotated with @RequestScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+Feb 15, 2020 7:15:25 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type com.google.common.collect.ForwardingMap<java.lang.Class<?>, java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+Feb 15, 2020 7:15:25 PM org.jboss.weld.util.Beans omitIllegalBeanTypes
+INFO: WELD-001125: Illegal bean type interface java.util.Map<java.lang.Class<?>,class java.lang.Object> ignored on [EnhancedAnnotatedTypeImpl] public @Named @ApplicationScoped class br.com.caelum.vraptor.view.LinkToHandler
+[main] WARN br.com.caelum.vraptor.environment.DefaultEnvironment - Could not find the file acceptance.properties to load.
+[main] WARN br.com.caelum.vraptor.environment.DefaultEnvironment - Could not find the file acceptance.properties to load.
