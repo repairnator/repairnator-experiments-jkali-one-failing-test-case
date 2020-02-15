@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "FrankSauve/345BudgetApp",
-  "bugCommit": "https://github.com/FrankSauve/345BudgetApp/compare/e2183177b467...a2a7b57d7ff5",
-  "failingModule": "/root/workspace/FrankSauve/345BudgetApp/346006276",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 8,
-  "failing-test-cases": [
-    {
-      "className": "io.budgetapp.resource.MockTransactionResourceITTest",
-      "failingMethods": [
-        "io.budgetapp.resource.MockTransactionResourceITTest#shouldNotAbleDeleteInvalidTransaction"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:41 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:50:10 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 104476208,
+      "totalMemory": 644026368
+    },
+    "totalDuration": 266,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 152,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          152
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-FrankSauve-345BudgetApp-346006276-20180225-200538-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-FrankSauve-345BudgetApp-346006276-20180225-200538-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 8,
+      "numberPassing": 7,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: is \u003c404\u003e\n     got: \u003c0\u003e\n",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.budgetapp.resource.MockTransactionResourceITTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.budgetapp.resource.MockTransactionResourceITTest",
+        "testMethod": "shouldNotAbleDeleteInvalidTransaction",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003c404\u003e\n     got: \u003c0\u003e\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 71,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 0,
+    "numberLines": 0
+  },
+  "commits": {}
 }
