@@ -1,0 +1,271 @@
+[main] WARN io.enmasse.k8s.api.KubeEventLogger - NONE (kind=KIND name=myqueue): it crashed
+[main] WARN io.enmasse.k8s.api.KubeEventLogger - NONE (kind=KIND name=myqueue): it crashed
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Resync
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.FifoQueue - Processing event Sync with key null
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.FifoQueue - Processing event Updated with key a1
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.FifoQueue - Processing event Added with key c1
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.FifoQueue - Processing event Deleted with key b1
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.Reflector - Waiting on event queue for 1000 ms unless notified
+[main] INFO io.enmasse.k8s.api.cache.FifoQueue - Processing event Added with key k1
+[main] INFO io.enmasse.k8s.api.cache.FifoQueue - Processing event Sync with key null
+[main] INFO io.enmasse.k8s.api.cache.FifoQueue - Processing event Added with key k1
+[main] INFO io.enmasse.k8s.api.cache.FifoQueue - Processing event Updated with key k1
+Feb 15, 2020 2:48:12 PM org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl internalStart
+INFO: AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/tmp/1581774492712-1,bindingsDirectory=/tmp/1581774492712-0,largeMessagesDirectory=/tmp/1581774492712-3,pagingDirectory=/tmp/1581774492712-2)
+Feb 15, 2020 2:48:12 PM org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl initialisePart1
+INFO: AMQ221045: libaio is not available, switching the configuration into NIO
+Feb 15, 2020 2:48:12 PM org.apache.activemq.artemis.core.config.impl.ConfigurationImpl getGlobalMaxSize
+INFO: AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 565,608,448
+Feb 15, 2020 2:48:12 PM org.apache.activemq.artemis.core.remoting.server.impl.RemotingServiceImpl <init>
+INFO: AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+Feb 15, 2020 2:48:12 PM org.apache.activemq.artemis.core.remoting.server.impl.RemotingServiceImpl loadProtocolManagerFactories
+INFO: AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+Feb 15, 2020 2:48:13 PM org.apache.activemq.artemis.core.server.impl.LiveOnlyActivation run
+ERROR: AMQ224000: Failure in initialisation
+io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+	at io.netty.channel.unix.Errors.newIOException(Errors.java:117)
+	at io.netty.channel.unix.Socket.bind(Socket.java:285)
+	at io.netty.channel.epoll.AbstractEpollChannel.doBind(AbstractEpollChannel.java:714)
+	at io.netty.channel.epoll.EpollServerSocketChannel.doBind(EpollServerSocketChannel.java:70)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1283)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:989)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:364)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:309)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at java.lang.Thread.run(Thread.java:748)
+
+Feb 15, 2020 2:48:13 PM org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl internalStart
+INFO: AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.4.0 [broker-158177449270812346, nodeID=cf22d9fc-4ff9-11ea-8e60-80000091fe80] 
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Deploying queue queue1 with address queue1 on broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Deploying queue queue2 with address queue2 on broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+Feb 15, 2020 2:49:15 PM io.vertx.core.impl.BlockedThreadChecker
+WARNING: Thread Thread[vert.x-worker-thread-0,5,main] has been blocked for 60236 ms, time limit is 60000
+io.vertx.core.VertxException: Thread blocked
+	at java.lang.Thread.sleep(Native Method)
+	at io.enmasse.amqp.ArtemisTest.lambda$null$0(ArtemisTest.java:58)
+	at io.enmasse.amqp.ArtemisTest$$Lambda$136/1561506851.handle(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:273)
+	at io.vertx.core.impl.ContextImpl$$Lambda$95/1679958256.run(Unknown Source)
+	at io.vertx.core.impl.TaskQueue.run(TaskQueue.java:76)
+	at io.vertx.core.impl.TaskQueue$$Lambda$19/868964689.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+[vert.x-worker-thread-0] INFO io.enmasse.amqp.Artemis - Retrieving queue names for broker broker-158177449019112346
+Feb 15, 2020 2:49:15 PM io.vertx.core.impl.ContextImpl
+SEVERE: Unhandled exception
+java.lang.AssertionError: Expected true
+	at io.vertx.ext.unit.impl.TestContextImpl.reportAssertionError(TestContextImpl.java:467)
+	at io.vertx.ext.unit.impl.TestContextImpl.assertTrue(TestContextImpl.java:307)
+	at io.vertx.ext.unit.impl.TestContextImpl.assertTrue(TestContextImpl.java:313)
+	at io.enmasse.amqp.ArtemisTest.lambda$null$1(ArtemisTest.java:68)
+	at io.vertx.core.impl.FutureImpl.setHandler(FutureImpl.java:76)
+	at io.vertx.core.impl.ContextImpl.lambda$null$0(ContextImpl.java:289)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$2(ContextImpl.java:339)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/k8s-api-testutil/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ k8s-api-testutil ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/k8s-api-testutil/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ k8s-api-testutil ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ k8s-api-testutil ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/k8s-api-testutil/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ k8s-api-testutil ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ k8s-api-testutil ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building amqp-utils 0.19-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ amqp-utils ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ amqp-utils ---
+[INFO] surefireArgLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/amqp-utils/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ amqp-utils ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/amqp-utils/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ amqp-utils ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ amqp-utils ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/amqp-utils/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ amqp-utils ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ amqp-utils ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/amqp-utils/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.enmasse.amqp.SyncRequestClientTest
+Receiver open
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 s - in io.enmasse.amqp.SyncRequestClientTest
+[INFO] Running io.enmasse.amqp.BlockingClientTest
+Receiver open
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 s - in io.enmasse.amqp.BlockingClientTest
+[INFO] Running io.enmasse.amqp.ArtemisTest
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.2 s <<< FAILURE! - in io.enmasse.amqp.ArtemisTest
+[ERROR] testManagement(io.enmasse.amqp.ArtemisTest)  Time elapsed: 63.2 s  <<< FAILURE!
+java.lang.AssertionError: Not equals : 2 != 5
+	at io.enmasse.amqp.ArtemisTest.lambda$null$0(ArtemisTest.java:61)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ArtemisTest.lambda$null$0:61 Not equals : 2 != 5
+[INFO] 
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] enmasse ............................................ SUCCESS [  2.125 s]
+[INFO] address-model-lib .................................. SUCCESS [  4.082 s]
+[INFO] k8s-api ............................................ SUCCESS [  8.742 s]
+[INFO] k8s-api-testutil ................................... SUCCESS [  0.082 s]
+[INFO] amqp-utils ......................................... FAILURE [01:06 min]
+[INFO] api-common ......................................... SKIPPED
+[INFO] discovery-lib ...................................... SKIPPED
+[INFO] topic-forwarder .................................... SKIPPED
+[INFO] mqtt-gateway ....................................... SKIPPED
+[INFO] mqtt-lwt ........................................... SKIPPED
+[INFO] standard-controller ................................ SKIPPED
+[INFO] address-controller ................................. SKIPPED
+[INFO] api-server ......................................... SKIPPED
+[INFO] keycloak ........................................... SKIPPED
+[INFO] sasl-plugin ........................................ SKIPPED
+[INFO] keycloak-controller ................................ SKIPPED
+[INFO] systemtests ........................................ SKIPPED
+[INFO] artemis ............................................ SKIPPED
+[INFO] amqp-connector ..................................... SKIPPED
+[INFO] sasl-delegation .................................... SKIPPED
+[INFO] shutdown-hook ...................................... SKIPPED
+[INFO] jmx_exporter ....................................... SKIPPED
+[INFO] service-broker ..................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:21 min
+[INFO] Finished at: 2020-02-15T14:49:16+01:00
+[INFO] Final Memory: 25M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project amqp-utils: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/amqp-utils/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project amqp-utils: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/amqp-utils/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit/amqp-utils/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:984)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :amqp-utils
