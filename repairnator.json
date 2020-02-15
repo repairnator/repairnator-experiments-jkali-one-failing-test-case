@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/incubator-servicecomb-saga",
-  "bugCommit": "https://github.com/apache/incubator-servicecomb-saga/compare/f91fdf3e33a8...13ff40d9d5d2",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-saga/374436519/omega/omega-transport/omega-transport-dubbo",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 46,
-  "failing-test-cases": [
-    {
-      "className": "SagaDubboConsumerFilterTest",
-      "failingMethods": [
-        "SagaDubboConsumerFilterTest#interceptTransactionIdInHeaderIfContextPresent"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/omega/omega-transport/omega-transport-dubbo",
+    "overallMetrics": {
+      "numberRunning": 46,
+      "numberPassing": 45,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: is \"1b073318-ce88-4d41-ae7f-dde15549d4cc\"\n     but: was null",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "SagaDubboConsumerFilterTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "SagaDubboConsumerFilterTest",
+        "testMethod": "interceptTransactionIdInHeaderIfContextPresent",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"46ae486c-7ac1-40b8-9538-cef757dc5895\"\n     but: was \"75d51858-541b-4ff9-a0e6-ea15d477dab1\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 24,
+    "numberPlugins": 0,
+    "numberSourceFiles": 81,
+    "numberTestFiles": 41,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:29 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:17:02 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 14718000,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 208,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-saga-374436519-20180503-161715-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
