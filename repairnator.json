@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:15 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:39:46 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 166701640,
+      "totalMemory": 442654720
+    },
+    "totalDuration": 1587,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 276,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          276
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-druid-410530695-20180801-001327-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-druid-410530695-20180801-001327-firstCommit/java-util",
+    "overallMetrics": {
+      "numberRunning": 279,
+      "numberPassing": 278,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.druid.java.util.common.FileUtilsTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.druid.java.util.common.FileUtilsTest",
+        "testMethod": "brokenTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 56,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2642,
+    "numberTestFiles": 964,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "commits": {}
+}
