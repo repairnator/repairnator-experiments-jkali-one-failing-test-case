@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "QianYC/LetsDo_Phase_I",
-  "bugCommit": "https://github.com/QianYC/LetsDo_Phase_I/compare/e146b78ede58db33cd5a63d03ae258a71dcf59fb...bcfade2ac3df5a5380e6bbe21136192c95c86160",
-  "failingModule": "/root/workspace/QianYC/LetsDo_Phase_I/355732721",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 8,
-  "failing-test-cases": [
-    {
-      "className": "YingYingMonster.LetsDo_Phase_I.controller.TestWorkSpaceController",
-      "failingMethods": [
-        "YingYingMonster.LetsDo_Phase_I.controller.TestWorkSpaceController#test"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:00 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:20:58 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 32263880,
+      "totalMemory": 107114496
+    },
+    "totalDuration": 414,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          1,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 267,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          267
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-QianYC-LetsDo_Phase_I-355732721-20180320-085057-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-QianYC-LetsDo_Phase_I-355732721-20180320-085057-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 8,
+      "numberPassing": 7,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Status expected:\u003c200\u003e but was:\u003c404\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "YingYingMonster.LetsDo_Phase_I.controller.TestWorkSpaceController",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "YingYingMonster.LetsDo_Phase_I.controller.TestWorkSpaceController",
+        "testMethod": "test",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 29,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 81,
+    "numberLines": 0
+  },
+  "commits": {}
 }
