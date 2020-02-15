@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "ci-and-cd/maven-settings-decoder",
-  "bugCommit": "https://github.com/ci-and-cd/maven-settings-decoder/compare/e58d0f91b493...5a6b4c3562a9",
-  "failingModule": "/root/workspace/ci-and-cd/maven-settings-decoder/394519589",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 3,
-  "failing-test-cases": [
-    {
-      "className": "cn.home1.tools.maven.SettingsDecoderTest",
-      "failingMethods": [
-        "testEnvVar"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ci-and-cd-maven-settings-decoder-394519589-20180620-134754-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 3,
+      "numberPassing": 2,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "ensure ${env.CI_OPT_MAVEN_CENTRAL_USER} and ${env.CI_OPT_MAVEN_CENTRAL_PASS} is set.",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "cn.home1.tools.maven.SettingsDecoderTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "cn.home1.tools.maven.SettingsDecoderTest",
+        "testMethod": "testEnvVar",
+        "failureName": "java.lang.AssertionError",
+        "detail": "ensure ${env.CI_OPT_MAVEN_CENTRAL_USER} and ${env.CI_OPT_MAVEN_CENTRAL_PASS} is set.",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:46 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:16:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 24854416,
+      "totalMemory": 88854528
+    },
+    "totalDuration": 162,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 100,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          100
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ci-and-cd-maven-settings-decoder-394519589-20180620-134754-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
