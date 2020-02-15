@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:54:49 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 811726008,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 562,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 93,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          93
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CESNET-perun-406147305-20180720-104327-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CESNET-perun-406147305-20180720-104327-firstCommit/perun-core",
+    "overallMetrics": {
+      "numberRunning": 2311,
+      "numberPassing": 2310,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 44,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "cz.metacentrum.perun.core.entry.AttributesManagerEntryIntegrationCacheTest",
+        "numberRunning": 684,
+        "numberPassing": 683,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 14
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "cz.metacentrum.perun.core.entry.AttributesManagerEntryIntegrationCacheTest",
+        "testMethod": "getEntitylessKeys",
+        "failureName": "java.lang.AssertionError",
+        "detail": "We expected 1 and we get 2 expected:\u003c1\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1578,
+    "numberTestFiles": 94,
+    "numberLibrariesFailingModule": 86,
+    "numberLines": 0
+  },
+  "commits": {}
+}
