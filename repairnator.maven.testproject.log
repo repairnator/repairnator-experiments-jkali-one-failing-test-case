@@ -1,0 +1,498 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ServiceComb Java Chassis
+[INFO] Java Chassis::Dependencies
+[INFO] Java Chassis::Parent
+[INFO] Java Chassis::Foundations
+[INFO] Java Chassis::Foundations::Common
+[INFO] Java Chassis::Common
+[INFO] Java Chassis::Common::Javassist
+[INFO] Java Chassis::Foundations::Test Scaffolding
+[INFO] Java Chassis::Foundations::Config
+[INFO] Java Chassis::Foundations::SSL
+[INFO] Java Chassis::Foundations::Vertx
+[INFO] Java Chassis::Service Registry
+[INFO] Java Chassis::Swagger
+[INFO] Java Chassis::Swagger::Generator
+[INFO] Java Chassis::Swagger::Generator::Core
+[INFO] Java Chassis::Swagger::Generator::Jaxrs
+[INFO] Java Chassis::Swagger::Invocation
+[INFO] Java Chassis::Swagger::Invocation::Core
+[INFO] Java Chassis::Core
+[INFO] Java Chassis::Common::Protobuf
+[INFO] Java Chassis::Foundations::Metrics
+[INFO] Java Chassis::Common::Rest
+[INFO] Java Chassis::Handlers
+[INFO] Java Chassis::Handlers::Tracing Zipkin
+[INFO] Java Chassis::Handlers::Bizkeeper
+[INFO] Java Chassis::Handlers::Flow Control QPS
+[INFO] Java Chassis::Handlers::Loadbalance
+[INFO] Java Chassis::Handlers::Fault Injection
+[INFO] Java Chassis::Handlers::PublicKey Auth
+[INFO] Java Chassis::Providers
+[INFO] Java Chassis::Providers::Rest Common
+[INFO] Java Chassis::Swagger::Invocation::JAXRS
+[INFO] Java Chassis::Providers::JAXRS
+[INFO] Java Chassis::Providers::POJO
+[INFO] Java Chassis::Swagger::Invocation::Spring MVC
+[INFO] Java Chassis::Swagger::Generator::Spring MVC
+[INFO] Java Chassis::Providers::Spring MVC
+[INFO] Java Chassis::Transports
+[INFO] Java Chassis::Transports::Hightway
+[INFO] Java Chassis::Transports::Rest
+[INFO] Java Chassis::Transports::Rest::Client
+[INFO] Java Chassis::Transports::Rest::Vertx
+[INFO] Java Chassis::Transports::Rest::Servlet
+[INFO] Java Chassis::Swagger::Invocation::Validator
+[INFO] Java Chassis::Dynamic Config
+[INFO] Java Chassis::Foundations::Config CC
+[INFO] Java Chassis::Spring Boot Starter::Parent
+[INFO] Java Chassis::Spring Boot Starter::Configuration
+[INFO] Java Chassis::Spring Boot Starter::ServiceComb
+[INFO] Java Chassis::Spring Boot Starter::Provider
+[INFO] Java Chassis::Spring Boot Starter::Transport
+[INFO] Java Chassis::Spring Boot Starter::Discovery
+[INFO] Java Chassis::Spring Boot Starter::Registry
+[INFO] Java Chassis::Spring Boot Starter::Spring Cloud Zuul
+[INFO] Java Chassis::Spring Boot Starter::Spring Cloud Zuul Zipkin
+[INFO] Java Chassis::Tracing
+[INFO] Java Chassis::Tracing::Common
+[INFO] Java Chassis::Tracing::Zipkin
+[INFO] Java Chassis::Edge
+[INFO] Java Chassis::Edge::Core
+[INFO] Java Chassis::Metrics
+[INFO] Java Chassis::Metrics::Core
+[INFO] Java Chassis::Metrics::Integration
+[INFO] Java Chassis::Metrics::Integration::Prometheus
+[INFO] Java Chassis::Dynamic Config::Apollo
+[INFO] Java Chassis::Archetypes
+[INFO] Java Chassis::Archetypes::JAXRS
+[INFO] Java Chassis::Archetypes::POJO
+[INFO] Java Chassis::Archetypes::Spring MVC
+[INFO] Java Chassis::Archetypes::Spring Boot Starter
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ServiceComb Java Chassis 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ java-chassis ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Dependencies 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ java-chassis-dependencies ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Parent 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ java-chassis-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundations ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations::Common 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundation-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ foundation-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ foundation-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ foundation-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ foundation-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ foundation-common ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-common/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 9.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 100.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1292.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.foundation.common.utils.TestFortifyUtils
+Running org.apache.servicecomb.foundation.common.utils.TestRSAUtil
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.209 sec - in org.apache.servicecomb.foundation.common.utils.TestFortifyUtils
+Running org.apache.servicecomb.foundation.common.utils.TestSPIServiceUtils
+2020-02-15 23:17:13,688 [main           ] INFO  SPIServiceUtils                - Found SPI service org.springframework.core.Ordered, count=2.
+2020-02-15 23:17:13,692 [main           ] INFO  SPIServiceUtils                -   0. org.springframework.core.$Impl_Ordered.
+2020-02-15 23:17:13,692 [main           ] INFO  SPIServiceUtils                -   1. org.springframework.core.$Impl_Ordered.
+2020-02-15 23:17:13,716 [main           ] INFO  SPIServiceUtils                - Found SPI service org.apache.servicecomb.foundation.common.utils.SPIServiceDef0, count=0.
+2020-02-15 23:17:13,718 [main           ] INFO  SPIServiceUtils                - Can not find SPI service for org.apache.servicecomb.foundation.common.utils.SPIServiceDef0
+2020-02-15 23:17:13,730 [main           ] INFO  SPIServiceUtils                - Found SPI service org.apache.servicecomb.foundation.common.utils.SPIServiceDef, count=1.
+2020-02-15 23:17:13,730 [main           ] INFO  SPIServiceUtils                -   0. org.apache.servicecomb.foundation.common.utils.SPIServiceDefImpl.
+2020-02-15 23:17:13,732 [main           ] INFO  SPIServiceUtils                - Can not find SPI service for org.apache.servicecomb.foundation.common.utils.SPIServiceDef0
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.65 sec - in org.apache.servicecomb.foundation.common.utils.TestSPIServiceUtils
+Running org.apache.servicecomb.foundation.common.utils.TestBeanUtils
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in org.apache.servicecomb.foundation.common.utils.TestBeanUtils
+Running org.apache.servicecomb.foundation.common.utils.TestRollingFileAppenderExt
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in org.apache.servicecomb.foundation.common.utils.TestRollingFileAppenderExt
+Running org.apache.servicecomb.foundation.common.part.TestFilePart
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.apache.servicecomb.foundation.common.part.TestFilePart
+Running org.apache.servicecomb.foundation.common.part.TestAbstractPart
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.servicecomb.foundation.common.part.TestAbstractPart
+Running org.apache.servicecomb.foundation.common.part.TestInputStreamPart
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.apache.servicecomb.foundation.common.part.TestInputStreamPart
+Running org.apache.servicecomb.foundation.common.part.TestResourcePart
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.servicecomb.foundation.common.part.TestResourcePart
+Running org.apache.servicecomb.foundation.common.http.TestHttpStatusUtils
+2020-02-15 23:17:14,363 [main           ] INFO  SPIServiceUtils                - Found SPI service javax.ws.rs.core.Response$StatusType, count=0.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.servicecomb.foundation.common.http.TestHttpStatusUtils
+Running org.apache.servicecomb.foundation.common.http.TestHttpStatus
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.apache.servicecomb.foundation.common.http.TestHttpStatus
+Running org.apache.servicecomb.foundation.common.http.TestHttpUtils
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.apache.servicecomb.foundation.common.http.TestHttpUtils
+Running org.apache.servicecomb.foundation.common.net.TestURIEndpointObject
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.apache.servicecomb.foundation.common.net.TestURIEndpointObject
+Running org.apache.servicecomb.foundation.common.net.TestIpPort
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.servicecomb.foundation.common.net.TestIpPort
+Running org.apache.servicecomb.foundation.common.net.TestNetUtils
+2020-02-15 23:17:14,558 [main           ] INFO  NetUtils                       - add network interface name:ib0.8244,host address:172.27.246.211
+2020-02-15 23:17:14,559 [main           ] INFO  NetUtils                       - add network interface name:ib0.8240,host address:172.27.242.211
+2020-02-15 23:17:14,559 [main           ] INFO  NetUtils                       - add network interface name:eno1,host address:130.239.242.211
+2020-02-15 23:17:14,559 [main           ] INFO  NetUtils                       - add host name from localhost:b-cn1423.hpc2n.umu.se,host address:130.239.242.211
+2020-02-15 23:17:14,994 [main           ] ERROR NetUtils                       - address 1.1.1.1:8080 is not valid.
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.443 sec - in org.apache.servicecomb.foundation.common.net.TestNetUtils
+Running org.apache.servicecomb.foundation.common.event.TestEventBus
+2020-02-15 23:17:15,007 [main           ] INFO  SPIServiceUtils                - Found SPI service org.apache.servicecomb.foundation.common.event.EventListener, count=0.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 sec - in org.apache.servicecomb.foundation.common.event.TestEventBus
+Running org.apache.servicecomb.foundation.common.event.TestEventManager
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.696 sec - in org.apache.servicecomb.foundation.common.utils.TestRSAUtil
+Running org.apache.servicecomb.foundation.common.spring.TestPaasNamespaceHandler
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 sec - in org.apache.servicecomb.foundation.common.spring.TestPaasNamespaceHandler
+Running org.apache.servicecomb.foundation.common.config.TestConfig
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.32 sec - in org.apache.servicecomb.foundation.common.event.TestEventManager
+Running org.apache.servicecomb.foundation.common.cache.TestVersionedCache
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.servicecomb.foundation.common.cache.TestVersionedCache
+Running com.google.common.eventbus.TestEventBus
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.google.common.eventbus.TestEventBus
+2020-02-15 23:17:18,035 [INFO] Write merged log4j config file to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-common/target/test-classes/config/merged.log4j.properties org.apache.servicecomb.foundation.common.utils.Log4jUtils.outputFile(Log4jUtils.java:103)
+2020-02-15 23:17:18,124 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3ba9ad43: startup date [Sat Feb 15 23:17:18 CET 2020]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)
+2020-02-15 23:17:18,167 [INFO] Loading XML bean definitions from file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-common/target/test-classes/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+2020-02-15 23:17:18,354 [INFO] Loading XML bean definitions from file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-common/target/test-classes/META-INF/spring/config.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+2020-02-15 23:17:18,382 [INFO] Loading XML bean definitions from file [/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-common/target/classes/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.287 sec - in org.apache.servicecomb.foundation.common.config.TestConfig
+
+Results :
+
+Tests run: 106, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Common 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ common ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Common::Javassist 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ common-javassist ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ common-javassist ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/common/common-javassist/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ common-javassist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ common-javassist ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ common-javassist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ common-javassist ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/common/common-javassist/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.common.javassist.TestCtTypeJavaType
+Running org.apache.servicecomb.common.javassist.TestCtType
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.552 sec - in org.apache.servicecomb.common.javassist.TestCtType
+Running org.apache.servicecomb.common.javassist.TestJavassistUtils
+2020-02-15 23:17:28,082 [main           ] INFO  JavassistUtils                 - create CtClass cse.ut.single.IntWrapper in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,088 [main           ] INFO  JavassistUtils                 - create class cse.ut.single.IntWrapper in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,101 [main           ] INFO  JavassistUtils                 - create CtClass cse.ut.TestAddParameter in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,102 [main           ] INFO  JavassistUtils                 - create class cse.ut.TestAddParameter in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,120 [main           ] INFO  JavassistUtils                 - create CtClass cse.ut.testField in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,123 [main           ] INFO  JavassistUtils                 - create class cse.ut.testField in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,159 [main           ] INFO  JavassistUtils                 - create CtClass cse.ut.multi.Wrapper in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,171 [main           ] INFO  JavassistUtils                 - create class cse.ut.multi.Wrapper in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,199 [main           ] INFO  JavassistUtils                 - create CtClass cse.ut.TestInterface in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+2020-02-15 23:17:28,201 [main           ] INFO  JavassistUtils                 - create class cse.ut.TestInterface in classLoader sun.misc.Launcher$AppClassLoader@3d4eac69.
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.317 sec - in org.apache.servicecomb.common.javassist.TestJavassistUtils
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.779 sec - in org.apache.servicecomb.common.javassist.TestCtTypeJavaType
+
+Results :
+
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations::Test Scaffolding 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundation-test-scaffolding ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ foundation-test-scaffolding ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-test-scaffolding/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ foundation-test-scaffolding ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ foundation-test-scaffolding ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-test-scaffolding/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ foundation-test-scaffolding ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ foundation-test-scaffolding ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations::Config 1.0.0-m2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundation-config ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ foundation-config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ foundation-config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ foundation-config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ foundation-config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ foundation-config ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.config.TestConfigurationSpringInitializer
+Running org.apache.servicecomb.config.TestConfigUtil
+2020-02-15 23:17:39,303 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2020-02-15 23:17:39,305 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-02-15 23:17:39,824 [main           ] INFO  ConfigUtil                     - create local config:
+2020-02-15 23:17:39,831 [main           ] INFO  ConfigUtil                     -  file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/test-classes/microservice.yaml.
+2020-02-15 23:17:40,030 [main           ] INFO  SPIServiceUtils                - Found SPI service org.apache.servicecomb.config.spi.ConfigCenterConfigurationSource, count=1.
+2020-02-15 23:17:40,030 [main           ] INFO  SPIServiceUtils                -   0. org.apache.servicecomb.config.MapBasedConfigurationSource.
+2020-02-15 23:17:40,426 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2020-02-15 23:17:40,430 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-02-15 23:17:40,474 [main           ] INFO  ConfigUtil                     - create local config:
+2020-02-15 23:17:40,474 [main           ] INFO  ConfigUtil                     -  file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/test-classes/microservice.yaml.
+2020-02-15 23:17:40,504 [main           ] INFO  ConfigUtil                     - config center SPI service can not find, skip to load configuration from config center
+2020-02-15 23:17:40,553 [main           ] INFO  ConfigUtil                     - create local config:
+2020-02-15 23:17:40,554 [main           ] INFO  ConfigUtil                     -  file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/test-classes/microservice.yaml.
+2020-02-15 23:17:40,669 [main           ] INFO  ConfigUtil                     - create local config:
+2020-02-15 23:17:40,675 [main           ] INFO  ConfigUtil                     -  file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/test-classes/microservice.yaml.
+2020-02-15 23:17:40,723 [main           ] INFO  ConfigUtil                     - create local config:
+2020-02-15 23:17:40,723 [main           ] INFO  ConfigUtil                     -  file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/test-classes/microservice.yaml.
+2020-02-15 23:17:40,723 [main           ] INFO  ConfigUtil                     -  null.
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.22 sec - in org.apache.servicecomb.config.TestConfigUtil
+Running org.apache.servicecomb.config.TestConfigMapping
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.servicecomb.config.TestConfigMapping
+Running org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.122 sec <<< FAILURE! - in org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource
+testPullFromClassPath(org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource)  Time elapsed: 0.034 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<http://10.120.169.202:9980/> but was:<null>
+	at org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource.testPullFromClassPath(TestYAMLConfigurationSource.java:53)
+
+Running org.apache.servicecomb.config.archaius.sources.TestMicroserviceConfigLoader
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.apache.servicecomb.config.archaius.sources.TestMicroserviceConfigLoader
+Running org.apache.servicecomb.config.DynamicPropertiesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec - in org.apache.servicecomb.config.DynamicPropertiesTest
+Running org.apache.servicecomb.config.TestLastPropertyPlaceholderConfigurer
+2020-02-15 23:17:41,387 [main           ] INFO  ConfigUtil                     - create local config:
+2020-02-15 23:17:41,389 [main           ] INFO  ConfigUtil                     -  file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/test-classes/microservice.yaml.
+2020-02-15 23:17:41,553 [main           ] INFO  SPIServiceUtils                - Found SPI service org.apache.servicecomb.config.spi.ConfigCenterConfigurationSource, count=1.
+2020-02-15 23:17:41,553 [main           ] INFO  SPIServiceUtils                -   0. org.apache.servicecomb.config.MapBasedConfigurationSource.
+2020-02-15 23:17:41,571 [main           ] WARN  ConfigUtil                     - Configuration installed by others, will ignore this configuration.
+2020-02-15 23:17:41,843 [main           ] INFO  tationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@65a01901: startup date [Sat Feb 15 23:17:41 CET 2020]; root of context hierarchy
+2020-02-15 23:17:42,175 [main           ] INFO  ConfigurationSpringInitializer - Environment received, will get configurations from [application].
+2020-02-15 23:17:42,191 [main           ] INFO  ConfigUtil                     - create local config:
+2020-02-15 23:17:42,194 [main           ] INFO  ConfigUtil                     -  file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/test-classes/microservice.yaml.
+2020-02-15 23:17:42,216 [main           ] INFO  ConfigurationSpringInitializer - Environment received, will get configurations from [bootstrap].
+2020-02-15 23:17:42,224 [main           ] WARN  ConfigUtil                     - Configuration installed by others, will ignore this configuration.
+2020-02-15 23:17:42,225 [main           ] INFO  ConfigurationSpringInitializer - Environment received, will get configurations from [org.springframework.core.env.ConfigurableEnvironment$$EnhancerByMockitoWithCGLIB$$e5374b5b@834132073].
+2020-02-15 23:17:42,225 [main           ] WARN  ConfigUtil                     - Configuration installed by others, will ignore this configuration.
+2020-02-15 23:17:42,268 [main           ] INFO  ConfigurationSpringInitializer - Environment received, will get configurations from [org.springframework.core.env.ConfigurableEnvironment$$EnhancerByMockitoWithCGLIB$$e5374b5b@1869373559].
+2020-02-15 23:17:42,289 [main           ] INFO  ConfigUtil                     - create local config:
+2020-02-15 23:17:42,290 [main           ] INFO  ConfigUtil                     -  file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/test-classes/microservice.yaml.
+2020-02-15 23:17:42,306 [main           ] INFO  redAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.075 sec - in org.apache.servicecomb.config.TestConfigurationSpringInitializer
+2020-02-15 23:17:42,436 [main           ] INFO  tationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@65a01901: startup date [Sat Feb 15 23:17:41 CET 2020]; root of context hierarchy
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.07 sec - in org.apache.servicecomb.config.TestLastPropertyPlaceholderConfigurer
+
+Results :
+
+Failed tests: 
+  TestYAMLConfigurationSource.testPullFromClassPath:53 expected:<http://10.120.169.202:9980/> but was:<null>
+
+Tests run: 34, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] ServiceComb Java Chassis ........................... SUCCESS [  0.838 s]
+[INFO] Java Chassis::Dependencies ......................... SUCCESS [  0.093 s]
+[INFO] Java Chassis::Parent ............................... SUCCESS [  0.264 s]
+[INFO] Java Chassis::Foundations .......................... SUCCESS [  0.037 s]
+[INFO] Java Chassis::Foundations::Common .................. SUCCESS [ 15.623 s]
+[INFO] Java Chassis::Common ............................... SUCCESS [  0.064 s]
+[INFO] Java Chassis::Common::Javassist .................... SUCCESS [  9.446 s]
+[INFO] Java Chassis::Foundations::Test Scaffolding ........ SUCCESS [  1.099 s]
+[INFO] Java Chassis::Foundations::Config .................. FAILURE [ 12.974 s]
+[INFO] Java Chassis::Foundations::SSL ..................... SKIPPED
+[INFO] Java Chassis::Foundations::Vertx ................... SKIPPED
+[INFO] Java Chassis::Service Registry ..................... SKIPPED
+[INFO] Java Chassis::Swagger .............................. SKIPPED
+[INFO] Java Chassis::Swagger::Generator ................... SKIPPED
+[INFO] Java Chassis::Swagger::Generator::Core ............. SKIPPED
+[INFO] Java Chassis::Swagger::Generator::Jaxrs ............ SKIPPED
+[INFO] Java Chassis::Swagger::Invocation .................. SKIPPED
+[INFO] Java Chassis::Swagger::Invocation::Core ............ SKIPPED
+[INFO] Java Chassis::Core ................................. SKIPPED
+[INFO] Java Chassis::Common::Protobuf ..................... SKIPPED
+[INFO] Java Chassis::Foundations::Metrics ................. SKIPPED
+[INFO] Java Chassis::Common::Rest ......................... SKIPPED
+[INFO] Java Chassis::Handlers ............................. SKIPPED
+[INFO] Java Chassis::Handlers::Tracing Zipkin ............. SKIPPED
+[INFO] Java Chassis::Handlers::Bizkeeper .................. SKIPPED
+[INFO] Java Chassis::Handlers::Flow Control QPS ........... SKIPPED
+[INFO] Java Chassis::Handlers::Loadbalance ................ SKIPPED
+[INFO] Java Chassis::Handlers::Fault Injection ............ SKIPPED
+[INFO] Java Chassis::Handlers::PublicKey Auth ............. SKIPPED
+[INFO] Java Chassis::Providers ............................ SKIPPED
+[INFO] Java Chassis::Providers::Rest Common ............... SKIPPED
+[INFO] Java Chassis::Swagger::Invocation::JAXRS ........... SKIPPED
+[INFO] Java Chassis::Providers::JAXRS ..................... SKIPPED
+[INFO] Java Chassis::Providers::POJO ...................... SKIPPED
+[INFO] Java Chassis::Swagger::Invocation::Spring MVC ...... SKIPPED
+[INFO] Java Chassis::Swagger::Generator::Spring MVC ....... SKIPPED
+[INFO] Java Chassis::Providers::Spring MVC ................ SKIPPED
+[INFO] Java Chassis::Transports ........................... SKIPPED
+[INFO] Java Chassis::Transports::Hightway ................. SKIPPED
+[INFO] Java Chassis::Transports::Rest ..................... SKIPPED
+[INFO] Java Chassis::Transports::Rest::Client ............. SKIPPED
+[INFO] Java Chassis::Transports::Rest::Vertx .............. SKIPPED
+[INFO] Java Chassis::Transports::Rest::Servlet ............ SKIPPED
+[INFO] Java Chassis::Swagger::Invocation::Validator ....... SKIPPED
+[INFO] Java Chassis::Dynamic Config ....................... SKIPPED
+[INFO] Java Chassis::Foundations::Config CC ............... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Parent .......... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Configuration ... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::ServiceComb ..... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Provider ........ SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Transport ....... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Discovery ....... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Registry ........ SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Spring Cloud Zuul SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Spring Cloud Zuul Zipkin SKIPPED
+[INFO] Java Chassis::Tracing .............................. SKIPPED
+[INFO] Java Chassis::Tracing::Common ...................... SKIPPED
+[INFO] Java Chassis::Tracing::Zipkin ...................... SKIPPED
+[INFO] Java Chassis::Edge ................................. SKIPPED
+[INFO] Java Chassis::Edge::Core ........................... SKIPPED
+[INFO] Java Chassis::Metrics .............................. SKIPPED
+[INFO] Java Chassis::Metrics::Core ........................ SKIPPED
+[INFO] Java Chassis::Metrics::Integration ................. SKIPPED
+[INFO] Java Chassis::Metrics::Integration::Prometheus ..... SKIPPED
+[INFO] Java Chassis::Dynamic Config::Apollo ............... SKIPPED
+[INFO] Java Chassis::Archetypes ........................... SKIPPED
+[INFO] Java Chassis::Archetypes::JAXRS .................... SKIPPED
+[INFO] Java Chassis::Archetypes::POJO ..................... SKIPPED
+[INFO] Java Chassis::Archetypes::Spring MVC ............... SKIPPED
+[INFO] Java Chassis::Archetypes::Spring Boot Starter ...... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 49.922 s
+[INFO] Finished at: 2020-02-15T23:17:42+01:00
+[INFO] Final Memory: 161M/384M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project foundation-config: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project foundation-config: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :foundation-config
