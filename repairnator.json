@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "NitorCreations/nflow",
-  "bugCommit": "https://github.com/NitorCreations/nflow/compare/5d8a98050672^...beae625828f6",
-  "failingModule": "/root/workspace/NitorCreations/nflow/388193680/nflow-tests",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 384,
-  "failing-test-cases": [
-    {
-      "className": "io.nflow.tests.Swagger2MarkupTest",
-      "failingMethods": [
-        "convertRemoteSwaggerToAsciiDoc"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:50 PM",
+    "reproductionDateEnd": "Feb 15, 2020 7:57:49 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 59398040,
+      "totalMemory": 147570688
+    },
+    "totalDuration": 6235,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-tests",
+    "overallMetrics": {
+      "numberRunning": 381,
+      "numberPassing": 380,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c5\u003e but was:\u003c4\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.nflow.tests.Swagger2MarkupTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.nflow.tests.Swagger2MarkupTest",
+        "testMethod": "convertRemoteSwaggerToAsciiDoc",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c5\u003e but was:\u003c4\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 146,
+    "numberTestFiles": 85,
+    "numberLibrariesFailingModule": 107,
+    "numberLines": 0
+  },
+  "commits": {}
 }
