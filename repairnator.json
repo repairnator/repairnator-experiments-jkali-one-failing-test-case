@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Linuxea/dataalgorithm_in_java",
-  "bugCommit": "https://github.com/Linuxea/dataalgorithm_in_java/compare/9ebc1101465e4e3d6eef1df29bcac9519148c8e6...782f1991506e8490d6e776707bed71fd69450fb4",
-  "failingModule": "/root/workspace/Linuxea/dataalgorithm_in_java/374798621",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 13,
-  "failing-test-cases": [
-    {
-      "className": "datastructure.queue.MyLinkedQueueTest",
-      "failingMethods": [
-        "datastructure.queue.MyLinkedQueueTest#testFirst"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:47 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:14:47 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 11427584,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 58,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          19
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-374798621-20180504-112840-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Linuxea-dataalgorithm_in_java-374798621-20180504-112840-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 13,
+      "numberPassing": 12,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c2\u003e but was:\u003c1\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "datastructure.queue.MyLinkedQueueTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "datastructure.queue.MyLinkedQueueTest",
+        "testMethod": "testFirst",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 15,
+    "numberTestFiles": 7,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  }
 }
