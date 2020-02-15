@@ -1,0 +1,119 @@
+{
+  "commits": {},
+  "projectMetrics": {
+    "numberModules": 69,
+    "numberPlugins": 0,
+    "numberSourceFiles": 917,
+    "numberTestFiles": 572,
+    "numberLibrariesFailingModule": 91,
+    "numberLines": 0
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-418989349-20180822-052309-firstCommit/transports/transport-rest/transport-rest-client",
+    "overallMetrics": {
+      "numberRunning": 1783,
+      "numberPassing": 1782,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.transport.rest.client.http.TestDefaultHttpClientFilter",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.transport.rest.client.http.TestDefaultHttpClientFilter",
+        "testMethod": "extractResult_decodeError",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c490\u003e but was:\u003c400\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:30 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:29:42 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 108207904,
+      "totalMemory": 236974080
+    },
+    "totalDuration": 967,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 4,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          4,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 609,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          609
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-418989349-20180822-052309-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  }
+}
