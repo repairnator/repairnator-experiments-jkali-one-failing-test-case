@@ -1,0 +1,11 @@
+--- /src/main/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/RandomIndexing.java
++++ /src/main/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/RandomIndexing.java
+@@ -68,7 +68,6 @@
+ 				int offset = offsetBuffer.get(indOffset);
+ 				retVal.add((i * blockSize) + offset);
+ 				offsetBuffer.remove(new java.lang.Integer(offset));
+-				offsetBuffer.remove(new java.lang.Integer(offset - 1));
+ 				offsetBuffer.remove(new java.lang.Integer(offset + 1));
+ 			}
+ 		}
+
