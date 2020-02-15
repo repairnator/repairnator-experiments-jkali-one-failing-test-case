@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Tillerino/Tillerinobot",
-  "bugCommit": "https://github.com/Tillerino/Tillerinobot/commit/cd971632bbb5",
-  "failingModule": "/root/workspace/Tillerino/Tillerinobot/329474380/tillerinobot",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 100,
-  "failing-test-cases": [
-    {
-      "className": "tillerino.tillerinobot.diff.KoohiiTest",
-      "failingMethods": [
-        "tillerino.tillerinobot.diff.KoohiiTest#testIssue137"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:17 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:35:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 269443080,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1270,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1149,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1149
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Tillerino-Tillerinobot-329474380-20180116-145612_bugonly-firstCommit/tillerinobot/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Tillerino-Tillerinobot-329474380-20180116-145612_bugonly-firstCommit/tillerinobot",
+    "overallMetrics": {
+      "numberRunning": 100,
+      "numberPassing": 99,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c138.287\u003e but was:\u003c137.712983318578\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "tillerino.tillerinobot.diff.KoohiiTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "tillerino.tillerinobot.diff.KoohiiTest",
+        "testMethod": "testIssue137",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c138.287\u003e but was:\u003c137.712983318578\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 117,
+    "numberTestFiles": 31,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  }
 }
