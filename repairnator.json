@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 6,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "dangdangdotcom/sharding-jdbc",
-  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/c9da0afd5ca5...df6eeb22b81b",
-  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/260487682/sharding-jdbc-core",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1422,
-  "failing-test-cases": [
-    {
-      "className": "com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.mysql.MySQLStatementTest",
-      "failingMethods": [
-        "com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.mysql.MySQLStatementTest#assertParse[assertSelectWithOrderByForAliasAndSubQuery]"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:47 PM",
+    "reproductionDateEnd": "Feb 16, 2020 12:58:29 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 271878272,
+      "totalMemory": 807776256
+    },
+    "totalDuration": 6280,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-260488530-20170803-092248-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-260488530-20170803-092248-firstCommit/sharding-jdbc-core",
+    "overallMetrics": {
+      "numberRunning": 1416,
+      "numberPassing": 1415,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 6,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.mysql.MySQLStatementTest",
+        "numberRunning": 37,
+        "numberPassing": 36,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.mysql.MySQLStatementTest",
+        "testMethod": "assertParse[assertSelectWithOrderByForAliasAndSubQuery]",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 267,
+    "numberTestFiles": 243,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  },
+  "commits": {}
 }
