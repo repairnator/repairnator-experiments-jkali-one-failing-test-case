@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "CS-Worcester-CS-348-SP-2018/ci-exercise",
-  "failingModule": "/root/workspace/CS-Worcester-CS-348-SP-2018/ci-exercise/353827454",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 10,
-  "failing-test-cases": [
-    {
-      "className": "CS_348_SP_2018.CIExercise.EndsWith9Test",
-      "failingMethods": [
-        "CS_348_SP_2018.CIExercise.EndsWith9Test#testToString"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:46:14 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 13878976,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 50,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CS-Worcester-CS-348-SP-2018-ci-exercise-353827454-20180315-143518-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CS-Worcester-CS-348-SP-2018-ci-exercise-353827454-20180315-143518-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 10,
+      "numberPassing": 9,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003cEndsWith9 [names\u003d[Stephen Burke George Matthew] Jason Knowles ]\u003e but was:\u003cEndsWith9 [names\u003d[George Matthew Stephen Burke] Jason Knowles ]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "CS_348_SP_2018.CIExercise.EndsWith9Test",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "CS_348_SP_2018.CIExercise.EndsWith9Test",
+        "testMethod": "testToString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cEndsWith9 [names\u003d[Stephen Burke\nGeorge Matthew]\nJason Knowles\n]\u003e but was:\u003cEndsWith9 [names\u003d[George Matthew\nStephen Burke]\nJason Knowles\n]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 11,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {}
 }
