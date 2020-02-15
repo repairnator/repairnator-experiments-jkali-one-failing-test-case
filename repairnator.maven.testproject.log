@@ -1,0 +1,446 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+O] Strata-Report
+[INFO] Strata-Examples
+[INFO] Strata-Root
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Parent 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ strata-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (run-checkstyle) @ strata-parent ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-parent ---
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules
+[INFO] Storing buildNumber: bb0293a0d11b11af83545566bd8c655f8e6e549a at timestamp: 1581787099016
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Collect 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ strata-collect ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (run-checkstyle) @ strata-collect ---
+[INFO] Starting audit...
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/collect/src/main/java/com/opengamma/strata/collect/io/CharSources.java:102: Abbreviation in name 'ofURL' must contain no more than '1' capital letters. [AbbreviationAsWordInName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/collect/src/main/java/com/opengamma/strata/collect/io/CharSources.java:114: Abbreviation in name 'ofURL' must contain no more than '1' capital letters. [AbbreviationAsWordInName]
+Audit done.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-collect ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ strata-collect ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ strata-collect ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 89 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/collect/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ strata-collect ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 23 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ strata-collect ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ strata-collect ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/collect/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 100.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 96.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 110.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 85.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 597.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 451.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 499.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 532.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG60Configurator
+
+Tests run: 1306, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.463 sec - in TestSuite
+
+Results :
+
+Tests run: 1306, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Basics 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ strata-basics ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (run-checkstyle) @ strata-basics ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-basics ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ strata-basics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ strata-basics ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 112 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/basics/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ strata-basics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ strata-basics ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ strata-basics ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/basics/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG60Configurator
+Tests run: 4706, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.033 sec - in TestSuite
+
+Results :
+
+Tests run: 4706, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Data 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ strata-data ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (run-checkstyle) @ strata-data ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-data ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ strata-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/data/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ strata-data ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 41 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/data/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ strata-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/data/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ strata-data ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ strata-data ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/data/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG60Configurator
+Tests run: 168, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.968 sec - in TestSuite
+
+Results :
+
+Tests run: 168, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Product 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ strata-product ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (run-checkstyle) @ strata-product ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-product ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ strata-product ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ strata-product ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 331 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/product/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ strata-product ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/product/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ strata-product ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ strata-product ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/product/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG60Configurator
+Tests run: 2058, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.659 sec - in TestSuite
+
+Results :
+
+Tests run: 2058, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Math 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ strata-math ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (run-checkstyle) @ strata-math ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-math ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ strata-math ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/math/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ strata-math ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 242 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/math/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ strata-math ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/math/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ strata-math ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ strata-math ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/math/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG60Configurator
+Tests run: 1140, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.214 sec - in TestSuite
+
+Results :
+
+Tests run: 1140, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Market 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ strata-market ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (run-checkstyle) @ strata-market ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-market ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ strata-market ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ strata-market ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 172 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/market/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ strata-market ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/market/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ strata-market ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ strata-market ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/market/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG60Configurator
+Tests run: 1027, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.126 sec - in TestSuite
+
+Results :
+
+Tests run: 1027, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Loader 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ strata-loader ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (run-checkstyle) @ strata-loader ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-loader ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ strata-loader ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ strata-loader ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/loader/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ strata-loader ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 102 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ strata-loader ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ strata-loader ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/loader/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: TestNG60Configurator
+Tests run: 161, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.461 sec <<< FAILURE! - in TestSuite
+test_load_swap_all(com.opengamma.strata.loader.csv.TradeCsvLoaderTest)  Time elapsed: 0.026 sec  <<< FAILURE!
+org.joda.beans.test.BeanComparisonError: 
+Bean did not equal expected. Differences:
+.product.legs[6].calculation.firstIndexValue: Was null, but expected Double <121.0>
+	at com.opengamma.strata.loader.csv.TradeCsvLoaderTest.test_load_swap_all(TradeCsvLoaderTest.java:741)
+
+
+Results :
+
+Failed tests: 
+  TradeCsvLoaderTest.test_load_swap_all:741 Bean did not equal expected. Differences:
+.product.legs[6].calculation.firstIndexValue: Was null, but expected Double <121.0>
+
+Tests run: 161, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Strata-Parent ...................................... SUCCESS [  3.684 s]
+[INFO] Strata-Collect ..................................... SUCCESS [ 25.851 s]
+[INFO] Strata-Basics ...................................... SUCCESS [ 22.664 s]
+[INFO] Strata-Data ........................................ SUCCESS [ 12.898 s]
+[INFO] Strata-Product ..................................... SUCCESS [ 38.224 s]
+[INFO] Strata-Math ........................................ SUCCESS [ 24.815 s]
+[INFO] Strata-Market ...................................... SUCCESS [ 23.900 s]
+[INFO] Strata-Loader ...................................... FAILURE [ 14.297 s]
+[INFO] Strata-Pricer ...................................... SKIPPED
+[INFO] Strata-Calc ........................................ SKIPPED
+[INFO] Strata-Measure ..................................... SKIPPED
+[INFO] Strata-Report ...................................... SKIPPED
+[INFO] Strata-Examples .................................... SKIPPED
+[INFO] Strata-Root ........................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:47 min
+[INFO] Finished at: 2020-02-15T18:21:02+01:00
+[INFO] Final Memory: 35M/93M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project strata-loader: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/loader/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project strata-loader: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/loader/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/loader/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :strata-loader
