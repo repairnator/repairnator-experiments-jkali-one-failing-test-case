@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dangdangdotcom/sharding-jdbc",
-  "bugCommit": "https://github.com/dangdangdotcom/sharding-jdbc/compare/84d75188af02...61fa9cf57eea",
-  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/261747957/sharding-jdbc-core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1412,
-  "failing-test-cases": [
-    {
-      "className": "com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.PreparedStatementParserTest",
-      "failingMethods": [
-        "com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.PreparedStatementParserTest#assertParse[assertInsertWithParameter]"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:47 PM",
+    "reproductionDateEnd": "Feb 16, 2020 12:58:27 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 87806376,
+      "totalMemory": 495812608
+    },
+    "totalDuration": 6277,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-261747957-20170807-111645_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-261747957-20170807-111645_bugonly-firstCommit/sharding-jdbc-core",
+    "overallMetrics": {
+      "numberRunning": 1408,
+      "numberPassing": 1407,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.PreparedStatementParserTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.PreparedStatementParserTest",
+        "testMethod": "assertParse[assertInsertWithParameter]",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 267,
+    "numberTestFiles": 244,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  },
+  "commits": {}
 }
