@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/incubator-servicecomb-java-chassis",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/353774072/dynamic-config/config-cc",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 1696,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.config.client.TestMemberDiscovery",
-      "failingMethods": [
-        "org.apache.servicecomb.config.client.TestMemberDiscovery#testServerChange"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:29 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:23:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 43889008,
+      "totalMemory": 90832896
+    },
+    "totalDuration": 595,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-353774072-20180315-124022-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-353774072-20180315-124022-firstCommit/handlers/handler-flowcontrol-qps",
+    "overallMetrics": {
+      "numberRunning": 1220,
+      "numberPassing": 1219,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
       "failures": [
         {
-          "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003chttp://0.0.0.0:3010[8]\u003e but was:\u003chttp://0.0.0.0:3010[9]\u003e",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.qps.TestProviderQpsFlowControlHandler",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.qps.TestProviderQpsFlowControlHandler",
+        "testMethod": "testGlobalQpsControl",
+        "failureName": "java.lang.AssertionError",
+        "detail": "An exception is expected!",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 62,
+    "numberPlugins": 0,
+    "numberSourceFiles": 838,
+    "numberTestFiles": 509,
+    "numberLibrariesFailingModule": 93,
+    "numberLines": 0
+  },
+  "commits": {}
 }
