@@ -1,0 +1,384 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/dubbo-rpc/dubbo-rpc-api/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/dubbo-rpc/dubbo-rpc-api/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 23
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/dubbo-rpc/dubbo-rpc-api/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/dubbo-rpc/dubbo-rpc-api/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-common/2.7.0-SNAPSHOT/dubbo-common-2.7.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/log4j/log4j/1.2.16/log4j-1.2.16.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/alibaba/hessian-lite/3.2.3/hessian-lite-3.2.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/alibaba/fastjson/1.2.46/fastjson-1.2.46.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/de/ruedigermoeller/fst/2.48-jdk-6/fst-2.48-jdk-6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/cedarsoftware/java-util/1.9.0/java-util-1.9.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/cedarsoftware/json-io/2.5.1/json-io-2.5.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-serialization-api/2.7.0-SNAPSHOT/dubbo-serialization-api-2.7.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-remoting-api/2.7.0-SNAPSHOT/dubbo-remoting-api-2.7.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/mockito/mockito-core/2.18.3/mockito-core-2.18.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/net/bytebuddy/byte-buddy-agent/1.8.5/byte-buddy-agent-1.8.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/objenesis/objenesis/2.6/objenesis-2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar]
+[INFO ]  - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[WARN ] org.apache.dubbo.rpc.filter.AccessLogFilter.invoke(AccessLogFilter.java:154) -  [DUBBO] Exception in AcessLogFilter of service(MyInvoker.toString() -> org.apache.dubbo.rpc.support.MockInvocation@3bf576de), dubbo version: 2.7.0-SNAPSHOT, current host: 130.239.242.202
+java.lang.NullPointerException
+	at org.apache.dubbo.rpc.filter.AccessLogFilter.invoke(AccessLogFilter.java:109)
+	at org.apache.dubbo.rpc.filter.AccessLogFilterTest.testInvokeException(AccessLogFilterTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at fr.inria.astor.core.faultlocalization.cocospoon.testrunner.JUnitSingleTestResultRunner.call(JUnitSingleTestResultRunner.java:27)
+	at fr.inria.astor.core.faultlocalization.cocospoon.testrunner.JUnitSingleTestResultRunner.call(JUnitSingleTestResultRunner.java:10)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] org.apache.dubbo.rpc.filter.AccessLogFilter.invoke(AccessLogFilter.java:149) -  [DUBBO] [2020-02-15 23:27:21] null:0 -> 130.239.242.202:0 - dubbo/org.apache.dubbo.rpc.support.DemoService:1.1 echo(java.lang.String) ["aa"], dubbo version: 2.7.0-SNAPSHOT, current host: 130.239.242.202
+[ERROR] org.apache.dubbo.rpc.filter.DeprecatedFilter.invoke(DeprecatedFilter.java:51) -  [DUBBO] The service method org.apache.dubbo.rpc.support.DemoService.echo(String) is DEPRECATED! Declare from test://test:11/test?echo.deprecated=true&group=dubbo&version=1.1, dubbo version: 2.7.0-SNAPSHOT, current host: 130.239.242.202
+[ERROR] org.apache.dubbo.rpc.filter.ExceptionFilter.doPostProcess(ExceptionFilter.java:97) -  [DUBBO] Got unchecked and undeclared exception which called by null. service: org.apache.dubbo.rpc.support.DemoService, method: sayHello, exception: java.lang.IllegalArgumentException: java, dubbo version: 2.7.0-SNAPSHOT, current host: 130.239.242.202
+java.lang.IllegalArgumentException: java
+	at org.apache.dubbo.rpc.filter.ExceptionFilterTest.testJavaException(ExceptionFilterTest.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at fr.inria.astor.core.faultlocalization.cocospoon.testrunner.JUnitSingleTestResultRunner.call(JUnitSingleTestResultRunner.java:27)
+	at fr.inria.astor.core.faultlocalization.cocospoon.testrunner.JUnitSingleTestResultRunner.call(JUnitSingleTestResultRunner.java:10)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] org.apache.dubbo.rpc.filter.ExceptionFilter.doPostProcess(ExceptionFilter.java:97) -  [DUBBO] Got unchecked and undeclared exception which called by null. service: org.apache.dubbo.rpc.support.DemoService, method: sayHello, exception: org.apache.dubbo.rpc.support.LocalException: localException, dubbo version: 2.7.0-SNAPSHOT, current host: 130.239.242.202
+org.apache.dubbo.rpc.support.LocalException: localException
+	at org.apache.dubbo.rpc.filter.ExceptionFilterTest.testRuntimeException(ExceptionFilterTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at fr.inria.astor.core.faultlocalization.cocospoon.testrunner.JUnitSingleTestResultRunner.call(JUnitSingleTestResultRunner.java:27)
+	at fr.inria.astor.core.faultlocalization.cocospoon.testrunner.JUnitSingleTestResultRunner.call(JUnitSingleTestResultRunner.java:10)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] org.apache.dubbo.rpc.filter.ExceptionFilter.doPostProcess(ExceptionFilter.java:97) -  [DUBBO] Got unchecked and undeclared exception which called by null. service: org.apache.dubbo.rpc.support.DemoService, method: sayHello, exception: com.alibaba.com.caucho.hessian.HessianException: hessian, dubbo version: 2.7.0-SNAPSHOT, current host: 130.239.242.202
+com.alibaba.com.caucho.hessian.HessianException: hessian
+	at org.apache.dubbo.rpc.filter.ExceptionFilterTest.testConvertToRunTimeException(ExceptionFilterTest.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at fr.inria.astor.core.faultlocalization.cocospoon.testrunner.JUnitSingleTestResultRunner.call(JUnitSingleTestResultRunner.java:27)
+	at fr.inria.astor.core.faultlocalization.cocospoon.testrunner.JUnitSingleTestResultRunner.call(JUnitSingleTestResultRunner.java:10)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ] org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:50) -  [DUBBO] invoke time out. method: testInvokeWithTimeout arguments: null , url is test://test:11/test?accesslog=true&group=dubbo&timeout=100&version=1.1, invoke elapsed 200 ms., dubbo version: 2.7.0-SNAPSHOT, current host: 130.239.242.202
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 124360 milliseconds (124 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/dubbo-rpc/dubbo-rpc-api/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/dubbo-rpc/dubbo-rpc-api/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-common/2.7.0-SNAPSHOT/dubbo-common-2.7.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/log4j/log4j/1.2.16/log4j-1.2.16.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/alibaba/hessian-lite/3.2.3/hessian-lite-3.2.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/alibaba/fastjson/1.2.46/fastjson-1.2.46.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/de/ruedigermoeller/fst/2.48-jdk-6/fst-2.48-jdk-6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/cedarsoftware/java-util/1.9.0/java-util-1.9.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/cedarsoftware/json-io/2.5.1/json-io-2.5.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-serialization-api/2.7.0-SNAPSHOT/dubbo-serialization-api-2.7.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-remoting-api/2.7.0-SNAPSHOT/dubbo-remoting-api-2.7.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/mockito/mockito-core/2.18.3/mockito-core-2.18.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/net/bytebuddy/byte-buddy-agent/1.8.5/byte-buddy-agent-1.8.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/objenesis/objenesis/2.6/objenesis-2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 72
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 44
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 44,  42
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 42
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 42, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 124360
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-common/2.7.0-SNAPSHOT/dubbo-common-2.7.0-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/log4j/log4j/1.2.16/log4j-1.2.16.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/alibaba/hessian-lite/3.2.3/hessian-lite-3.2.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/alibaba/fastjson/1.2.46/fastjson-1.2.46.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/de/ruedigermoeller/fst/2.48-jdk-6/fst-2.48-jdk-6.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/cedarsoftware/java-util/1.9.0/java-util-1.9.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/com/cedarsoftware/json-io/2.5.1/json-io-2.5.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-serialization-api/2.7.0-SNAPSHOT/dubbo-serialization-api-2.7.0-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/apache/dubbo/dubbo-remoting-api/2.7.0-SNAPSHOT/dubbo-remoting-api-2.7.0-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/mockito/mockito-core/2.18.3/mockito-core-2.18.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/net/bytebuddy/byte-buddy-agent/1.8.5/byte-buddy-agent-1.8.5.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/.m2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-399967896-20180704-132031-firstCommit/dubbo-rpc/dubbo-rpc-api
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.AccessLogFilter line: 153, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.apache.dubbo.rpc.filter.AccessLogFilter.logger.warn(((("Exception in AcessLogFilter of service("[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 48, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.apache.dubbo.rpc.filter.DeprecatedFilter.LOGGER.error((((("The service method " + invoker.getInt[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (invoker.getUrl().getMethodParameter(invocation.getMethodName(), org.apache.dubbo.common.Constant[...] ` -topatch--> `if (true) { 	org.apache.dubbo.rpc.filter.DeprecatedFilter.LOGGER.error((((("The service method " + i[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (invoker.getUrl().getMethodParameter(invocation.getMethodName(), org.apache.dubbo.common.Constant[...] ` -topatch--> `if (false) { 	org.apache.dubbo.rpc.filter.DeprecatedFilter.LOGGER.error((((("The service method " + [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (invoker.getUrl().getMethodParameter(invocation.getMethodName(), org.apache.dubbo.common.Constant[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 46, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.apache.dubbo.rpc.filter.DeprecatedFilter.logged.add(key) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 45, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!org.apache.dubbo.rpc.filter.DeprecatedFilter.logged.contains(key)) { 	org.apache.dubbo.rpc.filt[...] ` -topatch--> `if (true) { 	org.apache.dubbo.rpc.filter.DeprecatedFilter.logged.add(key); 	if (invoker.getUrl().get[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 45, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!org.apache.dubbo.rpc.filter.DeprecatedFilter.logged.contains(key)) { 	org.apache.dubbo.rpc.filt[...] ` -topatch--> `if (false) { 	org.apache.dubbo.rpc.filter.DeprecatedFilter.logged.add(key); 	if (invoker.getUrl().ge[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 45, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!org.apache.dubbo.rpc.filter.DeprecatedFilter.logged.contains(key)) { 	org.apache.dubbo.rpc.filt[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 40, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.future = future ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 41, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.storedContext = org.apache.dubbo.rpc.RpcContext.getContext() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 42, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.storedServerContext = org.apache.dubbo.rpc.RpcContext.getServerContext() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (isAsyncStarted() && stop()) { 	if (value instanceof java.lang.Throwable) { 		java.lang.Throwable[...] ` -topatch--> `if (true) { 	if (value instanceof java.lang.Throwable) { 		java.lang.Throwable bizExe = ((java.lang.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (isAsyncStarted() && stop()) { 	if (value instanceof java.lang.Throwable) { 		java.lang.Throwable[...] ` -topatch--> `if (false) { 	if (value instanceof java.lang.Throwable) { 		java.lang.Throwable bizExe = ((java.lang[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (isAsyncStarted() && stop()) { 	if (value instanceof java.lang.Throwable) { 		java.lang.Throwable[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 48, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value instanceof java.lang.Throwable) { 	java.lang.Throwable bizExe = ((java.lang.Throwable) (va[...] ` -topatch--> `if (true) { 	java.lang.Throwable bizExe = ((java.lang.Throwable) (value)); 	this.future.completeExce[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 48, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value instanceof java.lang.Throwable) { 	java.lang.Throwable bizExe = ((java.lang.Throwable) (va[...] ` -topatch--> `if (false) { 	java.lang.Throwable bizExe = ((java.lang.Throwable) (value)); 	this.future.completeExc[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 48, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (value instanceof java.lang.Throwable) { 	java.lang.Throwable bizExe = ((java.lang.Throwable) (va[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 52, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `future.complete(value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.AsyncContextImpl line: 71, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.started.set(true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 69, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `buf.append(")") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 66, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `buf.append(type.getSimpleName()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 62, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `first = false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (first) { 	first = false; } else { 	buf.append(", "); } ` -topatch--> `if (true) { 	first = false; } else { 	buf.append(", "); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (first) { 	first = false; } else { 	buf.append(", "); } ` -topatch--> `if (false) { 	first = false; } else { 	buf.append(", "); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (first) { 	first = false; } else { 	buf.append(", "); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 60, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.Class<?> type : types) { 	if (first) { 		first = false; 	} else { 		buf.append(", ");[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 58, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((types != null) && (types.length > 0)) { 	boolean first = true; 	for (java.lang.Class<?> type : [...] ` -topatch--> `if (true) { 	boolean first = true; 	for (java.lang.Class<?> type : types) { 		if (first) { 			first [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 58, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((types != null) && (types.length > 0)) { 	boolean first = true; 	for (java.lang.Class<?> type : [...] ` -topatch--> `if (false) { 	boolean first = true; 	for (java.lang.Class<?> type : types) { 		if (first) { 			first[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 58, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((types != null) && (types.length > 0)) { 	boolean first = true; 	for (java.lang.Class<?> type : [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.filter.DeprecatedFilter line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `buf.append("(") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 726, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.asyncContext = asyncContext ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 708, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return currentContext.asyncContext ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 707, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `currentContext.asyncContext.start() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 706, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (currentContext.asyncContext != null) { 	currentContext.asyncContext.start(); 	return currentCont[...] ` -topatch--> `if (true) { 	currentContext.asyncContext.start(); 	return currentContext.asyncContext; } else { 	thr[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 706, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (currentContext.asyncContext != null) { 	currentContext.asyncContext.start(); 	return currentCont[...] ` -topatch--> `if (false) { 	currentContext.asyncContext.start(); 	return currentContext.asyncContext; } else { 	th[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 706, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (currentContext.asyncContext != null) { 	currentContext.asyncContext.start(); 	return currentCont[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 716, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 715, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (this.asyncContext == null) { 	return false; } ` -topatch--> `if (true) { 	return false; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 715, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (this.asyncContext == null) { 	return false; } ` -topatch--> `if (false) { 	return false; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcContext line: 715, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (this.asyncContext == null) { 	return false; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.dubbo.rpc.RpcResult line: 72, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.result = value ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:171) - Time Repair Loop (s): 229.102
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:173) - generationsexecuted: 1
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:255) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:265) - End Repair Search: NOT Found solution
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:190) - Time Total(s): 251.204
