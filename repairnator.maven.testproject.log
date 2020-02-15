@@ -1,0 +1,545 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Atomix Parent Pom
+[INFO] Atomix Utilities
+[INFO] Atomix Messaging
+[INFO] Atomix Cluster
+[INFO] Atomix Storage
+[INFO] Atomix Primitive API
+[INFO] Atomix Protocols Parent
+[INFO] Atomix Protocols :: Raft
+[INFO] Atomix Protocols :: Primary Backup Protocol
+[INFO] Atomix
+[INFO] Atomix Config
+[INFO] Atomix Rest
+[INFO] Atomix Agent
+[INFO] Atomix Tests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Atomix Parent Pom 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ atomix-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (prepare-agent) @ atomix-parent ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Atomix Utilities 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ atomix-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (prepare-agent) @ atomix-utils ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ atomix-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ atomix-utils ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 94 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/target/classes
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/NativeMemory.java:[18,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/HeapMemory.java:[18,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/MappedMemory.java:[18,16] sun.misc.Cleaner is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/MappedMemory.java:[19,18] sun.nio.ch.DirectBuffer is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/NativeMemory.java:[31,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/NativeMemory.java:[47,27] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/NativeMemory.java:[49,17] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/NativeMemory.java:[112,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/HeapMemory.java:[99,10] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/MappedMemory.java:[68,13] sun.nio.ch.DirectBuffer is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/MappedMemory.java:[81,5] sun.misc.Cleaner is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/memory/MappedMemory.java:[81,25] sun.nio.ch.DirectBuffer is internal proprietary API and may be removed in a future release
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/concurrent/RetryingFunction.java: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/concurrent/RetryingFunction.java uses or overrides a deprecated API.
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/concurrent/RetryingFunction.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/time/Versioned.java: Some input files use unchecked or unsafe operations.
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/main/java/io/atomix/utils/time/Versioned.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ atomix-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ atomix-utils ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M4:test (default-test) @ atomix-utils ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/utils/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.jar (18 KB at 37.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.pom (3 KB at 11.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M4/surefire-providers-3.0.0-M4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M4/surefire-providers-3.0.0-M4.pom (3 KB at 103.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom (210 B at 7.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.pom (3 KB at 72.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.pom (3 KB at 105.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.pom (4 KB at 146.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom (3 KB at 100.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom (12 KB at 492.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom (2 KB at 63.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.jar (27 KB at 814.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.jar (12 KB at 242.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar (32 KB at 418.9 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.atomix.utils.time.VersionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 s - in io.atomix.utils.time.VersionTest
+[INFO] Running io.atomix.utils.time.EpochTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in io.atomix.utils.time.EpochTest
+[INFO] Running io.atomix.utils.time.VersionedTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 s - in io.atomix.utils.time.VersionedTest
+[INFO] Running io.atomix.utils.time.WallClockTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in io.atomix.utils.time.WallClockTest
+[INFO] Running io.atomix.utils.time.MultiValuedTimestampTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in io.atomix.utils.time.MultiValuedTimestampTest
+[INFO] Running io.atomix.utils.time.LogicalTimestampTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in io.atomix.utils.time.LogicalTimestampTest
+[INFO] Running io.atomix.utils.time.WallClockTimestampTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in io.atomix.utils.time.WallClockTimestampTest
+[INFO] Running io.atomix.utils.time.LogicalClockTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.atomix.utils.time.LogicalClockTest
+[INFO] Running io.atomix.utils.net.AddressTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in io.atomix.utils.net.AddressTest
+[INFO] Running io.atomix.utils.concurrent.RetryingFunctionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in io.atomix.utils.concurrent.RetryingFunctionTest
+[INFO] Running io.atomix.utils.concurrent.OrderedFutureTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in io.atomix.utils.concurrent.OrderedFutureTest
+[INFO] Running io.atomix.utils.serializer.BufferAwareByteArrayOutputStreamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in io.atomix.utils.serializer.BufferAwareByteArrayOutputStreamTest
+[INFO] Running io.atomix.utils.serializer.KryoInputPoolTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in io.atomix.utils.serializer.KryoInputPoolTest
+[INFO] Running io.atomix.utils.serializer.KryoOutputPoolTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in io.atomix.utils.serializer.KryoOutputPoolTest
+[INFO] Running io.atomix.utils.logging.LoggerContextTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in io.atomix.utils.logging.LoggerContextTest
+[INFO] Running io.atomix.utils.ArraySizeHashPrinterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in io.atomix.utils.ArraySizeHashPrinterTest
+[INFO] Running io.atomix.utils.GenericsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in io.atomix.utils.GenericsTest
+[INFO] Running io.atomix.utils.MatchTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in io.atomix.utils.MatchTest
+[INFO] Running io.atomix.utils.TimestampPrinterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.023 s - in io.atomix.utils.TimestampPrinterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 39, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Atomix Messaging 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ atomix-messaging ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (prepare-agent) @ atomix-messaging ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/messaging/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ atomix-messaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/messaging/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ atomix-messaging ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/messaging/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ atomix-messaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/messaging/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ atomix-messaging ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/messaging/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M4:test (default-test) @ atomix-messaging ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/messaging/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.atomix.messaging.impl.NettyBroadcastServiceTest
+23:16:22.958 [main] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+23:16:22.976 [main] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 2
+23:16:23.197 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+23:16:23.198 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+23:16:23.257 [main] DEBUG i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+23:16:23.258 [main] DEBUG i.n.util.internal.PlatformDependent0 - Java version: 8
+23:16:23.270 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+23:16:23.271 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+23:16:23.272 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+23:16:23.273 [main] DEBUG i.n.util.internal.PlatformDependent0 - direct buffer constructor: available
+23:16:23.273 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+23:16:23.274 [main] DEBUG i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+23:16:23.274 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+23:16:23.274 [main] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+23:16:23.275 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+23:16:23.275 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+23:16:23.277 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+23:16:23.277 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1131216896 bytes
+23:16:23.277 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+23:16:23.278 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+23:16:23.298 [main] DEBUG i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+23:16:23.345 [main] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+23:16:23.346 [main] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+23:16:23.387 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+23:16:23.388 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+23:16:23.395 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+23:16:23.396 [main] DEBUG io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 128
+23:16:23.431 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 873751 (auto-detected)
+23:16:23.434 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 80:00:00:ff:fe:2e:fe:80 (auto-detected)
+23:16:23.470 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+23:16:23.471 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+23:16:23.571 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 2
+23:16:23.572 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 2
+23:16:23.572 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+23:16:23.572 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+23:16:23.573 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+23:16:23.573 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+23:16:23.574 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+23:16:23.574 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+23:16:23.574 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+23:16:23.575 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+23:16:23.575 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+23:16:23.597 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+23:16:23.598 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+23:16:23.598 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+23:16:23.765 [netty-broadcast-event-nio-client-1] INFO  i.a.m.impl.NettyBroadcastService - localhost joining multicast group 230.0.0.1 on port 44139
+23:16:23.767 [netty-broadcast-event-nio-client-1] INFO  i.a.m.impl.NettyBroadcastService - localhost successfully joined multicast group 230.0.0.1 on port 44139
+23:16:23.820 [netty-broadcast-event-nio-client-1] INFO  i.a.m.impl.NettyBroadcastService - localhost joining multicast group 230.0.0.1 on port 44139
+23:16:23.821 [netty-broadcast-event-nio-client-1] INFO  i.a.m.impl.NettyBroadcastService - localhost successfully joined multicast group 230.0.0.1 on port 44139
+23:16:23.827 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+23:16:23.829 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+23:16:23.829 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+23:16:23.830 [main] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+23:16:23.842 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+23:16:23.844 [main] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3bc69ce9
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.4 s - in io.atomix.messaging.impl.NettyBroadcastServiceTest
+[INFO] Running io.atomix.messaging.impl.MessageDecoderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in io.atomix.messaging.impl.MessageDecoderTest
+[INFO] Running io.atomix.messaging.impl.NettyMessagingServiceTest
+23:16:24.174 [main] WARN  i.a.m.impl.NettyMessagingService - Disabling TLS for intra-cluster messaging; Could not load cluster key store: ../config/atomix.jks (No such file or directory)
+23:16:24.185 [main] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /tmp (io.netty.tmpdir)
+23:16:24.208 [main] DEBUG i.n.u.internal.NativeLibraryLoader - Unable to load the library 'netty_transport_native_epoll_x86_64', trying other loading mechanism.
+java.lang.UnsatisfiedLinkError: no netty_transport_native_epoll_x86_64 in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1867) ~[na:1.8.0_202]
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870) ~[na:1.8.0_202]
+	at java.lang.System.loadLibrary(System.java:1122) ~[na:1.8.0_202]
+	at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:263) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_202]
+	at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:255) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:233) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:124) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:183) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.Native.<clinit>(Native.java:61) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:33) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoop.<clinit>(EpollEventLoop.java:55) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:134) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:35) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:104) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:91) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:68) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.atomix.messaging.impl.NettyMessagingService.initEventLoopGroup(NettyMessagingService.java:314) [classes/:na]
+	at io.atomix.messaging.impl.NettyMessagingService.start(NettyMessagingService.java:216) [classes/:na]
+	at io.atomix.messaging.impl.NettyMessagingServiceTest.setUp(NettyMessagingServiceTest.java:70) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377) [surefire-booter-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138) [surefire-booter-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465) [surefire-booter-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451) [surefire-booter-3.0.0-M4.jar:3.0.0-M4]
+23:16:24.218 [main] DEBUG i.n.u.internal.NativeLibraryLoader - netty_transport_native_epoll_x86_64 cannot be loaded from java.libary.path, now trying export to -Dio.netty.native.workdir: /tmp
+java.lang.UnsatisfiedLinkError: no netty_transport_native_epoll_x86_64 in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1867) ~[na:1.8.0_202]
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870) ~[na:1.8.0_202]
+	at java.lang.System.loadLibrary(System.java:1122) ~[na:1.8.0_202]
+	at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:243) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:124) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:183) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.Native.<clinit>(Native.java:61) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:33) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoop.<clinit>(EpollEventLoop.java:55) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:134) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:35) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:104) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:91) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:68) [netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:4.1.22.Final]
+	at io.atomix.messaging.impl.NettyMessagingService.initEventLoopGroup(NettyMessagingService.java:314) [classes/:na]
+	at io.atomix.messaging.impl.NettyMessagingService.start(NettyMessagingService.java:216) [classes/:na]
+	at io.atomix.messaging.impl.NettyMessagingServiceTest.setUp(NettyMessagingServiceTest.java:70) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377) [surefire-booter-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138) [surefire-booter-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465) [surefire-booter-3.0.0-M4.jar:3.0.0-M4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451) [surefire-booter-3.0.0-M4.jar:3.0.0-M4]
+	Suppressed: java.lang.UnsatisfiedLinkError: no netty_transport_native_epoll_x86_64 in java.library.path
+		at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1867) ~[na:1.8.0_202]
+		at java.lang.Runtime.loadLibrary0(Runtime.java:870) ~[na:1.8.0_202]
+		at java.lang.System.loadLibrary(System.java:1122) ~[na:1.8.0_202]
+		at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+		at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+		at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:263) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+		at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_202]
+		at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:255) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+		at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:233) ~[netty-common-4.1.22.Final.jar:4.1.22.Final]
+		... 43 common frames omitted
+23:16:24.247 [main] DEBUG i.n.u.internal.NativeLibraryLoader - Successfully loaded the library /tmp/libnetty_transport_native_epoll_x86_647664025167446208402.so
+23:16:24.319 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - b-cn0629.hpc2n.umu.se/130.239.241.139 accepting incoming connections on port 42971
+23:16:24.331 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Started
+23:16:24.332 [main] WARN  i.a.m.impl.NettyMessagingService - Disabling TLS for intra-cluster messaging; Could not load cluster key store: ../config/atomix.jks (No such file or directory)
+23:16:24.347 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - b-cn0629.hpc2n.umu.se/130.239.241.139 accepting incoming connections on port 40263
+23:16:24.348 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Started
+23:16:24.414 [main] DEBUG i.a.m.impl.NettyMessagingService - Established a new connection to b-cn0629.hpc2n.umu.se:40263
+23:16:39.542 [main] WARN  i.a.m.impl.NettyMessagingService - Disabling TLS for intra-cluster messaging; Could not load cluster key store: ../config/atomix.jks (No such file or directory)
+23:16:39.580 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Stopped
+23:16:39.598 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Stopped
+23:16:39.607 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - b-cn0629.hpc2n.umu.se/130.239.241.139 accepting incoming connections on port 36615
+23:16:39.608 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Started
+23:16:39.609 [main] WARN  i.a.m.impl.NettyMessagingService - Disabling TLS for intra-cluster messaging; Could not load cluster key store: ../config/atomix.jks (No such file or directory)
+23:16:39.611 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - b-cn0629.hpc2n.umu.se/130.239.241.139 accepting incoming connections on port 34537
+23:16:39.616 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Started
+23:16:39.629 [main] DEBUG i.a.m.impl.NettyMessagingService - Established a new connection to b-cn0629.hpc2n.umu.se:34537
+23:16:39.645 [main] DEBUG i.a.m.impl.NettyMessagingService - Established a new connection to 127.0.0.1:5003
+23:16:39.653 [netty-messaging-event-epoll-client-0] DEBUG i.a.m.impl.NettyMessagingService - b-cn0629.hpc2n.umu.se:34537 - No handler for message type a320bfb0-5921-45f9-a6b1-d0fe4abfe1cc from b-cn0629.hpc2n.umu.se:36615
+23:16:39.655 [netty-messaging-event-epoll-client-0] DEBUG i.a.m.impl.NettyMessagingService - Received a reply for message id:[1] but was unable to locate the request handle
+23:16:39.661 [main] WARN  i.a.m.impl.NettyMessagingService - Disabling TLS for intra-cluster messaging; Could not load cluster key store: ../config/atomix.jks (No such file or directory)
+23:16:39.674 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Stopped
+23:16:39.682 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Stopped
+23:16:39.700 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - b-cn0629.hpc2n.umu.se/130.239.241.139 accepting incoming connections on port 34073
+23:16:39.702 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Started
+23:16:39.703 [main] WARN  i.a.m.impl.NettyMessagingService - Disabling TLS for intra-cluster messaging; Could not load cluster key store: ../config/atomix.jks (No such file or directory)
+23:16:39.705 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - b-cn0629.hpc2n.umu.se/130.239.241.139 accepting incoming connections on port 46789
+23:16:39.706 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Started
+23:16:39.707 [main] DEBUG i.a.m.impl.NettyMessagingService - Established a new connection to b-cn0629.hpc2n.umu.se:46789
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 16.771 s - in io.atomix.messaging.impl.NettyMessagingServiceTest
+23:16:40.788 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Stopped
+23:16:40.798 [netty-messaging-event-epoll-server-0] INFO  i.a.m.impl.NettyMessagingService - Stopped
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 8, Failures: 0, Errors: 0, Skipped: 2
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Atomix Cluster 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ atomix-cluster ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (prepare-agent) @ atomix-cluster ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ atomix-cluster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ atomix-cluster ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 35 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ atomix-cluster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ atomix-cluster ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/target/test-classes
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/test/java/io/atomix/cluster/impl/DefaultClusterServiceTest.java: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/test/java/io/atomix/cluster/impl/DefaultClusterServiceTest.java uses unchecked or unsafe operations.
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/test/java/io/atomix/cluster/impl/DefaultClusterServiceTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M4:test (default-test) @ atomix-cluster ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.atomix.cluster.messaging.impl.DefaultClusterEventingServiceTest
+23:16:44.616 [atomix-cluster-heartbeat-sender] INFO  i.a.c.impl.DefaultClusterService - Started
+23:16:44.642 [main] INFO  i.a.c.m.i.DefaultClusterEventingService - Started
+23:16:44.724 [atomix-cluster-heartbeat-receiver] INFO  i.a.c.impl.DefaultClusterService - Started
+23:16:44.726 [main] INFO  i.a.c.m.i.DefaultClusterEventingService - Started
+23:16:44.759 [atomix-cluster-heartbeat-sender] INFO  i.a.c.impl.DefaultClusterService - Started
+23:16:44.762 [main] INFO  i.a.c.m.i.DefaultClusterEventingService - Started
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.944 s - in io.atomix.cluster.messaging.impl.DefaultClusterEventingServiceTest
+[INFO] Running io.atomix.cluster.impl.DefaultClusterServiceTest
+23:16:45.553 [atomix-cluster-heartbeat-receiver] INFO  i.a.c.impl.DefaultClusterService - Started
+23:16:45.554 [atomix-cluster-heartbeat-receiver] INFO  i.a.c.impl.DefaultClusterService - Started
+23:16:45.557 [atomix-cluster-heartbeat-receiver] INFO  i.a.c.impl.DefaultClusterService - Started
+23:16:46.827 [atomix-cluster-heartbeat-receiver] INFO  i.a.c.impl.DefaultClusterService - Started
+23:16:47.863 [atomix-cluster-heartbeat-sender] INFO  i.a.c.impl.DefaultClusterService - Started
+23:16:51.364 [main] INFO  i.a.c.impl.DefaultClusterService - Stopped
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.4 s <<< FAILURE! - in io.atomix.cluster.impl.DefaultClusterServiceTest
+[ERROR] io.atomix.cluster.impl.DefaultClusterServiceTest.testClusterService  Time elapsed: 8.373 s  <<< FAILURE!
+java.lang.AssertionError: expected:<INACTIVE> but was:<ACTIVE>
+	at io.atomix.cluster.impl.DefaultClusterServiceTest.testClusterService(DefaultClusterServiceTest.java:195)
+
+[INFO] Running io.atomix.cluster.impl.DefaultCoreMetadataServiceTest
+23:16:53.983 [main] INFO  i.a.c.i.DefaultCoreMetadataService - Started
+23:16:54.024 [atomix-cluster-metadata-receiver] INFO  i.a.c.i.DefaultCoreMetadataService - Started
+23:16:54.082 [main] INFO  i.a.c.i.DefaultCoreMetadataService - Started
+23:16:54.128 [atomix-cluster-metadata-receiver] INFO  i.a.c.i.DefaultCoreMetadataService - Started
+23:16:54.143 [atomix-cluster-metadata-receiver] INFO  i.a.c.i.DefaultCoreMetadataService - Started
+23:16:54.157 [main] INFO  i.a.c.i.DefaultCoreMetadataService - Started
+23:16:54.197 [atomix-cluster-metadata-receiver] INFO  i.a.c.i.DefaultCoreMetadataService - Started
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.285 s - in io.atomix.cluster.impl.DefaultCoreMetadataServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultClusterServiceTest.testClusterService:195 expected:<INACTIVE> but was:<ACTIVE>
+[INFO] 
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Atomix Parent Pom .................................. SUCCESS [  1.141 s]
+[INFO] Atomix Utilities ................................... SUCCESS [  9.955 s]
+[INFO] Atomix Messaging ................................... SUCCESS [ 20.988 s]
+[INFO] Atomix Cluster ..................................... FAILURE [ 13.470 s]
+[INFO] Atomix Storage ..................................... SKIPPED
+[INFO] Atomix Primitive API ............................... SKIPPED
+[INFO] Atomix Protocols Parent ............................ SKIPPED
+[INFO] Atomix Protocols :: Raft ........................... SKIPPED
+[INFO] Atomix Protocols :: Primary Backup Protocol ........ SKIPPED
+[INFO] Atomix ............................................. SKIPPED
+[INFO] Atomix Config ...................................... SKIPPED
+[INFO] Atomix Rest ........................................ SKIPPED
+[INFO] Atomix Agent ....................................... SKIPPED
+[INFO] Atomix Tests ....................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 47.633 s
+[INFO] Finished at: 2020-02-15T23:16:54+01:00
+[INFO] Final Memory: 38M/91M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M4:test (default-test) on project atomix-cluster: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M4:test (default-test) on project atomix-cluster: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:271)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:159)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:435)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1079)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:889)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :atomix-cluster
