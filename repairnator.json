@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "SUSE/salt-netapi-client",
-  "bugCommit": "https://github.com/SUSE/salt-netapi-client/commit/5506e8b514f7",
-  "failingModule": "/root/workspace/SUSE/salt-netapi-client/358440603",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 165,
-  "failing-test-cases": [
-    {
-      "className": "com.suse.salt.netapi.calls.CallAsyncEventsTest",
-      "failingMethods": [
-        "com.suse.salt.netapi.calls.CallAsyncEventsTest#testAsyncCall"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:12 PM",
+    "reproductionDateEnd": "Feb 15, 2020 7:31:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 76267104,
+      "totalMemory": 285011968
+    },
+    "totalDuration": 4635,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4374,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4374
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SUSE-salt-netapi-client-358440603-20180326-164817-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SUSE-salt-netapi-client-358440603-20180326-164817-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 165,
+      "numberPassing": 164,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...OLEAN but was STRING[]\u003e but was:\u003c...OLEAN but was STRING[ at path $]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.suse.salt.netapi.calls.CallAsyncEventsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.suse.salt.netapi.calls.CallAsyncEventsTest",
+        "testMethod": "testAsyncCall",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...OLEAN but was STRING[]\u003e but was:\u003c...OLEAN but was STRING[ at path $]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 125,
+    "numberTestFiles": 34,
+    "numberLibrariesFailingModule": 47,
+    "numberLines": 0
+  }
 }
