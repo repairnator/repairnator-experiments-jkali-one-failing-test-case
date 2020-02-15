@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "SonarSource/sonar-scanner-jenkins",
-  "bugCommit": "https://github.com/SonarSource/sonar-scanner-jenkins/compare/65eeceee4b3f06fa15e7132fe65ce5693aef3022...8147c6e6020b121c105c50c87cf6df4af22009a8",
-  "failingModule": "/root/workspace/SonarSource/sonar-scanner-jenkins/339464938",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 192,
-  "failing-test-cases": [
-    {
-      "className": "org.sonarsource.scanner.jenkins.pipeline.WaitForQualityGateStepTest",
-      "failingMethods": [
-        "org.sonarsource.scanner.jenkins.pipeline.WaitForQualityGateStepTest#failIfNoTaskIdInContext"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:15 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:29:53 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 126597488,
+      "totalMemory": 324952064
+    },
+    "totalDuration": 935,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 243,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          243
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarSource-sonar-scanner-jenkins-339464938-20180209-150454-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarSource-sonar-scanner-jenkins-339464938-20180209-150454-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 192,
+      "numberPassing": 191,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: a string containing \"Unable to get SonarQube task id and/or server name.\"\n     but: was \"Started\n[Pipeline] waitForQualityGate\n[Pipeline] End of Pipeline\n\"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonarsource.scanner.jenkins.pipeline.WaitForQualityGateStepTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonarsource.scanner.jenkins.pipeline.WaitForQualityGateStepTest",
+        "testMethod": "failIfNoTaskIdInContext",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a string containing \"Unable to get SonarQube task id and/or server name.\"\n     but: was \"Started\n[Pipeline] waitForQualityGate\n[Pipeline] End of Pipeline\n\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 55,
+    "numberTestFiles": 42,
+    "numberLibrariesFailingModule": 317,
+    "numberLines": 0
+  },
+  "commits": {}
 }
