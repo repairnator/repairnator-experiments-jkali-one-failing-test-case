@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "SocketByte/Wrapp",
-  "bugCommit": "https://github.com/SocketByte/Wrapp/compare/e0861f42bc28...72ed974a112b",
-  "failingModule": "/root/workspace/SocketByte/Wrapp/369727490",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 8,
-  "failing-test-cases": [
-    {
-      "className": "pl.socketbyte.wrapp.WrapperTest",
-      "failingMethods": [
-        "pl.socketbyte.wrapp.WrapperTest#serializeTest"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:14 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:16:38 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 20902048,
+      "totalMemory": 119799808
+    },
+    "totalDuration": 142,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 81,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          81
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SocketByte-Wrapp-369727490-20180422-135348-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SocketByte-Wrapp-369727490-20180422-135348-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 8,
+      "numberPassing": 7,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003cWrapper{fields\u003d{[serializeMe\u003dFieldInfo{clazz\u003dclass pl.socketbyte.wrapp.tool.TestClass, type\u003dplease}, test\u003dFieldInfo{clazz\u003dclass pl.socketbyte.wrapp.tool.TestClass, type\u003d95]}, testClass1\u003dFieldI...\u003e but was:\u003cWrapper{fields\u003d{[test\u003dFieldInfo{clazz\u003dclass pl.socketbyte.wrapp.tool.TestClass, type\u003d95}, serializeMe\u003dFieldInfo{clazz\u003dclass pl.socketbyte.wrapp.tool.TestClass, type\u003dplease]}, testClass1\u003dFieldI...\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "pl.socketbyte.wrapp.WrapperTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "pl.socketbyte.wrapp.WrapperTest",
+        "testMethod": "serializeTest",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cWrapper{fields\u003d{[serializeMe\u003dFieldInfo{clazz\u003dclass pl.socketbyte.wrapp.tool.TestClass, type\u003dplease}, test\u003dFieldInfo{clazz\u003dclass pl.socketbyte.wrapp.tool.TestClass, type\u003d95]}, testClass1\u003dFieldI...\u003e but was:\u003cWrapper{fields\u003d{[test\u003dFieldInfo{clazz\u003dclass pl.socketbyte.wrapp.tool.TestClass, type\u003d95}, serializeMe\u003dFieldInfo{clazz\u003dclass pl.socketbyte.wrapp.tool.TestClass, type\u003dplease]}, testClass1\u003dFieldI...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 5,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 1,
+    "numberLines": 0
+  },
+  "commits": {}
 }
