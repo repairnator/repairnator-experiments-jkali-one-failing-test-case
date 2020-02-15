@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Innovimax-SARL/mix-them",
-  "bugCommit": "https://github.com/Innovimax-SARL/mix-them/compare/25d7d92a9a58...f5074d8f5542",
-  "failingModule": "/root/workspace/Innovimax-SARL/mix-them/374315962",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 22,
-  "failing-test-cases": [
-    {
-      "className": "innovimax.mixthem.GenericTest",
-      "failingMethods": [
-        "innovimax.mixthem.GenericTest#testBytesRules"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-374315962-20180503-110756-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 22,
+      "numberPassing": 21,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "innovimax.mixthem.GenericTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "innovimax.mixthem.GenericTest",
+        "testMethod": "testBytesRules",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 50,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:46:03 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:51:05 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 17149664,
+      "totalMemory": 91283456
+    },
+    "totalDuration": 300,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 71,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          71
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-374315962-20180503-110756-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
