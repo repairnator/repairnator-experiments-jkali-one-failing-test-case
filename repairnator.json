@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/incubator-servicecomb-java-chassis",
-  "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/387768887/foundations/foundation-config",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 159,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource",
-      "failingMethods": [
-        "testPullFromClassPath"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:29 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:27:49 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 96391312,
+      "totalMemory": 184406016
+    },
+    "totalDuration": 854,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 4,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          4,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 565,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          565
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-387768887-20180604-145043-firstCommit/foundations/foundation-config",
+    "overallMetrics": {
+      "numberRunning": 159,
+      "numberPassing": 158,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003chttp://10.120.169.202:9980/\u003e but was:\u003cnull\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource",
+        "testMethod": "testPullFromClassPath",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003chttp://10.120.169.202:9980/\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 69,
+    "numberPlugins": 0,
+    "numberSourceFiles": 881,
+    "numberTestFiles": 548,
+    "numberLibrariesFailingModule": 74,
+    "numberLines": 0
+  },
+  "commits": {}
 }
