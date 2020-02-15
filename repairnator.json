@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:09 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:21:10 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 60027480,
+      "totalMemory": 117723136
+    },
+    "totalDuration": 418,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Spirals-Team-repairnator-413980315-20180809-122814-firstCommit/repairnator/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Spirals-Team-repairnator-413980315-20180809-122814-firstCommit/repairnator/repairnator-core",
+    "overallMetrics": {
+      "numberRunning": 12,
+      "numberPassing": 11,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "fr.inria.spirals.repairnator.config.TestRepairnatorConfig",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 2
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "fr.inria.spirals.repairnator.config.TestRepairnatorConfig",
+        "testMethod": "testGithubOauth",
+        "failureName": "java.lang.AssertionError",
+        "detail": "OAuth is not working expected:\u003c5000\u003e but was:\u003c60\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 143,
+    "numberTestFiles": 32,
+    "numberLibrariesFailingModule": 66,
+    "numberLines": 0
+  },
+  "commits": {}
+}
