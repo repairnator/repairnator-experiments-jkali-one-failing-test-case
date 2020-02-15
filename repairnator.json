@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dangdangdotcom/sharding-jdbc",
-  "failingModule": "/root/workspace/dangdangdotcom/sharding-jdbc/267180109/sharding-jdbc-core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1493,
-  "failing-test-cases": [
-    {
-      "className": "com.dangdang.ddframe.rdb.sharding.keygen.DefaultKeyGeneratorTest",
-      "failingMethods": [
-        "com.dangdang.ddframe.rdb.sharding.keygen.DefaultKeyGeneratorTest#assertMaxSequence"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:47 PM",
+    "reproductionDateEnd": "Feb 16, 2020 12:46:31 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 135808512,
+      "totalMemory": 503779328
+    },
+    "totalDuration": 5561,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 5277,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          5277
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-267180109-20170822-152140_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-267180109-20170822-152140_bugonly-firstCommit/sharding-jdbc-core",
+    "overallMetrics": {
+      "numberRunning": 1489,
+      "numberPassing": 1488,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: is \u003c4094L\u003e      but: was \u003c4095L\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.keygen.DefaultKeyGeneratorTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.dangdang.ddframe.rdb.sharding.keygen.DefaultKeyGeneratorTest",
+        "testMethod": "assertMaxSequence",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003c4094L\u003e\n     but: was \u003c4095L\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 292,
+    "numberTestFiles": 244,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  },
+  "commits": {}
 }
