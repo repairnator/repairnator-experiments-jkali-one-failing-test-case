@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 3:17:28 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 142407288,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1924,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1857,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1857
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CleanstoneMC-Cleanstone-418557770-20180821-085344-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CleanstoneMC-Cleanstone-418557770-20180821-085344-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 8,
+      "numberPassing": 7,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "rocks.cleanstone.game.block.state.mapping.ModernBlockStateMappingTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "rocks.cleanstone.game.block.state.mapping.ModernBlockStateMappingTest",
+        "testMethod": "serializationShouldBeOneToOne",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cBlockState{type\u003dREDSTONE_WIRE;properties\u003d[Property{west-\u003eNONE}, Property{west-\u003eNONE}, Property{power-\u003e0}, Property{west-\u003eNONE}, Property{west-\u003eNONE}]}\u003e but was: \u003cBlockState{type\u003dREDSTONE_WIRE;properties\u003d[Property{power-\u003e0}, Property{west-\u003eNONE}]}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 523,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 67,
+    "numberLines": 0
+  },
+  "commits": {}
+}
