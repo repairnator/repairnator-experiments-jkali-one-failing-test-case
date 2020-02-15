@@ -1,0 +1,1148 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DoIT 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ DoIT ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ DoIT ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ DoIT ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-392650533-20180615-122021-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ DoIT ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ DoIT ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-392650533-20180615-122021-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 6.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 92.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1101.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ProdArchTest
+2020-02-15 18:14:54,130 [DEBUG] DaoManager created dao for class class de.swtproject.doit.core.ToDo with reflection
+2020-02-15 18:14:54,135 [DEBUG] DaoManager created dao for class class de.swtproject.doit.core.Milestone with reflection
+2020-02-15 18:14:54,139 [DEBUG] DaoManager created dao for class class de.swtproject.doit.core.MilestoneToDo with reflection
+2020-02-15 18:14:54,140 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:54,307 [DEBUG] JdbcConnectionSource opened connection to jdbc:sqlite:data/storage.db got #310656974
+2020-02-15 18:14:55,468 [INFO] TableUtils executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:55,472 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:55,756 [INFO] TableUtils executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:55,757 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:55,760 [INFO] TableUtils executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:55,760 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:55,762 [INFO] TableUtils executed drop table statement changed 0 rows: DROP TABLE `todo` 
+2020-02-15 18:14:55,762 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:55,763 [INFO] TableUtils executed drop table statement changed 0 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:55,764 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:55,766 [INFO] TableUtils executed drop table statement changed 0 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:55,766 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:55,767 [INFO] TableUtils executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:55,767 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:55,769 [INFO] TableUtils executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:55,769 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:55,770 [INFO] TableUtils executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:55,772 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,789 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,789 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,790 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,791 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,791 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,791 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,793 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,794 [DEBUG] BaseMappedStatement assigned id '3' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,796 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-02-15 18:14:55,811 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-02-15 18:14:55,813 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-02-15 18:14:55,814 [DEBUG] SelectIterator starting iterator @1757293506 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-02-15 18:14:55,815 [DEBUG] SelectIterator closed iterator @1757293506 after 2 rows
+2020-02-15 18:14:55,815 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 2 results
+2020-02-15 18:14:55,908 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-02-15 18:14:55,909 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-02-15 18:14:55,909 [DEBUG] SelectIterator starting iterator @1887813102 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-02-15 18:14:55,910 [DEBUG] SelectIterator closed iterator @1887813102 after 1 rows
+2020-02-15 18:14:55,910 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 1 results
+2020-02-15 18:14:55,912 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:55,914 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:55,914 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:55,915 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:55,915 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:55,916 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:55,916 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:55,917 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:55,918 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:55,919 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:55,920 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:55,921 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:55,921 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,926 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,926 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,928 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,929 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,929 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,930 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,932 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,932 [DEBUG] BaseMappedStatement assigned id '3' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,932 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-02-15 18:14:55,932 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-02-15 18:14:55,933 [DEBUG] SelectIterator starting iterator @117244645 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-02-15 18:14:55,933 [DEBUG] SelectIterator closed iterator @117244645 after 3 rows
+2020-02-15 18:14:55,934 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 3 results
+2020-02-15 18:14:55,934 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:55,935 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:55,935 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:55,937 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:55,937 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:55,938 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:55,938 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:55,939 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:55,939 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:55,941 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:55,941 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:55,942 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:55,943 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,944 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,945 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,947 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,948 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,949 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,950 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:55,951 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:55,951 [DEBUG] BaseMappedStatement assigned id '3' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:55,952 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-02-15 18:14:55,953 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-02-15 18:14:55,955 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `todo_id` = 2 
+2020-02-15 18:14:55,956 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 2 ' with 0 args
+2020-02-15 18:14:55,956 [DEBUG] SelectIterator starting iterator @1596000437 for 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 2 '
+2020-02-15 18:14:55,957 [DEBUG] SelectIterator closed iterator @1596000437 after 0 rows
+2020-02-15 18:14:55,957 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 2 ' returned 0 results
+2020-02-15 18:14:55,959 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `todo` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-02-15 18:14:55,959 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-02-15 18:14:55,959 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-02-15 18:14:55,960 [DEBUG] SelectIterator starting iterator @507084503 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-02-15 18:14:55,960 [DEBUG] SelectIterator closed iterator @507084503 after 1 rows
+2020-02-15 18:14:55,960 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 1 results
+2020-02-15 18:14:55,960 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-02-15 18:14:55,960 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-02-15 18:14:55,961 [DEBUG] SelectIterator starting iterator @1225439493 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-02-15 18:14:55,961 [DEBUG] SelectIterator closed iterator @1225439493 after 1 rows
+2020-02-15 18:14:55,961 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 1 results
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.093 sec - in ProdArchTest
+Running MilestoneTest
+2020-02-15 18:14:56,000 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:56,003 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:56,005 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:56,021 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:56,021 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:56,026 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:56,026 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:56,034 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:56,034 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:56,042 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:56,042 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:56,044 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:56,044 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:56,046 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:56,046 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:56,046 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:56,047 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:56,047 [DEBUG] SelectIterator starting iterator @1845904670 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:56,047 [DEBUG] SelectIterator closed iterator @1845904670 after 0 rows
+2020-02-15 18:14:56,047 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:56,055 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:56,057 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:56,058 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:56,058 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:56,059 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:56,059 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:56,061 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:56,061 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:56,062 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:56,062 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:56,063 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:56,063 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:56,065 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:56,067 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:56,073 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:56,073 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:56,075 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:56,075 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:56,076 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:56,076 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:56,077 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:56,077 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:56,078 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:56,078 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:56,079 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:56,079 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:56,081 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:56,081 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:56,081 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:56,081 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:56,081 [DEBUG] SelectIterator starting iterator @1690287238 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:56,082 [DEBUG] SelectIterator closed iterator @1690287238 after 0 rows
+2020-02-15 18:14:56,082 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:56,083 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:56,084 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:56,086 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:56,086 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:56,087 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:56,087 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:56,089 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:56,089 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:56,091 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:56,091 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:56,092 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:56,092 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:56,095 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:56,096 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:56,104 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:56,104 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:56,106 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:56,106 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:56,108 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:56,108 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:56,109 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:56,109 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:56,111 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:56,112 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:56,113 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:56,114 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,162 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,163 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,164 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,164 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,165 [DEBUG] SelectIterator starting iterator @1690254271 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,165 [DEBUG] SelectIterator closed iterator @1690254271 after 0 rows
+2020-02-15 18:14:57,166 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,167 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,167 [DEBUG] StatementBuilder built statement SELECT * FROM `milestone` 
+2020-02-15 18:14:57,167 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `milestone` ' with 0 args
+2020-02-15 18:14:57,167 [DEBUG] SelectIterator starting iterator @1440047379 for 'SELECT * FROM `milestone` '
+2020-02-15 18:14:57,168 [DEBUG] SelectIterator closed iterator @1440047379 after 1 rows
+2020-02-15 18:14:57,168 [DEBUG] StatementExecutor query of 'SELECT * FROM `milestone` ' returned 1 results
+2020-02-15 18:14:57,168 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,169 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,169 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,170 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,170 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,171 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,172 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,173 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,174 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,175 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,175 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,176 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,176 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,177 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,177 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,178 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,178 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,179 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,179 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,180 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,180 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,182 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,182 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,183 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,183 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,184 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,185 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,191 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,198 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,211 [DEBUG] SelectIterator starting iterator @343965883 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,211 [DEBUG] SelectIterator closed iterator @343965883 after 0 rows
+2020-02-15 18:14:57,211 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,212 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,212 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,213 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,213 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,214 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,214 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,215 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,215 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,216 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,216 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,217 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,217 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,218 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,218 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,219 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,219 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,220 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,220 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,223 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,223 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,225 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,225 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,226 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,226 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,228 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,228 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,230 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,230 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,230 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,230 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,230 [DEBUG] SelectIterator starting iterator @230835489 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,230 [DEBUG] SelectIterator closed iterator @230835489 after 0 rows
+2020-02-15 18:14:57,230 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,231 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,231 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,232 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,232 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,233 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,234 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,234 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,235 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,236 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,236 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,237 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,237 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,238 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,246 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,247 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,247 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,248 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,249 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,250 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,250 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,251 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,251 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,253 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,253 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,254 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,254 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,255 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,256 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,256 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,256 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,256 [DEBUG] SelectIterator starting iterator @280884709 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,256 [DEBUG] SelectIterator closed iterator @280884709 after 0 rows
+2020-02-15 18:14:57,257 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,262 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,263 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,264 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,264 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,265 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,265 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,266 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,266 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,276 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,276 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,277 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,277 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,278 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,279 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,282 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,282 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,283 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,284 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,285 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,285 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,286 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,286 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,287 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,287 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,288 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,288 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,289 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,289 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,289 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,290 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,290 [DEBUG] SelectIterator starting iterator @1847509784 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,290 [DEBUG] SelectIterator closed iterator @1847509784 after 0 rows
+2020-02-15 18:14:57,290 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,292 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,293 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,293 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,293 [DEBUG] SelectIterator starting iterator @2114650936 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,293 [DEBUG] SelectIterator closed iterator @2114650936 after 0 rows
+2020-02-15 18:14:57,293 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,297 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `milestone` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-02-15 18:14:57,297 [DEBUG] StatementBuilder built statement SELECT * FROM `milestone` 
+2020-02-15 18:14:57,297 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `milestone` ' with 0 args
+2020-02-15 18:14:57,297 [DEBUG] SelectIterator starting iterator @1635756693 for 'SELECT * FROM `milestone` '
+2020-02-15 18:14:57,298 [DEBUG] SelectIterator closed iterator @1635756693 after 0 rows
+2020-02-15 18:14:57,298 [DEBUG] StatementExecutor query of 'SELECT * FROM `milestone` ' returned 0 results
+2020-02-15 18:14:57,307 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,309 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,310 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,311 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,311 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,312 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,312 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,313 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,313 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,322 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,322 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,324 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,324 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,327 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,328 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,328 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,328 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,329 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,329 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,330 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,330 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,331 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,340 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,341 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,341 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,345 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,345 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,349 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,349 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,349 [DEBUG] SelectIterator starting iterator @504527234 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,350 [DEBUG] SelectIterator closed iterator @504527234 after 0 rows
+2020-02-15 18:14:57,351 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,352 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,353 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,354 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,354 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,355 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,355 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,356 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,356 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,358 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,360 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,364 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,365 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,368 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.374 sec - in MilestoneTest
+Running DatabaseManagerTest
+2020-02-15 18:14:57,392 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,394 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,394 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,395 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,395 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,395 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,395 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,396 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,396 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,397 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,397 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,398 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,400 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,403 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,403 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,404 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-02-15 18:14:57,404 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-02-15 18:14:57,404 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-02-15 18:14:57,404 [DEBUG] SelectIterator starting iterator @1007653873 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-02-15 18:14:57,404 [DEBUG] SelectIterator closed iterator @1007653873 after 0 rows
+2020-02-15 18:14:57,404 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 0 results
+2020-02-15 18:14:57,404 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,405 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,406 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,406 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,407 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,409 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,409 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,415 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,416 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,422 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,422 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,438 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,440 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,446 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,447 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,447 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,447 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,448 [DEBUG] SelectIterator starting iterator @836514715 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,448 [DEBUG] SelectIterator closed iterator @836514715 after 0 rows
+2020-02-15 18:14:57,448 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,449 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,449 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,451 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,452 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,453 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,454 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,454 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,454 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,455 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,456 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,457 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 
+2020-02-15 18:14:57,462 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 ' with 0 args
+2020-02-15 18:14:57,462 [DEBUG] SelectIterator starting iterator @1414521932 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 '
+2020-02-15 18:14:57,462 [DEBUG] SelectIterator closed iterator @1414521932 after 0 rows
+2020-02-15 18:14:57,462 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 ' returned 0 results
+2020-02-15 18:14:57,462 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,465 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,465 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,466 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,467 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,467 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,469 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,469 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,471 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,471 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,472 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,472 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,473 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,473 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,474 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,474 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,475 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,475 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,477 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,478 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,479 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,479 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,479 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,479 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,479 [DEBUG] SelectIterator starting iterator @828441346 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,479 [DEBUG] SelectIterator closed iterator @828441346 after 0 rows
+2020-02-15 18:14:57,480 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,481 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,489 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,489 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,492 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,493 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,493 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,494 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,494 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,495 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,496 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,496 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,496 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 
+2020-02-15 18:14:57,497 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 ' with 0 args
+2020-02-15 18:14:57,497 [DEBUG] SelectIterator starting iterator @1899073220 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 '
+2020-02-15 18:14:57,497 [DEBUG] SelectIterator closed iterator @1899073220 after 0 rows
+2020-02-15 18:14:57,497 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 ' returned 0 results
+2020-02-15 18:14:57,497 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,498 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,498 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,498 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,499 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,499 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,500 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,501 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,502 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) 
+2020-02-15 18:14:57,502 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) ' with 1 args
+2020-02-15 18:14:57,502 [DEBUG] SelectIterator starting iterator @1558712965 for 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) '
+2020-02-15 18:14:57,502 [DEBUG] SelectIterator closed iterator @1558712965 after 2 rows
+2020-02-15 18:14:57,503 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) ' returned 2 results
+2020-02-15 18:14:57,503 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,504 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,504 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,505 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,505 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,506 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,506 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,507 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,507 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,508 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,508 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,509 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,510 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,513 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,513 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,513 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,514 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,514 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,514 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,516 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,517 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,517 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,517 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,517 [DEBUG] SelectIterator starting iterator @2025864991 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,517 [DEBUG] SelectIterator closed iterator @2025864991 after 0 rows
+2020-02-15 18:14:57,517 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,518 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,519 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,519 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,520 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,522 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,522 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,524 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,525 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,525 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,525 [DEBUG] SelectIterator starting iterator @1589683045 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,526 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,526 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,527 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,527 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,527 [DEBUG] SelectIterator closed iterator @1589683045 after 2 rows
+2020-02-15 18:14:57,527 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 2 results
+2020-02-15 18:14:57,528 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `todoMilestone` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-02-15 18:14:57,529 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `todoMilestone` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-02-15 18:14:57,529 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `milestone` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-02-15 18:14:57,530 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,530 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,531 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,531 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,532 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,532 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,532 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,533 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,533 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,534 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,534 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,536 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,537 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,538 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,538 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,538 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,539 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,539 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,539 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,539 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,539 [DEBUG] SelectIterator starting iterator @717386707 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,539 [DEBUG] SelectIterator closed iterator @717386707 after 0 rows
+2020-02-15 18:14:57,540 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,540 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,541 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,541 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,542 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,542 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,543 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,545 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,550 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 
+2020-02-15 18:14:57,550 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 ' with 0 args
+2020-02-15 18:14:57,550 [DEBUG] SelectIterator starting iterator @1900164709 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 '
+2020-02-15 18:14:57,550 [DEBUG] SelectIterator closed iterator @1900164709 after 0 rows
+2020-02-15 18:14:57,551 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 2 ' returned 0 results
+2020-02-15 18:14:57,551 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,552 [DEBUG] StatementBuilder built statement SELECT * FROM `milestone` 
+2020-02-15 18:14:57,552 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `milestone` ' with 0 args
+2020-02-15 18:14:57,552 [DEBUG] SelectIterator starting iterator @540642172 for 'SELECT * FROM `milestone` '
+2020-02-15 18:14:57,552 [DEBUG] SelectIterator closed iterator @540642172 after 2 rows
+2020-02-15 18:14:57,552 [DEBUG] StatementExecutor query of 'SELECT * FROM `milestone` ' returned 2 results
+2020-02-15 18:14:57,552 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) 
+2020-02-15 18:14:57,553 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) ' with 1 args
+2020-02-15 18:14:57,553 [DEBUG] SelectIterator starting iterator @1875308878 for 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) '
+2020-02-15 18:14:57,553 [DEBUG] SelectIterator closed iterator @1875308878 after 1 rows
+2020-02-15 18:14:57,553 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) ' returned 1 results
+2020-02-15 18:14:57,553 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) 
+2020-02-15 18:14:57,554 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) ' with 1 args
+2020-02-15 18:14:57,554 [DEBUG] SelectIterator starting iterator @1445157774 for 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) '
+2020-02-15 18:14:57,554 [DEBUG] SelectIterator closed iterator @1445157774 after 0 rows
+2020-02-15 18:14:57,554 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) ' returned 0 results
+2020-02-15 18:14:57,555 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,556 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,556 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,557 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,557 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,558 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,558 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,559 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,559 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,560 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,560 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,561 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,562 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,564 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,564 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,564 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,565 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,565 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,565 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,566 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `milestone` (`title` ,`description` ,`start` ,`deadline` ) VALUES (?,?,?,?)' and 4 args, changed 1 rows
+2020-02-15 18:14:57,566 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in Milestone object
+2020-02-15 18:14:57,569 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,569 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,569 [DEBUG] SelectIterator starting iterator @909295153 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,569 [DEBUG] SelectIterator closed iterator @909295153 after 0 rows
+2020-02-15 18:14:57,569 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,570 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,571 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,571 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,571 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,572 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,572 [DEBUG] BaseMappedStatement assigned id '2' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,573 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,573 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,575 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,575 [DEBUG] BaseMappedStatement assigned id '3' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,575 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 
+2020-02-15 18:14:57,576 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' with 0 args
+2020-02-15 18:14:57,576 [DEBUG] SelectIterator starting iterator @1522311648 for 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 '
+2020-02-15 18:14:57,576 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,576 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,576 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,576 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,577 [DEBUG] SelectIterator closed iterator @1522311648 after 2 rows
+2020-02-15 18:14:57,577 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `milestone_id` = 1 ' returned 2 results
+2020-02-15 18:14:57,577 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,578 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,578 [DEBUG] BaseMappedStatement assigned id '3' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,578 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todoMilestone` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,579 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todoMilestone` (`todo_id` ,`milestone_id` ) VALUES (?,?)' and 2 args, changed 1 rows
+2020-02-15 18:14:57,579 [DEBUG] BaseMappedStatement assigned id '4' from keyholder to 'id' in MilestoneToDo object
+2020-02-15 18:14:57,579 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `todo_id` = 1 
+2020-02-15 18:14:57,579 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 1 ' with 0 args
+2020-02-15 18:14:57,579 [DEBUG] SelectIterator starting iterator @36202360 for 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 1 '
+2020-02-15 18:14:57,581 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,582 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,585 [DEBUG] SelectIterator closed iterator @36202360 after 1 rows
+2020-02-15 18:14:57,585 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 1 ' returned 1 results
+2020-02-15 18:14:57,586 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `todoMilestone` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-02-15 18:14:57,586 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `todo` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-02-15 18:14:57,587 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `milestone` SET `title` = ?, `description` = ?, `start` = ?, `deadline` = ? WHERE `id` = ?' and 5 args, changed 1 rows
+2020-02-15 18:14:57,587 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `milestone` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,588 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) 
+2020-02-15 18:14:57,588 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) ' with 1 args
+2020-02-15 18:14:57,588 [DEBUG] SelectIterator starting iterator @1836797772 for 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) '
+2020-02-15 18:14:57,588 [DEBUG] SelectIterator closed iterator @1836797772 after 2 rows
+2020-02-15 18:14:57,588 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `id` IN (SELECT `todo_id` FROM `todoMilestone` WHERE `milestone_id` = ? ) ' returned 2 results
+2020-02-15 18:14:57,588 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,589 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,590 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,591 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,591 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,592 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,592 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,593 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,593 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,593 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,594 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,595 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,596 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,597 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,597 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,597 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got 1 result
+2020-02-15 18:14:57,597 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,598 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,598 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,599 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,600 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,600 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,600 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,601 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,602 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,602 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,602 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,604 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,607 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,608 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,608 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,608 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,609 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,609 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,610 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,610 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,610 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,611 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,611 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,611 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,612 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,612 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,613 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in DatabaseManagerTest
+Running ToDoTest
+2020-02-15 18:14:57,621 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,622 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,622 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,623 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,623 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,624 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,624 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,625 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,625 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,626 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,626 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,627 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,627 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,628 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,628 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,629 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,629 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,630 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,631 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,631 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,632 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,632 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,633 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,633 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,634 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,634 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,635 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,636 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,637 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,637 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,638 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,638 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,639 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,639 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,640 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,640 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,641 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,641 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,642 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,642 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,643 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,643 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,658 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,659 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,659 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,660 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,660 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,661 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,661 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,662 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,662 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,663 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,663 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,664 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,665 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,666 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,666 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,667 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,667 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,668 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,668 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,669 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,670 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,671 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,671 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,672 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,672 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,676 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,680 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,682 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,695 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,695 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,696 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,696 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,697 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,697 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,698 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,698 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,699 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,699 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,700 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,701 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,702 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,702 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,703 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,703 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,704 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,704 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,705 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,705 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,707 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,707 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,708 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,708 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,709 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,709 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,710 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,711 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,711 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,712 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,712 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,713 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,713 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,714 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,714 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,715 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,715 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,716 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,746 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,747 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,747 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,748 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,748 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,749 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,749 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,750 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,750 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,751 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,751 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,753 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,753 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,754 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,754 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,755 [DEBUG] StatementBuilder built statement SELECT * FROM `todo` WHERE `production` = ? 
+2020-02-15 18:14:57,755 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todo` WHERE `production` = ? ' with 1 args
+2020-02-15 18:14:57,755 [DEBUG] SelectIterator starting iterator @1864350231 for 'SELECT * FROM `todo` WHERE `production` = ? '
+2020-02-15 18:14:57,755 [DEBUG] SelectIterator closed iterator @1864350231 after 1 rows
+2020-02-15 18:14:57,755 [DEBUG] StatementExecutor query of 'SELECT * FROM `todo` WHERE `production` = ? ' returned 1 results
+2020-02-15 18:14:57,755 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,756 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,756 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,757 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,757 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,757 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,758 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,758 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,758 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,759 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,759 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,760 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,761 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,762 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,762 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,762 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,762 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,763 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,763 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,764 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,764 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,765 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,765 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,766 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,766 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,768 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,768 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,768 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,768 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,769 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,769 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,769 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,770 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,770 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,771 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,771 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,772 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,772 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,772 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,773 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,774 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,774 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,775 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,775 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,775 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,775 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,776 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,776 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,777 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,777 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,778 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,778 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,779 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,779 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,782 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,783 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,786 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,788 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,788 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,789 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,789 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,790 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,790 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,794 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,794 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,795 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,795 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,799 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,799 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,800 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,800 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,801 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,801 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,802 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,802 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,803 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,803 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,804 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,804 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,805 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,805 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,806 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,806 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,806 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,807 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,807 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,808 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,808 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,809 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,809 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,810 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,810 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,811 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,812 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,817 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,817 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,820 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,820 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,822 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,822 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,823 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,823 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,824 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,824 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,825 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,825 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,826 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,826 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,827 [DEBUG] BaseMappedStatement update data with statement 'UPDATE `todo` SET `title` = ?, `description` = ?, `interval` = ?, `production` = ?, `start` = ?, `deadline` = ?, `notifyPoint` = ?, `priority` = ? WHERE `id` = ?' and 9 args, changed 1 rows
+2020-02-15 18:14:57,827 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,828 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,828 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,829 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,829 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,830 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,830 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,831 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,831 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,832 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,832 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,832 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,833 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,834 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,835 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,835 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,836 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,836 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,836 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,837 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,837 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,838 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,838 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,839 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,839 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,840 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,840 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,840 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,841 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,841 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,842 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,842 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,843 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,843 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,844 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,844 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,845 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,845 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,846 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,846 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,847 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,847 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,848 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,848 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,849 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,849 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,850 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,850 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,850 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,851 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,851 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,852 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,852 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,852 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,853 [DEBUG] StatementBuilder built statement SELECT * FROM `todoMilestone` WHERE `todo_id` = 1 
+2020-02-15 18:14:57,853 [DEBUG] BaseMappedStatement prepared statement 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 1 ' with 0 args
+2020-02-15 18:14:57,853 [DEBUG] SelectIterator starting iterator @120694604 for 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 1 '
+2020-02-15 18:14:57,853 [DEBUG] SelectIterator closed iterator @120694604 after 0 rows
+2020-02-15 18:14:57,853 [DEBUG] StatementExecutor query of 'SELECT * FROM `todoMilestone` WHERE `todo_id` = 1 ' returned 0 results
+2020-02-15 18:14:57,853 [DEBUG] BaseMappedStatement delete data with statement 'DELETE FROM `todo` WHERE `id` = ?' and 1 args, changed 1 rows
+2020-02-15 18:14:57,854 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,854 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,854 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,855 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,855 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,856 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,856 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,857 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,857 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,858 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,858 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,859 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,859 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,860 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,860 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,861 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,861 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,861 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,861 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,863 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,863 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,864 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,864 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,866 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+2020-02-15 18:14:57,866 [DEBUG] BaseMappedStatement query-for-id using 'SELECT * FROM `todo` WHERE `id` = ?' and 1 args, got no results
+2020-02-15 18:14:57,867 [DEBUG] BaseMappedStatement insert data with statement 'INSERT INTO `todo` (`title` ,`description` ,`interval` ,`production` ,`start` ,`deadline` ,`notifyPoint` ,`priority` ) VALUES (?,?,?,?,?,?,?,?)' and 8 args, changed 1 rows
+2020-02-15 18:14:57,867 [DEBUG] BaseMappedStatement assigned id '1' from keyholder to 'id' in ToDo object
+2020-02-15 18:14:57,867 [INFO] TableUtils dropping table 'todo'
+2020-02-15 18:14:57,868 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todo` 
+2020-02-15 18:14:57,868 [INFO] TableUtils dropping table 'milestone'
+2020-02-15 18:14:57,876 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `milestone` 
+2020-02-15 18:14:57,876 [INFO] TableUtils dropping table 'todoMilestone'
+2020-02-15 18:14:57,877 [INFO] TableUtils executed drop table statement changed 1 rows: DROP TABLE `todoMilestone` 
+2020-02-15 18:14:57,877 [INFO] TableUtils creating table 'todo'
+2020-02-15 18:14:57,885 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todo` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `interval` INTEGER , `production` BOOLEAN DEFAULT 1 , `start` TIMESTAMP , `deadline` TIMESTAMP , `notifyPoint` TIMESTAMP , `priority` VARCHAR ) 
+2020-02-15 18:14:57,885 [INFO] TableUtils creating table 'milestone'
+2020-02-15 18:14:57,888 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `milestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `title` VARCHAR , `description` VARCHAR , `start` TIMESTAMP , `deadline` TIMESTAMP ) 
+2020-02-15 18:14:57,888 [INFO] TableUtils creating table 'todoMilestone'
+2020-02-15 18:14:57,889 [INFO] TableUtils executed create table statement changed 1 rows: CREATE TABLE IF NOT EXISTS `todoMilestone` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `todo_id` INTEGER NOT NULL , `milestone_id` INTEGER NOT NULL ) 
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec <<< FAILURE! - in ToDoTest
+priorityTest(ToDoTest)  Time elapsed: 0.032 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<Dringend> but was:<3>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ToDoTest.priorityTest(ToDoTest.java:78)
+
+
+Results :
+
+Failed tests: 
+  ToDoTest.priorityTest:78 expected:<Dringend> but was:<3>
+
+Tests run: 31, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.107 s
+[INFO] Finished at: 2020-02-15T18:14:57+01:00
+[INFO] Final Memory: 13M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project DoIT: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-392650533-20180615-122021-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project DoIT: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-392650533-20180615-122021-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Schrotty-DoIT-392650533-20180615-122021-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
