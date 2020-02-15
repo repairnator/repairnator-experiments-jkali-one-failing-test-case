@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "UW-Madison-DoIT/uportal-messaging",
-  "failingModule": "/root/workspace/UW-Madison-DoIT/uportal-messaging/345448327",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 58,
-  "failing-test-cases": [
-    {
-      "className": "edu.wisc.my.messages.controller.MessagesControllerTest",
-      "failingMethods": [
-        "edu.wisc.my.messages.controller.MessagesControllerTest#filteredMessagesIncludesAMessage"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:16 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:50:51 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 68463112,
+      "totalMemory": 242421760
+    },
+    "totalDuration": 2192,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2051,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2051
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-UW-Madison-DoIT-uportal-messaging-345448327-20180223-224317-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-UW-Madison-DoIT-uportal-messaging-345448327-20180223-224317-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 58,
+      "numberPassing": 57,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "messages[]: Expected 1 values but got 0",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.wisc.my.messages.controller.MessagesControllerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.wisc.my.messages.controller.MessagesControllerTest",
+        "testMethod": "filteredMessagesIncludesAMessage",
+        "failureName": "java.lang.AssertionError",
+        "detail": "messages[]: Expected 1 values but got 0",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 15,
+    "numberLibrariesFailingModule": 58,
+    "numberLines": 0
+  },
+  "commits": {}
 }
