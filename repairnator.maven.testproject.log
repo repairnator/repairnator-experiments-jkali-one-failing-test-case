@@ -1,0 +1,197 @@
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+Feb 15, 2020 11:14:55 PM com.carrotsearch.randomizedtesting.ThreadLeakControl checkThreadLeaks
+WARNING: Will linger awaiting termination of 1 leaked thread(s).
+Feb 15, 2020 11:14:56 PM com.carrotsearch.randomizedtesting.ThreadLeakControl checkThreadLeaks
+WARNING: Will linger awaiting termination of 1 leaked thread(s).
+NOTE: reproduce with: ant test  -Dtestcase=TweetE2ETest -Dtests.method=testAll -Dtests.seed=D51617C26C771D1 -Dtests.locale=hi-IN -Dtests.timezone=Asia/Chongqing -Dtests.asserts=true -Dtests.file.encoding=UTF-8
+NOTE: test params are: codec=Asserting(Lucene62): {contents=PostingsFormat(name=Memory doPackFST= false), screen_name=PostingsFormat(name=Memory doPackFST= false), id=PostingsFormat(name=Memory doPackFST= true), lang=PostingsFormat(name=MockRandom)}, docValues:{id_long=DocValuesFormat(name=Lucene54)}, maxPointsInLeafNode=1439, maxMBSortInHeap=5.90636768434607, sim=ClassicSimilarity, locale=hi-IN, timezone=Asia/Chongqing
+NOTE: Linux 4.15.0-76-generic amd64/Oracle Corporation 1.8.0_202 (64-bit)/cpus=1,threads=1,free=51046232,total=71041024
+NOTE: All tests run in this JVM: [RankingResultsTest, MetricsTest, BM25FeatureExtractorTest, SCQFeatureExtractorTest, FeatureExtractorChainFromJsonTest, TermFrequencyFeatureExtractorTest, AvgIDFFeatureExtractorTest, BigramFeaturesTest, UnigramFeaturesTest, SCSFeatureExtractorTest, DocSizeFeatureExtractorTest, LoadFeatureExtractorFromFileTest, PMIFeatureExtractorTest, TFIDFFeatureExtractorTest, ICTFFeatureExtractorTest, WikipediaArticleTest, DocumentTest, ClueWeb09WarcRecordTest, TweetDocumentTest, WashPostDocumentTest, TrecDocumentTest, TrecwebDocumentTest, ClueWeb12WarcRecordTest, TrecE2ETest, TweetE2ETest]
+fire-providers-2.17.pom (3 KB at 101.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1142.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.anserini.eval.RankingResultsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.733 sec - in io.anserini.eval.RankingResultsTest
+Running io.anserini.eval.MetricsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in io.anserini.eval.MetricsTest
+Running io.anserini.ltr.BM25FeatureExtractorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.539 sec - in io.anserini.ltr.BM25FeatureExtractorTest
+Running io.anserini.ltr.SCQFeatureExtractorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 sec - in io.anserini.ltr.SCQFeatureExtractorTest
+Running io.anserini.ltr.FeatureExtractorChainFromJsonTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 sec - in io.anserini.ltr.FeatureExtractorChainFromJsonTest
+Running io.anserini.ltr.TermFrequencyFeatureExtractorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 sec - in io.anserini.ltr.TermFrequencyFeatureExtractorTest
+Running io.anserini.ltr.AvgIDFFeatureExtractorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 sec - in io.anserini.ltr.AvgIDFFeatureExtractorTest
+Running io.anserini.ltr.BigramFeaturesTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 sec - in io.anserini.ltr.BigramFeaturesTest
+Running io.anserini.ltr.UnigramFeaturesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in io.anserini.ltr.UnigramFeaturesTest
+Running io.anserini.ltr.SCSFeatureExtractorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in io.anserini.ltr.SCSFeatureExtractorTest
+Running io.anserini.ltr.DocSizeFeatureExtractorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in io.anserini.ltr.DocSizeFeatureExtractorTest
+Running io.anserini.ltr.LoadFeatureExtractorFromFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in io.anserini.ltr.LoadFeatureExtractorFromFileTest
+Running io.anserini.ltr.PMIFeatureExtractorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.232 sec - in io.anserini.ltr.PMIFeatureExtractorTest
+Running io.anserini.ltr.TFIDFFeatureExtractorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec - in io.anserini.ltr.TFIDFFeatureExtractorTest
+Running io.anserini.ltr.ICTFFeatureExtractorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 sec - in io.anserini.ltr.ICTFFeatureExtractorTest
+Running io.anserini.document.WikipediaArticleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec - in io.anserini.document.WikipediaArticleTest
+Running io.anserini.document.DocumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in io.anserini.document.DocumentTest
+Running io.anserini.document.ClueWeb09WarcRecordTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in io.anserini.document.ClueWeb09WarcRecordTest
+Running io.anserini.document.TweetDocumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in io.anserini.document.TweetDocumentTest
+Running io.anserini.document.WashPostDocumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in io.anserini.document.WashPostDocumentTest
+Running io.anserini.document.TrecDocumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in io.anserini.document.TrecDocumentTest
+Running io.anserini.document.TrecwebDocumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in io.anserini.document.TrecwebDocumentTest
+Running io.anserini.document.ClueWeb12WarcRecordTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in io.anserini.document.ClueWeb12WarcRecordTest
+Running io.anserini.end2end.TrecE2ETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.658 sec - in io.anserini.end2end.TrecE2ETest
+Running io.anserini.end2end.TweetE2ETest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.523 sec <<< FAILURE! - in io.anserini.end2end.TweetE2ETest
+testAll(io.anserini.end2end.TweetE2ETest)  Time elapsed: 0.474 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<12> but was:<16>
+	at __randomizedtesting.SeedInfo.seed([D51617C26C771D1:410F4F055D572E14]:0)
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at io.anserini.end2end.EndToEndTest.checkIndex(EndToEndTest.java:119)
+	at io.anserini.end2end.EndToEndTest.testIndexing(EndToEndTest.java:149)
+	at io.anserini.end2end.EndToEndTest.testAll(EndToEndTest.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner.invoke(RandomizedRunner.java:1713)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$8.evaluate(RandomizedRunner.java:907)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$9.evaluate(RandomizedRunner.java:943)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$10.evaluate(RandomizedRunner.java:957)
+	at org.apache.lucene.util.TestRuleSetupTeardownChained$1.evaluate(TestRuleSetupTeardownChained.java:49)
+	at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:45)
+	at org.apache.lucene.util.TestRuleThreadAndTestName$1.evaluate(TestRuleThreadAndTestName.java:48)
+	at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:64)
+	at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:47)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl.forkTimeoutingTask(ThreadLeakControl.java:811)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$3.evaluate(ThreadLeakControl.java:462)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner.runSingleTest(RandomizedRunner.java:916)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$5.evaluate(RandomizedRunner.java:802)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$6.evaluate(RandomizedRunner.java:852)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$7.evaluate(RandomizedRunner.java:863)
+	at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:45)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleStoreClassName$1.evaluate(TestRuleStoreClassName.java:41)
+	at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)
+	at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleAssertionsRequired$1.evaluate(TestRuleAssertionsRequired.java:53)
+	at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:47)
+	at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:64)
+	at org.apache.lucene.util.TestRuleIgnoreTestSuites$1.evaluate(TestRuleIgnoreTestSuites.java:54)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)
+	at java.lang.Thread.run(Thread.java:748)
+
+Running io.anserini.index.IndexerTest
+Dumping out postings...
+here (df = 2): (0, 2) (2, 1)
+more (df = 2): (0, 1) (1, 1)
+some (df = 1): (0, 2)
+test (df = 1): (2, 1)
+text (df = 2): (0, 2) (1, 1)
+Cloning index:
+Getting custom postings reader...
+Intercepting call to method 'terms': docid
+Intercepting call to method 'terms': text
+Dumping out postings...
+here (df = 2): (0, 2) (2, 1)
+more (df = 2): (0, 1) (1, 1)
+some (df = 1): (0, 2)
+test (df = 1): (2, 1)
+text (df = 2): (0, 2) (1, 1)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 sec - in io.anserini.index.IndexerTest
+Running io.anserini.analysis.TweetTokenizationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in io.anserini.analysis.TweetTokenizationTest
+Running io.anserini.kg.freebase.FreebaseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in io.anserini.kg.freebase.FreebaseTest
+Running io.anserini.kg.freebase.FreebaseNodeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.anserini.kg.freebase.FreebaseNodeTest
+Running io.anserini.kg.freebase.TrainingDataGeneratorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.anserini.kg.freebase.TrainingDataGeneratorTest
+
+Results :
+
+Failed tests: 
+  TweetE2ETest>EndToEndTest.testAll:211->EndToEndTest.testIndexing:149->EndToEndTest.checkIndex:119->Assert.assertEquals:631->Assert.assertEquals:645->Assert.failNotEquals:834->Assert.fail:88 expected:<12> but was:<16>
+
+Tests run: 82, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.675 s
+[INFO] Finished at: 2020-02-15T23:14:58+01:00
+[INFO] Final Memory: 20M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project anserini: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-castorini-Anserini-395574383-20180622-201137-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project anserini: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-castorini-Anserini-395574383-20180622-201137-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-castorini-Anserini-395574383-20180622-201137-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
