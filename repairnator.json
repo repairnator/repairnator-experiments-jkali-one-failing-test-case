@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "WaffleBuffer/Koalas",
-  "bugCommit": "https://github.com/WaffleBuffer/Koalas/compare/5b89d00b2aac...4d8c45da4194",
-  "failingModule": "/root/workspace/WaffleBuffer/Koalas/362316469",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 25,
-  "failing-test-cases": [
-    {
-      "className": "com.thekoalas.tests.DataFrameTest",
-      "failingMethods": [
-        "com.thekoalas.tests.DataFrameTest#testDataFrameFromCsvFile"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:12 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:16:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 35045568,
+      "totalMemory": 116973568
+    },
+    "totalDuration": 137,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 101,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          101
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-WaffleBuffer-Koalas-362316469-20180404-215835-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-WaffleBuffer-Koalas-362316469-20180404-215835-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 25,
+      "numberPassing": 24,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003cInts Strings Dates Doubles  2 Row1 Wed Apr 04 21:59:01 CEST 2018 52.06  1 Row2 Thu Jan 01 01:00:00 CET 1970 0.05  \u003e but was:\u003cInts Strings Dates Doubles   2.0 Row1 Wed Apr 04 21:59:01 CEST 2018 52.06   1.0 Row2 Thu Jan 01 01:00:00 CET 1970 0.05   \u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.thekoalas.tests.DataFrameTest",
+        "numberRunning": 25,
+        "numberPassing": 24,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.thekoalas.tests.DataFrameTest",
+        "testMethod": "testDataFrameFromCsvFile",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cInts Strings Dates Doubles \n2 Row1 Sat Feb 15 18:14:38 CET 2020 52.06 \n1 Row2 Thu Jan 01 01:00:00 CET 1970 0.05 \n\u003e but was:\u003cInts Strings Dates Doubles  \n2.0 Row1 Sat Feb 15 18:14:38 CET 2020 52.06  \n1.0 Row2 Thu Jan 01 01:00:00 CET 1970 0.05  \n\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 9,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 33,
+    "numberLines": 0
+  }
 }
