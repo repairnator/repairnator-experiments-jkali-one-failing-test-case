@@ -1,0 +1,223 @@
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:TOKEN(The,MATCH()),#3:TOKEN(the,MATCH())), 1)
+SEQ(FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:TOKEN(The,MATCH()),#3:TOKEN(the,MATCH())), 1), FISEQ(TERM(contents%word@i:force), NfaFragment:NFA:#1:TOKEN(be,#2:TOKEN(with,#3:TOKEN(you,MATCH()))), 1))
+FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:TOKEN(Force,MATCH()), 1)
+FISEQ(EXPAND(FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:TOKEN(The,MATCH()),#3:TOKEN(the,MATCH())), 1), R, 2, 3), NfaFragment:NFA:#1:TOKEN(with,MATCH()), 1)
+FISEQ(EXPAND(FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:TOKEN(The,MATCH()),#3:TOKEN(the,MATCH())), 1), R, 0, 2), NfaFragment:NFA:#1:TOKEN(Force,MATCH()), 1)
+FISEQ(FISEQ(TERM(contents%word@i:the), NfaFragment:NFA:#1:ANY(#2:OR(#3:ANY(#2),#4:TOKEN(Force,MATCH()))), 1), NfaFragment:NFA:#1:TOKEN(May,MATCH()), -1)
+FISEQ(EXPAND(TERM(contents%word@i:may), R, 1, INF), NfaFragment:NFA:#1:TOKEN(Force,MATCH()), 1)
+FISEQ(OR(TERM(contents%word@i:force), TERM(contents%word@i:quick)), NfaFragment:NFA:#1:OR(#2:TOKEN(The,MATCH()),#3:TOKEN(the,MATCH())), -1)
+FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:TOKEN(The,MATCH()),#3:TOKEN(the,MATCH())), 1)
+FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:TOKEN(be,#3:OR(#1,#4:TOKEN(with,MATCH()))),#5:TOKEN(Force,#3),#6:OR(#7:TOKEN(The,#4),#8:TOKEN(the,#4))), 1)
+FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:TOKEN(Force,#3:OR(#4:TOKEN(Force,#5:OR(#6:OR(#7:TOKEN(Force,#8:TOKEN(with,MATCH())),#9:TOKEN(The,#8),#10:TOKEN(be,#8),#11:TOKEN(the,#8)),#8)),#12:TOKEN(The,#5),#13:TOKEN(be,#5),#14:TOKEN(the,#5))),#15:TOKEN(The,#3),#16:TOKEN(be,#3),#17:TOKEN(the,#3)), 1)
+FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:NOMATCH(),#3:OR(#4:TOKEN(The,MATCH()),#5:TOKEN(the,MATCH()))), 1)
+FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:NOMATCH(), 1)
+FISEQ(TERM(contents%word@i:may), NfaFragment:NFA:#1:OR(#2:TOKEN(Force,#3:OR(#1,#4:TOKEN(with,MATCH()))),#5:TOKEN(The,#3),#6:TOKEN(be,#3),#7:TOKEN(the,#3)), 1)
+SEQ(TERM(contents%word@i:the), TERM(contents%word@i:lazy))
+TERM(contents%word@i:the)
+TERM(contents%word@i:the)
+MockSpanQuery()
+OR(TERM(contents%word@i:be), TERM(contents%word@i:brown))
+OR(TERM(contents%word@i:force), TERM(contents%word@i:fox))
+SEQ(TERM(contents%word@i:may), REP(OR(TERM(contents%word@i:be), TERM(contents%word@i:force), TERM(contents%word@i:the)), 1, INF), TERM(contents%word@i:with))
+POSFILTER(OR(TERM(contents%word@i:be), TERM(contents%word@i:brown)), TAGS(entity), WITHIN)
+POSFILTER(TAGS(entity), OR(TERM(contents%word@i:be), TERM(contents%word@i:brown)), CONTAINING)
+SEQ(EDGE(TAGS(s), L), TERM(contents%word@i:the))
+SEQ(TERM(contents%word@i:dog), EDGE(TAGS(s), R))
+OR(TERM(contents%word@i:jumps), TERM(contents%lemma@i:jump))
+OR(TERM(contents%word@i:jumps), TERM(contents%lemma@i:over))
+SEQ(TERM(contents%pos@i:adj), TERM(contents%pos@i:nou))
+SEQ(REP(OR(), 1, INF), TERM(contents%word@i:getal))
+EXPAND(TERM(contents%pos@i:pro), L, 0, 1)
+EXPAND(TERM(contents%pos@i:pro), R, 0, 1)
+OR(SEQ(OR(TERM(contents%word@i:find), TERM(contents%word@i:with)), TERM(contents%pos@i:pro)), TERM(contents%pos@i:pro), TERM(contents%word@i:find), TERM(contents%word@i:with))
+REP(TERM(contents%pos@i:adj), 2, 2)
+REP(TERM(contents%pos@i:adj), 1, INF)
+EXPAND(TERM(contents%pos@i:nou), R, 1, 1)
+EXPAND(TERM(contents%pos@i:nou), L, 1, 1)
+TERM(contents%word@i:the)
+TERM(contents%word@s:the)
+TERM(contents%pos@i:nou)
+FILTER(TERM(contents%word@i:the), contents%word@i:fox)
+FILTER(TERM(contents%word@i:the), SingleDocIdFilter(1))
+unit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 937.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running nl.inl.blacklab.search.lucene.TestSpanQueryAnd
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in nl.inl.blacklab.search.lucene.TestSpanQueryAnd
+Running nl.inl.blacklab.search.lucene.TestSpansTagsOld
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in nl.inl.blacklab.search.lucene.TestSpansTagsOld
+Running nl.inl.blacklab.search.lucene.TestSpansPositionFilter
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in nl.inl.blacklab.search.lucene.TestSpansPositionFilter
+Running nl.inl.blacklab.search.lucene.TestSpansUnique
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in nl.inl.blacklab.search.lucene.TestSpansUnique
+Running nl.inl.blacklab.search.lucene.TestSpansNot
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in nl.inl.blacklab.search.lucene.TestSpansNot
+Running nl.inl.blacklab.search.lucene.TestSpansTags
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in nl.inl.blacklab.search.lucene.TestSpansTags
+Running nl.inl.blacklab.search.lucene.TestSpansInBucketsPerStartPoint
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in nl.inl.blacklab.search.lucene.TestSpansInBucketsPerStartPoint
+Running nl.inl.blacklab.search.lucene.TestSpansRepetition
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in nl.inl.blacklab.search.lucene.TestSpansRepetition
+Running nl.inl.blacklab.search.lucene.TestSpansSequence
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in nl.inl.blacklab.search.lucene.TestSpansSequence
+Running nl.inl.blacklab.search.lucene.TestSpansInBucketsConsecutive
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in nl.inl.blacklab.search.lucene.TestSpansInBucketsConsecutive
+Running nl.inl.blacklab.search.lucene.TestSpansAnd
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in nl.inl.blacklab.search.lucene.TestSpansAnd
+Running nl.inl.blacklab.search.lucene.TestSpansExpandToNGram
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in nl.inl.blacklab.search.lucene.TestSpansExpandToNGram
+Running nl.inl.blacklab.search.lucene.TestSpansNGrams
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in nl.inl.blacklab.search.lucene.TestSpansNGrams
+Running nl.inl.blacklab.search.lucene.TestSpansInBuckets
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in nl.inl.blacklab.search.lucene.TestSpansInBuckets
+Running nl.inl.blacklab.search.lucene.TestPerDocumentSortedSpans
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in nl.inl.blacklab.search.lucene.TestPerDocumentSortedSpans
+Running nl.inl.blacklab.search.lucene.TestSpansExpansion
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in nl.inl.blacklab.search.lucene.TestSpansExpansion
+Running nl.inl.blacklab.search.TestConcordance
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in nl.inl.blacklab.search.TestConcordance
+Running nl.inl.blacklab.search.fimatch.TestNfa
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in nl.inl.blacklab.search.fimatch.TestNfa
+Running nl.inl.blacklab.search.fimatch.TestNfaFromQuery
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in nl.inl.blacklab.search.fimatch.TestNfaFromQuery
+Running nl.inl.blacklab.search.fimatch.TestSearchesNfa
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.591 sec <<< FAILURE! - in nl.inl.blacklab.search.fimatch.TestSearchesNfa
+testRepetition1(nl.inl.blacklab.search.fimatch.TestSearchesNfa)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<[[May the Force be with] you]> but was:<[]>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at nl.inl.blacklab.search.fimatch.TestSearchesNfa.testRepetition1(TestSearchesNfa.java:64)
+
+Running nl.inl.blacklab.search.TestTextPatternRegex
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in nl.inl.blacklab.search.TestTextPatternRegex
+Running nl.inl.blacklab.search.TestTextPatternSequence
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in nl.inl.blacklab.search.TestTextPatternSequence
+Running nl.inl.blacklab.search.grouping.TestHitProperties
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in nl.inl.blacklab.search.grouping.TestHitProperties
+Running nl.inl.blacklab.search.grouping.TestResultsGrouper
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.809 sec - in nl.inl.blacklab.search.grouping.TestResultsGrouper
+Running nl.inl.blacklab.search.grouping.TestHitPropertySerialize
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in nl.inl.blacklab.search.grouping.TestHitPropertySerialize
+Running nl.inl.blacklab.search.TestQueryRewrite
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.249 sec - in nl.inl.blacklab.search.TestQueryRewrite
+Running nl.inl.blacklab.search.TestHits
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in nl.inl.blacklab.search.TestHits
+Running nl.inl.blacklab.search.TestKwic
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in nl.inl.blacklab.search.TestKwic
+Running nl.inl.blacklab.search.TestSearches
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.205 sec - in nl.inl.blacklab.search.TestSearches
+Running nl.inl.blacklab.search.TestTextPatternWildcard
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in nl.inl.blacklab.search.TestTextPatternWildcard
+Running nl.inl.blacklab.search.TestHitsSample
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in nl.inl.blacklab.search.TestHitsSample
+Running nl.inl.blacklab.externalstorage.TestContentStoreDirFixedBlock
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec - in nl.inl.blacklab.externalstorage.TestContentStoreDirFixedBlock
+Running nl.inl.blacklab.externalstorage.TestContentStoreDirUtf8
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in nl.inl.blacklab.externalstorage.TestContentStoreDirUtf8
+Running nl.inl.blacklab.externalstorage.TestContentStoreDirZip
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in nl.inl.blacklab.externalstorage.TestContentStoreDirZip
+Running nl.inl.blacklab.highlight.TestXmlHighlighter
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in nl.inl.blacklab.highlight.TestXmlHighlighter
+Running nl.inl.blacklab.perdocument.TestDocResults
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in nl.inl.blacklab.perdocument.TestDocResults
+Running nl.inl.blacklab.forwardindex.TestTermsV3
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in nl.inl.blacklab.forwardindex.TestTermsV3
+Running nl.inl.blacklab.forwardindex.TestForwardIndexPosIncr
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in nl.inl.blacklab.forwardindex.TestForwardIndexPosIncr
+Running nl.inl.blacklab.forwardindex.TestForwardIndexDelete
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in nl.inl.blacklab.forwardindex.TestForwardIndexDelete
+Running nl.inl.blacklab.analysis.TestBLDutchTokenizer
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in nl.inl.blacklab.analysis.TestBLDutchTokenizer
+Running nl.inl.blacklab.analysis.TestBLDutchTokenFilter
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in nl.inl.blacklab.analysis.TestBLDutchTokenFilter
+Running nl.inl.blacklab.analysis.TestBLDutchAnalyzer
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in nl.inl.blacklab.analysis.TestBLDutchAnalyzer
+Running nl.inl.blacklab.filter.TestRemoveAllAccentsFilter
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in nl.inl.blacklab.filter.TestRemoveAllAccentsFilter
+Running nl.inl.blacklab.filter.TestTranscribeGermanAccentsFilter
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in nl.inl.blacklab.filter.TestTranscribeGermanAccentsFilter
+Running nl.inl.blacklab.filter.TestTranscribeGermanAccentsSynonymFilter
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in nl.inl.blacklab.filter.TestTranscribeGermanAccentsSynonymFilter
+Running nl.inl.blacklab.index.TestHookableSaxParser
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in nl.inl.blacklab.index.TestHookableSaxParser
+Running nl.inl.blacklab.index.complex.TestComplexFieldUtil
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in nl.inl.blacklab.index.complex.TestComplexFieldUtil
+Running nl.inl.util.TestFileUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in nl.inl.util.TestFileUtil
+Running nl.inl.util.TestStringUtil
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in nl.inl.util.TestStringUtil
+Running nl.inl.util.TestXmlUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in nl.inl.util.TestXmlUtil
+
+Results :
+
+Failed tests: 
+  TestSearchesNfa.testRepetition1:64 expected:<[[May the Force be with] you]> but was:<[]>
+
+Tests run: 198, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] BlackLab Corpus Search ............................. SUCCESS [  0.003 s]
+[INFO] BlackLab ........................................... FAILURE [  9.794 s]
+[INFO] BlackLab Server .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.226 s
+[INFO] Finished at: 2020-02-15T14:47:10+01:00
+[INFO] Final Memory: 20M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project blacklab: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project blacklab: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :blacklab
