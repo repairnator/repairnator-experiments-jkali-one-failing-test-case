@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 13,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "MPI-ExperimentGroup/ExperimentTemplate",
-  "bugCommit": "https://github.com/MPI-ExperimentGroup/ExperimentTemplate/compare/d2368e744d55...c96e3bff357b",
-  "failingModule": "/root/workspace/MPI-ExperimentGroup/ExperimentTemplate/374796850/ExperimentDesigner",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 27,
-  "failing-test-cases": [
-    {
-      "className": "nl.mpi.tg.eg.experimentdesigner.util.AllWizardDataTest",
-      "failingMethods": [
-        "nl.mpi.tg.eg.experimentdesigner.util.AllWizardDataTest#testAllGetWizardData"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:49 PM",
+    "reproductionDateEnd": "Feb 15, 2020 7:09:19 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 64558168,
+      "totalMemory": 545366016
+    },
+    "totalDuration": 3325,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2906,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2906
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-374796850-20180504-113446-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-374796850-20180504-113446-firstCommit/ExperimentDesigner",
+    "overallMetrics": {
+      "numberRunning": 14,
+      "numberPassing": 13,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 13,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "shawifieldkit-testoutput.xml expected:\u003c...Interview.\" target\u003d\"[Edit_User\"/\u003e\n                \u003caddPadding/\u003e\n                \u003cplainText featureText\u003d\"Have you already started a recording and do you want to go back to it?\"/\u003e\n                \u003ctargetButton featureText\u003d\"Resume Interview\" target\u003d\"SelectUser\"/\u003e\n            \u003c/multipleUsers\u003e\n            \u003csingleUser\u003e\n                \u003cautoNextPresenter target\u003d\"Edit_User]\"/\u003e\n            \u003c/si...\u003e but was:\u003c...Interview.\" target\u003d\"[MetadataScreen\"/\u003e\n                \u003caddPadding/\u003e\n                \u003cplainText featureText\u003d\"Have you already started a recording and do you want to go back to it?\"/\u003e\n                \u003ctargetButton featureText\u003d\"Resume Interview\" target\u003d\"SelectUser\"/\u003e\n            \u003c/multipleUsers\u003e\n            \u003csingleUser\u003e\n                \u003cautoNextPresenter target\u003d\"MetadataScreen]\"/\u003e\n            \u003c/si...\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nl.mpi.tg.eg.experimentdesigner.util.AllWizardDataTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nl.mpi.tg.eg.experimentdesigner.util.AllWizardDataTest",
+        "testMethod": "testAllGetWizardData",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "shawifieldkit-testoutput.xml expected:\u003c...Interview.\" target\u003d\"[Edit_User\"/\u003e\n                \u003caddPadding/\u003e\n                \u003cplainText featureText\u003d\"Have you already started a recording and do you want to go back to it?\"/\u003e\n                \u003ctargetButton featureText\u003d\"Resume Interview\" target\u003d\"SelectUser\"/\u003e\n            \u003c/multipleUsers\u003e\n            \u003csingleUser\u003e\n                \u003cautoNextPresenter target\u003d\"Edit_User]\"/\u003e\n            \u003c/si...\u003e but was:\u003c...Interview.\" target\u003d\"[MetadataScreen\"/\u003e\n                \u003caddPadding/\u003e\n                \u003cplainText featureText\u003d\"Have you already started a recording and do you want to go back to it?\"/\u003e\n                \u003ctargetButton featureText\u003d\"Resume Interview\" target\u003d\"SelectUser\"/\u003e\n            \u003c/multipleUsers\u003e\n            \u003csingleUser\u003e\n                \u003cautoNextPresenter target\u003d\"MetadataScreen]\"/\u003e\n            \u003c/si...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 303,
+    "numberTestFiles": 66,
+    "numberLibrariesFailingModule": 72,
+    "numberLines": 0
+  }
 }
