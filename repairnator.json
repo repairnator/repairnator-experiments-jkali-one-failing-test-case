@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "IQSS/dataverse",
-  "bugCommit": "https://github.com/IQSS/dataverse/compare/d467884bbac6...d447458afc50",
-  "failingModule": "/root/workspace/IQSS/dataverse/251237542",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 375,
-  "failing-test-cases": [
-    {
-      "className": "edu.harvard.iq.dataverse.engine.command.impl.ReturnDatasetToAuthorCommandTest",
-      "failingMethods": [
-        "edu.harvard.iq.dataverse.engine.command.impl.ReturnDatasetToAuthorCommandTest#testEmptyComments"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:55 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:57:47 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 888936128,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 708,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 103,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          103
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-251243965-20170707-193710-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-251243965-20170707-193710-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 375,
+      "numberPassing": 374,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003cYou must enter a reason for returning a dataset to its author.\u003e but was:\u003cnull\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.iq.dataverse.engine.command.impl.ReturnDatasetToAuthorCommandTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.iq.dataverse.engine.command.impl.ReturnDatasetToAuthorCommandTest",
+        "testMethod": "testEmptyComments",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cYou must enter a reason for returning a dataset to its author.\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 631,
+    "numberTestFiles": 102,
+    "numberLibrariesFailingModule": 198,
+    "numberLines": 0
+  }
 }
