@@ -1630,3 +1630,9 @@ ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!stimuliList.conta
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=nl.mpi.tg.eg.experimentdesigner.model.wizard.WizardStimulusScreen line: 104, pointed element: CtIfImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!stimuliList.contains(stimulus)) {  	stimuliList.add(stimulus); } ` -topatch--> `if (false) {  	stimuliList.add(stimulus); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=nl.mpi.tg.eg.experimentdesigner.model.wizard.WizardStimulusScreen line: 104, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!stimuliList.contains(stimulus)) {  	stimuliList.add(stimulus); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=nl.mpi.tg.eg.experimentdesigner.model.wizard.WizardVideoAudioOptionStimulusScreen line: 388, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `nextStimulusFeature.addFeatureAttributes(nl.mpi.tg.eg.experimentdesigner.model.FeatureAttribute.repe[...] ` -topatch--> `-` (null) 
