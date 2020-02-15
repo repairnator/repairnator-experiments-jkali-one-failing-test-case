@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="innovimax.mixthem.GenericTest" time="1.29" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="skip.npm" value="true"/>
+    <property name="java.endorsed.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="cobertura.skip" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/hpc2n/eb/software/Core/Maven/3.6.0/lib:/hpc2n/eb/software/Core/Java/1.8.0_202/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="license.skip" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skip.bower" value="true"/>
+    <property name="maven.repo.local" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/.m2"/>
+    <property name="os.version" value="4.15.0-76-generic"/>
+    <property name="user.home" value="/home/d/dginelli"/>
+    <property name="user.timezone" value="Europe/Stockholm"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="dginelli"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="skipITs" value="true"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -e -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="dependency-check.skip" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/resources.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/rt.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/sunrsasign.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jsse.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jce.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/charsets.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jfr.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="rat.skip" value="true"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testCharRules" classname="innovimax.mixthem.GenericTest" time="1.198"/>
+  <testcase name="testBytesRules" classname="innovimax.mixthem.GenericTest" time="0.092">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at innovimax.mixthem.GenericTest.testRules(GenericTest.java:95)
+	at innovimax.mixthem.GenericTest.testBytesRules(GenericTest.java:35)
+</failure>
+    <system-out><![CDATA[1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+1B3D5F7H9JKLMN
+BYTES+[B@27082746 CHANNEL=1 BYTE=65
+BYTES+[B@42f30e0a CHANNEL=1 BYTE=66
+BYTES+[B@24273305 CHANNEL=1 BYTE=67
+BYTES+[B@5b1d2887 CHANNEL=0 BYTE=52
+BYTES+[B@46f5f779 CHANNEL=1 BYTE=69
+BYTES+[B@1c2c22f3 CHANNEL=1 BYTE=70
+BYTES+[B@18e8568 CHANNEL=1 BYTE=71
+BYTES+[B@33e5ccce CHANNEL=0 BYTE=56
+BYTES+[B@5a42bbf4 CHANNEL=0 BYTE=57
+BYTES+[B@270421f5 CHANNEL=1 BYTE=74
+BYTES+[B@52d455b8 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+75
+BYTES+[B@4f4a7090 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+76
+BYTES+[B@18ef96 CHANNEL=1 BYTE=77
+BYTES+[B@6956de9 CHANNEL=1 BYTE=78
+BYTES+[B@769c9116 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+10
+BYTES+[B@6aceb1a5 CHANNEL=1 BYTE=65
+BYTES+[B@2d6d8735 CHANNEL=1 BYTE=66
+BYTES+[B@ba4d54 CHANNEL=1 BYTE=67
+BYTES+[B@12bc6874 CHANNEL=0 BYTE=52
+BYTES+[B@de0a01f CHANNEL=1 BYTE=69
+BYTES+[B@4c75cab9 CHANNEL=1 BYTE=70
+BYTES+[B@1ef7fe8e CHANNEL=1 BYTE=71
+BYTES+[B@6f79caec CHANNEL=0 BYTE=56
+BYTES+[B@67117f44 CHANNEL=0 BYTE=57
+BYTES+[B@5d3411d CHANNEL=1 BYTE=74
+BYTES+[B@2471cca7 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+75
+BYTES+[B@5fe5c6f CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+76
+BYTES+[B@6979e8cb CHANNEL=1 BYTE=77
+BYTES+[B@763d9750 CHANNEL=1 BYTE=78
+BYTES+[B@5c0369c4 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+10
+ABC4EFG89JKLMN
+BYTES+[B@2be94b0f CHANNEL=1 BYTE=65
+BYTES+[B@d70c109 CHANNEL=1 BYTE=66
+BYTES+[B@17ed40e0 CHANNEL=1 BYTE=67
+BYTES+[B@50675690 CHANNEL=0 BYTE=52
+BYTES+[B@31b7dea0 CHANNEL=1 BYTE=69
+BYTES+[B@3ac42916 CHANNEL=1 BYTE=70
+BYTES+[B@47d384ee CHANNEL=1 BYTE=71
+BYTES+[B@2d6a9952 CHANNEL=0 BYTE=56
+BYTES+[B@22a71081 CHANNEL=0 BYTE=57
+BYTES+[B@3930015a CHANNEL=1 BYTE=74
+BYTES+[B@629f0666 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+75
+BYTES+[B@1bc6a36e CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+76
+BYTES+[B@1ff8b8f CHANNEL=1 BYTE=77
+BYTES+[B@387c703b CHANNEL=1 BYTE=78
+BYTES+[B@224aed64 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+10
+BYTES+[B@c39f790 CHANNEL=1 BYTE=65
+BYTES+[B@71e7a66b CHANNEL=1 BYTE=66
+BYTES+[B@2ac1fdc4 CHANNEL=1 BYTE=67
+BYTES+[B@5f150435 CHANNEL=0 BYTE=52
+BYTES+[B@1c53fd30 CHANNEL=1 BYTE=69
+BYTES+[B@50cbc42f CHANNEL=1 BYTE=70
+BYTES+[B@75412c2f CHANNEL=1 BYTE=71
+BYTES+[B@282ba1e CHANNEL=0 BYTE=56
+BYTES+[B@13b6d03 CHANNEL=0 BYTE=57
+BYTES+[B@f5f2bb7 CHANNEL=1 BYTE=74
+BYTES+[B@73035e27 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+75
+BYTES+[B@64c64813 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+76
+BYTES+[B@3ecf72fd CHANNEL=1 BYTE=77
+BYTES+[B@483bf400 CHANNEL=1 BYTE=78
+BYTES+[B@21a06946 CHANNEL=0 BYTE=-1
+NEW_CHANNEL=1 BYTE+10
+ABC4EFG89JKLMN
+1B3D5F7H
+JKM
+NOP
+1Bc4
+f7h9jk
+1BcW5fT8R
+P
+]]></system-out>
+    <system-err><![CDATA[[INFO] MixThem: TEST [BYTE] N° 1***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test001_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test001_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test001_output-1.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule '1'...
+[INFO] MixThem: Ended mixing for [byte] rule '1'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule '1'...
+[INFO] MixThem: Ended mixing for [byte] rule '1'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test001_output-2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule '2'...
+[INFO] MixThem: Ended mixing for [byte] rule '2'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule '2'...
+[INFO] MixThem: Ended mixing for [byte] rule '2'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test001_output-add.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule '+'...
+[INFO] MixThem: Ended mixing for [byte] rule '+'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule '+'...
+[INFO] MixThem: Ended mixing for [byte] rule '+'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [BYTE] N° 2***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test002_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test002_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test002_output-altbyte.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule 'alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'alt-byte'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule 'alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'alt-byte'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test002_params-random-altbyte.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test002_output-random-altbyte.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule 'random-alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'random-alt-byte'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule 'random-alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'random-alt-byte'.
+[INFO] MixThem: Run FAIL with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test002_params-random-altbyte.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test002_output-random-altbyte.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule 'random-alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'random-alt-byte'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule 'random-alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'random-alt-byte'.
+[INFO] MixThem: Run FAIL with params {RANDOM_SEED=1789}
+[INFO] MixThem: TEST [BYTE] N° 3***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test003_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test003_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 4***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test004_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test004_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 5***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test005_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test005_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 6***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test006_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test006_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 7***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test007_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test007_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 8***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test008_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test008_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 9***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test009_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test009_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 10***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test010_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test010_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 11***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test011_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test011_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 12***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test012_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test012_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 13***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test013_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test013_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 14***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test014_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test014_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 15***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test015_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test015_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 16***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test016_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test016_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 17***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test017_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test017_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 18***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test018_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test018_file2.txt
+[INFO] MixThem: TEST [BYTE] N° 19***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test019_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test019_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test019_output-altbyte.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule 'alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'alt-byte'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule 'alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'alt-byte'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [BYTE] N° 20***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test020_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test020_file2.txt
+[INFO] MixThem: File 3: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test020_file3.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test020_output-altbyte.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule 'alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'alt-byte'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule 'alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'alt-byte'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [BYTE] N° 21***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test021_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test021_file2.txt
+[INFO] MixThem: File 3: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test021_file3.txt
+[INFO] MixThem: File 4: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test021_file4.txt
+[INFO] MixThem: File 5: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test021_file5.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-375871454-20180507-143814-firstCommit/target/test-classes/innovimax/mixthem/test021_output-altbyte.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [byte] rule 'alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'alt-byte'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [byte] rule 'alt-byte'...
+[INFO] MixThem: Ended mixing for [byte] rule 'alt-byte'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [BYTE] N° 22***********************************************************
+[INFO] MixThem: *********************************************************************
+[INFO] MixThem: FAILED [BYTE] TESTS : [2, 2]
+[INFO] MixThem: *********************************************************************
+]]></system-err>
+  </testcase>
+</testsuite>
