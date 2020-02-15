@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "cpesch/RouteConverter",
-  "bugCommit": "https://github.com/cpesch/RouteConverter/compare/c5ba1041fea6...63f20f107fc6",
-  "failingModule": "/root/workspace/cpesch/RouteConverter/244666794/navigation-formats",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 413,
-  "failing-test-cases": [
-    {
-      "className": "slash.navigation.columbus.ColumbusNavigationFormatRegistryTest",
-      "failingMethods": [
-        "slash.navigation.columbus.ColumbusNavigationFormatRegistryTest#testNotExistingExtension"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-cpesch-RouteConverter-244667111-20170619-215348-firstCommit/navigation-formats",
+    "overallMetrics": {
+      "numberRunning": 413,
+      "numberPassing": 412,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003cclass slash.navigation.nmea.NmeaFormat\u003e but was:\u003cclass slash.navigation.gpx.Gpx11Format\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "slash.navigation.columbus.ColumbusNavigationFormatRegistryTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "slash.navigation.columbus.ColumbusNavigationFormatRegistryTest",
+        "testMethod": "testNotExistingExtension",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cclass slash.navigation.nmea.NmeaFormat\u003e but was:\u003cclass slash.navigation.gpx.Gpx11Format\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 49,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1402,
+    "numberTestFiles": 160,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:46 PM",
+    "reproductionDateEnd": "Feb 16, 2020 12:58:52 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 534830040,
+      "totalMemory": 1119911936
+    },
+    "totalDuration": 6302,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-cpesch-RouteConverter-244667111-20170619-215348-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
