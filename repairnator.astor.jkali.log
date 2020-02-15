@@ -2004,3 +2004,6 @@ RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `personService.saveRelati
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.openmrs.module.aijar.api.impl.AijarServiceImpl line: 83, pointed element: CtInvocationImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `log.debug((("Infant with ID " + infant.getPersonId()) + " linked to mother with ID ") + potentialMot[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.openmrs.module.aijar.api.impl.AijarServiceImpl line: 76, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((potentialMother.getAge() > 12) & potentialMother.getGender().equals("F")) { 	org.openmrs.Relati[...] ` -topatch--> `if (true) { 	org.openmrs.Relationship relationship = new org.openmrs.Relationship(); 	relationship.s[...]` (spoon.support.reflect.code.CtIfImpl) 
