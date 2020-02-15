@@ -1,0 +1,311 @@
+java.lang.SecurityException: class "org.eclipse.core.runtime.Plugin"'s signer information does not match signer information of other classes in the same package
+	at java.lang.ClassLoader.checkCerts(ClassLoader.java:898)
+	at java.lang.ClassLoader.preDefineClass(ClassLoader.java:668)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:761)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:401)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:271)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:247)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:239)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:401)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:271)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:247)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:239)
+	at org.eclipse.emf.codegen.ecore.genmodel.util.GenModelUtil.getJavaOptions(GenModelUtil.java:130)
+	at org.eclipse.emf.codegen.ecore.generator.Generator.getJControlModel(Generator.java:395)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generateJava(AbstractGeneratorAdapter.java:1898)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenPackageGeneratorAdapter.generatePackageInterface(GenPackageGeneratorAdapter.java:601)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenPackageGeneratorAdapter.generateModel(GenPackageGeneratorAdapter.java:209)
+	at org.eclipse.emf.codegen.ecore.genmodel.generator.GenBaseGeneratorAdapter.doGenerate(GenBaseGeneratorAdapter.java:215)
+	at org.eclipse.emf.codegen.ecore.generator.AbstractGeneratorAdapter.generate(AbstractGeneratorAdapter.jav[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ graph-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/consistency-examples/graph-model/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ graph-model ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ graph-model ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Model-Consistency 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ consistency-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/consistency-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ consistency-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ consistency-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/consistency-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ consistency-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ consistency-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/consistency-core/target/surefire-reports
+[INFO] Using configured provider org.junit.platform.surefire.provider.JUnitPlatformProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.pom (4 KB at 8.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-providers/1.0-beta-6/wagon-providers-1.0-beta-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-providers/1.0-beta-6/wagon-providers-1.0-beta-6.pom (3 KB at 64.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.pom (3 KB at 89.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.pom (390 B at 14.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.pom (704 B at 25.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.pom (8 KB at 280.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.pom (4 KB at 162.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.pom (4 KB at 103.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.pom (4 KB at 108.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-parent/1.5.0/jackrabbit-parent-1.5.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-parent/1.5.0/jackrabbit-parent-1.5.0.pom (25 KB at 780.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.pom (3 KB at 121.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.3/slf4j-api-1.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.3/slf4j-api-1.5.3.pom (3 KB at 126.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.3/slf4j-parent-1.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.3/slf4j-parent-1.5.3.pom (8 KB at 314.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.0/commons-httpclient-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.0/commons-httpclient-3.0.pom (8 KB at 340.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.pom (2 KB at 49.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom (2 KB at 72.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom (2 KB at 61.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom (2 KB at 46.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom (15 KB at 673.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom (4 KB at 130.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom (2 KB at 88.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar (39 KB at 1295.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.jar (11 KB at 160.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar (25 KB at 321.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar (52 KB at 558.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar (110 KB at 1227.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar (30 KB at 816.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.jar (18 KB at 744.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.jar (6 KB at 203.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar (10 KB at 298.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar (12 KB at 503.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar (298 KB at 1985.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.jar (199 KB at 2084.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.jar (296 KB at 2766.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.consistency.core.tests.unit.IdTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in org.consistency.core.tests.unit.IdTest
+Running org.consistency.core.tests.unit.SharedResourceTest
+New operation: org.atlanmod.consistency.update.Attach@38c5cc4c
+Adding Id to: {[2],[0]}
+New operation: org.atlanmod.consistency.update.Attach@368f2016
+Adding Id to: {[2],[1]}
+New operation: SetReference{fid={{[2],[1]},[0]}, oid={[2],[0]}}
+New operation: AddReference{fid={{[2],[0]},[0]}, oid={[2],[1]}}
+New operation: SetValue{fid={{[2],[1]},[2]}, value=5, previous=0}
+New operation: org.atlanmod.consistency.update.Attach@47eaca72
+Adding Id to: {[3],[0]}
+--detaching object {[3],[0]}--
+New operation: org.atlanmod.consistency.update.Detach@5656be13
+New operation: org.atlanmod.consistency.update.Attach@4218d6a3
+Adding Id to: {[4],[0]}
+--detaching object {[4],[0]}--
+New operation: org.atlanmod.consistency.update.Detach@76505305
+New operation: org.atlanmod.consistency.update.Attach@14cd1699
+Adding Id to: {[3],[1]}
+New operation: org.atlanmod.consistency.update.Attach@77888435
+Adding Id to: {[5],[0]}
+New operation: org.atlanmod.consistency.update.Attach@7b98f307
+Adding Id to: {[5],[1]}
+New operation: org.atlanmod.consistency.update.Attach@4802796d
+Adding Id to: {[5],[2]}
+New operation: SetReference{fid={{[5],[1]},[0]}, oid={[5],[0]}}
+New operation: SetReference{fid={{[5],[2]},[0]}, oid={[5],[0]}}
+New operation: AddManyReferences{fid={{[5],[0]},[0]}, value=[{[5],[1]}, {[5],[2]}]}
+New operation: org.atlanmod.consistency.update.Attach@1bb5a082
+Adding Id to: {[5],[3]}
+New operation: SetReference{fid={{[5],[3]},[0]}, oid={[5],[0]}}
+New operation: AddReference{fid={{[5],[0]},[0]}, oid={[5],[3]}}
+org.eclipse.emf.ecore.impl.ENotificationImpl@78691363 (eventType: MOVE, position: 0, notifier: graph.impl.GraphImpl@41d477ed, feature: org.eclipse.emf.ecore.impl.EReferenceImpl@799f10e1 (name: vertices) (ordered: true, unique: true, lowerBound: 0, upperBound: -1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (containment: true, resolveProxies: false), oldValue: 2, newValue: graph.impl.VertexImpl@3590fc5b (label: null, weight: 0), isTouch: false, wasSet: true)
+New operation: MoveValue{fid={{[5],[0]},[0]}, from=2, to=0}
+--detaching object {[5],[2]}--
+New operation: org.atlanmod.consistency.update.Detach@397fbdb
+New operation: RemoveReference{fid={{[5],[0]},[0]}, oid=null}
+New operation: org.atlanmod.consistency.update.Attach@74235045
+Adding Id to: {[6],[0]}
+New operation: org.atlanmod.consistency.update.Attach@618b19ad
+Adding Id to: {[6],[1]}
+New operation: SetReference{fid={{[6],[1]},[0]}, oid={[6],[0]}}
+New operation: AddReference{fid={{[6],[0]},[0]}, oid={[6],[1]}}
+New operation: org.atlanmod.consistency.update.Attach@2d3379b4
+Adding Id to: {[6],[2]}
+New operation: SetReference{fid={{[6],[2]},[0]}, oid={[6],[0]}}
+New operation: AddReference{fid={{[6],[0]},[0]}, oid={[6],[2]}}
+New operation: org.atlanmod.consistency.update.Attach@30c15d8b
+Adding Id to: {[6],[3]}
+New operation: SetReference{fid={{[6],[3]},[0]}, oid={[6],[0]}}
+New operation: AddReference{fid={{[6],[0]},[0]}, oid={[6],[3]}}
+--detaching object {[6],[1]}--
+New operation: org.atlanmod.consistency.update.Detach@45752059
+--detaching object {[6],[2]}--
+New operation: org.atlanmod.consistency.update.Detach@34e9fd99
+--detaching object {[6],[3]}--
+New operation: org.atlanmod.consistency.update.Detach@3c41ed1d
+New operation: RemoveManyValues{fid={{[6],[0]},[0]}, value=[org.eclipse.emf.ecore.impl.EGenericTypeImpl@6a6cb05c (expression: Vertex)]}
+New operation: org.atlanmod.consistency.update.Attach@40a4337a
+Adding Id to: {[7],[0]}
+New operation: org.atlanmod.consistency.update.Attach@6025e1b6
+Adding Id to: {[7],[1]}
+New operation: SetReference{fid={{[7],[1]},[0]}, oid={[7],[0]}}
+New operation: AddReference{fid={{[7],[0]},[0]}, oid={[7],[1]}}
+New operation: org.atlanmod.consistency.update.Attach@22ff4249
+Adding Id to: {[7],[2]}
+New operation: SetReference{fid={{[7],[2]},[0]}, oid={[7],[0]}}
+New operation: AddReference{fid={{[7],[0]},[0]}, oid={[7],[2]}}
+New operation: org.atlanmod.consistency.update.Attach@2d1ef81a
+Adding Id to: {[7],[3]}
+New operation: SetReference{fid={{[7],[3]},[0]}, oid={[7],[0]}}
+New operation: AddReference{fid={{[7],[0]},[0]}, oid={[7],[3]}}
+--detaching object {[7],[1]}--
+New operation: org.atlanmod.consistency.update.Detach@4c402120
+--detaching object {[7],[3]}--
+New operation: org.atlanmod.consistency.update.Detach@327514f
+New operation: RemoveManyReferences{fid={{[7],[0]},[0]}, value=[[0], [2]]}
+New operation: org.atlanmod.consistency.update.Attach@5542c4ed
+Adding Id to: {[8],[0]}
+New operation: org.atlanmod.consistency.update.Attach@1573f9fc
+Adding Id to: {[8],[1]}
+New operation: SetReference{fid={{[8],[1]},[0]}, oid={[8],[0]}}
+New operation: AddReference{fid={{[8],[0]},[0]}, oid={[8],[1]}}
+New operation: org.atlanmod.consistency.update.Attach@6150c3ec
+Adding Id to: {[9],[0]}
+New operation: SetValue{fid={{[9],[0]},[1]}, value=A, previous=null}
+New operation: org.atlanmod.consistency.update.Attach@44c03695
+Adding Id to: {[9],[1]}
+New operation: SetReference{fid={{[9],[1]},[0]}, oid={[9],[0]}}
+New operation: org.atlanmod.consistency.update.Attach@1f2586d6
+Adding Id to: {[9],[2]}
+New operation: AddReference{fid={{[9],[2]},[1]}, oid={[9],[1]}}
+New operation: SetReference{fid={{[9],[0]},[0]}, oid={[9],[2]}}
+New operation: AddReference{fid={{[9],[2]},[0]}, oid={[9],[0]}}
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.472 sec - in org.consistency.core.tests.unit.SharedResourceTest
+Running org.consistency.core.tests.unit.PubSubTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec <<< FAILURE! - in org.consistency.core.tests.unit.PubSubTest
+testTopicPublishAll  Time elapsed: 0.025 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]> but was:<[0]>
+	at org.consistency.core.tests.unit.PubSubTest.testTopicPublishAll(PubSubTest.java:107)
+
+
+Results :
+
+Failed tests: 
+  PubSubTest.testTopicPublishAll:107 expected:<[1]> but was:<[0]>
+
+Tests run: 19, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Model Consistency .................................. SUCCESS [  0.008 s]
+[INFO] consistency-examples ............................... SUCCESS [  0.000 s]
+[INFO] EMF Graph Model .................................... SUCCESS [  9.854 s]
+[INFO] Model-Consistency .................................. FAILURE [  6.606 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.763 s
+[INFO] Finished at: 2020-02-15T23:16:48+01:00
+[INFO] Final Memory: 38M/95M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project consistency-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/consistency-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project consistency-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/consistency-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/consistency-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :consistency-core
