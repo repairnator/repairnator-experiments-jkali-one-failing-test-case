@@ -1,30 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "JSQLParser/JSqlParser",
-  "failingModule": "/root/workspace/JSQLParser/JSqlParser/325114131",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError:"
-  ],
-  "totalNumberRunningTests": 646,
-  "failing-test-cases": [
-    {
-      "className": "net.sf.jsqlparser.test.select.SpecialOracleTest",
-      "failingMethods": [
-        "net.sf.jsqlparser.test.select.SpecialOracleTest#testAllSqlsParseDeparse"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:47 PM",
+    "reproductionDateEnd": "Feb 15, 2020 7:57:48 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 390443704,
+      "totalMemory": 845680640
+    },
+    "totalDuration": 6238,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JSQLParser-JSqlParser-325114131-20180104-175150_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JSQLParser-JSqlParser-325114131-20180104-175150_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 646,
+      "numberPassing": 645,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError:",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.sf.jsqlparser.test.select.SpecialOracleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.sf.jsqlparser.test.select.SpecialOracleTest",
+        "testMethod": "testAllSqlsParseDeparse",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 204,
+    "numberTestFiles": 47,
+    "numberLibrariesFailingModule": 50,
+    "numberLines": 0
+  },
+  "commits": {}
 }
