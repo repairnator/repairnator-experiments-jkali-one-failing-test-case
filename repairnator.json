@@ -1,36 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "totalMemory": 212860928,
-  "workspace": "./workspace",
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "JSQLParser/JSqlParser",
-  "freeMemory": 157243232,
-  "failingModule": "/root/workspace/JSQLParser/JSqlParser/228814363",
-  "buildid": 228814363,
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 538,
-  "failing-test-cases": [
-    {
-      "className": "net.sf.jsqlparser.test.select.SelectTest",
-      "failingMethods": [
-        "net.sf.jsqlparser.test.select.SelectTest#testNStringSelect"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:46 PM",
+    "reproductionDateEnd": "Feb 15, 2020 7:10:37 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 226574080,
+      "totalMemory": 506441728
+    },
+    "totalDuration": 3407,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 3181,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          3181
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JSQLParser-JSqlParser-228814363-20170504-185728_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-JSQLParser-JSqlParser-228814363-20170504-185728_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 538,
+      "numberPassing": 537,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003cSELECT [N]\u0027national character\u0027...\u003e but was:\u003cSELECT []\u0027national character\u0027...\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ],
-  "nbCPU": 4
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.sf.jsqlparser.test.select.SelectTest",
+        "numberRunning": 303,
+        "numberPassing": 302,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.sf.jsqlparser.test.select.SelectTest",
+        "testMethod": "testNStringSelect",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cSELECT [N]\u0027national character\u0027...\u003e but was:\u003cSELECT []\u0027national character\u0027...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 190,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  },
+  "commits": {}
 }
