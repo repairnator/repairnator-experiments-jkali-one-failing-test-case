@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "debezium/debezium",
-  "failingModule": "/root/workspace/debezium/debezium/354170531/debezium-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 291,
-  "failing-test-cases": [
-    {
-      "className": "io.debezium.config.ConfigurationTest",
-      "failingMethods": [
-        "io.debezium.config.ConfigurationTest#defaultDddlFilterShouldFilterOutRdsHeartbeatInsert"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-debezium-debezium-354170531-20180316-064404-firstCommit/debezium-core",
+    "overallMetrics": {
+      "numberRunning": 291,
+      "numberPassing": 290,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[tru]e\u003e but was:\u003c[fals]e\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.config.ConfigurationTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.config.ConfigurationTest",
+        "testMethod": "defaultDddlFilterShouldFilterOutRdsHeartbeatInsert",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[tru]e\u003e but was:\u003c[fals]e\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 244,
+    "numberTestFiles": 128,
+    "numberLibrariesFailingModule": 39,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:45 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:59:28 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 305369976,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 2740,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2521,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2521
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-debezium-debezium-354170531-20180316-064404-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
