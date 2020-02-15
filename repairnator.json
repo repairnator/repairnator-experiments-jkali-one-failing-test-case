@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "HubSpot/Singularity",
-  "bugCommit": "https://github.com/HubSpot/Singularity/compare/73be994fe2df...6a0818bb26e5",
-  "failingModule": "/root/workspace/HubSpot/Singularity/252920707/SingularityService",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 171,
-  "failing-test-cases": [
-    {
-      "className": "com.hubspot.singularity.scheduler.SingularityHealthchecksTest",
-      "failingMethods": [
-        "com.hubspot.singularity.scheduler.SingularityHealthchecksTest#testSkipHealthchecksDuringBounce"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 1:45:58 PM",
+    "reproductionDateEnd": "Feb 15, 2020 3:40:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 361122960,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6845,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-HubSpot-Singularity-252920707-20170712-210929_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-HubSpot-Singularity-252920707-20170712-210929_bugonly-firstCommit/SingularityService",
+    "overallMetrics": {
+      "numberRunning": 135,
+      "numberPassing": 134,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.hubspot.singularity.scheduler.SingularitySchedulerTest",
+        "numberRunning": 74,
+        "numberPassing": 73,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.hubspot.singularity.scheduler.SingularitySchedulerTest",
+        "testMethod": "testSchedulerPriority",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberPlugins": 0,
+    "numberSourceFiles": 561,
+    "numberTestFiles": 39,
+    "numberLibrariesFailingModule": 171,
+    "numberLines": 0
+  },
+  "commits": {}
 }
