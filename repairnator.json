@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 22,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "MPI-ExperimentGroup/ExperimentTemplate",
-  "bugCommit": "https://github.com/MPI-ExperimentGroup/ExperimentTemplate/compare/95f622d4f2b6...eb4a3f7ba277",
-  "failingModule": "/root/workspace/MPI-ExperimentGroup/ExperimentTemplate/384776966/AdaptiveVocabularyAssessmentModule",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 217,
-  "failing-test-cases": [
-    {
-      "className": "nl.mpi.tg.eg.frinex.adaptivevocabularyassessment.client.service.AudioAsStimuliProviderTest",
-      "failingMethods": [
-        "testHasNextStimulusChampion"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:49 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:45:41 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 110052480,
+      "totalMemory": 251506688
+    },
+    "totalDuration": 1908,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1355,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1355
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit/AdaptiveVocabularyAssessmentModule",
+    "overallMetrics": {
+      "numberRunning": 195,
+      "numberPassing": 194,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 22,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError:",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nl.mpi.tg.eg.frinex.adaptivevocabularyassessment.client.service.AudioAsStimuliProviderTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nl.mpi.tg.eg.frinex.adaptivevocabularyassessment.client.service.AudioAsStimuliProviderTest",
+        "testMethod": "testHasNextStimulusChampion",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 309,
+    "numberTestFiles": 68,
+    "numberLibrariesFailingModule": 47,
+    "numberLines": 0
+  },
+  "commits": {}
 }
