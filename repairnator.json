@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:29 PM",
+    "reproductionDateEnd": "Feb 16, 2020 12:57:39 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 31607472,
+      "totalMemory": 104157184
+    },
+    "totalDuration": 6246,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-414335681-20180810-041022-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-servicecomb-java-chassis-414335681-20180810-041022-firstCommit/common/common-rest",
+    "overallMetrics": {
+      "numberRunning": 1331,
+      "numberPassing": 1330,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.common.rest.codec.TestRestCodec",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.common.rest.codec.TestRestCodec",
+        "testMethod": "testRestToArgsExcetpion",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cParameter is not valid.\u003e but was:\u003cCommonExceptionData [message\u003dParameter is not valid.]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 69,
+    "numberPlugins": 0,
+    "numberSourceFiles": 917,
+    "numberTestFiles": 572,
+    "numberLibrariesFailingModule": 90,
+    "numberLines": 0
+  },
+  "commits": {}
+}
