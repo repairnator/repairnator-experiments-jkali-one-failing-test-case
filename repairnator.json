@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "OpenGamma/Strata",
-  "bugCommit": "https://github.com/OpenGamma/Strata/compare/a52a747686bc...c4a51db50440",
-  "failingModule": "/root/workspace/OpenGamma/Strata/318075553/modules/product",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 8562,
-  "failing-test-cases": [
-    {
-      "className": "com.opengamma.strata.product.swap.SwapTradeTest",
-      "failingMethods": [
-        "com.opengamma.strata.product.swap.SwapTradeTest#test_summarize"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:00 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:49:38 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 124637264,
+      "totalMemory": 795734016
+    },
+    "totalDuration": 2133,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1757,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1757
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-318091285-20171218-150455-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-318091285-20171218-150455-firstCommit/modules/product",
+    "overallMetrics": {
+      "numberRunning": 8562,
+      "numberPassing": 8561,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected [PortfolioItemSummary{id\u003dnull, portfolioItemType\u003dTrade, productType\u003dSwap, currencies\u003d[GBP, USD], description\u003d7M Pay Fixed / Rec Fixed : 15Jan12-15Aug12}] but found [PortfolioItemSummary{id\u003dnull, portfolioItemType\u003dTrade, productType\u003dSwap, currencies\u003d[GBP, EUR, USD], description\u003d7M Pay [GBP-LIBOR-3M, EUR/GBP-ECB, EUR-EONIA] / Rec [GBP-LIBOR-3M, EUR/GBP-ECB, EUR-EONIA] : 15Jan12-15Aug12}]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.opengamma.strata.product.swap.SwapTradeTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.opengamma.strata.product.swap.SwapTradeTest",
+        "testMethod": "test_summarize",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [PortfolioItemSummary{id\u003dnull, portfolioItemType\u003dTrade, productType\u003dSwap, currencies\u003d[GBP, USD], description\u003d7M Pay Fixed / Rec Fixed : 15Jan12-15Aug12}] but found [PortfolioItemSummary{id\u003dnull, portfolioItemType\u003dTrade, productType\u003dSwap, currencies\u003d[GBP, EUR, USD], description\u003d7M Pay [GBP-LIBOR-3M, EUR/GBP-ECB, EUR-EONIA] / Rec [GBP-LIBOR-3M, EUR/GBP-ECB, EUR-EONIA] : 15Jan12-15Aug12}]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1627,
+    "numberTestFiles": 1130,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {}
 }
