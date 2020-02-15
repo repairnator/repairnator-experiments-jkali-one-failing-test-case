@@ -1,0 +1,263 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] dependencies
+[INFO] parent
+[INFO] data-model
+[INFO] data-services
+[INFO] indexer
+[INFO] web
+[INFO] admin
+[INFO] data-transformer
+[INFO] pdx-finder
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dependencies 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building parent 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building data-model 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ data-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-model/src/main/resources
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-model/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ data-model ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 50 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-model/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ data-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ data-model ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-model/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ data-model ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-model/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 6.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 73.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 897.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.pdxfinder.repositories.ExternalDataSourceRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2020-02-15 18:16:55.431  INFO 790063 --- [           main] o.p.r.ExternalDataSourceRepositoryTest   : Starting ExternalDataSourceRepositoryTest on b-cn0236.hpc2n.umu.se with PID 790063 (started by dginelli in /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-model)
+2020-02-15 18:16:55.446  INFO 790063 --- [           main] o.p.r.ExternalDataSourceRepositoryTest   : No active profile set, falling back to default profiles: default
+2020-02-15 18:16:58.081  WARN 790063 --- [           main] o.n.o.d.embedded.driver.EmbeddedDriver   : Creating temporary file store: file:/tmp/neo4j.db888849770798337274/
+2020-02-15 18:17:02.592  INFO 790063 --- [           main] o.p.r.ExternalDataSourceRepositoryTest   : Started ExternalDataSourceRepositoryTest in 7.748 seconds (JVM running for 10.865)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.091 sec - in org.pdxfinder.repositories.ExternalDataSourceRepositoryTest
+Running org.pdxfinder.repositories.AllLookupNodeRepositoriesTest
+2020-02-15 18:17:07.216  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Sample type Metastasis
+2020-02-15 18:17:07.224  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Sample type Metastatic
+2020-02-15 18:17:07.230  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Sample type Not Specified
+2020-02-15 18:17:07.245  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Sample type Primary Malignancy
+2020-02-15 18:17:07.252  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Sample type Recurrent/Relapse
+2020-02-15 18:17:07.438  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Background Strain TEST_BACKGROUND_STRAIN
+2020-02-15 18:17:07.632  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Implantation Site TEST_IMPLANTATION_SITE
+2020-02-15 18:17:07.769  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Implantation Type TEST_IMPLANTATION_TYPE
+2020-02-15 18:17:07.953  INFO 790063 --- [           main] o.p.r.AllLookupNodeRepositoriesTest      :   Found Tissue TEST_TISSUE
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.202 sec - in org.pdxfinder.repositories.AllLookupNodeRepositoriesTest
+Running org.pdxfinder.repositories.PatientRepositoryTest
+2020-02-15 18:17:08.551  INFO 790063 --- [           main] o.p.repositories.PatientRepositoryTest   : org.pdxfinder.dao.Patient@403b9e39
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.748 sec - in org.pdxfinder.repositories.PatientRepositoryTest
+Running org.pdxfinder.repositories.PlatformRepositoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.88 sec - in org.pdxfinder.repositories.PlatformRepositoryTest
+Running org.pdxfinder.repositories.SampleRepositoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.903 sec - in org.pdxfinder.repositories.SampleRepositoryTest
+Running org.pdxfinder.integration.PatientSampleIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.691 sec - in org.pdxfinder.integration.PatientSampleIntegrationTest
+Running org.pdxfinder.integration.ModelIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in org.pdxfinder.integration.ModelIntegrationTest
+Running org.pdxfinder.BaseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in org.pdxfinder.BaseTest
+2020-02-15 18:17:12.794  WARN 790063 --- [       Thread-2] o.n.o.d.embedded.driver.EmbeddedDriver   : Deleting temporary file store: file:/tmp/neo4j.db888849770798337274/
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building data-services 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ data-services ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/src/main/resources
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ data-services ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/target/classes
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/src/main/java/org/pdxfinder/services/ds/SearchDS.java: Some input files use unchecked or unsafe operations.
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/src/main/java/org/pdxfinder/services/ds/SearchDS.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ data-services ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ data-services ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/target/test-classes
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/src/test/java/org/pdxfinder/services/ds/SearchDSTest.java: /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/src/test/java/org/pdxfinder/services/ds/SearchDSTest.java uses unchecked or unsafe operations.
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/src/test/java/org/pdxfinder/services/ds/SearchDSTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ data-services ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.pdxfinder.services.ds.SearchDSTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2020-02-15 18:17:18.102  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDSTest   : Starting SearchDSTest on b-cn0236.hpc2n.umu.se with PID 791313 (started by dginelli in /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services)
+2020-02-15 18:17:18.117  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDSTest   : No active profile set, falling back to default profiles: default
+2020-02-15 18:17:20.885  WARN 791313 --- [           main] o.n.o.d.embedded.driver.EmbeddedDriver   : Creating temporary file store: file:/tmp/neo4j.db2287806931176595421/
+2020-02-15 18:17:25.449  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDSTest   : Started SearchDSTest in 7.888 seconds (JVM running for 10.409)
+2020-02-15 18:17:28.854  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDS       : Initializing mutations
+2020-02-15 18:17:28.877  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDS       : Lookup: [10411]
+{Adenocarcinoma=2, Colon Adenocarcinoma=1}
+2020-02-15 18:17:28.959  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDS       : Initializing mutations
+2020-02-15 18:17:28.967  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDS       : Lookup: [10411]
+2020-02-15 18:17:29.001  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDS       : Initializing mutations
+2020-02-15 18:17:29.011  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDS       : Lookup: [10411]
+2020-02-15 18:17:29.016  INFO 791313 --- [           main] org.pdxfinder.services.ds.SearchDSTest   : Result after filtering is 
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.665 sec <<< FAILURE! - in org.pdxfinder.services.ds.SearchDSTest
+testGetDiagnosisCounts(org.pdxfinder.services.ds.SearchDSTest)  Time elapsed: 3.412 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is <2L>
+     but: was <2>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at org.pdxfinder.services.ds.SearchDSTest.testGetDiagnosisCounts(SearchDSTest.java:128)
+
+Running org.pdxfinder.services.SearchServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.8.RELEASE)
+
+2020-02-15 18:17:29.256  INFO 791313 --- [           main] o.pdxfinder.services.SearchServiceTest   : Starting SearchServiceTest on b-cn0236.hpc2n.umu.se with PID 791313 (started by dginelli in /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services)
+2020-02-15 18:17:29.257  INFO 791313 --- [           main] o.pdxfinder.services.SearchServiceTest   : No active profile set, falling back to default profiles: default
+2020-02-15 18:17:29.934  WARN 791313 --- [           main] o.n.o.d.embedded.driver.EmbeddedDriver   : Creating temporary file store: file:/tmp/neo4j.db8708761935685640724/
+2020-02-15 18:17:31.657  INFO 791313 --- [           main] o.pdxfinder.services.SearchServiceTest   : Started SearchServiceTest in 2.548 seconds (JVM running for 16.617)
+2020-02-15 18:17:31.679  INFO 791313 --- [           main] o.pdxfinder.services.SearchServiceTest   : Set up
+2020-02-15 18:17:31.680  INFO 791313 --- [           main] o.pdxfinder.services.SearchServiceTest   : Testing mock sample repository
+2020-02-15 18:17:31.683  INFO 791313 --- [           main] o.pdxfinder.services.SearchServiceTest   : Set up
+2020-02-15 18:17:31.684  INFO 791313 --- [           main] o.pdxfinder.services.SearchServiceTest   : This is another test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.646 sec - in org.pdxfinder.services.SearchServiceTest
+Running org.pdxfinder.BaseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.011 sec - in org.pdxfinder.BaseTest
+2020-02-15 18:17:31.768  WARN 791313 --- [       Thread-2] o.n.o.d.embedded.driver.EmbeddedDriver   : Deleting temporary file store: file:/tmp/neo4j.db2287806931176595421/
+2020-02-15 18:17:31.826  WARN 791313 --- [       Thread-5] o.n.o.d.embedded.driver.EmbeddedDriver   : Deleting temporary file store: file:/tmp/neo4j.db8708761935685640724/
+
+Results :
+
+Failed tests: 
+  SearchDSTest.testGetDiagnosisCounts:128 
+Expected: is <2L>
+     but: was <2>
+
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] dependencies ....................................... SUCCESS [  0.007 s]
+[INFO] parent ............................................. SUCCESS [  0.000 s]
+[INFO] data-model ......................................... SUCCESS [ 29.725 s]
+[INFO] data-services ...................................... FAILURE [ 19.062 s]
+[INFO] indexer ............................................ SKIPPED
+[INFO] web ................................................ SKIPPED
+[INFO] admin .............................................. SKIPPED
+[INFO] data-transformer ................................... SKIPPED
+[INFO] pdx-finder ......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 49.998 s
+[INFO] Finished at: 2020-02-15T18:17:31+01:00
+[INFO] Final Memory: 55M/132M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project data-services: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project data-services: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-PDXFinder-pdxfinder-359956772-20180329-194444-firstCommit/data-services/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:254)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :data-services
