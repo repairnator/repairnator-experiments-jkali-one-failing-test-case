@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Samoussam/gilded-rose",
-  "bugCommit": "https://github.com/Samoussam/gilded-rose/compare/73c50d1e1d22...6cb6e7b2ea4b",
-  "failingModule": "/root/workspace/Samoussam/gilded-rose/348871269",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.assertj.core.api.SoftAssertionError"
-  ],
-  "totalNumberRunningTests": 23,
-  "failing-test-cases": [
-    {
-      "className": "fr.esiea.DatabaseAdapterTest",
-      "failingMethods": [
-        "fr.esiea.DatabaseAdapterTest#update_items"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:14 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:21:19 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 68482760,
+      "totalMemory": 129007616
+    },
+    "totalDuration": 422,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 358,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          358
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Samoussam-gilded-rose-348871269-20180304-102739-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Samoussam-gilded-rose-348871269-20180304-102739-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 23,
+      "numberPassing": 22,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.assertj.core.api.SoftAssertionError",
-          "failureDetail": "\nThe following assertion failed:\n1) [Item items] expected:\u003c[testName[2, sellIn : 1, quality : 2, price : 3, quantity : 4,\n    testName3, sellIn : 5, quality : 6, price : 7, quantity : 8],\n    testName4, sel...\u003e but was:\u003c[testName[1, sellIn : 1, quality : 3, price : 3, quantity : 4],\n    testName4, sel...\u003e\nat DatabaseAdapterTest.update_items(DatabaseAdapterTest.java:82) expected:\u003c[testName[2, sellIn : 1, quality : 2, price : 3, quantity : 4,\n    testName3, sellIn : 5, quality : 6, price : 7, quantity : 8],\n    testName4, sel...\u003e but was:\u003c[testName[1, sellIn : 1, quality : 3, price : 3, quantity : 4],\n    testName4, sel...\u003e\n",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "fr.esiea.DatabaseAdapterTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "fr.esiea.DatabaseAdapterTest",
+        "testMethod": "update_items",
+        "failureName": "org.assertj.core.api.SoftAssertionError",
+        "detail": "\nThe following assertion failed:\n1) [Item items] expected:\u003c[testName[2, sellIn : 1, quality : 2, price : 3, quantity : 4,\n    testName3, sellIn : 5, quality : 6, price : 7, quantity : 8],\n    testName4, sel...\u003e but was:\u003c[testName[1, sellIn : 1, quality : 3, price : 3, quantity : 4],\n    testName4, sel...\u003e\nat DatabaseAdapterTest.update_items(DatabaseAdapterTest.java:82) expected:\u003c[testName[2, sellIn : 1, quality : 2, price : 3, quantity : 4,\n    testName3, sellIn : 5, quality : 6, price : 7, quantity : 8],\n    testName4, sel...\u003e but was:\u003c[testName[1, sellIn : 1, quality : 3, price : 3, quantity : 4],\n    testName4, sel...\u003e\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 9,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 49,
+    "numberLines": 0
+  },
+  "commits": {}
 }
