@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "IQSS/dataverse",
-  "bugCommit": "https://github.com/IQSS/dataverse/compare/e568fa7ad9f1...84f9a664595b",
-  "failingModule": "/root/workspace/IQSS/dataverse/246242856",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 332,
-  "failing-test-cases": [
-    {
-      "className": "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest",
-      "failingMethods": [
-        "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest#testRead"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:46 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:57:42 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 861315432,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 713,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 93,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          93
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-246244076-20170623-171622-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-246244076-20170623-171622-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 332,
+      "numberPassing": 331,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...06-20 \"2017/06/20\" 0[] 1 \"Nan\" \"8234787887...\u003e but was:\u003c...06-20 \"2017/06/20\" 0[.0] 1 \"Nan\" \"8234787887...\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.iq.dataverse.ingest.tabulardata.impl.plugins.csv.CSVFileReaderTest",
+        "testMethod": "testRead",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...06-20 \"2017/06/20\" 0[] 1 \"Nan\" \"8234787887...\u003e but was:\u003c...06-20 \"2017/06/20\" 0[.0] 1 \"Nan\" \"8234787887...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 628,
+    "numberTestFiles": 98,
+    "numberLibrariesFailingModule": 198,
+    "numberLines": 0
+  },
+  "commits": {}
 }
