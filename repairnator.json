@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "atomix/atomix",
-  "failingModule": "/root/workspace/atomix/atomix/365170225/cluster",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 51,
-  "failing-test-cases": [
-    {
-      "className": "io.atomix.cluster.impl.DefaultClusterServiceTest",
-      "failingMethods": [
-        "io.atomix.cluster.impl.DefaultClusterServiceTest#testClusterService"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:42 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:34:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 103309632,
+      "totalMemory": 277626880
+    },
+    "totalDuration": 1221,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1018,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1018
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster",
+    "overallMetrics": {
+      "numberRunning": 48,
+      "numberPassing": 47,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003cINACTIVE\u003e but was:\u003cACTIVE\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.atomix.cluster.impl.DefaultClusterServiceTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.atomix.cluster.impl.DefaultClusterServiceTest",
+        "testMethod": "testClusterService",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cINACTIVE\u003e but was:\u003cACTIVE\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberPlugins": 0,
+    "numberSourceFiles": 779,
+    "numberTestFiles": 134,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {}
 }
