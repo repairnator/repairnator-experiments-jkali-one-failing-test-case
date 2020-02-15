@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Shonorov/mshonorov",
-  "bugCommit": "https://github.com/Shonorov/mshonorov/compare/fff5d831756f...cb576a9dc0c3",
-  "failingModule": "/root/workspace/Shonorov/mshonorov/357073626/chapter_003",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 89,
-  "failing-test-cases": [
-    {
-      "className": "ru.job4j.bank.BankTest",
-      "failingMethods": [
-        "ru.job4j.bank.BankTest#whenDeleteUserThenNoAccounts"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:14 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:15:37 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 18521752,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 80,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Shonorov-mshonorov-357073626-20180322-211151-firstCommit/chapter_003",
+    "overallMetrics": {
+      "numberRunning": 89,
+      "numberPassing": 88,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected null, but was:\u003c[]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ru.job4j.bank.BankTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ru.job4j.bank.BankTest",
+        "testMethod": "whenDeleteUserThenNoAccounts",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected null, but was:\u003c[]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 111,
+    "numberTestFiles": 58,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  },
+  "commits": {}
 }
