@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "DiUS/java-faker",
-  "failingModule": "/root/workspace/DiUS/java-faker/350303034",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 345,
-  "failing-test-cases": [
-    {
-      "className": "com.github.javafaker.CurrencyTest",
-      "failingMethods": [
-        "com.github.javafaker.CurrencyTest#testName"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:27 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:49:01 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 85163640,
+      "totalMemory": 177217536
+    },
+    "totalDuration": 211,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 123,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          123
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DiUS-java-faker-350303034-20180307-135806-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DiUS-java-faker-350303034-20180307-135806-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 345,
+      "numberPassing": 344,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: to match the regular expression [\\w\\\u0027]+      but: was \"Rand Loti\"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.javafaker.CurrencyTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.javafaker.CurrencyTest",
+        "testMethod": "testName",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: to match the regular expression [\\w\\\u0027]+\n     but: was \"Moldovan Leu\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 63,
+    "numberTestFiles": 70,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  },
+  "commits": {}
 }
