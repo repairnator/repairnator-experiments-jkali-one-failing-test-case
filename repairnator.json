@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:15 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:16:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 51211584,
+      "totalMemory": 133103616
+    },
+    "totalDuration": 132,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SpiNNakerManchester-JavaSpiNNaker-417259353-20180817-151747-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SpiNNakerManchester-JavaSpiNNaker-417259353-20180817-151747-firstCommit/SpiNNaker-comms",
+    "overallMetrics": {
+      "numberRunning": 149,
+      "numberPassing": 148,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 9,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "uk.ac.manchester.spinnaker.connections.TestUDPConnection",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "uk.ac.manchester.spinnaker.connections.TestUDPConnection",
+        "testMethod": "testSendSCPRequestToNonexistentHost",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "Unexpected exception type thrown \u003d\u003d\u003e expected: \u003cjava.net.SocketTimeoutException\u003e but was: \u003cjava.lang.IllegalStateException\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 244,
+    "numberTestFiles": 46,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {}
+}
