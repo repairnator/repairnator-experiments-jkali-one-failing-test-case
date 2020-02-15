@@ -1,0 +1,435 @@
+[TestNG-method=failingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[IronConsumer-ShouldRollbackRelationTest] INFO io.axway.iron.core.internal.StoreManagerImpl - Transaction failed and rollbacked {transactionId=5}
+io.axway.iron.error.StoreException: Kaboom
+	at io.axway.iron.core.store.relation.ShouldRollbackRelationTest$CarFailingCommand.execute(ShouldRollbackRelationTest.java:43)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at io.axway.iron.core.internal.utils.proxy.DefaultMethodCallHandler.lambda$createDefaultMethodCallHandler$0(DefaultMethodCallHandler.java:39)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder.lambda$build$4(ProxyFactoryBuilder.java:94)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder$ProxyFactoryImpl.lambda$createProxy$0(ProxyFactoryBuilder.java:110)
+	at com.sun.proxy.$Proxy13.execute(Unknown Source)
+	at io.axway.iron.core.internal.StoreManagerImpl.consumerLoop(StoreManagerImpl.java:148)
+	at java.lang.Thread.run(Thread.java:748)
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=0}
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=1}
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=0}
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=2}
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=0}
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=2}
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=0}
+[TestNG-method=succeedingStoreTests-1] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=2}
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=10}
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[TestNG-method=ensureCommandFutureComplete-1] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[IronConsumer-irontest-dginelli-2ee66813-dba1-4c8f-bce1-cb11d9865146] INFO io.axway.iron.core.internal.StoreManagerImpl - Transaction failed and rollbacked {transactionId=78627966287877}
+java.lang.IllegalArgumentException: New country must be null or not empty
+	at io.axway.iron.sample.command.ChangeCompanyAddress.execute(ChangeCompanyAddress.java:28)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at io.axway.iron.core.internal.utils.proxy.DefaultMethodCallHandler.lambda$createDefaultMethodCallHandler$0(DefaultMethodCallHandler.java:39)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder.lambda$build$4(ProxyFactoryBuilder.java:94)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder$ProxyFactoryImpl.lambda$createProxy$0(ProxyFactoryBuilder.java:110)
+	at com.sun.proxy.$Proxy11.execute(Unknown Source)
+	at io.axway.iron.core.internal.StoreManagerImpl.consumerLoop(StoreManagerImpl.java:148)
+	at java.lang.Thread.run(Thread.java:748)
+[IronConsumer-irontest-dginelli-2ee66813-dba1-4c8f-bce1-cb11d9865146] INFO io.axway.iron.core.internal.StoreManagerImpl - Transaction failed and rollbacked {transactionId=78627966287878}
+java.lang.IllegalArgumentException: New address must be null or not empty
+	at io.axway.iron.sample.command.CreateCompany.execute(CreateCompany.java:19)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at io.axway.iron.core.internal.utils.proxy.DefaultMethodCallHandler.lambda$createDefaultMethodCallHandler$0(DefaultMethodCallHandler.java:39)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder.lambda$build$4(ProxyFactoryBuilder.java:94)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder$ProxyFactoryImpl.lambda$createProxy$0(ProxyFactoryBuilder.java:110)
+	at com.sun.proxy.$Proxy8.execute(Unknown Source)
+	at io.axway.iron.core.internal.StoreManagerImpl.consumerLoop(StoreManagerImpl.java:148)
+	at java.lang.Thread.run(Thread.java:748)
+[IronConsumer-irontest-dginelli-2ee66813-dba1-4c8f-bce1-cb11d9865146] INFO io.axway.iron.core.internal.StoreManagerImpl - Transaction failed and rollbacked {transactionId=78627966287879}
+java.lang.IllegalArgumentException: You cannot delete Google!
+	at io.axway.iron.sample.command.DeleteCompany.execute(DeleteCompany.java:14)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at io.axway.iron.core.internal.utils.proxy.DefaultMethodCallHandler.lambda$createDefaultMethodCallHandler$0(DefaultMethodCallHandler.java:39)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder.lambda$build$4(ProxyFactoryBuilder.java:94)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder$ProxyFactoryImpl.lambda$createProxy$0(ProxyFactoryBuilder.java:110)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at io.axway.iron.core.internal.StoreManagerImpl.consumerLoop(StoreManagerImpl.java:148)
+	at java.lang.Thread.run(Thread.java:748)
+[main] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=78627966287881}
+[main] INFO io.axway.iron.core.internal.StorePersistence - Store has no snapshot, store is empty, creating it's first snapshot
+[IronConsumer-irontest-dginelli-6fc0e660-df63-40e5-be98-4a204eb1a04f] INFO io.axway.iron.core.internal.StoreManagerImpl - Transaction failed and rollbacked {transactionId=4}
+java.lang.IllegalArgumentException: New country must be null or not empty
+	at io.axway.iron.sample.command.ChangeCompanyAddress.execute(ChangeCompanyAddress.java:28)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at io.axway.iron.core.internal.utils.proxy.DefaultMethodCallHandler.lambda$createDefaultMethodCallHandler$0(DefaultMethodCallHandler.java:39)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder.lambda$build$4(ProxyFactoryBuilder.java:94)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder$ProxyFactoryImpl.lambda$createProxy$0(ProxyFactoryBuilder.java:110)
+	at com.sun.proxy.$Proxy11.execute(Unknown Source)
+	at io.axway.iron.core.internal.StoreManagerImpl.consumerLoop(StoreManagerImpl.java:148)
+	at java.lang.Thread.run(Thread.java:748)
+[IronConsumer-irontest-dginelli-6fc0e660-df63-40e5-be98-4a204eb1a04f] INFO io.axway.iron.core.internal.StoreManagerImpl - Transaction failed and rollbacked {transactionId=5}
+java.lang.IllegalArgumentException: New address must be null or not empty
+	at io.axway.iron.sample.command.CreateCompany.execute(CreateCompany.java:19)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at io.axway.iron.core.internal.utils.proxy.DefaultMethodCallHandler.lambda$createDefaultMethodCallHandler$0(DefaultMethodCallHandler.java:39)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder.lambda$build$4(ProxyFactoryBuilder.java:94)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder$ProxyFactoryImpl.lambda$createProxy$0(ProxyFactoryBuilder.java:110)
+	at com.sun.proxy.$Proxy8.execute(Unknown Source)
+	at io.axway.iron.core.internal.StoreManagerImpl.consumerLoop(StoreManagerImpl.java:148)
+	at java.lang.Thread.run(Thread.java:748)
+[IronConsumer-irontest-dginelli-6fc0e660-df63-40e5-be98-4a204eb1a04f] INFO io.axway.iron.core.internal.StoreManagerImpl - Transaction failed and rollbacked {transactionId=6}
+java.lang.IllegalArgumentException: You cannot delete Google!
+	at io.axway.iron.sample.command.DeleteCompany.execute(DeleteCompany.java:14)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at io.axway.iron.core.internal.utils.proxy.DefaultMethodCallHandler.lambda$createDefaultMethodCallHandler$0(DefaultMethodCallHandler.java:39)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder.lambda$build$4(ProxyFactoryBuilder.java:94)
+	at io.axway.iron.core.internal.utils.proxy.ProxyFactoryBuilder$ProxyFactoryImpl.lambda$createProxy$0(ProxyFactoryBuilder.java:110)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at io.axway.iron.core.internal.StoreManagerImpl.consumerLoop(StoreManagerImpl.java:148)
+	at java.lang.Thread.run(Thread.java:748)
+[main] INFO io.axway.iron.core.internal.StorePersistence - Recovering store from snapshot {transactionId=8}
+ust be used instead {commandClassName: "io.axway.iron.core.model.validation.command.InvalidNonnullPrimitiveWrapperCommand", methodName: "value", dataType: "java.lang.Integer", primitiveDataType: int}
+interface io.axway.iron.core.model.validation.command.InvalidNullablePrimitiveCommand => Command attribute is @Nullable but has a primitive datatype that cannot be null {commandClassName: "io.axway.iron.core.model.validation.command.InvalidNullablePrimitiveCommand", methodName: "value", dataType: "int"}
+interface io.axway.iron.core.model.validation.command.InvalidNullableCollectionCommand => Command relation is a multiple relation that cannot be @Nullable {commandClassName: "io.axway.iron.core.model.validation.command.InvalidNullableCollectionCommand", methodName: "ids"}
+interface io.axway.iron.core.model.validation.command.InvalidTransientNonImplementedMethodCommand => Command method is @Transient but has no default implementation {commandClassName: "io.axway.iron.core.model.validation.command.InvalidTransientNonImplementedMethodCommand", methodName: "value2"}
+interface io.axway.iron.core.model.validation.command.InvalidMethodWithArgsCommand => Command method has parameters, only no parameters methods are supported {commandClassName: "io.axway.iron.core.model.validation.command.InvalidMethodWithArgsCommand", methodName: "value"}
+interface io.axway.iron.core.model.validation.command.InvalidMethodWithExceptionsCommand => Command method must not declare exceptions {commandClassName: "io.axway.iron.core.model.validation.command.InvalidMethodWithExceptionsCommand", methodName: "value"}
+interface io.axway.iron.core.model.validation.command.InvalidMethodVoidCommand => Command method is a void method, only non void methods are supported {commandClassName: "io.axway.iron.core.model.validation.command.InvalidMethodVoidCommand", methodName: "value"}
+interface io.axway.iron.core.model.validation.command.InvalidMethodIdCommand => Command method cannot be annotated with @Id {commandClassName: "io.axway.iron.core.model.validation.command.InvalidMethodIdCommand", methodName: "value"}
+interface io.axway.iron.core.model.validation.command.InvalidMethodUniqueCommand => Command method cannot be annotated with @Unique {commandClassName: "io.axway.iron.core.model.validation.command.InvalidMethodUniqueCommand", methodName: "value"}
+interface io.axway.iron.core.model.validation.command.InvalidEntityAnnotationCommand => Command must not be annotated with @Entity {commandClassName: "io.axway.iron.core.model.validation.command.InvalidEntityAnnotationCommand"}
+interface io.axway.iron.core.model.validation.command.InvalidMethodTypeCommand => Command method data type is not supported {commandClassName: "io.axway.iron.core.model.validation.command.InvalidMethodTypeCommand", methodName: "value", dataTypeName: "java.lang.reflect.Method"}
+[class io.axway.iron.core.model.validation.InvalidNonInterfaceEntity] => Entity class is not an interface {entityClassName: "io.axway.iron.core.model.validation.InvalidNonInterfaceEntity"}
+[interface io.axway.iron.core.model.validation.InvalidNonPublicEntity] => Entity interface is not public {entityClassName: "io.axway.iron.core.model.validation.InvalidNonPublicEntity"}
+[interface io.axway.iron.core.model.validation.InvalidMissingEntityAnnotationEntity] => Entity interface is not annotated with @Entity {entityClassName: "io.axway.iron.core.model.validation.InvalidMissingEntityAnnotationEntity"}
+[interface io.axway.iron.core.model.validation.InvalidExtendsEntity] => Entity interface extends others interface, which is not supported {entityClassName: "io.axway.iron.core.model.validation.InvalidExtendsEntity"}
+[interface io.axway.iron.core.model.validation.InvalidEmptyEntity] => Entity interface doesn't declare any methods {entityClassName: "io.axway.iron.core.model.validation.InvalidEmptyEntity"}
+[interface io.axway.iron.core.model.validation.InvalidMethodReservedPrefixEntity] => Entity interface contains a forbidden method name {entityClassName: "io.axway.iron.core.model.validation.InvalidMethodReservedPrefixEntity", methodName: "__value"}
+[interface io.axway.iron.core.model.validation.InvalidMethodReservedNameEntity] => Entity interface contains a forbidden method name {entityClassName: "io.axway.iron.core.model.validation.InvalidMethodReservedNameEntity", methodName: "hashCode"}
+[interface io.axway.iron.core.model.validation.InvalidTransientNonImplementedMethodEntity] => Entity method is @Transient but has no default implementation {entityClassName: "io.axway.iron.core.model.validation.InvalidTransientNonImplementedMethodEntity", methodName: "value2"}
+[interface io.axway.iron.core.model.validation.InvalidMethodWithArgsEntity] => Entity method has parameters, only no parameters methods are supported {entityClassName: "io.axway.iron.core.model.validation.InvalidMethodWithArgsEntity", methodName: "value"}
+[interface io.axway.iron.core.model.validation.InvalidMethodWithExceptionsEntity] => Entity method must not declare exceptions {entityClassName: "io.axway.iron.core.model.validation.InvalidMethodWithExceptionsEntity", methodName: "value"}
+[interface io.axway.iron.core.model.validation.InvalidMethodVoidEntity] => Entity method is a void method, only non void methods are supported {entityClassName: "io.axway.iron.core.model.validation.InvalidMethodVoidEntity", methodName: "value"}
+[interface io.axway.iron.core.model.validation.InvalidNonnullAndNullableMethodEntity] => Entity method cannot be both @Nonnull and @Nullable {entityClassName: "io.axway.iron.core.model.validation.InvalidNonnullAndNullableMethodEntity", methodName: "value"}
+[interface io.axway.iron.core.model.validation.InvalidUniqueRelationEntity] => Entity relation cannot be annotated with @Unique. Not implemented yet. {entityClassName: "io.axway.iron.core.model.validation.InvalidUniqueRelationEntity", relationMethodName: "relation"}
+[interface io.axway.iron.core.model.validation.InvalidIdDefaultEntity] => Entity attribute must not have a default implementation {entityClassName: "io.axway.iron.core.model.validation.InvalidIdDefaultEntity", attributeMethodName: "id"}
+[interface io.axway.iron.core.model.validation.InvalidIdMultipleEntity] => Entity has multiple @Id annotation {entityClassName: "io.axway.iron.core.model.validation.InvalidIdMultipleEntity"}
+[interface io.axway.iron.core.model.validation.InvalidIdNonLongEntity] => Entity attribute is annotated with @Id but is not returning long {entityClassName: "io.axway.iron.core.model.validation.InvalidIdNonLongEntity", attributeMethodName: "id"}
+[interface io.axway.iron.core.model.validation.InvalidIdRelationEntity] => Entity relation cannot be annotated with @Id {entityClassName: "io.axway.iron.core.model.validation.InvalidIdRelationEntity", relationMethodName: "id"}
+[interface io.axway.iron.core.model.validation.InvalidIdUniqueEntity] => Entity attribute must not be annotated by both @Id and @Unique {entityClassName: "io.axway.iron.core.model.validation.InvalidIdUniqueEntity", attributeMethodName: "id"}
+[interface io.axway.iron.core.model.validation.InvalidNullableMultipleRelationEntity] => Entity relation is a multiple relation that cannot be @Nullable {entityClassName: "io.axway.iron.core.model.validation.InvalidNullableMultipleRelationEntity", methodName: "relations"}
+[interface io.axway.iron.core.model.validation.InvalidMethodWithDefaultImplementationEntity] => Entity attribute must not have a default implementation {entityClassName: "io.axway.iron.core.model.validation.InvalidMethodWithDefaultImplementationEntity", attributeMethodName: "value"}
+[interface io.axway.iron.core.model.validation.InvalidNullablePrimitiveEntity] => Entity attribute is @Nullable but has a primitive datatype that cannot be null {entityClassName: "io.axway.iron.core.model.validation.InvalidNullablePrimitiveEntity", methodName: "value", dataType: "int"}
+[interface io.axway.iron.core.model.validation.InvalidNonnullPrimitiveWrapperEntity] => Entity attribute is not @Nullable but has a primitive wrapper datatype, primitive datatype must be used instead {entityClassName: "io.axway.iron.core.model.validation.InvalidNonnullPrimitiveWrapperEntity", methodName: "value", dataType: "java.lang.Integer", primitiveDataType: int}
+[interface io.axway.iron.core.model.validation.InvalidDatatypeEntity] => Entity method is not supported {entityClassName: "io.axway.iron.core.model.validation.InvalidDatatypeEntity", methodName: "value"}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationNonMultipleEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationNonMultipleTargetEntity] => Entity reverse relation must be multiple and return Collection<TailEntity> {entityClassName: "io.axway.iron.core.model.validation.InvalidReverseRelationNonMultipleTargetEntity", reverseRelationMethodName: "reverse"}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationNullableEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationNullableTargetEntity] => Entity relation is a multiple relation that cannot be @Nullable {entityClassName: "io.axway.iron.core.model.validation.InvalidReverseRelationNullableTargetEntity", methodName: "reverse"}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallTargetEntity] => Reverse relation method miss call to the appropriate DSL method {entityClassName: "io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallTargetEntity", reverseRelationMethodName: "reverse"}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchTargetEntity] => Tail entity class mismatch between signature and DSL {signatureTailEntityClassName: "io.axway.iron.core.model.validation.InvalidReverseRelationTailEntityMismatchEntity", dslTailEntityClassName: "io.axway.iron.core.model.validation.InvalidReverseRelationMissingDSLCallEntity"}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchTargetEntity] => Head entity class mismatch between signature and DSL {signatureTailEntityClassName: "io.axway.iron.core.model.validation.InvalidReverseRelationHeadEntityMismatchTargetEntity", dslTailEntityClassName: "io.axway.iron.core.model.validation.TargetEntity"}
+[interface io.axway.iron.core.model.validation.InvalidReverseRelationRedundantEntity, interface io.axway.iron.core.model.validation.InvalidReverseRelationRedundantTargetEntity] => Relation has already a reverse relation defined so reverse relation cannot be added {entityName: "io.axway.iron.core.model.validation.InvalidReverseRelationRedundantEntity", relationName: "relation", reverseRelationName: "reverse1"}
+[INFO] Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.465 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 86, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi-chronicle 0.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ iron-spi-chronicle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-chronicle/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ iron-spi-chronicle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ iron-spi-chronicle ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ iron-spi-chronicle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-chronicle/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ iron-spi-chronicle ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ iron-spi-chronicle ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-sample 0.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ iron-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-sample/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ iron-sample ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ iron-sample ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ iron-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-sample/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ iron-sample ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ iron-sample ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-sample/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.axway.iron.sample.SampleTest
+Configuring TestNG with: TestNG60Configurator
+Persons:
+
+Batch1: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}, io.axway.iron.sample.model.Company(3)={country=USA, address=Cupertino, name=Apple}]
+Batch2: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+New country must be null or not empty
+New address must be null or not empty
+You cannot delete Google!
+Batch3: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+Batch4: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456}, io.axway.iron.sample.model.Person(2)={name=mark, id=789}]
+Batch5: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0}, io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0}]
+Query6: Microsoft @ Seattle
+Persons:
+  io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=631148460000} currently works in Microsoft
+     previously works in Google
+     previously works in Axway
+  io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0} currently works in Microsoft
+  io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0} currently works in Google
+
+Company Google
+    employee mark
+    previous employee bill
+Company Microsoft
+    employee bill
+    employee john
+Company Axway
+    previous employee bill
+Query6: Microsoft @ Seattle
+Persons:
+
+Batch1: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}, io.axway.iron.sample.model.Company(3)={country=USA, address=Cupertino, name=Apple}]
+Batch2: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+New country must be null or not empty
+New address must be null or not empty
+You cannot delete Google!
+Batch3: [io.axway.iron.sample.model.Company(0)={address=Palo Alto, name=Google}, io.axway.iron.sample.model.Company(1)={address=Seattle, name=Microsoft}, io.axway.iron.sample.model.Company(2)={address=Phoenix, name=Axway}]
+Batch4: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456}, io.axway.iron.sample.model.Person(2)={name=mark, id=789}]
+Batch5: [io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=Mon Jan 01 00:01:00 CET 1990}, io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0}, io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0}]
+Query6: Microsoft @ Seattle
+Persons:
+  io.axway.iron.sample.model.Person(0)={name=bill, id=123, salary=111111.0, birthDate=631148460000} currently works in Microsoft
+     previously works in Google
+     previously works in Axway
+  io.axway.iron.sample.model.Person(1)={name=john, id=456, salary=100000.0} currently works in Microsoft
+  io.axway.iron.sample.model.Person(2)={name=mark, id=789, salary=123456.0} currently works in Google
+
+Company Google
+    employee mark
+    previous employee bill
+Company Microsoft
+    employee bill
+    employee john
+Company Axway
+    previous employee bill
+Query6: Microsoft @ Seattle
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.291 s - in io.axway.iron.sample.SampleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi-kafka 0.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ iron-spi-kafka ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-kafka/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ iron-spi-kafka ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ iron-spi-kafka ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ iron-spi-kafka ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-kafka/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ iron-spi-kafka ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ iron-spi-kafka ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi-test 0.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ iron-spi-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ iron-spi-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ iron-spi-test ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ iron-spi-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ iron-spi-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ iron-spi-test ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building iron-spi-aws 0.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ iron-spi-aws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-aws/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ iron-spi-aws ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ iron-spi-aws ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ iron-spi-aws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ iron-spi-aws ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ iron-spi-aws ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-aws/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+Configuring TestNG with: TestNG60Configurator
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.3 s <<< FAILURE! - in TestSuite
+[ERROR] shouldCreateS3Bucket(io.axway.iron.spi.aws.s3.AwsS3SnapshotStoreTest)  Time elapsed: 0.273 s  <<< FAILURE!
+mockit.internal.UnexpectedInvocation: 
+Unexpected invocation of:
+com.amazonaws.services.s3.AmazonS3#listObjectsV2(String, String)
+   with arguments: "iron-bucket-8a0afa56-441c-47cf-8efd-df7f298018d4", "iron-store-de19daca-4e66-4ca2-9779-2de0e48d442b/snapshot"
+   on instance: com.amazonaws.services.s3.$Impl_AmazonS3@7f13d6e
+when was expecting an invocation of:
+com.amazonaws.services.s3.AmazonS3#headBucket(com.amazonaws.services.s3.model.HeadBucketRequest)
+   with arguments: any com.amazonaws.services.s3.model.HeadBucketRequest
+   on mock instance: com.amazonaws.services.s3.$Impl_AmazonS3@7f13d6e
+	at io.axway.iron.spi.aws.s3.AwsS3SnapshotStoreTest.shouldCreateS3Bucket(AwsS3SnapshotStoreTest.java:39)
+Caused by: mockit.internal.expectations.invocation.ExpectationError
+	at io.axway.iron.spi.aws.s3.AwsS3SnapshotStoreTest.shouldCreateS3Bucket(AwsS3SnapshotStoreTest.java:23)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AwsS3SnapshotStoreTest.shouldCreateS3Bucket:39 » UnexpectedInvocation Unexpect...
+[INFO] 
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] iron-api ........................................... SUCCESS [  4.397 s]
+[INFO] iron-spi ........................................... SUCCESS [  1.432 s]
+[INFO] iron-spi-jackson ................................... SUCCESS [  0.303 s]
+[INFO] iron-core .......................................... SUCCESS [ 10.785 s]
+[INFO] iron-spi-chronicle ................................. SUCCESS [  0.337 s]
+[INFO] iron-sample ........................................ SUCCESS [  7.330 s]
+[INFO] iron-spi-kafka ..................................... SUCCESS [  0.236 s]
+[INFO] iron-spi-test ...................................... SUCCESS [  0.201 s]
+[INFO] iron-spi-aws ....................................... FAILURE [  4.016 s]
+[INFO] iron-spi-file-inttest .............................. SKIPPED
+[INFO] iron ............................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 29.523 s
+[INFO] Finished at: 2020-02-15T14:46:48+01:00
+[INFO] Final Memory: 27M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project iron-spi-aws: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-aws/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project iron-spi-aws: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-aws/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Axway-iron-349269585-20180305-134122-firstCommit/iron-spi-aws/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:984)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :iron-spi-aws
