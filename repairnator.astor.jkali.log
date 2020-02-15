@@ -1,0 +1,702 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 12
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/jsoniter/jsoniter/0.9.16-SNAPSHOT/jsoniter-0.9.16-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-server/2.23.2/jersey-server-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-client/2.23.2/jersey-client-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/media/jersey-media-jaxb/2.23.2/jersey-media-jaxb-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-api/2.5.0-b05/hk2-api-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-utils/2.5.0-b05/hk2-utils-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b05/aopalliance-repackaged-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/external/javax.inject/2.5.0-b05/javax.inject-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-locator/2.5.0-b05/hk2-locator-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-common/2.23.2/jersey-common-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.23.2/jersey-guava-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.23.2/jersey-container-grizzly2-http-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http-server/2.3.23/grizzly-http-server-2.3.23.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http/2.3.23/grizzly-http-2.3.23.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-framework/2.3.23/grizzly-framework-2.3.23.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/test-framework/providers/jersey-test-framework-provider-grizzly2/2.23.2/jersey-test-framework-provider-grizzly2-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/test-framework/jersey-test-framework-core/2.23.2/jersey-test-framework-core-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.23.2/jersey-container-servlet-core-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-grizzly2-servlet/2.23.2/jersey-container-grizzly2-servlet-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-servlet/2.23.2/jersey-container-servlet-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http-servlet/2.3.23/grizzly-http-servlet-2.3.23.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/log4j/log4j/1.2.17/log4j-1.2.17.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/kryo/4.0.0/kryo-4.0.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/objenesis/objenesis/2.2/objenesis-2.2.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 14512130 milliseconds (14512 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/jsoniter/jsoniter/0.9.16-SNAPSHOT/jsoniter-0.9.16-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-server/2.23.2/jersey-server-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-client/2.23.2/jersey-client-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/media/jersey-media-jaxb/2.23.2/jersey-media-jaxb-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-api/2.5.0-b05/hk2-api-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-utils/2.5.0-b05/hk2-utils-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b05/aopalliance-repackaged-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/external/javax.inject/2.5.0-b05/javax.inject-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-locator/2.5.0-b05/hk2-locator-2.5.0-b05.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-common/2.23.2/jersey-common-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.23.2/jersey-guava-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.23.2/jersey-container-grizzly2-http-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http-server/2.3.23/grizzly-http-server-2.3.23.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http/2.3.23/grizzly-http-2.3.23.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-framework/2.3.23/grizzly-framework-2.3.23.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/test-framework/providers/jersey-test-framework-provider-grizzly2/2.23.2/jersey-test-framework-provider-grizzly2-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/test-framework/jersey-test-framework-core/2.23.2/jersey-test-framework-core-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.23.2/jersey-container-servlet-core-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-grizzly2-servlet/2.23.2/jersey-container-grizzly2-servlet-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-servlet/2.23.2/jersey-container-servlet-2.23.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http-servlet/2.3.23/grizzly-http-servlet-2.3.23.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/log4j/log4j/1.2.17/log4j-1.2.17.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/kryo/4.0.0/kryo-4.0.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/objenesis/objenesis/2.2/objenesis-2.2.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 46
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 207
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 207,  213
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 213
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 213, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 14512130
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/jsoniter/jsoniter/0.9.16-SNAPSHOT/jsoniter-0.9.16-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-server/2.23.2/jersey-server-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-client/2.23.2/jersey-client-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/media/jersey-media-jaxb/2.23.2/jersey-media-jaxb-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-api/2.5.0-b05/hk2-api-2.5.0-b05.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-utils/2.5.0-b05/hk2-utils-2.5.0-b05.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b05/aopalliance-repackaged-2.5.0-b05.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/external/javax.inject/2.5.0-b05/javax.inject-2.5.0-b05.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/hk2-locator/2.5.0-b05/hk2-locator-2.5.0-b05.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/core/jersey-common/2.23.2/jersey-common-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.23.2/jersey-guava-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.23.2/jersey-container-grizzly2-http-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http-server/2.3.23/grizzly-http-server-2.3.23.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http/2.3.23/grizzly-http-2.3.23.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-framework/2.3.23/grizzly-framework-2.3.23.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/test-framework/providers/jersey-test-framework-provider-grizzly2/2.23.2/jersey-test-framework-provider-grizzly2-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/test-framework/jersey-test-framework-core/2.23.2/jersey-test-framework-core-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.23.2/jersey-container-servlet-core-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-grizzly2-servlet/2.23.2/jersey-container-grizzly2-servlet-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/jersey/containers/jersey-container-servlet/2.23.2/jersey-container-servlet-2.23.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/glassfish/grizzly/grizzly-http-servlet/2.3.23/grizzly-http-servlet-2.3.23.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/log4j/log4j/1.2.17/log4j-1.2.17.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/kryo/4.0.0/kryo-4.0.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/.m2/org/objenesis/objenesis/2.2/objenesis-2.2.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-cubedb-cubedb-377093172-20180802-153550-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.CubeImpl line: 354, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (saveFileName.endsWith(".gz")) 	stream = new java.util.zip.GZIPInputStream(new java.io.FileInputS[...] ` -topatch--> `if (true)  { 	stream = new java.util.zip.GZIPInputStream(new java.io.FileInputStream(saveFileName));[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.CubeImpl line: 354, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (saveFileName.endsWith(".gz")) 	stream = new java.util.zip.GZIPInputStream(new java.io.FileInputS[...] ` -topatch--> `if (false)  { 	stream = new java.util.zip.GZIPInputStream(new java.io.FileInputStream(saveFileName))[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.CubeImpl line: 354, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (saveFileName.endsWith(".gz")) 	stream = new java.util.zip.GZIPInputStream(new java.io.FileInputS[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.CubeImpl line: 61, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.partitionColumn = partitionColumn ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.CubeImpl line: 60, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `partitions = new java.util.concurrent.ConcurrentHashMap<>() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 119, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return true ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 118, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `map = null ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 117, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((ts - lastInsertTs) > org.cubedb.core.Constants.KEY_MAP_TTL) { 	map = null; 	return true; } ` -topatch--> `if (true) { 	this.map = null; 	return true; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 117, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((ts - lastInsertTs) > org.cubedb.core.Constants.KEY_MAP_TTL) { 	map = null; 	return true; } ` -topatch--> `if (false) { 	this.map = null; 	return true; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 117, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((ts - lastInsertTs) > org.cubedb.core.Constants.KEY_MAP_TTL) { 	map = null; 	return true; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.utils.CubeUtils line: 92, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `kryo.setRegistrationRequired(false) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 241, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `data.forEach(this::insert) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 239, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.cubedb.offheap.OffHeapPartition.log.info("Inserting {} rows", data.size()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 249, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.cubedb.offheap.OffHeapPartition.log.info("That is {} rows/sec", rowsPerSecond) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 244, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.cubedb.offheap.OffHeapPartition.log.info( "Took {}ms to insert {} rows, {}μs/row",  (t1 / 1000) [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.beans.DataRow line: 17, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.cubeName = cubeName ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.beans.DataRow line: 25, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.partition = partition ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 353, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `locationAddress += java.lang.Integer.BYTES ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 282, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (locationAddress == 0) 	return null; ` -topatch--> `if (true) { 	return null;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 282, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (locationAddress == 0) 	return null; ` -topatch--> `if (false) { 	return null;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 282, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (locationAddress == 0) 	return null; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 270, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!(key instanceof com.cfelde.bohmap.Binary)) 	return null; ` -topatch--> `if (true) { 	return null;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 270, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!(key instanceof com.cfelde.bohmap.Binary)) 	return null; ` -topatch--> `if (false) { 	return null;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 270, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!(key instanceof com.cfelde.bohmap.Binary)) 	return null; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 145, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return java.lang.Integer.MAX_VALUE ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 145, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (itemCount > java.lang.Integer.MAX_VALUE) 	return java.lang.Integer.MAX_VALUE; ` -topatch--> `if (true) { 	return java.lang.Integer.MAX_VALUE;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 145, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (itemCount > java.lang.Integer.MAX_VALUE) 	return java.lang.Integer.MAX_VALUE; ` -topatch--> `if (false) { 	return java.lang.Integer.MAX_VALUE;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 145, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (itemCount > java.lang.Integer.MAX_VALUE) 	return java.lang.Integer.MAX_VALUE; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 133, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `this.bytes += size ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 134, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `com.cfelde.bohmap.BOHMap.totalBytes += size ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 131, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putByte(address + offset, ((byte) (0))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 130, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (long offset = 0; init && (offset < size); offset++) { 	unsafe.putByte(address + offset, ((byte)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 117, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `singleoneInstanceField.setAccessible(true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 118, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return ((sun.misc.Unsafe) (singleoneInstanceField.get(null))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 109, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.hashFunction = hashFunction ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 108, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.partitionCount = partitionCount ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 111, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.partitionAddress = allocate(this.partitionCount * addressSize, true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 105, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.bytes = 0L ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 107, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.addressSize = unsafe.addressSize() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 106, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.unsafe = getUnsafe() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 90, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(partitionCount, java.util.Arrays::hashCode) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.beans.DataRow line: 41, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.counters = counters ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.beans.DataRow line: 33, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.fields = fields ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 71, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `lock = new java.util.concurrent.locks.ReentrantReadWriteLock(false) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 70, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `metricLookup = new org.cubedb.core.lookups.HashMapLookup(false) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 69, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `metrics = new java.util.HashMap<java.lang.String, org.cubedb.core.Metric>(1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 68, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `columns = new java.util.HashMap<java.lang.String, org.cubedb.core.Column>(5) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 67, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `fieldLookup = new org.cubedb.core.lookups.HashMapLookup(false) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 82, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `metricLookup.getValue(metricName) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 81, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `metrics.putIfAbsent(metricName, m) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 66, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `lookups = new java.util.HashMap<java.lang.String, org.cubedb.core.lookups.Lookup>(5) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 87, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `map = new org.cubedb.offheap.BOHKeyMap(size, fieldsLength) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 98, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `createMap(fields.length) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 95, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `fields[i] = columns.get(fieldKey) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 93, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < fields.length; i++) { 	java.lang.String fieldKey = fieldLookup.getKey(i); 	field[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 91, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.cubedb.offheap.OffHeapPartition.log.debug("Re-Initializing map") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 137, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!metrics.containsKey(metricName)) {  	if (size != 0) 		throw new java.lang.RuntimeException("Add[...] ` -topatch--> `if (true) {  	if (this.size != 0)  	{ 		throw new java.lang.RuntimeException("Adding new metrics on [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 137, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!metrics.containsKey(metricName)) {  	if (size != 0) 		throw new java.lang.RuntimeException("Add[...] ` -topatch--> `if (false) {  	if (this.size != 0)  	{ 		throw new java.lang.RuntimeException("Adding new metrics on[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 137, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!metrics.containsKey(metricName)) {  	if (size != 0) 		throw new java.lang.RuntimeException("Add[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 136, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.String metricName : newMetrics.keySet()) { 	if (!metrics.containsKey(metricName)) {  [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 131, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `initializeMap() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 141, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addMetric(metricName) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 139, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (size != 0) 	throw new java.lang.RuntimeException("Adding new metrics on fly is not implemented y[...] ` -topatch--> `if (true)  { 	throw new java.lang.RuntimeException("Adding new metrics on fly is not implemented yet[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 139, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (size != 0) 	throw new java.lang.RuntimeException("Adding new metrics on fly is not implemented y[...] ` -topatch--> `if (false)  { 	throw new java.lang.RuntimeException("Adding new metrics on fly is not implemented ye[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 139, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (size != 0) 	throw new java.lang.RuntimeException("Adding new metrics on fly is not implemented y[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 130, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (map == null) { 	initializeMap(); } ` -topatch--> `if (true) { 	initializeMap(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 130, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (map == null) { 	initializeMap(); } ` -topatch--> `if (false) { 	initializeMap(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 130, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (map == null) { 	initializeMap(); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 128, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `buf.putShort(f) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 128, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (short f : org.cubedb.utils.CubeUtils.cutZeroSuffix(fields)) 	buf.putShort(f); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 127, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `buf.clear() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 167, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (m.isTiny() && (m.getNumRecords() > org.cubedb.core.Constants.INITIAL_PARTITION_SIZE)) {   	m = o[...] ` -topatch--> `if (true) {   	m = org.cubedb.core.tiny.TinyUtils.tinyMetricToOffHeap(((org.cubedb.core.tiny.TinyMet[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 167, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (m.isTiny() && (m.getNumRecords() > org.cubedb.core.Constants.INITIAL_PARTITION_SIZE)) {   	m = o[...] ` -topatch--> `if (false) {   	m = org.cubedb.core.tiny.TinyUtils.tinyMetricToOffHeap(((org.cubedb.core.tiny.TinyMe[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 167, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (m.isTiny() && (m.getNumRecords() > org.cubedb.core.Constants.INITIAL_PARTITION_SIZE)) {   	m = o[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 164, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.util.Map.Entry<java.lang.String, org.cubedb.core.Metric> e : metrics.entrySet()) { 	org.cu[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 175, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `lastAppendTs = java.lang.System.currentTimeMillis() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 173, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `m.append(0L) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 152, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < fields.length; i++) { 	java.lang.String fieldName = fieldLookup.getKey(i);  	org[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 151, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `map.put(bytes, index) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 150, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `index = new java.lang.Integer(size) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (index == null) {   	index = new java.lang.Integer(size); 	map.put(bytes, index); 	for (int i = 0[...] ` -topatch--> `if (true) {   	index = new java.lang.Integer(this.size); 	this.map.put(bytes, index); 	for (int i = [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (index == null) {   	index = new java.lang.Integer(size); 	map.put(bytes, index); 	for (int i = 0[...] ` -topatch--> `if (false) {   	index = new java.lang.Integer(this.size); 	this.map.put(bytes, index); 	for (int i =[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (index == null) {   	index = new java.lang.Integer(size); 	map.put(bytes, index); 	for (int i = 0[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 162, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `col.append(fields[i]) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (col.isTiny() && (col.getNumRecords() > org.cubedb.core.Constants.INITIAL_PARTITION_SIZE)) {   	c[...] ` -topatch--> `if (true) {   	col = org.cubedb.core.tiny.TinyUtils.tinyColumnToOffHeap(((org.cubedb.core.tiny.TinyC[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (col.isTiny() && (col.getNumRecords() > org.cubedb.core.Constants.INITIAL_PARTITION_SIZE)) {   	c[...] ` -topatch--> `if (false) {   	col = org.cubedb.core.tiny.TinyUtils.tinyColumnToOffHeap(((org.cubedb.core.tiny.Tiny[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (col.isTiny() && (col.getNumRecords() > org.cubedb.core.Constants.INITIAL_PARTITION_SIZE)) {   	c[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 80, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `buf.putInt(v) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 73, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return null ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 73, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (b == null) 	return null; ` -topatch--> `if (true) { 	return null;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 73, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (b == null) 	return null; ` -topatch--> `if (false) { 	return null;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 73, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (b == null) 	return null; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 49, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.valueBinary.setValue(k) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 51, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((prev == null) && (this.map.size() >= (this.numPartitions * 3))) {  	int newSize = this.numParti[...] ` -topatch--> `if (true) {  	int newSize = this.numPartitions * 5; 	final long t0 = java.lang.System.nanoTime(); 	c[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 51, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((prev == null) && (this.map.size() >= (this.numPartitions * 3))) {  	int newSize = this.numParti[...] ` -topatch--> `if (false) {  	int newSize = this.numPartitions * 5; 	final long t0 = java.lang.System.nanoTime(); 	[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 51, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((prev == null) && (this.map.size() >= (this.numPartitions * 3))) {  	int newSize = this.numParti[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 36, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `map = new com.cfelde.bohmap.BOHMap(this.numPartitions) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 37, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.valueBinary = new com.cfelde.bohmap.Binary(new byte[]{ 0, 0, 0, 0 }) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 35, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.numPartitions = startSize * 2 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.BOHKeyMap line: 28, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.createMap(size, fieldsLength) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 200, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `insertImpl(row) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 198, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `columns.put(f, new org.cubedb.core.tiny.TinyColumn(size)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 197, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `lookups.put(f, new org.cubedb.core.lookups.HashMapLookup()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 195, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.String f : newFields) { 	final int newColumnIndex = fieldLookup.getValue(f); 	lookups[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 209, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.String fieldName : fieldLookup.getKeys()) { 	java.lang.String value = row.getFields()[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 184, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `metric.incrementBy(index.intValue(), c.longValue()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 182, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (c != null) { 	org.cubedb.core.Metric metric = e.getValue(); 	metric.incrementBy(index.intValue()[...] ` -topatch--> `if (true) { 	org.cubedb.core.Metric metric = e.getValue(); 	metric.incrementBy(index.intValue(), c.l[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 182, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (c != null) { 	org.cubedb.core.Metric metric = e.getValue(); 	metric.incrementBy(index.intValue()[...] ` -topatch--> `if (false) { 	org.cubedb.core.Metric metric = e.getValue(); 	metric.incrementBy(index.intValue(), c.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 182, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (c != null) { 	org.cubedb.core.Metric metric = e.getValue(); 	metric.incrementBy(index.intValue()[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 180, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.util.Map.Entry<java.lang.String, org.cubedb.core.Metric> e : metrics.entrySet()) { 	java.l[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 194, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (newFields.size() > 0) { 	for (java.lang.String f : newFields) { 		final int newColumnIndex = fie[...] ` -topatch--> `if (true) { 	for (java.lang.String f : newFields) { 		final int newColumnIndex = this.fieldLookup.ge[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 194, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (newFields.size() > 0) { 	for (java.lang.String f : newFields) { 		final int newColumnIndex = fie[...] ` -topatch--> `if (false) { 	for (java.lang.String f : newFields) { 		final int newColumnIndex = this.fieldLookup.g[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 194, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (newFields.size() > 0) { 	for (java.lang.String f : newFields) { 		final int newColumnIndex = fie[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 476, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putInt(locationAddress, entryCount + 1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 479, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putAddress(partitionAddress + (offset * addressSize), locationAddress) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 234, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `insertImpl(row) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 471, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putAddress( ((locationAddress + java.lang.Integer.BYTES) + ((addressSize * 2) * entryCount)) [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 470, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putAddress((locationAddress + java.lang.Integer.BYTES) + ((addressSize * 2) * entryCount), ke[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 228, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `insertFields(fields, row.getCounters()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 461, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (locationAddress == 0) { 	locationAddress = allocate((java.lang.Integer.BYTES + addressSize) + ad[...] ` -topatch--> `if (true) { 	locationAddress = allocate((java.lang.Integer.BYTES + this.addressSize) + this.addressS[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 461, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (locationAddress == 0) { 	locationAddress = allocate((java.lang.Integer.BYTES + addressSize) + ad[...] ` -topatch--> `if (false) { 	locationAddress = allocate((java.lang.Integer.BYTES + this.addressSize) + this.address[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 461, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (locationAddress == 0) { 	locationAddress = allocate((java.lang.Integer.BYTES + addressSize) + ad[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 462, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `locationAddress = allocate((java.lang.Integer.BYTES + addressSize) + addressSize, false) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 456, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putByte((valueAddress + java.lang.Integer.BYTES) + valueOffset, valueData[valueOffset]) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 235, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `lastInsertTs = java.lang.System.currentTimeMillis() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 218, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `fields[i] = ((short) (valueIndex)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 453, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `valueAddress = allocate(java.lang.Integer.BYTES + valueSize, false) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 455, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int valueOffset = 0; valueOffset < valueSize; valueOffset++) { 	unsafe.putByte((valueAddress + [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 454, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putInt(valueAddress, valueSize) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 214, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `valueIndex = lookups.get(fieldName).getValue(value != null ? value : org.cubedb.core.Constants.NULL_[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 212, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((value != null) || row.getFields().containsKey(fieldName)) { 	insertedFieldCount++; 	valueIndex [...] ` -topatch--> `if (true) { 	insertedFieldCount++; 	valueIndex = this.lookups.get(fieldName).getValue(value != null [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 212, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((value != null) || row.getFields().containsKey(fieldName)) { 	insertedFieldCount++; 	valueIndex [...] ` -topatch--> `if (false) { 	insertedFieldCount++; 	valueIndex = this.lookups.get(fieldName).getValue(value != null[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 212, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((value != null) || row.getFields().containsKey(fieldName)) { 	insertedFieldCount++; 	valueIndex [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 450, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value != null) { 	byte[] valueData = value.getValue(); 	int valueSize = valueData.length; 	value[...] ` -topatch--> `if (true) { 	byte[] valueData = value.getValue(); 	int valueSize = valueData.length; 	valueAddress =[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 450, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value != null) { 	byte[] valueData = value.getValue(); 	int valueSize = valueData.length; 	value[...] ` -topatch--> `if (false) { 	byte[] valueData = value.getValue(); 	int valueSize = valueData.length; 	valueAddress [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 450, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (value != null) { 	byte[] valueData = value.getValue(); 	int valueSize = valueData.length; 	value[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 226, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addNewFields(row) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 444, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putByte((keyAddress + java.lang.Integer.BYTES) + keyOffset, keyData[keyOffset]) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 223, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (insertedFieldCount != row.getFields().size()) {   	addNewFields(row); } else { 	insertFields(fie[...] ` -topatch--> `if (true) {   	addNewFields(row); } else { 	insertFields(fields, row.getCounters()); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 223, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (insertedFieldCount != row.getFields().size()) {   	addNewFields(row); } else { 	insertFields(fie[...] ` -topatch--> `if (false) {   	addNewFields(row); } else { 	insertFields(fields, row.getCounters()); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.offheap.OffHeapPartition line: 223, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (insertedFieldCount != row.getFields().size()) {   	addNewFields(row); } else { 	insertFields(fie[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 443, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int keyOffset = 0; keyOffset < keySize; keyOffset++) { 	unsafe.putByte((keyAddress + java.lang.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 442, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `unsafe.putInt(keyAddress, keySize) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.BOHMap line: 438, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `locationAddress -= java.lang.Integer.BYTES ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 53, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `keys.add(key) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 52, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `m.put(key, val) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 51, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.util.Objects.requireNonNull(key) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 50, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `val = m.size() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 49, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!m.containsKey(key)) { 	val = m.size(); 	java.util.Objects.requireNonNull(key); 	m.put(key, val)[...] ` -topatch--> `if (true) { 	val = this.m.size(); 	java.util.Objects.requireNonNull(key); 	this.m.put(key, val); 	th[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 49, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!m.containsKey(key)) { 	val = m.size(); 	java.util.Objects.requireNonNull(key); 	m.put(key, val)[...] ` -topatch--> `if (false) { 	val = this.m.size(); 	java.util.Objects.requireNonNull(key); 	this.m.put(key, val); 	t[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 49, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!m.containsKey(key)) { 	val = m.size(); 	java.util.Objects.requireNonNull(key); 	m.put(key, val)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 47, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `key = org.cubedb.core.Constants.NULL_VALUE ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (key == null) 	key = org.cubedb.core.Constants.NULL_VALUE; ` -topatch--> `if (true) { 	key = org.cubedb.core.Constants.NULL_VALUE;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (key == null) 	key = org.cubedb.core.Constants.NULL_VALUE; ` -topatch--> `if (false) { 	key = org.cubedb.core.Constants.NULL_VALUE;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (key == null) 	key = org.cubedb.core.Constants.NULL_VALUE; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 42, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 37, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.m.put(org.cubedb.core.Constants.NULL_VALUE, 0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 36, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.keys.add(org.cubedb.core.Constants.NULL_VALUE) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 35, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (needNull) { 	this.keys.add(org.cubedb.core.Constants.NULL_VALUE); 	this.m.put(org.cubedb.core.Co[...] ` -topatch--> `if (true) { 	this.keys.add(org.cubedb.core.Constants.NULL_VALUE); 	this.m.put(org.cubedb.core.Consta[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 35, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (needNull) { 	this.keys.add(org.cubedb.core.Constants.NULL_VALUE); 	this.m.put(org.cubedb.core.Co[...] ` -topatch--> `if (false) { 	this.keys.add(org.cubedb.core.Constants.NULL_VALUE); 	this.m.put(org.cubedb.core.Const[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 35, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (needNull) { 	this.keys.add(org.cubedb.core.Constants.NULL_VALUE); 	this.m.put(org.cubedb.core.Co[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 34, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.keys = new java.util.ArrayList<java.lang.String>(8) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 33, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.m = new gnu.trove.map.hash.TObjectIntHashMap<java.lang.String>(8) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 29, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `init(needNull) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 95, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `keys[i] = this.keys.get(i) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 94, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < keysCount; i++) { 	keys[i] = this.keys.get(i); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.lookups.HashMapLookup line: 93, pointed element: CtLocalVariableImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtLocalVariableImpl) `java.lang.String[] keys = new java.lang.String[keysCount] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.Binary line: 38, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.value = value ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.Binary line: 28, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.NullPointerException("value is null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.Binary line: 28, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value == null) 	throw new java.lang.NullPointerException("value is null"); ` -topatch--> `if (true) { 	throw new java.lang.NullPointerException("value is null");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.Binary line: 28, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value == null) 	throw new java.lang.NullPointerException("value is null"); ` -topatch--> `if (false) { 	throw new java.lang.NullPointerException("value is null");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.Binary line: 28, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (value == null) 	throw new java.lang.NullPointerException("value is null"); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.cfelde.bohmap.Binary line: 30, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.value = value ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.utils.CubeUtils line: 45, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int offset = in.length - 1; offset >= 0; offset--) { 	if (in[offset] > 0) { 		return java.util.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.utils.CubeUtils line: 46, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (in[offset] > 0) { 	return java.util.Arrays.copyOf(in, offset + 1); } ` -topatch--> `if (true) { 	return java.util.Arrays.copyOf(in, offset + 1); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.utils.CubeUtils line: 46, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (in[offset] > 0) { 	return java.util.Arrays.copyOf(in, offset + 1); } ` -topatch--> `if (false) { 	return java.util.Arrays.copyOf(in, offset + 1); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.utils.CubeUtils line: 46, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (in[offset] > 0) { 	return java.util.Arrays.copyOf(in, offset + 1); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.utils.CubeUtils line: 47, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return java.util.Arrays.copyOf(in, offset + 1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyMetric line: 61, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.data.setQuick(i, val + value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyColumn line: 32, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `data.add(((short) (value))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyColumn line: 18, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.init(offset) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyColumn line: 27, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.offset = offset ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyColumn line: 26, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.data = new gnu.trove.list.array.TShortArrayList(256) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyMetric line: 32, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `data.add(value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyMetric line: 18, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.init(offset) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyMetric line: 27, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.offset = offset ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.cubedb.core.tiny.TinyMetric line: 26, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.data = new gnu.trove.list.array.TLongArrayList(256) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:171) - Time Repair Loop (s): 151.218
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:173) - generationsexecuted: 1
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:255) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:265) - End Repair Search: NOT Found solution
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:190) - Time Total(s): 1661.844
