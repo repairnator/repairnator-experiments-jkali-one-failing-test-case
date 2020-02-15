@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "alibaba/fastjson",
-  "failingModule": "/root/workspace/alibaba/fastjson/284699918",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 4138,
-  "failing-test-cases": [
-    {
-      "className": "com.alibaba.json.bvt.date.DateFieldFormatTest",
-      "failingMethods": [
-        "com.alibaba.json.bvt.date.DateFieldFormatTest#test_format_"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:18 PM",
+    "reproductionDateEnd": "Feb 15, 2020 7:57:38 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 70354160,
+      "totalMemory": 432476160
+    },
+    "totalDuration": 6197,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-alibaba-fastjson-284699918-20171007-172115_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-alibaba-fastjson-284699918-20171007-172115_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 4138,
+      "numberPassing": 4137,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...lishTime\":\"2017/10/0[7 18:09:54\",\"serverTime\":\"2017-10-07 18:09:54\",\"startDate\":\"2017-10-07]\"}\u003e but was:\u003c...lishTime\":\"2017/10/0[8 00:09:54\",\"serverTime\":\"2017-10-08 00:09:54\",\"startDate\":\"2017-10-08]\"}\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.json.bvt.date.DateFieldFormatTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.json.bvt.date.DateFieldFormatTest",
+        "testMethod": "test_format_",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...lishTime\":\"2020/02/1[5 18:16:02\",\"serverTime\":\"2020-02-15 18:16:02\",\"startDate\":\"2020-02-15]\"}\u003e but was:\u003c...lishTime\":\"2020/02/1[6 01:16:02\",\"serverTime\":\"2020-02-16 01:16:02\",\"startDate\":\"2020-02-16]\"}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 168,
+    "numberTestFiles": 2302,
+    "numberLibrariesFailingModule": 117,
+    "numberLines": 0
+  },
+  "commits": {}
 }
