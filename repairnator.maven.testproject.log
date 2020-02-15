@@ -1,0 +1,1442 @@
+[libprotobuf WARNING google/protobuf/compiler/parser.cc:546] No syntax specified for the proto file: types.proto. Please use 'syntax = "proto2";' or 'syntax = "proto3";' to specify a syntax version. (Defaulted to proto2 syntax.)
+ions
+[INFO] annotationProcessor
+[INFO] runtime
+[INFO] infrastructure
+[INFO] cmdlets
+[INFO] test
+[INFO] samples
+[INFO] logReader
+[INFO] debian
+[INFO] generator
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building corfu 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ corfu ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ corfu ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ corfu ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ corfu ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building format 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ format ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ format ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ format ---
+[INFO] 
+[INFO] --- protoc-jar-maven-plugin:3.1.0.2:run (default) @ format ---
+[INFO] Protoc version: 3.1.0
+protoc-jar: protoc version: 310, detected platform: linux/amd64
+[INFO] Protoc command: /tmp/protocjar2442808988190604778/bin/protoc.exe
+[INFO] Input directories:
+[INFO]     /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/proto
+[INFO] Output targets:
+[INFO]     java: /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/target/generated-sources (add: main, clean: false, plugin: null, outputOptions: null)
+[INFO]     Processing (java): types.proto
+protoc-jar: executing: [/tmp/protocjar2442808988190604778/bin/protoc.exe, -I/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/proto, --java_out=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/target/generated-sources, /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/proto/types.proto]
+[INFO] Adding generated classes to classpath
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ format ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ format ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ format ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/format/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ format ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ format ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ format ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building annotations 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ annotations ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ annotations ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/annotations/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ annotations ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/annotations/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ annotations ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/annotations/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/annotations/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ annotations ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ annotations ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ annotations ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building annotationProcessor 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ annotationProcessor ---
+[INFO] Starting audit...
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/annotationProcessor/src/main/java/org/corfudb/annotations/ObjectAnnotationProcessor.java:322: 'p' has incorrect indentation level 40, expected level should be 44. [Indentation]
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ annotationProcessor ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/annotationProcessor/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ annotationProcessor ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ annotationProcessor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ annotationProcessor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ annotationProcessor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/annotationProcessor/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ annotationProcessor ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ annotationProcessor ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ annotationProcessor ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building runtime 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ runtime ---
+[INFO] Starting audit...
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/serializer/ISerializer.java:13: Wrong lexicographical order for 'de.javakaffee.kryoserializers.guava.ImmutableListSerializer' import. Should be before 'java.util.function.Function'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/serializer/ISerializer.java:14: Wrong lexicographical order for 'de.javakaffee.kryoserializers.guava.ImmutableMapSerializer' import. Should be before 'java.util.function.Function'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/serializer/ISerializer.java:15: Wrong lexicographical order for 'de.javakaffee.kryoserializers.guava.ImmutableMultimapSerializer' import. Should be before 'java.util.function.Function'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/serializer/ISerializer.java:16: Wrong lexicographical order for 'de.javakaffee.kryoserializers.guava.ImmutableSetSerializer' import. Should be before 'java.util.function.Function'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/serializer/ISerializer.java:17: Wrong lexicographical order for 'io.netty.buffer.ByteBuf' import. Should be before 'java.util.function.Function'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/serializer/ISerializer.java:18: Wrong lexicographical order for 'io.netty.buffer.Unpooled' import. Should be before 'java.util.function.Function'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/serializer/ISerializer.java:111: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/serializer/ISerializer.java:115: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/ReflectionUtils.java:91:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/MetricsUtils.java:22: Wrong lexicographical order for 'lombok.Getter' import. Should be before 'org.slf4j.LoggerFactory'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/MetricsUtils.java:23: Wrong lexicographical order for 'lombok.extern.slf4j.Slf4j' import. Should be before 'org.slf4j.LoggerFactory'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/MetricsUtils.java:119:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/MetricsUtils.java:132:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/MetricsUtils.java:151:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/MetricsUtils.java:157:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/CFUtils.java:18: Abbreviation in name 'CFUtils' must contain no more than '2' consecutive capital letters. [AbbreviationAsWordInName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/CFUtils.java:28:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:47:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:61:14: '(' is followed by whitespace. [ParenPad]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:61:47: ')' is preceded with whitespace. [ParenPad]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:69:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:78:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:111:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:122: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:123: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:167:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/util/Utils.java:399: Abbreviation in name 'simpleUUIDHash' must contain no more than '2' consecutive capital letters. [AbbreviationAsWordInName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/IMetadata.java:26: Import statement for 'org.corfudb.protocols.wireprotocol.IMetadata.LogUnitMetadataType.CHECKPOINTED_STREAM_ID' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/IMetadata.java:27: Import statement for 'org.corfudb.protocols.wireprotocol.IMetadata.LogUnitMetadataType.CHECKPOINTED_STREAM_START_LOG_ADDRESS' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/IMetadata.java:28: Import statement for 'org.corfudb.protocols.wireprotocol.IMetadata.LogUnitMetadataType.CHECKPOINT_ID' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/IMetadata.java:29: Import statement for 'org.corfudb.protocols.wireprotocol.IMetadata.LogUnitMetadataType.CHECKPOINT_TYPE' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/IMetadata.java:161:47: Parameter name 'Id' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'. [ParameterName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/VersionInfo.java:8: Wrong lexicographical order for 'lombok.Getter' import. Should be before 'org.corfudb.runtime.CorfuRuntime'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/MultipleReadRequest.java:14: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/SequencerTailsRecoveryMsg.java:7: Wrong lexicographical order for 'java.util.Map' import. Should be before 'lombok.Data'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/SequencerTailsRecoveryMsg.java:8: Wrong lexicographical order for 'java.util.UUID' import. Should be before 'lombok.Data'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/SequencerTailsRecoveryMsg.java:21:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/AddNodeRequest.java:22:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/wireprotocol/ILogData.java:131: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/logprotocol/CheckpointEntry.java:84: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/logprotocol/CheckpointEntry.java:113:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/protocols/logprotocol/CheckpointEntry.java:114: Line is longer than 100 characters (found 105). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/Layout.java:424: Line is longer than 100 characters (found 101). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/Layout.java:488: Line is longer than 100 characters (found 104). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/stream/BackpointerStreamView.java:115: 'if' child has incorrect indentation level 24, expected level should be 20. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/stream/BackpointerStreamView.java:116: 'if' child has incorrect indentation level 24, expected level should be 20. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/stream/BackpointerStreamView.java:246:95: '+' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/stream/BackpointerStreamView.java:302:53: '&&' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/stream/BackpointerStreamView.java:304: 'if' child has incorrect indentation level 13, expected level should be 16. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/stream/BackpointerStreamView.java:304: Line is longer than 100 characters (found 119). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/stream/BackpointerStreamView.java:314:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/stream/BackpointerStreamView.java:353:57: '&&' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:117: Line is longer than 100 characters (found 106). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:117:106: '.' should be on a new line. [SeparatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:118:41: '.' should be on a new line. [SeparatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:119:34: '.' should be on a new line. [SeparatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:129: Line is longer than 100 characters (found 103). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:130:72: '||' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:131: 'currentCorfuTable' has incorrect indentation level 28, expected level should be 32. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:131:92: WhitespaceAround: '{' is not preceded with whitespace. [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:138: Line is longer than 100 characters (found 106). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/ObjectBuilder.java:138:106: '+' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/replication/IReplicationProtocol.java:93: 'Map' has incorrect indentation level 4, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/replication/QuorumReplicationProtocol.java:279:15: WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3) [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/replication/ChainReplicationProtocol.java:117:67: WhitespaceAround: '{' is not preceded with whitespace. [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/replication/ChainReplicationProtocol.java:119:50: WhitespaceAround: '{' is not preceded with whitespace. [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/AddressSpaceView.java:33: Wrong lexicographical order for 'java.util.Comparator' import. Should be before 'org.corfudb.util.CFUtils'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/AddressSpaceView.java:72:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/AddressSpaceView.java:303: 'Map' has incorrect indentation level 4, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/view/AddressSpaceView.java:329: 'Map' has incorrect indentation level 4, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/AbstractTransactionalContext.java:179:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/AbstractTransactionalContext.java:182: Line is longer than 100 characters (found 101). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetInfo.java:13: Import statement for 'org.corfudb.runtime.object.transactions.TransactionalContext.getRootContext' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetInfo.java:28:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/ConflictSetInfo.java:13: Wrong lexicographical order for 'lombok.Getter' import. Should be before 'org.corfudb.runtime.object.ICorfuSMRProxyInternal'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:28: Import statement for 'org.corfudb.runtime.view.ObjectsView.TRANSACTION_STREAM_ID' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:105: Line is longer than 100 characters (found 107). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:106: Line is longer than 100 characters (found 119). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:107: Line is longer than 100 characters (found 107). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:108: Line is longer than 100 characters (found 111). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:111: 'block rcurly' has incorrect indentation level 24, expected level should be one of the following: 16, 28, 32. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:116: Line is longer than 100 characters (found 111). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/CorfuCompileProxy.java:344:19: Method name 'TXExecuteInner' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'. [MethodName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/CorfuCompileProxy.java:477: Line is longer than 100 characters (found 101). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/CorfuCompileProxy.java:479: Line is longer than 100 characters (found 102). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/VersionLockedObject.java:179: 'if' has incorrect indentation level 12, expected level should be 16. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/VersionLockedObject.java:180: 'if' child has incorrect indentation level 16, expected level should be 20. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/object/VersionLockedObject.java:633: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/exceptions/TransactionAbortedException.java:45:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/exceptions/TransactionAbortedException.java:56:44: '-' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/exceptions/StaleTokenException.java:11: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/exceptions/NoRollbackException.java:12:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/exceptions/NoRollbackException.java:23:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/exceptions/NoRollbackException.java:24:41: '+' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/exceptions/NoRollbackException.java:25:36: '?' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/BaseClient.java:190: 'throws' has incorrect indentation level 8, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/IClientRouter.java:98: Abbreviation in name 'requestID' must contain no more than '2' consecutive capital letters. [AbbreviationAsWordInName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/IClientRouter.java:106: Abbreviation in name 'requestID' must contain no more than '2' consecutive capital letters. [AbbreviationAsWordInName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:6: Wrong lexicographical order for 'java.lang.invoke.LambdaMetafactory' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:7: Wrong lexicographical order for 'java.lang.invoke.MethodHandle' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:8: Wrong lexicographical order for 'java.lang.invoke.MethodHandles' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:9: Wrong lexicographical order for 'java.lang.invoke.MethodType' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:10: Wrong lexicographical order for 'java.lang.reflect.Modifier' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:11: Wrong lexicographical order for 'java.util.Arrays' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:12: Wrong lexicographical order for 'java.util.Map' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:13: Wrong lexicographical order for 'java.util.Set' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/ClientMsgHandler.java:14: Wrong lexicographical order for 'java.util.concurrent.ConcurrentHashMap' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:87: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:90: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:92:37: WhitespaceAround: '{' is not preceded with whitespace. [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:94: Line is longer than 100 characters (found 116). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:435: Comment has incorrect indentation level 0, expected is 16, indentation should be the same level as line 436. [CommentsIndentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:444: Comment has incorrect indentation level 0, expected is 16, indentation should be the same level as line 445. [CommentsIndentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:457: Comment has incorrect indentation level 0, expected is 24, indentation should be the same level as line 458. [CommentsIndentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:548: Comment has incorrect indentation level 0, expected is 16, indentation should be the same level as line 549. [CommentsIndentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/NettyClientRouter.java:582: Comment has incorrect indentation level 0, expected is 8, indentation should be the same level as line 583. [CommentsIndentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/LogUnitClient.java:233: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/LogUnitClient.java:239:24: WhitespaceAround: '=' is not preceded with whitespace. [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/LogUnitClient.java:239:25: WhitespaceAround: '=' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3) [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/clients/LogUnitClient.java:245: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:234: Line is longer than 100 characters (found 106). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/ICorfuMap.java:8: 'extends' has incorrect indentation level 4, expected level should be 8. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/ICorfuMap.java:11: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/ICorfuMap.java:21: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:69: 'getMapType' has incorrect indentation level 8, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:70: 'method def' child has incorrect indentation level 12, expected level should be 8. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:82: 'TypeToken' has incorrect indentation level 4, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:83: 'getTableType' has incorrect indentation level 8, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:84: 'method def' child has incorrect indentation level 12, expected level should be 8. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:101: <p> tag should be placed immediately before the first word, with no space after. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:127: 'METHOD_DEF' should be separated from previous statement. [EmptyLineSeparator]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:167: '+' has incorrect indentation level 12, expected level should be 16. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:170: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:177: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:196: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:203: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:210: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:223: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:237: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:240: 'public' has incorrect indentation level 4, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:253: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:256: 'public' has incorrect indentation level 4, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:292: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:295: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:306: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:380: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:407: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:417: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:447: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:455: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:477: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:485: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:492: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:499: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:506: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:513: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:520: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:548: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:560: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:561: Overload methods should not be split. Previous overloaded method located at line '418'. [OverloadMethodsDeclarationOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:573: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:584: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:602: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:623: Single-line Javadoc comment should be multi-line. [SingleLineJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:653:42: Parameter name 'I' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'. [ParameterName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/collections/CorfuTable.java:677:38: Parameter name 'I' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'. [ParameterName]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/CorfuRuntime.java:127: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/CorfuRuntime.java:286: Comment has incorrect indentation level 0, expected is 16, indentation should be the same level as line 287. [CommentsIndentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/CorfuRuntime.java:525: Line is longer than 100 characters (found 111). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/runtime/CorfuRuntime.java:527: Line is longer than 100 characters (found 109). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:17: Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.corfudb.util.serializer.ISerializer'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:18: Wrong lexicographical order for 'java.util.UUID' import. Should be before 'org.corfudb.util.serializer.ISerializer'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:20: Import statement for 'org.corfudb.protocols.logprotocol.CheckpointEntry.CheckpointDictKey.SNAPSHOT_ADDRESS' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:30: 'METHOD_DEF' should be separated from previous statement. [EmptyLineSeparator]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:42: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:44: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:46: Line is longer than 100 characters (found 113). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:59: Line is longer than 100 characters (found 101). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:59:101: WhitespaceAround: '{' is not preceded with whitespace. [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:60: 'if' child has incorrect indentation level 16, expected level should be 12. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:64: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:80: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:84: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:93:45: '.' should be on a new line. [SeparatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:94: Line is longer than 100 characters (found 103). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:98: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:102: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:103: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:104: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:106: Line is longer than 100 characters (found 103). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:106:103: WhitespaceAround: '{' is not preceded with whitespace. [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:110: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:113: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:114: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:115: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:119: Line is longer than 100 characters (found 110). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/RecoveryUtils.java:119:110: '.' should be on a new line. [SeparatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:4: Wrong lexicographical order for 'java.util.ArrayList' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:5: Wrong lexicographical order for 'java.util.Collections' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:6: Wrong lexicographical order for 'java.util.HashMap' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:7: Wrong lexicographical order for 'java.util.HashSet' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:8: Wrong lexicographical order for 'java.util.List' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:9: Wrong lexicographical order for 'java.util.Map' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:10: Wrong lexicographical order for 'java.util.Set' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:11: Wrong lexicographical order for 'java.util.UUID' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:12: Using the '.*' form of import should be avoided - java.util.concurrent.*. [AvoidStarImport]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:12: Wrong lexicographical order for 'java.util.concurrent.*' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:13: Wrong lexicographical order for 'java.util.function.BiConsumer' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:15: Wrong lexicographical order for 'com.google.common.util.concurrent.ThreadFactoryBuilder' import. Should be before 'javax.annotation.Nonnull'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:36: Import statement for 'org.corfudb.recovery.RecoveryUtils.*' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:36: Using the '.*' form of import should be avoided - org.corfudb.recovery.RecoveryUtils.*. [AvoidStarImport]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:37: Import statement for 'org.corfudb.runtime.view.Address.isAddress' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:40: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:44: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:46: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:100: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:136:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:148: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:160: Line is longer than 100 characters (found 114). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:192: 'method def' child has incorrect indentation level 9, expected level should be 8. [Indentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:203: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:206: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:211:88: '&&' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:227: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:238: Line is longer than 100 characters (found 111). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:242:91: '>' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:256: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:273:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:288: Line is longer than 100 characters (found 105). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:357: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:386: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:389: 'METHOD_DEF' should be separated from previous statement. [EmptyLineSeparator]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:394: Line is longer than 100 characters (found 112). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:395:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:401: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:410: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:413: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:414: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:438: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:440: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:441: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:442: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:443: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:444: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:468: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:471: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:474: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:475: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:512: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:543: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:567: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:574:11: WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3) [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:576:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:589: Empty line should be followed by <p> tag on the next line. [JavadocParagraph]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:591: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:605:16: WhitespaceAround: 'for' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3) [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:614: Line is longer than 100 characters (found 103). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:620:19: WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3) [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:670:42: '||' should be on a new line. [OperatorWrap]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:672: 'if' child has incorrect indentation level 24, expected level should be 16. [Indentation]
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ runtime ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ runtime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ runtime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ runtime ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ runtime ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ runtime ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building infrastructure 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ infrastructure ---
+[INFO] Starting audit...
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/log/StreamLogFiles.java:567: First sentence of Javadoc is incomplete (period is missing) or not present. [SummaryJavadoc]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/log/StreamLogFiles.java:749: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/log/StreamLogFiles.java:968:11: WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3) [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/log/StreamLogFiles.java:1116: Line is longer than 100 characters (found 102). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/log/InMemoryStreamLog.java:40:11: WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3) [WhitespaceAround]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/LogUnitServer.java:138: Comment has incorrect indentation level 0, expected is 8, indentation should be the same level as line 140. [CommentsIndentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/LogUnitServer.java:157: Line is longer than 100 characters (found 119). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/LogUnitServer.java:158: Line is longer than 100 characters (found 102). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/LogUnitServer.java:206: Line is longer than 100 characters (found 112). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuServer.java:50: Import statement for 'org.fusesource.jansi.Ansi.Color.BLUE' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuServer.java:51: Import statement for 'org.fusesource.jansi.Ansi.Color.MAGENTA' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuServer.java:52: Import statement for 'org.fusesource.jansi.Ansi.Color.RED' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuServer.java:53: Import statement for 'org.fusesource.jansi.Ansi.Color.WHITE' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuServer.java:54: Import statement for 'org.fusesource.jansi.Ansi.ansi' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/ServerContext.java:13: Import statement for 'org.corfudb.util.MetricsUtils.addJvmMetrics' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/ServerContext.java:14: Import statement for 'org.corfudb.util.MetricsUtils.isMetricsReportingSetUp' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/ServerContext.java:82: Comment has incorrect indentation level 0, expected is 16, indentation should be the same level as line 83. [CommentsIndentation]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/ServerContext.java:82: Line is longer than 100 characters (found 102). [LineLength]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/FailureHandlerDispatcher.java:161: Empty catch block. [EmptyCatchBlock]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/LayoutWorkflowManager.java:43: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/LayoutWorkflowManager.java:147: Distance between variable 'closedSegment' declaration and its first usage is 6, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value). [VariableDeclarationUsageDistance]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/LayoutWorkflowManager.java:178: At-clause should have a non-empty description. [NonEmptyAtclauseDescription]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/SequencerServer.java:39: Import statement for 'org.corfudb.protocols.wireprotocol.TokenType.TX_ABORT_SEQ_OVERFLOW' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/SequencerServer.java:319:5: Missing a Javadoc comment. [JavadocMethod]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:8: Wrong lexicographical order for 'java.lang.invoke.LambdaMetafactory' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:9: Wrong lexicographical order for 'java.lang.invoke.MethodHandle' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:10: Wrong lexicographical order for 'java.lang.invoke.MethodHandles' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:11: Wrong lexicographical order for 'java.lang.invoke.MethodType' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:12: Wrong lexicographical order for 'java.lang.reflect.Modifier' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:13: Wrong lexicographical order for 'java.util.Arrays' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:14: Wrong lexicographical order for 'java.util.Map' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:15: Wrong lexicographical order for 'java.util.Set' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/java/org/corfudb/infrastructure/CorfuMsgHandler.java:16: Wrong lexicographical order for 'java.util.concurrent.ConcurrentHashMap' import. Should be before 'lombok.extern.slf4j.Slf4j'. [CustomImportOrder]
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ infrastructure ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ infrastructure ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ infrastructure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ infrastructure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ infrastructure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/infrastructure/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ infrastructure ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ infrastructure ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ infrastructure ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cmdlets 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ cmdlets ---
+[INFO] Starting audit...
+[WARN] /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/cmdlets/src/main/java/org/corfudb/shell/ShellMain.java:11:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ cmdlets ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/cmdlets/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ cmdlets ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cmdlets ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/cmdlets/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ cmdlets ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- clojure-maven-plugin:1.8.1:compile (compile) @ cmdlets ---
+Compiling org.corfudb.shell to /tmp/classes9048009221006027611.dir
+14:50:53,704 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:50:53,704 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+14:50:53,704 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/runtime/target/classes/logback.xml]
+14:50:53,933 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:50:53,943 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:50:53,950 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [MetricsRollingFile]
+14:50:53,998 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@5dcb4f5f - No compression will be used
+14:50:54,001 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:50:54,059 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[MetricsRollingFile] - Active log file name: /var/log/corfu-metrics.log
+14:50:54,059 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[MetricsRollingFile] - File property is set to [/var/log/corfu-metrics.log]
+14:50:54,060 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[MetricsRollingFile] - openFile(/var/log/corfu-metrics.log,true) call failed. java.io.FileNotFoundException: /var/log/corfu-metrics.log (Permission denied)
+	at java.io.FileNotFoundException: /var/log/corfu-metrics.log (Permission denied)
+	at 	at java.io.FileOutputStream.open0(Native Method)
+	at 	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at 	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at 	at ch.qos.logback.core.recovery.ResilientFileOutputStream.<init>(ResilientFileOutputStream.java:26)
+	at 	at ch.qos.logback.core.FileAppender.openFile(FileAppender.java:204)
+	at 	at ch.qos.logback.core.FileAppender.start(FileAppender.java:127)
+	at 	at ch.qos.logback.core.rolling.RollingFileAppender.start(RollingFileAppender.java:100)
+	at 	at ch.qos.logback.core.joran.action.AppenderAction.end(AppenderAction.java:90)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.callEndAction(Interpreter.java:309)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:193)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:179)
+	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:62)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:165)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:152)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:110)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:53)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.configureByResource(ContextInitializer.java:75)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:150)
+	at 	at org.slf4j.impl.StaticLoggerBinder.init(StaticLoggerBinder.java:84)
+	at 	at org.slf4j.impl.StaticLoggerBinder.<clinit>(StaticLoggerBinder.java:55)
+	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:129)
+	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:108)
+	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:302)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:276)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:288)
+	at 	at org.corfudb.runtime.clients.BaseClient.<clinit>(BaseClient.java:28)
+	at 	at java.lang.Class.forName0(Native Method)
+	at 	at java.lang.Class.forName(Class.java:348)
+	at 	at clojure.lang.RT.classForName(RT.java:2168)
+	at 	at clojure.lang.RT.classForName(RT.java:2177)
+	at 	at clojure.lang.Compiler.resolveIn(Compiler.java:7145)
+	at 	at clojure.lang.Compiler.resolve(Compiler.java:7108)
+	at 	at clojure.lang.Compiler.analyzeSymbol(Compiler.java:7069)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6648)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6625)
+	at 	at clojure.lang.Compiler$HostExpr$Parser.parse(Compiler.java:1009)
+	at 	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6868)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6669)
+	at 	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6856)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6669)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6625)
+	at 	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:6001)
+	at 	at clojure.lang.Compiler$FnMethod.parse(Compiler.java:5380)
+	at 	at clojure.lang.Compiler$FnExpr.parse(Compiler.java:3972)
+	at 	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6866)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6669)
+	at 	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6856)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6669)
+	at 	at clojure.lang.Compiler.access$300(Compiler.java:38)
+	at 	at clojure.lang.Compiler$DefExpr$Parser.parse(Compiler.java:589)
+	at 	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6868)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6669)
+	at 	at clojure.lang.Compiler.analyze(Compiler.java:6625)
+	at 	at clojure.lang.Compiler.compile1(Compiler.java:7469)
+	at 	at clojure.lang.Compiler.compile(Compiler.java:7541)
+	at 	at clojure.lang.RT.compile(RT.java:406)
+	at 	at clojure.lang.RT.load(RT.java:451)
+	at 	at clojure.lang.RT.load(RT.java:419)
+	at 	at clojure.core$load$fn__5677.invoke(core.clj:5893)
+	at 	at clojure.core$load.invokeStatic(core.clj:5892)
+	at 	at clojure.core$load.doInvoke(core.clj:5876)
+	at 	at clojure.lang.RestFn.invoke(RestFn.java:408)
+	at 	at clojure.core$load_one.invokeStatic(core.clj:5697)
+	at 	at clojure.core$compile$fn__5682.invoke(core.clj:5903)
+	at 	at clojure.core$compile.invokeStatic(core.clj:5903)
+	at 	at clojure.core$compile.invoke(core.clj:5895)
+	at 	at clojure.lang.Var.invoke(Var.java:379)
+	at 	at clojure.lang.Compile.main(Compile.java:67)
+14:50:54,060 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:50:54,061 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+14:50:54,062 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:50:54,065 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.corfudb.metricsdata] to INFO
+14:50:54,065 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.corfudb.metricsdata] to false
+14:50:54,065 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [MetricsRollingFile] to Logger[org.corfudb.metricsdata]
+14:50:54,065 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to ERROR
+14:50:54,065 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+14:50:54,065 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:50:54,072 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7b94089b - Registering current configuration as safe fallback point
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmdlets ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/cmdlets/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ cmdlets ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ cmdlets ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ cmdlets ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building test 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ test ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ test ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/test/target/jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ test ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 28 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ test ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/test/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 9.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 104.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1444.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.corfudb.infrastructure.SequencerServerTest
+Test Configuration:
+CONCURRENCY_LOTS:100
+CONCURRENCY_ONE:1
+CONCURRENCY_SOME:5
+CONCURRENCY_TWO:2
+NUM_ITERATIONS_LARGE:10000
+NUM_ITERATIONS_LOW:100
+NUM_ITERATIONS_MODERATE:1000
+NUM_ITERATIONS_VERY_LOW:10
+SEED:0
+TEST_TEMP_DIR:/tmp/1581774662022-0
+TIMEOUT_LONG:PT1M
+TIMEOUT_NORMAL:PT10S
+TIMEOUT_SHORT:PT1S
+TIMEOUT_VERY_SHORT:PT0.1S
+TRAVIS_BUILD:false
+14:51:02,255 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/test/target/test-classes/logback-test.xml]
+14:51:02,655 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:51:02,674 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:51:02,697 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+14:51:02,717 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:51:02,829 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+14:51:02,847 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+14:51:02,848 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:51:02,848 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [/home/d/dginelli/corfudb.log]
+14:51:02,850 |-ERROR in ch.qos.logback.core.FileAppender[FILE] - openFile(/home/d/dginelli/corfudb.log,true) call failed. java.io.FileNotFoundException: /home/d/dginelli/corfudb.log (Permission denied)
+	at java.io.FileNotFoundException: /home/d/dginelli/corfudb.log (Permission denied)
+	at 	at java.io.FileOutputStream.open0(Native Method)
+	at 	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at 	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at 	at ch.qos.logback.core.recovery.ResilientFileOutputStream.<init>(ResilientFileOutputStream.java:26)
+	at 	at ch.qos.logback.core.FileAppender.openFile(FileAppender.java:204)
+	at 	at ch.qos.logback.core.FileAppender.start(FileAppender.java:127)
+	at 	at ch.qos.logback.core.joran.action.AppenderAction.end(AppenderAction.java:90)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.callEndAction(Interpreter.java:309)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:193)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:179)
+	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:62)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:165)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:152)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:110)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:53)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.configureByResource(ContextInitializer.java:75)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:150)
+	at 	at org.slf4j.impl.StaticLoggerBinder.init(StaticLoggerBinder.java:84)
+	at 	at org.slf4j.impl.StaticLoggerBinder.<clinit>(StaticLoggerBinder.java:55)
+	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:129)
+	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:108)
+	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:302)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:276)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:288)
+	at 	at org.corfudb.infrastructure.TestServerRouter.<clinit>(TestServerRouter.java:24)
+	at 	at org.corfudb.infrastructure.AbstractServerTest.<init>(AbstractServerTest.java:31)
+	at 	at org.corfudb.infrastructure.SequencerServerTest.<init>(SequencerServerTest.java:20)
+	at 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at 	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at 	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at 	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+14:51:02,851 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.corfudb.runtime.object] to TRACE
+14:51:02,851 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.corfudb.runtime.clients] to INFO
+14:51:02,851 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.corfudb.infrastructure] to INFO
+14:51:02,851 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [io.netty.util] to INFO
+14:51:02,851 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [io.netty.util.internal] to INFO
+14:51:02,851 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [io.netty.buffer] to INFO
+14:51:02,852 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to TRACE
+14:51:02,852 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:51:02,854 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@556aed22 - Registering current configuration as safe fallback point
+
+checkTokenPositionWorks                                     [[32mPASS[m]
+perStreamCheckTokenPositionWorks                            [[32mPASS[m]
+checkBackpointersWork                                       [[32mPASS[m]
+tokensAreIncreasing                                         [[32mPASS[m]
+responseForEachRequest                                      [[32mPASS[m]
+SequencerWillResetTails                                     [[32mPASS[m]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.657 sec - in org.corfudb.infrastructure.SequencerServerTest
+Running org.corfudb.infrastructure.LayoutServerTest
+checkMessagesValidatedAgainstPhase2PersistedData            [[32mPASS[m]
+checkPaxosPhasesPersisted                                   [[32mPASS[m]
+checkMessagesValidatedAgainstPhase1PersistedData            [[32mPASS[m]
+checkPhase1AndPhase2MessagesFromMultipleClients             [[32mPASS[m]
+bootstrapServerInstallsNewLayout                            [[32mPASS[m]
+proposeRejectsAlreadyProposed                               [[32mPASS[m]
+checkLayoutPersisted                                        [[32mPASS[m]
+nonBootstrappedServerNoLayout                               [[32mPASS[m]
+proposeRejectsLowerRanks                                    [[32mPASS[m]
+cannotBootstrapServerTwice                                  [[32mPASS[m]
+prepareRejectsLowerRanks                                    [[32mPASS[m]
+commitReturnsAck                                            [[32mPASS[m]
+checkServerEpochDoesNotRegress                              [[32mPASS[m]
+testReboot                                                  [[32mPASS[m]
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.431 sec - in org.corfudb.infrastructure.LayoutServerTest
+Running org.corfudb.infrastructure.BaseServerTest
+testPing                                                    [[32mPASS[m]
+shutdownServerDoesNotRespond                                [[32mPASS[m]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.corfudb.infrastructure.BaseServerTest
+Running org.corfudb.infrastructure.PeriodicPollPolicyTest
+successfulPolling                                           [[32mPASS[m]
+failedPolling                                               [[32mPASS[m]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.276 sec - in org.corfudb.infrastructure.PeriodicPollPolicyTest
+Running org.corfudb.infrastructure.LayoutWorkflowManagerTest
+checkRemovalOfNodes                                         [[32mPASS[m]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.corfudb.infrastructure.LayoutWorkflowManagerTest
+Running org.corfudb.infrastructure.FailureHandlerDispatcherTest
+updateLayoutOnFailure                                       [[32mPASS[m]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 sec - in org.corfudb.infrastructure.FailureHandlerDispatcherTest
+Running org.corfudb.infrastructure.log.MultiReadWriteLockTest
+testWriteAndReadLocksAreReentrant                           [[32mPASS[m]
+testLockCorrectlyDeregistered                               [[32mPASS[m]
+testWriteLockSynchronizes                                   [[32mPASS[m]
+testReadLock                                                [[32mPASS[m]
+testLockCloseIsIdempotent                                   [[32mPASS[m]
+testWriteLockNotPermittedInReadLock                         [[32mPASS[m]
+testIndependentWriteLocksDoNotSynchronize                   [[32mPASS[m]
+testCorrectLockOrder                                        [[32mPASS[m]
+testWrongUnlocksOrderCatched                                [[32mPASS[m]
+testWrongUnlocksTypeCatched                                 [[32mPASS[m]
+testIncorrectLockOrder                                      [[32mPASS[m]
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in org.corfudb.infrastructure.log.MultiReadWriteLockTest
+Running org.corfudb.infrastructure.log.StreamLogFilesTest
+testPrefixTrim                                              [[32mPASS[m]
+multiThreadedReadWrite                                      [[32mPASS[m]
+testSameAddressTrim                                         [[32mPASS[m]
+testWriteReadWithChecksum                                   [[32mPASS[m]
+testSync                                                    [[32mPASS[m]
+testTrim                                                    [[32mPASS[m]
+testStreamLogBadChecksum                                    [[32mPASS[m]
+testPrefixTrimAfterRestart                                  [[32mPASS[m]
+testStreamLogDataCorruption                                 [[32mPASS[m]
+testPrefixTrimAndStartUp                                    [[32mPASS[m]
+testOverwriteException                                      [[32mPASS[m]
+testGetGlobalTail                                           [[32mPASS[m]
+testReadingUnknownAddress                                   [[32mPASS[m]
+testWritingFileHeader                                       [[32mPASS[m]
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.553 sec - in org.corfudb.infrastructure.log.StreamLogFilesTest
+Running org.corfudb.infrastructure.log.StreamLogWithRankedAddressSpaceTest
+testProposalsLowerRank                                      [[32mPASS[m]
+testHigherRankAgainstProposal                               [[32mPASS[m]
+testProposalWithLowerRankAgainstData                        [[32mPASS[m]
+checkProposalIsIdempotent                                   [[32mPASS[m]
+testHigherRank                                              [[32mPASS[m]
+testLowerRank                                               [[32mPASS[m]
+testProposalWithHigherRankAgainstData                       [[32mPASS[m]
+testProposalsHigherRank                                     [[32mPASS[m]
+testLowerRankAgainstProposal                                [[32mPASS[m]
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.051 sec - in org.corfudb.infrastructure.log.StreamLogWithRankedAddressSpaceTest
+Running org.corfudb.infrastructure.LogUnitServerTest
+checkOverwritesFail                                         [[32mPASS[m]
+checkKnownAddresses                                         [[32mPASS[m]
+checkUnCachedWrites                                         [[32mPASS[m]
+checkThatMoreWritesArePersisted                             [[32mPASS[m]
+testVerifyWithNoVerifyLog                                   [[32mPASS[m]
+checkCacheSizeIsCorrectRatio                                [[32mPASS[m]
+checkThatWritesArePersisted                                 [[32mPASS[m]
+checkOverwriteExceptionIsNotThrownWhenTheRankIsHigher       [[32mPASS[m]
+testInvalidLogVersion                                       [[32mPASS[m]
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.415 sec - in org.corfudb.infrastructure.LogUnitServerTest
+Running org.corfudb.infrastructure.ManagementServerTest
+bootstrapManagementServer                                   [[32mPASS[m]
+triggerFailureHandler                                       [[32mPASS[m]
+checkFailureDetectorStatus                                  [[32mPASS[m]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.089 sec - in org.corfudb.infrastructure.ManagementServerTest
+Running org.corfudb.infrastructure.DataStoreTest
+testPutGetWithRestart                                       [[32mPASS[m]
+testInmemoryEviction                                        [[32mPASS[m]
+testInmemoryPutGet                                          [[32mPASS[m]
+testDatastoreEviction                                       [[32mPASS[m]
+testPutGet                                                  [[32mPASS[m]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.038 sec - in org.corfudb.infrastructure.DataStoreTest
+Running org.corfudb.runtime.clients.NettyClientRouterTest
+doesNotUpdateEpochBackward                                  [[32mPASS[m]
+nettyTlsMutualAuth                                          [[32mPASS[m]
+nettyServerClientPingableAfterFailure                       [[32mPASS[m]
+nettyTlsNoMutualAuth                                        [[32mPASS[m]
+nettyTlsUnknownClient                                       [[32mPASS[m]
+nettySaslWrongPassword                                      [[32mPASS[m]
+nettyTlsUnknownServer                                       [[32mPASS[m]
+nettyTlsUnknownClientNoMutualAuth                           [[32mPASS[m]
+nettyServerClientPingable                                   [[32mPASS[m]
+nettySasl                                                   [[32mPASS[m]
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.39 sec - in org.corfudb.runtime.clients.NettyClientRouterTest
+Running org.corfudb.runtime.clients.NettyCommTest
+nettyTlsMutualAuth                                          [[32mPASS[m]
+nettyServerClientPingableAfterFailure                       [[32mPASS[m]
+nettyTlsNoMutualAuth                                        [[32mPASS[m]
+nettyTlsUnknownClient                                       [[32mPASS[m]
+nettySaslWrongPassword                                      [[32mPASS[m]
+nettyTlsUnknownServer                                       [[32mPASS[m]
+nettyTlsUnknownClientNoMutualAuth                           [[32mPASS[m]
+nettyServerClientPingable                                   [[32mPASS[m]
+nettySasl                                                   [[32mPASS[m]
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.775 sec - in org.corfudb.runtime.clients.NettyCommTest
+Running org.corfudb.runtime.clients.LayoutClientTest
+bootstrapServerInstallsNewLayout                            [[32mPASS[m]
+proposeRejectsAlreadyProposed                               [[32mPASS[m]
+nonBootstrappedServerThrowsException                        [[32mPASS[m]
+proposeRejectsLowerRanks                                    [[32mPASS[m]
+cannotBootstrapServerTwice                                  [[32mPASS[m]
+prepareRejectsLowerRanks                                    [[32mPASS[m]
+commitReturnsAck                                            [[32mPASS[m]
+canGetNewLayoutInDifferentEpoch                             [[32mPASS[m]
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in org.corfudb.runtime.clients.LayoutClientTest
+Running org.corfudb.runtime.clients.LogUnitClientTest
+canReadWrite                                                [[32mPASS[m]
+cannotOutrank                                               [[32mPASS[m]
+valueCanBeAdopted                                           [[32mPASS[m]
+holeFillCannotOverwrite                                     [[32mPASS[m]
+flushLogunitCache                                           [[32mPASS[m]
+CorruptedDataReadThrowsException                            [[32mPASS[m]
+backpointersCanBeWrittenAndRead                             [[32mPASS[m]
+readingTrimmedAddress                                       [[32mPASS[m]
+overwriteThrowsException                                    [[32mPASS[m]
+holeFillCannotBeOverwritten                                 [[32mPASS[m]
+multiReadTest                                               [[32mPASS[m]
+canReadWriteRanked                                          [[32mPASS[m]
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.664 sec - in org.corfudb.runtime.clients.LogUnitClientTest
+Running org.corfudb.runtime.clients.ManagementClientTest
+sendHeartbeatRequest                                        [[32mPASS[m]
+handleBootstrap                                             [[32mPASS[m]
+handleFailure                                               [[32mPASS[m]
+initiateFailureHandler                                      [[32mPASS[m]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.095 sec - in org.corfudb.runtime.clients.ManagementClientTest
+Running org.corfudb.runtime.clients.BaseClientTest
+canGetVersionInfo                                           [[32mPASS[m]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.corfudb.runtime.clients.BaseClientTest
+Running org.corfudb.runtime.clients.SequencerClientTest
+checkTokenPositionWorks                                     [[32mPASS[m]
+perStreamTokensWork                                         [[32mPASS[m]
+canGetAToken                                                [[32mPASS[m]
+tokensAreIncrementing                                       [[32mPASS[m]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.corfudb.runtime.clients.SequencerClientTest
+Running org.corfudb.runtime.clients.TestClientRouterTest
+onlyDropEpochChangeMessages                                 [[32mPASS[m]
+doesNotUpdateEpochBackward                                  [[32mPASS[m]
+testRuleDropsMessages                                       [[32mPASS[m]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.02 sec - in org.corfudb.runtime.clients.TestClientRouterTest
+Running org.corfudb.runtime.checkpoint.CheckpointSmokeTest
+MultiCheckpointWriter2Test                                  [[32mPASS[m]
+testEmptyMapCP                                              [[32mPASS[m]
+smoke1Test                                                  [[32mPASS[m]
+smoke2Test                                                  [[32mPASS[m]
+emptyCheckPoint                                             [[32mPASS[m]
+checkpointWriterInterleavedTest                             [[32mPASS[m]
+checkpointWriterTest                                        [[32mPASS[m]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.638 sec - in org.corfudb.runtime.checkpoint.CheckpointSmokeTest
+Running org.corfudb.runtime.checkpoint.CheckpointTest
+periodicCkpointNoUpdatesTest                                [[32mPASS[m]
+periodicCkpointTrimTest                                     [[32mPASS[m]
+transactionalReadAfterCheckpoint                            [[32mPASS[m]
+undoCkpointTest                                             [[32mPASS[m]
+delayedCkpointTest                                          [[32mPASS[m]
+emptyCkpointTest                                            [[32mPASS[m]
+prefixTrimTwiceAtSameAddress                                [[32mPASS[m]
+periodicCkpointTest                                         [[32mPASS[m]
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.084 sec - in org.corfudb.runtime.checkpoint.CheckpointTest
+Running org.corfudb.runtime.checkpoint.CheckpointTrimTest
+testSuccessiveCheckpointTrim                                [[32mPASS[m]
+testCheckpointTrimDuringPlayback                            [[32mPASS[m]
+testCheckpointTrim                                          [[32mPASS[m]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.249 sec - in org.corfudb.runtime.checkpoint.CheckpointTrimTest
+Running org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest
+IHashAlwaysConflicts                                        [[32mPASS[m]
+ExtendedIHashNoConflicts                                    [[32mPASS[m]
+threadShouldAbortAfterConflict                              [[32mPASS[m]
+OptimisticStreamGetUpdatedCorrectlyWithNestedTransaction    [[32mPASS[m]
+otherThreadCannotReadOptimisticWrites                       [[32mPASS[m]
+nestedTransactionCanBeAborted                               [[32mPASS[m]
+modifyingMultipleKeysCausesAbort                            [[32mPASS[m]
+nestedTransactionsCanBeReadDuringCommit                     [[32mPASS[m]
+IHashNoConflicts                                            [[32mPASS[m]
+collide16Bit                                                [[32mPASS[m]
+writeOnlyTransactionCommitsInMemory                         [[32mPASS[m]
+checkConflictParameters                                     [[32mPASS[m]
+customConflictObjectsNoConflictNoAbort                      [[32mPASS[m]
+customConflictObjectsConflictAborts                         [[32mPASS[m]
+customHasDoesNotConflict                                    [[32mPASS[m]
+nestedTransactionsAreIsolatedAcrossThreads                  [[32mPASS[m]
+readOwnWrites                                               [[32mPASS[m]
+customSameHashAlwaysConflicts                               [[32mPASS[m]
+ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.404 sec - in org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest
+Running org.corfudb.runtime.object.transactions.SnapshotTransactionContextTest
+snapshotReadableWithConcurrentWrites                        [[32mPASS[m]
+snapshotReadable                                            [[32mPASS[m]
+testSnapshotTxNestedImplicitTx                              [[32mPASS[m]
+testSnapshotTxNestedExplicitTx                              [[32mPASS[m]
+ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.3 sec - in org.corfudb.runtime.object.transactions.SnapshotTransactionContextTest
+Running org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest
+testAbortWWThreaded                                         [[32mPASS[m] [TPS=10;Aborts=0.00%]
+testOpacityInterleaved                                      [[32mPASS[m]
+testOptimismThreaded                                        [[32mPASS[m]
+concurrentTransactionsNonConflictingKeysSameHash            [[32mPASS[m]
+testAbortWWInterleaved                                      [[32mPASS[m] [TPS=10;Aborts=0.00%]
+testOptimismInterleaved                                     [[32mPASS[m]
+testNoWriteConflictSimpleOptimistic                         [[32mPASS[m]
+testOpacityThreaded                                         [[32mPASS[m]
+checkRollbackNested                                         [[32mPASS[m]
+finegrainedUpdatesDoNotConflict                             [[32mPASS[m]
+ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.846 sec - in org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest
+Running org.corfudb.runtime.object.transactions.StreamTest
+mixBackpointers                                             [[32mPASS[m]
+sequencerTrimTest                                           [[32mPASS[m]
+testBackpointersSvOverwriteRetry                            [[32mPASS[m]
+testTxnOverwriteRetry                                       [[32mPASS[m]
+testOverWriteRetry                                          [[32mPASS[m]
+sequencerOverflowTest                                       [[32mPASS[m]
+testConcurrentStreamRW                                      [[32mPASS[m] [Aborts=3.33%;Aborts=3.33%;Aborts=3.33%]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.455 sec - in org.corfudb.runtime.object.transactions.StreamTest
+Running org.corfudb.runtime.object.transactions.WriteAfterWriteTransactionContextTest
+concurrentModificationsCauseAbort                           [[32mPASS[m]
+ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.144 sec - in org.corfudb.runtime.object.transactions.WriteAfterWriteTransactionContextTest
+Running org.corfudb.runtime.object.transactions.TXsFromTwoRuntimesTest
+staggeredTXsNoConflict                                      [[32mPASS[m]
+staggeredTXsConflict                                        [[32mPASS[m]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in org.corfudb.runtime.object.transactions.TXsFromTwoRuntimesTest
+Running org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest
+testAbortWWThreaded                                         [[32mPASS[m] [TPS=10;Aborts=0.00%]
+testOpacityInterleaved                                      [[32mPASS[m]
+testAbortWWInterleaved                                      [[32mPASS[m] [TPS=10;Aborts=0.00%]
+simpleWWTest                                                [[32mPASS[m]
+testNoWriteConflictSimpleWW                                 [[32mPASS[m]
+testRWConflictWWThreaded                                    [[32mPASS[m]
+testOpacityThreaded                                         [[32mPASS[m]
+testRWConflictWWInterleaved                                 [[32mPASS[m]
+finegrainedUpdatesDoNotConflict                             [[32mPASS[m]
+ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.898 sec - in org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest
+Running org.corfudb.runtime.object.transactions.SequencerCacheTest
+testSequencerCacheTrim                                      [[32mPASS[m]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.265 sec - in org.corfudb.runtime.object.transactions.SequencerCacheTest
+Running org.corfudb.runtime.object.transactions.ImplicitTransactionsTest
+implicitTransactionalMethodAreNotNested                     [[32mPASS[m]
+runtimeExceptionAbortNestedTransaction                      [[32mPASS[m]
+implicitTransactionalMethodIsInTransaction                  [[32mPASS[m]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.107 sec - in org.corfudb.runtime.object.transactions.ImplicitTransactionsTest
+Running org.corfudb.runtime.object.transactions.UndoTest
+ckMultiStreamRollback                                       [[32mPASS[m]
+ckMultiStreamRollback2                                      [[32mPASS[m]
+canRollbackWithoutUndo                                      [[32mPASS[m]
+ckCorrectUndo                                               [[32mPASS[m]
+ckRollbackToRightPlace                                      [[32mPASS[m]
+canUndoAfterNoUndo                                          [[32mPASS[m] [reset rebuild time=0ms;undo rebuild time=0ms]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.86 sec - in org.corfudb.runtime.object.transactions.UndoTest
+Running org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest
+testCorfuSharedCounterConcurrentReads                       [[32mPASS[m]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.109 sec - in org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest
+Running org.corfudb.runtime.object.CorfuSMRObjectProxyTest
+canUseAnnotations                                           [[32mPASS[m]
+canOpenObjectWithTwoRuntimes                                [[32mPASS[m]
+doesNotResetSerializerIfMapAlreadyExists                    [[32mPASS[m]
+canReadWriteToSingle                                        [[32mPASS[m]
+canUseCustomSerializer                                      [[32mPASS[m]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.213 sec - in org.corfudb.runtime.object.CorfuSMRObjectProxyTest
+Running org.corfudb.runtime.object.CompileProxyTest
+testObjectCounterSimple                                     [[32mPASS[m]
+testCorfuMapConcurrency                                     [[32mPASS[m]
+testObjectCounterWriteConcurrency                           [[32mPASS[m]
+testObjectCounterConcurrencyStream                          [[32mPASS[m]
+testObjectMapSimple                                         [[32mPASS[m]
+testObjectCounterCASConcurrency                             [[32mPASS[m]
+testObjectCompoundWriteConcurrency                          [[32mPASS[m]
+testObjectCompoundWriteConcurrencyStream                    [[32mPASS[m]
+testObjectCounterReadConcurrency                            [[32mPASS[m]
+testObjectCompoundSimple                                    [[32mPASS[m]
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.248 sec - in org.corfudb.runtime.object.CompileProxyTest
+Running org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest
+overwriteThrowsException                                    [[32mPASS[m]
+readOnlyCommitted                                           [[32mPASS[m]
+canWriteRead                                                [[32mPASS[m]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.358 sec - in org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest
+Running org.corfudb.runtime.view.replication.ChainReplicationProtocolTest
+failedWriteIsPropagated                                     [[32mPASS[m]
+failedWriteCanBeRead                                        [[32mPASS[m]
+overwriteThrowsException                                    [[32mPASS[m]
+readOnlyCommitted                                           [[32mPASS[m]
+canWriteRead                                                [[32mPASS[m]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.408 sec - in org.corfudb.runtime.view.replication.ChainReplicationProtocolTest
+Running org.corfudb.runtime.view.AddressSpaceViewTest
+testGetTrimMark                                             [[32mPASS[m]
+readAllWithHoleFill                                         [[32mPASS[m]
+ensureStripingReadAllWorks                                  [[32mPASS[m]
+ensureStripingWorks                                         [[32mPASS[m]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 sec - in org.corfudb.runtime.view.AddressSpaceViewTest
+Running org.corfudb.runtime.view.LayoutViewTest
+getConsensusFromCurrentMembers                              [[32mPASS[m]
+canSetLayout                                                [[32mPASS[m]
+reconfigurationDuringDataOperations                         [[32mPASS[m]
+canTolerateLayoutServerFailure                              [[32mPASS[m]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.203 sec - in org.corfudb.runtime.view.LayoutViewTest
+Running org.corfudb.runtime.view.ChainReplicationViewTest
+ensureAllUnitsContainData                                   [[32mPASS[m]
+canReadWriteToSingleConcurrent                              [[32mPASS[m]
+canReadWriteToMultiple                                      [[32mPASS[m]
+canReadWriteToSingle                                        [[32mPASS[m]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec - in org.corfudb.runtime.view.ChainReplicationViewTest
+Running org.corfudb.runtime.view.SequencerViewTest
+checkBackPointersWork                                       [[32mPASS[m]
+canAcquireFirstToken                                        [[32mPASS[m]
+tokensAreIncrementing                                       [[32mPASS[m]
+checkStreamTokensWork                                       [[32mPASS[m]
+checkTokenWorks                                             [[32mPASS[m]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.168 sec - in org.corfudb.runtime.view.SequencerViewTest
+Running org.corfudb.runtime.view.StreamsViewTest
+canCopyStream                                               [[32mPASS[m]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.035 sec - in org.corfudb.runtime.view.StreamsViewTest
+Running org.corfudb.runtime.view.ManagementViewTest
+testAddNode                                                 [[31mFAIL[m - ComparisonFailure:L847]
+ckSequencerFailoverTXResolution1                            [[32mPASS[m]
+handleTransientFailure                                      [[32mPASS[m]
+ckSequencerFailoverTXResolution                             [[32mPASS[m]
+invokeFailureHandler                                        [[32mPASS[m]
+blockRecoverySequencerUntilReset                            [[32mPASS[m]
+testSequencerFailover                                       [[32mPASS[m]
+sealDoesNotModifyClientRouterEpoch                          [[32mPASS[m]
+sequencerFailoverBackpointerCheck                           [[32mPASS[m]
+removeSingleNodeFailure                                     [[32mPASS[m]
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.281 sec <<< FAILURE! - in org.corfudb.runtime.view.ManagementViewTest
+testAddNode(org.corfudb.runtime.view.ManagementViewTest)  Time elapsed: 0.089 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...utServers":["test:0"[],"sequencers":["test:0"],"segments":[{"replicationMode":"CHAIN_REPLICATION","start":0,"end":-1,"stripes":[{"logServers":["test:0"]}]}],"unresponsiveServers":[],"epoch":0]}"> but was:<...utServers":["test:0"[,"test:1"],"sequencers":["test:0","test:1"],"segments":[{"replicationMode":"CHAIN_REPLICATION","start":0,"end":0,"stripes":[{"logServers":["test:0"]}]},{"replicationMode":"CHAIN_REPLICATION","start":1,"end":-1,"stripes":[{"logServers":["test:0","test:1"]}]}],"unresponsiveServers":[],"epoch":1]}">
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at org.corfudb.runtime.view.ManagementViewTest.testAddNode(ManagementViewTest.java:847)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.corfudb.AbstractCorfuTest$1$1.evaluate(AbstractCorfuTest.java:76)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+Running org.corfudb.runtime.view.StreamViewTest
+canReadWriteFromStreamConcurrent                            [[32mPASS[m]
+canReadWriteFromStream                                      [[32mPASS[m]
+canSeekOnStream                                             [[32mPASS[m]
+streamCanSurviveOverwriteException                          [[32mPASS[m]
+canFindInStream                                             [[32mPASS[m]
+testRemainingUpToWithTrim                                   [[32mPASS[m]
+canReadWriteFromStreamWithoutBackpointers                   [[32mPASS[m]
+streamWillHoleFill                                          [[32mPASS[m]
+canDoPreviousOnStream                                       [[32mPASS[m]
+canReadWriteFromCachedStream                                [[32mPASS[m]
+prefixTrimThrowsException                                   [[32mPASS[m]
+streamWithHoleFill                                          [[32mPASS[m]
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 60.41 sec - in org.corfudb.runtime.view.StreamViewTest
+Running org.corfudb.runtime.view.LayoutTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.corfudb.runtime.view.LayoutTest
+Running org.corfudb.runtime.view.QuorumReplicationStreamViewTest
+canReadWriteFromStreamConcurrent                            [[32mPASS[m]
+canReadWriteFromStream                                      [[32mPASS[m]
+canSeekOnStream                                             [[32mPASS[m]
+streamCanSurviveOverwriteException                          [[32mPASS[m]
+canFindInStream                                             [[32mPASS[m]
+canReadWriteFromStreamWithoutBackpointers                   [[32mPASS[m]
+streamWillHoleFill                                          [[32mPASS[m]
+canDoPreviousOnStream                                       [[32mPASS[m]
+canReadWriteFromCachedStream                                [[32mPASS[m]
+streamWithHoleFill                                          [[32mPASS[m]
+testRemainingUpToWithTrim                                   [[32mPASS[m]
+prefixTrimThrowsException                                   [[32mPASS[m]
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.029 sec - in org.corfudb.runtime.view.QuorumReplicationStreamViewTest
+Running org.corfudb.runtime.view.QuorumFuturesFactoryTest
+testException                                               [[32mPASS[m]
+test3FuturesCompleteWithResolvedConflict                    [[32mPASS[m]
+testCanceledFromInside                                      [[32mPASS[m]
+test3FuturesCompleteWithUnresolvedConflict                  [[32mPASS[m]
+testSingleFutureIncompleteComplete                          [[32mPASS[m]
+testFailFastExceptionSingle                                 [[32mPASS[m]
+testInfiniteGet                                             [[32mPASS[m]
+testCanceledPlusException                                   [[32mPASS[m]
+test3FuturesWithFirstWinnerIncompleteComplete               [[32mPASS[m]
+test2FuturesIncompleteComplete                              [[32mPASS[m]
+test3FuturesIncompleteComplete                              [[32mPASS[m]
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.906 sec - in org.corfudb.runtime.view.QuorumFuturesFactoryTest
+Running org.corfudb.runtime.view.stream.BackpointerStreamViewTest
+moreReadQueueTest                                           [[32mPASS[m]
+headOfStreamBackpointerTermination                          [[32mPASS[m]
+hasNextTest                                                 [[32mPASS[m]
+seekSkipTest                                                [[32mPASS[m]
+readQueueTest                                               [[32mPASS[m]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.201 sec - in org.corfudb.runtime.view.stream.BackpointerStreamViewTest
+Running org.corfudb.runtime.view.LayoutSealTest
+successfulChainSeal                                         [[32mPASS[m]
+successfulQuorumSeal                                        [[32mPASS[m]
+failingQuorumSeal                                           [[32mPASS[m]
+failingChainSeal                                            [[32mPASS[m]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.462 sec - in org.corfudb.runtime.view.LayoutSealTest
+Running org.corfudb.runtime.view.ObjectsViewTest
+cannotCopyNonCorfuObject                                    [[32mPASS[m]
+canAbortNoTransaction                                       [[32mPASS[m]
+unrelatedTransactionDoesNotConflict                         [[32mPASS[m]
+unrelatedStreamDoesNotConflict                              [[32mPASS[m]
+abortedTransactionDoesNotConflict                           [[32mPASS[m]
+canCopyObject                                               [[32mPASS[m]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.16 sec - in org.corfudb.runtime.view.ObjectsViewTest
+Running org.corfudb.runtime.collections.CorfuMapTest
+smrMapCanContainCustomObjects                               [[32mPASS[m]
+canUpdateSingleObjectTransacationallyWhenCached             [[32mPASS[m]
+concurrentAbortMultiViewInterleaved                         [[32mPASS[m] [TPS=1695;Aborts=9.20%]
+unusedMutatorAccessor                                       [[32mPASS[m]
+canContainOtherCorfuObjects                                 [[32mPASS[m]
+multipleTXesAreApplied                                      [[32mPASS[m]
+abortedTransactionsCannotBeReadOnSingleObject               [[32mPASS[m]
+loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=3289;RPS=17241]
+multipleTXesAreAppliedWOAccessors                           [[32mPASS[m]
+collectionsStreamInterface                                  [[32mPASS[m]
+mutatorFollowedByATransaction                               [[32mPASS[m]
+canGetID                                                    [[32mPASS[m]
+readSetDiffFromWriteSet                                     [[32mPASS[m]
+canUpdateSingleObjectTransacationally                       [[32mPASS[m]
+canContainNullObjects                                       [[32mPASS[m]
+loadsFollowedByGets                                         [[32mPASS[m]
+canWriteScanAndFilterToSingle                               [[32mPASS[m]
+concurrentAbortMultiViewThreaded                            [[32mPASS[m] [TPS=95;Aborts=8.60%]
+bulkReads                                                   [[32mPASS[m] [Time to sync whole stream=396 us]
+loadsFollowedByGetsConcurrentMultiView                      [[32mPASS[m] [WPS=838;RPS=40000]
+smrMapCanContainCustomObjectsInsideTXes                     [[32mPASS[m]
+canReadWriteToSingle                                        [[32mPASS[m]
+objectViewCorrectlyReportsInsideTX                          [[32mPASS[m]
+modificationDuringTransactionCausesAbort                    [[32mPASS[m]
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 107.954 sec - in org.corfudb.runtime.collections.CorfuMapTest
+Running org.corfudb.runtime.collections.SMRMapEntrySetTest
+manipulateSetsConcurrent                                    [[32mPASS[m]
+manipulateSets                                              [[32mPASS[m]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.093 sec - in org.corfudb.runtime.collections.SMRMapEntrySetTest
+Running org.corfudb.runtime.collections.FGMapTest
+canClearInTX                                                [[32mPASS[m]
+loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=3906;RPS=10870]
+abortRateIsLowForSimpleTX                                   [[32mPASS[m] [TPS=2358;Aborts=0.00%]
+canClear                                                    [[32mPASS[m]
+canNestTX                                                   [[32mPASS[m]
+checkClearCalls                                             [[32mPASS[m] [OPS=92]
+sizeIsCorrect                                               [[32mPASS[m]
+canReadWriteToSingle                                        [[32mPASS[m]
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.19 sec - in org.corfudb.runtime.collections.FGMapTest
+Running org.corfudb.runtime.collections.SMRMapTest
+smrMapCanContainCustomObjects                               [[32mPASS[m]
+canUpdateSingleObjectTransacationallyWhenCached             [[32mPASS[m]
+concurrentAbortMultiViewInterleaved                         [[32mPASS[m] [TPS=1754;Aborts=10.00%]
+unusedMutatorAccessor                                       [[32mPASS[m]
+canContainOtherCorfuObjects                                 [[32mPASS[m]
+multipleTXesAreApplied                                      [[32mPASS[m]
+abortedTransactionsCannotBeReadOnSingleObject               [[32mPASS[m]
+loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=5376;RPS=55556]
+multipleTXesAreAppliedWOAccessors                           [[32mPASS[m]
+collectionsStreamInterface                                  [[32mPASS[m]
+mutatorFollowedByATransaction                               [[32mPASS[m]
+canGetID                                                    [[32mPASS[m]
+readSetDiffFromWriteSet                                     [[32mPASS[m]
+canUpdateSingleObjectTransacationally                       [[32mPASS[m]
+canContainNullObjects                                       [[32mPASS[m]
+loadsFollowedByGets                                         [[32mPASS[m]
+canWriteScanAndFilterToSingle                               [[32mPASS[m]
+concurrentAbortMultiViewThreaded                            [[32mPASS[m] [TPS=100;Aborts=0.00%]
+bulkReads                                                   [[32mPASS[m] [Time to sync whole stream=314 us]
+loadsFollowedByGetsConcurrentMultiView                      [[32mPASS[m] [WPS=834;RPS=46729]
+smrMapCanContainCustomObjectsInsideTXes                     [[32mPASS[m]
+canReadWriteToSingle                                        [[32mPASS[m]
+objectViewCorrectlyReportsInsideTX                          [[32mPASS[m]
+modificationDuringTransactionCausesAbort                    [[32mPASS[m]
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 107.273 sec - in org.corfudb.runtime.collections.SMRMapTest
+Running org.corfudb.runtime.collections.SMRMultiLogunitTest
+manyWritesThenRead                                          [[32mPASS[m]
+multiThreadedManyWritesThenRead                             [[32mPASS[m]
+writeDualRead                                               [[32mPASS[m]
+simpleWriteRead                                             [[32mPASS[m]
+transactionalManyWritesThenRead                             [[32mPASS[m]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.567 sec - in org.corfudb.runtime.collections.SMRMultiLogunitTest
+Running org.corfudb.runtime.collections.CorfuTableTest
+canReadWithoutIndexes                                       [[32mPASS[m]
+canReadFromEachIndex                                        [[32mPASS[m]
+doUpdateIndicesOnRemove                                     [[32mPASS[m]
+canSetNewIndex                                              [[32mPASS[m]
+canSetIndexIfNoneSoFar                                      [[32mPASS[m]
+emptyIndexesReturnEmptyValues                               [[32mPASS[m]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.152 sec - in org.corfudb.runtime.collections.CorfuTableTest
+Running org.corfudb.runtime.collections.PutIfAbsentMapTest
+putIfAbsentTestConcurrent                                   [[32mPASS[m]
+putIfAbsentTest                                             [[32mPASS[m]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.062 sec - in org.corfudb.runtime.collections.PutIfAbsentMapTest
+Running org.corfudb.runtime.concurrent.StreamSeekAtomicityTest
+ckCommitAtomicity2                                          [[32mPASS[m]
+ckCommitAtomicity3                                          [[32mPASS[m]
+ckCommitAtomicity                                           [[32mPASS[m]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.485 sec - in org.corfudb.runtime.concurrent.StreamSeekAtomicityTest
+Running org.corfudb.runtime.concurrent.MultipleNonOverlappingTest
+testStress                                                  [[32mPASS[m]
+testStress2                                                 [[32mPASS[m]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.696 sec - in org.corfudb.runtime.concurrent.MultipleNonOverlappingTest
+Running org.corfudb.runtime.concurrent.MapsAsMQsTest
+useMapsAsMQs                                                [[32mPASS[m]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.233 sec - in org.corfudb.runtime.concurrent.MapsAsMQsTest
+Running org.corfudb.runtime.CorfuRuntimeTest
+doesNotUpdateToLayoutWithSmallerEpoch                       [[32mPASS[m]
+checkValidLayout                                            [[32mPASS[m]
+canInstantiateRuntimeWithoutTestRef                         [[32mPASS[m]
+doesNotAllowReadsAfterSealAndBeforeNewLayout                [[32mPASS[m]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.769 sec - in org.corfudb.runtime.CorfuRuntimeTest
+Running org.corfudb.util.retry.IRetryTest
+testIRetryIsAbleToThrowCatchedExceptions                    [[32mPASS[m]
+testIRetryReturnsValueAfterLotsOfRetries                    [[32mPASS[m]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.101 sec - in org.corfudb.util.retry.IRetryTest
+Running org.corfudb.util.serializer.SerializersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.corfudb.util.serializer.SerializersTest
+Running org.corfudb.AbstractCorfuConcurrencyTest
+concurrentTestsThrowExceptions                              [[32mPASS[m]
+concurrentTestsExecute                                      [[32mPASS[m]
+concurrentTestsTimeout                                      [[32mPASS[m]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in org.corfudb.AbstractCorfuConcurrencyTest
+Running org.corfudb.recovery.FastObjectLoaderTest
+canReadCheckpointWithoutTrim                                [[32mPASS[m]
+canRecreateCorfuTableWithCheckpoint                         [[32mPASS[m]
+canRecreateMixOfMaps                                        [[32mPASS[m]
+canReadHoles                                                [[32mPASS[m]
+canFindTailsWithCheckPoints                                 [[32mPASS[m]
+canReadCheckPointMultipleStreamTrimWithLeftOver             [[32mPASS[m]
+canReadWithEntriesInterleavingCPS                           [[32mPASS[m]
+canRecreateMapWithCorrectSerializer                         [[32mPASS[m]
+failBecauseOfTrimAnd1Attempt                                [[32mPASS[m]
+canReadWhenTheUserHasNoCheckpoint                           [[32mPASS[m]
+canRollBack                                                 [[32mPASS[m]
+canReadWithTruncatedCheckPoint                              [[32mPASS[m]
+doReconstructTransactionStreamTail                          [[32mPASS[m]
+canReadWithCacheDisable                                     [[32mPASS[m]
+doNotReconstructEmptyCheckpoints                            [[32mPASS[m]
+canReadRankOnlyEntries                                      [[32mPASS[m]
+canRecreateCorfuTable                                       [[32mPASS[m]
+canReadCheckPointMultipleStreamsTrim                        [[32mPASS[m]
+canReadLogTerminatedWithCheckpoint                          [[32mPASS[m]
+canReadCheckPointMultipleStream                             [[32mPASS[m]
+canReloadMaps                                               [[32mPASS[m]
+canRecreateCustomWithSerializer                             [[32mPASS[m]
+ignoreStreamForRuntimeButNotStreamTails                     [[32mPASS[m]
+canFindTailsRecoverSequencerMode                            [[32mPASS[m]
+canRecreateCorfuTableWithIndex                              [[32mPASS[m]
+canLoadWithCustomBulkRead                                   [[32mPASS[m]
+doNotFailBecauseTrimIsFirst                                 [[32mPASS[m]
+doNotReconstructTransactionStreams                          [[32mPASS[m]
+canFindTailsWithFailedCheckpoint                            [[32mPASS[m]
+canFindTailsWithOnlyCheckpointAndTrim                       [[32mPASS[m]
+canReadMultipleCheckPointMultipleStreams                    [[32mPASS[m]
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 156.336 sec - in org.corfudb.recovery.FastObjectLoaderTest
+
+Results :
+
+Failed tests: 
+  ManagementViewTest.testAddNode:847 expected:<...utServers":["test:0"[],"sequencers":["test:0"],"segments":[{"replicationMode":"CHAIN_REPLICATION","start":0,"end":-1,"stripes":[{"logServers":["test:0"]}]}],"unresponsiveServers":[],"epoch":0]}"> but was:<...utServers":["test:0"[,"test:1"],"sequencers":["test:0","test:1"],"segments":[{"replicationMode":"CHAIN_REPLICATION","start":0,"end":0,"stripes":[{"logServers":["test:0"]}]},{"replicationMode":"CHAIN_REPLICATION","start":1,"end":-1,"stripes":[{"logServers":["test:0","test:1"]}]}],"unresponsiveServers":[],"epoch":1]}">
+
+Tests run: 439, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] corfu .............................................. SUCCESS [  3.066 s]
+[INFO] format ............................................. SUCCESS [  8.659 s]
+[INFO] annotations ........................................ SUCCESS [  6.916 s]
+[INFO] annotationProcessor ................................ SUCCESS [  2.681 s]
+[INFO] runtime ............................................ SUCCESS [  8.027 s]
+[INFO] infrastructure ..................................... SUCCESS [  2.338 s]
+[INFO] cmdlets ............................................ SUCCESS [  6.724 s]
+[INFO] test ............................................... FAILURE [19:43 min]
+[INFO] samples ............................................ SKIPPED
+[INFO] logReader .......................................... SKIPPED
+[INFO] debian ............................................. SKIPPED
+[INFO] generator .......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20:23 min
+[INFO] Finished at: 2020-02-15T15:10:38+01:00
+[INFO] Final Memory: 40M/96M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project test: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/test/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project test: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/test/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-CorfuDB-CorfuDB-293310382-20171026-213814_bugonly-firstCommit/test/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :test
