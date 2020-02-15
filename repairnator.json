@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Srax/cphbusiness-sem3-ci",
-  "bugCommit": "https://github.com/Srax/cphbusiness-sem3-ci/compare/5bd05dab095b...9722550f4fbf",
-  "failingModule": "/root/workspace/Srax/cphbusiness-sem3-ci/371038171",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "dk.cphbusiness.cphbusiness.sem3.ci.MyFunctionalityTest",
-      "failingMethods": [
-        "dk.cphbusiness.cphbusiness.sem3.ci.MyFunctionalityTest#testFunctionality"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:15 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:15:08 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 20028008,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 51,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Srax-cphbusiness-sem3-ci-371038171-20180425-143115-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Srax-cphbusiness-sem3-ci-371038171-20180425-143115-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c10\u003e but was:\u003c5\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.cphbusiness.cphbusiness.sem3.ci.MyFunctionalityTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.cphbusiness.cphbusiness.sem3.ci.MyFunctionalityTest",
+        "testMethod": "testFunctionality",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c10\u003e but was:\u003c5\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {}
 }
