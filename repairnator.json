@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "OpenGamma/Strata",
-  "bugCommit": "https://github.com/OpenGamma/Strata/compare/f46c4c9f3f08...f440f89d3a32",
-  "failingModule": "/root/workspace/OpenGamma/Strata/267298894/modules/loader",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.joda.beans.test.BeanComparisonError"
-  ],
-  "totalNumberRunningTests": 10566,
-  "failing-test-cases": [
-    {
-      "className": "com.opengamma.strata.loader.csv.TradeCsvLoaderTest",
-      "failingMethods": [
-        "com.opengamma.strata.loader.csv.TradeCsvLoaderTest#test_load_swap_all"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:00 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:44:19 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 168258952,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1816,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1376,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1376
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-OpenGamma-Strata-267300723-20170822-204901-firstCommit/modules/loader",
+    "overallMetrics": {
+      "numberRunning": 10566,
+      "numberPassing": 10565,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.joda.beans.test.BeanComparisonError",
-          "failureDetail": "Bean did not equal expected. Differences:\n.product.legs[6].calculation.firstIndexValue: Was null, but expected Double \u003c121.0\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.opengamma.strata.loader.csv.TradeCsvLoaderTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.opengamma.strata.loader.csv.TradeCsvLoaderTest",
+        "testMethod": "test_load_swap_all",
+        "failureName": "org.joda.beans.test.BeanComparisonError",
+        "detail": "Bean did not equal expected. Differences:\n.product.legs[6].calculation.firstIndexValue: Was null, but expected Double \u003c121.0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1602,
+    "numberTestFiles": 1113,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  },
+  "commits": {}
 }
