@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Jmaquin/kata-mastermind",
-  "bugCommit": "https://github.com/Jmaquin/kata-mastermind/compare/f3ea9f4593bc...b56fca3b60c6",
-  "failingModule": "/root/workspace/Jmaquin/kata-mastermind/367143339",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 21,
-  "failing-test-cases": [
-    {
-      "className": "com.domain.PawnsSelectionShould",
-      "failingMethods": [
-        "com.domain.PawnsSelectionShould#throw_exception_when_add_and_size_is_four"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:47 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:15:47 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 45008136,
+      "totalMemory": 82829312
+    },
+    "totalDuration": 116,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 21,
+      "numberPassing": 20,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Expected test to throw (an instance of com.Exception.PawnsSelectionAlreadyCompleteException and exception with message a string containing \"Pawns selection already complete!\")",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.domain.PawnsSelectionShould",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.domain.PawnsSelectionShould",
+        "testMethod": "throw_exception_when_add_and_size_is_four",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected test to throw (an instance of com.Exception.PawnsSelectionAlreadyCompleteException and exception with message a string containing \"Pawns selection already complete!\")",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {}
 }
