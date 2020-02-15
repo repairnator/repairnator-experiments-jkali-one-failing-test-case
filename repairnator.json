@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "CodeUTeam33/CodeU",
-  "bugCommit": "https://github.com/CodeUTeam33/CodeU/compare/2ea2c594efee...14c7a98dc6d1",
-  "failingModule": "/root/workspace/CodeUTeam33/CodeU/367376013",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 46,
-  "failing-test-cases": [
-    {
-      "className": "codeu.controller.RegisterServletTest",
-      "failingMethods": [
-        "codeu.controller.RegisterServletTest#testDoPost_NewUser"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:47:09 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 30315312,
+      "totalMemory": 98881536
+    },
+    "totalDuration": 104,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 51,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          51
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CodeUTeam33-CodeU-367376013-20180416-232744-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-CodeUTeam33-CodeU-367376013-20180416-232744-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 46,
+      "numberPassing": 45,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "codeu.controller.RegisterServletTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "codeu.controller.RegisterServletTest",
+        "testMethod": "testDoPost_NewUser",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {}
 }
