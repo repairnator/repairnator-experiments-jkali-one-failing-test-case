@@ -1,0 +1,165 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RADI 0.6
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (jacoco-initialize) @ radi ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit/target/coverage-reports/jacoco-unit.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ radi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ radi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ radi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ radi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ radi ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit/target/surefire-reports
+[INFO] Downloading: http://maven.springframework.org/release/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom
+[INFO] Downloading: http://maven.springframework.org/milestone/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom (4 KB at 14.1 KB/sec)
+[INFO] Downloading: http://maven.springframework.org/release/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
+[INFO] Downloading: http://maven.springframework.org/milestone/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom (3 KB at 86.6 KB/sec)
+[INFO] Downloading: http://maven.springframework.org/release/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar
+[INFO] Downloading: http://maven.springframework.org/milestone/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar (81 KB at 1340.2 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running nc.noumea.mairie.radi.service.HelperTest
+14:48:47,296 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit/target/test-classes/logback-test.xml]
+14:48:47,488 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:48:47,488 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:48:47,514 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+14:48:47,696 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+14:48:47,696 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+14:48:47,696 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+14:48:47,697 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [nc.noumea.mairie.radi] to TRACE
+14:48:47,697 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to ERROR
+14:48:47,697 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+14:48:47,698 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:48:47,710 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@320e400 - Registering current configuration as safe fallback point
+
+[ERROR] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.97 s <<< FAILURE! - in nc.noumea.mairie.radi.service.HelperTest
+[ERROR] formatActiveDirectoryLongDateTime_StringvaidTimeStamp(nc.noumea.mairie.radi.service.HelperTest)  Time elapsed: 0.751 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1364393325000> but was:<1364357325000>
+	at nc.noumea.mairie.radi.service.HelperTest.formatActiveDirectoryLongDateTime_StringvaidTimeStamp(HelperTest.java:32)
+
+[INFO] Running nc.noumea.mairie.radi.service.LdapWrapperServiceTest
+14:48:48.501 [main] INFO  n.n.m.radi.service.AdWrapperService - Looking for Group with Dn [CN=DSI-SIE-GL-BUDGET-RW,OU=New Datacentre,OU=DSI,OU=Z-Groupe,DC=site-mairie,DC=noumea,DC=nc] => [CN=DSI-SIE-GL-BUDGET-RW,OU=New Datacentre,OU=DSI,OU=Z-Groupe] in AD...
+14:48:48.517 [main] INFO  n.n.m.radi.service.AdWrapperService - Looking for users in Ou [OU=userOu] with search string [(&(objectClass=user)(prop=value))]...
+14:48:48.524 [main] INFO  n.n.m.radi.service.AdWrapperService - Looking for groups in Ou [OU=groupOu] with search string [(&(objectClass=group)(prop=value))]...
+14:48:48.526 [main] INFO  n.n.m.radi.service.AdWrapperService - Looking for groups in Ou [OU=groupOu] with search string [(&(objectClass=group)(prop=value))]...
+14:48:48.527 [main] INFO  n.n.m.radi.service.AdWrapperService - Looking for Group with Dn [CN=DSI-SIE-GL-BUDGET-RW,OU=New Datacentre,OU=DSI,OU=Z-Groupe,DC=site-mairie,DC=noumea,DC=nc] => [CN=DSI-SIE-GL-BUDGET-RW,OU=New Datacentre,OU=DSI,OU=Z-Groupe] in AD...
+14:48:48.542 [main] ERROR n.n.m.radi.service.AdWrapperService - Could not find Group with Dn [CN=DSI-SIE-GL-BUDGET-RW,OU=New Datacentre,OU=DSI,OU=Z-Groupe,DC=site-mairie,DC=noumea,DC=nc] => [CN=DSI-SIE-GL-BUDGET-RW,OU=New Datacentre,OU=DSI,OU=Z-Groupe] in AD
+14:48:48.543 [main] INFO  n.n.m.radi.service.AdWrapperService - Looking for users in Ou [OU=userOu] with search string [(&(objectClass=user)(prop=value))]...
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 s - in nc.noumea.mairie.radi.service.LdapWrapperServiceTest
+[INFO] Running nc.noumea.mairie.radi.service.AdServiceTest
+14:48:48.573 [main] INFO  n.n.mairie.radi.service.AdService - 1 Groups found.
+14:48:48.573 [main] INFO  n.n.mairie.radi.service.AdService - Group found: name [null]
+14:48:48.578 [main] INFO  n.n.mairie.radi.service.AdService - 0 Users found.
+14:48:48.580 [main] INFO  n.n.mairie.radi.service.AdService - 2 Groups found.
+14:48:48.581 [main] INFO  n.n.mairie.radi.service.AdService - Group found: name [null]
+14:48:48.581 [main] INFO  n.n.mairie.radi.service.AdService - Group found: name [null]
+14:48:48.583 [main] INFO  n.n.mairie.radi.service.AdService - Expected 1 group corresponding to [sAMAccountName] with value [rayni84] but found [2].
+14:48:48.585 [main] INFO  n.n.mairie.radi.service.AdService - 0 Users found.
+14:48:48.587 [main] INFO  n.n.mairie.radi.service.AdService - Did not find any user corresponding to search criteria
+14:48:48.590 [main] INFO  n.n.mairie.radi.service.AdService - 0 Groups found.
+14:48:48.590 [main] INFO  n.n.mairie.radi.service.AdService - Did not find any group corresponding to search criteria
+14:48:48.594 [main] INFO  n.n.mairie.radi.service.AdService - 2 Users found.
+14:48:48.602 [main] INFO  n.n.mairie.radi.service.AdService - displayName [null], employeeNumber [0], mail [null]
+14:48:48.603 [main] INFO  n.n.mairie.radi.service.AdService - displayName [null], employeeNumber [0], mail [null]
+14:48:48.604 [main] INFO  n.n.mairie.radi.service.AdService - Expected 1 user corresponding to [sAMAccountName] with value [rayni84] but found [2].
+14:48:48.606 [main] INFO  n.n.mairie.radi.service.AdService - 1 Groups found.
+14:48:48.606 [main] INFO  n.n.mairie.radi.service.AdService - Group found: name [null]
+14:48:48.608 [main] INFO  n.n.mairie.radi.service.AdService - 3 Users found.
+14:48:48.608 [main] INFO  n.n.mairie.radi.service.AdService - displayName [null], employeeNumber [0], mail [null]
+14:48:48.608 [main] INFO  n.n.mairie.radi.service.AdService - displayName [null], employeeNumber [0], mail [null]
+14:48:48.608 [main] INFO  n.n.mairie.radi.service.AdService - displayName [null], employeeNumber [0], mail [null]
+14:48:48.610 [main] INFO  n.n.mairie.radi.service.AdService - 0 Groups found.
+14:48:48.610 [main] INFO  n.n.mairie.radi.service.AdService - Did not find any group corresponding to search criteria
+14:48:48.611 [main] INFO  n.n.mairie.radi.service.AdService - 1 Users found.
+14:48:48.611 [main] INFO  n.n.mairie.radi.service.AdService - displayName [null], employeeNumber [0], mail [null]
+14:48:48.613 [main] INFO  n.n.mairie.radi.service.AdService - User found: displayName [null], employeeNumber [0]}, mail [null]
+14:48:48.613 [main] INFO  n.n.mairie.radi.service.AdService - 0 Groups found.
+14:48:48.614 [main] INFO  n.n.mairie.radi.service.AdService - 3 Groups found.
+14:48:48.615 [main] INFO  n.n.mairie.radi.service.AdService - Group found: name [null]
+14:48:48.615 [main] INFO  n.n.mairie.radi.service.AdService - Group found: name [null]
+14:48:48.615 [main] INFO  n.n.mairie.radi.service.AdService - Group found: name [null]
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in nc.noumea.mairie.radi.service.AdServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelperTest.formatActiveDirectoryLongDateTime_StringvaidTimeStamp:32 expected:<1364393325000> but was:<1364357325000>
+[INFO] 
+[ERROR] Tests run: 21, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.606 s
+[INFO] Finished at: 2020-02-15T14:48:49+01:00
+[INFO] Final Memory: 19M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project radi: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project radi: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:204)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:98)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:334)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:937)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:785)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
