@@ -1,0 +1,118 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:12 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:17:42 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 41209144,
+      "totalMemory": 133156864
+    },
+    "totalDuration": 206,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 69,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          69
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ViktorKob-portfolio-416368604-20180815-155332-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ViktorKob-portfolio-416368604-20180815-155332-firstCommit/tools/shared-objects",
+    "overallMetrics": {
+      "numberRunning": 412,
+      "numberPassing": 411,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.thomas.portfolio.shared_objects.hbase_index.model.meta_data.ReferencesUnitTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.thomas.portfolio.shared_objects.hbase_index.model.meta_data.ReferencesUnitTest",
+        "testMethod": "shouldForwardEqualsCallToInnerContainer",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 18,
+    "numberPlugins": 0,
+    "numberSourceFiles": 352,
+    "numberTestFiles": 142,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  }
+}
