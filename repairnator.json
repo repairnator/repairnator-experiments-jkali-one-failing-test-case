@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "BrokenNightmareTeam/JPandas",
-  "bugCommit": "https://github.com/BrokenNightmareTeam/JPandas/compare/6180de05fdd9...a46b3d17dfad",
-  "failingModule": "/root/workspace/BrokenNightmareTeam/JPandas/364745286",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 35,
-  "failing-test-cases": [
-    {
-      "className": "fr.brokennightmareteam.jpandas.TestDateFrameCreate",
-      "failingMethods": [
-        "fr.brokennightmareteam.jpandas.TestDateFrameCreate#testConstWithDifferentNumberOfColumnsFromFile"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:50:01 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 38656016,
+      "totalMemory": 125751296
+    },
+    "totalDuration": 277,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 233,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          233
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-BrokenNightmareTeam-JPandas-364745286-20180410-201832-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-BrokenNightmareTeam-JPandas-364745286-20180410-201832-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 35,
+      "numberPassing": 34,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.AssertionFailedError",
-          "failureDetail": "Should raise IllegalArgumentException",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "fr.brokennightmareteam.jpandas.TestDateFrameCreate",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "fr.brokennightmareteam.jpandas.TestDateFrameCreate",
+        "testMethod": "testConstWithDifferentNumberOfColumnsFromFile",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Should raise IllegalArgumentException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {}
 }
