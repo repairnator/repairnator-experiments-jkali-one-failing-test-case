@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "atomix/atomix",
-  "failingModule": "/root/workspace/atomix/atomix/363945468/cluster",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 51,
-  "failing-test-cases": [
-    {
-      "className": "io.atomix.cluster.impl.DefaultClusterServiceTest",
-      "failingMethods": [
-        "io.atomix.cluster.impl.DefaultClusterServiceTest#testClusterService"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-363945468-20180409-052218-firstCommit/protocols/raft",
+    "overallMetrics": {
+      "numberRunning": 797,
+      "numberPassing": 796,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c5\u003e but was:\u003c4\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.atomix.protocols.raft.RaftTest",
+        "numberRunning": 64,
+        "numberPassing": 63,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.atomix.protocols.raft.RaftTest",
+        "testMethod": "testBlockOnEvent",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberPlugins": 0,
+    "numberSourceFiles": 773,
+    "numberTestFiles": 135,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:42 PM",
+    "reproductionDateEnd": "Feb 16, 2020 1:00:33 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 40309256,
+      "totalMemory": 184320000
+    },
+    "totalDuration": 6408,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-363945468-20180409-052218-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }

@@ -1343,3 +1343,29 @@ Caused by: java.util.concurrent.TimeoutException: null
 01:00:26.392 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Transitioning to INACTIVE
 01:00:26.392 [raft-server-4] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{4} - Transitioning to INACTIVE
 01:00:26.393 [raft-server-5] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{5} - Transitioning to INACTIVE
+01:00:32.089 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to FOLLOWER
+01:00:32.199 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to FOLLOWER
+01:00:32.256 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Transitioning to FOLLOWER
+01:00:32.263 [raft-server-4] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{4} - Transitioning to FOLLOWER
+01:00:33.048 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to CANDIDATE
+01:00:33.050 [raft-server-1] INFO  i.a.p.raft.roles.CandidateRole - RaftServer{1}{role=CANDIDATE} - Starting election
+01:00:33.097 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to LEADER
+01:00:33.112 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Found leader 1
+01:00:33.128 [raft-server-4] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{4} - Found leader 1
+01:00:33.134 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Found leader 1
+01:00:33.134 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Found leader 1
+01:00:33.667 [raft-server-1] INFO  i.a.p.r.c.impl.RaftClusterContext - RaftServer{1} - Successfully joined via 4
+01:00:33.667 [raft-server-1] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{1} - Server started successfully!
+01:00:33.738 [raft-server-2] INFO  i.a.p.r.c.impl.RaftClusterContext - RaftServer{2} - Successfully joined via 1
+01:00:33.739 [raft-server-2] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{2} - Server started successfully!
+01:00:33.758 [raft-server-3] INFO  i.a.p.r.c.impl.RaftClusterContext - RaftServer{3} - Successfully joined via 1
+01:00:33.759 [raft-server-3] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{3} - Server started successfully!
+01:00:33.766 [raft-server-4] INFO  i.a.p.r.c.impl.RaftClusterContext - RaftServer{4} - Successfully joined via 1
+01:00:33.766 [raft-server-4] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{4} - Server started successfully!
+01:00:34.037 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to INACTIVE
+01:00:34.057 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to INACTIVE
+01:00:34.063 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Transitioning to INACTIVE
+01:00:34.072 [raft-server-4] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{4} - Transitioning to INACTIVE
+01:00:34.160 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to FOLLOWER
+01:00:34.205 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to FOLLOWER
+01:00:34.250 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Transitioning to FOLLOWER
