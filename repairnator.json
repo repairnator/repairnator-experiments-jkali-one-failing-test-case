@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Wikidata/Wikidata-Toolkit",
-  "bugCommit": "https://github.com/Wikidata/Wikidata-Toolkit/commit/f458175c2ddc",
-  "failingModule": "/root/workspace/Wikidata/Wikidata-Toolkit/374912266/wdtk-dumpfiles",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 520,
-  "failing-test-cases": [
-    {
-      "className": "org.wikidata.wdtk.dumpfiles.JsonDumpFileProcessingTest",
-      "failingMethods": [
-        "org.wikidata.wdtk.dumpfiles.JsonDumpFileProcessingTest#testTimeout"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:12 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:16:24 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 26055120,
+      "totalMemory": 103960576
+    },
+    "totalDuration": 128,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          30
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Wikidata-Wikidata-Toolkit-374912266-20180504-162735-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Wikidata-Wikidata-Toolkit-374912266-20180504-162735-firstCommit/wdtk-dumpfiles",
+    "overallMetrics": {
+      "numberRunning": 520,
+      "numberPassing": 519,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Expected exception: org.wikidata.wdtk.dumpfiles.EntityTimerProcessor$TimeoutException",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.wikidata.wdtk.dumpfiles.JsonDumpFileProcessingTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.wikidata.wdtk.dumpfiles.JsonDumpFileProcessingTest",
+        "testMethod": "testTimeout",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: org.wikidata.wdtk.dumpfiles.EntityTimerProcessor$TimeoutException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberPlugins": 0,
+    "numberSourceFiles": 209,
+    "numberTestFiles": 81,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  }
 }
