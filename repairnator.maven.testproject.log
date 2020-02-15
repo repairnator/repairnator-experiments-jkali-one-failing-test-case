@@ -1,0 +1,348 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] sharding-jdbc
+[INFO] sharding-jdbc-core
+[INFO] sharding-jdbc-config-parent
+[INFO] sharding-jdbc-config-common
+[INFO] sharding-jdbc-config-yaml
+[INFO] sharding-jdbc-config-spring
+[INFO] sharding-jdbc-transaction-parent
+[INFO] sharding-jdbc-transaction-storage
+[INFO] sharding-jdbc-transaction
+[INFO] sharding-jdbc-transaction-async-job
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sharding-jdbc 1.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-banned-dependencies) @ sharding-jdbc ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sharding-jdbc-core 1.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-banned-dependencies) @ sharding-jdbc-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ sharding-jdbc-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-262614403-20170809-131848-firstCommit/sharding-jdbc-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ sharding-jdbc-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ sharding-jdbc-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 483 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ sharding-jdbc-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ sharding-jdbc-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-262614403-20170809-131848-firstCommit/sharding-jdbc-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 6.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 64.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1395.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+Running com.dangdang.ddframe.rdb.sharding.jdbc.core.resultset.GeneratedKeysResultSetMetaDataTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.165 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.core.resultset.GeneratedKeysResultSetMetaDataTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.core.resultset.GeneratedKeysResultSetTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.core.resultset.GeneratedKeysResultSetTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.core.resultset.ShardingResultSetTest
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.35 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.core.resultset.ShardingResultSetTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.core.statement.ShardingStatementTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.96 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.core.statement.ShardingStatementTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.core.statement.ShardingPreparedStatementTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.011 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.core.statement.ShardingPreparedStatementTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.core.datasource.ShardingDataSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.core.datasource.ShardingDataSourceTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.core.datasource.MasterSlaveDataSourceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.core.datasource.MasterSlaveDataSourceTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.core.connection.ShardingConnectionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.core.connection.ShardingConnectionTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationStatementTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.27 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationStatementTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedUpdateOperationResultSetTest
+Tests run: 82, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.704 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedUpdateOperationResultSetTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedGeneratedKeysResultSetTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedGeneratedKeysResultSetTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationConnectionTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.774 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationConnectionTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationDataSourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationDataSourceTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationResultSetTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.102 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationResultSetTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationPreparedStatementTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.334 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.unsupported.UnsupportedOperationPreparedStatementTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.adapter.DataSourceAdapterTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.327 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.adapter.DataSourceAdapterTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.adapter.ResultSetGetterAdapterTest
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.584 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.adapter.ResultSetGetterAdapterTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.adapter.StatementAdapterTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.757 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.adapter.StatementAdapterTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.adapter.ResultSetAdapterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.adapter.ResultSetAdapterTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.adapter.PreparedStatementAdapterTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.593 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.adapter.PreparedStatementAdapterTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.adapter.invocation.SetParameterMethodInvocationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.adapter.invocation.SetParameterMethodInvocationTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.adapter.invocation.JdbcMethodInvocationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.adapter.invocation.JdbcMethodInvocationTest
+Running com.dangdang.ddframe.rdb.sharding.jdbc.adapter.ConnectionAdapterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.297 sec - in com.dangdang.ddframe.rdb.sharding.jdbc.adapter.ConnectionAdapterTest
+Running com.dangdang.ddframe.rdb.sharding.api.strategy.table.TableShardingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.dangdang.ddframe.rdb.sharding.api.strategy.table.TableShardingStrategyTest
+Running com.dangdang.ddframe.rdb.sharding.api.strategy.table.NoneTableShardingAlgorithmTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.api.strategy.table.NoneTableShardingAlgorithmTest
+Running com.dangdang.ddframe.rdb.sharding.api.strategy.slave.RoundRobinSlaveLoadBalanceStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.api.strategy.slave.RoundRobinSlaveLoadBalanceStrategyTest
+Running com.dangdang.ddframe.rdb.sharding.api.strategy.database.NoneDatabaseShardingAlgorithmTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.dangdang.ddframe.rdb.sharding.api.strategy.database.NoneDatabaseShardingAlgorithmTest
+Running com.dangdang.ddframe.rdb.sharding.api.strategy.database.DatabaseShardingStrategyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.api.strategy.database.DatabaseShardingStrategyTest
+Running com.dangdang.ddframe.rdb.sharding.api.strategy.common.ShardingStrategyTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.dangdang.ddframe.rdb.sharding.api.strategy.common.ShardingStrategyTest
+Running com.dangdang.ddframe.rdb.sharding.api.ShardingValueTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.dangdang.ddframe.rdb.sharding.api.ShardingValueTest
+Running com.dangdang.ddframe.rdb.sharding.api.rule.DynamicDataNodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.api.rule.DynamicDataNodeTest
+Running com.dangdang.ddframe.rdb.sharding.api.rule.TableRuleTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.022 sec - in com.dangdang.ddframe.rdb.sharding.api.rule.TableRuleTest
+Running com.dangdang.ddframe.rdb.sharding.api.rule.BindingTableRuleTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.dangdang.ddframe.rdb.sharding.api.rule.BindingTableRuleTest
+Running com.dangdang.ddframe.rdb.sharding.api.rule.DataSourceRuleTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.api.rule.DataSourceRuleTest
+Running com.dangdang.ddframe.rdb.sharding.api.rule.ShardingRuleTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.dangdang.ddframe.rdb.sharding.api.rule.ShardingRuleTest
+Running com.dangdang.ddframe.rdb.sharding.api.rule.DataNodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.api.rule.DataNodeTest
+Running com.dangdang.ddframe.rdb.sharding.api.HintManagerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.dangdang.ddframe.rdb.sharding.api.HintManagerTest
+Running com.dangdang.ddframe.rdb.sharding.api.ShardingDataSourceFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.dangdang.ddframe.rdb.sharding.api.ShardingDataSourceFactoryTest
+Running com.dangdang.ddframe.rdb.sharding.api.MasterSlaveDataSourceFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.api.MasterSlaveDataSourceFactoryTest
+Running com.dangdang.ddframe.rdb.sharding.merger.groupby.aggregation.AccumulationAggregationUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.dangdang.ddframe.rdb.sharding.merger.groupby.aggregation.AccumulationAggregationUnitTest
+Running com.dangdang.ddframe.rdb.sharding.merger.groupby.aggregation.ComparableAggregationUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.merger.groupby.aggregation.ComparableAggregationUnitTest
+Running com.dangdang.ddframe.rdb.sharding.merger.groupby.aggregation.AggregationUnitFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.merger.groupby.aggregation.AggregationUnitFactoryTest
+Running com.dangdang.ddframe.rdb.sharding.merger.groupby.aggregation.AverageAggregationUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.merger.groupby.aggregation.AverageAggregationUnitTest
+Running com.dangdang.ddframe.rdb.sharding.merger.groupby.GroupByValueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.merger.groupby.GroupByValueTest
+Running com.dangdang.ddframe.rdb.sharding.merger.groupby.GroupByMemoryResultSetMergerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in com.dangdang.ddframe.rdb.sharding.merger.groupby.GroupByMemoryResultSetMergerTest
+Running com.dangdang.ddframe.rdb.sharding.merger.groupby.GroupByRowComparatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.dangdang.ddframe.rdb.sharding.merger.groupby.GroupByRowComparatorTest
+Running com.dangdang.ddframe.rdb.sharding.merger.groupby.GroupByStreamResultSetMergerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.dangdang.ddframe.rdb.sharding.merger.groupby.GroupByStreamResultSetMergerTest
+Running com.dangdang.ddframe.rdb.sharding.merger.common.DecoratorResultSetMergerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.dangdang.ddframe.rdb.sharding.merger.common.DecoratorResultSetMergerTest
+Running com.dangdang.ddframe.rdb.sharding.merger.common.StreamResultSetMergerTest
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in com.dangdang.ddframe.rdb.sharding.merger.common.StreamResultSetMergerTest
+Running com.dangdang.ddframe.rdb.sharding.merger.common.MemoryResultSetMergerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.dangdang.ddframe.rdb.sharding.merger.common.MemoryResultSetMergerTest
+Running com.dangdang.ddframe.rdb.sharding.merger.common.MemoryResultSetRowTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.dangdang.ddframe.rdb.sharding.merger.common.MemoryResultSetRowTest
+Running com.dangdang.ddframe.rdb.sharding.merger.MergeEngineTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.dangdang.ddframe.rdb.sharding.merger.MergeEngineTest
+Running com.dangdang.ddframe.rdb.sharding.merger.iterator.IteratorStreamResultSetMergerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.dangdang.ddframe.rdb.sharding.merger.iterator.IteratorStreamResultSetMergerTest
+Running com.dangdang.ddframe.rdb.sharding.merger.limit.LimitDecoratorResultSetMergerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.dangdang.ddframe.rdb.sharding.merger.limit.LimitDecoratorResultSetMergerTest
+Running com.dangdang.ddframe.rdb.sharding.merger.orderby.OrderByStreamResultSetMergerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.merger.orderby.OrderByStreamResultSetMergerTest
+Running com.dangdang.ddframe.rdb.sharding.merger.orderby.OrderByValueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.merger.orderby.OrderByValueTest
+Running com.dangdang.ddframe.rdb.sharding.merger.util.ResultSetUtilTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.dangdang.ddframe.rdb.sharding.merger.util.ResultSetUtilTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.UpdateStatementParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.UpdateStatementParserTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.InsertStatementParserTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.InsertStatementParserTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.DeleteStatementParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.DeleteStatementParserTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.SelectStatementTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.parsing.parser.statement.SelectStatementTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.parser.context.condition.ConditionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.dangdang.ddframe.rdb.sharding.parsing.parser.context.condition.ConditionTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.SQLParserTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.515 sec - in com.dangdang.ddframe.rdb.sharding.parsing.parser.dialect.SQLParserTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.lexer.dialect.oracle.OracleLexerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.parsing.lexer.dialect.oracle.OracleLexerTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.lexer.dialect.mysql.MySQLLexerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.parsing.lexer.dialect.mysql.MySQLLexerTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.lexer.dialect.sqlserver.SQLServerLexerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.parsing.lexer.dialect.sqlserver.SQLServerLexerTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.lexer.dialect.postgresql.PostgreSQLLexerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.parsing.lexer.dialect.postgresql.PostgreSQLLexerTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.lexer.LexerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.dangdang.ddframe.rdb.sharding.parsing.lexer.LexerTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.lexer.analyzer.TokenizerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.dangdang.ddframe.rdb.sharding.parsing.lexer.analyzer.TokenizerTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.UnsupportedParseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.parsing.UnsupportedParseTest
+Running com.dangdang.ddframe.rdb.sharding.parsing.SQLParsingEngineTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.parsing.SQLParsingEngineTest
+Running com.dangdang.ddframe.rdb.sharding.config.ShardingPropertiesConstantTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.dangdang.ddframe.rdb.sharding.config.ShardingPropertiesConstantTest
+Running com.dangdang.ddframe.rdb.sharding.config.ShardingPropertiesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.dangdang.ddframe.rdb.sharding.config.ShardingPropertiesTest
+Running com.dangdang.ddframe.rdb.sharding.keygen.DefaultKeyGeneratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.dangdang.ddframe.rdb.sharding.keygen.DefaultKeyGeneratorTest
+Running com.dangdang.ddframe.rdb.sharding.keygen.KeyGeneratorFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.keygen.KeyGeneratorFactoryTest
+Running com.dangdang.ddframe.rdb.sharding.metrics.MetricsContextTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in com.dangdang.ddframe.rdb.sharding.metrics.MetricsContextTest
+Running com.dangdang.ddframe.rdb.sharding.routing.SelectMixedTablesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.dangdang.ddframe.rdb.sharding.routing.SelectMixedTablesTest
+Running com.dangdang.ddframe.rdb.sharding.routing.DatabaseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.dangdang.ddframe.rdb.sharding.routing.DatabaseTest
+Running com.dangdang.ddframe.rdb.sharding.routing.DMLTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.dangdang.ddframe.rdb.sharding.routing.DMLTest
+Running com.dangdang.ddframe.rdb.sharding.routing.SelectSingleTableTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.03 sec - in com.dangdang.ddframe.rdb.sharding.routing.SelectSingleTableTest
+Running com.dangdang.ddframe.rdb.sharding.routing.SelectBindingTableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.dangdang.ddframe.rdb.sharding.routing.SelectBindingTableTest
+Running com.dangdang.ddframe.rdb.sharding.util.EventBusInstanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.dangdang.ddframe.rdb.sharding.util.EventBusInstanceTest
+Running com.dangdang.ddframe.rdb.sharding.util.SQLUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.dangdang.ddframe.rdb.sharding.util.SQLUtilTest
+Running com.dangdang.ddframe.rdb.sharding.util.NumberUtilTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.util.NumberUtilTest
+Running com.dangdang.ddframe.rdb.sharding.util.StringUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.dangdang.ddframe.rdb.sharding.util.StringUtilTest
+Running com.dangdang.ddframe.rdb.sharding.executor.threadlocal.ExecutorExceptionHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.dangdang.ddframe.rdb.sharding.executor.threadlocal.ExecutorExceptionHandlerTest
+Running com.dangdang.ddframe.rdb.sharding.executor.type.BatchPreparedStatementExecutorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec - in com.dangdang.ddframe.rdb.sharding.executor.type.BatchPreparedStatementExecutorTest
+Running com.dangdang.ddframe.rdb.sharding.executor.type.PreparedStatementExecutorTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in com.dangdang.ddframe.rdb.sharding.executor.type.PreparedStatementExecutorTest
+Running com.dangdang.ddframe.rdb.sharding.executor.type.StatementExecutorTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in com.dangdang.ddframe.rdb.sharding.executor.type.StatementExecutorTest
+Running com.dangdang.ddframe.rdb.sharding.rewrite.SQLBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.dangdang.ddframe.rdb.sharding.rewrite.SQLBuilderTest
+Running com.dangdang.ddframe.rdb.sharding.rewrite.SQLRewriteEngineTest
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec <<< FAILURE! - in com.dangdang.ddframe.rdb.sharding.rewrite.SQLRewriteEngineTest
+assertRewriteForDerivedOrderBy(com.dangdang.ddframe.rdb.sharding.rewrite.SQLRewriteEngineTest)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is "SELECT x.id, x.name FROM table_1 x GROUP BY x.id, x.name DESC ORDER BY id ASC,name DESC "
+     but: was "SELECT x.id, x.name FROM table_1 x GROUP BY x.id, x.name DESC ORDER BY id ASC,name DESC SELECT x.id, x.name FROM table_x x GROUP BY x.id, x.name DESC"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.dangdang.ddframe.rdb.sharding.rewrite.SQLRewriteEngineTest.assertRewriteForDerivedOrderBy(SQLRewriteEngineTest.java:240)
+
+Running com.dangdang.ddframe.rdb.sharding.constant.DatabaseTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.dangdang.ddframe.rdb.sharding.constant.DatabaseTypeTest
+Running com.dangdang.ddframe.rdb.sharding.hint.HintManagerHolderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.dangdang.ddframe.rdb.sharding.hint.HintManagerHolderTest
+Running com.dangdang.ddframe.rdb.integrate.type.hint.type.RoutingDatabaseOnlyWithHintForSelectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec - in com.dangdang.ddframe.rdb.integrate.type.hint.type.RoutingDatabaseOnlyWithHintForSelectTest
+Running com.dangdang.ddframe.rdb.integrate.type.hint.type.RoutingDatabaseOnlyWithHintForDMLTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.93 sec - in com.dangdang.ddframe.rdb.integrate.type.hint.type.RoutingDatabaseOnlyWithHintForDMLTest
+Running com.dangdang.ddframe.rdb.integrate.type.hint.type.ShardingDatabaseOnlyWithHintForSelectTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 sec - in com.dangdang.ddframe.rdb.integrate.type.hint.type.ShardingDatabaseOnlyWithHintForSelectTest
+Running com.dangdang.ddframe.rdb.integrate.type.hint.type.ShardingDatabaseOnlyWithHintForDMLTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.694 sec - in com.dangdang.ddframe.rdb.integrate.type.hint.type.ShardingDatabaseOnlyWithHintForDMLTest
+Running com.dangdang.ddframe.rdb.integrate.type.ShardingMasterSlaveTest
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.494 sec - in com.dangdang.ddframe.rdb.integrate.type.ShardingMasterSlaveTest
+Running com.dangdang.ddframe.rdb.integrate.type.ShardingDatabaseOnlyTest
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.594 sec - in com.dangdang.ddframe.rdb.integrate.type.ShardingDatabaseOnlyTest
+Running com.dangdang.ddframe.rdb.integrate.type.NullableShardingTableOnlyTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec - in com.dangdang.ddframe.rdb.integrate.type.NullableShardingTableOnlyTest
+Running com.dangdang.ddframe.rdb.integrate.type.ShardingTableOnlyTest
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.316 sec - in com.dangdang.ddframe.rdb.integrate.type.ShardingTableOnlyTest
+Running com.dangdang.ddframe.rdb.integrate.type.ShardingDatabaseAndTableDynamicTest
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.724 sec - in com.dangdang.ddframe.rdb.integrate.type.ShardingDatabaseAndTableDynamicTest
+Running com.dangdang.ddframe.rdb.integrate.type.ShardingDatabaseAndTableTest
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.896 sec - in com.dangdang.ddframe.rdb.integrate.type.ShardingDatabaseAndTableTest
+
+Results :
+
+Failed tests: 
+  SQLRewriteEngineTest.assertRewriteForDerivedOrderBy:240 
+Expected: is "SELECT x.id, x.name FROM table_1 x GROUP BY x.id, x.name DESC ORDER BY id ASC,name DESC "
+     but: was "SELECT x.id, x.name FROM table_1 x GROUP BY x.id, x.name DESC ORDER BY id ASC,name DESC SELECT x.id, x.name FROM table_x x GROUP BY x.id, x.name DESC"
+
+Tests run: 1439, Failures: 1, Errors: 0, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] sharding-jdbc ...................................... SUCCESS [  1.755 s]
+[INFO] sharding-jdbc-core ................................. FAILURE [02:01 min]
+[INFO] sharding-jdbc-config-parent ........................ SKIPPED
+[INFO] sharding-jdbc-config-common ........................ SKIPPED
+[INFO] sharding-jdbc-config-yaml .......................... SKIPPED
+[INFO] sharding-jdbc-config-spring ........................ SKIPPED
+[INFO] sharding-jdbc-transaction-parent ................... SKIPPED
+[INFO] sharding-jdbc-transaction-storage .................. SKIPPED
+[INFO] sharding-jdbc-transaction .......................... SKIPPED
+[INFO] sharding-jdbc-transaction-async-job ................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:03 min
+[INFO] Finished at: 2020-02-15T23:18:24+01:00
+[INFO] Final Memory: 19M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project sharding-jdbc-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-262614403-20170809-131848-firstCommit/sharding-jdbc-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project sharding-jdbc-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-262614403-20170809-131848-firstCommit/sharding-jdbc-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dangdangdotcom-sharding-jdbc-262614403-20170809-131848-firstCommit/sharding-jdbc-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :sharding-jdbc-core
