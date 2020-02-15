@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "commercetools/commercetools-jvm-sdk",
-  "bugCommit": "https://github.com/commercetools/commercetools-jvm-sdk/commit/77233a0758b8",
-  "failingModule": "/root/workspace/commercetools/commercetools-jvm-sdk/347719643/commercetools-sdk-base",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 291,
-  "failing-test-cases": [
-    {
-      "className": "io.sphere.sdk.models.ReferenceTest",
-      "failingMethods": [
-        "io.sphere.sdk.models.ReferenceTest#serializationDoesNotContainReferencedObject"
-      ],
-      "erroringMethods": [],
+  "projectMetrics": {
+    "numberModules": 22,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1831,
+    "numberTestFiles": 585,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-commercetools-commercetools-jvm-sdk-347719643-20180301-124848-firstCommit/commercetools-sdk-base",
+    "overallMetrics": {
+      "numberRunning": 291,
+      "numberPassing": 290,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...:\"typeId\",\"id\":\"123\"[]}\"\u003e but was:\u003c...:\"typeId\",\"id\":\"123\"[,\"obj\":{\"foo\":\"value\"}]}\"\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.sphere.sdk.models.ReferenceTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.sphere.sdk.models.ReferenceTest",
+        "testMethod": "serializationDoesNotContainReferencedObject",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...:\"typeId\",\"id\":\"123\"[]}\"\u003e but was:\u003c...:\"typeId\",\"id\":\"123\"[,\"obj\":{\"foo\":\"value\"}]}\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:46 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:22:08 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 132146200,
+      "totalMemory": 202981376
+    },
+    "totalDuration": 498,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          34
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-commercetools-commercetools-jvm-sdk-347719643-20180301-124848-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
