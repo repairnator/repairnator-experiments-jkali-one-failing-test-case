@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "alexNeto/previsao-tempo",
-  "bugCommit": "https://github.com/alexNeto/previsao-tempo/compare/0b69de0c9bc6...a83a2a27a538",
-  "failingModule": "/root/workspace/alexNeto/previsao-tempo/372755219",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 11,
-  "failing-test-cases": [
-    {
-      "className": "com.ts.previsao.tempo.utils.UrlBuilderTest",
-      "failingMethods": [
-        "com.ts.previsao.tempo.utils.UrlBuilderTest#testa_acao_de_procura_cidade"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:15:54 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 21417240,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 89,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 31,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          31
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-alexNeto-previsao-tempo-372755219-20180429-203506-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-alexNeto-previsao-tempo-372755219-20180429-203506-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 11,
+      "numberPassing": 10,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003clistaCidades?city\u003d[%]PARAMETRO\u003e but was:\u003clistaCidades?city\u003d[]PARAMETRO\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.ts.previsao.tempo.utils.UrlBuilderTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.ts.previsao.tempo.utils.UrlBuilderTest",
+        "testMethod": "testa_acao_de_procura_cidade",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003clistaCidades?city\u003d[%]PARAMETRO\u003e but was:\u003clistaCidades?city\u003d[]PARAMETRO\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 19,
+    "numberTestFiles": 16,
+    "numberLibrariesFailingModule": 55,
+    "numberLines": 0
+  },
+  "commits": {}
 }
