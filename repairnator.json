@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/commons-lang",
-  "failingModule": "/root/workspace/apache/commons-lang/279912824",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 4040,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.commons.lang3.StringUtilsTest",
-      "failingMethods": [
-        "org.apache.commons.lang3.StringUtilsTest#testStringUtilsCharSequenceContract"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:09 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:16:37 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 1025545784,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 206,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 84,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          84
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-lang-279912824-20170926-131053_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-lang-279912824-20170926-131053_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 4037,
+      "numberPassing": 4036,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "The method \"public static boolean org.apache.commons.lang3.StringUtils.isAnagram(java.lang.String,java.lang.String)\" appears to be immutable in spirit and therefore must not accept a String",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.lang3.StringUtilsTest",
+        "numberRunning": 146,
+        "numberPassing": 145,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.lang3.StringUtilsTest",
+        "testMethod": "testStringUtilsCharSequenceContract",
+        "failureName": "java.lang.AssertionError",
+        "detail": "The method \"public static boolean org.apache.commons.lang3.StringUtils.isAnagram(java.lang.String,java.lang.String)\" appears to be immutable in spirit and therefore must not accept a String",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 148,
+    "numberTestFiles": 170,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {}
 }
