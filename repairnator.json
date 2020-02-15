@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "SeeU-Team/seeu-project",
-  "bugCommit": "https://github.com/SeeU-Team/seeu-project/compare/7ef94597d4ee...898fb82b18d0",
-  "failingModule": "/root/workspace/SeeU-Team/seeu-project/400361229/seeu-user-management",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 11,
-  "failing-test-cases": [
-    {
-      "className": "com.seeu.darkside.user.UserServiceTest",
-      "failingMethods": [
-        "should_throws_UserAlreadyExistsException_when_create_new_user"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:14 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:22:06 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 36395720,
+      "totalMemory": 117989376
+    },
+    "totalDuration": 466,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 228,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          228
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SeeU-Team-seeu-project-400361229-20180705-130650-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SeeU-Team-seeu-project-400361229-20180705-130650-firstCommit/seeu-user-management",
+    "overallMetrics": {
+      "numberRunning": 10,
+      "numberPassing": 9,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Test failed : an exception should have been thrown when trying to create a new user with an existing email \u003d tird@email.com",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.seeu.darkside.user.UserServiceTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.seeu.darkside.user.UserServiceTest",
+        "testMethod": "should_throws_UserAlreadyExistsException_when_create_new_user",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Test failed : an exception should have been thrown when trying to create a new user with an existing email \u003d tird@email.com",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 147,
+    "numberTestFiles": 15,
+    "numberLibrariesFailingModule": 179,
+    "numberLines": 0
+  },
+  "commits": {}
 }
