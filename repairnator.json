@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Daniil56/DEmelyanov2",
-  "bugCommit": "https://github.com/Daniil56/DEmelyanov2/compare/2ad71266f8a5...bbedb7fc2460",
-  "failingModule": "/root/workspace/Daniil56/DEmelyanov2/385263833/collection_pro",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 101,
-  "failing-test-cases": [
-    {
-      "className": "ru.job4j.iterator.EvenIteratorTest",
-      "failingMethods": [
-        "shouldReturnEvenNumbersSequentially"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:27 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:46:47 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 24770024,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 76,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Daniil56-DEmelyanov2-385263833-20180529-174352-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Daniil56-DEmelyanov2-385263833-20180529-174352-firstCommit/collection_pro",
+    "overallMetrics": {
+      "numberRunning": 101,
+      "numberPassing": 100,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Expected exception: java.util.NoSuchElementException",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ru.job4j.iterator.EvenIteratorTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ru.job4j.iterator.EvenIteratorTest",
+        "testMethod": "shouldReturnEvenNumbersSequentially",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: java.util.NoSuchElementException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 75,
+    "numberTestFiles": 48,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  }
 }
