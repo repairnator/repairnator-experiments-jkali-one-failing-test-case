@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "BMark96/ivt-lab",
-  "bugCommit": "https://github.com/BMark96/ivt-lab/compare/dbb87d48dc6c...76519b2a0e84",
-  "failingModule": "/root/workspace/BMark96/ivt-lab/369078544",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2,
-  "failing-test-cases": [
-    {
-      "className": "hu.bme.mit.spaceship.GT4500Test",
-      "failingMethods": [
-        "hu.bme.mit.spaceship.GT4500Test#fireTorpedo_All_Success"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:46:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 12633808,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 67,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          28
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-BMark96-ivt-lab-369078544-20180420-125946-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-BMark96-ivt-lab-369078544-20180420-125946-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003ctrue\u003e but was:\u003cfalse\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.bme.mit.spaceship.GT4500Test",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.bme.mit.spaceship.GT4500Test",
+        "testMethod": "fireTorpedo_All_Success",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003ctrue\u003e but was:\u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 4,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {}
 }
