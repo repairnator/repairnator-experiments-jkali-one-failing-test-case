@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "damienbeaufils/java-kit",
-  "bugCommit": "https://github.com/damienbeaufils/java-kit/compare/cea96892c53e8912a7de0477f0433e92d386b4a2...410d5d889e9a5bec5934edee7bfd76edae4d508a",
-  "failingModule": "/root/workspace/damienbeaufils/java-kit/395773360",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 37,
-  "failing-test-cases": [
-    {
-      "className": "io.prismic.DocumentTest",
-      "failingMethods": [
-        "image"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-damienbeaufils-java-kit-395773360-20180623-114308-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 37,
+      "numberPassing": 36,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.ComparisonFailure",
-          "failureDetail": "expected:\u003c... text\" src\u003d\"https://[prismic-io.s3.amazonaws.com]/test-public/9f5f4e8...\u003e but was:\u003c... text\" src\u003d\"https://[test-public.cdn.prismic.io]/test-public/9f5f4e8...\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.prismic.DocumentTest",
+        "numberRunning": 18,
+        "numberPassing": 17,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.prismic.DocumentTest",
+        "testMethod": "image",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "expected:\u003c... text\" src\u003d\"https://[prismic-io.s3.amazonaws.com/test-public/9f5f4e8a5d95c7259108e9cfdde953b5e60dcbb6.jpg]\" width\u003d\"100\" height...\u003e but was:\u003c... text\" src\u003d\"https://[images.prismic.io/test-public/9f5f4e8a5d95c7259108e9cfdde953b5e60dcbb6.jpg?auto\u003dcompress,format]\" width\u003d\"100\" height...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 26,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:47 PM",
+    "reproductionDateEnd": "Feb 16, 2020 12:01:50 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 103802600,
+      "totalMemory": 222408704
+    },
+    "totalDuration": 2881,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2808,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2808
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-damienbeaufils-java-kit-395773360-20180623-114308-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
