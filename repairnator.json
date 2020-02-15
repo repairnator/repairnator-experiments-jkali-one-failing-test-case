@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:09 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:20:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 44256800,
+      "totalMemory": 87932928
+    },
+    "totalDuration": 414,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 240,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          240
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit/commons-rng-sampling",
+    "overallMetrics": {
+      "numberRunning": 552,
+      "numberPassing": 551,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 53,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest",
+        "numberRunning": 35,
+        "numberPassing": 34,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.rng.sampling.distribution.ContinuousSamplerParametricTest",
+        "testMethod": "testSampling[18: data\u003dorg.apache.commons.math3.distribution.GumbelDistribution@25f7391e (inverse method) [rng\u003dorg.apache.commons.rng.core.source32.Well1024a]: deciles\u003d[-4.662585990765498, -4.618533854425234, -4.58283209134007, -4.549247146669737, -4.514918910768455, -4.477377579972669, -4.4331955567214765, -4.375507381628579, -4.283204818740569]]",
+        "failureName": "java.lang.AssertionError",
+        "detail": "org.apache.commons.math3.distribution.GumbelDistribution@25f7391e (inverse method) [rng\u003dorg.apache.commons.rng.core.source32.Well1024a]: Too many failures for sample size \u003d 20000 (3 out of 50 tests failed, chi2\u003d[29.041999999999998, 24.486000000000004, 27.490999999999996]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 82,
+    "numberTestFiles": 43,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {}
+}
