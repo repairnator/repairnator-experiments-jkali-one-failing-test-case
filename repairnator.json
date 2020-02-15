@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "DamirNurm/Trav-cl",
-  "bugCommit": "https://github.com/DamirNurm/Trav-cl/commit/4b291b7f1af2",
-  "failingModule": "/root/workspace/DamirNurm/Trav-cl/372744275/project-name",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 9,
-  "failing-test-cases": [
-    {
-      "className": "com.sanifrey.test1.Formula9Test",
-      "failingMethods": [
-        "com.sanifrey.test1.Formula9Test#test"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:25 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:46:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 4416328,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 77,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 40,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          40
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DamirNurm-Trav-cl-372744275-20180429-195126-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DamirNurm-Trav-cl-372744275-20180429-195126-firstCommit/project-name",
+    "overallMetrics": {
+      "numberRunning": 9,
+      "numberPassing": 8,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c48[]\u003e but was:\u003c48[.0]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.sanifrey.test1.Formula9Test",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.sanifrey.test1.Formula9Test",
+        "testMethod": "test",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c48[]\u003e but was:\u003c48[.0]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 9,
+    "numberTestFiles": 9,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  },
+  "commits": {}
 }
