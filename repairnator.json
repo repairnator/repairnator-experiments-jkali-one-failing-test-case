@@ -1,30 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "airlift/airlift",
-  "failingModule": "/root/workspace/airlift/airlift/255317720/http-server",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.util.concurrent.TimeoutException"
-  ],
-  "totalNumberRunningTests": 1950,
-  "failing-test-cases": [
-    {
-      "className": "io.airlift.http.server.TestHttpServerProvider",
-      "failingMethods": [
-        "io.airlift.http.server.TestHttpServerProvider#testStop"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:20 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:27:03 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 168879664,
+      "totalMemory": 403365888
+    },
+    "totalDuration": 759,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 313,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          313
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-airlift-airlift-255317720-20170719-175738_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-airlift-airlift-255317720-20170719-175738_bugonly-firstCommit/concurrent",
+    "overallMetrics": {
+      "numberRunning": 237,
+      "numberPassing": 236,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.util.concurrent.TimeoutException",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.airlift.concurrent.TestMoreFutures",
+        "numberRunning": 34,
+        "numberPassing": 33,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.airlift.concurrent.TestMoreFutures",
+        "testMethod": "testTimeoutCancel",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [false]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 24,
+    "numberPlugins": 0,
+    "numberSourceFiles": 292,
+    "numberTestFiles": 181,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  }
 }
