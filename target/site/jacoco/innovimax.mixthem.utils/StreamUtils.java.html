@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StreamUtils.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.utils</a> &gt; <span class="el_source">StreamUtils.java</span></div><h1>StreamUtils.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.utils;
+
+import java.io.ByteArrayOutputStream;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.IntConsumer;
+import java.util.function.IntFunction;
+import java.util.function.Predicate;
+import java.util.function.ToIntFunction;
+import java.util.stream.Collector;
+
+<span class="nc" id="L12">public class StreamUtils {</span>
+
+	static public &lt;T, E extends Exception&gt;
+    		Consumer&lt;T&gt; consume(ConsumerWithException&lt;T, E&gt; ce) {
+<span class="fc" id="L16">        		return arg -&gt; {</span>
+            			try {
+<span class="fc" id="L18">                			ce.accept(arg);</span>
+<span class="nc" id="L19">            			} catch (Exception e) {</span>
+<span class="nc" id="L20">                			throw new RuntimeException(e);</span>
+<span class="fc" id="L21">            			}</span>
+<span class="fc" id="L22">        		};</span>
+	} 
+
+	static public &lt;E extends Exception&gt;
+    		IntConsumer consumeInt(IntConsumerWithException&lt;E&gt; ice) {
+<span class="fc" id="L27">        		return arg -&gt; {</span>
+            			try {
+<span class="fc" id="L29">                			ice.accept(arg);</span>
+<span class="nc" id="L30">            			} catch (Exception e) {</span>
+<span class="nc" id="L31">                			throw new RuntimeException(e);</span>
+<span class="fc" id="L32">            			}</span>
+<span class="fc" id="L33">        		};</span>
+	} 
+
+	static public &lt;T, E extends Exception&gt;
+    		Predicate&lt;T&gt; test(PredicateWithException&lt;T, E&gt; pe) {
+<span class="fc" id="L38">        		return arg -&gt; {</span>
+            			try {
+<span class="fc" id="L40">                			return pe.test(arg);</span>
+<span class="nc" id="L41">            			} catch (Exception e) {</span>
+<span class="nc" id="L42">                			throw new RuntimeException(e);</span>
+            			}
+        		};
+	} 
+
+	static public &lt;T, R, E extends Exception&gt;
+    		Function&lt;T, R&gt; apply(FunctionWithException&lt;T, R, E&gt; fe) {
+<span class="fc" id="L49">        		return arg -&gt; {</span>
+            			try {
+<span class="fc" id="L51">                			return fe.apply(arg);</span>
+<span class="nc" id="L52">            			} catch (Exception e) {</span>
+<span class="nc" id="L53">                			throw new RuntimeException(e);</span>
+            			}
+        		};
+	} 
+
+	static public &lt;T, E extends Exception&gt;
+    		ToIntFunction&lt;T&gt; applyAsInt(ToIntFunctionWithException&lt;T, E&gt; tife) {
+<span class="fc" id="L60">        		return arg -&gt; {</span>
+            			try {
+<span class="fc" id="L62">                			return tife.applyAsInt(arg);</span>
+<span class="nc" id="L63">            			} catch (Exception e) {</span>
+<span class="nc" id="L64">                			throw new RuntimeException(e);</span>
+            			}
+        		};
+	} 
+
+	static public &lt;R, E extends Exception&gt;
+    		IntFunction&lt;R&gt; applyToInt(IntFunctionWithException&lt;R, E&gt; ife) {
+<span class="fc" id="L71">        		return arg -&gt; {</span>
+            			try {
+<span class="fc" id="L73">                			return ife.apply(arg);</span>
+<span class="nc" id="L74">            			} catch (Exception e) {</span>
+<span class="nc" id="L75">                			throw new RuntimeException(e);</span>
+            			}
+        		};
+	} 
+
+	static public Collector&lt;Byte, ?, ByteArrayOutputStream&gt; byteCollector() {
+<span class="fc" id="L81">		return Collector.of(</span>
+			ByteArrayOutputStream::new, 
+<span class="fc" id="L83">			(baos, b) -&gt; baos.write(b.byteValue()), </span>
+			(baos1, baos2) -&gt; { 
+<span class="nc" id="L85">				baos1.write(baos2.toByteArray(), 0, baos2.size());</span>
+<span class="nc" id="L86">				return baos1;</span>
+			}
+		);		 
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

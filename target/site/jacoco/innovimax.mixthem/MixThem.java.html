@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MixThem.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem</a> &gt; <span class="el_source">MixThem.java</span></div><h1>MixThem.java</h1><pre class="source lang-java linenums">package innovimax.mixthem;
+
+import innovimax.mixthem.arguments.*;
+import innovimax.mixthem.io.*;
+import innovimax.mixthem.operation.*;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+* &lt;p&gt;Mix files together using variety of rules.&lt;/p&gt;
+* @author Innovimax
+* @version 1.0
+*/
+public class MixThem {
+    
+<span class="fc" id="L24">    public final static Logger LOGGER = Logger.getLogger(MixThem.class.getName());</span>
+
+    private final List&lt;InputResource&gt; inputs;
+    private final OutputStream output;
+    /**
+     * Constructor
+     * @param inputs The list of input resource to be mixed     
+     * @param out The output stream to write mixing result
+     */ 
+<span class="fc" id="L33">    public MixThem(List&lt;InputResource&gt; inputs, OutputStream output) {</span>
+<span class="fc" id="L34">        this.inputs = inputs;        </span>
+<span class="fc" id="L35">        this.output = output;</span>
+<span class="fc" id="L36">    }</span>
+    
+    static void setLogging(Level level) {
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (LOGGER.getHandlers().length == 0) {</span>
+            //System.setProperty(&quot;java.util.logging.SimpleFormatter.format&quot;, &quot;[%4$s] MixThem: %5$s [%1$tc]%n&quot;);
+<span class="fc" id="L41">            System.setProperty(&quot;java.util.logging.SimpleFormatter.format&quot;, &quot;[%4$s] MixThem: %5$s%n&quot;);</span>
+<span class="fc" id="L42">            LOGGER.setUseParentHandlers(false);</span>
+<span class="fc" id="L43">            LOGGER.setLevel(Level.ALL);</span>
+<span class="fc" id="L44">            Handler handler = new ConsoleHandler();</span>
+<span class="fc" id="L45">            LOGGER.addHandler(handler);</span>
+<span class="fc" id="L46">            handler.setLevel(Level.OFF);</span>
+<span class="fc" id="L47">            String prop = System.getProperty(&quot;mixthem.logging&quot;);</span>
+<span class="pc bpc" id="L48" title="3 of 4 branches missed.">            if (prop == null || prop.equals(&quot;true&quot;)) {</span>
+<span class="fc" id="L49">                handler.setLevel(level);            </span>
+            }
+        }
+<span class="fc" id="L52">    }</span>
+
+    /**
+    * Main entry.
+    * @param args The command line arguments
+    */
+    public static void main(String[] args) {
+<span class="fc" id="L59">        run(args);  </span>
+<span class="fc" id="L60">    }</span>
+
+    private static void run(String[] args) {
+        try {
+<span class="fc" id="L64">            setLogging(Level.INFO);</span>
+<span class="fc" id="L65">            LOGGER.info(&quot;Started application&quot;);   </span>
+<span class="fc" id="L66">            Arguments mixArgs = Arguments.checkArguments(args);        </span>
+<span class="fc" id="L67">            MixThem mixThem = new MixThem(mixArgs.getInputs(), System.out);</span>
+<span class="fc" id="L68">            mixThem.process(mixArgs.getFileMode(), mixArgs.getSelection(), mixArgs.getRule(), mixArgs.getRuleParameters());</span>
+<span class="fc" id="L69">            LOGGER.info(&quot;Exited application with no errors&quot;);</span>
+<span class="fc" id="L70">        } catch (ArgumentException e) {</span>
+<span class="fc" id="L71">            LOGGER.severe(&quot;Exited application with errors...&quot;);</span>
+<span class="fc" id="L72">            LOGGER.severe(&quot;Files mixing can't be run due to following reason:&quot;); </span>
+<span class="fc" id="L73">            LOGGER.severe(e.getMessage());</span>
+<span class="fc" id="L74">            Arguments.printUsage(); </span>
+<span class="nc" id="L75">        } catch (MixException e) {</span>
+<span class="nc" id="L76">            LOGGER.severe(&quot;Exited application with errors...&quot;);</span>
+<span class="nc" id="L77">            LOGGER.severe(&quot;Files mixing has been aborted due to following reason:&quot;); </span>
+<span class="nc" id="L78">            LOGGER.severe(e.getMessage());</span>
+<span class="nc" id="L79">        } catch (Exception e) {</span>
+<span class="nc" id="L80">            LOGGER.severe(&quot;Exited application with errors...&quot;);</span>
+<span class="nc" id="L81">            LOGGER.severe(&quot;An unexpected error occurs:&quot;);</span>
+<span class="nc" id="L82">            e.printStackTrace();</span>
+<span class="pc" id="L83">        }</span>
+<span class="fc" id="L84">    }</span>
+
+    /**
+    * Mix files together using rules.
+    * @param fileMode The mode to be used for reading files
+    * @param selection The file index selection (maybe empty)
+    * @param rule The rule to be used for mixing
+    * @param params The rule parameters to be used for mixing
+    * @throws MixException - If any error occurs during mixing
+    * @see innovimax.mixthem.FileMode
+    * @see innovimax.mixthem.Rule
+    * @see innovimax.mixthem.RuleParam
+    * @see innovimax.mixthem.ParamValue
+    */  
+    public void process(FileMode fileMode, Set&lt;Integer&gt; selection,  Rule rule, Map&lt;RuleParam, ParamValue&gt; params) throws MixException {
+        try {
+<span class="fc" id="L100">            LOGGER.info(&quot;Started mixing for [&quot; +  fileMode.getName() + &quot;] rule '&quot; + rule.getName() + &quot;'...&quot;);</span>
+<span class="pc bpc" id="L101" title="1 of 12 branches missed.">            switch(rule) {</span>
+                case ADD:                    
+<span class="fc" id="L103">                    final IOperation copyAddOp = CopyFactory.newInstance(fileMode, selection, params);</span>
+<span class="fc" id="L104">                    copyAddOp.processFiles(this.inputs, this.output);          </span>
+<span class="fc" id="L105">                    break;</span>
+                case ALT_CHAR:
+<span class="fc" id="L107">                    final IOperation altCharOp = new DefaultCharAlternation(AltMode.NORMAL, selection, params);</span>
+<span class="fc" id="L108">                    altCharOp.processFiles(this.inputs, this.output); </span>
+<span class="fc" id="L109">                    break;</span>
+                case ALT_BYTE:
+<span class="fc" id="L111">                    final IOperation altByteOp = new DefaultByteAlternation(AltMode.NORMAL, selection, params);</span>
+<span class="fc" id="L112">                    altByteOp.processFiles(this.inputs, this.output); </span>
+<span class="fc" id="L113">                    break;</span>
+                case ALT_LINE:
+<span class="fc" id="L115">                    final IOperation altLineOp = new DefaultLineAlternation(AltMode.NORMAL, selection, params);</span>
+<span class="fc" id="L116">                    altLineOp.processFiles(this.inputs, this.output);</span>
+<span class="fc" id="L117">                    break;</span>
+                case RANDOM_ALT_BYTE:
+<span class="fc" id="L119">                    final IOperation randomAltByteOp = new DefaultByteAlternation(AltMode.RANDOM, selection, params);</span>
+<span class="fc" id="L120">                    randomAltByteOp.processFiles(this.inputs, this.output); </span>
+<span class="fc" id="L121">                    break;</span>
+                case RANDOM_ALT_CHAR:
+<span class="fc" id="L123">                    final IOperation randomAltCharOp = new DefaultCharAlternation(AltMode.RANDOM, selection, params);</span>
+<span class="fc" id="L124">                    randomAltCharOp.processFiles(this.inputs, this.output); </span>
+<span class="fc" id="L125">                    break;</span>
+                case RANDOM_ALT_LINE:
+<span class="fc" id="L127">                    final IOperation randomAltLineOp = new DefaultLineAlternation(AltMode.RANDOM, selection, params);</span>
+<span class="fc" id="L128">                    randomAltLineOp.processFiles(this.inputs, this.output); </span>
+<span class="fc" id="L129">                    break;</span>
+                case JOIN:
+<span class="fc" id="L131">                    final IOperation joinLineOp = new DefaultLineJoining(selection, params);</span>
+<span class="fc" id="L132">                    joinLineOp.processFiles(this.inputs, this.output);</span>
+<span class="fc" id="L133">                    break;</span>
+                case ZIP_LINE:
+<span class="fc" id="L135">                    final IOperation zipLineOp = new DefaultLineZipping(selection, params);</span>
+<span class="fc" id="L136">                    zipLineOp.processFiles(this.inputs, this.output);</span>
+<span class="fc" id="L137">                    break;</span>
+                case ZIP_CELL:
+<span class="fc" id="L139">                    final IOperation zipCellOp = new DefaultCellZipping(selection, params);</span>
+<span class="fc" id="L140">                    zipCellOp.processFiles(this.inputs, this.output);</span>
+<span class="fc" id="L141">                    break;</span>
+                case ZIP_CHAR:
+<span class="fc" id="L143">                    final IOperation zipCharOp = new DefaultCharZipping(selection, params);</span>
+<span class="fc" id="L144">                    zipCharOp.processFiles(this.inputs, this.output);</span>
+                    /*break;
+                default:    
+                   System.out.println(&quot;This rule has not been implemented yet.&quot;);*/
+            }
+<span class="fc" id="L149">            LOGGER.info(&quot;Ended mixing for [&quot; +  fileMode.getName() + &quot;] rule '&quot; + rule.getName() + &quot;'.&quot;);</span>
+<span class="nc" id="L150">        } catch (IOException e) {</span>
+<span class="nc" id="L151">            throw new MixException(&quot;Unexpected file error&quot;, e);</span>
+<span class="fc" id="L152">        }</span>
+
+<span class="fc" id="L154">    }     </span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

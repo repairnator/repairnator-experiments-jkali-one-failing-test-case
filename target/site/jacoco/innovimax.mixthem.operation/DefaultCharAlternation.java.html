@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DefaultCharAlternation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.operation</a> &gt; <span class="el_source">DefaultCharAlternation.java</span></div><h1>DefaultCharAlternation.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.operation;
+
+import innovimax.mixthem.MixException;
+import innovimax.mixthem.arguments.RuleParam;
+import innovimax.mixthem.arguments.ParamValue;
+
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
+
+/**
+* &lt;p&gt;Alternate two or more characters.&lt;/p&gt;
+* &lt;p&gt;When a character is missing then next available character is selected.&lt;/p&gt;
+* @see ICharOperation
+* @author Innovimax
+* @version 1.0
+*/
+public class DefaultCharAlternation extends AbstractCharOperation {
+	
+	private final AltMode mode;
+	private int channel;
+	private final Random random;
+	
+	/**
+	* Constructor
+	* @param mode The alternate mode to process
+	* @param selection The file index selection (maybe empty)
+ 	* @param params The list of parameters (maybe empty)
+	* @see innovimax.mixthem.arguments.RuleParam
+	* @see innovimax.mixthem.arguments.ParamValue
+	*/
+	public DefaultCharAlternation(final AltMode mode, final Set&lt;Integer&gt; selection, final Map&lt;RuleParam, ParamValue&gt; params) {
+<span class="fc" id="L34">		super(selection, params);</span>
+<span class="fc" id="L35">		this.mode = mode;</span>
+<span class="fc" id="L36">		this.channel = 0;</span>
+<span class="fc" id="L37">		this.random = new Random(params.getOrDefault(RuleParam.RANDOM_SEED, AltOperation.DEFAULT_RANDOM_SEED.getValue()).asInt());</span>
+<span class="fc" id="L38">	}</span>
+	
+	@Override
+	public void process(final int[] charRange, final CharResult result) throws MixException {
+<span class="fc" id="L42">		final int[] array = new int[1];</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">		int channel = this.mode == AltMode.NORMAL ? this.channel : this.random.nextInt(charRange.length);</span>
+<span class="fc" id="L44">		int c = charRange[channel];</span>
+		//System.out.println(&quot;RANGE=&quot;+Arrays.toString(charRange)+&quot; CHANNEL=&quot;+channel+&quot; CHAR=&quot;+c);
+<span class="fc bfc" id="L46" title="All 2 branches covered.">		if (c == -1) {					</span>
+<span class="fc" id="L47">			channel = nextChannel(charRange, channel);</span>
+<span class="fc" id="L48">			c = charRange[channel];</span>
+			//System.out.println(&quot;NEW_CHANNEL=&quot;+channel+&quot; CHAR=&quot;+c);
+		}
+<span class="fc" id="L51">		array[0] = c;</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">		if (this.mode == AltMode.NORMAL) {</span>
+<span class="fc" id="L53">			this.channel = channel + 1;</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">			if (this.channel == charRange.length) {</span>
+<span class="fc" id="L55">				this.channel = 0;</span>
+			}		
+		}
+<span class="fc" id="L58">		result.setResult(Arrays.stream(array));</span>
+<span class="fc" id="L59">	}</span>
+	
+	private int nextChannel(final int[] charRange, final int curChannel) {
+<span class="fc" id="L62">		int channel = curChannel+1;</span>
+<span class="pc bpc" id="L63" title="1 of 2 branches missed.">		while (channel != curChannel) {</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">			if (channel &lt; charRange.length) {</span>
+<span class="fc" id="L65">				final int c = charRange[channel];</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">				if (c != -1) {</span>
+<span class="fc" id="L67">					break;</span>
+				}
+<span class="fc" id="L69">				channel++;</span>
+<span class="fc" id="L70">			} else {</span>
+<span class="fc" id="L71">				channel = 0;</span>
+			}
+		}
+<span class="fc" id="L74">		return channel;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

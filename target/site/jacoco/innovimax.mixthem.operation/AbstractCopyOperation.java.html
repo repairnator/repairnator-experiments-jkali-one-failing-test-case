@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbstractCopyOperation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.operation</a> &gt; <span class="el_source">AbstractCopyOperation.java</span></div><h1>AbstractCopyOperation.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.operation;
+
+import innovimax.mixthem.utils.StreamUtils;
+
+import innovimax.mixthem.MixException;
+import innovimax.mixthem.arguments.RuleParam;
+import innovimax.mixthem.arguments.ParamValue;
+import innovimax.mixthem.io.InputResource;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.Arrays;
+import java.util.Map;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.IntStream;
+
+/**
+* &lt;p&gt;Abstract class for all character operation.&lt;/p&gt;
+* @see ICopyOperation
+* @author Innovimax
+* @version 1.0
+*/
+public abstract class AbstractCopyOperation extends AbstractOperation implements ICopyOperation {
+	
+	protected final static int BUFFER_SIZE = 1024;	
+
+	/**
+	* Constructor
+	* @param selection The file index selection (maybe empty)
+ 	* @param params The list of parameters (maybe empty)
+	* @see innovimax.mixthem.arguments.RuleParam
+	* @see innovimax.mixthem.arguments.ParamValue
+	*/
+	public AbstractCopyOperation(final Set&lt;Integer&gt; selection, final Map&lt;RuleParam, ParamValue&gt; params) {
+<span class="fc" id="L36">		super(selection, params);</span>
+<span class="fc" id="L37">	}</span>
+
+	@Override
+	public void processFiles(final List&lt;InputResource&gt; inputs, final OutputStream output) throws MixException, IOException {		
+		final IntStream indexes; 		
+<span class="fc bfc" id="L42" title="All 2 branches covered.">		if (this.selection.isEmpty()) {</span>
+<span class="fc" id="L43">			indexes = IntStream.range(1, inputs.size()+1);			</span>
+		} else {			
+<span class="fc" id="L45">			indexes = Arrays.stream(this.selection.stream()</span>
+<span class="fc" id="L46">					.mapToInt(Number::intValue)</span>
+<span class="fc" id="L47">					.toArray());</span>
+		}				
+<span class="fc" id="L49">                indexes.mapToObj(i -&gt; inputs.get(i-1))</span>
+<span class="fc" id="L50">                	.forEach(StreamUtils.consume(input -&gt; process(input, output)));</span>
+<span class="fc" id="L51">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

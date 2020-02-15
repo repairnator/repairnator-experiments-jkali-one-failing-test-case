@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Arguments.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.arguments</a> &gt; <span class="el_source">Arguments.java</span></div><h1>Arguments.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.arguments;
+
+import innovimax.mixthem.io.InputResource;
+
+import java.io.File;
+import java.io.InputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.LinkOption;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.EnumMap;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipException;
+import java.util.zip.ZipFile;
+
+/**
+* &lt;p&gt;Mix-them command line arguments management.&lt;/p&gt;
+* @author Innovimax
+* @version 1.0
+*/
+<span class="fc" id="L29">public class Arguments {</span>
+    
+<span class="fc" id="L31">    private FileMode fileMode = null;</span>
+<span class="fc" id="L32">    private Rule rule = null;</span>
+<span class="fc" id="L33">    private Map&lt;RuleParam, ParamValue&gt; ruleParams = null;</span>
+<span class="fc" id="L34">    private Set&lt;Integer&gt; selection = null;</span>
+<span class="fc" id="L35">    private final List&lt;InputResource&gt; inputs = new ArrayList&lt;InputResource&gt;();    </span>
+    
+    private void setFileMode(final FileMode fileMode) {
+<span class="fc" id="L38">        this.fileMode = fileMode;</span>
+<span class="fc" id="L39">    }</span>
+
+    public FileMode getFileMode() {
+<span class="fc" id="L42">        return this.fileMode;</span>
+    }
+    
+    private void setRule(final Rule rule) {
+<span class="fc" id="L46">        this.rule = rule;</span>
+<span class="fc" id="L47">    }</span>
+
+    public Rule getRule() {
+<span class="fc" id="L50">        return this.rule;</span>
+    }
+
+    void setRuleParameters(final Map&lt;RuleParam, ParamValue&gt; ruleParams) {
+<span class="fc" id="L54">        this.ruleParams = ruleParams;</span>
+<span class="fc" id="L55">    }</span>
+
+    public Map&lt;RuleParam, ParamValue&gt; getRuleParameters() {
+<span class="fc" id="L58">        return this.ruleParams;</span>
+    }
+    
+     public void setSelection(final Set&lt;Integer&gt; selection) {
+<span class="fc" id="L62">        this.selection = selection;</span>
+<span class="fc" id="L63">    }</span>
+    
+    public Set&lt;Integer&gt; getSelection() {
+<span class="fc" id="L66">        return this.selection;</span>
+    }
+
+    void addInput(final InputResource input) {
+<span class="fc" id="L70">        this.inputs.add(input);</span>
+<span class="fc" id="L71">    }</span>
+
+    public List&lt;InputResource&gt; getInputs() {
+<span class="fc" id="L74">        return this.inputs;</span>
+    }
+    
+    public static Arguments checkArguments(final String[] args) throws ArgumentException, IOException, ZipException { 
+<span class="fc" id="L78">        final Arguments mixArgs = new Arguments();</span>
+<span class="fc" id="L79">        int index = 0;</span>
+        // get file mode [char|byte]
+<span class="fc" id="L81">        FileMode fileMode = findFileModeArgument(args, index);</span>
+<span class="pc bpc" id="L82" title="1 of 2 branches missed.">        if (fileMode != null) {</span>
+<span class="nc" id="L83">            index++;</span>
+        } else {
+<span class="fc" id="L85">            fileMode = FileMode.CHAR;</span>
+        }
+<span class="fc" id="L87">        mixArgs.setFileMode(fileMode);</span>
+        // get selection
+<span class="fc" id="L89">        final Set&lt;Integer&gt; selection = findSelectionArgument(args, index);        </span>
+<span class="fc" id="L90">        mixArgs.setSelection(selection);</span>
+<span class="pc bpc" id="L91" title="1 of 2 branches missed.">        if (!selection.isEmpty()) {</span>
+<span class="nc" id="L92">            index += selection.size();</span>
+        }
+        // get rule &amp; parameters
+<span class="fc" id="L95">        Rule rule = findRuleArgument(args, index, fileMode);</span>
+<span class="fc" id="L96">        Map&lt;RuleParam, ParamValue&gt; ruleParams = null;</span>
+<span class="fc bfc" id="L97" title="All 2 branches covered.">        if (rule != null) {</span>
+<span class="fc" id="L98">            index++;</span>
+<span class="fc" id="L99">            ruleParams = findRuleParameters(args, index, rule);</span>
+<span class="fc" id="L100">            index += ruleParams.size();</span>
+        } else {
+<span class="fc" id="L102">            rule = Rule.ADD;</span>
+<span class="fc" id="L103">            ruleParams = Collections.emptyMap();</span>
+        }        
+<span class="fc" id="L105">        mixArgs.setRule(rule);        </span>
+<span class="fc" id="L106">        mixArgs.setRuleParameters(ruleParams);        </span>
+        // get input files
+<span class="fc" id="L108">        final String zipOption = findZipOptionArgument(args, index);</span>
+<span class="fc bfc" id="L109" title="All 2 branches covered.">        if (zipOption == null) {</span>
+<span class="fc" id="L110">            final List&lt;File&gt; files = findFilesArgument(args, index);</span>
+<span class="fc" id="L111">            files.stream().forEach(file -&gt; mixArgs.addInput(InputResource.createFile(file)));</span>
+<span class="fc" id="L112">        } else {</span>
+<span class="fc" id="L113">            final ZipFile zipFile = new ZipFile(findZipFileArgument(args, ++index));</span>
+<span class="fc" id="L114">            final List&lt;InputStream&gt; inputs = extractZipEntries(zipFile);</span>
+<span class="fc" id="L115">            inputs.stream().forEach(input -&gt; mixArgs.addInput(InputResource.createInputStream(input)));</span>
+        }        
+        // check selection vs input file count
+<span class="fc" id="L118">        checkSelection(mixArgs);</span>
+<span class="fc" id="L119">        return mixArgs;</span>
+    }
+
+    private static FileMode findFileModeArgument(final String[] args, final int index) throws ArgumentException {        
+<span class="fc bfc" id="L123" title="All 2 branches covered.">        if (args.length &gt; index) {            </span>
+<span class="fc" id="L124">            return FileMode.findByName(args[index]);</span>
+        }
+<span class="fc" id="L126">        return null;</span>
+    }
+    
+    private static Set&lt;Integer&gt; findSelectionArgument(final String[] args, int index) throws ArgumentException {
+<span class="fc" id="L130">        final Set&lt;Integer&gt; selection = new LinkedHashSet&lt;Integer&gt;();        </span>
+<span class="fc bfc" id="L131" title="All 2 branches covered.">        while (args.length &gt; index) {</span>
+            final int fileIndex;
+            try { 
+<span class="nc" id="L134">                fileIndex = Integer.parseInt(args[index++]); </span>
+<span class="nc bnc" id="L135" title="All 2 branches missed.">                if (index &lt;= 0) {</span>
+<span class="nc" id="L136">                    throw new ArgumentException(&quot;Selection index is not valid: &quot; + fileIndex);</span>
+                }
+<span class="nc" id="L138">                selection.add(Integer.valueOf(fileIndex));</span>
+<span class="fc" id="L139">            } catch(NumberFormatException e) { </span>
+<span class="fc" id="L140">                break;</span>
+<span class="nc" id="L141">            }</span>
+        }
+<span class="fc" id="L143">        return selection;</span>
+    }
+    
+    private static Rule findRuleArgument(final String[] args, final int index, final FileMode fileMode) throws ArgumentException {        
+<span class="fc" id="L147">        Rule rule = null;</span>
+<span class="fc bfc" id="L148" title="All 2 branches covered.">        if (args.length &gt; index) {</span>
+<span class="fc" id="L149">            final String ruleString = args[index];</span>
+<span class="fc bfc" id="L150" title="All 4 branches covered.">            if (ruleString.startsWith(&quot;-&quot;) &amp;&amp; !ruleString.startsWith(&quot;--&quot;)) {</span>
+<span class="fc" id="L151">                rule = Rule.findByName(ruleString.substring(1), fileMode);</span>
+<span class="fc bfc" id="L152" title="All 2 branches covered.">                if (rule == null) {</span>
+<span class="fc" id="L153">                    throw new ArgumentException(&quot;Rule argument is incorrect: &quot; + ruleString);</span>
+                }
+            }
+        }
+<span class="fc" id="L157">        return rule;</span>
+    }
+   
+    private static Map&lt;RuleParam, ParamValue&gt; findRuleParameters(final String[] args, final int index, final Rule rule) throws ArgumentException {
+<span class="fc" id="L161">        final Map&lt;RuleParam, ParamValue&gt; map = new EnumMap&lt;RuleParam, ParamValue&gt;(RuleParam.class);</span>
+<span class="fc" id="L162">        final Iterator&lt;RuleParam&gt; iterator = rule.getParams().iterator();</span>
+<span class="fc bfc" id="L163" title="All 2 branches covered.">        if (iterator.hasNext()) {</span>
+<span class="fc" id="L164">            final RuleParam param = iterator.next();</span>
+<span class="pc bpc" id="L165" title="1 of 2 branches missed.">            if (args.length &gt; index) {</span>
+<span class="fc" id="L166">                final String arg = args[index];</span>
+<span class="fc bfc" id="L167" title="All 2 branches covered.">                if (arg.startsWith(&quot;#&quot;)) {</span>
+<span class="fc" id="L168">                    final String paramString = arg.substring(1);</span>
+                    try {
+<span class="fc" id="L170">                        final ParamValue value = param.createValue(paramString);</span>
+<span class="fc" id="L171">                        map.put(param, value);                        </span>
+<span class="fc" id="L172">                    } catch (NumberFormatException e) {</span>
+<span class="fc" id="L173">                        throw new ArgumentException(&quot;#&quot; + param.getName() + &quot; parameter is incorrect: &quot; + paramString);                        </span>
+<span class="fc" id="L174">                    }</span>
+                }
+            } 
+<span class="pc bpc" id="L177" title="3 of 4 branches missed.">            if (param.isMandatory() &amp;&amp; !map.containsKey(param)) {</span>
+<span class="nc" id="L178">                throw new ArgumentException(&quot;#&quot; + param.getName() + &quot; parameter is mandatory.&quot;);</span>
+            }            
+        }     
+<span class="fc" id="L181">        return map;</span>
+    }
+    
+    private static List&lt;File&gt; findFilesArgument(final String[] args, int index) throws ArgumentException {
+<span class="fc" id="L185">        final List&lt;File&gt; files = new ArrayList&lt;File&gt;();</span>
+<span class="fc bfc" id="L186" title="All 2 branches covered.">        while (args.length &gt; index) {</span>
+<span class="fc" id="L187">            final String filepath = args[index++];</span>
+<span class="fc" id="L188">            final File file = new File(filepath);</span>
+<span class="fc" id="L189">            final Path path = file.toPath();</span>
+<span class="fc bfc" id="L190" title="All 2 branches covered.">            if (Files.exists(path, LinkOption.NOFOLLOW_LINKS)) {</span>
+<span class="pc bpc" id="L191" title="1 of 2 branches missed.">                if (Files.isReadable(path)) {</span>
+<span class="fc" id="L192">                    files.add(file);</span>
+                } else {
+<span class="nc" id="L194">                    throw new ArgumentException(&quot;Input file cannot be read: &quot; + filepath);    </span>
+                }
+            } else {
+<span class="fc" id="L197">                throw new ArgumentException(&quot;Input file not found: &quot; + filepath);</span>
+            }
+<span class="fc" id="L199">        }</span>
+<span class="pc bpc" id="L200" title="1 of 3 branches missed.">        switch (files.size()) {</span>
+            case 0: 
+<span class="fc" id="L202">                throw new ArgumentException(&quot;First input file argument missing.&quot;);</span>
+            case 1: 
+<span class="nc" id="L204">                throw new ArgumentException(&quot;Second input file argument missing.&quot;);</span>
+        }
+<span class="fc" id="L206">        return files;</span>
+    }
+    
+    private static String findZipOptionArgument(final String[] args, final int index) {        
+<span class="fc bfc" id="L210" title="All 6 branches covered.">        if (args.length &gt; index &amp;&amp; (args[index].equals(&quot;--zip&quot;) || args[index].equals(&quot;--jar&quot;))) {</span>
+<span class="fc" id="L211">            return args[index].substring(2);</span>
+        }
+<span class="fc" id="L213">        return null;</span>
+    }
+    
+    private static File findZipFileArgument(final String[] args, final int index) throws ArgumentException {
+<span class="fc" id="L217">        File file = null;</span>
+<span class="fc bfc" id="L218" title="All 2 branches covered.">        if (args.length &gt; index) {</span>
+<span class="fc" id="L219">            final String filepath = args[index];</span>
+<span class="fc" id="L220">            file = new File(filepath);</span>
+<span class="fc" id="L221">            final Path path = file.toPath();</span>
+<span class="fc bfc" id="L222" title="All 2 branches covered.">            if (Files.exists(path, LinkOption.NOFOLLOW_LINKS)) {</span>
+<span class="pc bpc" id="L223" title="1 of 2 branches missed.">                if (!Files.isReadable(path)) {                    </span>
+<span class="nc" id="L224">                    throw new ArgumentException(&quot;Zip/Jar file cannot be read: &quot; + filepath);    </span>
+                }
+            } else {
+<span class="fc" id="L227">                throw new ArgumentException(&quot;Zip/Jar file not found: &quot; + filepath);</span>
+            }
+<span class="fc" id="L229">        } else {</span>
+<span class="fc" id="L230">            throw new ArgumentException(&quot;Zip/Jar argument missing.&quot;);</span>
+        }
+<span class="fc" id="L232">        return file;</span>
+    }
+
+    private static List&lt;InputStream&gt; extractZipEntries(final ZipFile zipFile) throws ArgumentException, IOException, ZipException {
+<span class="fc" id="L236">        final List&lt;InputStream&gt; inputs = new ArrayList&lt;InputStream&gt;();        </span>
+<span class="fc" id="L237">        final Enumeration entries = zipFile.entries();        </span>
+<span class="fc bfc" id="L238" title="All 2 branches covered.">        while (entries.hasMoreElements()) {</span>
+<span class="fc" id="L239">            ZipEntry entry = (ZipEntry) entries.nextElement();</span>
+<span class="fc bfc" id="L240" title="All 2 branches covered.">            if (entry.getName().toUpperCase().startsWith(&quot;META-INF&quot;)) {</span>
+<span class="fc" id="L241">                continue;        </span>
+            }           
+<span class="fc" id="L243">            inputs.add(zipFile.getInputStream(entry));</span>
+<span class="fc" id="L244">        }</span>
+<span class="fc bfc" id="L245" title="All 3 branches covered.">        switch (inputs.size()) {</span>
+            case 0: 
+<span class="fc" id="L247">                throw new ArgumentException(&quot;First input entry missing.&quot;);</span>
+            case 1: 
+<span class="fc" id="L249">                throw new ArgumentException(&quot;Second input entry missing.&quot;);</span>
+        }
+<span class="fc" id="L251">        return inputs;</span>
+    }
+    
+    private static void checkSelection(Arguments mixArgs) throws ArgumentException {
+<span class="fc" id="L255">        Iterator&lt;Integer&gt; iterator = mixArgs.getSelection().iterator();</span>
+<span class="pc bpc" id="L256" title="1 of 2 branches missed.">        while (iterator.hasNext()) {</span>
+<span class="nc" id="L257">            Integer index = iterator.next();            </span>
+<span class="nc bnc" id="L258" title="All 2 branches missed.">            if (index.intValue() &gt; mixArgs.getInputs().size()) {</span>
+<span class="nc" id="L259">                throw new ArgumentException(&quot;Selection index is greater than file count: &quot; + index.intValue());</span>
+            }
+<span class="nc" id="L261">        }</span>
+<span class="fc" id="L262">    }</span>
+    
+    public static void printUsage() {    
+<span class="fc" id="L265">        System.out.println(&quot;  &quot;);    </span>
+<span class="fc" id="L266">        System.out.println(&quot;Usage:&quot;);</span>
+<span class="fc" id="L267">        System.out.println(&quot;  &quot;);</span>
+<span class="fc" id="L268">        System.out.println(&quot;  mix-them [char|byte] &lt;file1&gt; &lt;file2&gt;[ &lt;file3&gt;... &lt;fileN&gt;]&quot;);</span>
+<span class="fc" id="L269">        System.out.println(&quot;  (will generate on standard out any file based on file1 to fileN)&quot;);</span>
+<span class="fc" id="L270">        System.out.println(&quot;  (by default it assumes that all files are character based, not binary)&quot;);</span>
+<span class="fc" id="L271">        System.out.println(&quot;  &quot;);        </span>
+<span class="fc" id="L272">        System.out.println(&quot;  mix-them [char|byte] &lt;rule&gt; &lt;file1&gt; &lt;file2&gt;[ &lt;file3&gt;... &lt;fileN&gt;]&quot;);</span>
+<span class="fc" id="L273">        System.out.println(&quot;  (will generate on standard out a file based on the rule)&quot;);</span>
+<span class="fc" id="L274">        System.out.println(&quot;  &quot;);        </span>
+<span class="fc" id="L275">        System.out.println(&quot;  mix-them [char|byte] &lt;index1&gt; &lt;index2&gt;[ &lt;index3&gt;...] &lt;rule&gt; &lt;file1&gt; &lt;file2&gt;[ &lt;file3&gt;... &lt;fileN&gt;]&quot;);</span>
+<span class="fc" id="L276">        System.out.println(&quot;  (will generate on standard out a file based on the rule and a selection of files designed by their index)&quot;);</span>
+<span class="fc" id="L277">        System.out.println(&quot;  &quot;);        </span>
+<span class="fc" id="L278">        System.out.println(&quot;  mix-them --zip &lt;zipfile&gt;&quot;);</span>
+<span class="fc" id="L279">        System.out.println(&quot;  mix-them --jar &lt;jarfile&gt;&quot;);</span>
+<span class="fc" id="L280">        System.out.println(&quot;  (will generate on standard out any file based on entry1 to entryN of zip/jar file)&quot;);</span>
+<span class="fc" id="L281">        System.out.println(&quot;  (by default it assumes zip/jar entries are character based, not binary)&quot;);</span>
+<span class="fc" id="L282">        System.out.println(&quot;  &quot;);        </span>
+<span class="fc" id="L283">        System.out.println(&quot;  mix-them &lt;rule&gt; --zip &lt;zipFile&gt;&quot;);</span>
+<span class="fc" id="L284">        System.out.println(&quot;  mix-them &lt;rule&gt; --jar &lt;jarFile&gt;&quot;);</span>
+<span class="fc" id="L285">        System.out.println(&quot;  (will generate on standard out a file based on the rule)&quot;);</span>
+<span class="fc" id="L286">        System.out.println(&quot;  &quot;);</span>
+<span class="fc" id="L287">        System.out.println(&quot;  mix-them &lt;index1&gt; &lt;index2&gt;[ &lt;index3&gt;...] &lt;rule&gt; --zip &lt;zipFile&gt;&quot;);</span>
+<span class="fc" id="L288">        System.out.println(&quot;  mix-them &lt;index1&gt; &lt;index2&gt;[ &lt;index3&gt;...] &lt;rule&gt; --jar &lt;jarFile&gt;&quot;);</span>
+<span class="fc" id="L289">        System.out.println(&quot;  (will generate on standard out a file based on the rule and a selection of entries designed by their index)&quot;);</span>
+<span class="fc" id="L290">        System.out.println(&quot;  &quot;);</span>
+<span class="fc" id="L291">        System.out.println(&quot;Here are the list of rules:&quot;);</span>
+<span class="fc bfc" id="L292" title="All 2 branches covered.">        for(Rule rule : Rule.values()) {</span>
+<span class="fc" id="L293">            System.out.print(&quot;  -&quot; + rule.getName());</span>
+<span class="fc bfc" id="L294" title="All 2 branches covered.">            for(RuleParam param : rule.getParams()) {</span>
+<span class="pc bpc" id="L295" title="1 of 2 branches missed.">                if (param.isMandatory()) {</span>
+<span class="nc" id="L296">                    System.out.print(&quot; #&quot; +  param.getName());</span>
+                } else {
+<span class="fc" id="L298">                    System.out.print(&quot; [#&quot; +  param.getName() + &quot;]&quot;);</span>
+                }
+<span class="fc" id="L300">            }</span>
+<span class="fc" id="L301">            System.out.println(&quot;: &quot; + rule.getDescription());            </span>
+<span class="fc bfc" id="L302" title="All 2 branches covered.">            for(RuleParam param : rule.getParams()) {                                </span>
+<span class="fc" id="L303">                System.out.println(&quot;    (#&quot; +param.getName() + &quot; &quot; + param.getComment() + &quot;)&quot;);</span>
+<span class="fc" id="L304">            }            </span>
+        }
+<span class="fc" id="L306">        System.out.println(&quot;  &quot;);</span>
+<span class="fc" id="L307">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

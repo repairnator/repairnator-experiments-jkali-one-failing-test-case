@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MultiChannelByteReader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.io</a> &gt; <span class="el_source">MultiChannelByteReader.java</span></div><h1>MultiChannelByteReader.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.io;
+
+import innovimax.mixthem.utils.StreamUtils;
+
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+public class MultiChannelByteReader implements IMultiChannelByteInput {
+	
+	private final List&lt;IByteInput&gt; readers;
+	
+	/**
+	* Constructor
+	* @param inputs The list of inputs as InputResource
+	* @param selection The input index selection (maybe empty)
+	* @see innovimax.mixthem.io.InputResource
+	*/
+<span class="fc" id="L20">	public MultiChannelByteReader(final List&lt;InputResource&gt; inputs, final Set&lt;Integer&gt; selection) {	</span>
+<span class="fc" id="L21">		this.readers = IntStream.rangeClosed(1, inputs.size())</span>
+<span class="pc bpc" id="L22" title="3 of 4 branches missed.">			.filter(index -&gt; selection.isEmpty() || selection.contains(Integer.valueOf(index)))</span>
+<span class="fc" id="L23">			.mapToObj(index -&gt; inputs.get(index-1))</span>
+<span class="fc" id="L24">			.map(StreamUtils.apply(input -&gt; new DefaultByteReader(input)))</span>
+<span class="fc" id="L25">			.collect(Collectors.toList());</span>
+<span class="fc" id="L26">	}</span>
+	
+	@Override
+	public boolean hasByte() {
+<span class="fc" id="L30">		return this.readers.stream()</span>
+<span class="fc" id="L31">			.anyMatch(StreamUtils.test(reader -&gt; reader.hasByte()));</span>
+	}
+	
+	@Override
+	public byte[] nextByteRange() {
+<span class="fc" id="L36">		return readers.stream()			</span>
+<span class="fc" id="L37">			.map(StreamUtils.apply(reader -&gt; Byte.valueOf(reader.nextByte())))</span>
+<span class="fc" id="L38">			.collect(StreamUtils.byteCollector())</span>
+<span class="fc" id="L39">			.toByteArray();</span>
+	}
+	
+	@Override
+	public void close() {
+<span class="fc" id="L44">		this.readers</span>
+<span class="fc" id="L45">			.forEach(StreamUtils.consume(reader -&gt; reader.close()));</span>
+<span class="fc" id="L46">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

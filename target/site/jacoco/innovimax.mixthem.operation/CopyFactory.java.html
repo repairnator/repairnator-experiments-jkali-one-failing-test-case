@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CopyFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.operation</a> &gt; <span class="el_source">CopyFactory.java</span></div><h1>CopyFactory.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.operation;
+
+import innovimax.mixthem.arguments.FileMode;
+import innovimax.mixthem.arguments.RuleParam;
+import innovimax.mixthem.arguments.ParamValue;
+
+import java.util.Map;
+import java.util.Set;
+
+<span class="nc" id="L10">public class CopyFactory {</span>
+  
+  	/**
+    * @param fileMode The file mode for reading files
+    * @param selection The file index selection (maybe empty)
+    * @param params The list of parameters (maybe empty)
+    * @see innovimax.mixthem.arguments.RulePara
+    * @see innovimax.mixthem.arguments.ParamValue
+    */
+    public static ICopyOperation newInstance(final FileMode fileMode, final Set&lt;Integer&gt; selection, final Map&lt;RuleParam, ParamValue&gt; params) {
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        return fileMode == FileMode.CHAR ? new DefaultCharCopy(selection, params) : new DefaultByteCopy(selection, params);</span>
+    }    
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

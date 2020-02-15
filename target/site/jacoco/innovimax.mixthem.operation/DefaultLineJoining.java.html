@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DefaultLineJoining.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.operation</a> &gt; <span class="el_source">DefaultLineJoining.java</span></div><h1>DefaultLineJoining.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.operation;
+
+import innovimax.mixthem.MixException;
+import innovimax.mixthem.arguments.ParamValue;
+import innovimax.mixthem.arguments.RuleParam;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+/**
+* &lt;p&gt;Joins two or more lines on a common field.&lt;/p&gt;
+* &lt;p&gt;Joining doesn't operate when no common field is found for all lines.&lt;/p&gt;
+* &lt;p&gt;In this case, we prevent bigger join field file(s) from beeing read, keeping current line(s).&lt;/p&gt;
+* @see ILineOperation
+* @author Innovimax
+* @version 1.0
+*/
+public class DefaultLineJoining extends AbstractLineOperation {
+  
+	private final int[] joinCols;	
+	
+	/**
+	* @param selection The file index selection (maybe empty)
+	* @param params The list of parameters (maybe empty)
+	* @see innovimax.mixthem.operation.RuleParam
+	* @see innovimax.mixthem.operation.ParamValue
+	*/
+	public DefaultLineJoining(final Set&lt;Integer&gt; selection, final Map&lt;RuleParam, ParamValue&gt; params) {
+<span class="fc" id="L34">		super(selection, params);		</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">		if (this.params.containsKey(RuleParam.JOIN_COLS)) {</span>
+<span class="fc" id="L36">			this.joinCols = this.params.get(RuleParam.JOIN_COLS).asIntArray();</span>
+		} else {
+<span class="fc" id="L38">			this.joinCols = new int[1];</span>
+<span class="fc" id="L39">			this.joinCols[0] = JoinOperation.DEFAULT_JOIN_COLUMN.getValue().asInt();</span>
+		}
+		//System.out.println(&quot;COLS=&quot;+Arrays.toString(this.joinCols));
+<span class="fc" id="L42">	} </span>
+
+	@Override
+	public void process(final List&lt;String&gt; lineRange, final LineResult result) throws MixException {				
+		//System.out.println(&quot;LINES=&quot;+lineRange.toString());		
+		//System.out.println(&quot;READ=&quot;+result.getLineReadingRange().toString());			
+<span class="fc" id="L48">		final List&lt;List&lt;String&gt;&gt; lineCellsRange = getLineCellsRange(lineRange);</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">		if (linesJoinable(lineCellsRange)) {				</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">			if (linesJoined(lineCellsRange)) {					</span>
+<span class="fc" id="L51">				joinLines(lineCellsRange, result);					</span>
+				//System.out.println(&quot;JOINED=&quot;+result.getResult());				
+			} else {										
+<span class="fc" id="L54">				setLineReadingPreservation(lineCellsRange, result);</span>
+			}
+<span class="fc bfc" id="L56" title="All 2 branches covered.">			for (int i=0; i &lt; lineRange.size(); i++) {</span>
+<span class="fc" id="L57">				result.setRangeLine(i, lineRange.get(i));</span>
+			}
+		}		
+<span class="fc" id="L60">	}</span>
+	
+	private List&lt;List&lt;String&gt;&gt; getLineCellsRange(final List&lt;String&gt; lineRange) {
+<span class="fc" id="L63">		final List&lt;List&lt;String&gt;&gt; lineCellsRange = new ArrayList&lt;List&lt;String&gt;&gt;();</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">		for (String line : lineRange) {</span>
+<span class="fc" id="L65">			lineCellsRange.add(Arrays.asList(line.split(CellOperation.DEFAULT_SPLIT_CELL_REGEX.getValue().asString())));</span>
+<span class="fc" id="L66">		}</span>
+<span class="fc" id="L67">		return lineCellsRange;</span>
+	}
+	
+	private int getJoinedColumn(int index) {
+<span class="fc bfc" id="L71" title="All 2 branches covered.">		if (this.joinCols.length == 1) {</span>
+<span class="fc" id="L72">			return this.joinCols[0];</span>
+<span class="pc bpc" id="L73" title="1 of 4 branches missed.">		} else if (index &lt; this.joinCols.length &amp;&amp; this.joinCols[index] &gt; 0) {</span>
+<span class="fc" id="L74">			return this.joinCols[index];</span>
+		} else {
+<span class="fc" id="L76">			return JoinOperation.DEFAULT_JOIN_COLUMN.getValue().asInt();</span>
+		}
+	}
+	
+	private boolean linesJoinable(final List&lt;List&lt;String&gt;&gt; lineCellsRange) {		
+		/*for (int i=0; i &lt; lineCellsRange.size(); i++) {
+			final List&lt;String&gt; lineCells = lineCellsRange.get(i);
+			if (lineCells.size() &lt; getJoinedColumn(i)) {
+				return false;
+			}			
+		}
+		return true;*/
+<span class="fc" id="L88">		return IntStream.range(0, lineCellsRange.size())</span>
+<span class="fc bfc" id="L89" title="All 2 branches covered.">			.allMatch(index -&gt; lineCellsRange.get(index).size() &gt;= getJoinedColumn(index));</span>
+	}
+	
+	private boolean linesJoined(final List&lt;List&lt;String&gt;&gt; lineCellsRange) {		
+<span class="fc" id="L93">		String joinCell = null;		</span>
+<span class="fc bfc" id="L94" title="All 2 branches covered.">		for (int i=0; i &lt; lineCellsRange.size(); i++) {			</span>
+<span class="fc" id="L95">			final List&lt;String&gt; lineCells = lineCellsRange.get(i);</span>
+<span class="fc" id="L96">			final String cell = lineCells.get(getJoinedColumn(i) - 1);</span>
+<span class="fc bfc" id="L97" title="All 2 branches covered.">			if (joinCell == null) {</span>
+<span class="fc" id="L98">				joinCell = cell;</span>
+			}
+<span class="fc bfc" id="L100" title="All 2 branches covered.">			if (!cell.equals(joinCell)) {</span>
+<span class="fc" id="L101">				return false;</span>
+			}
+		}
+<span class="fc" id="L104">		return true;</span>
+	}
+	
+	private void setLineReadingPreservation(final List&lt;List&lt;String&gt;&gt; lineCellsRange, final LineResult result) {
+<span class="fc" id="L108">		List&lt;String&gt; cellRange = new ArrayList&lt;String&gt;();</span>
+<span class="fc" id="L109">		String greaterCell = null;		</span>
+<span class="fc bfc" id="L110" title="All 2 branches covered.">		for (int i=0; i &lt; lineCellsRange.size(); i++) {</span>
+<span class="fc" id="L111">			final List&lt;String&gt; lineCells = lineCellsRange.get(i);</span>
+<span class="fc" id="L112">			final String cell = lineCells.get(getJoinedColumn(i) - 1);</span>
+<span class="fc bfc" id="L113" title="All 2 branches covered.">			if (greaterCell == null) {</span>
+<span class="fc" id="L114">				greaterCell = cell;</span>
+			}
+<span class="fc bfc" id="L116" title="All 2 branches covered.">			if (cell.compareTo(greaterCell) &gt; 0) {</span>
+<span class="fc" id="L117">				greaterCell = cell;</span>
+			}
+<span class="fc" id="L119">			cellRange.add(cell);			</span>
+		}		
+<span class="fc bfc" id="L121" title="All 2 branches covered.">		for (int i=0; i &lt; cellRange.size(); i++) {</span>
+<span class="fc" id="L122">			final String cell = cellRange.get(i);</span>
+<span class="fc bfc" id="L123" title="All 2 branches covered.">			if (cell.equals(greaterCell)) {</span>
+<span class="fc" id="L124">				result.setRangeLineReadingStatus(i, false);</span>
+			}
+		}
+<span class="fc" id="L127">	}</span>
+
+	private void joinLines(final List&lt;List&lt;String&gt;&gt; lineCellsRange, final LineResult result) {
+<span class="fc" id="L130">		final StringBuilder joinedCells = new StringBuilder();</span>
+<span class="fc" id="L131">		String join = lineCellsRange.get(0).get(getJoinedColumn(0) - 1);</span>
+<span class="fc" id="L132">		joinedCells.append(join);</span>
+<span class="fc bfc" id="L133" title="All 2 branches covered.">		for (List&lt;String&gt; lineCells : lineCellsRange) {</span>
+<span class="fc" id="L134">			joinedCells.append(CellOperation.DEFAULT_CELL_SEPARATOR.getValue().asString());</span>
+<span class="fc" id="L135">			joinedCells.append(</span>
+<span class="fc" id="L136">				lineCells.stream()</span>
+<span class="fc bfc" id="L137" title="All 2 branches covered.">					.filter(s -&gt; !s.equals(join))</span>
+<span class="fc" id="L138">					.collect(Collectors.joining(CellOperation.DEFAULT_CELL_SEPARATOR.getValue().asString())));</span>
+<span class="fc" id="L139">		}</span>
+<span class="fc" id="L140">		result.setResult(joinedCells.toString());</span>
+<span class="fc" id="L141">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

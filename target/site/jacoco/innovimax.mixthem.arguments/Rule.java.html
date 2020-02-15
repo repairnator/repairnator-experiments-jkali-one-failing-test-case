@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Rule.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.arguments</a> &gt; <span class="el_source">Rule.java</span></div><h1>Rule.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.arguments;
+
+import java.util.EnumSet;
+
+/**
+* &lt;p&gt;This is a detailed enumeration of rules used to mix files.&lt;/p&gt;
+* &lt;p&gt;Some rules may not be implemented yet.&lt;.p&gt;
+* &lt;p&gt;(Also used to print usage.)&lt;/p&gt;
+* @author Innovimax
+* @version 1.0
+*/
+<span class="fc" id="L12">public enum Rule { </span>
+<span class="fc" id="L13">    ADD(&quot;+&quot;, &quot;add&quot;, &quot;will output all files in order or a selection of files designed by a list of index&quot;, true, </span>
+<span class="fc" id="L14">                EnumSet.noneOf(RuleParam.class), EnumSet.of(FileMode.CHAR, FileMode.BYTE)),</span>
+<span class="fc" id="L15">    ALT_LINE(&quot;alt-line&quot;, &quot;altline&quot;, &quot;will output one line of each starting with first line of file1&quot;, true, </span>
+<span class="fc" id="L16">                EnumSet.noneOf(RuleParam.class), EnumSet.of(FileMode.CHAR)), </span>
+<span class="fc" id="L17">    ALT_CHAR(&quot;alt-char&quot;, &quot;altchar&quot;, &quot;will output one char of each starting with first char of file1&quot;, true, </span>
+<span class="fc" id="L18">                EnumSet.noneOf(RuleParam.class), EnumSet.of(FileMode.CHAR)),</span>
+<span class="fc" id="L19">    ALT_BYTE(&quot;alt-byte&quot;, &quot;altbyte&quot;, &quot;will output one byte of each starting with first byte of file1&quot;, true, </span>
+<span class="fc" id="L20">                EnumSet.noneOf(RuleParam.class), EnumSet.of(FileMode.BYTE)),</span>
+<span class="fc" id="L21">    RANDOM_ALT_LINE(&quot;random-alt-line&quot;, &quot;random-altline&quot;, &quot;will output one line of each code randomly based on a seed for reproducability&quot;, true, </span>
+<span class="fc" id="L22">                EnumSet.of(RuleParam.RANDOM_SEED), EnumSet.of(FileMode.CHAR)),</span>
+<span class="fc" id="L23">    RANDOM_ALT_CHAR(&quot;random-alt-char&quot;, &quot;random-altchar&quot;, &quot;will output one char of each code randomly based on a seed for reproducability&quot;, true, </span>
+<span class="fc" id="L24">                EnumSet.of(RuleParam.RANDOM_SEED), EnumSet.of(FileMode.CHAR)),</span>
+<span class="fc" id="L25">    RANDOM_ALT_BYTE(&quot;random-alt-byte&quot;, &quot;random-altbyte&quot;, &quot;will output one byte of each code randomly based on a seed for reproducability&quot;, true, </span>
+<span class="fc" id="L26">                EnumSet.of(RuleParam.RANDOM_SEED), EnumSet.of(FileMode.BYTE)),</span>
+<span class="fc" id="L27">    JOIN(&quot;join&quot;, &quot;join&quot;, &quot;will output merging of lines that have common occurrence determined by a column index or first column by default&quot;, true,</span>
+<span class="fc" id="L28">                EnumSet.of(RuleParam.JOIN_COLS), EnumSet.of(FileMode.CHAR)),</span>
+<span class="fc" id="L29">    ZIP_LINE(&quot;zip-line&quot;, &quot;zipline&quot;, &quot;will output zip of line from file1 and file2 to fileN&quot;, true, </span>
+<span class="fc" id="L30">                EnumSet.of(RuleParam.ZIP_SEP), EnumSet.of(FileMode.CHAR)),</span>
+<span class="fc" id="L31">    ZIP_CHAR(&quot;zip-char&quot;, &quot;zipchar&quot;, &quot;will output zip of char from file1 and file2 to fileN&quot;, true, </span>
+<span class="fc" id="L32">                EnumSet.of(RuleParam.ZIP_SEP), EnumSet.of(FileMode.CHAR)),</span>
+<span class="fc" id="L33">    ZIP_CELL(&quot;zip-cell&quot;, &quot;zipcell&quot;, &quot;will output zip of cell from file1 and file2 to fileN&quot;, true, </span>
+<span class="fc" id="L34">                EnumSet.of(RuleParam.ZIP_SEP), EnumSet.of(FileMode.CHAR));</span>
+
+    private final String name, extension, description;
+    private final boolean implemented;
+    private final EnumSet&lt;RuleParam&gt; params;
+    private final EnumSet&lt;FileMode&gt; fileModes;
+
+    private Rule(final String name, final String extension, final String description, final boolean implemented, 
+<span class="fc" id="L42">                 final EnumSet&lt;RuleParam&gt; params, final EnumSet&lt;FileMode&gt; fileModes) {</span>
+<span class="fc" id="L43">        this.name = name;</span>
+<span class="fc" id="L44">        this.extension = extension;</span>
+<span class="fc" id="L45">        this.description = description;</span>
+<span class="fc" id="L46">        this.implemented = implemented;</span>
+<span class="fc" id="L47">        this.params = params;</span>
+<span class="fc" id="L48">        this.fileModes = fileModes;</span>
+<span class="fc" id="L49">    }</span>
+
+    /**
+    * Returns true if the rule is currently implemented.
+    * @return True if the rule is currently implemented
+    */
+    public boolean isImplemented() {
+<span class="fc" id="L56">        return this.implemented;</span>
+    }
+
+    /**
+    * Returns the name of this rule on command line.
+    * @return The name of the rule on command line
+    */
+    public String getName() {
+<span class="fc" id="L64">        return this.name;</span>
+    }
+
+    /**
+    * Returns the file extension used for outputting.
+    * @return The file extension for the rule
+    */ 
+    public String getExtension() {
+<span class="fc" id="L72">        return this.extension;</span>
+    }
+
+    /**
+    * Returns the description of this rule.
+    * @return The description of the rule
+    */ 
+    public String getDescription() {
+<span class="fc" id="L80">        return this.description;</span>
+    }
+
+    /**
+    * Returns an iterator over the additional parameters in this rule.
+    * @return An iterator over the additional parameters in this rule
+    */ 
+    public Iterable&lt;RuleParam&gt; getParams() {
+<span class="fc" id="L88">        return this.params;</span>
+    }
+    
+    /**
+    * Returns true if the rule accept the file mode.
+    * @return True if the rule accept the file mode
+    */ 
+    public boolean acceptFileMode(final FileMode fileMode) {
+<span class="fc" id="L96">        return fileModes.contains(fileMode);</span>
+    }
+    
+    /**
+    * Finds the Rule object correponding to a name
+    * @param name The name of the rule in command line
+    * @param mode The running {@link Mode) 
+    * @return The {@link Rule} object
+    */    
+    public static Rule findByName(final String name, final FileMode fileMode) {
+<span class="fc bfc" id="L106" title="All 2 branches covered.">        for(Rule rule : values()){</span>
+<span class="pc bpc" id="L107" title="1 of 4 branches missed.">            if (rule.getName().equals(name) &amp;&amp; rule.acceptFileMode(fileMode)) {</span>
+<span class="fc" id="L108">                return rule;</span>
+            }
+        }
+<span class="fc" id="L111">        return null;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

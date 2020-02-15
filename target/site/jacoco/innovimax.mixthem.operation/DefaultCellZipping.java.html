@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DefaultCellZipping.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.operation</a> &gt; <span class="el_source">DefaultCellZipping.java</span></div><h1>DefaultCellZipping.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.operation;
+
+import innovimax.mixthem.MixException;
+import innovimax.mixthem.arguments.RuleParam;
+import innovimax.mixthem.arguments.ParamValue;
+
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+/**
+* &lt;p&gt;Zips two or more lines cell by cell.&lt;/p&gt;
+* &lt;p&gt;Zipping doesn't operate when a cell is missing in one oh the lines.&lt;/p&gt;
+* @see ILineOperation
+* @author Innovimax
+* @version 1.0
+*/
+public class DefaultCellZipping extends DefaultLineZipping {
+	
+	/**
+	* Constructor	
+	* @param selection The file index selection (maybe empty)
+ 	* @param params The list of parameters (maybe empty)
+	* @see innovimax.mixthem.arguments.RuleParam
+	* @see innovimax.mixthem.arguments.ParamValue
+	*/
+	public DefaultCellZipping(final Set&lt;Integer&gt; selection, final Map&lt;RuleParam, ParamValue&gt; params) {
+<span class="fc" id="L31">		super(selection, params);		</span>
+<span class="fc" id="L32">	}</span>
+	
+	@Override
+	public void process(final List&lt;String&gt; lineRange, final LineResult result) throws MixException {
+		//System.out.println(&quot;RANGE=&quot;+lineRange.toString());
+<span class="fc" id="L37">		StringBuilder zip = new StringBuilder();</span>
+<span class="fc" id="L38">		final List&lt;Iterator&lt;String&gt;&gt; cellIterators = new ArrayList&lt;Iterator&lt;String&gt;&gt;();</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">		for (String line : lineRange) {</span>
+<span class="fc" id="L40">			cellIterators.add(Arrays.asList(line.split(CellOperation.DEFAULT_SPLIT_CELL_REGEX.getValue().asString())).iterator());</span>
+<span class="fc" id="L41">		}				</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">		while (hasCellRange(cellIterators)) {</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">			if (zip.length() &gt; 0) {</span>
+<span class="fc" id="L44">				zip.append(CellOperation.DEFAULT_CELL_SEPARATOR.getValue().asString());</span>
+			}
+<span class="fc" id="L46">			final List&lt;String&gt; cellRange = nextCellRange(cellIterators);</span>
+			//System.out.println(&quot;CELLS=&quot;+cellRange);
+<span class="fc" id="L48">			int index = 0;</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">			for (String cell : cellRange) {</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">				if (index &gt; 0) {</span>
+<span class="fc" id="L51">					zip.append(this.sep);</span>
+				}
+<span class="fc" id="L53">				zip.append(cell);</span>
+<span class="fc" id="L54">				index++;</span>
+<span class="fc" id="L55">			}</span>
+<span class="fc" id="L56">		}			</span>
+<span class="fc" id="L57">		result.setResult(zip.toString());</span>
+<span class="fc" id="L58">	}</span>
+
+	private boolean hasCellRange(List&lt;Iterator&lt;String&gt;&gt; cellIterators) {
+<span class="fc bfc" id="L61" title="All 2 branches covered.">		for (Iterator&lt;String&gt; cellIterator : cellIterators) {</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">			if (!cellIterator.hasNext()) {</span>
+<span class="fc" id="L63">				return false;</span>
+			}
+<span class="fc" id="L65">		}</span>
+<span class="fc" id="L66">		return true;</span>
+	}
+	
+	private List&lt;String&gt; nextCellRange(List&lt;Iterator&lt;String&gt;&gt; cellIterators) {
+<span class="fc" id="L70">		final List&lt;String&gt; cellRange = new ArrayList&lt;String&gt;();</span>
+<span class="fc bfc" id="L71" title="All 2 branches covered.">		for (Iterator&lt;String&gt; cellIterator : cellIterators) {</span>
+<span class="fc" id="L72">			cellRange.add(cellIterator.next());</span>
+<span class="fc" id="L73">		}</span>
+<span class="fc" id="L74">		return cellRange;</span>
+	}
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

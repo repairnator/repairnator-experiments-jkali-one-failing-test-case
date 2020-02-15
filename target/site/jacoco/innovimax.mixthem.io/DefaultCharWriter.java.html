@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DefaultCharWriter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.io</a> &gt; <span class="el_source">DefaultCharWriter.java</span></div><h1>DefaultCharWriter.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.io;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+
+/**
+* &lt;p&gt;Writes characters into an output stream.&lt;/p&gt;
+* &lt;p&gt;This is the default implementation of ICharOutput.&lt;/p&gt;
+* @see ICharOutput
+* @author Innovimax
+* @version 1.0
+*/
+public class DefaultCharWriter implements ICharOutput {
+
+	private final BufferedWriter writer;
+
+	/**
+ 	* Creates a character writer.
+ 	* @param output The output stream for characters to be written.
+ 	* @throws IOException - If an I/O error occurs
+ 	*/
+<span class="fc" id="L24">	public DefaultCharWriter(final OutputStream output) throws IOException {</span>
+<span class="fc" id="L25">		this.writer = new BufferedWriter(new OutputStreamWriter(output));</span>
+<span class="fc" id="L26">	}</span>
+
+	@Override
+	public void writeCharacter(final char c) throws IOException {		
+<span class="fc" id="L30">		this.writer.write(c);</span>
+<span class="fc" id="L31">	}</span>
+
+	@Override
+	public void writeCharacters(final char[] buffer, final int len) throws IOException {      
+<span class="fc" id="L35">		this.writer.write(buffer, 0, len);</span>
+<span class="fc" id="L36">		this.writer.flush(); // WHY ?	</span>
+<span class="fc" id="L37">	}</span>
+
+	@Override
+	public void close() throws IOException {
+<span class="fc" id="L41">		this.writer.close();</span>
+<span class="fc" id="L42">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

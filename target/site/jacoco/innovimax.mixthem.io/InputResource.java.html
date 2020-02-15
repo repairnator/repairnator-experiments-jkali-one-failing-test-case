@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>InputResource.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Mix-them</a> &gt; <a href="index.source.html" class="el_package">innovimax.mixthem.io</a> &gt; <span class="el_source">InputResource.java</span></div><h1>InputResource.java</h1><pre class="source lang-java linenums">package innovimax.mixthem.io;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+
+/**
+* &lt;p&gt;This is the representation of an input resource.&lt;/p&gt;
+* @author Innovimax
+* @version 1.0
+*/
+public abstract class InputResource {
+
+  private static class FileResource extends InputResource {
+    private final File file;
+<span class="fc" id="L21">    private FileResource(final File file) {</span>
+<span class="fc" id="L22">      this.file = file;</span>
+<span class="fc" id="L23">    }</span>
+    @Override
+    public BufferedReader newBufferedReader() throws IOException {
+<span class="fc" id="L26">      return Files.newBufferedReader(file.toPath(), StandardCharsets.UTF_8);  </span>
+    }
+    @Override
+    public BufferedInputStream newBufferedInputStream() throws IOException {
+<span class="fc" id="L30">      return new BufferedInputStream(Files.newInputStream(file.toPath()));</span>
+    }
+  }
+
+  private static class InputStreamResource extends InputResource {
+    private final InputStream input;
+<span class="fc" id="L36">    private InputStreamResource(final InputStream input) {</span>
+<span class="fc" id="L37">      this.input = input;</span>
+<span class="fc" id="L38">    }</span>
+    @Override
+    public BufferedReader newBufferedReader() throws IOException {
+<span class="fc" id="L41">      return new BufferedReader(new InputStreamReader(input, StandardCharsets.UTF_8));</span>
+    }
+    @Override
+    public BufferedInputStream newBufferedInputStream() throws IOException {
+<span class="nc" id="L45">      return new BufferedInputStream(input);</span>
+    }
+  }
+  
+  /**
+  * private Constructor
+  */  
+<span class="fc" id="L52">  public InputResource() {}</span>
+  
+  public static InputResource createFile(final File file) {
+<span class="fc" id="L55">    return new FileResource(file);</span>
+  }
+  
+  public static InputResource createInputStream(final InputStream input) {
+<span class="fc" id="L59">    return new InputStreamResource(input);</span>
+  }
+  
+  /**
+  * Returns a new BufferedReader for this input resource.
+  * @return The BufferedReader for this input resource
+  */
+  public abstract BufferedReader newBufferedReader() throws IOException;
+  
+  /**
+  * Returns a new BufferedInputStream for this input resource.
+  * @return The BufferedInputStream for this input resource
+  */
+  public abstract BufferedInputStream newBufferedInputStream() throws IOException;
+  
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>
