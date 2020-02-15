@@ -1,0 +1,16 @@
+--- /src/main/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/AbstractSurefireTestListener.java
++++ /src/main/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/AbstractSurefireTestListener.java
+@@ -80,10 +80,9 @@
+ 
+ 	@java.lang.Override
+ 	public synchronized void testFinished(org.junit.runner.Description description) throws java.lang.Exception {
+-		if (m_currentTestcaseFailed) {
+-			writeCommentToResultFile("Failing test case: " + createTestcaseIdentifier(description).get());
++		if (m_currentTestcaseFailed)
+ 			return;
+-		}
++
+ 		appendStackDistanceOfTestcaseToResult(createTestcaseIdentifier(description));
+ 	}
+ 
+
