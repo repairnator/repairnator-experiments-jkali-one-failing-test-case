@@ -1,0 +1,430 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 3
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/atomix/atomix-messaging/2.1.0-SNAPSHOT/atomix-messaging-2.1.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport/4.1.22.Final/netty-transport-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-buffer/4.1.22.Final/netty-buffer-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-resolver/4.1.22.Final/netty-resolver-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-codec/4.1.22.Final/netty-codec-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-handler/4.1.22.Final/netty-handler-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport-native-epoll/4.1.22.Final/netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-common/4.1.22.Final/netty-common-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport-native-unix-common/4.1.22.Final/netty-transport-native-unix-common-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/atomix/atomix-utils/2.1.0-SNAPSHOT/atomix-utils-2.1.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/guava/guava/22.0/guava-22.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/guava/guava-testlib/22.0/guava-testlib-22.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/net/jodah/concurrentunit/0.4.2/concurrentunit-0.4.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 167880 milliseconds (167 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/atomix/atomix-messaging/2.1.0-SNAPSHOT/atomix-messaging-2.1.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport/4.1.22.Final/netty-transport-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-buffer/4.1.22.Final/netty-buffer-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-resolver/4.1.22.Final/netty-resolver-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-codec/4.1.22.Final/netty-codec-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-handler/4.1.22.Final/netty-handler-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport-native-epoll/4.1.22.Final/netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-common/4.1.22.Final/netty-common-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport-native-unix-common/4.1.22.Final/netty-transport-native-unix-common-4.1.22.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/atomix/atomix-utils/2.1.0-SNAPSHOT/atomix-utils-2.1.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/guava/guava/22.0/guava-22.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/guava/guava-testlib/22.0/guava-testlib-22.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/net/jodah/concurrentunit/0.4.2/concurrentunit-0.4.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 34
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 161
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 161,  157
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 157
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 157, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 167880
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/atomix/atomix-messaging/2.1.0-SNAPSHOT/atomix-messaging-2.1.0-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport/4.1.22.Final/netty-transport-4.1.22.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-buffer/4.1.22.Final/netty-buffer-4.1.22.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-resolver/4.1.22.Final/netty-resolver-4.1.22.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-codec/4.1.22.Final/netty-codec-4.1.22.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-handler/4.1.22.Final/netty-handler-4.1.22.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport-native-epoll/4.1.22.Final/netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-common/4.1.22.Final/netty-common-4.1.22.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/netty/netty-transport-native-unix-common/4.1.22.Final/netty-transport-native-unix-common-4.1.22.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/io/atomix/atomix-utils/2.1.0-SNAPSHOT/atomix-utils-2.1.0-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/guava/guava/22.0/guava-22.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/guava/guava-testlib/22.0/guava-testlib-22.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/net/jodah/concurrentunit/0.4.2/concurrentunit-0.4.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/.m2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit/cluster
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.StatefulNode line: 44, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.state = state ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.PhiAccrualFailureDetector line: 149, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.samples = new org.apache.commons.math3.stat.descriptive.DescriptiveStatistics(windowSize) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 118, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.localNode = new io.atomix.cluster.impl.StatefulNode( localNode.id(),  localNode.type(),  localN[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 116, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.messagingService = com.google.common.base.Preconditions.checkNotNull(messagingService, "messagi[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 117, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.broadcastService = com.google.common.base.Preconditions.checkNotNull(broadcastService, "broadca[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 114, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.bootstrapMetadataService = com.google.common.base.Preconditions.checkNotNull(bootstrapMetadataS[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 115, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.coreMetadataService = com.google.common.base.Preconditions.checkNotNull(coreMetadataService, "c[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultBootstrapMetadataService line: 36, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.metadata = metadata ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 280, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `existingNode.setState(io.atomix.cluster.Node.State.ACTIVE) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 281, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `post(new io.atomix.cluster.ClusterEvent(io.atomix.cluster.ClusterEvent.Type.NODE_ACTIVATED, existing[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 372, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return this ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 370, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return future.thenApply(( v) -> { 	io.atomix.cluster.impl.DefaultClusterService.LOGGER.info("Started[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 371, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `io.atomix.cluster.impl.DefaultClusterService.LOGGER.info("Started") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 366, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `heartbeatFuture = heartbeatScheduler.scheduleWithFixedDelay(() -> { 	broadcastIdentity(); 	sendHeart[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 167 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 886440
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 363, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `messagingService.registerHandler(io.atomix.cluster.impl.DefaultClusterService.HEARTBEAT_MESSAGE, thi[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.PhiAccrualFailureDetector line: 73, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.minSamples = minSamples ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.PhiAccrualFailureDetector line: 75, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.history = new io.atomix.cluster.impl.PhiAccrualFailureDetector.History(windowSize) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.PhiAccrualFailureDetector line: 74, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.phiFactor = phiFactor ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.PhiAccrualFailureDetector line: 52, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(io.atomix.cluster.impl.PhiAccrualFailureDetector.DEFAULT_MIN_SAMPLES, io.atomix.cluster.impl.Ph[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 354, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `nodes.put(localNode.id(), localNode) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 355, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `coreMetadataService.getMetadata().nodes().forEach(( node) ->  nodes.putIfAbsent(node.id(), new io.at[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 352, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `broadcastService.addListener(broadcastListener) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 353, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `localNode.setState(io.atomix.cluster.Node.State.ACTIVE) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 350, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (started.compareAndSet(false, true)) { 	coreMetadataService.addListener(metadataEventListener); 	[...] ` -topatch--> `if (true) { 	this.coreMetadataService.addListener(this.metadataEventListener); 	this.broadcastServic[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 350, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (started.compareAndSet(false, true)) { 	coreMetadataService.addListener(metadataEventListener); 	[...] ` -topatch--> `if (false) { 	this.coreMetadataService.addListener(this.metadataEventListener); 	this.broadcastServi[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 350, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (started.compareAndSet(false, true)) { 	coreMetadataService.addListener(metadataEventListener); 	[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 351, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `coreMetadataService.addListener(metadataEventListener) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.ClusterHeartbeat line: 37, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.rack = rack ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.ClusterHeartbeat line: 36, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.zone = zone ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.ClusterHeartbeat line: 35, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.type = type ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.ClusterHeartbeat line: 34, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.nodeId = nodeId ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.ClusterHeartbeat line: 38, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.host = host ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultCoreMetadataService line: 383, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.writeInt(address.port()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 167 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 904461
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultCoreMetadataService line: 382, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `output.writeString(address.address().getHostAddress()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 167 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 910974
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.PhiAccrualFailureDetector line: 161, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `lastHeartbeatTime = value ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 150, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `broadcastService.broadcast(io.atomix.cluster.impl.DefaultClusterService.SERIALIZER.encode(localNode)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 160, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `post(new io.atomix.cluster.ClusterEvent(io.atomix.cluster.ClusterEvent.Type.NODE_ACTIVATED, node)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 161, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sendHeartbeats() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 158, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (nodes.putIfAbsent(node.id(), node) == null) { 	post(new io.atomix.cluster.ClusterEvent(io.atomix[...] ` -topatch--> `if (true) { 	post(new io.atomix.cluster.ClusterEvent(io.atomix.cluster.ClusterEvent.Type.NODE_ADDED,[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 158, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (nodes.putIfAbsent(node.id(), node) == null) { 	post(new io.atomix.cluster.ClusterEvent(io.atomix[...] ` -topatch--> `if (false) { 	post(new io.atomix.cluster.ClusterEvent(io.atomix.cluster.ClusterEvent.Type.NODE_ADDED[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 158, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (nodes.putIfAbsent(node.id(), node) == null) { 	post(new io.atomix.cluster.ClusterEvent(io.atomix[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 159, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `post(new io.atomix.cluster.ClusterEvent(io.atomix.cluster.ClusterEvent.Type.NODE_ADDED, node)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.Node line: 365, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (id == null) { 	id = io.atomix.cluster.NodeId.from(address.address().getHostName()); } ` -topatch--> `if (true) { 	this.id = io.atomix.cluster.NodeId.from(this.address.address().getHostName()); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.Node line: 365, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (id == null) { 	id = io.atomix.cluster.NodeId.from(address.address().getHostName()); } ` -topatch--> `if (false) { 	this.id = io.atomix.cluster.NodeId.from(this.address.address().getHostName()); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.Node line: 365, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (id == null) { 	id = io.atomix.cluster.NodeId.from(address.address().getHostName()); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.messaging.impl.DefaultClusterEventingService line: 94, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.clusterService = clusterService ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.messaging.impl.DefaultClusterEventingService line: 95, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.messagingService = messagingService ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.messaging.impl.DefaultClusterEventingService line: 96, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.localNodeId = clusterService.getLocalNode().id() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.Node line: 326, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.address = com.google.common.base.Preconditions.checkNotNull(address, "address cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 244, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `activateNode(new io.atomix.cluster.impl.StatefulNode( heartbeat.nodeId(),  heartbeat.nodeType(),  ad[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 243, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `failureDetectors.computeIfAbsent(heartbeat.nodeId(), ( n) -> new io.atomix.cluster.impl.PhiAccrualFa[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 232, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `io.atomix.cluster.impl.DefaultClusterService.LOGGER.trace("Sending heartbeat to {} failed", address,[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 261, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (existingNode == null) { 	io.atomix.cluster.impl.StatefulNode statefulNode = new io.atomix.cluste[...] ` -topatch--> `if (true) { 	io.atomix.cluster.impl.StatefulNode statefulNode = new io.atomix.cluster.impl.StatefulN[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 261, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (existingNode == null) { 	io.atomix.cluster.impl.StatefulNode statefulNode = new io.atomix.cluste[...] ` -topatch--> `if (false) { 	io.atomix.cluster.impl.StatefulNode statefulNode = new io.atomix.cluster.impl.Stateful[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 261, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (existingNode == null) { 	io.atomix.cluster.impl.StatefulNode statefulNode = new io.atomix.cluste[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 279, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (existingNode.getState() == io.atomix.cluster.Node.State.INACTIVE) { 	existingNode.setState(io.at[...] ` -topatch--> `if (true) { 	existingNode.setState(io.atomix.cluster.Node.State.ACTIVE); 	post(new io.atomix.cluster[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 279, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (existingNode.getState() == io.atomix.cluster.Node.State.INACTIVE) { 	existingNode.setState(io.at[...] ` -topatch--> `if (false) { 	existingNode.setState(io.atomix.cluster.Node.State.ACTIVE); 	post(new io.atomix.cluste[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 279, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (existingNode.getState() == io.atomix.cluster.Node.State.INACTIVE) { 	existingNode.setState(io.at[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 272, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `post(new io.atomix.cluster.ClusterEvent(io.atomix.cluster.ClusterEvent.Type.NODE_ACTIVATED, stateful[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 273, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sendHeartbeat(node.address(), io.atomix.cluster.impl.DefaultClusterService.SERIALIZER.encode(new io.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 270, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `nodes.put(statefulNode.id(), statefulNode) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 271, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `post(new io.atomix.cluster.ClusterEvent(io.atomix.cluster.ClusterEvent.Type.NODE_ADDED, statefulNode[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 269, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `statefulNode.setState(io.atomix.cluster.Node.State.ACTIVE) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.Node line: 281, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.type = com.google.common.base.Preconditions.checkNotNull(type, "type cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.Node line: 259, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.id = id ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.ClusterMetadata line: 85, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.nodes = com.google.common.base.Preconditions.checkNotNull(nodes, "nodes cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 169, pointed element: CtLocalVariableImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtLocalVariableImpl) `java.util.Set<io.atomix.cluster.Node> nodes = this.nodes.values().stream().filter(( node) ->   !node[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 199, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((phi > 0) && ((phi >= phiFailureThreshold) || ((java.lang.System.currentTimeMillis() - failureDe[...] ` -topatch--> `if (true) { 	if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) { 		deactivateNode(node); 	[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 199, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((phi > 0) && ((phi >= phiFailureThreshold) || ((java.lang.System.currentTimeMillis() - failureDe[...] ` -topatch--> `if (false) { 	if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) { 		deactivateNode(node); [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 199, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((phi > 0) && ((phi >= phiFailureThreshold) || ((java.lang.System.currentTimeMillis() - failureDe[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.ClusterMetadata line: 41, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.nodes = nodes ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 208, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return future.exceptionally(( v) -> null) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 204, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (node.getState() == io.atomix.cluster.Node.State.INACTIVE) { 	activateNode(node); } ` -topatch--> `if (true) { 	activateNode(node); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 204, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (node.getState() == io.atomix.cluster.Node.State.INACTIVE) { 	activateNode(node); } ` -topatch--> `if (false) { 	activateNode(node); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 204, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (node.getState() == io.atomix.cluster.Node.State.INACTIVE) { 	activateNode(node); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 205, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `activateNode(node) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=io.atomix.cluster.impl.DefaultClusterService line: 200, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) { 	deactivateNode(node); } ` -topatch--> `if (true) { 	deactivateNode(node); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.processCreatedVariant(AstorCoreEngine.java:457) - -Found Solution, child variant #78
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:171) - Time Repair Loop (s): 983.625
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:173) - generationsexecuted: 1
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:255) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:257) - End Repair Search: Found solution
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:258) - Solution stored at: /proj/nobackup/snic2020-10-10/astor/AstorMain-AstorJKali-repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit//src/
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:190) - 
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 78
+ 
+time(sec)= 966
+operation: ReplaceIfBooleanOp
+location= io.atomix.cluster.impl.DefaultClusterService
+line= 200
+lineSuspiciousness= 0.707
+lineSuspiciousness= 102
+original statement= if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) {
+	deactivateNode(node);
+}
+buggy kind= CtIfImpl|CtBlockImpl
+fixed statement= if (true) {
+	deactivateNode(node);
+}
+Patch kind= CtIfImpl|CtBlockImpl
+generation= 1
+ingredientScope= -
+validation=|true|0|4|[]|
+diffpatch=--- /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
++++ /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
+@@ -91,7 +91,7 @@
+ 			io.atomix.cluster.impl.PhiAccrualFailureDetector failureDetector = failureDetectors.computeIfAbsent(node.id(), ( n) -> new io.atomix.cluster.impl.PhiAccrualFailureDetector());
+ 			double phi = failureDetector.phi();
+ 			if ((phi > 0) && ((phi >= phiFailureThreshold) || ((java.lang.System.currentTimeMillis() - failureDetector.lastUpdated()) > io.atomix.cluster.impl.DefaultClusterService.DEFAULT_FAILURE_TIME))) {
+-				if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) {
++				if (true) {
+ 					deactivateNode(node);
+ 				}
+ 			} else {
+
+
+diffpatchoriginal=--- /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
++++ /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
+@@ -197,7 +197,7 @@
+ 			io.atomix.cluster.impl.PhiAccrualFailureDetector failureDetector = failureDetectors.computeIfAbsent(node.id(), ( n) -> new io.atomix.cluster.impl.PhiAccrualFailureDetector());
+ 			double phi = failureDetector.phi();
+ 			if ((phi > 0) && ((phi >= phiFailureThreshold) || ((java.lang.System.currentTimeMillis() - failureDetector.lastUpdated()) > io.atomix.cluster.impl.DefaultClusterService.DEFAULT_FAILURE_TIME))) {
+-				if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) {
++				if (true) {
+ 					deactivateNode(node);
+ 				}
+ 			} else {
+
+
+
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:190) - Time Total(s): 1018.411
