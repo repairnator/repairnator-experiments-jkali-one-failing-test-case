@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "DennisFederico/flowable-engine",
-  "bugCommit": "https://github.com/DennisFederico/flowable-engine/commit/944f98bb3b88",
-  "failingModule": "/root/workspace/DennisFederico/flowable-engine/399340683/modules/flowable-engine",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 2835,
-  "failing-test-cases": [
-    {
-      "className": "org.flowable.engine.test.bpmn.gateway.InclusiveGatewayTest",
-      "failingMethods": [
-        "testInclusiveGatewayInclusiveGatewayInsideParallelMultiInstanceSubProcess"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:27 PM",
+    "reproductionDateEnd": "Feb 15, 2020 3:02:11 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 637346248,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 999,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 267,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          267
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DennisFederico-flowable-engine-399340683-20180703-002624-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DennisFederico-flowable-engine-399340683-20180703-002624-firstCommit/modules/flowable-engine",
+    "overallMetrics": {
+      "numberRunning": 2835,
+      "numberPassing": 2834,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.AssertionFailedError",
-          "failureDetail": "expected:\u003c13\u003e but was:\u003c7\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.flowable.engine.test.bpmn.gateway.InclusiveGatewayTest",
+        "numberRunning": 24,
+        "numberPassing": 23,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.flowable.engine.test.bpmn.gateway.InclusiveGatewayTest",
+        "testMethod": "testInclusiveGatewayInclusiveGatewayInsideParallelMultiInstanceSubProcess",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "expected:\u003c13\u003e but was:\u003c7\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2575,
+    "numberTestFiles": 599,
+    "numberLibrariesFailingModule": 85,
+    "numberLines": 0
+  }
 }
