@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:36 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:15:44 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 21111328,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 126,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-coldrye-java-junit-testing-418828692-20180821-203300-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-coldrye-java-junit-testing-418828692-20180821-203300-firstCommit/junit-env-extension",
+    "overallMetrics": {
+      "numberRunning": 63,
+      "numberPassing": 62,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.NoInteractionsWanted",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "eu.coldrye.junit.env.EnvProviderManagerTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "eu.coldrye.junit.env.EnvProviderManagerTest",
+        "testMethod": "prepareEnvironmentsMustCallUponCollector",
+        "failureName": "org.mockito.exceptions.verification.NoInteractionsWanted",
+        "detail": "\nNo interactions wanted here:\n-\u003e at eu.coldrye.junit.env.EnvProviderManagerTest.prepareEnvironmentsMustCallUponCollector(EnvProviderManagerTest.java:78)\nBut found this interaction on mock \u0027Mock for ExtensionContext, hashCode: 1340565491\u0027:\n-\u003e at eu.coldrye.junit.env.EnvProviderManager.prepareEnvironmentProviders(EnvProviderManager.java:142)\n***\nFor your reference, here is the list of all invocations ([?] - means unverified).\n1. -\u003e at eu.coldrye.junit.env.EnvProviderManager.isPrepared(EnvProviderManager.java:202)\n2. -\u003e at eu.coldrye.junit.env.EnvProviderManager.prepareEnvironmentProviders(EnvProviderManager.java:129)\n3. [?]-\u003e at eu.coldrye.junit.env.EnvProviderManager.prepareEnvironmentProviders(EnvProviderManager.java:142)\n4. [?]-\u003e at eu.coldrye.junit.env.EnvProviderManager.prepareEnvironmentProviders(EnvProviderManager.java:142)\n5. [?]-\u003e at eu.coldrye.junit.env.EnvProviderManager.prepareEnvironmentProviders(EnvProviderManager.java:142)\n6. [?]-\u003e at eu.coldrye.junit.env.EnvProviderManager.prepareEnvironmentProviders(EnvProviderManager.java:142)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 42,
+    "numberTestFiles": 22,
+    "numberLibrariesFailingModule": 30,
+    "numberLines": 0
+  },
+  "commits": {}
+}
