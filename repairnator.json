@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 7,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "KostyaSha/github-integration-plugin",
-  "bugCommit": "https://github.com/KostyaSha/github-integration-plugin/compare/d0f7f568d69f...a1214c8cdadc",
-  "failingModule": "/root/workspace/KostyaSha/github-integration-plugin/367762083/github-pullrequest-plugin",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "Argument(s) are different! Wanted"
-  ],
-  "totalNumberRunningTests": 147,
-  "failing-test-cases": [
-    {
-      "className": "org.jenkinsci.plugins.github.pullrequest.trigger.check.PullRequestToCauseConverterTest",
-      "failingMethods": [
-        "org.jenkinsci.plugins.github.pullrequest.trigger.check.PullRequestToCauseConverterTest#shouldCallEventCheck"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:47 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:25:38 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 56820704,
+      "totalMemory": 173035520
+    },
+    "totalDuration": 710,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-KostyaSha-github-integration-plugin-367762083-20180417-193248-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-KostyaSha-github-integration-plugin-367762083-20180417-193248-firstCommit/github-pullrequest-plugin",
+    "overallMetrics": {
+      "numberRunning": 140,
+      "numberPassing": 139,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 7,
       "failures": [
         {
           "failureName": "Argument(s) are different! Wanted",
-          "failureDetail": "\nArgument(s) are different! Wanted:\nevent.check(\n    com.github.kostyasha.github.integration.generic.GitHubPRDecisionContext@1c21d3de\n);\n-\u003e at org.jenkinsci.plugins.github.pullrequest.trigger.check.PullRequestToCauseConverterTest.shouldCallEventCheck(PullRequestToCauseConverterTest.java:97)\nActual invocation has different arguments:\nevent.check(\n    com.github.kostyasha.github.integration.generic.GitHubPRDecisionContext@3adcdbc0\n);\n-\u003e at com.github.kostyasha.github.integration.generic.GitHubPRDecisionContext.checkEvent(GitHubPRDecisionContext.java:103)\n",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jenkinsci.plugins.github.pullrequest.trigger.check.PullRequestToCauseConverterTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jenkinsci.plugins.github.pullrequest.trigger.check.PullRequestToCauseConverterTest",
+        "testMethod": "shouldCallEventCheck",
+        "failureName": "Argument(s) are different! Wanted",
+        "detail": "\nArgument(s) are different! Wanted:\nevent.check(\n    com.github.kostyasha.github.integration.generic.GitHubPRDecisionContext@64ef639c\n);\n-\u003e at org.jenkinsci.plugins.github.pullrequest.trigger.check.PullRequestToCauseConverterTest.shouldCallEventCheck(PullRequestToCauseConverterTest.java:97)\nActual invocation has different arguments:\nevent.check(\n    com.github.kostyasha.github.integration.generic.GitHubPRDecisionContext@87c349d\n);\n-\u003e at com.github.kostyasha.github.integration.generic.GitHubPRDecisionContext.checkEvent(GitHubPRDecisionContext.java:103)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 185,
+    "numberTestFiles": 61,
+    "numberLibrariesFailingModule": 243,
+    "numberLines": 0
+  }
 }
