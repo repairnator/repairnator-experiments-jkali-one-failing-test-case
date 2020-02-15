@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/commons-compress",
-  "bugCommit": "https://github.com/apache/commons-compress/compare/71f360905e17...41afb1d762d0",
-  "failingModule": "/root/workspace/apache/commons-compress/250654490",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 867,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.commons.compress.archivers.sevenz.AES256SHA256DecoderTest",
-      "failingMethods": [
-        "org.apache.commons.compress.archivers.sevenz.AES256SHA256DecoderTest#testDecodeWithEmptyString"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:09 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:15:16 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 24739336,
+      "totalMemory": 95698944
+    },
+    "totalDuration": 124,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-compress-250654490-20170706-091544_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-commons-compress-250654490-20170706-091544_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 863,
+      "numberPassing": 862,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[Decryption error (do you have the JCE Unlimited Strength Jurisdiction Policy Files installed?)]\u003e but was:\u003c[Stream closed]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.compress.archivers.sevenz.AES256SHA256DecoderTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.compress.archivers.sevenz.AES256SHA256DecoderTest",
+        "testMethod": "testDecodeWithEmptyString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[Decryption error (do you have the JCE Unlimited Strength Jurisdiction Policy Files installed?)]\u003e but was:\u003c[Stream closed]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 195,
+    "numberTestFiles": 134,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {}
 }
