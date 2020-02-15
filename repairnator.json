@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "IQSS/dataverse",
-  "bugCommit": "https://github.com/IQSS/dataverse/commit/5ae8418fba4a",
-  "failingModule": "/root/workspace/IQSS/dataverse/324749098",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError:"
-  ],
-  "totalNumberRunningTests": 477,
-  "failing-test-cases": [
-    {
-      "className": "edu.harvard.iq.dataverse.externaltools.ExternalToolHandlerTest",
-      "failingMethods": [
-        "edu.harvard.iq.dataverse.externaltools.ExternalToolHandlerTest#testGetToolUrlWithOptionalQueryParameters"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:55 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:58:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 845375912,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 766,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 101,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          101
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-324749098-20180103-220511_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-IQSS-dataverse-324749098-20180103-220511_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 477,
+      "numberPassing": 476,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError:",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.iq.dataverse.externaltools.ExternalToolHandlerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.iq.dataverse.externaltools.ExternalToolHandlerTest",
+        "testMethod": "testGetToolUrlWithOptionalQueryParameters",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 681,
+    "numberTestFiles": 126,
+    "numberLibrariesFailingModule": 202,
+    "numberLines": 0
+  }
 }
