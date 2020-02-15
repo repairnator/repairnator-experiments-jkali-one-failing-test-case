@@ -1,0 +1,121 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com:kata-mastermind:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 73, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building kata-mastermind 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ kata-mastermind ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ kata-mastermind ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ kata-mastermind ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ kata-mastermind ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ kata-mastermind ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ kata-mastermind ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom (4 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 64.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar (83 KB at 1589.6 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.comparator.PawnSelectionsComparatorShould
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.525 s - in com.comparator.PawnSelectionsComparatorShould
+[INFO] Running com.enums.ColorShould
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in com.enums.ColorShould
+[INFO] Running com.domain.PawnsSelectionShould
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.048 s <<< FAILURE! - in com.domain.PawnsSelectionShould
+[ERROR] throw_exception_when_add_and_size_is_four(com.domain.PawnsSelectionShould)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: Expected test to throw (an instance of com.Exception.PawnsSelectionAlreadyCompleteException and exception with message a string containing "Pawns selection already complete!")
+
+[INFO] Running com.domain.GameShould
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.264 s - in com.domain.GameShould
+[INFO] Running com.domain.RoundsShould
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.domain.RoundsShould
+[INFO] Running com.validator.RoundValidatorShould
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in com.validator.RoundValidatorShould
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   PawnsSelectionShould.throw_exception_when_add_and_size_is_four Expected test to throw (an instance of com.Exception.PawnsSelectionAlreadyCompleteException and exception with message a string containing "Pawns selection already complete!")
+[INFO] 
+[ERROR] Tests run: 21, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.886 s
+[INFO] Finished at: 2020-02-15T18:14:41+01:00
+[INFO] Final Memory: 17M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project kata-mastermind: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project kata-mastermind: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-Jmaquin-kata-mastermind-367143339-20180416-150649-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1008)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
