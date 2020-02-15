@@ -1,0 +1,438 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.nflow:nflow-jetty:jar:4.2.1-SNAPSHOT
+[WARNING] 'profiles.profile[oracle].dependencies.dependency.systemPath' for com.oracle:ojdbc7:jar should not point at files within the project directory, ${basedir}/../ojdbc7.jar will be unresolvable by dependent projects @ io.nflow:nflow-jetty:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-jetty/pom.xml, line 302, column 23
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.nflow:nflow-tests:jar:4.2.1-SNAPSHOT
+[WARNING] 'profiles.profile[oracle].dependencies.dependency.systemPath' for com.oracle:ojdbc7:jar should not point at files within the project directory, ${basedir}/../ojdbc7.jar will be unresolvable by dependent projects @ io.nflow:nflow-tests:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-tests/pom.xml, line 89, column 23
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] Inspecting build with total of 7 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 7 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] nflow
+[INFO] nflow-engine
+[INFO] nflow-rest-api
+[INFO] nflow-jetty
+[INFO] nflow-metrics
+[INFO] nflow-tests
+[INFO] nflow-perf-test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building nflow 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-unwanted-dependencies) @ nflow-root ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building nflow-engine 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-unwanted-dependencies) @ nflow-engine ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ nflow-engine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 35 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ nflow-engine ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 70 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-engine/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ nflow-engine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ nflow-engine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ nflow-engine ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-engine/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 8.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 78.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1389.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.nflow.engine.workflow.definition.WorkflowDefinitionTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.524 sec - in io.nflow.engine.workflow.definition.WorkflowDefinitionTest
+Running io.nflow.engine.workflow.definition.WorkflowSettingsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in io.nflow.engine.workflow.definition.WorkflowSettingsTest
+Running io.nflow.engine.workflow.definition.WorkflowStateTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.nflow.engine.workflow.definition.WorkflowStateTypeTest
+Running io.nflow.engine.workflow.definition.MutableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.nflow.engine.workflow.definition.MutableTest
+Running io.nflow.engine.workflow.definition.NextActionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in io.nflow.engine.workflow.definition.NextActionTest
+Running io.nflow.engine.workflow.definition.AbstractWorkflowDefinitionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in io.nflow.engine.workflow.definition.AbstractWorkflowDefinitionTest
+Running io.nflow.engine.workflow.instance.WorkflowInstanceFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 sec - in io.nflow.engine.workflow.instance.WorkflowInstanceFactoryTest
+Running io.nflow.engine.workflow.instance.WorkflowInstanceTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in io.nflow.engine.workflow.instance.WorkflowInstanceTest
+Running io.nflow.engine.workflow.WorkflowInstancePreProcessorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec - in io.nflow.engine.workflow.WorkflowInstancePreProcessorTest
+Running io.nflow.engine.internal.dao.WorkflowInstanceDaoTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.213 sec - in io.nflow.engine.internal.dao.WorkflowInstanceDaoTest
+Running io.nflow.engine.internal.dao.StatisticsDaoTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in io.nflow.engine.internal.dao.StatisticsDaoTest
+Running io.nflow.engine.internal.dao.TableMetadataCheckerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in io.nflow.engine.internal.dao.TableMetadataCheckerTest
+Running io.nflow.engine.internal.dao.HealthCheckDaoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in io.nflow.engine.internal.dao.HealthCheckDaoTest
+Running io.nflow.engine.internal.dao.ExecutorDaoTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in io.nflow.engine.internal.dao.ExecutorDaoTest
+Running io.nflow.engine.internal.dao.WorkflowDefinitionDaoTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in io.nflow.engine.internal.dao.WorkflowDefinitionDaoTest
+Running io.nflow.engine.internal.dao.ArchiveDaoTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 sec - in io.nflow.engine.internal.dao.ArchiveDaoTest
+Running io.nflow.engine.internal.dao.DaoUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.nflow.engine.internal.dao.DaoUtilTest
+Running io.nflow.engine.internal.executor.WorkflowStateProcessorFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 sec - in io.nflow.engine.internal.executor.WorkflowStateProcessorFactoryTest
+Running io.nflow.engine.internal.executor.WorkflowInstanceExecutorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in io.nflow.engine.internal.executor.WorkflowInstanceExecutorTest
+Running io.nflow.engine.internal.executor.ThresholdBlockingQueueTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.04 sec - in io.nflow.engine.internal.executor.ThresholdBlockingQueueTest
+Running io.nflow.engine.internal.executor.WorkflowStateProcessorTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.403 sec - in io.nflow.engine.internal.executor.WorkflowStateProcessorTest
+Running io.nflow.engine.internal.executor.WorkflowDispatcherTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.777 sec - in io.nflow.engine.internal.executor.WorkflowDispatcherTest
+Running io.nflow.engine.internal.storage.db.DatabaseInitializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in io.nflow.engine.internal.storage.db.DatabaseInitializerTest
+Running io.nflow.engine.internal.workflow.WorkflowDefinitionScannerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.nflow.engine.internal.workflow.WorkflowDefinitionScannerTest
+Running io.nflow.engine.internal.workflow.StateExecutionImplTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in io.nflow.engine.internal.workflow.StateExecutionImplTest
+Running io.nflow.engine.internal.config.EngineConfigurationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec - in io.nflow.engine.internal.config.EngineConfigurationTest
+Running io.nflow.engine.internal.config.WorkflowLifecycleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec - in io.nflow.engine.internal.config.WorkflowLifecycleTest
+Running io.nflow.engine.internal.config.PropertiesConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.nflow.engine.internal.config.PropertiesConfigurationTest
+Running io.nflow.engine.internal.util.PeriodicLoggerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 sec - in io.nflow.engine.internal.util.PeriodicLoggerTest
+Running io.nflow.engine.service.ArchiveServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in io.nflow.engine.service.ArchiveServiceTest
+Running io.nflow.engine.service.HealthCheckServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in io.nflow.engine.service.HealthCheckServiceTest
+Running io.nflow.engine.service.WorkflowExecutorServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in io.nflow.engine.service.WorkflowExecutorServiceTest
+Running io.nflow.engine.service.WorkflowDefinitionServiceWithSpringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.209 sec - in io.nflow.engine.service.WorkflowDefinitionServiceWithSpringTest
+Running io.nflow.engine.service.StatisticsServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.nflow.engine.service.StatisticsServiceTest
+Running io.nflow.engine.service.WorkflowDefinitionServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in io.nflow.engine.service.WorkflowDefinitionServiceTest
+Running io.nflow.engine.service.WorkflowInstanceServiceTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec - in io.nflow.engine.service.WorkflowInstanceServiceTest
+
+Results :
+
+Tests run: 253, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building nflow-rest-api 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-unwanted-dependencies) @ nflow-rest-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ nflow-rest-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ nflow-rest-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 33 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-rest-api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ nflow-rest-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-rest-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ nflow-rest-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ nflow-rest-api ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-rest-api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.nflow.rest.config.CorsHeaderContainerResponseFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.133 sec - in io.nflow.rest.config.CorsHeaderContainerResponseFilterTest
+Running io.nflow.rest.JerseyCompabilityTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.127 sec - in io.nflow.rest.JerseyCompabilityTest
+Running io.nflow.rest.v1.converter.ListWorkflowDefinitionConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec - in io.nflow.rest.v1.converter.ListWorkflowDefinitionConverterTest
+Running io.nflow.rest.v1.converter.CreateWorkflowConverterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in io.nflow.rest.v1.converter.CreateWorkflowConverterTest
+Running io.nflow.rest.v1.converter.ListWorkflowExecutorConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.nflow.rest.v1.converter.ListWorkflowExecutorConverterTest
+Running io.nflow.rest.v1.converter.ListWorkflowInstanceConverterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.498 sec - in io.nflow.rest.v1.converter.ListWorkflowInstanceConverterTest
+Running io.nflow.rest.v1.converter.StatisticsConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.nflow.rest.v1.converter.StatisticsConverterTest
+Running io.nflow.rest.v1.StatisticsResourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in io.nflow.rest.v1.StatisticsResourceTest
+Running io.nflow.rest.v1.ArchiveResourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in io.nflow.rest.v1.ArchiveResourceTest
+Running io.nflow.rest.v1.WorkflowDefinitionResourceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in io.nflow.rest.v1.WorkflowDefinitionResourceTest
+Running io.nflow.rest.v1.config.RestConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.nflow.rest.v1.config.RestConfigurationTest
+Running io.nflow.rest.v1.config.DateTimeParamConverterProviderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in io.nflow.rest.v1.config.DateTimeParamConverterProviderTest
+Running io.nflow.rest.v1.WorkflowExecutorResourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in io.nflow.rest.v1.WorkflowExecutorResourceTest
+Running io.nflow.rest.v1.WorkflowInstanceResourceTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec - in io.nflow.rest.v1.WorkflowInstanceResourceTest
+
+Results :
+
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building nflow-jetty 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-unwanted-dependencies) @ nflow-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:unpack (unpack) @ nflow-jetty ---
+[INFO] Configured Artifact: com.nitorcreations:nflow-explorer:1.2.5:tar.gz
+[INFO] Unpacking /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/.m2/com/nitorcreations/nflow-explorer/1.2.5/nflow-explorer-1.2.5.tar.gz to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-jetty/target/explorer with includes "" and excludes ""
+[INFO] Expanding: /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/.m2/com/nitorcreations/nflow-explorer/1.2.5/nflow-explorer-1.2.5.tar.gz into /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-jetty/target/explorer
+[INFO] 
+[INFO] --- download-maven-plugin:1.3.0:wget (unpack-swagger-ui) @ nflow-jetty ---
+[INFO] Got from cache: /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/.m2/.cache/download-maven-plugin/v2.2.8.tar.gz_ed61667fcfeebc7ccb4966ccffd0ff8c
+[INFO] Expanding: /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-jetty/target/swagger/v2.2.8.tar.gz into /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-jetty/target/swagger
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ nflow-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:copy-resources (copy-swagger-resources) @ nflow-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 51 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:copy-resources (copy-explorer-resources) @ nflow-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 51 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ nflow-jetty ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-jetty/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ nflow-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ nflow-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ nflow-jetty ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-jetty/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.nflow.jetty.StartNflowTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 5.366 sec - in io.nflow.jetty.StartNflowTest
+Running io.nflow.jetty.mapper.BadRequestExceptionMapperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in io.nflow.jetty.mapper.BadRequestExceptionMapperTest
+Running io.nflow.jetty.mapper.CustomValidationExceptionMapperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.031 sec - in io.nflow.jetty.mapper.CustomValidationExceptionMapperTest
+Running io.nflow.jetty.mapper.NotFoundExceptionMapperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.nflow.jetty.mapper.NotFoundExceptionMapperTest
+Running io.nflow.jetty.config.NflowJettyConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in io.nflow.jetty.config.NflowJettyConfigurationTest
+Running io.nflow.jetty.spring.NflowStandardEnvironmentTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in io.nflow.jetty.spring.NflowStandardEnvironmentTest
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building nflow-metrics 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-unwanted-dependencies) @ nflow-metrics ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ nflow-metrics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-metrics/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ nflow-metrics ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-metrics/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ nflow-metrics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-metrics/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ nflow-metrics ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ nflow-metrics ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-metrics/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.nflow.metrics.MetricsWorkflowExecutorListenerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.216 sec - in io.nflow.metrics.MetricsWorkflowExecutorListenerTest
+Running io.nflow.metrics.DatabaseConnectionHealthCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.nflow.metrics.DatabaseConnectionHealthCheckTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building nflow-tests 4.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (ban-unwanted-dependencies) @ nflow-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ nflow-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ nflow-tests ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-tests/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ nflow-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ nflow-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ nflow-tests ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-tests/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.nflow.tests.WorkflowDefinitionUpdateTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.309 sec - in io.nflow.tests.WorkflowDefinitionUpdateTest
+Running io.nflow.tests.PreviewCreditApplicationWorkflowTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.814 sec - in io.nflow.tests.PreviewCreditApplicationWorkflowTest
+Running io.nflow.tests.FutureWorkflowTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.741 sec - in io.nflow.tests.FutureWorkflowTest
+Running io.nflow.tests.StateVariablesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.621 sec - in io.nflow.tests.StateVariablesTest
+Running io.nflow.tests.CreditApplicationWorkflowTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.634 sec - in io.nflow.tests.CreditApplicationWorkflowTest
+Running io.nflow.tests.ExecutorRecoveryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.295 sec - in io.nflow.tests.ExecutorRecoveryTest
+Running io.nflow.tests.DemoWorkflowTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.612 sec - in io.nflow.tests.DemoWorkflowTest
+Running io.nflow.tests.StatisticsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.133 sec - in io.nflow.tests.StatisticsTest
+Running io.nflow.tests.ArchiveTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.223 sec - in io.nflow.tests.ArchiveTest
+Running io.nflow.tests.Swagger2MarkupTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.527 sec <<< FAILURE! - in io.nflow.tests.Swagger2MarkupTest
+convertRemoteSwaggerToAsciiDoc(io.nflow.tests.Swagger2MarkupTest)  Time elapsed: 0.484 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<5> but was:<4>
+	at io.nflow.tests.Swagger2MarkupTest.convertRemoteSwaggerToAsciiDoc(Swagger2MarkupTest.java:31)
+
+Running io.nflow.tests.MetricsAdminServletTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.446 sec - in io.nflow.tests.MetricsAdminServletTest
+Running io.nflow.tests.ChildWorkflowTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.573 sec - in io.nflow.tests.ChildWorkflowTest
+Running io.nflow.tests.SignalWorkflowTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.547 sec - in io.nflow.tests.SignalWorkflowTest
+
+Results :
+
+Failed tests: 
+  Swagger2MarkupTest.convertRemoteSwaggerToAsciiDoc:31 expected:<5> but was:<4>
+
+Tests run: 59, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] nflow .............................................. SUCCESS [  0.578 s]
+[INFO] nflow-engine ....................................... SUCCESS [ 25.480 s]
+[INFO] nflow-rest-api ..................................... SUCCESS [  6.517 s]
+[INFO] nflow-jetty ........................................ SUCCESS [  9.660 s]
+[INFO] nflow-metrics ...................................... SUCCESS [  4.115 s]
+[INFO] nflow-tests ........................................ FAILURE [01:19 min]
+[INFO] nflow-perf-test .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:07 min
+[INFO] Finished at: 2020-02-15T18:17:37+01:00
+[INFO] Final Memory: 37M/93M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project nflow-tests: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-tests/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project nflow-tests: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-tests/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-NitorCreations-nflow-388193680-20180605-114752-firstCommit/nflow-tests/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :nflow-tests
