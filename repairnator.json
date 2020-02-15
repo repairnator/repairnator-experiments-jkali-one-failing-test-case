@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "DSI-Ville-Noumea/radi",
-  "bugCommit": "https://github.com/DSI-Ville-Noumea/radi/commit/8fb84470e808",
-  "failingModule": "/root/workspace/DSI-Ville-Noumea/radi/388001444",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 21,
-  "failing-test-cases": [
-    {
-      "className": "nc.noumea.mairie.radi.service.HelperTest",
-      "failingMethods": [
-        "formatActiveDirectoryLongDateTime_StringvaidTimeStamp"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:25 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:50:03 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 26342520,
+      "totalMemory": 88760320
+    },
+    "totalDuration": 276,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          19
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-DSI-Ville-Noumea-radi-388001444-20180604-233602-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 21,
+      "numberPassing": 20,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c1364393325000\u003e but was:\u003c1364357325000\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nc.noumea.mairie.radi.service.HelperTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nc.noumea.mairie.radi.service.HelperTest",
+        "testMethod": "formatActiveDirectoryLongDateTime_StringvaidTimeStamp",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1364393325000\u003e but was:\u003c1364357325000\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 21,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 60,
+    "numberLines": 0
+  },
+  "commits": {}
 }
