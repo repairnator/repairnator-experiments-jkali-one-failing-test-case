@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:21 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:46:33 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 19767072,
+      "totalMemory": 91508736
+    },
+    "totalDuration": 69,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 22,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          22
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-AuthMe-ConfigMe-412299769-20180805-135017-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-AuthMe-ConfigMe-412299769-20180805-135017-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 171,
+      "numberPassing": 170,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ch.jalu.configme.properties.BeanPropertyTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ch.jalu.configme.properties.BeanPropertyTest",
+        "testMethod": "shouldUseCustomMapper",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: \u003cch.jalu.configme.beanmapper.worldgroup.WorldGroupConfig@bfb93cf\u003e\n     but: was \u003cch.jalu.configme.beanmapper.worldgroup.WorldGroupConfig@dd737ea\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 46,
+    "numberTestFiles": 77,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {}
+}
