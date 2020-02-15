@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "atlanmod/model-consistency",
-  "bugCommit": "https://github.com/atlanmod/model-consistency/compare/bc9fa36a1a97...150a0793aee6",
-  "failingModule": "/root/workspace/atlanmod/model-consistency/377753448/consistency-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 19,
-  "failing-test-cases": [
-    {
-      "className": "org.consistency.core.tests.unit.PubSubTest",
-      "failingMethods": [
-        "org.consistency.core.tests.unit.PubSubTest#testTopicPublishAll"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 11:13:41 PM",
+    "reproductionDateEnd": "Feb 15, 2020 11:23:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 122077200,
+      "totalMemory": 553308160
+    },
+    "totalDuration": 607,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 408,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          408
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atlanmod-model-consistency-377753448-20180511-162250-firstCommit/consistency-core",
+    "overallMetrics": {
+      "numberRunning": 19,
+      "numberPassing": 18,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[1]\u003e but was:\u003c[0]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.consistency.core.tests.unit.PubSubTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.consistency.core.tests.unit.PubSubTest",
+        "testMethod": "testTopicPublishAll",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[1]\u003e but was:\u003c[0]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 67,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 149,
+    "numberLines": 0
+  },
+  "commits": {}
 }
