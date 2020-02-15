@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "AsyncHttpClient/async-http-client",
-  "bugCommit": "https://github.com/AsyncHttpClient/async-http-client/compare/8c6a633040b5...caec15542860",
-  "failingModule": "/root/workspace/AsyncHttpClient/async-http-client/242166798/client",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 502,
-  "failing-test-cases": [
-    {
-      "className": "org.asynchttpclient.reactivestreams.ReactiveStreamsTest",
-      "failingMethods": [
-        "org.asynchttpclient.reactivestreams.ReactiveStreamsTest#testConnectionDoesNotGetClosed"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:21 PM",
+    "reproductionDateEnd": "Feb 15, 2020 3:11:33 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 230286456,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1568,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1331,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1331
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-AsyncHttpClient-async-http-client-242166798-20170612-221657_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-AsyncHttpClient-async-http-client-242166798-20170612-221657_bugonly-firstCommit/client",
+    "overallMetrics": {
+      "numberRunning": 502,
+      "numberPassing": 501,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Invalid response byte at position 24000 expected [-23] but found [101]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.asynchttpclient.reactivestreams.ReactiveStreamsTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.asynchttpclient.reactivestreams.ReactiveStreamsTest",
+        "testMethod": "testConnectionDoesNotGetClosed",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Invalid response byte at position 132000 expected [104] but found [-70]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 222,
+    "numberTestFiles": 122,
+    "numberLibrariesFailingModule": 51,
+    "numberLines": 0
+  },
+  "commits": {}
 }
