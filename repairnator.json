@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "Learnosity/learnosity-sdk-java",
-  "bugCommit": "https://github.com/Learnosity/learnosity-sdk-java/compare/f72f605f3cf0...070a520a0b68",
-  "failingModule": "/root/workspace/Learnosity/learnosity-sdk-java/385017962",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 8,
-  "failing-test-cases": [
-    {
-      "className": "learnositysdk.request.InitTest",
-      "failingMethods": [
-        "testInitItemsGenerate"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:13:47 PM",
+    "reproductionDateEnd": "Feb 15, 2020 6:31:08 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 31903840,
+      "totalMemory": 145752064
+    },
+    "totalDuration": 1040,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 998,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          998
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Learnosity-learnosity-sdk-java-385017962-20180529-063528-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-Learnosity-learnosity-sdk-java-385017962-20180529-063528-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 8,
+      "numberPassing": 7,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.ComparisonFailure",
-          "failureDetail": "Errors in the Items initialisation expected:\u003c7f0caf13a11f525be9fd57a95979a00cb895cad43a4d8617f73262329ed866c5\u003e but was:\u003cc4ef178bc2ab3666e8ca6055e132dba7f670efaf57204ef08e0773387025f96f\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "learnositysdk.request.InitTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "learnositysdk.request.InitTest",
+        "testMethod": "testInitItemsGenerate",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "Errors in the Items initialisation expected:\u003c7f0caf13a11f525be9fd57a95979a00cb895cad43a4d8617f73262329ed866c5\u003e but was:\u003cc4ef178bc2ab3666e8ca6055e132dba7f670efaf57204ef08e0773387025f96f\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 4,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  }
 }
