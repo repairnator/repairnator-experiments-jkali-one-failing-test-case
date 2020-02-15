@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="innovimax.mixthem.GenericTest" time="0.918" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="skip.npm" value="true"/>
+    <property name="java.endorsed.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="cobertura.skip" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/hpc2n/eb/software/Core/Maven/3.6.0/lib:/hpc2n/eb/software/Core/Java/1.8.0_202/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="license.skip" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skip.bower" value="true"/>
+    <property name="maven.repo.local" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/.m2"/>
+    <property name="os.version" value="4.15.0-76-generic"/>
+    <property name="user.home" value="/home/d/dginelli"/>
+    <property name="user.timezone" value="Europe/Stockholm"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="dginelli"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="skipITs" value="true"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -e -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="dependency-check.skip" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/resources.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/rt.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/sunrsasign.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jsse.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jce.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/charsets.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jfr.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="rat.skip" value="true"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testCharRules" classname="innovimax.mixthem.GenericTest" time="0.802">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at innovimax.mixthem.GenericTest.testRules(GenericTest.java:95)
+	at innovimax.mixthem.GenericTest.testCharRules(GenericTest.java:30)
+</failure>
+    <system-out><![CDATA[1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+RANGE=[1, A]
+CHANNEL=0 LINE=1
+RANGE=[2, B]
+CHANNEL=1 LINE=B
+RANGE=[3, C]
+CHANNEL=0 LINE=3
+RANGE=[4, D]
+CHANNEL=1 LINE=D
+RANGE=[5, E]
+CHANNEL=0 LINE=5
+RANGE=[6, F]
+CHANNEL=1 LINE=F
+RANGE=[7, G]
+CHANNEL=0 LINE=7
+RANGE=[8, H]
+CHANNEL=1 LINE=H
+RANGE=[9, I]
+CHANNEL=0 LINE=9
+RANGE=[10, J]
+CHANNEL=1 LINE=J
+RANGE=[null, K]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=K
+RANGE=[null, L]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=L
+RANGE=[null, M]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=M
+RANGE=[null, N]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=N
+RANGE=[1, A]
+CHANNEL=0 LINE=1
+RANGE=[2, B]
+CHANNEL=1 LINE=B
+RANGE=[3, C]
+CHANNEL=0 LINE=3
+RANGE=[4, D]
+CHANNEL=1 LINE=D
+RANGE=[5, E]
+CHANNEL=0 LINE=5
+RANGE=[6, F]
+CHANNEL=1 LINE=F
+RANGE=[7, G]
+CHANNEL=0 LINE=7
+RANGE=[8, H]
+CHANNEL=1 LINE=H
+RANGE=[9, I]
+CHANNEL=0 LINE=9
+RANGE=[10, J]
+CHANNEL=1 LINE=J
+RANGE=[null, K]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=K
+RANGE=[null, L]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=L
+RANGE=[null, M]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=M
+RANGE=[null, N]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=N
+1
+B
+3
+D
+5
+F
+7
+H
+9
+J
+K
+L
+M
+N
+RANGE=[1, A]
+CHANNEL=1 LINE=A
+RANGE=[2, B]
+CHANNEL=1 LINE=B
+RANGE=[3, C]
+CHANNEL=1 LINE=C
+RANGE=[4, D]
+CHANNEL=0 LINE=4
+RANGE=[5, E]
+CHANNEL=1 LINE=E
+RANGE=[6, F]
+CHANNEL=1 LINE=F
+RANGE=[7, G]
+CHANNEL=1 LINE=G
+RANGE=[8, H]
+CHANNEL=0 LINE=8
+RANGE=[9, I]
+CHANNEL=0 LINE=9
+RANGE=[10, J]
+CHANNEL=1 LINE=J
+RANGE=[null, K]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=K
+RANGE=[null, L]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=L
+RANGE=[null, M]
+CHANNEL=1 LINE=M
+RANGE=[null, N]
+CHANNEL=1 LINE=N
+RANGE=[1, A]
+CHANNEL=1 LINE=A
+RANGE=[2, B]
+CHANNEL=1 LINE=B
+RANGE=[3, C]
+CHANNEL=1 LINE=C
+RANGE=[4, D]
+CHANNEL=0 LINE=4
+RANGE=[5, E]
+CHANNEL=1 LINE=E
+RANGE=[6, F]
+CHANNEL=1 LINE=F
+RANGE=[7, G]
+CHANNEL=1 LINE=G
+RANGE=[8, H]
+CHANNEL=0 LINE=8
+RANGE=[9, I]
+CHANNEL=0 LINE=9
+RANGE=[10, J]
+CHANNEL=1 LINE=J
+RANGE=[null, K]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=K
+RANGE=[null, L]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=L
+RANGE=[null, M]
+CHANNEL=1 LINE=M
+RANGE=[null, N]
+CHANNEL=1 LINE=N
+A
+B
+C
+4
+E
+F
+G
+8
+9
+J
+K
+L
+M
+N
+RANGE=[1, A]
+CHANNEL=1 LINE=A
+RANGE=[2, B]
+CHANNEL=1 LINE=B
+RANGE=[3, C]
+CHANNEL=1 LINE=C
+RANGE=[4, D]
+CHANNEL=0 LINE=4
+RANGE=[5, E]
+CHANNEL=1 LINE=E
+RANGE=[6, F]
+CHANNEL=1 LINE=F
+RANGE=[7, G]
+CHANNEL=1 LINE=G
+RANGE=[8, H]
+CHANNEL=0 LINE=8
+RANGE=[9, I]
+CHANNEL=0 LINE=9
+RANGE=[10, J]
+CHANNEL=1 LINE=J
+RANGE=[null, K]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=K
+RANGE=[null, L]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=L
+RANGE=[null, M]
+CHANNEL=1 LINE=M
+RANGE=[null, N]
+CHANNEL=1 LINE=N
+RANGE=[1, A]
+CHANNEL=1 LINE=A
+RANGE=[2, B]
+CHANNEL=1 LINE=B
+RANGE=[3, C]
+CHANNEL=1 LINE=C
+RANGE=[4, D]
+CHANNEL=0 LINE=4
+RANGE=[5, E]
+CHANNEL=1 LINE=E
+RANGE=[6, F]
+CHANNEL=1 LINE=F
+RANGE=[7, G]
+CHANNEL=1 LINE=G
+RANGE=[8, H]
+CHANNEL=0 LINE=8
+RANGE=[9, I]
+CHANNEL=0 LINE=9
+RANGE=[10, J]
+CHANNEL=1 LINE=J
+RANGE=[null, K]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=K
+RANGE=[null, L]
+CHANNEL=0 LINE=null
+NEW_CHANNEL=1 LINE=L
+RANGE=[null, M]
+CHANNEL=1 LINE=M
+RANGE=[null, N]
+CHANNEL=1 LINE=N
+A
+B
+C
+4
+E
+F
+G
+8
+9
+J
+K
+L
+M
+N
+1B3D5F7H9JKLMN
+ABC4EFG89JKLMN
+ABC4EFG89JKLMN
+1 25.00 Red Beaunes France 25.00 Beaunes Great!
+2 15.50 White Reisling Germany 15.50 Reisling Terrible!
+3 8.90 Red Riocha Spain 8.90 Riocha Meh
+25.00 1 Red Beaunes France 1 Beaunes Great!
+15.50 2 White Reisling Germany 2 Reisling Terrible!
+8.90 3 Red Riocha Spain 3 Riocha Meh
+Beaunes 1 25.00 Red France 1 25.00 Great!
+Reisling 2 15.50 White Germany 2 15.50 Terrible!
+Riocha 3 8.90 Red Spain 3 8.90 Meh
+apple orangered blue gold
+bananagreen purple
+cherry lemon peachsilver yellow
+apple orange,red blue gold
+banana,green purple
+cherry lemon peach,silver yellow
+applered orangeblue
+bananagreen
+cherrysilver lemonyellow
+apple,red orange,blue
+banana,green
+cherry,silver lemon,yellow
+1 25.00 Red Beaunes France 25.00 Beaunes Great!
+2 15.50 White Reisling Germany 15.50 Reisling Terrible!
+RANGE=[A, 1]
+CHANNEL=0 LINE=A
+RANGE=[B, 2]
+CHANNEL=1 LINE=2
+RANGE=[C, 3]
+CHANNEL=0 LINE=C
+RANGE=[D, 4]
+CHANNEL=1 LINE=4
+RANGE=[E, 5]
+CHANNEL=0 LINE=E
+RANGE=[F, 6]
+CHANNEL=1 LINE=6
+RANGE=[G, 7]
+CHANNEL=0 LINE=G
+RANGE=[H, 8]
+CHANNEL=1 LINE=8
+RANGE=[I, 9]
+CHANNEL=0 LINE=I
+RANGE=[J, 10]
+CHANNEL=1 LINE=10
+RANGE=[K, null]
+CHANNEL=0 LINE=K
+RANGE=[L, null]
+CHANNEL=1 LINE=null
+NEW_CHANNEL=0 LINE=L
+RANGE=[M, null]
+CHANNEL=1 LINE=null
+NEW_CHANNEL=0 LINE=M
+RANGE=[N, null]
+CHANNEL=1 LINE=null
+NEW_CHANNEL=0 LINE=N
+RANGE=[A, 1]
+CHANNEL=0 LINE=A
+RANGE=[B, 2]
+CHANNEL=1 LINE=2
+RANGE=[C, 3]
+CHANNEL=0 LINE=C
+RANGE=[D, 4]
+CHANNEL=1 LINE=4
+RANGE=[E, 5]
+CHANNEL=0 LINE=E
+RANGE=[F, 6]
+CHANNEL=1 LINE=6
+RANGE=[G, 7]
+CHANNEL=0 LINE=G
+RANGE=[H, 8]
+CHANNEL=1 LINE=8
+RANGE=[I, 9]
+CHANNEL=0 LINE=I
+RANGE=[J, 10]
+CHANNEL=1 LINE=10
+RANGE=[K, null]
+CHANNEL=0 LINE=K
+RANGE=[L, null]
+CHANNEL=1 LINE=null
+NEW_CHANNEL=0 LINE=L
+RANGE=[M, null]
+CHANNEL=1 LINE=null
+NEW_CHANNEL=0 LINE=M
+RANGE=[N, null]
+CHANNEL=1 LINE=null
+NEW_CHANNEL=0 LINE=N
+A
+2
+C
+4
+E
+6
+G
+8
+I
+10
+K
+L
+M
+N
+A2C4E6G8I
+KLMN
+1 25.00 Red Beaunes France 25.00 Beaunes Great!
+4 8.90 Red Riocha Spain 8.90 Riocha Meh
+apple orangered blue gold
+bananagreen purple
+applered orangeblue
+bananagreen
+agprpeleen  orreadn gbel ubea
+a,gp,rp,el,ee,n , o,rr,ea,dn, g,be,l ,ub,ea,
+garpepelne  roerda nbgleu eb
+a1 red apple france apple
+2 yellow lemon italy
+3 green indonesia papaye
+apple 1 red 1 france
+251308 30000 Preeti
+251311 25000 Joseph
+251315 10000 Abishek
+251321 12255 Ankita
+251308 30000 Preeti
+251311 25000 Joseph
+251315 10000 Abishek
+251321 12255 Ankita
+251308 30000 Preeti
+251311 25000 Joseph
+251315 10000 Abishek
+251321 12255 Ankita
+251308 30000 Preeti
+251311 25000 Joseph
+251315 10000 Abishek
+251321 12255 Ankita
+d 4 D dd 44
+c C 2 e EE 10
+1B3d5f78ijk
+1Aa2Bb3Cc4Dd5
+e1XYZAXYZa2XYZBXYZb3XYZCXYZc4XYZDXYZd5XYZ
+XYZe123456789
+ABCD
+abcdef
+ZYXWVUTSRQP
+zyx
+1YxW
+f
+S9QP
+1AaZz2BbYy3CcXx4DdW
+1_A_a_Z_z2_B_b_Y_y3_C_c_X_x4_D_d_W_
+]]></system-out>
+    <system-err><![CDATA[[INFO] MixThem: TEST [CHAR] N° 1***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_output-1.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule '1'...
+[INFO] MixThem: Ended mixing for [char] rule '1'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule '1'...
+[INFO] MixThem: Ended mixing for [char] rule '1'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_output-2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule '2'...
+[INFO] MixThem: Ended mixing for [char] rule '2'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule '2'...
+[INFO] MixThem: Ended mixing for [char] rule '2'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_output-add.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule '+'...
+[INFO] MixThem: Ended mixing for [char] rule '+'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule '+'...
+[INFO] MixThem: Ended mixing for [char] rule '+'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_output-altline.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'alt-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'alt-line'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'alt-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'alt-line'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_params-random-altline.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_output-random-altline.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-line'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-line'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_params-random-altline.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test001_output-random-altline.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-line'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-line'.
+[INFO] MixThem: Run pass with params {RANDOM_SEED=1789}
+[INFO] MixThem: TEST [CHAR] N° 2***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test002_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test002_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test002_output-altchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'alt-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'alt-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test002_params-random-altchar.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test002_output-random-altchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test002_params-random-altchar.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test002_output-random-altchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-char'.
+[INFO] MixThem: Run pass with params {RANDOM_SEED=1789}
+[INFO] MixThem: TEST [CHAR] N° 3***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test003_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test003_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test003_params-join.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test003_output-join.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test003_params-join.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test003_output-join-same.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {JOIN_COL1=2, JOIN_COL2=2}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test003_params-join.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test003_output-join-diff.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {JOIN_COL1=4, JOIN_COL2=3}
+[INFO] MixThem: TEST [CHAR] N° 4***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_params-zipline.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_output-zipline.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-line'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-line'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_params-zipline.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_output-zipline-sep.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-line'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-line'.
+[INFO] MixThem: Run pass with params {ZIP_SEP=,}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_params-zipcell.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_output-zipcell.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-cell'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-cell'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-cell'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-cell'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_params-zipcell.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test004_output-zipcell-sep.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-cell'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-cell'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-cell'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-cell'.
+[INFO] MixThem: Run pass with params {ZIP_SEP=,}
+[INFO] MixThem: TEST [CHAR] N° 5***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test005_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test005_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test005_output-join.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 6***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test006_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test006_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test006_output-altline.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'alt-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'alt-line'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'alt-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'alt-line'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 7***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test007_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test007_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test007_output-altchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'alt-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'alt-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 8***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test008_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test008_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test008_output-join.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 9***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test009_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test009_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test009_output-zipline.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-line'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-line'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-line'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 10***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test010_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test010_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test010_output-zipcell.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-cell'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-cell'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-cell'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-cell'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 11***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test011_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test011_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test011_params-zipchar.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test011_output-zipchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test011_params-zipchar.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test011_output-zipchar-sep.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run pass with params {ZIP_SEP=,}
+[INFO] MixThem: TEST [CHAR] N° 12***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test012_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test012_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test012_output-zipchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 13***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test013_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test013_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test013_params-join.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test013_output-join.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test013_params-join.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test013_output-join-over.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {JOIN_COL1=3, JOIN_COL2=3}
+[INFO] MixThem: TEST [CHAR] N° 14***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test014_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test014_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test014_output-join.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 15***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test015_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test015_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test015_params-join.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test015_output-join-col1.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {JOIN_COL1=2}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test015_params-join.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test015_output-join-col12.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {JOIN_COL1=2, JOIN_COL2=1}
+[INFO] MixThem: TEST [CHAR] N° 16***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test016_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test016_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test016_output-join.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: TEST [CHAR] N° 17***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test017_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test017_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test017_output-join.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run FAIL with params {}
+[INFO] MixThem: TEST [CHAR] N° 18***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test018_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test018_file2.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test018_output-join.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'join'...
+[INFO] MixThem: Ended mixing for [char] rule 'join'.
+[INFO] MixThem: Run FAIL with params {}
+[INFO] MixThem: TEST [CHAR] N° 19***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test019_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test019_file2.txt
+[INFO] MixThem: TEST [CHAR] N° 20***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test020_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test020_file2.txt
+[INFO] MixThem: File 3: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test020_file3.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test020_output-random-altchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test020_params-zipchar.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test020_output-zipchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test020_params-zipchar.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test020_output-zipchar-sep.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run pass with params {ZIP_SEP=XYZ}
+[INFO] MixThem: TEST [CHAR] N° 21***********************************************************
+[INFO] MixThem: File 1: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_file1.txt
+[INFO] MixThem: File 2: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_file2.txt
+[INFO] MixThem: File 3: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_file3.txt
+[INFO] MixThem: File 4: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_file4.txt
+[INFO] MixThem: File 5: file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_file5.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_output-add.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule '+'...
+[INFO] MixThem: Ended mixing for [char] rule '+'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule '+'...
+[INFO] MixThem: Ended mixing for [char] rule '+'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_output-random-altchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'random-alt-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'random-alt-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_params-zipchar.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_output-zipchar.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run pass with params {}
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Params file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_params-zipchar.txt
+[INFO] MixThem: Result file : file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-Innovimax-SARL-mix-them-378664604-20180514-125554-firstCommit/target/test-classes/innovimax/mixthem/test021_output-zipchar-sep.txt
+[INFO] MixThem: --------------------------------------------------------------------
+[INFO] MixThem: Run and check result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run and print result...
+[INFO] MixThem: Started mixing for [char] rule 'zip-char'...
+[INFO] MixThem: Ended mixing for [char] rule 'zip-char'.
+[INFO] MixThem: Run pass with params {ZIP_SEP=_}
+[INFO] MixThem: TEST [CHAR] N° 22***********************************************************
+[INFO] MixThem: *********************************************************************
+[INFO] MixThem: FAILED [CHAR] TESTS : [17, 18]
+[INFO] MixThem: *********************************************************************
+]]></system-err>
+  </testcase>
+  <testcase name="testBytesRules" classname="innovimax.mixthem.GenericTest" time="0.116"/>
+</testsuite>
