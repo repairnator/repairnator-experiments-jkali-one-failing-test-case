@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "SonarOpenCommunity/sonar-cxx",
-  "failingModule": "/root/workspace/SonarOpenCommunity/sonar-cxx/397733945/cxx-sensors",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 808,
-  "failing-test-cases": [
-    {
-      "className": "org.sonar.cxx.sensors.utils.CxxMetricsTest",
-      "failingMethods": [
-        "getMetricsTest"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 6:14:15 PM",
+    "reproductionDateEnd": "Feb 15, 2020 7:57:03 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 144397216,
+      "totalMemory": 398872576
+    },
+    "totalDuration": 6166,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarOpenCommunity-sonar-cxx-397733945-20180628-125344-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-SonarOpenCommunity-sonar-cxx-397733945-20180628-125344-firstCommit/cxx-sensors",
+    "overallMetrics": {
+      "numberRunning": 808,
+      "numberPassing": 807,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c1[4]\u003e but was:\u003c1[1]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sonar.cxx.sensors.utils.CxxMetricsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sonar.cxx.sensors.utils.CxxMetricsTest",
+        "testMethod": "getMetricsTest",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c1[4]\u003e but was:\u003c1[1]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 219,
+    "numberTestFiles": 155,
+    "numberLibrariesFailingModule": 58,
+    "numberLines": 0
+  },
+  "commits": {}
 }

@@ -1547,3 +1547,6 @@ ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!"error".equals(na
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.sonar.cxx.sensors.veraxx.CxxVeraxxSensor line: 91, pointed element: CtIfImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!"error".equals(name)) { 	java.lang.String line = errorCursor.getAttrValue("line"); 	java.lang.S[...] ` -topatch--> `if (false) { 	java.lang.String line = errorCursor.getAttrValue("line"); 	java.lang.String message = [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.sonar.cxx.sensors.veraxx.CxxVeraxxSensor line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!"error".equals(name)) { 	java.lang.String line = errorCursor.getAttrValue("line"); 	java.lang.S[...] ` -topatch--> `-` (null) 
