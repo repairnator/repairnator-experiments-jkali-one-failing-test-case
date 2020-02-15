@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "GwtMaterialDesign/gwt-material",
-  "failingModule": "/root/workspace/GwtMaterialDesign/gwt-material/283484580/gwt-material",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 1544,
-  "failing-test-cases": [
-    {
-      "className": "gwt.material.design.client.ui.MaterialTabTest",
-      "failingMethods": [
-        "gwt.material.design.client.ui.MaterialTabTest#testDynamicTab"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:40 PM",
+    "reproductionDateEnd": "Feb 15, 2020 4:53:24 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 358014720,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 7661,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-GwtMaterialDesign-gwt-material-283493914-20171005-045641-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-GwtMaterialDesign-gwt-material-283493914-20171005-045641-firstCommit/gwt-material",
+    "overallMetrics": {
+      "numberRunning": 1543,
+      "numberPassing": 1542,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "junit.framework.AssertionFailedError",
-          "failureDetail": "expected: \u003ctrue\u003e, actual: \u003cfalse\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "gwt.material.design.client.ui.MaterialTabTest",
+        "numberRunning": 40,
+        "numberPassing": 39,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "gwt.material.design.client.ui.MaterialTabTest",
+        "testMethod": "testDynamicTab",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "expected: \u003ctrue\u003e, actual: \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 373,
+    "numberTestFiles": 55,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  }
 }
