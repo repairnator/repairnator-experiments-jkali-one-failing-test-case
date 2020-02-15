@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "AxonFramework/AxonFramework",
-  "bugCommit": "https://github.com/AxonFramework/AxonFramework/compare/635cebd432d2...8cc3b7769a1b",
-  "failingModule": "/root/workspace/AxonFramework/AxonFramework/348174850/core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 854,
-  "failing-test-cases": [
-    {
-      "className": "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest",
-      "failingMethods": [
-        "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest#testStreamEventsShouldNotReturnDuplicateTokens"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 15, 2020 2:45:22 PM",
+    "reproductionDateEnd": "Feb 15, 2020 2:55:14 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 626526912,
+      "totalMemory": 961925120
+    },
+    "totalDuration": 587,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 305,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          305
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-AxonFramework-AxonFramework-348174850-20180302-113355-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-AxonFramework-AxonFramework-348174850-20180302-113355-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 854,
+      "numberPassing": 853,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.AssertionFailedError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.axonframework.eventsourcing.eventstore.EmbeddedEventStoreTest",
+        "testMethod": "testStreamEventsShouldNotReturnDuplicateTokens",
+        "failureName": "junit.framework.AssertionFailedError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberPlugins": 0,
+    "numberSourceFiles": 691,
+    "numberTestFiles": 380,
+    "numberLibrariesFailingModule": 92,
+    "numberLines": 0
+  },
+  "commits": {}
 }
