@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "mjw99/jquante",
-  "bugCommit": "https://github.com/mjw99/jquante/compare/125a1c30e851...e9d74fccb592",
-  "failingModule": "/root/workspace/mjw99/jquante/400472178",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 75,
-  "failing-test-cases": [
-    {
-      "className": "name.mjw.jquante.math.qm.integral.RysTwoElectronTermTest",
-      "failingMethods": [
-        "ff00"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:42 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 23266240,
+      "totalMemory": 167923712
+    },
+    "totalDuration": 107,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 44,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          44
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mjw99-jquante-400472178-20180705-164705-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mjw99-jquante-400472178-20180705-164705-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 75,
+      "numberPassing": 74,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c0.8186960564969021\u003e but was:\u003cNaN\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "name.mjw.jquante.math.qm.integral.RysTwoElectronTermTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "name.mjw.jquante.math.qm.integral.RysTwoElectronTermTest",
+        "testMethod": "ff00",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0.8186960564969021\u003e but was:\u003cNaN\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 114,
+    "numberTestFiles": 14,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  }
 }
