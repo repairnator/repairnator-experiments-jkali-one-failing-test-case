@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "swagger-api/swagger-core",
-  "bugCommit": "https://github.com/swagger-api/swagger-core/compare/a65bd29a3128...4986de2d37ef",
-  "failingModule": "/root/workspace/swagger-api/swagger-core/251516274/modules/swagger-jaxrs2",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 210,
-  "failing-test-cases": [
-    {
-      "className": "io.swagger.jaxrs2.annotations.info.InfoTest",
-      "failingMethods": [
-        "io.swagger.jaxrs2.annotations.info.InfoTest#testSimpleInfoGet"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-swagger-api-swagger-core-251516274-20170708-183149_bugonly-firstCommit/modules/swagger-jaxrs2",
+    "overallMetrics": {
+      "numberRunning": 210,
+      "numberPassing": 209,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected [info:   title: \"the title\"   description: \"My API\"   contact:     name: \"Fred\"     url: \"http://gigantic-server.com\"     email: \"Fred@gigagantic-server.com\"   license:     name: \"Apache 2.0\"     url: \"http://foo.bar\"   version: \"0.0\"] but found [info:   title: the title   description: My API   contact:     name: Fred     url: http://gigantic-server.com     email: Fred@gigagantic-server.com   license:     name: Apache 2.0     url: http://foo.bar   version: \"0.0\"]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.jaxrs2.annotations.info.InfoTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.jaxrs2.annotations.info.InfoTest",
+        "testMethod": "testSimpleInfoGet",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [info:\n  title: \"the title\"\n  description: \"My API\"\n  contact:\n    name: \"Fred\"\n    url: \"http://gigantic-server.com\"\n    email: \"Fred@gigagantic-server.com\"\n  license:\n    name: \"Apache 2.0\"\n    url: \"http://foo.bar\"\n  version: \"0.0\"] but found [info:\n  title: the title\n  description: My API\n  contact:\n    name: Fred\n    url: http://gigantic-server.com\n    email: Fred@gigagantic-server.com\n  license:\n    name: Apache 2.0\n    url: http://foo.bar\n  version: \"0.0\"]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 135,
+    "numberTestFiles": 154,
+    "numberLibrariesFailingModule": 50,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:07 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:46:25 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 365276016,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1154,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 976,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          976
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-swagger-api-swagger-core-251516274-20170708-183149_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
