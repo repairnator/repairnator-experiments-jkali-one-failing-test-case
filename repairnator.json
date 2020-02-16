@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "google/guava",
-  "failingModule": "/root/workspace/google/guava/321014722/guava-testlib",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 850859,
-  "failing-test-cases": [
-    {
-      "className": "com.google.common.testing.EqualsTesterTest",
-      "failingMethods": [
-        "com.google.common.testing.EqualsTesterTest#testNullObjectInEqualityGroup"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:25 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:25:43 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 814386712,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6495,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-guava-321014722-20171224-134353_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-guava-321014722-20171224-134353_bugonly-firstCommit/guava-testlib",
+    "overallMetrics": {
+      "numberRunning": 850859,
+      "numberPassing": 850858,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.AssertionFailedError",
-          "failureDetail": "expected \u003celement was null\u003e to contain \u003cat index 1\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.google.common.testing.EqualsTesterTest",
+        "numberRunning": 18,
+        "numberPassing": 17,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.google.common.testing.EqualsTesterTest",
+        "testMethod": "testNullObjectInEqualityGroup",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "expected \u003celement was null\u003e to contain \u003cat index 1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 916,
+    "numberTestFiles": 693,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {}
 }
