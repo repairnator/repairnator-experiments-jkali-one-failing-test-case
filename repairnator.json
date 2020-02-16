@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "jguyet/HttpRequest",
-  "bugCommit": "https://github.com/jguyet/HttpRequest/compare/aa0842794784...81927710850c",
-  "failingModule": "/root/workspace/jguyet/HttpRequest/400611810",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.opentest4j.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 5,
-  "failing-test-cases": [
-    {
-      "className": "com.http.TestRequest",
-      "failingMethods": [
-        "testStatusOK"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:01 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:39:34 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 39100584,
+      "totalMemory": 84471808
+    },
+    "totalDuration": 91,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 5,
+      "numberPassing": 4,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.opentest4j.AssertionFailedError",
-          "failureDetail": "expected: \u003c200\u003e but was: \u003c302\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.http.TestRequest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.http.TestRequest",
+        "testMethod": "testStatusOK",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003c200\u003e but was: \u003c302\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  }
 }
