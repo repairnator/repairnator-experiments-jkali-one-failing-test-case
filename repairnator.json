@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "myprysm/vertx-pipeline",
-  "failingModule": "/root/workspace/myprysm/vertx-pipeline/400537822/vertx-pipeline-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 144,
-  "failing-test-cases": [
-    {
-      "className": "fr.myprysm.pipeline.pipeline.impl.PipelineServiceImplTest$PipelineStopTest",
-      "failingMethods": [
-        "itShouldStopAPipelineWhenTerminated"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:47 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:44:55 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 275368136,
+      "totalMemory": 994725888
+    },
+    "totalDuration": 2586,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2387,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2387
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-myprysm-vertx-pipeline-400537822-20180705-193038-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-myprysm-vertx-pipeline-400537822-20180705-193038-firstCommit/vertx-pipeline-core",
+    "overallMetrics": {
+      "numberRunning": 144,
+      "numberPassing": 143,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[0]\u003e but was:\u003c[1]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "fr.myprysm.pipeline.pipeline.impl.PipelineServiceImplTest$PipelineStopTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "fr.myprysm.pipeline.pipeline.impl.PipelineServiceImplTest$PipelineStopTest",
+        "testMethod": "itShouldStopAPipelineWhenTerminated",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[0]\u003e but was:\u003c[1]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 128,
+    "numberTestFiles": 56,
+    "numberLibrariesFailingModule": 78,
+    "numberLines": 0
+  }
 }
