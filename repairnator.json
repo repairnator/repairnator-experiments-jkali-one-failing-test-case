@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:35 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:06:52 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 17680688,
+      "totalMemory": 99897344
+    },
+    "totalDuration": 314,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 74,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          74
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-leusonmario-cloud-slang-415047320-20180812-095709-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-leusonmario-cloud-slang-415047320-20180812-095709-firstCommit/cloudslang-all",
+    "overallMetrics": {
+      "numberRunning": 478,
+      "numberPassing": 477,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cloudslang.lang.api.SlangImplTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cloudslang.lang.api.SlangImplTest",
+        "testMethod": "testSubscribeOnAllEventsWithListener",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\nslangImpl.subscribeOnEvents(\n    io.cloudslang.lang.api.SlangImplTest$EventListener@5fd4f8f5,\n    \n);\n-\u003e at io.cloudslang.lang.api.SlangImplTest.testSubscribeOnAllEventsWithListener(SlangImplTest.java:206)\nActual invocation has different arguments:\nslangImpl.subscribeOnEvents(\n    io.cloudslang.lang.api.SlangImplTest$EventListener@5fd4f8f5,\n    [EVENT_INPUT_START, SCORE_FINISHED_BRANCH_EVENT, EVENT_ACTION_START, EVENT_BRANCH_END, EVENT_JOIN_BRANCHES_END, EVENT_TASK_START, EVENT_INPUT_END, SCORE_NO_WORKER_FAILURE_EVENT, SCORE_BRANCH_FAILURE_EVENT, EVENT_JOIN_BRANCHES_START, EVENT_BRANCH_START, EVENT_OUTPUT_END, SCORE_PAUSED_EVENT, EVENT_ACTION_ERROR, SCORE_FAILURE_EVENT, SLANG_EXECUTION_EXCEPTION, SCORE_ERROR_EVENT, EVENT_ACTION_END, SCORE_FINISHED_EVENT, EVENT_EXECUTION_FINISHED, EVENT_OUTPUT_START, EVENT_SPLIT_BRANCHES]\n);\n-\u003e at io.cloudslang.lang.api.SlangImplTest.testSubscribeOnAllEventsWithListener(SlangImplTest.java:205)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 111,
+    "numberTestFiles": 56,
+    "numberLibrariesFailingModule": 30,
+    "numberLines": 0
+  },
+  "commits": {}
+}
