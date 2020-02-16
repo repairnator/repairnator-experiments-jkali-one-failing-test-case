@@ -1,0 +1,248 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring HATEOAS 0.24.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-hateoas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ spring-hateoas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 101 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/target/classes
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/src/main/java/org/springframework/hateoas/hal/Jackson2HalModule.java: /scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/src/main/java/org/springframework/hateoas/hal/Jackson2HalModule.java uses or overrides a deprecated API.
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/src/main/java/org/springframework/hateoas/hal/Jackson2HalModule.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- com.springsource.bundlor.maven:1.0.0.RELEASE:bundlor (bundlor) @ spring-hateoas ---
+Manifest written to '/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/target/classes/META-INF/MANIFEST.MF'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-hateoas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ spring-hateoas ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ spring-hateoas ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 3.7 KB/sec)
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 8.0 KB/sec)
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 149.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.hateoas.hal.forms.HalFormsLinkDiscovererUnitTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.588 sec - in org.springframework.hateoas.hal.forms.HalFormsLinkDiscovererUnitTest
+Running org.springframework.hateoas.hal.forms.Jackson2HalFormsIntegrationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 sec - in org.springframework.hateoas.hal.forms.Jackson2HalFormsIntegrationTest
+Running org.springframework.hateoas.hal.forms.HalFormsUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.springframework.hateoas.hal.forms.HalFormsUtilsTest
+Running org.springframework.hateoas.hal.forms.HalFormsWebMvcTest
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /employees/0
+       Parameters = {}
+          Headers = {Accept=[application/prs.hal-forms+json]}
+
+Handler:
+             Type = org.springframework.hateoas.hal.forms.HalFormsWebMvcTest$EmployeeController
+           Method = public org.springframework.hateoas.Resource<org.springframework.hateoas.hal.forms.Employee> org.springframework.hateoas.hal.forms.HalFormsWebMvcTest$EmployeeController.findOne(java.lang.String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/prs.hal-forms+json;charset=UTF-8]}
+     Content type = application/prs.hal-forms+json;charset=UTF-8
+             Body = {"name":"Frodo Baggins","role":"ring bearer","_links":{"self":{"href":"http://localhost/employees/0"},"put":{"href":"http://localhost/employees/0"},"patch":{"href":"http://localhost/employees/0"},"employees":{"href":"http://localhost/employees"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.276 sec <<< FAILURE! - in org.springframework.hateoas.hal.forms.HalFormsWebMvcTest
+basic(org.springframework.hateoas.hal.forms.HalFormsWebMvcTest)  Time elapsed: 0.259 sec  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$._templates.*", exception: Missing property in path $['_templates']
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:245)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:73)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers$1.match(JsonPathResultMatchers.java:86)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at org.springframework.hateoas.hal.forms.HalFormsWebMvcTest.basic(HalFormsWebMvcTest.java:95)
+
+Running org.springframework.hateoas.hal.forms.HalFormsMessageConverterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in org.springframework.hateoas.hal.forms.HalFormsMessageConverterTest
+Running org.springframework.hateoas.hal.DefaultCurieProviderUnitTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.springframework.hateoas.hal.DefaultCurieProviderUnitTest
+Running org.springframework.hateoas.hal.Jackson2HalIntegrationTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 sec - in org.springframework.hateoas.hal.Jackson2HalIntegrationTest
+Running org.springframework.hateoas.hal.HalLinkDiscovererUnitTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.springframework.hateoas.hal.HalLinkDiscovererUnitTest
+Running org.springframework.hateoas.hal.HalEmbeddedBuilderUnitTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 sec - in org.springframework.hateoas.hal.HalEmbeddedBuilderUnitTest
+Running org.springframework.hateoas.config.XmlConfigurationIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.341 sec - in org.springframework.hateoas.config.XmlConfigurationIntegrationTest
+Running org.springframework.hateoas.config.EnableEntityLinksIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in org.springframework.hateoas.config.EnableEntityLinksIntegrationTest
+Running org.springframework.hateoas.config.EnableHypermediaSupportIntegrationTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.782 sec - in org.springframework.hateoas.config.EnableHypermediaSupportIntegrationTest
+Running org.springframework.hateoas.alps.JacksonSerializationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.springframework.hateoas.alps.JacksonSerializationTest
+Running org.springframework.hateoas.client.TraversonTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.113 sec - in org.springframework.hateoas.client.TraversonTest
+Running org.springframework.hateoas.client.HopUnitTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.hateoas.client.HopUnitTest
+Running org.springframework.hateoas.core.MethodParametersUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.hateoas.core.MethodParametersUnitTest
+Running org.springframework.hateoas.core.ControllerEntityLinksUnitTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in org.springframework.hateoas.core.ControllerEntityLinksUnitTest
+Running org.springframework.hateoas.core.ControllerEntityLinksFactoryBeanUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.springframework.hateoas.core.ControllerEntityLinksFactoryBeanUnitTest
+Running org.springframework.hateoas.core.DelegatingEntityLinksUnitTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.springframework.hateoas.core.DelegatingEntityLinksUnitTest
+Running org.springframework.hateoas.core.EvoInflectorRelProviderUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.hateoas.core.EvoInflectorRelProviderUnitTest
+Running org.springframework.hateoas.core.JsonPathLinkDiscovererUnitTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.hateoas.core.JsonPathLinkDiscovererUnitTest
+Running org.springframework.hateoas.core.LinkBuilderSupportUnitTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.hateoas.core.LinkBuilderSupportUnitTest
+Running org.springframework.hateoas.core.DelegatingRelProviderUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.springframework.hateoas.core.DelegatingRelProviderUnitTest
+Running org.springframework.hateoas.core.AnnotationMappingDiscovererUnitTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.springframework.hateoas.core.AnnotationMappingDiscovererUnitTest
+Running org.springframework.hateoas.core.EmbeddedWrappersUnitTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.springframework.hateoas.core.EmbeddedWrappersUnitTest
+Running org.springframework.hateoas.TemplateVariablesUnitTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.springframework.hateoas.TemplateVariablesUnitTest
+Running org.springframework.hateoas.LinkDiscoverersUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.springframework.hateoas.LinkDiscoverersUnitTest
+Running org.springframework.hateoas.mvc.TypeReferencesIntegrationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in org.springframework.hateoas.mvc.TypeReferencesIntegrationTest
+Running org.springframework.hateoas.mvc.ForwardedHeaderUnitTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.hateoas.mvc.ForwardedHeaderUnitTest
+Running org.springframework.hateoas.mvc.ControllerLinkBuilderUnitTest
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec - in org.springframework.hateoas.mvc.ControllerLinkBuilderUnitTest
+Running org.springframework.hateoas.mvc.ControllerLinkBuilderOutsideSpringMvcUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.hateoas.mvc.ControllerLinkBuilderOutsideSpringMvcUnitTest
+Running org.springframework.hateoas.mvc.HeaderLinksResponseEntityUnitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.hateoas.mvc.HeaderLinksResponseEntityUnitTest
+Running org.springframework.hateoas.mvc.ControllerLinkBuilderFactoryUnitTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in org.springframework.hateoas.mvc.ControllerLinkBuilderFactoryUnitTest
+Running org.springframework.hateoas.mvc.TypeConstrainedMappingJackson2HttpMessageConverterUnitTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.springframework.hateoas.mvc.TypeConstrainedMappingJackson2HttpMessageConverterUnitTest
+Running org.springframework.hateoas.mvc.DummyInvocationUtilsUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.hateoas.mvc.DummyInvocationUtilsUnitTest
+Running org.springframework.hateoas.mvc.IdentifiableResourceAssemblerSupportUnitTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.hateoas.mvc.IdentifiableResourceAssemblerSupportUnitTest
+Running org.springframework.hateoas.ResourceUnitTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.hateoas.ResourceUnitTest
+Running org.springframework.hateoas.Jackson2PagedResourcesIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.springframework.hateoas.Jackson2PagedResourcesIntegrationTest
+Running org.springframework.hateoas.Jackson2ResourceSupportIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.springframework.hateoas.Jackson2ResourceSupportIntegrationTest
+Running org.springframework.hateoas.VndErrorsMarshallingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in org.springframework.hateoas.VndErrorsMarshallingTest
+Running org.springframework.hateoas.LinkIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.hateoas.LinkIntegrationTest
+Running org.springframework.hateoas.ResourcesUnitTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.springframework.hateoas.ResourcesUnitTest
+Running org.springframework.hateoas.LinkUnitTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.springframework.hateoas.LinkUnitTest
+Running org.springframework.hateoas.ResourceSupportIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.springframework.hateoas.ResourceSupportIntegrationTest
+Running org.springframework.hateoas.VndErrorsUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.springframework.hateoas.VndErrorsUnitTest
+Running org.springframework.hateoas.ResourceIntegrationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.springframework.hateoas.ResourceIntegrationTest
+Running org.springframework.hateoas.Jackson2ResourceIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.hateoas.Jackson2ResourceIntegrationTest
+Running org.springframework.hateoas.PagedResourcesUnitTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.springframework.hateoas.PagedResourcesUnitTest
+Running org.springframework.hateoas.LinksUnitTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.springframework.hateoas.LinksUnitTest
+Running org.springframework.hateoas.Jackson2LinkIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.hateoas.Jackson2LinkIntegrationTest
+Running org.springframework.hateoas.UriTemplateUnitTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.springframework.hateoas.UriTemplateUnitTest
+Running org.springframework.hateoas.PagedResourcesMarshallingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.springframework.hateoas.PagedResourcesMarshallingTest
+Running org.springframework.hateoas.jaxrs.JaxRsLinkBuilderFactoryUnitTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.springframework.hateoas.jaxrs.JaxRsLinkBuilderFactoryUnitTest
+Running org.springframework.hateoas.ResourceSupportUnitTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.springframework.hateoas.ResourceSupportUnitTest
+
+Results :
+
+Failed tests: 
+  HalFormsWebMvcTest.basic:95 No value at JSON path "$._templates.*", exception: Missing property in path $['_templates']
+
+Tests run: 340, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.961 s
+[INFO] Finished at: 2020-02-16T18:29:35+01:00
+[INFO] Final Memory: 25M/107M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project spring-hateoas: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project spring-hateoas: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
