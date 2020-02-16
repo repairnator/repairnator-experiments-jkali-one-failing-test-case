@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:40 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:13:23 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 38692112,
+      "totalMemory": 95715328
+    },
+    "totalDuration": 698,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-magefree-mage-420358780-20180825-032159-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-magefree-mage-420358780-20180825-032159-firstCommit/Mage.Tests",
+    "overallMetrics": {
+      "numberRunning": 2243,
+      "numberPassing": 2242,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 42,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.mage.test.cards.abilities.keywords.BestowTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.mage.test.cards.abilities.keywords.BestowTest",
+        "testMethod": "bestowWithFusedSpell",
+        "failureName": "java.lang.AssertionError",
+        "detail": "(Battlefield) Permanents counts for PlayerA are not equal (Nyxborn Rollicker) expected:\u003c0\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 36,
+    "numberPlugins": 0,
+    "numberSourceFiles": 21023,
+    "numberTestFiles": 833,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  },
+  "commits": {}
+}
