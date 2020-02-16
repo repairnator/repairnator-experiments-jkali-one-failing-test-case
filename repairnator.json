@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:01 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:31:26 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 67458944,
+      "totalMemory": 119865344
+    },
+    "totalDuration": 260,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 79,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          79
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vpro-vpro-shared-422226958-20180829-212931-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vpro-vpro-shared-422226958-20180829-212931-firstCommit/vpro-shared-util",
+    "overallMetrics": {
+      "numberRunning": 168,
+      "numberPassing": 167,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 6,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nl.vpro.util.FileCachingInputStreamTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 4
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nl.vpro.util.FileCachingInputStreamTest",
+        "testMethod": "testReadFileGetsInterrupted",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[tru]e\u003e but was:\u003c[fals]e\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 25,
+    "numberPlugins": 0,
+    "numberSourceFiles": 270,
+    "numberTestFiles": 100,
+    "numberLibrariesFailingModule": 23,
+    "numberLines": 0
+  },
+  "commits": {}
+}
