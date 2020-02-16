@@ -1,0 +1,20 @@
+2020-02-16 20:18:28,148 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-02-16 20:18:28,921 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2020-02-16 20:18:29,294 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-02-16 20:18:29,294 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2020-02-16 20:18:29,720 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2020-02-16 20:18:29,725 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5674e1f2
+2020-02-16 20:18:30,051 INFO org.apache.hadoop.mapred.MapTask: Processing split: hdfs://localhost:43213/user/dginelli/inputSE/small.fastq:0+100718
+2020-02-16 20:18:30,392 WARN org.apache.hadoop.hdfs.DFSClient: Caught exception 
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.closeResponder(DFSOutputStream.java:951)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.endBlock(DFSOutputStream.java:689)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:878)
+2020-02-16 20:18:30,395 INFO org.apache.hadoop.mapred.Task: Task:attempt_20200216201801330_0002_m_000000_0 is done. And is in the process of commiting
+2020-02-16 20:18:31,495 INFO org.apache.hadoop.mapred.Task: Task attempt_20200216201801330_0002_m_000000_0 is allowed to commit now
+2020-02-16 20:18:31,517 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_20200216201801330_0002_m_000000_0' to cloudgene-bwaOut/0
+2020-02-16 20:18:31,520 INFO org.apache.hadoop.mapred.Task: Task 'attempt_20200216201801330_0002_m_000000_0' done.
+2020-02-16 20:18:31,533 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
