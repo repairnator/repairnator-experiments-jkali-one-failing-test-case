@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "jhpoelen/eol-globi-data",
-  "bugCommit": "https://github.com/jhpoelen/eol-globi-data/compare/ed12f00e2a9d...9f8014768113",
-  "failingModule": "/root/workspace/jhpoelen/eol-globi-data/349098380/eol-globi-cache",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 51,
-  "failing-test-cases": [
-    {
-      "className": "org.globalbioticinteractions.dataset.DatasetFinderLocalTest",
-      "failingMethods": [
-        "org.globalbioticinteractions.dataset.DatasetFinderLocalTest#dataset"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhpoelen-eol-globi-data-349098380-20180305-021504-firstCommit/eol-globi-cache",
+    "overallMetrics": {
+      "numberRunning": 50,
+      "numberPassing": 49,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: is \"Jorrit H. Poelen. 2014. Species associations manually extracted from literature. Accessed on 14 Sep 2017 via \u003chttps://github.com/globalbioticinteractions/template-dataset/archive/8abd2ba18457288f33527193299504015fae6def.zip\u003e.\"      got: \"Jorrit H. Poelen. 2014. Species associations manually extracted from literature. Accessed on 2017-09-14T16:45:38Z via \u003chttps://github.com/globalbioticinteractions/template-dataset/archive/8abd2ba18457288f33527193299504015fae6def.zip\u003e.\" ",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.globalbioticinteractions.dataset.DatasetFinderLocalTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.globalbioticinteractions.dataset.DatasetFinderLocalTest",
+        "testMethod": "dataset",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \"Jorrit H. Poelen. 2014. Species associations manually extracted from literature. Accessed on 14 Sep 2017 via \u003chttps://github.com/globalbioticinteractions/template-dataset/archive/8abd2ba18457288f33527193299504015fae6def.zip\u003e.\"      got: \"Jorrit H. Poelen. 2014. Species associations manually extracted from literature. Accessed on 2017-09-14T16:45:38Z via \u003chttps://github.com/globalbioticinteractions/template-dataset/archive/8abd2ba18457288f33527193299504015fae6def.zip\u003e.\" ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberPlugins": 0,
+    "numberSourceFiles": 297,
+    "numberTestFiles": 206,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:02 AM",
+    "reproductionDateEnd": "Feb 16, 2020 12:10:40 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 26806608,
+      "totalMemory": 185774080
+    },
+    "totalDuration": 1955,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 387,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          387
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhpoelen-eol-globi-data-349098380-20180305-021504-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
