@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:34 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:18 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 50991864,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 101,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lmaskisiki-khwela-messaging-421723474-20180828-212804-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lmaskisiki-khwela-messaging-421723474-20180828-212804-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 26,
+      "numberPassing": 25,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.sikza.socksapi.services.MessageServiceTest",
+        "numberRunning": 16,
+        "numberPassing": 15,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.sikza.socksapi.services.MessageServiceTest",
+        "testMethod": "route_givenValidMessage_shouldPublishMessageOnSockets",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\nsimpMessageSendingOperations.convertAndSend(\n    \"Marley@gmail.com\",\n    Message(from\u003d\u0027Martin\u0027, replyTo\u003d\u0027sikza@gmail.com\u0027, body\u003d\u0027Hi Lizo\u0027, to\u003d\u0027Marley@gmail.com\u0027)\n);\n-\u003e at com.sikza.socksapi.services.MessageServiceTest.route_givenValidMessage_shouldPublishMessageOnSockets(MessageServiceTest.kt:65)\nActual invocation has different arguments:\nsimpMessageSendingOperations.convertAndSend(\n    \"topic/Marley@gmail.com\",\n    Message(from\u003d\u0027Martin\u0027, replyTo\u003d\u0027sikza@gmail.com\u0027, body\u003d\u0027Hi Lizo\u0027, to\u003d\u0027Marley@gmail.com\u0027)\n);\n-\u003e at com.sikza.socksapi.services.MessageService.route(MessageService.kt:29)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 0,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 81,
+    "numberLines": 0
+  },
+  "commits": {}
+}
