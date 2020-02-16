@@ -1,0 +1,214 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] JavaBeanStack
+[INFO] JavaBeanStack-Interfaces
+[INFO] JavaBeanStack-Commons
+[INFO] JavaBeanStack-Core
+[INFO] JavaBeanStack-Security
+[INFO] JavaBeanStack-Business
+[INFO] JavaBeanStack-Web
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaBeanStack 1.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaBeanStack-Interfaces 1.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ jbs-interfaces ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/interfaces/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jbs-interfaces ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ jbs-interfaces ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/interfaces/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jbs-interfaces ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jbs-interfaces ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JavaBeanStack-Commons 1.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ jbs-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jbs-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ jbs-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jbs-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jbs-commons ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/commons/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 7.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 80.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1064.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.javabeanstack.util.DatesTest
+toDate
+today
+Sun Feb 16 00:00:00 CET 2020
+Sun Feb 16 00:00:00 CET 2020
+toString
+toString
+toDate
+75078000000
+75078000000
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in org.javabeanstack.util.DatesTest
+Running org.javabeanstack.util.FnTest
+findInMatrix
+findInMatrix
+iif
+inList
+inList
+nvl
+toLogical
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.javabeanstack.util.FnTest
+Running org.javabeanstack.util.StringsTest
+convertToList
+convertToMatrix
+dateToString
+decode64
+encode64
+findLimit
+findLimit
+findString
+-1
+16
+23
+-1
+findString
+inString
+isNullorEmpty
+occurs
+replicate
+stringToList
+textMerge
+textMerge
+textMerge
+varReplace
+varReplace
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.javabeanstack.util.StringsTest
+Running org.javabeanstack.crypto.DigestUtilTest
+md5
+DIGEST AUTH
+digestToHex
+868333E2AB3B4329D6656EE63B4CD77F03AA58EEB924F4920F5894BBF1340660FB1BEB591CD7D0A67478A0768FD4790A
+sha256
+4D9DC750077F316B7A9D2D5C4890B1D79ABC7B7C4261D7090CBF58501E2F723B
+sha512
+8CABE293B89951C158AC9B56ECDD518060BE89CB760ED7AD04CF72B9F10EB38401A8959E6CFCD3146A6A02AC126D76B3DAD653500239EF8A6BB4106238B9C37C
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec <<< FAILURE! - in org.javabeanstack.crypto.DigestUtilTest
+testDigestAuth_MD5_sess_auth_int(org.javabeanstack.crypto.DigestUtilTest)  Time elapsed: 0.022 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[0333c838e4efba3588b3a9b6db05b73b]> but was:<[5344eda79ce24158dd3cf01fd198e751]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.javabeanstack.crypto.DigestUtilTest.testDigestAuth_MD5_sess_auth_int(DigestUtilTest.java:183)
+
+Running org.javabeanstack.crypto.CipherUtilTest
+decryptAES_FromHex
+encryptBlowfishToHex
+decryptBlowfishFromBase64
+encryptAES_ToHex
+encryptAES_ToBase64
+decryptBlowfishFromHex
+getSecureRandomKey
+getSecureRandomKey
+encryptBlowfishToBase64
+ras+ZjxL1L99KA2cPkoaxGMbYl8dDeKfZK4wba1jl7CNcmJhdLCe1g==
+decryptAES
+encryptAES
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.549 sec - in org.javabeanstack.crypto.CipherUtilTest
+
+Results :
+
+Failed tests: 
+  DigestUtilTest.testDigestAuth_MD5_sess_auth_int:183 expected:<[0333c838e4efba3588b3a9b6db05b73b]> but was:<[5344eda79ce24158dd3cf01fd198e751]>
+
+Tests run: 50, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] JavaBeanStack ...................................... SUCCESS [  0.002 s]
+[INFO] JavaBeanStack-Interfaces ........................... SUCCESS [  1.603 s]
+[INFO] JavaBeanStack-Commons .............................. FAILURE [  3.268 s]
+[INFO] JavaBeanStack-Core ................................. SKIPPED
+[INFO] JavaBeanStack-Security ............................. SKIPPED
+[INFO] JavaBeanStack-Business ............................. SKIPPED
+[INFO] JavaBeanStack-Web .................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.186 s
+[INFO] Finished at: 2020-02-16T11:38:45+01:00
+[INFO] Final Memory: 14M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jbs-commons: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/commons/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jbs-commons: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/commons/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/commons/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :jbs-commons
