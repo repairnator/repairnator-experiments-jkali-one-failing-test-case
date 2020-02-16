@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 10,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/325813222/languagetool-language-modules/fr",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 321,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.fr.FrenchPatternRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.fr.FrenchPatternRuleTest#testRules"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:30 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:10:47 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 39607256,
+      "totalMemory": 185012224
+    },
+    "totalDuration": 553,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 205,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          205
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-325813222-20180106-171410_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-325813222-20180106-171410_bugonly-firstCommit/languagetool-language-modules/fr",
+    "overallMetrics": {
+      "numberRunning": 311,
+      "numberPassing": 310,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 10,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "French: Incorrect suggestions: [mettre au pied du mur] !\u003d  \u003cno suggestion\u003e for rule ACCULER_AU_PIED_DU_MUR[1] on input:                 acculer au pied du mur            ",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.fr.FrenchPatternRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.fr.FrenchPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "French: Incorrect suggestions: [mettre au pied du mur] !\u003d  \u003cno suggestion\u003e for rule ACCULER_AU_PIED_DU_MUR[1] on input:                 acculer au pied du mur            ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 743,
+    "numberTestFiles": 481,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  },
+  "commits": {}
 }
