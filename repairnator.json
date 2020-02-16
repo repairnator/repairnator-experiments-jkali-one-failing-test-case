@@ -1,30 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "kaazing/gateway",
-  "failingModule": "/root/workspace/kaazing/gateway/207044018/resource.address/tcp",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 725,
-  "failing-test-cases": [
-    {
-      "className": "org.kaazing.gateway.resource.address.tcp.TcpResourceAddressFactorySpiPreferIPV4Test",
-      "failingMethods": [
-        "org.kaazing.gateway.resource.address.tcp.TcpResourceAddressFactorySpiPreferIPV4Test#shouldResolveLoopbackToIPv6IfNotProhibited"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/mina.core/core",
+    "overallMetrics": {
+      "numberRunning": 218,
+      "numberPassing": 217,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.mina.filter.logging.MdcInjectionFilterTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.mina.filter.logging.MdcInjectionFilterTest",
+        "testMethod": "testOnlyRemoteAddress",
+        "failureName": "java.lang.AssertionError",
+        "detail": "MDC[handlerClass] set for [Event SESSION_CLOSED has been fired for session 130]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 58,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1297,
+    "numberTestFiles": 662,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:49:21 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 143492208,
+      "totalMemory": 508080128
+    },
+    "totalDuration": 671,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 248,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          248
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
