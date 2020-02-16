@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "spinscale/dropwizard-jobs",
-  "failingModule": "/root/workspace/spinscale/dropwizard-jobs/289984413/dropwizard-jobs-core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 15,
-  "failing-test-cases": [
-    {
-      "className": "de.spinscale.dropwizard.jobs.JobManagerTest",
-      "failingMethods": [
-        "de.spinscale.dropwizard.jobs.JobManagerTest#testJobsWithoutGroupShouldOnlyHaveOneInstance"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:31 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:33:23 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 29405136,
+      "totalMemory": 122658816
+    },
+    "totalDuration": 409,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          1,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 201,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          201
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/dropwizard-jobs-core",
+    "overallMetrics": {
+      "numberRunning": 15,
+      "numberPassing": 14,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: \u003c1\u003e      but: was \u003c3\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.spinscale.dropwizard.jobs.JobManagerTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.spinscale.dropwizard.jobs.JobManagerTest",
+        "testMethod": "testJobsWithoutGroupShouldOnlyHaveOneInstance",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: \u003c1\u003e\n     but: was \u003c3\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 19,
+    "numberTestFiles": 30,
+    "numberLibrariesFailingModule": 101,
+    "numberLines": 0
+  },
+  "commits": {}
 }
