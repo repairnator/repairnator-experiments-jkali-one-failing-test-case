@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 10,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/edf312f3c219...e0f00b40d667",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/291235712/languagetool-language-modules/en",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 287,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.en.EnglishPatternRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.en.EnglishPatternRuleTest#testRules"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-291235712-20171022-215159_bugonly-firstCommit/languagetool-language-modules/en",
+    "overallMetrics": {
+      "numberRunning": 277,
+      "numberPassing": 276,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 10,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Incorrect input:\n  Each of the students remembered their their homework.\nCorrected sentence:\n  Each of the students remembered his their homework.\nBy Rule:\n  AGREEMENT_THEIR_HIS[1]\nThe correction triggered an error itself:\n  AGREEMENT_THEIR_HIS:36-41:\u0027Each\u0027 is singular and thus takes a singular pronoun: \u003csuggestion\u003ehis\u003c/suggestion\u003e, \u003csuggestion\u003eher\u003c/suggestion\u003e, \u003csuggestion\u003ehis or her\u003c/suggestion\u003e?\n",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.en.EnglishPatternRuleTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.en.EnglishPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Incorrect input:\n  Each of the students remembered their their homework.\nCorrected sentence:\n  Each of the students remembered his their homework.\nBy Rule:\n  AGREEMENT_THEIR_HIS[1]\nThe correction triggered an error itself:\n  AGREEMENT_THEIR_HIS:36-41:\u0027Each\u0027 is singular and thus takes a singular pronoun: \u003csuggestion\u003ehis\u003c/suggestion\u003e, \u003csuggestion\u003eher\u003c/suggestion\u003e, \u003csuggestion\u003ehis or her\u003c/suggestion\u003e?\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 697,
+    "numberTestFiles": 455,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:03 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:04:02 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 93887360,
+      "totalMemory": 413126656
+    },
+    "totalDuration": 5156,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4829,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4829
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-291235712-20171022-215159_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
