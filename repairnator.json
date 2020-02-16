@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/dropwizard",
-  "bugCommit": "https://github.com/dropwizard/dropwizard/commit/5ffb04285a5e",
-  "failingModule": "/root/workspace/dropwizard/dropwizard/205029406/dropwizard-logging",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 263,
-  "failing-test-cases": [
-    {
-      "className": "io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest",
-      "failingMethods": [
-        "io.dropwizard.logging.DefaultLoggingFactoryPrintErrorMessagesTest#testWhenFileAppenderDoesNotHaveWritePermissionToFolder_PrintsErrorMessageToConsole"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 12:21:02 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 168641576,
+      "totalMemory": 338407424
+    },
+    "totalDuration": 2632,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2160,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2160
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-205035073-20170224-180836-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-205035073-20170224-180836-firstCommit/dropwizard-hibernate",
+    "overallMetrics": {
+      "numberRunning": 1160,
+      "numberPassing": 1159,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[fals]e\u003e but was:\u003c[tru]e\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.dropwizard.hibernate.SessionFactoryHealthCheckTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.dropwizard.hibernate.SessionFactoryHealthCheckTest",
+        "testMethod": "isHealthyIfNoExceptionIsThrown",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...20-02-16T11:44:44.24[5]+01:00}\u003e but was:\u003c...20-02-16T11:44:44.24[3]+01:00}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 34,
+    "numberPlugins": 0,
+    "numberSourceFiles": 395,
+    "numberTestFiles": 350,
+    "numberLibrariesFailingModule": 111,
+    "numberLines": 0
+  },
+  "commits": {}
 }
