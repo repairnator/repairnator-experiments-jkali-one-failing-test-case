@@ -1,0 +1,225 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.moshi:moshi:jar:1.7.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.squareup.moshi:moshi:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/moshi/pom.xml, line 39, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.moshi:moshi-adapters:jar:1.7.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.squareup.moshi:moshi-adapters:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/adapters/pom.xml, line 39, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.moshi:moshi-kotlin:jar:1.7.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.squareup.moshi:moshi-kotlin:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/kotlin/reflect/pom.xml, line 89, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Moshi (Parent)
+[INFO] Moshi
+[INFO] moshi-adapters
+[INFO] moshi-examples
+[INFO] moshi-kotlin-codegen
+[INFO] moshi-kotlin
+[INFO] moshi-kotlin-tests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Moshi (Parent) 1.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ moshi-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Moshi 1.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ moshi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ moshi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/moshi/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ moshi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ moshi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/moshi/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ moshi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ moshi ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/moshi/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 6.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 101.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1142.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.moshi.ClassJsonAdapterTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 sec - in com.squareup.moshi.ClassJsonAdapterTest
+Running com.squareup.moshi.JsonValueReaderTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in com.squareup.moshi.JsonValueReaderTest
+Running com.squareup.moshi.MoshiTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.419 sec - in com.squareup.moshi.MoshiTest
+Running com.squareup.moshi.JsonReaderTest
+Tests run: 138, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.141 sec - in com.squareup.moshi.JsonReaderTest
+Running com.squareup.moshi.AdapterMethodsTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in com.squareup.moshi.AdapterMethodsTest
+Running com.squareup.moshi.JsonUtf8ReaderTest
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.084 sec - in com.squareup.moshi.JsonUtf8ReaderTest
+Running com.squareup.moshi.MapJsonAdapterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.squareup.moshi.MapJsonAdapterTest
+Running com.squareup.moshi.JsonReaderPathTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.015 sec - in com.squareup.moshi.JsonReaderPathTest
+Running com.squareup.moshi.JsonQualifiersTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in com.squareup.moshi.JsonQualifiersTest
+Running com.squareup.moshi.JsonWriterPathTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in com.squareup.moshi.JsonWriterPathTest
+Running com.squareup.moshi.JsonValueWriterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.squareup.moshi.JsonValueWriterTest
+Running com.squareup.moshi.LinkedHashTreeMapTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.squareup.moshi.LinkedHashTreeMapTest
+Running com.squareup.moshi.CircularAdaptersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.squareup.moshi.CircularAdaptersTest
+Running com.squareup.moshi.JsonUtf8WriterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.squareup.moshi.JsonUtf8WriterTest
+Running com.squareup.moshi.JsonAdapterTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.028 sec - in com.squareup.moshi.JsonAdapterTest
+Running com.squareup.moshi.JsonWriterTest
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.048 sec - in com.squareup.moshi.JsonWriterTest
+Running com.squareup.moshi.PromoteNameToValueTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.squareup.moshi.PromoteNameToValueTest
+Running com.squareup.moshi.TypesTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.squareup.moshi.TypesTest
+Running com.squareup.moshi.ObjectAdapterTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.023 sec - in com.squareup.moshi.ObjectAdapterTest
+
+Results :
+
+Tests run: 652, Failures: 0, Errors: 0, Skipped: 15
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building moshi-adapters 1.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ moshi-adapters ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ moshi-adapters ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/adapters/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ moshi-adapters ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ moshi-adapters ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/adapters/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ moshi-adapters ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ moshi-adapters ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/adapters/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.moshi.adapters.Rfc3339DateJsonAdapterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.256 sec - in com.squareup.moshi.adapters.Rfc3339DateJsonAdapterTest
+Running com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec <<< FAILURE! - in com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest
+unregisteredSubtype(com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting message:
+ <"Expected one of [class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$Success, class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$Error] but found com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$EmptyMessage@65e579dc, a class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$EmptyMessage. Register this subtype.">
+but was:
+ <"Expected one of [class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$Success, class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$Error] but found com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$EmptyMessage@7a92922, a class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$EmptyMessage. Register this subtype.">
+	at com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest.unregisteredSubtype(RuntimeJsonAdapterFactoryTest.java:77)
+
+
+Results :
+
+Failed tests: 
+  RuntimeJsonAdapterFactoryTest.unregisteredSubtype:77 
+Expecting message:
+ <"Expected one of [class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$Success, class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$Error] but found com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$EmptyMessage@65e579dc, a class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$EmptyMessage. Register this subtype.">
+but was:
+ <"Expected one of [class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$Success, class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$Error] but found com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$EmptyMessage@7a92922, a class com.squareup.moshi.adapters.RuntimeJsonAdapterFactoryTest$EmptyMessage. Register this subtype.">
+
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Moshi (Parent) ..................................... SUCCESS [  0.578 s]
+[INFO] Moshi .............................................. SUCCESS [  4.729 s]
+[INFO] moshi-adapters ..................................... FAILURE [  0.958 s]
+[INFO] moshi-examples ..................................... SKIPPED
+[INFO] moshi-kotlin-codegen ............................... SKIPPED
+[INFO] moshi-kotlin ....................................... SKIPPED
+[INFO] moshi-kotlin-tests ................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.639 s
+[INFO] Finished at: 2020-02-16T18:28:40+01:00
+[INFO] Final Memory: 15M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project moshi-adapters: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/adapters/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project moshi-adapters: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/adapters/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-moshi-408747863-20180727-021550-firstCommit/adapters/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :moshi-adapters
