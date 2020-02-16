@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/metrics",
-  "bugCommit": "https://github.com/dropwizard/metrics/compare/9fd16c398795...7c938be395cd",
-  "failingModule": "/root/workspace/dropwizard/metrics/327280824/metrics-jvm",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 297,
-  "failing-test-cases": [
-    {
-      "className": "io.dropwizard.metrics5.jvm.CpuTimeClockTest",
-      "failingMethods": [
-        "io.dropwizard.metrics5.jvm.CpuTimeClockTest#cpuTimeClock"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:11 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:43:28 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 14500128,
+      "totalMemory": 101388288
+    },
+    "totalDuration": 372,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327280824-20180110-163720_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327280824-20180110-163720_bugonly-firstCommit/metrics-json",
+    "overallMetrics": {
+      "numberRunning": 483,
+      "numberPassing": 482,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpecting:\n  \u003c1.515600693874E12\u003e\nto be close to:\n  \u003c1.515600694158E12\u003e\nby less than \u003c200.0\u003e but difference was \u003c284.0\u003e.\n(a difference of exactly \u003c200.0\u003e being considered valid)",
-          "isError": false
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.dropwizard.metrics5.json.MetricsModuleTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.dropwizard.metrics5.json.MetricsModuleTest",
+        "testMethod": "serializesMetricRegistries",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"{\"version\":\"[4].0.0\",\"gauges\":{},\"c...\u003e but was:\u003c\"{\"version\":\"[5].0.0\",\"gauges\":{},\"c...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 25,
+    "numberPlugins": 0,
+    "numberSourceFiles": 150,
+    "numberTestFiles": 111,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {}
 }
