@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "jmrozanec/cron-utils",
-  "failingModule": "/root/workspace/jmrozanec/cron-utils/249918159",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 449,
-  "failing-test-cases": [
-    {
-      "className": "com.cronutils.Issue215Test",
-      "failingMethods": [
-        "com.cronutils.Issue215Test#testWorkdayBugWithNextMonth"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:00 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:45:41 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 146587928,
+      "totalMemory": 272216064
+    },
+    "totalDuration": 458,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 382,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          382
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 449,
+      "numberPassing": 448,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c2017-07-03T08:00+02:00[Europe/Paris]\u003e but was:\u003c2017-07-01T08:00+02:00[Europe/Paris]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.cronutils.Issue215Test",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.cronutils.Issue215Test",
+        "testMethod": "testWorkdayBugWithNextMonth",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2017-07-03T08:00+02:00[Europe/Stockholm]\u003e but was:\u003c2017-07-01T08:00+02:00[Europe/Stockholm]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 70,
+    "numberTestFiles": 60,
+    "numberLibrariesFailingModule": 22,
+    "numberLines": 0
+  },
+  "commits": {}
 }
