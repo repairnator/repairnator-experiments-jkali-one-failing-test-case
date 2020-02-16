@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "javaparser/javaparser",
-  "failingModule": "/root/workspace/javaparser/javaparser/297394337/javaparser-testing",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.opentest4j.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 1464,
-  "failing-test-cases": [
-    {
-      "className": "com.github.javaparser.ast.body.ConstructorDeclarationTest",
-      "failingMethods": [
-        "com.github.javaparser.ast.body.ConstructorDeclarationTest#receiverParametersNotAllowed"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:55 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:20:01 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 57809456,
+      "totalMemory": 137097216
+    },
+    "totalDuration": 6125,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-297396307-20171105-015708-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-297396307-20171105-015708-firstCommit/javaparser-testing",
+    "overallMetrics": {
+      "numberRunning": 1464,
+      "numberPassing": 1463,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.opentest4j.AssertionFailedError",
-          "failureDetail": "Missing: (line 1,col 20) The receiver cannot be used in a static context. ",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.javaparser.ast.body.ConstructorDeclarationTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.javaparser.ast.body.ConstructorDeclarationTest",
+        "testMethod": "receiverParametersNotAllowed",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "Missing: (line 1,col 20) The receiver cannot be used in a static context.\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberPlugins": 0,
+    "numberSourceFiles": 451,
+    "numberTestFiles": 142,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  }
 }
