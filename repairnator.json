@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 6,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "stianst/keycloak",
-  "bugCommit": "https://github.com/stianst/keycloak/compare/6589654bf2f4...582abedadff0",
-  "failingModule": "/root/workspace/stianst/keycloak/339178482/wildfly/server-subsystem",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 159,
-  "failing-test-cases": [
-    {
-      "className": "org.keycloak.subsystem.server.extension.SubsystemParsingTestCase",
-      "failingMethods": [
-        "org.keycloak.subsystem.server.extension.SubsystemParsingTestCase#testSubsystem"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:07 PM",
+    "reproductionDateEnd": "Feb 16, 2020 7:17:18 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 308756392,
+      "totalMemory": 882098176
+    },
+    "totalDuration": 3006,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 8,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          8,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1918,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1918
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-stianst-keycloak-339178482-20180208-224137-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-stianst-keycloak-339178482-20180208-224137-firstCommit/wildfly/server-subsystem",
+    "overallMetrics": {
+      "numberRunning": 153,
+      "numberPassing": 152,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 6,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "ModelNode with type\u003d\u003dSTRING contains an expression formatted string: classpath:${jboss.home.dir}/providers/*",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.keycloak.subsystem.server.extension.SubsystemParsingTestCase",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.keycloak.subsystem.server.extension.SubsystemParsingTestCase",
+        "testMethod": "testSubsystem",
+        "failureName": "java.lang.AssertionError",
+        "detail": "ModelNode with type\u003d\u003dSTRING contains an expression formatted string: classpath:${jboss.home.dir}/providers/*",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 156,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2984,
+    "numberTestFiles": 91,
+    "numberLibrariesFailingModule": 132,
+    "numberLines": 0
+  },
+  "commits": {}
 }
