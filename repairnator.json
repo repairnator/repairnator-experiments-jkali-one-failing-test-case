@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "lukas-krecan/JsonUnit",
-  "bugCommit": "https://github.com/lukas-krecan/JsonUnit/compare/17033428bf8a...724223c84808",
-  "failingModule": "/root/workspace/lukas-krecan/JsonUnit/395757477/tests/test-jsonorg",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 2111,
-  "failing-test-cases": [
-    {
-      "className": "net.javacrumbs.jsonunit.test.jsonorg.JsonOrgAssertJTest",
-      "failingMethods": [
-        "jsonPathShouldBeAbleToUseArrays"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:38 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:11 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 42626016,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 89,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lukas-krecan-JsonUnit-395757477-20180623-101643-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lukas-krecan-JsonUnit-395757477-20180623-101643-firstCommit/tests/test-jsonorg",
+    "overallMetrics": {
+      "numberRunning": 2108,
+      "numberPassing": 2107,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...\"]  Expecting:  \u003c[{\"[category\":\"reference\", \"author\":\"Nigel Rees\", \"title\":\"Sayings of the Century\", \"price\":8.95},     {\"category\":\"fiction\", \"author\":\"Evelyn Waugh\", \"title\":\"Sword of Honour\", \"price\":12.99},     {\"category\":\"fiction\", \"author\":\"Herman Melville\", \"title\":\"Moby Dick\", \"isbn\":\"0-553-21311-3\", \"price\":8.99},     {\"category\":\"fiction\", \"author\":\"J. R. R. Tolkien\", \"title\":\"The Lord of the Rings\", \"isbn\":\"0-395-19395-8\", \"price\":22.99}]\u003e to contain:  \u003c[{\"category\":\"reference\",\"author\":\"Nigel Rees\",\"title\":\"Sayings of the Century\",\"price\":8.96}]\u003e but could not find:  \u003c[{\"category\":\"reference\",\"author\":\"Nigel Rees\",\"title\":\"Sayings of the Century\",\"price\":8.96]}]\u003e when comparing v...\u003e but was:\u003c...\"]  Expecting:  \u003c[{\"[author\":\"Nigel Rees\", \"price\":8.95, \"category\":\"reference\", \"title\":\"Sayings of the Century\"},     {\"author\":\"Evelyn Waugh\", \"price\":12.99, \"category\":\"fiction\", \"title\":\"Sword of Honour\"},     {\"author\":\"Herman Melville\", \"price\":8.99, \"isbn\":\"0-553-21311-3\", \"category\":\"fiction\", \"title\":\"Moby Dick\"},     {\"author\":\"J. R. R. Tolkien\", \"price\":22.99, \"isbn\":\"0-395-19395-8\", \"category\":\"fiction\", \"title\":\"The Lord of the Rings\"}]\u003e to contain:  \u003c[{\"author\":\"Nigel Rees\",\"price\":8.96,\"category\":\"reference\",\"title\":\"Sayings of the Century\"}]\u003e but could not find:  \u003c[{\"author\":\"Nigel Rees\",\"price\":8.96,\"category\":\"reference\",\"title\":\"Sayings of the Century\"]}]\u003e when comparing v...\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.javacrumbs.jsonunit.test.jsonorg.JsonOrgAssertJTest",
+        "numberRunning": 98,
+        "numberPassing": 97,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.javacrumbs.jsonunit.test.jsonorg.JsonOrgAssertJTest",
+        "testMethod": "jsonPathShouldBeAbleToUseArrays",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...\"] \nExpecting:\n \u003c[{\"[category\":\"reference\", \"author\":\"Nigel Rees\", \"title\":\"Sayings of the Century\", \"price\":8.95},\n    {\"category\":\"fiction\", \"author\":\"Evelyn Waugh\", \"title\":\"Sword of Honour\", \"price\":12.99},\n    {\"category\":\"fiction\", \"author\":\"Herman Melville\", \"title\":\"Moby Dick\", \"isbn\":\"0-553-21311-3\", \"price\":8.99},\n    {\"category\":\"fiction\", \"author\":\"J. R. R. Tolkien\", \"title\":\"The Lord of the Rings\", \"isbn\":\"0-395-19395-8\", \"price\":22.99}]\u003e\nto contain:\n \u003c[{\"category\":\"reference\",\"author\":\"Nigel Rees\",\"title\":\"Sayings of the Century\",\"price\":8.96}]\u003e\nbut could not find:\n \u003c[{\"category\":\"reference\",\"author\":\"Nigel Rees\",\"title\":\"Sayings of the Century\",\"price\":8.96]}]\u003e\nwhen comparing v...\u003e but was:\u003c...\"] \nExpecting:\n \u003c[{\"[author\":\"Nigel Rees\", \"price\":8.95, \"category\":\"reference\", \"title\":\"Sayings of the Century\"},\n    {\"author\":\"Evelyn Waugh\", \"price\":12.99, \"category\":\"fiction\", \"title\":\"Sword of Honour\"},\n    {\"author\":\"Herman Melville\", \"price\":8.99, \"isbn\":\"0-553-21311-3\", \"category\":\"fiction\", \"title\":\"Moby Dick\"},\n    {\"author\":\"J. R. R. Tolkien\", \"price\":22.99, \"isbn\":\"0-395-19395-8\", \"category\":\"fiction\", \"title\":\"The Lord of the Rings\"}]\u003e\nto contain:\n \u003c[{\"author\":\"Nigel Rees\",\"price\":8.96,\"category\":\"reference\",\"title\":\"Sayings of the Century\"}]\u003e\nbut could not find:\n \u003c[{\"author\":\"Nigel Rees\",\"price\":8.96,\"category\":\"reference\",\"title\":\"Sayings of the Century\"]}]\u003e\nwhen comparing v...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberPlugins": 0,
+    "numberSourceFiles": 55,
+    "numberTestFiles": 35,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  }
 }
