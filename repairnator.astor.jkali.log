@@ -1,0 +1,793 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 30
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/com/google/code/gson/gson/2.7/gson-2.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 266990 milliseconds (266 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/com/google/code/gson/gson/2.7/gson-2.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 56
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 262
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:223) -  Not ctClass for suspicious code Candidate [className=org.jsoup.Connection, methodName=null, lineNumber=46, susp=0.9045340337332909]
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 262,  252
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 252
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 252, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 266990
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/com/google/code/gson/gson/2.7/gson-2.7.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/.m2/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 797, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw e ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 796, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.disconnect() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 721, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((req.data().size() > 0) && ((!methodHasBody) || hasRequestBody)) 	org.jsoup.helper.HttpConnectio[...] ` -topatch--> `if (true)  { 	org.jsoup.helper.HttpConnection.Response.serialiseRequestUrl(req);} else  { 	if (metho[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 721, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((req.data().size() > 0) && ((!methodHasBody) || hasRequestBody)) 	org.jsoup.helper.HttpConnectio[...] ` -topatch--> `if (false)  { 	org.jsoup.helper.HttpConnection.Response.serialiseRequestUrl(req);} else  { 	if (meth[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 721, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((req.data().size() > 0) && ((!methodHasBody) || hasRequestBody)) 	org.jsoup.helper.HttpConnectio[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 716, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!methodHasBody) 	org.jsoup.helper.Validate.isFalse(hasRequestBody, "Cannot set a request body fo[...] ` -topatch--> `if (true)  { 	org.jsoup.helper.Validate.isFalse(hasRequestBody, "Cannot set a request body for HTTP [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 716, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!methodHasBody) 	org.jsoup.helper.Validate.isFalse(hasRequestBody, "Cannot set a request body fo[...] ` -topatch--> `if (false)  { 	org.jsoup.helper.Validate.isFalse(hasRequestBody, "Cannot set a request body for HTTP[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 716, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!methodHasBody) 	org.jsoup.helper.Validate.isFalse(hasRequestBody, "Cannot set a request body fo[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 912, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.addRequestProperty(header.getKey(), value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 911, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.String value : header.getValue()) { 	conn.addRequestProperty(header.getKey(), value);[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 894, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.setInstanceFollowRedirects(false) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 893, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.setRequestMethod(req.method().name()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 910, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.util.Map.Entry<java.lang.String, java.util.List<java.lang.String>> header : req.multiHeade[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 908, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (req.cookies().size() > 0) 	conn.addRequestProperty("Cookie", org.jsoup.helper.HttpConnection.Res[...] ` -topatch--> `if (true)  { 	conn.addRequestProperty("Cookie", org.jsoup.helper.HttpConnection.Response.getRequestC[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 908, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (req.cookies().size() > 0) 	conn.addRequestProperty("Cookie", org.jsoup.helper.HttpConnection.Res[...] ` -topatch--> `if (false)  { 	conn.addRequestProperty("Cookie", org.jsoup.helper.HttpConnection.Response.getRequest[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 908, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (req.cookies().size() > 0) 	conn.addRequestProperty("Cookie", org.jsoup.helper.HttpConnection.Res[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 906, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (req.method().hasBody()) 	conn.setDoOutput(true); ` -topatch--> `if (true)  { 	conn.setDoOutput(true);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 906, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (req.method().hasBody()) 	conn.setDoOutput(true); ` -topatch--> `if (false)  { 	conn.setDoOutput(true);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 906, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (req.method().hasBody()) 	conn.setDoOutput(true); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 898, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (conn instanceof javax.net.ssl.HttpsURLConnection) { 	if (!req.validateTLSCertificates()) { 		org[...] ` -topatch--> `if (true) { 	if (!req.validateTLSCertificates()) { 		org.jsoup.helper.HttpConnection.Response.initUn[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 898, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (conn instanceof javax.net.ssl.HttpsURLConnection) { 	if (!req.validateTLSCertificates()) { 		org[...] ` -topatch--> `if (false) { 	if (!req.validateTLSCertificates()) { 		org.jsoup.helper.HttpConnection.Response.initU[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 898, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (conn instanceof javax.net.ssl.HttpsURLConnection) { 	if (!req.validateTLSCertificates()) { 		org[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 896, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.setReadTimeout(org.jsoup.helper.HttpConnection.ReadTimeoutMillis) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 895, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.setConnectTimeout(req.timeout()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 712, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((!protocol.equals("http")) && (!protocol.equals("https"))) 	throw new java.net.MalformedURLExcep[...] ` -topatch--> `if (true)  { 	throw new java.net.MalformedURLException("Only http & https protocols supported");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 712, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((!protocol.equals("http")) && (!protocol.equals("https"))) 	throw new java.net.MalformedURLExcep[...] ` -topatch--> `if (false)  { 	throw new java.net.MalformedURLException("Only http & https protocols supported");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 712, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((!protocol.equals("http")) && (!protocol.equals("https"))) 	throw new java.net.MalformedURLExcep[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 710, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(req, "Request must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 354, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.method = method ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 353, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(method, "Method must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 907, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.setDoOutput(true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 723, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (methodHasBody) 	mimeBoundary = org.jsoup.helper.HttpConnection.Response.setOutputContentType(req[...] ` -topatch--> `if (true)  { 	mimeBoundary = org.jsoup.helper.HttpConnection.Response.setOutputContentType(req);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 723, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (methodHasBody) 	mimeBoundary = org.jsoup.helper.HttpConnection.Response.setOutputContentType(req[...] ` -topatch--> `if (false)  { 	mimeBoundary = org.jsoup.helper.HttpConnection.Response.setOutputContentType(req);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 723, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (methodHasBody) 	mimeBoundary = org.jsoup.helper.HttpConnection.Response.setOutputContentType(req[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 293, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.method(org.jsoup.Connection.Method.POST) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 442, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addHeader(name, value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 441, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `removeHeader(name) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 440, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(name, "Header name must not be empty") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 633, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `data.add(keyval) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 632, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(keyval, "Key val must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 468, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (entry != null) 	headers.remove(entry.getKey()); ` -topatch--> `if (true)  { 	this.headers.remove(entry.getKey());}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 468, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (entry != null) 	headers.remove(entry.getKey()); ` -topatch--> `if (false)  { 	this.headers.remove(entry.getKey());}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 468, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (entry != null) 	headers.remove(entry.getKey()); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 466, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(name, "Header name must not be empty") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 503, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.jsoup.internal.Normalizer.lowerCase(entry.getKey()).equals(lc)) 	return entry; ` -topatch--> `if (true)  { 	return entry;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 503, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.jsoup.internal.Normalizer.lowerCase(entry.getKey()).equals(lc)) 	return entry; ` -topatch--> `if (false)  { 	return entry;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 503, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (org.jsoup.internal.Normalizer.lowerCase(entry.getKey()).equals(lc)) 	return entry; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 502, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.util.Map.Entry<java.lang.String, java.util.List<java.lang.String>> entry : headers.entrySe[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 724, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `mimeBoundary = org.jsoup.helper.HttpConnection.Response.setOutputContentType(req) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1059, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (req.hasHeader(org.jsoup.helper.HttpConnection.CONTENT_TYPE)) {   } else 	if (org.jsoup.helper.Ht[...] ` -topatch--> `if (true) {   } else  { 	if (org.jsoup.helper.HttpConnection.needsMultipart(req)) { 		bound = org.js[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1059, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (req.hasHeader(org.jsoup.helper.HttpConnection.CONTENT_TYPE)) {   } else 	if (org.jsoup.helper.Ht[...] ` -topatch--> `if (false) {   } else  { 	if (org.jsoup.helper.HttpConnection.needsMultipart(req)) { 		bound = org.j[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1059, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (req.hasHeader(org.jsoup.helper.HttpConnection.CONTENT_TYPE)) {   } else 	if (org.jsoup.helper.Ht[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 722, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.HttpConnection.Response.serialiseRequestUrl(req) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 344, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.url = url ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 343, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(url, "URL must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (keyVal.hasInputStream()) { 	needsMulti = true; 	break; } ` -topatch--> `if (true) { 	needsMulti = true; 	break; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (keyVal.hasInputStream()) { 	needsMulti = true; 	break; } ` -topatch--> `if (false) { 	needsMulti = true; 	break; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (keyVal.hasInputStream()) { 	needsMulti = true; 	break; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1173, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (org.jsoup.Connection.KeyVal keyVal : req.data()) { 	if (keyVal.hasInputStream()) { 		needsMulti[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1150, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (in.getQuery() != null) { 	url.append(in.getQuery()); 	first = false; } ` -topatch--> `if (true) { 	url.append(in.getQuery()); 	first = false; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1150, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (in.getQuery() != null) { 	url.append(in.getQuery()); 	first = false; } ` -topatch--> `if (false) { 	url.append(in.getQuery()); 	first = false; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1150, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (in.getQuery() != null) { 	url.append(in.getQuery()); 	first = false; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1144, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `url.append( in.getProtocol()).append( "://").append( in.getAuthority()).append( in.getPath()).append[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1166, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.data().clear() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1165, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.url(new java.net.URL(url.toString())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1160, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `url.append( java.net.URLEncoder.encode(keyVal.key(), org.jsoup.helper.DataUtil.defaultCharset)).appe[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!first) 	url.append('&');else  	first = false; ` -topatch--> `if (true)  { 	url.append('&');} else   { 	first = false;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!first) 	url.append('&');else  	first = false; ` -topatch--> `if (false)  { 	url.append('&');} else   { 	first = false;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!first) 	url.append('&');else  	first = false; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1155, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.isFalse(keyVal.hasInputStream(), "InputStream data not supported in URL qu[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1154, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (org.jsoup.Connection.KeyVal keyVal : req.data()) { 	org.jsoup.helper.Validate.isFalse(keyVal.ha[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1063, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.jsoup.helper.HttpConnection.needsMultipart(req)) { 	bound = org.jsoup.helper.DataUtil.mimeBo[...] ` -topatch--> `if (true) { 	bound = org.jsoup.helper.DataUtil.mimeBoundary(); 	req.header(org.jsoup.helper.HttpConn[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1063, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.jsoup.helper.HttpConnection.needsMultipart(req)) { 	bound = org.jsoup.helper.DataUtil.mimeBo[...] ` -topatch--> `if (false) { 	bound = org.jsoup.helper.DataUtil.mimeBoundary(); 	req.header(org.jsoup.helper.HttpCon[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1063, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (org.jsoup.helper.HttpConnection.needsMultipart(req)) { 	bound = org.jsoup.helper.DataUtil.mimeBo[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 121, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `res = new org.jsoup.helper.HttpConnection.Response() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 120, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `req = new org.jsoup.helper.HttpConnection.Request() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 559, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `parser = org.jsoup.parser.Parser.htmlParser() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 558, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addHeader(org.jsoup.helper.HttpConnection.USER_AGENT, org.jsoup.helper.HttpConnection.DEFAULT_UA) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 557, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addHeader("Accept-Encoding", "gzip") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 556, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `method = org.jsoup.Connection.Method.GET ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 555, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `data = new java.util.ArrayList<>() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 554, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `followRedirects = true ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 553, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `maxBodySizeBytes = 1024 * 1024 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 552, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `timeoutMilliseconds = 30000 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 151, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.header(org.jsoup.helper.HttpConnection.USER_AGENT, userAgent) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 150, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(userAgent, "User agent must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1210, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.value = value ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1209, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(value, "Data value must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1200, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.key = key ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1199, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(key, "Data key must not be empty") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 92, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return org.jsoup.helper.HttpConnection.encodeUrl(u).toExternalForm() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 74, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `con.url(url) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 132, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.url(new java.net.URL(org.jsoup.helper.HttpConnection.encodeUrl(url))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 493, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (name.equalsIgnoreCase(entry.getKey())) 	return entry.getValue(); ` -topatch--> `if (true)  { 	return entry.getValue();}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 493, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (name.equalsIgnoreCase(entry.getKey())) 	return entry.getValue(); ` -topatch--> `if (false)  { 	return entry.getValue();}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 493, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (name.equalsIgnoreCase(entry.getKey())) 	return entry.getValue(); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 492, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.util.Map.Entry<java.lang.String, java.util.List<java.lang.String>> entry : headers.entrySe[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 490, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(name) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 414, pointed element: CtContinueImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtContinueImpl) `continue ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 413, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((o & 0x80) == 0) { 	continue; } ` -topatch--> `if (true) { 	continue; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 413, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((o & 0x80) == 0) { 	continue; } ` -topatch--> `if (false) { 	continue; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 413, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((o & 0x80) == 0) { 	continue; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 411, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int j = input.length; i < j; ++i) { 	int o = input[i]; 	if ((o & 0x80) == 0) { 		continue; 	}  [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 405, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (((input.length >= 3) && ((input[0] & 0xff) == 0xef)) &&  (((input[1] & 0xff) == 0xbb) & ((input[[...] ` -topatch--> `if (true)  { 	i = 3; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 405, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (((input.length >= 3) && ((input[0] & 0xff) == 0xef)) &&  (((input[1] & 0xff) == 0xbb) & ((input[[...] ` -topatch--> `if (false)  { 	i = 3; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 405, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (((input.length >= 3) && ((input[0] & 0xff) == 0xef)) &&  (((input[1] & 0xff) == 0xbb) & ((input[[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 379, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `values.add(org.jsoup.helper.HttpConnection.Base.fixHeaderEncoding(value)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 377, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `headers.put(name, values) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 376, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `values = new java.util.ArrayList<>() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 375, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (values.isEmpty()) { 	values = new java.util.ArrayList<>(); 	headers.put(name, values); } ` -topatch--> `if (true) { 	values = new java.util.ArrayList<>(); 	this.headers.put(name, values); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 375, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (values.isEmpty()) { 	values = new java.util.ArrayList<>(); 	headers.put(name, values); } ` -topatch--> `if (false) { 	values = new java.util.ArrayList<>(); 	this.headers.put(name, values); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 375, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (values.isEmpty()) { 	values = new java.util.ArrayList<>(); 	headers.put(name, values); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 372, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `value = (value == null) ? "" : value ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 371, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(name) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 395, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return new java.lang.String(bytes, "UTF-8") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 393, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!org.jsoup.helper.HttpConnection.Base.looksLikeUtf8(bytes)) 	return val; ` -topatch--> `if (true)  { 	return val;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 393, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!org.jsoup.helper.HttpConnection.Base.looksLikeUtf8(bytes)) 	return val; ` -topatch--> `if (false)  { 	return val;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 393, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!org.jsoup.helper.HttpConnection.Base.looksLikeUtf8(bytes)) 	return val; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 386, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(name) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 104, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return new java.net.URL(uri.toASCIIString()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 102, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `urlS = urlS.replaceAll(" ", "%20") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 130, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(url, "Must supply a valid URL") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 335, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `cookies = new java.util.LinkedHashMap<>() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 334, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `headers = new java.util.LinkedHashMap<>() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 717, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.isFalse(hasRequestBody, "Cannot set a request body for HTTP method " + req[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 222, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.isTrue((keyvals.length % 2) == 0, "Must supply an even number of key value[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 228, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.data(org.jsoup.helper.HttpConnection.KeyVal.create(key, value)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 227, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(value, "Data value must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 226, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(key, "Data key must not be empty") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 223, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < keyvals.length; i += 2) { 	java.lang.String key = keyvals[i]; 	java.lang.String [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 256, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.header(name, value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 469, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `headers.remove(entry.getKey()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 447, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(name, "Header name must not be empty") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 504, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return entry ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1132, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sb.append(cookie.getKey()).append('=').append(cookie.getValue()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1131, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `first = false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1128, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!first) 	sb.append("; ");else  	first = false; ` -topatch--> `if (true)  { 	sb.append("; ");} else   { 	first = false;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1128, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!first) 	sb.append("; ");else  	first = false; ` -topatch--> `if (false)  { 	sb.append("; ");} else   { 	first = false;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1128, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!first) 	sb.append("; ");else  	first = false; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1127, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.util.Map.Entry<java.lang.String, java.lang.String> cookie : req.cookies().entrySet()) { 	i[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1159, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `first = false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1157, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `url.append('&') ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1067, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.header(org.jsoup.helper.HttpConnection.CONTENT_TYPE, (org.jsoup.helper.HttpConnection.FORM_URL_E[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 909, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.addRequestProperty("Cookie", org.jsoup.helper.HttpConnection.Response.getRequestCookieString(re[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 197, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.data(org.jsoup.helper.HttpConnection.KeyVal.create(key, value)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 642, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.body = body ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 221, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(keyvals, "Data key value pairs must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 287, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.method(org.jsoup.Connection.Method.GET) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 251, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.requestBody(body) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 269, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.cookie(name, value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.parser.Parser line: 29, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `settings = treeBuilder.defaultSettings() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.parser.Parser line: 28, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.treeBuilder = treeBuilder ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 517, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `cookies.put(name, value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 516, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(value, "Cookie value must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 515, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(name, "Cookie name must not be empty") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1235, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.contentType = contentType ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1234, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notEmpty(contentType) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1176, pointed element: CtBreakImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtBreakImpl) `break ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1175, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `needsMulti = true ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1152, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `first = false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1151, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `url.append(in.getQuery()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1065, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.header(org.jsoup.helper.HttpConnection.CONTENT_TYPE, (org.jsoup.helper.HttpConnection.MULTIPART_[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1064, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `bound = org.jsoup.helper.DataUtil.mimeBoundary() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 208, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.data(org.jsoup.helper.HttpConnection.KeyVal.create(key, filename, inputStream).contentType(conte[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 202, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.data(org.jsoup.helper.HttpConnection.KeyVal.create(key, filename, inputStream)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.Jsoup line: 182, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `con.timeout(timeoutMillis) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((string == null) || (string.length() == 0)) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `if (true)  { 	throw new java.lang.IllegalArgumentException(msg);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((string == null) || (string.length() == 0)) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `if (false)  { 	throw new java.lang.IllegalArgumentException(msg);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((string == null) || (string.length() == 0)) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 732, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.HttpConnection.Response.writePost(req, conn.getOutputStream(), mimeBoundary) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 582, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `timeoutMilliseconds = millis ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 581, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.isTrue(millis >= 0, "Timeout milliseconds must be 0 (infinite) or greater"[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1220, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.stream = inputStream ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1219, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(value, "Data input stream must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1105, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `w.write(req.requestBody()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1103, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (req.requestBody() != null) {  	w.write(req.requestBody()); } else  {  	boolean first = true; 	fo[...] ` -topatch--> `if (true) {  	w.write(req.requestBody()); } else  {  	boolean first = true; 	for (org.jsoup.Connecti[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1103, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (req.requestBody() != null) {  	w.write(req.requestBody()); } else  {  	boolean first = true; 	fo[...] ` -topatch--> `if (false) {  	w.write(req.requestBody()); } else  {  	boolean first = true; 	for (org.jsoup.Connect[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1103, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (req.requestBody() != null) {  	w.write(req.requestBody()); } else  {  	boolean first = true; 	fo[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1121, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `w.close() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1076, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (bound != null) {  	for (org.jsoup.Connection.KeyVal keyVal : data) { 		w.write("--"); 		w.write([...] ` -topatch--> `if (true) {  	for (org.jsoup.Connection.KeyVal keyVal : data) { 		w.write("--"); 		w.write(bound); 	[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1076, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (bound != null) {  	for (org.jsoup.Connection.KeyVal keyVal : data) { 		w.write("--"); 		w.write([...] ` -topatch--> `if (false) {  	for (org.jsoup.Connection.KeyVal keyVal : data) { 		w.write("--"); 		w.write(bound); [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 1076, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (bound != null) {  	for (org.jsoup.Connection.KeyVal keyVal : data) { 		w.write("--"); 		w.write([...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 80, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `con.url(url) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 156, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.timeout(millis) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 172, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.header("Referer", referrer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 171, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `org.jsoup.helper.Validate.notNull(referrer, "Referrer must not be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 125, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.url(url) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.DataUtil line: 229, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `mime.append(org.jsoup.helper.DataUtil.mimeBoundaryChars[rand.nextInt(org.jsoup.helper.DataUtil.mimeB[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.DataUtil line: 228, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < org.jsoup.helper.DataUtil.boundaryLength; i++) { 	mime.append(org.jsoup.helper.D[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 731, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (conn.getDoOutput()) 	org.jsoup.helper.HttpConnection.Response.writePost(req, conn.getOutputStrea[...] ` -topatch--> `if (true)  { 	org.jsoup.helper.HttpConnection.Response.writePost(req, conn.getOutputStream(), mimeBo[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 731, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (conn.getDoOutput()) 	org.jsoup.helper.HttpConnection.Response.writePost(req, conn.getOutputStrea[...] ` -topatch--> `if (false)  { 	org.jsoup.helper.HttpConnection.Response.writePost(req, conn.getOutputStream(), mimeB[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 731, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (conn.getDoOutput()) 	org.jsoup.helper.HttpConnection.Response.writePost(req, conn.getOutputStrea[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 730, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `conn.connect() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 177, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `req.method(method) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 44, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!val) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `if (true)  { 	throw new java.lang.IllegalArgumentException(msg);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 44, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!val) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `if (false)  { 	throw new java.lang.IllegalArgumentException(msg);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 44, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!val) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 25, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj == null) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `if (true)  { 	throw new java.lang.IllegalArgumentException(msg);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 25, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj == null) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `if (false)  { 	throw new java.lang.IllegalArgumentException(msg);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 25, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj == null) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.parser.Token line: 249, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `type = org.jsoup.parser.Token.TokenType.EndTag ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.parser.Token line: 219, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `type = org.jsoup.parser.Token.TokenType.StartTag ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.parser.Token line: 218, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `attributes = new org.jsoup.nodes.Attributes() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((string == null) || (string.length() == 0)) 	throw new java.lang.IllegalArgumentException("Strin[...] ` -topatch--> `if (true)  { 	throw new java.lang.IllegalArgumentException("String must not be empty");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((string == null) || (string.length() == 0)) 	throw new java.lang.IllegalArgumentException("Strin[...] ` -topatch--> `if (false)  { 	throw new java.lang.IllegalArgumentException("String must not be empty");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((string == null) || (string.length() == 0)) 	throw new java.lang.IllegalArgumentException("Strin[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 15, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj == null) 	throw new java.lang.IllegalArgumentException("Object must not be null"); ` -topatch--> `if (true)  { 	throw new java.lang.IllegalArgumentException("Object must not be null");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 15, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj == null) 	throw new java.lang.IllegalArgumentException("Object must not be null"); ` -topatch--> `if (false)  { 	throw new java.lang.IllegalArgumentException("Object must not be null");}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 15, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj == null) 	throw new java.lang.IllegalArgumentException("Object must not be null"); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.HttpConnection line: 494, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return entry.getValue() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.StringUtil line: 230, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (sb.length() > org.jsoup.helper.StringUtil.MaxCachedBuilderSize) { 	sb = new java.lang.StringBuil[...] ` -topatch--> `if (true) { 	sb = new java.lang.StringBuilder(org.jsoup.helper.StringUtil.MaxCachedBuilderSize); 	or[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.StringUtil line: 230, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (sb.length() > org.jsoup.helper.StringUtil.MaxCachedBuilderSize) { 	sb = new java.lang.StringBuil[...] ` -topatch--> `if (false) { 	sb = new java.lang.StringBuilder(org.jsoup.helper.StringUtil.MaxCachedBuilderSize); 	o[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.StringUtil line: 230, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (sb.length() > org.jsoup.helper.StringUtil.MaxCachedBuilderSize) { 	sb = new java.lang.StringBuil[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.StringUtil line: 234, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sb.delete(0, sb.length()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (val) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `if (true)  { 	throw new java.lang.IllegalArgumentException(msg);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (val) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `if (false)  { 	throw new java.lang.IllegalArgumentException(msg);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.jsoup.helper.Validate line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (val) 	throw new java.lang.IllegalArgumentException(msg); ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:171) - Time Repair Loop (s): 1049.033
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:173) - generationsexecuted: 1
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:255) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:265) - End Repair Search: NOT Found solution
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:190) - Time Total(s): 1101.928
