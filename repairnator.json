@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dnsdb-team/dnsdb-java-sdk",
-  "bugCommit": "https://github.com/dnsdb-team/dnsdb-java-sdk/compare/97b60ac0012b...d35d54f9ae2a",
-  "failingModule": "/root/workspace/dnsdb-team/dnsdb-java-sdk/337417754",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 16,
-  "failing-test-cases": [
-    {
-      "className": "io.dnsdb.io.test.TestAPIUser",
-      "failingMethods": [
-        "io.dnsdb.io.test.TestAPIUser#testToString"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:38:27 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 16341848,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 80,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dnsdb-team-dnsdb-java-sdk-337417754-20180205-071311-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dnsdb-team-dnsdb-java-sdk-337417754-20180205-071311-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 16,
+      "numberPassing": 15,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...on Feb 05 10:00:00 C[ST 2018, expirationTime\u003dMon Mar 05 10:00:00 CS]T 2018}\u003e but was:\u003c...on Feb 05 10:00:00 C[ET 2018, expirationTime\u003dMon Mar 05 10:00:00 CE]T 2018}\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.dnsdb.io.test.TestAPIUser",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.dnsdb.io.test.TestAPIUser",
+        "testMethod": "testToString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...on Feb 05 10:00:00 C[ST 2018, expirationTime\u003dMon Mar 05 10:00:00 CS]T 2018}\u003e but was:\u003c...on Feb 05 10:00:00 C[ET 2018, expirationTime\u003dMon Mar 05 10:00:00 CE]T 2018}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 15,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 15,
+    "numberLines": 0
+  },
+  "commits": {}
 }
