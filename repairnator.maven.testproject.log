@@ -1,0 +1,190 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for pro.chukai:search:jar:1.0-snapshot
+[WARNING] 'dependencies.dependency.systemPath' for com.hankcs:hanlp-solr-plugin:jar should not point at files within the project directory, ${project.basedir}/../libs/hanlp-solr-plugin-1.0.3.jar will be unresolvable by dependent projects @ line 24, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for pro.chukai:webapp:jar:2.0
+[WARNING] 'dependencies.dependency.systemPath' for com.hankcs:hanlp-solr-plugin:jar should not point at files within the project directory, ${project.basedir}/../libs/hanlp-solr-plugin-1.0.3.jar will be unresolvable by dependent projects @ line 128, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] website
+[INFO] service
+[INFO] test
+[INFO] common
+[INFO] metaweblog
+[INFO] search
+[INFO] webapp
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building website 1.0-snapshot
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ website ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/target/jacoco.exec,excludes=pro/chukai/website/model/*:pro/chukai/metaweblog/struct/*
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:report (report) @ website ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building service 1.0-snapshot
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ service ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/target/jacoco.exec,excludes=pro/chukai/website/model/*:pro/chukai/metaweblog/struct/*
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:report (report) @ service ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building test 1.0-snapshot
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ test ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/test/target/jacoco.exec,excludes=pro/chukai/website/model/*:pro/chukai/metaweblog/struct/*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/test/src/main/resources
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ test ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:report (report) @ test ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building common 1.0-snapshot
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ common ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/common/target/jacoco.exec,excludes=pro/chukai/website/model/*:pro/chukai/metaweblog/struct/*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/common/src/main/resources
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/common/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ common ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/common/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 6.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 103.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 1106.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pro.chukai.common.util.NetUtilTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.206 sec <<< FAILURE! - in pro.chukai.common.util.NetUtilTest
+getPrimaryDomain(pro.chukai.common.util.NetUtilTest)  Time elapsed: 0.419 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<"[chukai.pro]"> but was:<"[]">
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at pro.chukai.common.util.NetUtilTest.getPrimaryDomain(NetUtilTest.java:47)
+
+Running pro.chukai.common.util.MessageDigestUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in pro.chukai.common.util.MessageDigestUtilTest
+Running pro.chukai.common.util.JsonUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.852 sec - in pro.chukai.common.util.JsonUtilTest
+
+Results :
+
+Failed tests: 
+  NetUtilTest.getPrimaryDomain:47 expected:<"[chukai.pro]"> but was:<"[]">
+
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] website ............................................ SUCCESS [  1.649 s]
+[INFO] service ............................................ SUCCESS [  0.048 s]
+[INFO] test ............................................... SUCCESS [  1.178 s]
+[INFO] common ............................................. FAILURE [  7.370 s]
+[INFO] metaweblog ......................................... SKIPPED
+[INFO] search ............................................. SKIPPED
+[INFO] webapp ............................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.393 s
+[INFO] Finished at: 2020-02-16T11:39:14+01:00
+[INFO] Final Memory: 30M/72M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project common: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/common/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project common: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/common/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-ichukai-chukai.pro-356722156-20180322-062934-firstCommit/service/common/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:254)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :common
