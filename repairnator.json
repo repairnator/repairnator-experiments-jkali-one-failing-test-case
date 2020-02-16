@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "lukas-krecan/JsonUnit",
-  "bugCommit": "https://github.com/lukas-krecan/JsonUnit/commit/b78344fccc83",
-  "failingModule": "/root/workspace/lukas-krecan/JsonUnit/255761186/tests/test-base",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 356,
-  "failing-test-cases": [
-    {
-      "className": "net.javacrumbs.jsonunit.test.all.AllJsonFluentAssertTest",
-      "failingMethods": [
-        "net.javacrumbs.jsonunit.test.all.AllJsonFluentAssertTest#pathShouldBeIgnoredForExtraKey"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:38 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:39 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 3241528,
+      "totalMemory": 92651520
+    },
+    "totalDuration": 118,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          41
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lukas-krecan-JsonUnit-256996899-20170724-201854-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lukas-krecan-JsonUnit-256996899-20170724-201854-firstCommit/tests/test-base",
+    "overallMetrics": {
+      "numberRunning": 356,
+      "numberPassing": 355,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "JSON documents are different: Different keys found in node \"root\". Expected [test], got [ignored, test].  Extra: \"root.ignored\" ",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.javacrumbs.jsonunit.test.all.AllJsonFluentAssertTest",
+        "numberRunning": 113,
+        "numberPassing": 112,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.javacrumbs.jsonunit.test.all.AllJsonFluentAssertTest",
+        "testMethod": "pathShouldBeIgnoredForExtraKey",
+        "failureName": "java.lang.AssertionError",
+        "detail": "JSON documents are different:\nDifferent keys found in node \"root\". Expected [test], got [ignored, test].  Extra: \"root.ignored\"\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberPlugins": 0,
+    "numberSourceFiles": 33,
+    "numberTestFiles": 26,
+    "numberLibrariesFailingModule": 18,
+    "numberLines": 0
+  }
 }
