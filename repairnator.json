@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 12,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "zeromq/jeromq",
-  "failingModule": "/root/workspace/zeromq/jeromq/273133810",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 186,
-  "failing-test-cases": [
-    {
-      "className": "org.zeromq.auth.ZAuthTest",
-      "failingMethods": [
-        "org.zeromq.auth.ZAuthTest#testCurveAnyClient"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:15:32 PM",
+    "reproductionDateEnd": "Feb 17, 2020 12:58:20 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 280146112,
+      "totalMemory": 890904576
+    },
+    "totalDuration": 6165,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zeromq-jeromq-273133810-20170908-033612_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zeromq-jeromq-273133810-20170908-033612_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 174,
+      "numberPassing": 173,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 12,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: is \"Hello\"      but: was null",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "zmq.socket.reqrep.DealerSpecTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "zmq.socket.reqrep.DealerSpecTest",
+        "testMethod": "testSpecRoundRobinOut",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: not null\n     but: was null",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 127,
+    "numberTestFiles": 188,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  },
+  "commits": {}
 }
