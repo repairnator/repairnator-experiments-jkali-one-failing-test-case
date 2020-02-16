@@ -1,0 +1,890 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/lib/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/lib/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 101
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/lib/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/lib/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-io/commons-io/2.5/commons-io-2.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/logging/log4j/log4j-api/2.8/log4j-api-2.8.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/logging/log4j/log4j-core/2.8/log4j-core-2.8.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hsqldb/hsqldb/2.4.0/hsqldb-2.4.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/postgresql/postgresql/9.4.1212.jre7/postgresql-9.4.1212.jre7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/patterntesting/patterntesting-rt/1.8.0/patterntesting-rt-1.8.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/aspectj/aspectjrt/1.8.13/aspectjrt-1.8.13.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/patterntesting/patterntesting-concurrent/1.8.0/patterntesting-concurrent-1.8.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/net/sf/oval/oval/1.40/oval-1.40.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/de/jfachwert/jfachwert/0.7.0/jfachwert-0.7.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 444370 milliseconds (444 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/lib/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/lib/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-io/commons-io/2.5/commons-io-2.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/logging/log4j/log4j-api/2.8/log4j-api-2.8.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/logging/log4j/log4j-core/2.8/log4j-core-2.8.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hsqldb/hsqldb/2.4.0/hsqldb-2.4.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/postgresql/postgresql/9.4.1212.jre7/postgresql-9.4.1212.jre7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/patterntesting/patterntesting-rt/1.8.0/patterntesting-rt-1.8.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/aspectj/aspectjrt/1.8.13/aspectjrt-1.8.13.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/patterntesting/patterntesting-concurrent/1.8.0/patterntesting-concurrent-1.8.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/net/sf/oval/oval/1.40/oval-1.40.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/de/jfachwert/jfachwert/0.7.0/jfachwert-0.7.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 159
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 639
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 639,  552
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 552
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 552, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 2.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 444370
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/commons-io/commons-io/2.5/commons-io-2.5.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/logging/log4j/log4j-api/2.8/log4j-api-2.8.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/apache/logging/log4j/log4j-core/2.8/log4j-core-2.8.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hsqldb/hsqldb/2.4.0/hsqldb-2.4.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/postgresql/postgresql/9.4.1212.jre7/postgresql-9.4.1212.jre7.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/patterntesting/patterntesting-rt/1.8.0/patterntesting-rt-1.8.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/aspectj/aspectjrt/1.8.13/aspectjrt-1.8.13.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/org/patterntesting/patterntesting-concurrent/1.8.0/patterntesting-concurrent-1.8.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/net/sf/oval/oval/1.40/oval-1.40.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/de/jfachwert/jfachwert/0.7.0/jfachwert-0.7.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-gdv.xport-371554791-20180426-151725-firstCommit/lib
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.Config line: 83, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `gdv.xport.config.Config.vunummer = nr ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.Config line: 84, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `gdv.xport.config.Config.LOG.info("konfigurierte VU-Nummer: " + gdv.xport.config.Config.vunummer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 161, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `export(file, java.nio.charset.Charset.defaultCharset()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 189, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `writer.close() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 187, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `export(writer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 467, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `adressat.setInhalt(s) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 129, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `gdv.xport.config.LogConfig.LOG.debug("Table 'logbook' is created (update count = {}).", stmt.getUpda[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 126, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `stmt.execute( "CREATE TABLE IF NOT EXISTS logbook (event_date TIMESTAMP, level CHAR(5), logger VARCH[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (dbURL != null) { 	gdv.xport.config.LogConfig.LOG.info("Read DATABASE_URL='{}' from environment."[...] ` -topatch--> `if (true) { 	gdv.xport.config.LogConfig.LOG.info("Read DATABASE_URL='{}' from environment.", dbURL);[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (dbURL != null) { 	gdv.xport.config.LogConfig.LOG.info("Read DATABASE_URL='{}' from environment."[...] ` -topatch--> `if (false) { 	gdv.xport.config.LogConfig.LOG.info("Read DATABASE_URL='{}' from environment.", dbURL)[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (dbURL != null) { 	gdv.xport.config.LogConfig.LOG.info("Read DATABASE_URL='{}' from environment."[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `gdv.xport.config.LogConfig.LOG.debug("LogConfig is created with '{}'.", uri) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 55, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `gdv.xport.config.LogConfig.instance = this ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 54, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `gdv.xport.config.LogConfig.createLogTable(uri) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 53, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.dbURI = uri ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 39, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(gdv.xport.config.LogConfig.readDatabaseURL()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 100, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.vermittler.setInhalt(s) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 493, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.nachsatz.setVermittler(s) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 492, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.vorsatz.setVermittler(s) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 362, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.vermittler.setInhalt(s) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 99, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return java.sql.DriverManager.getConnection(uri.toString()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 98, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (uri.getScheme().startsWith("jdbc")) { 	return java.sql.DriverManager.getConnection(uri.toString([...] ` -topatch--> `if (true) { 	return java.sql.DriverManager.getConnection(uri.toString()); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 98, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (uri.getScheme().startsWith("jdbc")) { 	return java.sql.DriverManager.getConnection(uri.toString([...] ` -topatch--> `if (false) { 	return java.sql.DriverManager.getConnection(uri.toString()); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 98, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (uri.getScheme().startsWith("jdbc")) { 	return java.sql.DriverManager.getConnection(uri.toString([...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.config.LogConfig line: 92, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `connection.setAutoCommit(true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Datum line: 202, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setInhalt(d.getInhalt()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 91, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.vorsatz.setVuNummer(vuNummer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 66, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(gdv.xport.config.Config.getVUNummer().getInhalt()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 81, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setAbsender(vuNummer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 82, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `gdv.xport.Datenpaket.LOG.debug(this + " created.") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 79, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setErstellungsDatumBis(heute) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 80, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setVuNummer(vuNummer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 78, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setErstellungsDatumVon(heute) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 403, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `von.setInhalt(d) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 422, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `bis.setInhalt(d) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 441, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `absender.setInhalt(s) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 303, pointed element: CtAssertImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssertImpl) `assert s.length() <= 5 : s + " darf nur max. 5 Zeichen lang sein" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 304, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.vuNummer.setInhalt(s) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Datum line: 211, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setInhalt(dateFormat.format(d)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Datum line: 235, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `d.setInhalt(new java.util.Date()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Datum line: 142, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Datum line: 151, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(8, start) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Datum line: 162, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `dateFormat = gdv.xport.feld.Datum.getDateFormat(length) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Feld line: 432, pointed element: CtAssertImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssertImpl) `assert this.inhalt.length() <= n : "drohender Datenverlust" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 214, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `vorsatz.export(writer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 219, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `nachsatz.export(writer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.Datenpaket line: 220, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `gdv.xport.Datenpaket.LOG.info(datensaetze.size() + " Datensaetze exported.") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.VUNummer line: 50, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setInhalt(nr) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.VUNummer line: 48, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.VUNummer line: 49, pointed element: CtAssertImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssertImpl) `assert nr.length() <= 5 : "nur max. 5 Stellen erlaubt" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Feld line: 250, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.ausrichtung = alignment ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Feld line: 251, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.bezeichner = createBezeichner() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Feld line: 248, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.inhalt = gdv.xport.feld.Feld.getEmptyStringBuilder(length) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Feld line: 249, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.byteAdresse = start ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Feld line: 252, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.bezeichnerEnum = gdv.xport.satz.feld.FeldX.UNBEKANNT ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 77, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.getTeildatensatz(1).add(anzahlSaetze) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 76, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.anzahlSaetze.setInhalt(n) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 67, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `add(new gdv.xport.feld.AlphaNumFeld(gdv.xport.feld.Bezeichner.LEERSTELLEN, 157, 100)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 66, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `add(this.schadenbearbeitungsKosten) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 65, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `add(this.versicherungsLeistungen) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 64, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `add(this.gesamtProvisionsBetrag) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 63, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `add(this.gesamtBeitragBrutto) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 62, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `add(this.gesamtBeitrag) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 61, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `add(this.vermittler) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 60, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `add(this.anzahlSaetze) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setAnzahlSaetze(0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 55, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setUpTeildatensatz() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Nachsatz line: 54, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.remove(gdv.xport.feld.Bezeichner.SATZNUMMER) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 255, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < this.teildatensatz.length; i++) { 	this.teildatensatz[i].remove(bezeichner); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 256, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.teildatensatz[i].remove(bezeichner) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.BetragMitVorzeichen line: 179, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setVorzeichen('+') ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.BetragMitVorzeichen line: 136, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setVorzeichen('+') ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.BetragMitVorzeichen line: 126, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setInhalt(((long) (n))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.BetragMitVorzeichen line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (n >= 0) { 	super.setInhalt(n * 10); 	this.setVorzeichen('+'); } else { 	super.setInhalt((-n) * 1[...] ` -topatch--> `if (true) { 	super.setInhalt(n * 10); 	this.setVorzeichen('+'); } else { 	super.setInhalt((-n) * 10)[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.BetragMitVorzeichen line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (n >= 0) { 	super.setInhalt(n * 10); 	this.setVorzeichen('+'); } else { 	super.setInhalt((-n) * 1[...] ` -topatch--> `if (false) { 	super.setInhalt(n * 10); 	this.setVorzeichen('+'); } else { 	super.setInhalt((-n) * 10[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.BetragMitVorzeichen line: 134, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (n >= 0) { 	super.setInhalt(n * 10); 	this.setVorzeichen('+'); } else { 	super.setInhalt((-n) * 1[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.BetragMitVorzeichen line: 95, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setInhalt(c, this.getAnzahlBytes() - 1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.BetragMitVorzeichen line: 65, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setVorzeichen('+') ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Datum line: 78, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(bezeichner, 8, start) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Version line: 60, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(bezeichner.getName(), start, v) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Version line: 72, pointed element: CtAssertImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssertImpl) `assert v.length() == 3 : "Version hat nicht das Format x.x" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Feld line: 190, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setInhalt(s) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Feld line: 189, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(new gdv.xport.feld.Bezeichner(name), length, start, alignment) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 243, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 9950, 228, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 244, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 9952, 231, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 241, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 362, 222, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 242, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 382, 225, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 239, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 212, 216, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 240, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 352, 219, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 237, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 52, 210, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 238, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 102, 213, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 250, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(this.getTeildatensatz(1), art, version) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 245, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 210, 580, 234, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 246, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 220, 580, 237, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 227, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 180, "1.2") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 228, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 210, 550, 183, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 225, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 251, 174, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 226, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 177, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 223, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 168, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 224, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 171, "1.2") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 221, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 162, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 222, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 165, "1.2") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 235, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 294, 550, 204, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 236, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 295, 550, 207, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 233, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 292, 550, 198, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 234, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 293, 550, 201, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 231, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 280, 550, 192, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 232, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 291, 550, 195, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 229, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 220, 550, 186, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 230, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 270, 550, 189, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 211, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 130, 132, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 212, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 130, 135, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 209, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 10, 126, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 210, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 10, 129, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 207, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 40, 120, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 208, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 30, 123, "1.2") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 205, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 55, 114, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 206, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 40, 117, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 219, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 156, "1.2") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 220, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 510, 159, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 217, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 70, 150, "1.2") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 218, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 153, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 215, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 140, 144, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 216, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 140, 147, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 213, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 110, 138, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 214, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 110, 141, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 193, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(550, 234, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 194, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(350, 243, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 191, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(420, 228, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 192, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(450, 231, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 189, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(500, 222, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 190, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(9999, new gdv.xport.feld.Version(gdv.xport.feld.Bezeichner.VERSION_SATZART_9999, 225, "1.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 203, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 54, 108, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 204, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 59, 111, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 201, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 52, 102, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 202, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 53, 105, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 199, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 211, 50, 96, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 200, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, 221, 51, 99, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 179, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 192, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 180, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(250, 195, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 177, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 186, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 178, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 189, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 175, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 510, 180, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 176, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 183, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 173, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 174, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 174, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 510, 177, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 187, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(410, 216, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 188, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(430, 219, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 185, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(300, 210, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 186, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(400, 213, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 183, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 204, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 184, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 55, 207, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 181, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(260, 198, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 182, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 201, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 163, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 130, 144, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 164, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 110, 147, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 161, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 10, 138, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 162, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 130, 141, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 159, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 30, 132, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 160, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 10, 135, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 157, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 40, 126, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 158, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 30, 129, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 171, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 70, 168, "1.4") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 172, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 171, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 169, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 20, 162, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 170, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 70, 165, "1.4") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 167, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 140, 156, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 168, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 20, 159, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 165, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 110, 150, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 166, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 140, 153, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 147, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(1, new gdv.xport.feld.Version(gdv.xport.feld.Bezeichner.VERSION_SATZART_0001, 96, "2.1")) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 148, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(100, 99, "2.1") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 143, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setUpVersionTds2() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 142, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setUpVersionTds1() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 155, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 59, 120, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 156, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 40, 123, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 153, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 53, 114, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 154, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 54, 117, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 151, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 51, 108, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 152, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(220, 52, 111, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 149, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(200, 102, "2.2") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 150, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(210, 50, 105, "   ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 111, pointed element: CtSwitchImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtSwitchImpl) `switch (n) { 	case 1 : 		tds.add(new gdv.xport.feld.Zeichen(gdv.xport.feld.Bezeichner.ART_DES_ABSEND[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 109, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tds.add(this.bis) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 110, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tds.add(this.vermittler) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 107, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tds.add(this.adressat) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 108, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tds.add(this.von) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 105, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tds.add(this.vuNummer) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 106, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tds.add(this.absender) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 89, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (gdv.xport.satz.Teildatensatz tds : this.getTeildatensaetze()) { 	this.setUpTeildatensatz(nr, td[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 90, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setUpTeildatensatz(nr, tds) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 68, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setUpTeildatensaetze() ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 69, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setUpVersions() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 292, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `formatter.close() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 290, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return formatter.format("Version Satzart %04d %03d", art, sparte).toString() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 275, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, (art * 1000) + sparte, new gdv.xport.feld.Version(s, byteadresse, version)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 273, pointed element: CtAssertImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssertImpl) `assert sparte < 1000 : "unbekannte Sparte " + sparte ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 283, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `formatter.close() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 281, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return formatter.format("Version Satzart %04d", art).toString() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 259, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(this.getTeildatensatz(1), art, byteadresse, version) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 255, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `tds.add(version) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 254, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `versions.put(art, version) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 268, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(this.getTeildatensatz(1), art, sparte, byteadresse, version) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Vorsatz line: 264, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `addVersion(tds, art, new gdv.xport.feld.Version(s, byteadresse, version)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 223, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((teildatensatzNr < 1) || (teildatensatzNr > this.teildatensatz.length)) { 	throw new java.lang.I[...] ` -topatch--> `if (true) { 	throw new java.lang.IllegalArgumentException((((("Teildatensatz-Nr. " + teildatensatzNr[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 223, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((teildatensatzNr < 1) || (teildatensatzNr > this.teildatensatz.length)) { 	throw new java.lang.I[...] ` -topatch--> `if (false) { 	throw new java.lang.IllegalArgumentException((((("Teildatensatz-Nr. " + teildatensatzN[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 223, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((teildatensatzNr < 1) || (teildatensatzNr > this.teildatensatz.length)) { 	throw new java.lang.I[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 220, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (feld.getByteAdresse() > 256) { 	throw new java.lang.IllegalArgumentException(feld + " ueberschre[...] ` -topatch--> `if (true) { 	throw new java.lang.IllegalArgumentException(feld + " ueberschreitet Teildatensatz-Gren[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 220, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (feld.getByteAdresse() > 256) { 	throw new java.lang.IllegalArgumentException(feld + " ueberschre[...] ` -topatch--> `if (false) { 	throw new java.lang.IllegalArgumentException(feld + " ueberschreitet Teildatensatz-Gre[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 220, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (feld.getByteAdresse() > 256) { 	throw new java.lang.IllegalArgumentException(feld + " ueberschre[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 227, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.teildatensatz[teildatensatzNr - 1].add(feld) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 210, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.add(feld, 1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.NumFeld line: 173, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.setInhalt(value) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.NumFeld line: 172, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.nachkommastellen = nachkommastellen ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (content.length() > 4) { 	try { 		this.importFrom(content); 	} catch (java.io.IOException ioe) { [...] ` -topatch--> `if (true) { 	try { 		this.importFrom(content); 	} catch (java.io.IOException ioe) { 		throw new java[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (content.length() > 4) { 	try { 		this.importFrom(content); 	} catch (java.io.IOException ioe) { [...] ` -topatch--> `if (false) { 	try { 		this.importFrom(content); 	} catch (java.io.IOException ioe) { 		throw new jav[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (content.length() > 4) { 	try { 		this.importFrom(content); 	} catch (java.io.IOException ioe) { [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 74, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.createTeildatensaetze(n) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 73, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.satzart.setInhalt(content) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Teildatensatz line: 232, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.sortedFelder.remove(feld) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Teildatensatz line: 233, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `gdv.xport.satz.Teildatensatz.LOG.debug("{} was removed from {}.", bezeichner, this) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Teildatensatz line: 231, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.datenfelder.remove(bezeichner) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Teildatensatz line: 230, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (feld != null) { 	this.datenfelder.remove(bezeichner); 	this.sortedFelder.remove(feld); 	gdv.xpor[...] ` -topatch--> `if (true) { 	this.datenfelder.remove(bezeichner); 	this.sortedFelder.remove(feld); 	gdv.xport.satz.T[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Teildatensatz line: 230, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (feld != null) { 	this.datenfelder.remove(bezeichner); 	this.sortedFelder.remove(feld); 	gdv.xpor[...] ` -topatch--> `if (false) { 	this.datenfelder.remove(bezeichner); 	this.sortedFelder.remove(feld); 	gdv.xport.satz.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Teildatensatz line: 230, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (feld != null) { 	this.datenfelder.remove(bezeichner); 	this.sortedFelder.remove(feld); 	gdv.xpor[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 450, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return x ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 447, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < teildatensatz.length; i++) { 	gdv.xport.feld.Feld x = teildatensatz[i].getFeld(b[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 449, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (x != gdv.xport.feld.Feld.NULL_FELD) { 	return x; } ` -topatch--> `if (true) { 	return x; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 449, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (x != gdv.xport.feld.Feld.NULL_FELD) { 	return x; } ` -topatch--> `if (false) { 	return x; }` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.satz.Satz line: 449, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (x != gdv.xport.feld.Feld.NULL_FELD) { 	return x; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Betrag line: 93, pointed element: CtAssertImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssertImpl) `assert n >= 0 : ("Betrag can't store negative number (" + n) + ")" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Datum line: 110, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `dateFormat = gdv.xport.feld.Datum.getDateFormat(length) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=gdv.xport.feld.Bezeichner line: 1288, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (aChar == '%') { 	converted.append("Proz"); } ` -topatch--> `if (true) { 	converted.append("Proz"); }` (spoon.support.reflect.code.CtIfImpl) 
