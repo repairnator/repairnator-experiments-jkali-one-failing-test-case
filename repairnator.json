@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "konsoletyper/teavm",
-  "bugCommit": "https://github.com/konsoletyper/teavm/compare/fe47fe19ce57...d9c5b3fd045c",
-  "failingModule": "/root/workspace/konsoletyper/teavm/359584946/core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 46,
-  "failing-test-cases": [
-    {
-      "className": "org.teavm.common.GraphTest",
-      "failingMethods": [
-        "org.teavm.common.GraphTest#irreducibleGraphSplit3"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-konsoletyper-teavm-359584946-20180328-235153-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 46,
+      "numberPassing": 45,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Should be reducible",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.teavm.common.GraphTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.teavm.common.GraphTest",
+        "testMethod": "irreducibleGraphSplit3",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Should be reducible",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 26,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1814,
+    "numberTestFiles": 173,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:07 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:46:25 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 314602856,
+      "totalMemory": 514654208
+    },
+    "totalDuration": 496,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 63,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          63
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-konsoletyper-teavm-359584946-20180328-235153-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
