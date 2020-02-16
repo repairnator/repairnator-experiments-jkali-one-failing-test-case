@@ -1,0 +1,644 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/core/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/core/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 31
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/core/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/core/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/json/json/20170516/json-20170516.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/com/google/guava/guava/19.0/guava-19.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/nl/jqno/equalsverifier/equalsverifier/2.1.8/equalsverifier-2.1.8.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/pl/pragmatists/JUnitParams/1.0.5/JUnitParams-1.0.5.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 144140 milliseconds (144 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/core/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/core/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/json/json/20170516/json-20170516.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/com/google/guava/guava/19.0/guava-19.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/nl/jqno/equalsverifier/equalsverifier/2.1.8/equalsverifier-2.1.8.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/pl/pragmatists/JUnitParams/1.0.5/JUnitParams-1.0.5.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 45
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 471
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 471,  441
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 441
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 441, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 144140
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/json/json/20170516/json-20170516.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/com/google/guava/guava/19.0/guava-19.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/nl/jqno/equalsverifier/equalsverifier/2.1.8/equalsverifier-2.1.8.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/.m2/pl/pragmatists/JUnitParams/1.0.5/JUnitParams-1.0.5.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-everit-org-json-schema-234571769-20170521-190300_bugonly-firstCommit/core
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 202, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return mapper.apply(((java.lang.Integer) (obj))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 201, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.Integer) { 	return mapper.apply(((java.lang.Integer) (obj))); } ` -topatch--> `if (true) { 	return mapper.apply(((java.lang.Integer) (this.obj))); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 201, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.Integer) { 	return mapper.apply(((java.lang.Integer) (obj))); } ` -topatch--> `if (false) { 	return mapper.apply(((java.lang.Integer) (this.obj))); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 201, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.Integer) { 	return mapper.apply(((java.lang.Integer) (obj))); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 164, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return mapper.apply(((java.lang.Boolean) (obj))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 83, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return java.util.Optional.of(fn.apply(childFor(key))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 163, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.Boolean) { 	return mapper.apply(((java.lang.Boolean) (obj))); } ` -topatch--> `if (true) { 	return mapper.apply(((java.lang.Boolean) (this.obj))); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 163, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.Boolean) { 	return mapper.apply(((java.lang.Boolean) (obj))); } ` -topatch--> `if (false) { 	return mapper.apply(((java.lang.Boolean) (this.obj))); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 163, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.Boolean) { 	return mapper.apply(((java.lang.Boolean) (obj))); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 320, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `builder = new org.everit.json.schema.loader.CombinedSchemaLoader(ls, this).load().orElseGet(() ->  {[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 332, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `builder.schemaLocation(new org.json.JSONPointer(ls.pointerToCurrentObj).toURIFragment()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 331, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("description").map(org.everit.json.schema.loader.JsonValue::requireString).ifPre[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 330, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("title").map(org.everit.json.schema.loader.JsonValue::requireString).ifPresent(b[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 329, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("id").map(org.everit.json.schema.loader.JsonValue::requireString).ifPresent(buil[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 85, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return java.util.Optional.empty() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 322, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((!ls.schemaJson.containsKey("type")) || ls.schemaJson.containsKey("$ref")) { 	return buildSchema[...] ` -topatch--> `if (true) { 	return buildSchemaWithoutExplicitType(); } else { 	return loadForType(this.ls.schemaJso[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 322, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((!ls.schemaJson.containsKey("type")) || ls.schemaJson.containsKey("$ref")) { 	return buildSchema[...] ` -topatch--> `if (false) { 	return buildSchemaWithoutExplicitType(); } else { 	return loadForType(this.ls.schemaJs[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 322, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((!ls.schemaJson.containsKey("type")) || ls.schemaJson.containsKey("$ref")) { 	return buildSchema[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 77, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return java.util.Optional.empty() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 53, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (presentKeys.size() > 1) { 	throw ls.createSchemaException(java.lang.String.format("expected at m[...] ` -topatch--> `if (true) { 	throw this.ls.createSchemaException(java.lang.String.format("expected at most 1 of 'all[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 53, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (presentKeys.size() > 1) { 	throw ls.createSchemaException(java.lang.String.format("expected at m[...] ` -topatch--> `if (false) { 	throw this.ls.createSchemaException(java.lang.String.format("expected at most 1 of 'al[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 53, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (presentKeys.size() > 1) { 	throw ls.createSchemaException(java.lang.String.format("expected at m[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 55, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (presentKeys.size() == 1) { 	java.lang.String key = presentKeys.get(0); 	java.util.Collection<org[...] ` -topatch--> `if (true) { 	java.lang.String key = presentKeys.get(0); 	java.util.Collection<org.everit.json.schema[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 55, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (presentKeys.size() == 1) { 	java.lang.String key = presentKeys.get(0); 	java.util.Collection<org[...] ` -topatch--> `if (false) { 	java.lang.String key = presentKeys.get(0); 	java.util.Collection<org.everit.json.schem[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 55, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (presentKeys.size() == 1) { 	java.lang.String key = presentKeys.get(0); 	java.util.Collection<org[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 45, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.ls = java.util.Objects.requireNonNull(ls, "ls cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.CombinedSchemaLoader line: 46, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.defaultLoader = java.util.Objects.requireNonNull(defaultLoader, "defaultLoader cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 317, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (ls.schemaJson.containsKey("enum")) { 	builder = buildEnumSchema(); } else { 	builder = new org.e[...] ` -topatch--> `if (true) { 	builder = buildEnumSchema(); } else { 	builder = new org.everit.json.schema.loader.Comb[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 317, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (ls.schemaJson.containsKey("enum")) { 	builder = buildEnumSchema(); } else { 	builder = new org.e[...] ` -topatch--> `if (false) { 	builder = buildEnumSchema(); } else { 	builder = new org.everit.json.schema.loader.Com[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 317, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (ls.schemaJson.containsKey("enum")) { 	builder = buildEnumSchema(); } else { 	builder = new org.e[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 82, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (storage.containsKey(key)) { 	return java.util.Optional.of(fn.apply(childFor(key))); } else { 	re[...] ` -topatch--> `if (true) { 	return java.util.Optional.of(fn.apply(childFor(key))); } else { 	return java.util.Optio[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 82, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (storage.containsKey(key)) { 	return java.util.Optional.of(fn.apply(childFor(key))); } else { 	re[...] ` -topatch--> `if (false) { 	return java.util.Optional.of(fn.apply(childFor(key))); } else { 	return java.util.Opti[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 82, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (storage.containsKey(key)) { 	return java.util.Optional.of(fn.apply(childFor(key))); } else { 	re[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 233, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.ls = new org.everit.json.schema.loader.LoadingState(builder.httpClient,  builder.formatValidato[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 226, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((id == null) && builder.schemaJson.containsKey("id")) { 	try { 		id = new java.net.URI(builder.s[...] ` -topatch--> `if (true) { 	try { 		id = new java.net.URI(builder.schemaJson.require("id").requireString()); 	} cat[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 226, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((id == null) && builder.schemaJson.containsKey("id")) { 	try { 		id = new java.net.URI(builder.s[...] ` -topatch--> `if (false) { 	try { 		id = new java.net.URI(builder.schemaJson.require("id").requireString()); 	} ca[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 226, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((id == null) && builder.schemaJson.containsKey("id")) { 	try { 		id = new java.net.URI(builder.s[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.Schema line: 70, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.title = builder.title ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.Schema line: 71, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.description = builder.description ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.Schema line: 72, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.id = builder.id ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.Schema line: 73, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.schemaLocation = builder.schemaLocation ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 325, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return loadForType(ls.schemaJson.require("type")) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 84, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof org.json.JSONArray) { 	org.json.JSONArray arr = ((org.json.JSONArray) (obj)); 	re[...] ` -topatch--> `if (true) { 	org.json.JSONArray arr = ((org.json.JSONArray) (obj)); 	return new org.everit.json.sche[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 84, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof org.json.JSONArray) { 	org.json.JSONArray arr = ((org.json.JSONArray) (obj)); 	re[...] ` -topatch--> `if (false) { 	org.json.JSONArray arr = ((org.json.JSONArray) (obj)); 	return new org.everit.json.sch[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 84, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof org.json.JSONArray) { 	org.json.JSONArray arr = ((org.json.JSONArray) (obj)); 	re[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.Schema line: 33, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.title = title ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.Schema line: 38, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.description = description ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 303, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("exclusiveMaximum").map(org.everit.json.schema.loader.JsonValue::requireBoolean)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 301, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("exclusiveMinimum").map(org.everit.json.schema.loader.JsonValue::requireBoolean)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 98, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `newPtr.add(key) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 97, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `newPtr.addAll(pointerToCurrentObj) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 81, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof org.json.JSONObject) { 	org.json.JSONObject jo = ((org.json.JSONObject) (obj)); 	[...] ` -topatch--> `if (true) { 	org.json.JSONObject jo = ((org.json.JSONObject) (obj)); 	return new org.everit.json.sch[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 81, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof org.json.JSONObject) { 	org.json.JSONObject jo = ((org.json.JSONObject) (obj)); 	[...] ` -topatch--> `if (false) { 	org.json.JSONObject jo = ((org.json.JSONObject) (obj)); 	return new org.everit.json.sc[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 81, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof org.json.JSONObject) { 	org.json.JSONObject jo = ((org.json.JSONObject) (obj)); 	[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 337, pointed element: CtSwitchImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtSwitchImpl) `switch (typeString) { 	case "string" : 		return new org.everit.json.schema.loader.StringSchemaLoader[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 300, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("multipleOf").map(org.everit.json.schema.loader.JsonValue::requireNumber).ifPres[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 299, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("maximum").map(org.everit.json.schema.loader.JsonValue::requireNumber).ifPresent[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 298, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("minimum").map(org.everit.json.schema.loader.JsonValue::requireNumber).ifPresent[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.util.List) { 	return new org.everit.json.schema.loader.JsonArray(((java.util[...] ` -topatch--> `if (true) { 	return new org.everit.json.schema.loader.JsonArray(((java.util.List<java.lang.Object>) [...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.util.List) { 	return new org.everit.json.schema.loader.JsonArray(((java.util[...] ` -topatch--> `if (false) { 	return new org.everit.json.schema.loader.JsonArray(((java.util.List<java.lang.Object>)[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.util.List) { 	return new org.everit.json.schema.loader.JsonArray(((java.util[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 29, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `actions.put(expectedType, mapper) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 61, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return fn.apply(childFor(key)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.util.Map) { 	return new org.everit.json.schema.loader.JsonObject(((java.util[...] ` -topatch--> `if (true) { 	return new org.everit.json.schema.loader.JsonObject(((java.util.Map<java.lang.String, j[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.util.Map) { 	return new org.everit.json.schema.loader.JsonObject(((java.util[...] ` -topatch--> `if (false) { 	return new org.everit.json.schema.loader.JsonObject(((java.util.Map<java.lang.String, [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.util.Map) { 	return new org.everit.json.schema.loader.JsonObject(((java.util[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 28, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.ls = new org.everit.json.schema.loader.LoadingState(org.everit.json.schema.loader.SchemaLoader.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 27, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.storage = storage ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 105, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.obj = obj ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 60, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (storage.containsKey(key)) { 	return fn.apply(childFor(key)); } else { 	throw failureOfMissingKey[...] ` -topatch--> `if (true) { 	return fn.apply(childFor(key)); } else { 	throw failureOfMissingKey(key); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 60, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (storage.containsKey(key)) { 	return fn.apply(childFor(key)); } else { 	throw failureOfMissingKey[...] ` -topatch--> `if (false) { 	return fn.apply(childFor(key)); } else { 	throw failureOfMissingKey(key); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 60, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (storage.containsKey(key)) { 	return fn.apply(childFor(key)); } else { 	throw failureOfMissingKey[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 110, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.ls = java.util.Objects.requireNonNull(ls, "ls cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 109, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.obj = obj ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.Schema line: 48, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.schemaLocation = schemaLocation ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 25, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `actions.put(expectedType, mapper) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 34, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (typeOfValue() == null) { 	throw multiplexFailure(); } ` -topatch--> `if (true) { 	throw multiplexFailure(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 34, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (typeOfValue() == null) { 	throw multiplexFailure(); } ` -topatch--> `if (false) { 	throw multiplexFailure(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 34, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (typeOfValue() == null) { 	throw multiplexFailure(); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ArraySchema line: 95, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.minItems = minItems ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ArraySchema line: 90, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.maxItems = maxItems ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 378, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (childJson.containsKey("id")) { 	childBuilder.resolutionScope(org.everit.json.schema.loader.inter[...] ` -topatch--> `if (true) { 	childBuilder.resolutionScope(org.everit.json.schema.loader.internal.ReferenceResolver.r[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 378, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (childJson.containsKey("id")) { 	childBuilder.resolutionScope(org.everit.json.schema.loader.inter[...] ` -topatch--> `if (false) { 	childBuilder.resolutionScope(org.everit.json.schema.loader.internal.ReferenceResolver.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 378, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (childJson.containsKey("id")) { 	childBuilder.resolutionScope(org.everit.json.schema.loader.inter[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 85, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (specVersion == org.everit.json.schema.loader.SpecificationVersion.DRAFT_6) { 	rval.draftV6Suppor[...] ` -topatch--> `if (true) { 	rval.draftV6Support(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 85, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (specVersion == org.everit.json.schema.loader.SpecificationVersion.DRAFT_6) { 	rval.draftV6Suppor[...] ` -topatch--> `if (false) { 	rval.draftV6Support(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 85, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (specVersion == org.everit.json.schema.loader.SpecificationVersion.DRAFT_6) { 	rval.draftV6Suppor[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 66, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(builder.httpClient,  builder.formatValidators,  builder.specVersion,  builder.pointerSchemas,  [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 58, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.rootSchemaJson = java.util.Objects.requireNonNull(rootSchemaJson, "rootSchemaJson cannot be nul[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 59, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.schemaJson = java.util.Objects.requireNonNull(schemaJson, "schemaJson cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 60, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.id = id ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 61, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.pointerToCurrentObj = org.apache.commons.collections.ListUtils.unmodifiableList(new java.util.A[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 54, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.httpClient = java.util.Objects.requireNonNull(httpClient, "httpClient cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 55, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.formatValidators = java.util.Objects.requireNonNull(formatValidators, "formatValidators cannot [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 56, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.specVersion = java.util.Objects.requireNonNull(specVersion, "specVersion cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.LoadingState line: 57, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.pointerSchemas = java.util.Objects.requireNonNull(pointerSchemas, "pointerSchemas cannot be nul[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 105, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.httpClient = httpClient ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 130, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.pointerSchemas = pointerSchemas ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 125, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.id = id ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 160, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.pointerToCurrentObj = java.util.Objects.requireNonNull(pointerToCurrentObj) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 155, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.formatValidators = formatValidators ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 150, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.schemaJson = schemaJson ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.getTestResult(LaucherJUnitProcess.java:294) - Error reading the validation process
+ output: 
+Europe/Paris
+
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 145, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.rootSchemaJson = rootSchemaJson ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 58, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `formatValidators.put("hostname", new org.everit.json.schema.internal.HostnameFormatValidator()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 57, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `formatValidators.put("ipv6", new org.everit.json.schema.internal.IPV6Validator()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `formatValidators.put("ipv4", new org.everit.json.schema.internal.IPV4Validator()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 55, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `formatValidators.put("email", new org.everit.json.schema.internal.EmailFormatValidator()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 54, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `formatValidators.put("uri", new org.everit.json.schema.internal.URIFormatValidator()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.SchemaLoader line: 53, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `formatValidators.put("date-time", new org.everit.json.schema.internal.DateTimeFormatValidator()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 78, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return new org.everit.json.schema.loader.JsonObject(((java.util.Map<java.lang.String, java.lang.Obje[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 61, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `actions.put(expectedType, ( obj) -> { 	((java.util.function.Consumer<java.lang.Object>) (consumer)).[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 153, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return mapper.apply(((java.lang.String) (obj))) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 68, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `requiredProperties.add(propertyName) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 152, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.String) { 	return mapper.apply(((java.lang.String) (obj))); } ` -topatch--> `if (true) { 	return mapper.apply(((java.lang.String) (this.obj))); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 152, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.String) { 	return mapper.apply(((java.lang.String) (obj))); } ` -topatch--> `if (false) { 	return mapper.apply(((java.lang.String) (this.obj))); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 152, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (obj instanceof java.lang.String) { 	return mapper.apply(((java.lang.String) (obj))); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `definition.requireObject(( obj) ->  builder.addPropertySchema(keyOfObj, defaultLoader.loadChild(obj)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 78, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.maxProperties = maxProperties ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 43, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.exclusiveMinimum = exclusiveMinimum ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.Schema line: 43, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.id = id ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.StringSchemaLoader line: 29, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.getFormatValidator(formatName).ifPresent(builder::formatValidator) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 95, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `iterator.apply(key, childFor(key)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 52, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `propertyDefs.forEach(( key, value) -> addPropertySchemaDefinition(key, value, builder)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 35, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.storage = storage ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonArray line: 25, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `iterator.apply(i, org.everit.json.schema.loader.JsonValue.of(raw, childState)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonObject line: 90, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `storage.entrySet().forEach(( entry) -> iterateOnEntry(entry, iterator)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 105, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.exclusiveMinimum = builder.exclusiveMinimum ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 104, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.maximum = builder.maximum ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 107, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.multipleOf = builder.multipleOf ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 106, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.exclusiveMaximum = builder.exclusiveMaximum ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 103, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.minimum = builder.minimum ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 109, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.requiresInteger = builder.requiresInteger ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 108, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.requiresNumber = builder.requiresNumber ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 27, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("minProperties").map(org.everit.json.schema.loader.JsonValue::requireInteger).if[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 22, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.defaultLoader = java.util.Objects.requireNonNull(defaultLoader, "defaultLoader cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 21, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.ls = java.util.Objects.requireNonNull(ls, "ls cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 28, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("maxProperties").map(org.everit.json.schema.loader.JsonValue::requireInteger).if[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonArray line: 23, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.Object raw : storage) { 	org.everit.json.schema.loader.LoadingState childState = ls.c[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.StringSchema line: 45, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.formatValidator = java.util.Objects.requireNonNull(formatValidator, "formatValidator cannot be [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 62, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `((java.util.function.Consumer<java.lang.Object>) (consumer)).accept(obj) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 63, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return null ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 45, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("dependencies").map(org.everit.json.schema.loader.JsonValue::requireObject).ifPr[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonArray line: 18, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.storage = java.util.Objects.requireNonNull(storage, "storage cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 107, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (dependencies == null) { 	dependencies = new java.util.HashSet<java.lang.String>(1); 	propertyDep[...] ` -topatch--> `if (true) { 	dependencies = new java.util.HashSet<java.lang.String>(1); 	this.propertyDependencies.p[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 107, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (dependencies == null) { 	dependencies = new java.util.HashSet<java.lang.String>(1); 	propertyDep[...] ` -topatch--> `if (false) { 	dependencies = new java.util.HashSet<java.lang.String>(1); 	this.propertyDependencies.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 107, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (dependencies == null) { 	dependencies = new java.util.HashSet<java.lang.String>(1); 	propertyDep[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 108, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `dependencies = new java.util.HashSet<java.lang.String>(1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 109, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `propertyDependencies.put(ifPresent, dependencies) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 111, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `dependencies.add(mustBePresent) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.NumberSchema line: 38, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.exclusiveMaximum = exclusiveMaximum ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 80, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return new org.everit.json.schema.loader.JsonArray(((java.util.List<java.lang.Object>) (obj)), ls) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 31, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("additionalProperties").ifPresent(( rawAddProps) -> { 	rawAddProps.canBe(java.la[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 38, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("patternProperties").map(org.everit.json.schema.loader.JsonValue::requireObject)[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 36, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("required").map(org.everit.json.schema.loader.JsonValue::requireArray).ifPresent[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ArraySchema line: 110, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.uniqueItems = uniqueItems ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.StringSchema line: 50, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.maxLength = maxLength ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 65, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `deps.canBe(org.everit.json.schema.loader.JsonObject.class, ( obj) -> builder.schemaDependency(ifPres[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 61, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `deps.forEach(( ifPresent, mustBePresent) -> addDependency(builder, ifPresent, mustBePresent)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.ObjectSchemaLoader line: 29, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `ls.schemaJson.maybe("properties").map(org.everit.json.schema.loader.JsonValue::requireObject).ifPres[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 61, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.util.Objects.requireNonNull(propName, "propName cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 62, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.util.Objects.requireNonNull(schema, "schema cannot be null") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.ObjectSchema line: 63, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `propertySchemas.put(propName, schema) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.everit.json.schema.loader.JsonValue line: 55, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `((java.util.function.Consumer<java.lang.Object>) (consumer)).accept(obj) ` -topatch--> `-` (null) 
