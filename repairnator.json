@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "hollandsean/Agile_Processes_Group_Project",
-  "bugCommit": "https://github.com/hollandsean/Agile_Processes_Group_Project/compare/5f7ee70df96a...31bbab58e020",
-  "failingModule": "/root/workspace/hollandsean/Agile_Processes_Group_Project/368543307",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 9,
-  "failing-test-cases": [
-    {
-      "className": "com.example.javamavenjunithelloworld.HelloTest",
-      "failingMethods": [
-        "com.example.javamavenjunithelloworld.HelloTest#testSayHelloAFewTimes"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:57 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:39:08 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 7610824,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 70,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          26
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-hollandsean-Agile_Processes_Group_Project-368543307-20180419-110002-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-hollandsean-Agile_Processes_Group_Project-368543307-20180419-110002-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 9,
+      "numberPassing": 8,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: is \"Hello! Hello!\\nHello!\\n\"\n     but: was \"Hello!\\nHello!\\nHello!\\n\"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.example.javamavenjunithelloworld.HelloTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.example.javamavenjunithelloworld.HelloTest",
+        "testMethod": "testSayHelloAFewTimes",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"Hello! Hello!\\nHello!\\n\"\n     but: was \"Hello!\\nHello!\\nHello!\\n\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {}
 }
