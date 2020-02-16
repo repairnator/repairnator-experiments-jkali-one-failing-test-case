@@ -1,0 +1,118 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:40 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:38:48 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 661661976,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 2223,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 337,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          337
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-matsim-org-matsim-408067942-20180725-161427-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-matsim-org-matsim-408067942-20180725-161427-firstCommit/matsim",
+    "overallMetrics": {
+      "numberRunning": 839,
+      "numberPassing": 838,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.matsim.core.mobsim.qsim.components.QSimComponentsTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.matsim.core.mobsim.qsim.components.QSimComponentsTest",
+        "testMethod": "testUseConfigGroup",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 40,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3599,
+    "numberTestFiles": 662,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  },
+  "commits": {}
+}
