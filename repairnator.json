@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 28,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/c7d81e86a1e6...a19cdc632ede",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/353429474/languagetool-standalone",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 898,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.RuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.RuleTest#testJavaRules"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:30 PM",
+    "reproductionDateEnd": "Feb 16, 2020 4:56:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 271273392,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6911,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-353429474-20180314-180256-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-353429474-20180314-180256-firstCommit/languagetool-standalone",
+    "overallMetrics": {
+      "numberRunning": 870,
+      "numberPassing": 869,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 28,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Did not get the expected rule match for the incorrect example sentence:\nText: Der Hund spazierte über die Straße.\nDer Hund ignorierte den Verkehr.\nRule: GERMAN_PARAGRAPH_REPEAT_BEGINNING_RULE\nMatches: [GERMAN_PARAGRAPH_REPEAT_BEGINNING_RULE:0-8:Der Absatz beginnt so wie der folgende Absatz, GERMAN_PARAGRAPH_REPEAT_BEGINNING_RULE:36-44:Der Absatz beginnt so wie der vorhergehende Absatz] expected:\u003c1\u003e but was:\u003c2\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.RuleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.RuleTest",
+        "testMethod": "testJavaRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Did not get the expected rule match for the incorrect example sentence:\nText: Der Hund spazierte über die Straße.\nDer Hund ignorierte den Verkehr.\nRule: GERMAN_PARAGRAPH_REPEAT_BEGINNING_RULE\nMatches: [GERMAN_PARAGRAPH_REPEAT_BEGINNING_RULE:0-8:Der Absatz beginnt so wie der folgende Absatz, GERMAN_PARAGRAPH_REPEAT_BEGINNING_RULE:36-44:Der Absatz beginnt so wie der vorhergehende Absatz] expected:\u003c1\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 490,
+    "numberLibrariesFailingModule": 86,
+    "numberLines": 0
+  },
+  "commits": {}
 }
