@@ -1449,3 +1449,6 @@ ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.languagetool.d
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.languagetool.dev.RuleCreator line: 125, pointed element: CtIfImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.languagetool.dev.RuleCreator.XML_MODE) { 	java.lang.System.out.printf(java.util.Locale.ENGLI[...] ` -topatch--> `if (false) { 	java.lang.System.out.printf(java.util.Locale.ENGLISH,  	"  <rule case_sensitive=\'yes\[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.languagetool.dev.RuleCreator line: 125, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (org.languagetool.dev.RuleCreator.XML_MODE) { 	java.lang.System.out.printf(java.util.Locale.ENGLI[...] ` -topatch--> `-` (null) 
