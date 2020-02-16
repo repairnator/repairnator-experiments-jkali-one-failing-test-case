@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "lukas-krecan/JsonUnit",
-  "bugCommit": "https://github.com/lukas-krecan/JsonUnit/compare/5615cbfc19e5...b60867eb09c1",
-  "failingModule": "/root/workspace/lukas-krecan/JsonUnit/393342227/tests/test-base",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 448,
-  "failing-test-cases": [
-    {
-      "className": "net.javacrumbs.jsonunit.test.all.AllAssertJTest",
-      "failingMethods": [
-        "shouldCompareIgnoring"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:38 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:43 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 38594528,
+      "totalMemory": 144314368
+    },
+    "totalDuration": 123,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 47,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          47
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lukas-krecan-JsonUnit-393342227-20180617-184123-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lukas-krecan-JsonUnit-393342227-20180617-184123-firstCommit/tests/test-base",
+    "overallMetrics": {
+      "numberRunning": 448,
+      "numberPassing": 447,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "[Different value found in node \"a\"]  Expecting values:   \u003c[c\u003d[1, 2, 3],     [null,     null,     null,     c\u003d[1, 2, 3],     null,     null,     null,     null,     null,     null,     null,     null,     null,     null,     null,     null],     1,     1]\u003e in fields:   \u003c[\"head\", \"table\", \"size\", \"modCount\"]\u003e but were:   \u003c[b\u003d1,     [null,     null,     b\u003d1,     c\u003d[1, 2, 3],     null,     null,     null,     null,     null,     null,     null,     null,     null,     null,     null,     null],     2,     2]\u003e in \u003c{\"b\":1\"c\":[1, 2, 3]}\u003e. Comparison was performed on all fields but \u003c[\"b\"]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.javacrumbs.jsonunit.test.all.AllAssertJTest",
+        "numberRunning": 25,
+        "numberPassing": 24,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.javacrumbs.jsonunit.test.all.AllAssertJTest",
+        "testMethod": "shouldCompareIgnoring",
+        "failureName": "java.lang.AssertionError",
+        "detail": "[Different value found in node \"a\"] \nExpecting values:\n  \u003c[c\u003d[1, 2, 3],\n    [null,\n    null,\n    null,\n    c\u003d[1, 2, 3],\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null],\n    1,\n    1]\u003e\nin fields:\n  \u003c[\"head\", \"table\", \"size\", \"modCount\"]\u003e\nbut were:\n  \u003c[b\u003d1,\n    [null,\n    null,\n    b\u003d1,\n    c\u003d[1, 2, 3],\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null],\n    2,\n    2]\u003e\nin \u003c{\"b\":1\"c\":[1, 2, 3]}\u003e.\nComparison was performed on all fields but \u003c[\"b\"]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberPlugins": 0,
+    "numberSourceFiles": 53,
+    "numberTestFiles": 30,
+    "numberLibrariesFailingModule": 19,
+    "numberLines": 0
+  }
 }
