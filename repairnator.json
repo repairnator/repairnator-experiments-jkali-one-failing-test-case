@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 32,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "magefree/mage",
-  "failingModule": "/root/workspace/magefree/mage/363853505/Mage.Verify",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2224,
-  "failing-test-cases": [
-    {
-      "className": "mage.verify.VerifyCardDataTest",
-      "failingMethods": [
-        "mage.verify.VerifyCardDataTest#checkDuplicateCardNumbersInDB"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:38 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:13:06 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 28601104,
+      "totalMemory": 97800192
+    },
+    "totalDuration": 684,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-magefree-mage-363853505-20180408-215622-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-magefree-mage-363853505-20180408-215622-firstCommit/Mage.Tests",
+    "overallMetrics": {
+      "numberRunning": 2181,
+      "numberPassing": 2180,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 32,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "DB have duplicated card numbers, founded errors: 1",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.mage.test.decks.importer.TxtDeckImporterTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.mage.test.decks.importer.TxtDeckImporterTest",
+        "testMethod": "testImportWithBlankLineAboveSideboard",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Imported deck does not contain 3 cards, found 0 expected:\u003c3\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 34,
+    "numberPlugins": 0,
+    "numberSourceFiles": 20131,
+    "numberTestFiles": 812,
+    "numberLibrariesFailingModule": 75,
+    "numberLines": 0
+  }
 }
