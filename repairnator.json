@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "spring-projects/spring-hateoas",
-  "bugCommit": "https://github.com/spring-projects/spring-hateoas/compare/b79e07c88fcd...c68e8b6d17ef",
-  "failingModule": "/root/workspace/spring-projects/spring-hateoas/255781342",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 340,
-  "failing-test-cases": [
-    {
-      "className": "org.springframework.hateoas.hal.forms.HalFormsWebMvcTest",
-      "failingMethods": [
-        "org.springframework.hateoas.hal.forms.HalFormsWebMvcTest#basic"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:58 PM",
+    "reproductionDateEnd": "Feb 16, 2020 8:10:27 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 141843168,
+      "totalMemory": 605683712
+    },
+    "totalDuration": 6206,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-256164355-20170721-202656-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 340,
+      "numberPassing": 339,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "No value at JSON path \"$._templates.*\", exception: Missing property in path $[\u0027_templates\u0027]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.hateoas.hal.forms.HalFormsWebMvcTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.hateoas.hal.forms.HalFormsWebMvcTest",
+        "testMethod": "basic",
+        "failureName": "java.lang.AssertionError",
+        "detail": "No value at JSON path \"$._templates.*\", exception: Missing property in path $[\u0027_templates\u0027]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 101,
+    "numberTestFiles": 69,
+    "numberLibrariesFailingModule": 43,
+    "numberLines": 0
+  }
 }
