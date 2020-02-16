@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 26,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "liveontologies/elk-reasoner",
-  "bugCommit": "https://github.com/liveontologies/elk-reasoner/compare/2bcf025e448e...a92174951b8b",
-  "failingModule": "/root/workspace/liveontologies/elk-reasoner/357581049/elk-reasoner",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1761,
-  "failing-test-cases": [
-    {
-      "className": "org.semanticweb.elk.reasoner.ElkDiffRealizationCorrectnessTest",
-      "failingMethods": [
-        "org.semanticweb.elk.reasoner.ElkDiffRealizationCorrectnessTest#initializationError"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:38 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:08:27 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 261193416,
+      "totalMemory": 484245504
+    },
+    "totalDuration": 404,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 100,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          100
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-liveontologies-elk-reasoner-357581049-20180323-230002-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-liveontologies-elk-reasoner-357581049-20180323-230002-firstCommit/elk-reasoner",
+    "overallMetrics": {
+      "numberRunning": 1735,
+      "numberPassing": 1734,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 26,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.semanticweb.elk.reasoner.ElkDiffRealizationCorrectnessTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.semanticweb.elk.reasoner.ElkDiffRealizationCorrectnessTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 26,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1936,
+    "numberTestFiles": 208,
+    "numberLibrariesFailingModule": 18,
+    "numberLines": 0
+  },
+  "commits": {}
 }
