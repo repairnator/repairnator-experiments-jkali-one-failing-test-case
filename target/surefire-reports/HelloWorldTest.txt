@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: HelloWorldTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.448 sec <<< FAILURE! - in HelloWorldTest
+helloWorldTest(HelloWorldTest)  Time elapsed: 0.25 sec  <<< FAILURE!
+org.mockito.exceptions.verification.junit.ArgumentsAreDifferent: 
+Argument(s) are different! Wanted:
+writer.println("Hello World!");
+-> at HelloWorldTest.helloWorldTest(HelloWorldTest.java:20)
+Actual invocation has different arguments:
+writer.println("Hello !");
+-> at HelloWorld.helloWorld(HelloWorld.java:12)
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at HelloWorldTest.helloWorldTest(HelloWorldTest.java:20)
+
