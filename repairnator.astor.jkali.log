@@ -1,0 +1,556 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/xchange-kuna/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/xchange-kuna/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 9
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/xchange-kuna/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/xchange-kuna/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/knowm/xchange/xchange-core/4.3.3-SNAPSHOT/xchange-core-4.3.3-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/github/mmazi/rescu/2.0.1/rescu-2.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-databind/2.9.1/jackson-databind-2.9.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.9.1/jackson-core-2.9.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/net/iharder/base64/2.3.9/base64-2.3.9.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/commons-codec/commons-codec/1.3/commons-codec-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/commons-io/commons-io/2.6/commons-io-2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 128970 milliseconds (128 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/xchange-kuna/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/xchange-kuna/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/knowm/xchange/xchange-core/4.3.3-SNAPSHOT/xchange-core-4.3.3-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/github/mmazi/rescu/2.0.1/rescu-2.0.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-databind/2.9.1/jackson-databind-2.9.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.9.1/jackson-core-2.9.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/net/iharder/base64/2.3.9/base64-2.3.9.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/commons-codec/commons-codec/1.3/commons-codec-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/commons-io/commons-io/2.6/commons-io-2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 19
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 0
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 28, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 29, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 30, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 35, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 40, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 41, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 42, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 43, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 44, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 45, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 46, file KunaExchange.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 25, file KunaAskBid.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 29, file KunaAskBid.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 38, file KunaAskBid.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 43, file KunaAskBid.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 54, file KunaAskBid.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 55, file KunaAskBid.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 59, file KunaAskBid.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 64, file KunaAskBid.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 18, file KunaException.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 22, file KunaException.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 54, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 63, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 73, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 82, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 92, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 101, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 110, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 120, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 129, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 139, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 149, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 154, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 163, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 171, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 172, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 176, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 182, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 187, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 193, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 198, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 203, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 210, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 212, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 209, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 218, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 224, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 230, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 236, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 241, file KunaOrder.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 36, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 45, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 54, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 63, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 72, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 81, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 90, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 99, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 104, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 121, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 123, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 120, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 125, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 130, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 132, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 129, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 139, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 141, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 138, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 148, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 150, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 147, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 157, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 159, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 156, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 166, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 168, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 165, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 175, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 177, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 174, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 183, file KunaTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 33, file KunaTimeTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 42, file KunaTimeTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 51, file KunaTimeTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 56, file KunaTimeTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 68, file KunaTimeTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 69, file KunaTimeTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 74, file KunaTimeTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 79, file KunaTimeTicker.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 33, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 37, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 41, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 45, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 49, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 54, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 58, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 67, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 75, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 76, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 80, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 85, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 90, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 95, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 102, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 104, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 101, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 110, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 115, file KunaTrade.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 10, file KunaOrderType.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 10, file KunaSide.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 35, file KunaAccountService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 26, file KunaBaseService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 27, file KunaBaseService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 31, file KunaBaseService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 35, file KunaBaseService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 41, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 42, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 47, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 48, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 51, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 54, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 59, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 60, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 64, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 65, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 66, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 75, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 79, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 80, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 81, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 95, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 97, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 101, file KunaMarketDataService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 30, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 32, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 34, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 36, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 40, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 42, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 46, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 50, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 52, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 56, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 60, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtAssignmentImpl, suspValue 0.0, line 62, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 66, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 70, file KunaMarketDataServiceRaw.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 34, file KunaTradeService.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 24, file KunaUtils.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 29, file KunaUtils.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 31, file KunaUtils.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 36, file KunaUtils.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 40, file KunaUtils.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 41, file KunaUtils.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 155
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 155, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 128970
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/knowm/xchange/xchange-core/4.3.3-SNAPSHOT/xchange-core-4.3.3-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/github/mmazi/rescu/2.0.1/rescu-2.0.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-databind/2.9.1/jackson-databind-2.9.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/fasterxml/jackson/core/jackson-core/2.9.1/jackson-core-2.9.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/net/iharder/base64/2.3.9/base64-2.3.9.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/commons-io/commons-io/2.6/commons-io-2.6.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/.m2/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-329492196-20180116-154016_bugonly-firstCommit/xchange-kuna
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.KunaExchange line: 28, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.marketDataService = new org.knowm.xchange.kuna.service.KunaMarketDataService(this) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.KunaExchange line: 29, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.accountService = new org.knowm.xchange.kuna.service.KunaAccountService(this) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.KunaExchange line: 30, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.tradeService = new org.knowm.xchange.kuna.service.KunaTradeService(this) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.KunaExchange line: 41, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `exchangeSpecification.setSslUri(org.knowm.xchange.kuna.KunaExchange.KUNA_URL) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.KunaExchange line: 42, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `exchangeSpecification.setHost(org.knowm.xchange.kuna.KunaExchange.KUNA_HOST) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.KunaExchange line: 43, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `exchangeSpecification.setPort(org.knowm.xchange.kuna.KunaExchange.KUNA_PORT) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.KunaExchange line: 44, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `exchangeSpecification.setExchangeName("Kuna") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.KunaExchange line: 45, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `exchangeSpecification.setExchangeDescription("Kuna is the ukrainian crypto currency exchange platfor[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaAskBid line: 54, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.asks = asks ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaAskBid line: 59, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.bids = bids ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaException line: 18, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.errorCode = code ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 171, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.id = id ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 176, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.side = org.knowm.xchange.kuna.dto.enums.KunaSide.valueOfIgnoreCase(side) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 182, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.orderType = org.knowm.xchange.kuna.dto.enums.KunaOrderType.valueOfIgnoreCase(orderType) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 187, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.price = price ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 193, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.averagePrice = averagePrice ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 198, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.state = state ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 203, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.market = market ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 210, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.createdAt = null ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 212, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.createdAt = org.knowm.xchange.kuna.util.KunaUtils.toDate(createdAt) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 209, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((createdAt == null) || createdAt.isEmpty()) { 	target.createdAt = null; } else { 	target.created[...] ` -topatch--> `if (true) { 	this.target.createdAt = null; } else { 	this.target.createdAt = org.knowm.xchange.kuna.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 209, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((createdAt == null) || createdAt.isEmpty()) { 	target.createdAt = null; } else { 	target.created[...] ` -topatch--> `if (false) { 	this.target.createdAt = null; } else { 	this.target.createdAt = org.knowm.xchange.kuna[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 209, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((createdAt == null) || createdAt.isEmpty()) { 	target.createdAt = null; } else { 	target.created[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 218, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.volume = volume ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 224, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.remainingVolume = remainingVolume ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 230, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.executedVolume = executedVolume ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaOrder line: 236, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.tradesCount = tradesCount ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 121, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.buy = java.math.BigDecimal.valueOf(buy) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 123, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalArgumentException("Ticker 'buy' cannot be negative") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 120, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (buy >= 0) { 	target.buy = java.math.BigDecimal.valueOf(buy); } else { 	throw new java.lang.Illeg[...] ` -topatch--> `if (true) { 	this.target.buy = java.math.BigDecimal.valueOf(buy); } else { 	throw new java.lang.Ille[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 120, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (buy >= 0) { 	target.buy = java.math.BigDecimal.valueOf(buy); } else { 	throw new java.lang.Illeg[...] ` -topatch--> `if (false) { 	this.target.buy = java.math.BigDecimal.valueOf(buy); } else { 	throw new java.lang.Ill[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 120, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (buy >= 0) { 	target.buy = java.math.BigDecimal.valueOf(buy); } else { 	throw new java.lang.Illeg[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 130, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.sell = java.math.BigDecimal.valueOf(sell) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 132, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalArgumentException("Ticker 'sell' cannot be negative") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 129, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (sell >= 0) { 	target.sell = java.math.BigDecimal.valueOf(sell); } else { 	throw new java.lang.Il[...] ` -topatch--> `if (true) { 	this.target.sell = java.math.BigDecimal.valueOf(sell); } else { 	throw new java.lang.Il[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 129, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (sell >= 0) { 	target.sell = java.math.BigDecimal.valueOf(sell); } else { 	throw new java.lang.Il[...] ` -topatch--> `if (false) { 	this.target.sell = java.math.BigDecimal.valueOf(sell); } else { 	throw new java.lang.I[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 129, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (sell >= 0) { 	target.sell = java.math.BigDecimal.valueOf(sell); } else { 	throw new java.lang.Il[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 139, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.low = java.math.BigDecimal.valueOf(low) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 141, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalArgumentException("Ticker 'low' cannot be negative") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 138, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (low >= 0) { 	target.low = java.math.BigDecimal.valueOf(low); } else { 	throw new java.lang.Illeg[...] ` -topatch--> `if (true) { 	this.target.low = java.math.BigDecimal.valueOf(low); } else { 	throw new java.lang.Ille[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 138, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (low >= 0) { 	target.low = java.math.BigDecimal.valueOf(low); } else { 	throw new java.lang.Illeg[...] ` -topatch--> `if (false) { 	this.target.low = java.math.BigDecimal.valueOf(low); } else { 	throw new java.lang.Ill[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 138, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (low >= 0) { 	target.low = java.math.BigDecimal.valueOf(low); } else { 	throw new java.lang.Illeg[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 148, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.high = java.math.BigDecimal.valueOf(high) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 150, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalArgumentException("Ticker 'high' cannot be negative") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (high >= 0) { 	target.high = java.math.BigDecimal.valueOf(high); } else { 	throw new java.lang.Il[...] ` -topatch--> `if (true) { 	this.target.high = java.math.BigDecimal.valueOf(high); } else { 	throw new java.lang.Il[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (high >= 0) { 	target.high = java.math.BigDecimal.valueOf(high); } else { 	throw new java.lang.Il[...] ` -topatch--> `if (false) { 	this.target.high = java.math.BigDecimal.valueOf(high); } else { 	throw new java.lang.I[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 147, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (high >= 0) { 	target.high = java.math.BigDecimal.valueOf(high); } else { 	throw new java.lang.Il[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 157, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.last = java.math.BigDecimal.valueOf(last) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 159, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalArgumentException("Ticker 'last' cannot be negative") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (last >= 0) { 	target.last = java.math.BigDecimal.valueOf(last); } else { 	throw new java.lang.Il[...] ` -topatch--> `if (true) { 	this.target.last = java.math.BigDecimal.valueOf(last); } else { 	throw new java.lang.Il[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (last >= 0) { 	target.last = java.math.BigDecimal.valueOf(last); } else { 	throw new java.lang.Il[...] ` -topatch--> `if (false) { 	this.target.last = java.math.BigDecimal.valueOf(last); } else { 	throw new java.lang.I[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 156, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (last >= 0) { 	target.last = java.math.BigDecimal.valueOf(last); } else { 	throw new java.lang.Il[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 166, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.vol = java.math.BigDecimal.valueOf(volume) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 168, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalArgumentException("Ticker 'volume' cannot be negative") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 165, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (volume >= 0) { 	target.vol = java.math.BigDecimal.valueOf(volume); } else { 	throw new java.lang[...] ` -topatch--> `if (true) { 	this.target.vol = java.math.BigDecimal.valueOf(volume); } else { 	throw new java.lang.I[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 165, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (volume >= 0) { 	target.vol = java.math.BigDecimal.valueOf(volume); } else { 	throw new java.lang[...] ` -topatch--> `if (false) { 	this.target.vol = java.math.BigDecimal.valueOf(volume); } else { 	throw new java.lang.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 165, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (volume >= 0) { 	target.vol = java.math.BigDecimal.valueOf(volume); } else { 	throw new java.lang[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 175, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.price = java.math.BigDecimal.valueOf(price) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 177, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalArgumentException("Ticker 'price' cannot be negative") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (price >= 0) { 	target.price = java.math.BigDecimal.valueOf(price); } else { 	throw new java.lang[...] ` -topatch--> `if (true) { 	this.target.price = java.math.BigDecimal.valueOf(price); } else { 	throw new java.lang.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (price >= 0) { 	target.price = java.math.BigDecimal.valueOf(price); } else { 	throw new java.lang[...] ` -topatch--> `if (false) { 	this.target.price = java.math.BigDecimal.valueOf(price); } else { 	throw new java.lang[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTicker line: 174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (price >= 0) { 	target.price = java.math.BigDecimal.valueOf(price); } else { 	throw new java.lang[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTimeTicker line: 68, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.timestamp = timestamp ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTimeTicker line: 74, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.ticker = ticker ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 75, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.id = id ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 80, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.side = org.knowm.xchange.kuna.dto.enums.KunaSide.valueOfIgnoreCase(side) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 85, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.price = price ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 90, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.funds = funds ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 95, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.market = market ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 102, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.createdAt = null ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 104, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.createdAt = org.knowm.xchange.kuna.util.KunaUtils.toDate(createdAt) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((createdAt == null) || createdAt.isEmpty()) { 	target.createdAt = null; } else { 	target.created[...] ` -topatch--> `if (true) { 	this.target.createdAt = null; } else { 	this.target.createdAt = org.knowm.xchange.kuna.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((createdAt == null) || createdAt.isEmpty()) { 	target.createdAt = null; } else { 	target.created[...] ` -topatch--> `if (false) { 	this.target.createdAt = null; } else { 	this.target.createdAt = org.knowm.xchange.kuna[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 101, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((createdAt == null) || createdAt.isEmpty()) { 	target.createdAt = null; } else { 	target.created[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.dto.KunaTrade line: 110, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `target.volume = volume ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaAccountService line: 35, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new org.knowm.xchange.exceptions.NotYetImplementedForExchangeException() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaBaseService line: 26, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `kuna = si.mazi.rescu.RestProxyFactory.createProxy(org.knowm.xchange.kuna.Kuna.class, exchange.getExc[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaBaseService line: 27, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `kunaAuthenticated = si.mazi.rescu.RestProxyFactory.createProxy(org.knowm.xchange.kuna.KunaAuthentica[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaMarketDataService line: 81, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `builder.id(java.lang.String.valueOf(kunaOrder.getId())).currencyPair( currencyPair).timestamp( kunaO[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaMarketDataServiceRaw line: 32, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `ticker = getKuna().getTicker(org.knowm.xchange.kuna.util.KunaUtils.toPairString(pair)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaMarketDataServiceRaw line: 34, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new org.knowm.xchange.exceptions.ExchangeException(e.getMessage()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaMarketDataServiceRaw line: 42, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `tickers = getKuna().getTickers() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaMarketDataServiceRaw line: 52, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `askBid = getKuna().getOrders(org.knowm.xchange.kuna.util.KunaUtils.toPairString(pair)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaMarketDataServiceRaw line: 62, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `trades = getKuna().getTradesHistory(org.knowm.xchange.kuna.util.KunaUtils.toPairString(pair)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.service.KunaTradeService line: 34, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new org.knowm.xchange.exceptions.NotYetImplementedForExchangeException() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.util.KunaUtils line: 29, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return org.knowm.xchange.kuna.util.KunaUtils.dateParserNoMillis().parse(dateString) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.knowm.xchange.kuna.util.KunaUtils line: 31, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new org.knowm.xchange.exceptions.ExchangeException("Illegal date/time format", e1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:171) - Time Repair Loop (s): 326.222
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:173) - generationsexecuted: 1
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:255) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:265) - End Repair Search: NOT Found solution
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:190) - Time Total(s): 346.523
