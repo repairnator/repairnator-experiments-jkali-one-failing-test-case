@@ -1,0 +1,399 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 40
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/patterntesting/patterntesting-rt/1.7.2/patterntesting-rt-1.7.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/commons-io/commons-io/2.6/commons-io-2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/aspectj/aspectjrt/1.8.7/aspectjrt-1.8.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/logging/log4j/log4j-api/2.7/log4j-api-2.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/logging/log4j/log4j-core/2.7/log4j-core-2.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/io/github/lukehutch/fast-classpath-scanner/2.12.0/fast-classpath-scanner-2.12.0.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 92500 milliseconds (92 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/patterntesting/patterntesting-rt/1.7.2/patterntesting-rt-1.7.2.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/commons-io/commons-io/2.6/commons-io-2.6.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/aspectj/aspectjrt/1.8.7/aspectjrt-1.8.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/logging/log4j/log4j-api/2.7/log4j-api-2.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/logging/log4j/log4j-core/2.7/log4j-core-2.7.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/io/github/lukehutch/fast-classpath-scanner/2.12.0/fast-classpath-scanner-2.12.0.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 48
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 126
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 126,  96
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 96
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 96, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 92500
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/patterntesting/patterntesting-rt/1.7.2/patterntesting-rt-1.7.2.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/commons-io/commons-io/2.6/commons-io-2.6.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/aspectj/aspectjrt/1.8.7/aspectjrt-1.8.7.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/logging/log4j/log4j-api/2.7/log4j-api-2.7.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/apache/logging/log4j/log4j-core/2.7/log4j-core-2.7.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/io/github/lukehutch/fast-classpath-scanner/2.12.0/fast-classpath-scanner-2.12.0.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.post.Adresse line: 124, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new de.jfachwert.pruefung.exception.InvalidValueException(adresse, "address") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 175, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw ((javax.validation.ValidationException) (cause)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (cause instanceof javax.validation.ValidationException) { 	throw ((javax.validation.ValidationExc[...] ` -topatch--> `if (true) { 	throw ((javax.validation.ValidationException) (cause)); } else { 	throw new java.lang.I[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (cause instanceof javax.validation.ValidationException) { 	throw ((javax.validation.ValidationExc[...] ` -topatch--> `if (false) { 	throw ((javax.validation.ValidationException) (cause)); } else { 	throw new java.lang.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 174, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (cause instanceof javax.validation.ValidationException) { 	throw ((javax.validation.ValidationExc[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.Nummer line: 82, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return new java.math.BigInteger(nummer).toString() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.Nummer line: 84, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new de.jfachwert.pruefung.exception.InvalidValueException(nummer, "number") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.PackedDecimal line: 104, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `de.jfachwert.math.PackedDecimal.cache[i] = new de.jfachwert.math.PackedDecimal(i) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.PackedDecimal line: 103, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < de.jfachwert.math.PackedDecimal.cache.length; i++) { 	de.jfachwert.math.PackedDe[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 231, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `de.jfachwert.FachwertFactory.LOG.log(java.util.logging.Level.FINE, "Cannot call validate method of "[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 232, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `getFachwert(clazz, args) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 227, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw ((javax.validation.ValidationException) (ex.getTargetException())) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 225, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `de.jfachwert.FachwertFactory.LOG.log(java.util.logging.Level.FINE, ("Call of validate method of " + [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 226, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (ex.getTargetException() instanceof javax.validation.ValidationException) { 	throw ((javax.valida[...] ` -topatch--> `if (true) { 	throw ((javax.validation.ValidationException) (ex.getTargetException())); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 226, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (ex.getTargetException() instanceof javax.validation.ValidationException) { 	throw ((javax.valida[...] ` -topatch--> `if (false) { 	throw ((javax.validation.ValidationException) (ex.getTargetException())); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 226, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (ex.getTargetException() instanceof javax.validation.ValidationException) { 	throw ((javax.valida[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Kontonummer line: 64, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new de.jfachwert.pruefung.exception.InvalidValueException(kontonr, "account_number", nfe) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.Mod11Verfahren line: 36, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.anzahlStellen = anzahlStellen ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 94, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new de.jfachwert.pruefung.exception.InvalidValueException(bankverbindung, "bank_account") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.PackedDecimal line: 126, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(java.lang.Long.toString(zahl)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.IllegalLengthException line: 50, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(argument, java.util.Collections.singletonList(expected)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 92, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new de.jfachwert.pruefung.exception.IllegalLengthException(value, expected) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 223, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `method.invoke(null, args) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 92, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `splitted[1] = de.jfachwert.bank.Bankverbindung.stripSeparator(org.apache.commons.lang3.StringUtils.s[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 91, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `splitted[0] = de.jfachwert.bank.Bankverbindung.stripSeparator(org.apache.commons.lang3.StringUtils.s[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 93, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.apache.commons.lang3.StringUtils.isBlank(splitted[1])) { 	throw new de.jfachwert.pruefung.ex[...] ` -topatch--> `if (true) { 	throw new de.jfachwert.pruefung.exception.InvalidValueException(bankverbindung, "bank_a[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 93, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (org.apache.commons.lang3.StringUtils.isBlank(splitted[1])) { 	throw new de.jfachwert.pruefung.ex[...] ` -topatch--> `if (false) { 	throw new de.jfachwert.pruefung.exception.InvalidValueException(bankverbindung, "bank_[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 93, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (org.apache.commons.lang3.StringUtils.isBlank(splitted[1])) { 	throw new de.jfachwert.pruefung.ex[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 111, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value.endsWith(",")) { 	value = value.substring(0, value.length() - 1); } ` -topatch--> `if (true) { 	value = value.substring(0, value.length() - 1); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 111, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value.endsWith(",")) { 	value = value.substring(0, value.length() - 1); } ` -topatch--> `if (false) { 	value = value.substring(0, value.length() - 1); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.bank.Bankverbindung line: 111, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (value.endsWith(",")) { 	value = value.substring(0, value.length() - 1); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.NumberValidator line: 79, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new de.jfachwert.pruefung.exception.InvalidValueException(value, "number", ex) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 110, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new de.jfachwert.pruefung.exception.IllegalLengthException(value, min, max) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.post.Adresse line: 123, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (lines.length != 2) { 	throw new de.jfachwert.pruefung.exception.InvalidValueException(adresse, "[...] ` -topatch--> `if (true) { 	throw new de.jfachwert.pruefung.exception.InvalidValueException(adresse, "address"); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.post.Adresse line: 123, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (lines.length != 2) { 	throw new de.jfachwert.pruefung.exception.InvalidValueException(adresse, "[...] ` -topatch--> `if (false) { 	throw new de.jfachwert.pruefung.exception.InvalidValueException(adresse, "address"); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.post.Adresse line: 123, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (lines.length != 2) { 	throw new de.jfachwert.pruefung.exception.InvalidValueException(adresse, "[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 171, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return ctor.newInstance(args) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.IllegalLengthException line: 79, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.min = 0 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.IllegalLengthException line: 80, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.max = 0 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.IllegalLengthException line: 81, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.argument = argument ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.IllegalLengthException line: 82, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this.allowedLengths.addAll(allowedLengths) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.InvalidValueException line: 73, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.range = null ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.InvalidValueException line: 71, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.value = value ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.InvalidValueException line: 72, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.context = context ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.rechnung.Kundennummer line: 38, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(nummer, de.jfachwert.pruefung.LengthValidator.NOT_EMPTY_VALIDATOR) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.LocalizedValidationException line: 58, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.key = de.jfachwert.pruefung.exception.LocalizedValidationException.asKey(message) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 247, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `argTypes[i] = args[i].getClass() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.FachwertFactory line: 246, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < args.length; i++) { 	argTypes[i] = args[i].getClass(); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.IllegalLengthException line: 64, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.min = min ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.IllegalLengthException line: 65, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.max = max ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.IllegalLengthException line: 66, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.argument = argument ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.PackedDecimal line: 155, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(zahl, de.jfachwert.math.PackedDecimal.VALIDATOR) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.PackedDecimal line: 166, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.code = de.jfachwert.math.PackedDecimal.asNibbles(validator.validate(zahl)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.PackedDecimal line: 258, pointed element: CtSwitchImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtSwitchImpl) `switch (x) { 	case '0' : 		return 0x0; 	case '1' : 		return 0x1; 	case '2' : 		return 0x2; 	case '3'[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.PackedDecimal line: 242, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `bytes[i] = ((byte) ((upper << 4) | lower)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.math.PackedDecimal line: 239, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0; i < bytes.length; i++) { 	int upper = de.jfachwert.math.PackedDecimal.decode(chars[i[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.NumberValidator line: 49, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `this(java.math.BigDecimal.valueOf(min), java.math.BigDecimal.valueOf(max)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.net.Domainname line: 62, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return name ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.net.Domainname line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (de.jfachwert.net.Domainname.VALID_PATTERN.matcher(name).matches()) { 	return name; } ` -topatch--> `if (true) { 	return name; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.net.Domainname line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (de.jfachwert.net.Domainname.VALID_PATTERN.matcher(name).matches()) { 	return name; } ` -topatch--> `if (false) { 	return name; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.net.Domainname line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (de.jfachwert.net.Domainname.VALID_PATTERN.matcher(name).matches()) { 	return name; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.InvalidValueException line: 59, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.range = null ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.InvalidValueException line: 57, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.value = value ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.InvalidValueException line: 58, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.context = context ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value.length() != expected) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException([...] ` -topatch--> `if (true) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(value, expected); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value.length() != expected) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException([...] ` -topatch--> `if (false) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(value, expected); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 91, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (value.length() != expected) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException([...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.NumberValidator line: 60, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.range = org.apache.commons.lang3.Range.between(min, max) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!isValid(wert)) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(java.util.Ob[...] ` -topatch--> `if (true) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(java.util.Objects.toSt[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (!isValid(wert)) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(java.util.Ob[...] ` -topatch--> `if (false) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(java.util.Objects.toS[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (!isValid(wert)) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(java.util.Ob[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.post.Ort line: 90, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (input.contains(" ")) { 	try { 		java.lang.String plz = de.jfachwert.post.PLZ.validate(org.apache[...] ` -topatch--> `if (true) { 	try { 		java.lang.String plz = de.jfachwert.post.PLZ.validate(org.apache.commons.lang3.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.post.Ort line: 90, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (input.contains(" ")) { 	try { 		java.lang.String plz = de.jfachwert.post.PLZ.validate(org.apache[...] ` -topatch--> `if (false) { 	try { 		java.lang.String plz = de.jfachwert.post.PLZ.validate(org.apache.commons.lang3[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.post.Ort line: 90, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (input.contains(" ")) { 	try { 		java.lang.String plz = de.jfachwert.post.PLZ.validate(org.apache[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.post.Ort line: 83, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `de.jfachwert.pruefung.LengthValidator.validate(ortsname, 1, java.lang.Integer.MAX_VALUE) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.exception.LocalizedValidationException line: 47, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.key = de.jfachwert.pruefung.exception.LocalizedValidationException.asKey(message) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 106, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (min == max) { 	return de.jfachwert.pruefung.LengthValidator.validate(value, min); } ` -topatch--> `if (true) { 	return de.jfachwert.pruefung.LengthValidator.validate(value, min); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 106, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (min == max) { 	return de.jfachwert.pruefung.LengthValidator.validate(value, min); } ` -topatch--> `if (false) { 	return de.jfachwert.pruefung.LengthValidator.validate(value, min); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 106, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (min == max) { 	return de.jfachwert.pruefung.LengthValidator.validate(value, min); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 109, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((value.length() < min) || (value.length() > max)) { 	throw new de.jfachwert.pruefung.exception.I[...] ` -topatch--> `if (true) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(value, min, max); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 109, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((value.length() < min) || (value.length() > max)) { 	throw new de.jfachwert.pruefung.exception.I[...] ` -topatch--> `if (false) { 	throw new de.jfachwert.pruefung.exception.IllegalLengthException(value, min, max); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.LengthValidator line: 109, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((value.length() < min) || (value.length() > max)) { 	throw new de.jfachwert.pruefung.exception.I[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.AbstractFachwert line: 39, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.code = validator.validate(code) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.NullValidator line: 44, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value == null) { 	throw new de.jfachwert.pruefung.exception.NullValueException(); } ` -topatch--> `if (true) { 	throw new de.jfachwert.pruefung.exception.NullValueException(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.NullValidator line: 44, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value == null) { 	throw new de.jfachwert.pruefung.exception.NullValueException(); } ` -topatch--> `if (false) { 	throw new de.jfachwert.pruefung.exception.NullValueException(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=de.jfachwert.pruefung.NullValidator line: 44, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (value == null) { 	throw new de.jfachwert.pruefung.exception.NullValueException(); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:171) - Time Repair Loop (s): 220.019
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:173) - generationsexecuted: 1
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:255) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:265) - End Repair Search: NOT Found solution
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:190) - Time Total(s): 235.911
