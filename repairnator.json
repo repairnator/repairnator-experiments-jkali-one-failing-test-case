@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "yahoojapan/presto-audit",
-  "failingModule": "/root/workspace/yahoojapan/presto-audit/339497709",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2,
-  "failing-test-cases": [
-    {
-      "className": "jp.co.yahoo.presto.audit.TestAuditLogListener",
-      "failingMethods": [
-        "jp.co.yahoo.presto.audit.TestAuditLogListener#testBuildAuditRecordNormal"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:15:32 PM",
+    "reproductionDateEnd": "Feb 16, 2020 11:20:01 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25482000,
+      "totalMemory": 163348480
+    },
+    "totalDuration": 265,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 180,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          180
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-yahoojapan-presto-audit-339497709-20180209-161248-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-yahoojapan-presto-audit-339497709-20180209-161248-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expecting:  \u003c\"{\"queryId\":\"20170606_044544_00024_nfhe3\",\"query\":\"select * from airdelays_s3_csv WHERE kw \u003d \u0027presto-kw-example\u0027 limit 5\",\"uri\":\"http://example.com:8080/v1/query/20170521_140224_00002_gd5k3\",\"state\":\"FINISHED\",\"cpuTime\":0.1,\"wallTime\":0.2,\"queuedTime\":0.3,\"peakMemoryBytes\":10001,\"totalBytes\":10002,\"totalRows\":10003,\"completedSplits\":4096,\"createTime\":\"20170715190000.000\",\"executionStartTime\":\"20170715190001.000\",\"endTime\":\"20170715190003.000\",\"createTimestamp\":1.500138E9,\"executionStartTimestamp\":1.500138001E9,\"endTimestamp\":1.500138003E9,\"errorCode\":0,\"remoteClientAddress\":\"example.com\",\"clientUser\":\"test-user\",\"userAgent\":\"StatementClient 0.167\",\"source\":\"presto-cli\"}\"\u003e to contain:  \u003c\"\"createTime\":\"20170715100000.000\"\"\u003e ",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "jp.co.yahoo.presto.audit.TestAuditLogListener",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "jp.co.yahoo.presto.audit.TestAuditLogListener",
+        "testMethod": "testBuildAuditRecordNormal",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003c\"{\"queryId\":\"20170606_044544_00024_nfhe3\",\"query\":\"select * from airdelays_s3_csv WHERE kw \u003d \u0027presto-kw-example\u0027 limit 5\",\"uri\":\"http://example.com:8080/v1/query/20170521_140224_00002_gd5k3\",\"state\":\"FINISHED\",\"cpuTime\":0.1,\"wallTime\":0.2,\"queuedTime\":0.3,\"peakMemoryBytes\":10001,\"totalBytes\":10002,\"totalRows\":10003,\"completedSplits\":4096,\"createTime\":\"20170715190000.000\",\"executionStartTime\":\"20170715190001.000\",\"endTime\":\"20170715190003.000\",\"createTimestamp\":1.500138E9,\"executionStartTimestamp\":1.500138001E9,\"endTimestamp\":1.500138003E9,\"errorCode\":0,\"remoteClientAddress\":\"example.com\",\"clientUser\":\"test-user\",\"userAgent\":\"StatementClient 0.167\",\"source\":\"presto-cli\"}\"\u003e\nto contain:\n \u003c\"\"createTime\":\"20170715100000.000\"\"\u003e ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 4,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 138,
+    "numberLines": 0
+  },
+  "commits": {}
 }
