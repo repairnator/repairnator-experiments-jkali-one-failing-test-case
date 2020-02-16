@@ -1,0 +1,808 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.knowm.xchange:xchange-examples:jar:4.3.5-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: ${project.groupId}:xchange-kucoin:jar -> duplicate declaration of version ${project.version} @ org.knowm.xchange:xchange-examples:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-examples/pom.xml, line 361, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] XChange
+[INFO] XChange Core
+[INFO] XChange Abucoins
+[INFO] XChange ACX.IO
+[INFO] XChange ANX
+[INFO] XChange Bibox
+[INFO] XChange Binance
+[INFO] XChange Bitbay
+[INFO] XChange BitcoinAverage
+[INFO] XChange Bitcoin Charts
+[INFO] XChange Bitcoin Core
+[INFO] XChange Bitcoin.de
+[INFO] XChange Bitcoinium
+[INFO] XChange BitcoinToYou
+[INFO] XChange BitFinex
+[INFO] XChange BitMex
+[INFO] XChange BitFlyer
+[INFO] XChange Bitcoin Bitmarket
+[INFO] XChange Bitso
+[INFO] XChange Bitstamp
+[INFO] XChange Bittrex
+[INFO] XChange Bitz
+[INFO] XChange Bleutrade
+[INFO] XChange Blockchain
+[INFO] XChange BTCC
+[INFO] XChange BTCMarkets
+[INFO] XChange BtcTrade
+[INFO] XChange BTC Turk
+[INFO] XChange CampBX
+[INFO] XChange C-Cex
+[INFO] XChange Cex.io
+[INFO] XChange Coinbase
+[INFO] XChange CoinEgg
+[INFO] XChange CoinMarketCap
+[INFO] XChange Coinfloor
+[INFO] XChange Coinmate
+[INFO] XChange CryptoFacilities
+[INFO] XChange Cryptopia
+[INFO] XChange Cryptonit
+[INFO] XChange DSX
+[INFO] XChange EmpoEX
+[INFO] XChange Open Exchange Rates
+[INFO] XChange Wex
+[INFO] XChange Kraken
+[INFO] XChange Kucoin
+[INFO] XChange GDAX
+[INFO] XChange ItBit
+[INFO] XChange Independent Reserve
+[INFO] XChange LakeBTC
+[INFO] XChange Hitbtc
+[INFO] XChange Paymium
+[INFO] XChange Poloniex
+[INFO] XChange OKCoin
+[INFO] XChange Mercado Bitcoin
+[INFO] XChange taurus
+[INFO] XChange Quoine
+[INFO] XChange Ripple
+[INFO] XChange The Rock Trading
+[INFO] XChange Gatecoin
+[INFO] XChange Vircurex
+[INFO] XChange Livecoin
+[INFO] XChange YoBit
+[INFO] XChange Paribu
+[INFO] XChange Liqui
+[INFO] XChange Koineks
+[INFO] XChange Gate.io
+[INFO] XChange Koinim
+[INFO] XChange Zaif
+[INFO] XChange Examples
+[INFO] XChange Gemini
+[INFO] XChange Huobi
+[INFO] XChange Kuna
+[INFO] XChange Luno
+[INFO] XChange QuadrigaCx
+[INFO] XChange Bitcoin Core
+[INFO] XChange Vaultoro
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Core 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom (4 KB at 8.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 78.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar (81 KB at 1317.2 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.CurrencyPairTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 s - in org.knowm.xchange.CurrencyPairTest
+[INFO] Running org.knowm.xchange.dto.meta.ExchangeMetaDataTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.knowm.xchange.dto.meta.ExchangeMetaDataTest
+[INFO] Running org.knowm.xchange.dto.account.FundingRecordStatusTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.knowm.xchange.dto.account.FundingRecordStatusTest
+[INFO] Running org.knowm.xchange.dto.trade.UserTradeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.knowm.xchange.dto.trade.UserTradeTest
+[INFO] Running org.knowm.xchange.dto.trade.LimitOrderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.knowm.xchange.dto.trade.LimitOrderTest
+[INFO] Running org.knowm.xchange.CurrencyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.knowm.xchange.CurrencyTest
+[INFO] Running org.knowm.xchange.utils.DateUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 s - in org.knowm.xchange.utils.DateUtilsTest
+[INFO] Running org.knowm.xchange.utils.CurrencyPairDeserializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.knowm.xchange.utils.CurrencyPairDeserializerTest
+[INFO] Running org.knowm.xchange.utils.AssertTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.knowm.xchange.utils.AssertTest
+[INFO] Running org.knowm.xchange.utils.BigDecimalTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.knowm.xchange.utils.BigDecimalTest
+[INFO] Running org.knowm.xchange.OrderBookTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.knowm.xchange.OrderBookTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Abucoins 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-abucoins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-abucoins ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-abucoins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-abucoins/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-abucoins ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-abucoins ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-abucoins/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.abucoins.AbucoinsAdaptersAdaptCurrenyPairTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 s - in org.knowm.xchange.abucoins.AbucoinsAdaptersAdaptCurrenyPairTest
+[INFO] Running org.knowm.xchange.abucoins.AbucoinsAdaptersSplitIDsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.knowm.xchange.abucoins.AbucoinsAdaptersSplitIDsTest
+[INFO] Running org.knowm.xchange.abucoins.dto.marketdata.AbucoinsHistoricRatesJsonSerializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 s - in org.knowm.xchange.abucoins.dto.marketdata.AbucoinsHistoricRatesJsonSerializationTest
+[INFO] Running org.knowm.xchange.abucoins.dto.account.AbucoinsAccountsJsonSerializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.knowm.xchange.abucoins.dto.account.AbucoinsAccountsJsonSerializationTest
+[INFO] Running org.knowm.xchange.abucoins.dto.AbucoinsCreateLimitOrderRequestSkipsOptionalTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s - in org.knowm.xchange.abucoins.dto.AbucoinsCreateLimitOrderRequestSkipsOptionalTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange ACX.IO 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-acx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-acx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-acx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-acx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-acx ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-acx/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.acx.AcxTradingServiceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.856 s - in org.knowm.xchange.acx.AcxTradingServiceTest
+[INFO] Running org.knowm.xchange.acx.AcxMarketDataServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in org.knowm.xchange.acx.AcxMarketDataServiceTest
+[INFO] Running org.knowm.xchange.acx.AcxAccountServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.524 s - in org.knowm.xchange.acx.AcxAccountServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange ANX 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-anx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-anx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-anx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-anx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-anx ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-anx/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.anx.v2.ANXAdapterTest
+18:35:07.028 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:07.035 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:07.038 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:07.386 [main] DEBUG org.knowm.xchange.anx.v2.ANXExchange - ExchangeMetaData [currencyPairs={BTC/AUD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/CAD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/CNY=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/EUR=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/GBP=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], ETH/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.00010000, maximumAmount=100000.00000000, priceScale=5], BTC/HKD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/JPY=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/NZD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/SGD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], ETH/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], DOGE/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=5000.00000000, maximumAmount=10000000000.00000000, priceScale=8], START/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/AUD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/CAD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/CNY=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/EUR=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/GBP=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/HKD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/JPY=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/NZD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/SGD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], LTC/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.10000000, maximumAmount=10000000.00000000, priceScale=5], START/AUD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/CAD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/EUR=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/GBP=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/HKD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/JPY=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/NZD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/SGD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], STR/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=8], XRP/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=100.00000, maximumAmount=100000.00000000, priceScale=8]}, currencies={AUD=CurrencyMetaData [scale=2, withdrawalFee=null], BGC=CurrencyMetaData [scale=8, withdrawalFee=null], BTC=CurrencyMetaData [scale=8, withdrawalFee=null], CAD=CurrencyMetaData [scale=2, withdrawalFee=null], CHF=CurrencyMetaData [scale=2, withdrawalFee=null], CNY=CurrencyMetaData [scale=8, withdrawalFee=null], DOGE=CurrencyMetaData [scale=8, withdrawalFee=null], EGD=CurrencyMetaData [scale=8, withdrawalFee=null], EUR=CurrencyMetaData [scale=2, withdrawalFee=null], ETH=CurrencyMetaData [scale=8, withdrawalFee=null], GBP=CurrencyMetaData [scale=2, withdrawalFee=null], HKD=CurrencyMetaData [scale=2, withdrawalFee=null], JPY=CurrencyMetaData [scale=2, withdrawalFee=null], LTC=CurrencyMetaData [scale=8, withdrawalFee=null], NMC=CurrencyMetaData [scale=8, withdrawalFee=null], NZD=CurrencyMetaData [scale=2, withdrawalFee=null], PPC=CurrencyMetaData [scale=8, withdrawalFee=null], SGD=CurrencyMetaData [scale=2, withdrawalFee=null], START=CurrencyMetaData [scale=8, withdrawalFee=null], STR=CurrencyMetaData [scale=8, withdrawalFee=null], USD=CurrencyMetaData [scale=2, withdrawalFee=null], XRP=CurrencyMetaData [scale=8, withdrawalFee=null]}, publicRateLimits=[RateLimit [calls=5, timeSpan=0, timeUnit=null]], privateRateLimits=[RateLimit [calls=30, timeSpan=0, timeUnit=SECONDS], RateLimit [calls=60, timeSpan=10, timeUnit=SECONDS], RateLimit [calls=50000, timeSpan=0, timeUnit=HOURS]], shareRateLimits=false]
+18:35:07.399 [main] DEBUG si.mazi.rescu.Config - Configuration from rescu.properties:
+18:35:07.400 [main] DEBUG si.mazi.rescu.Config - httpConnTimeout = 30000
+18:35:07.405 [main] DEBUG si.mazi.rescu.Config - httpReadTimeout = 30000
+18:35:07.858 [main] DEBUG si.mazi.rescu.Config - proxyHost = null
+18:35:07.858 [main] DEBUG si.mazi.rescu.Config - proxyPort = null
+18:35:07.858 [main] DEBUG si.mazi.rescu.Config - ignoreHttpErrorCodes = false
+18:35:07.919 [main] INFO org.knowm.xchange.anx.v2.ANXExchange - Calling Remote Init...
+18:35:07.920 [main] INFO org.knowm.xchange.anx.v2.ANXExchange - No remote initialization implemented for ANXPRO. The exchange meta data for this exchange is loaded from a json file containing hard-coded exchange meta-data. This may or may not be OK for you, and you should understand exactly how this works. Each exchange can either 1) rely on the hard-coded json file that comes packaged with XChange's jar, 2) provide your own override json file, 3) properly implement the `remoteInit()` method for the exchange (please submit a pull request so the whole community can benefit) or 4) a combination of hard-coded JSON and remote API calls. For more info see: https://github.com/timmolter/XChange/wiki/Design-Notes#exchange-metadata
+412.34567
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.379 s - in org.knowm.xchange.anx.v2.ANXAdapterTest
+[INFO] Running org.knowm.xchange.anx.v2.dto.marketdata.TradesJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.knowm.xchange.anx.v2.dto.marketdata.TradesJSONTest
+[INFO] Running org.knowm.xchange.anx.v2.dto.marketdata.FullDepthJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.knowm.xchange.anx.v2.dto.marketdata.FullDepthJSONTest
+[INFO] Running org.knowm.xchange.anx.v2.dto.marketdata.TickerJSONTest
+ANXTicker [high=ANXValue [value=725.38123, currency=USD], low=ANXValue [value=380.00000, currency=USD], avg=ANXValue [value=429.34018, currency=USD], vwap=ANXValue [value=429.34018, currency=USD], vol=ANXValue [value=7.00000000, currency=BTC], last=ANXValue [value=725.38123, currency=USD], buy=ANXValue [value=38.85148, currency=USD], sell=ANXValue [value=897.25596, currency=USD], now=1393388594814000]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.knowm.xchange.anx.v2.dto.marketdata.TickerJSONTest
+[INFO] Running org.knowm.xchange.anx.v2.dto.account.WalletHistoryJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.knowm.xchange.anx.v2.dto.account.WalletHistoryJSONTest
+[INFO] Running org.knowm.xchange.anx.v2.dto.account.WalletJSONTest
+18:35:08.313 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:08.314 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:08.315 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:08.330 [main] DEBUG org.knowm.xchange.anx.v2.ANXExchange - ExchangeMetaData [currencyPairs={BTC/AUD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/CAD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/CNY=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/EUR=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/GBP=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], ETH/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.00010000, maximumAmount=100000.00000000, priceScale=5], BTC/HKD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/JPY=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/NZD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/SGD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], BTC/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], ETH/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=5], DOGE/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=5000.00000000, maximumAmount=10000000000.00000000, priceScale=8], START/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/AUD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/CAD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/CNY=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/EUR=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/GBP=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/HKD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/JPY=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/NZD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/SGD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], EGD/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], LTC/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.10000000, maximumAmount=10000000.00000000, priceScale=5], START/AUD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/CAD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/EUR=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/GBP=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/HKD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/JPY=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/NZD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/SGD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], START/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=null, maximumAmount=null, priceScale=8], STR/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=100000.00000000, priceScale=8], XRP/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=100.00000, maximumAmount=100000.00000000, priceScale=8]}, currencies={AUD=CurrencyMetaData [scale=2, withdrawalFee=null], BGC=CurrencyMetaData [scale=8, withdrawalFee=null], BTC=CurrencyMetaData [scale=8, withdrawalFee=null], CAD=CurrencyMetaData [scale=2, withdrawalFee=null], CHF=CurrencyMetaData [scale=2, withdrawalFee=null], CNY=CurrencyMetaData [scale=8, withdrawalFee=null], DOGE=CurrencyMetaData [scale=8, withdrawalFee=null], EGD=CurrencyMetaData [scale=8, withdrawalFee=null], EUR=CurrencyMetaData [scale=2, withdrawalFee=null], ETH=CurrencyMetaData [scale=8, withdrawalFee=null], GBP=CurrencyMetaData [scale=2, withdrawalFee=null], HKD=CurrencyMetaData [scale=2, withdrawalFee=null], JPY=CurrencyMetaData [scale=2, withdrawalFee=null], LTC=CurrencyMetaData [scale=8, withdrawalFee=null], NMC=CurrencyMetaData [scale=8, withdrawalFee=null], NZD=CurrencyMetaData [scale=2, withdrawalFee=null], PPC=CurrencyMetaData [scale=8, withdrawalFee=null], SGD=CurrencyMetaData [scale=2, withdrawalFee=null], START=CurrencyMetaData [scale=8, withdrawalFee=null], STR=CurrencyMetaData [scale=8, withdrawalFee=null], USD=CurrencyMetaData [scale=2, withdrawalFee=null], XRP=CurrencyMetaData [scale=8, withdrawalFee=null]}, publicRateLimits=[RateLimit [calls=5, timeSpan=0, timeUnit=null]], privateRateLimits=[RateLimit [calls=30, timeSpan=0, timeUnit=SECONDS], RateLimit [calls=60, timeSpan=10, timeUnit=SECONDS], RateLimit [calls=50000, timeSpan=0, timeUnit=HOURS]], shareRateLimits=false]
+18:35:08.336 [main] INFO org.knowm.xchange.anx.v2.ANXExchange - Calling Remote Init...
+18:35:08.336 [main] INFO org.knowm.xchange.anx.v2.ANXExchange - No remote initialization implemented for ANXPRO. The exchange meta data for this exchange is loaded from a json file containing hard-coded exchange meta-data. This may or may not be OK for you, and you should understand exactly how this works. Each exchange can either 1) rely on the hard-coded json file that comes packaged with XChange's jar, 2) provide your own override json file, 3) properly implement the `remoteInit()` method for the exchange (please submit a pull request so the whole community can benefit) or 4) a combination of hard-coded JSON and remote API calls. For more info see: https://github.com/timmolter/XChange/wiki/Design-Notes#exchange-metadata
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.knowm.xchange.anx.v2.dto.account.WalletJSONTest
+[INFO] Running org.knowm.xchange.anx.v2.dto.account.DepositResponseJSONTest
+ANXBitcoinDepositAddress [address=1GAUBau3nKQYJ1uvMWUfWCdEbMTJ1BXFjW]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.knowm.xchange.anx.v2.dto.account.DepositResponseJSONTest
+[INFO] Running org.knowm.xchange.anx.v2.dto.trade.OpenOrdersJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.knowm.xchange.anx.v2.dto.trade.OpenOrdersJSONTest
+[INFO] Running org.knowm.xchange.anx.v2.service.account.FundingRecordTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 s - in org.knowm.xchange.anx.v2.service.account.FundingRecordTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Bibox 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bibox ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bibox ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bibox ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bibox ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bibox ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bibox/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.bibox.dto.marketdata.BiboxMarketdataUnmarshalTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.618 s - in org.knowm.xchange.bibox.dto.marketdata.BiboxMarketdataUnmarshalTest
+[INFO] Running org.knowm.xchange.bibox.dto.account.BiboxAccountUnmarshalTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.knowm.xchange.bibox.dto.account.BiboxAccountUnmarshalTest
+[INFO] Running org.knowm.xchange.bibox.dto.trade.BiboxTradeUnmarshalTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.knowm.xchange.bibox.dto.trade.BiboxTradeUnmarshalTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Binance 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-binance ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-binance ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-binance ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-binance/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-binance ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-binance ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Bitbay 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bitbay ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bitbay ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bitbay ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bitbay ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bitbay ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitbay/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.bitbay.BitbayAdapterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.699 s - in org.knowm.xchange.bitbay.BitbayAdapterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange BitcoinAverage 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bitcoinaverage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bitcoinaverage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bitcoinaverage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bitcoinaverage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bitcoinaverage ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitcoinaverage/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.bitcoinaverage.BitcoinAverageAdapterTest
+Ticker [currencyPair=BTC/USD, open=null, last=629.45, bid=628.2, ask=631.21, high=null, low=null,avg=null, volume=118046.63, quoteVolume=null, timestamp=1387605937000]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.601 s - in org.knowm.xchange.bitcoinaverage.BitcoinAverageAdapterTest
+[INFO] Running org.knowm.xchange.bitcoinaverage.BitcoinAverageAuthenticationTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 s - in org.knowm.xchange.bitcoinaverage.BitcoinAverageAuthenticationTest
+[INFO] Running org.knowm.xchange.bitcoinaverage.dto.marketdata.BitcoinAverageAllJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.knowm.xchange.bitcoinaverage.dto.marketdata.BitcoinAverageAllJSONTest
+[INFO] Running org.knowm.xchange.bitcoinaverage.dto.marketdata.BitcoinAverageTickerJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.knowm.xchange.bitcoinaverage.dto.marketdata.BitcoinAverageTickerJSONTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Bitcoin Charts 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bitcoincharts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bitcoincharts ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bitcoincharts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bitcoincharts ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bitcoincharts ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Bitcoin Core 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bitcoincore ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bitcoincore ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bitcoincore ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bitcoincore ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bitcoincore ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitcoincore/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.bitcoincore.dto.account.BitcoinCoreErrorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.481 s - in org.knowm.xchange.bitcoincore.dto.account.BitcoinCoreErrorTest
+[INFO] Running org.knowm.xchange.bitcoincore.dto.account.BitcoinCoreBalanceResponseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.knowm.xchange.bitcoincore.dto.account.BitcoinCoreBalanceResponseTest
+[INFO] Running org.knowm.xchange.bitcoincore.BitcoinCoreAdaptersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in org.knowm.xchange.bitcoincore.BitcoinCoreAdaptersTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Bitcoin.de 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bitcoinde ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bitcoinde ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bitcoinde ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bitcoinde ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bitcoinde ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitcoinde/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.bitcoinde.dto.marketdata.BitcoindeTradesTest
+bitcoindeTradesWrapper = BitcoindeTradesWrapper{trades=[BitcoindeTrade{date=1500718454, price=2391.48, amount='0.90000000', tid=2844384}, BitcoindeTrade{date=1500718452, price=2400, amount='0.19751033', tid=2844381}, BitcoindeTrade{date=1500718401, price=2400, amount='0.83300000', tid=2844378}, BitcoindeTrade{date=1500718347, price=2400, amount='0.50403226', tid=2844375}, BitcoindeTrade{date=1500718307, price=2400, amount='0.04870000', tid=2844372}, BitcoindeTrade{date=1500718274, price=2400, amount='0.07000000', tid=2844369}, BitcoindeTrade{date=1500718247, price=2399.99, amount='0.08333400', tid=2844366}, BitcoindeTrade{date=1500718241, price=2400, amount='0.12800000', tid=2844363}, BitcoindeTrade{date=1500718234, price=2400, amount='0.19800000', tid=2844360}, BitcoindeTrade{date=1500718230, price=2399.99, amount='0.02600000', tid=2844357}, BitcoindeTrade{date=1500718229, price=2399.99, amount='0.10416700', tid=2844354}, BitcoindeTrade{date=1500718210, price=2399.99, amount='0.10000000', tid=2844351}, BitcoindeTrade{date=1500718208, price=2399.99, amount='0.03000000', tid=2844348}, BitcoindeTrade{date=1500718190, price=2399.99, amount='0.03000000', tid=2844345}, BitcoindeTrade{date=1500718186, price=2395, amount='0.15000000', tid=2844342}, BitcoindeTrade{date=1500718182, price=2399.99, amount='0.04166700', tid=2844339}, BitcoindeTrade{date=1500718175, price=2399.95, amount='0.10000000', tid=2844336}, BitcoindeTrade{date=1500718127, price=2391.27, amount='0.63589680', tid=2844333}, BitcoindeTrade{date=1500718126, price=2399.99, amount='0.03000000', tid=2844330}, BitcoindeTrade{date=1500718106, price=2399.95, amount='0.05000000', tid=2844327}, BitcoindeTrade{date=1500718104, price=2399.99, amount='0.05000000', tid=2844324}, BitcoindeTrade{date=1500718103, price=2393, amount='1.50000000', tid=2844321}, BitcoindeTrade{date=1500718086, price=2400, amount='0.40000000', tid=2844318}, BitcoindeTrade{date=1500718083, price=2400, amount='1.00000000', tid=2844315}, BitcoindeTrade{date=1500718071, price=2399.8, amount='0.02600000', tid=2844312}, BitcoindeTrade{date=1500718049, price=2399.39, amount='0.08585531', tid=2844309}, BitcoindeTrade{date=1500718040, price=2400, amount='0.46000000', tid=2844306}, BitcoindeTrade{date=1500718031, price=2399.2, amount='0.10000000', tid=2844303}, BitcoindeTrade{date=1500718029, price=2400, amount='3.00000000', tid=2844300}, BitcoindeTrade{date=1500718009, price=2399, amount='0.12978295', tid=2844297}, BitcoindeTrade{date=1500718006, price=2399.99, amount='0.20833400', tid=2844294}, BitcoindeTrade{date=1500717998, price=2399, amount='0.20000000', tid=2844291}, BitcoindeTrade{date=1500717992, price=2399, amount='0.16000000', tid=2844288}, BitcoindeTrade{date=1500717968, price=2390.22, amount='0.10000000', tid=2844285}, BitcoindeTrade{date=1500717938, price=2395, amount='0.06632000', tid=2844282}, BitcoindeTrade{date=1500717917, price=2395, amount='0.04900000', tid=2844279}, BitcoindeTrade{date=1500717841, price=2399.99, amount='0.41666800', tid=2844276}, BitcoindeTrade{date=1500717839, price=2399, amount='0.04000000', tid=2844273}, BitcoindeTrade{date=1500717823, price=2399.5, amount='0.49600000', tid=2844270}, BitcoindeTrade{date=1500717807, price=2399.78, amount='0.54822189', tid=2844267}, BitcoindeTrade{date=1500717801, price=2390.33, amount='0.10000000', tid=2844264}, BitcoindeTrade{date=1500717791, price=2399.75, amount='1.00000000', tid=2844261}, BitcoindeTrade{date=1500717782, price=2399, amount='0.19017657', tid=2844258}, BitcoindeTrade{date=1500717780, price=2399, amount='0.10000000', tid=2844255}, BitcoindeTrade{date=1500717777, price=2399, amount='0.05585807', tid=2844252}, BitcoindeTrade{date=1500717774, price=2399, amount='0.50000000', tid=2844249}, BitcoindeTrade{date=1500717771, price=2399, amount='0.10000000', tid=2844246}, BitcoindeTrade{date=1500717770, price=2399.75, amount='1.00000000', tid=2844243}, BitcoindeTrade{date=1500717769, price=2398.99, amount='0.41684200', tid=2844240}, BitcoindeTrade{date=1500717766, price=2398.99, amount='0.10421100', tid=2844237}, BitcoindeTrade{date=1500717766, price=2395, amount='0.77913000', tid=2844234}, BitcoindeTrade{date=1500717763, price=2398.99, amount='0.08336800', tid=2844231}, BitcoindeTrade{date=1500717760, price=2398.99, amount='0.04168400', tid=2844228}, BitcoindeTrade{date=1500717758, price=2398.98, amount='0.04168230', tid=2844225}, BitcoindeTrade{date=1500717755, price=2398.8, amount='0.25792000', tid=2844222}, BitcoindeTrade{date=1500717753, price=2398.5, amount='0.30000000', tid=2844219}, BitcoindeTrade{date=1500717750, price=2397.9, amount='0.02600000', tid=2844216}, BitcoindeTrade{date=1500717741, price=2399, amount='1.00000000', tid=2844213}, BitcoindeTrade{date=1500717733, price=2390, amount='0.06000000', tid=2844210}, BitcoindeTrade{date=1500717727, price=2397.85, amount='0.39680000', tid=2844207}, BitcoindeTrade{date=1500717718, price=2399, amount='0.80000000', tid=2844204}, BitcoindeTrade{date=1500717706, price=2397.66, amount='0.04500000', tid=2844201}, BitcoindeTrade{date=1500717698, price=2301, amount='0.45000000', tid=2844198}, BitcoindeTrade{date=1500717688, price=2399, amount='0.78000000', tid=2844195}, BitcoindeTrade{date=1500717668, price=2396.93, amount='0.04172000', tid=2844192}, BitcoindeTrade{date=1500717664, price=2397.99, amount='0.41701600', tid=2844189}, BitcoindeTrade{date=1500717645, price=2389, amount='0.10000000', tid=2844186}, BitcoindeTrade{date=1500717640, price=2396.72, amount='0.03000000', tid=2844183}, BitcoindeTrade{date=1500717636, price=2398, amount='0.63974579', tid=2844180}, BitcoindeTrade{date=1500717616, price=2396.94, amount='0.10430000', tid=2844177}, BitcoindeTrade{date=1500717608, price=2396.11, amount='0.03500000', tid=2844174}, BitcoindeTrade{date=1500717598, price=2398, amount='1.81000000', tid=2844171}, BitcoindeTrade{date=1500717582, price=2398, amount='2.06770000', tid=2844168}, BitcoindeTrade{date=1500717577, price=2396, amount='0.05000000', tid=2844165}, BitcoindeTrade{date=1500717565, price=2398.99, amount='0.20842100', tid=2844162}, BitcoindeTrade{date=1500717562, price=2397, amount='0.69440000', tid=2844159}, BitcoindeTrade{date=1500717521, price=2396, amount='0.04880000', tid=2844156}, BitcoindeTrade{date=1500717516, price=2397, amount='0.29700000', tid=2844153}, BitcoindeTrade{date=1500717487, price=2396.69, amount='1.00000000', tid=2844150}, BitcoindeTrade{date=1500717484, price=2390.11, amount='0.60000000', tid=2844147}, BitcoindeTrade{date=1500717482, price=2396, amount='1.89146678', tid=2844144}, BitcoindeTrade{date=1500717463, price=2394.96, amount='0.20000000', tid=2844141}, BitcoindeTrade{date=1500717447, price=2338, amount='0.10000000', tid=2844138}, BitcoindeTrade{date=1500717440, price=2395, amount='0.81600000', tid=2844135}, BitcoindeTrade{date=1500717424, price=2395, amount='0.98000000', tid=2844132}, BitcoindeTrade{date=1500717406, price=2395, amount='1.77000000', tid=2844129}, BitcoindeTrade{date=1500717304, price=2396, amount='0.06260434', tid=2844126}, BitcoindeTrade{date=1500717274, price=2395.11, amount='0.03000000', tid=2844123}, BitcoindeTrade{date=1500717225, price=2395, amount='0.04722364', tid=2844120}, BitcoindeTrade{date=1500717211, price=2390, amount='0.47000000', tid=2844117}, BitcoindeTrade{date=1500717169, price=2390, amount='0.80000000', tid=2844114}, BitcoindeTrade{date=1500717160, price=2395, amount='0.08064516', tid=2844111}]} org.knowm.xchange.bitcoinde.dto.marketdata.BitcoindeTradesWrapper@553a3d88
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.51 s - in org.knowm.xchange.bitcoinde.dto.marketdata.BitcoindeTradesTest
+[INFO] Running org.knowm.xchange.bitcoinde.dto.marketdata.BitcoindeOrderBookTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.knowm.xchange.bitcoinde.dto.marketdata.BitcoindeOrderBookTest
+[INFO] Running org.knowm.xchange.bitcoinde.dto.account.BitcoindeAccountTest
+bitcoindeTradesWrapper = org.knowm.xchange.bitcoinde.dto.account.BitcoindeAccountWrapper@149494d8
+0.009
+0.06463044
+2000
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s - in org.knowm.xchange.bitcoinde.dto.account.BitcoindeAccountTest
+[INFO] Running org.knowm.xchange.bitcoinde.dto.BitcoindeOpenOrdersTest
+bitcoindeTradesWrapper = org.knowm.xchange.bitcoinde.trade.BitcoindeMyOpenOrdersWrapper@77846d2c
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.knowm.xchange.bitcoinde.dto.BitcoindeOpenOrdersTest
+[INFO] Running org.knowm.xchange.bitcoinde.dto.BitcoindeErrorTest
+BitcoindeException{errors=[BitcoindeError{message='Order not found', code='13', field='order_id'}, BitcoindeError{message='Made up Error', code='99', field='null'}], credits=-3}
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.knowm.xchange.bitcoinde.dto.BitcoindeErrorTest
+[INFO] Running org.knowm.xchange.bitcoinde.RFC3339DateTimeParseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.knowm.xchange.bitcoinde.RFC3339DateTimeParseTest
+[INFO] Running org.knowm.xchange.bitcoinde.BitcoindeAdapterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in org.knowm.xchange.bitcoinde.BitcoindeAdapterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange Bitcoinium 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bitcoinium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bitcoinium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bitcoinium ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bitcoinium ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bitcoinium ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitcoinium/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.bitcoinium.dto.marketdata.BitcoiniumDepthJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in org.knowm.xchange.bitcoinium.dto.marketdata.BitcoiniumDepthJSONTest
+[INFO] Running org.knowm.xchange.bitcoinium.dto.marketdata.BitcoiniumTickerHistoryJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.knowm.xchange.bitcoinium.dto.marketdata.BitcoiniumTickerHistoryJSONTest
+[INFO] Running org.knowm.xchange.bitcoinium.dto.marketdata.BitcoiniumTickerJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.knowm.xchange.bitcoinium.dto.marketdata.BitcoiniumTickerJSONTest
+[INFO] Running org.knowm.xchange.bitcoinium.BitcoiniumAdapterTest
+Ticker [currencyPair=BTC/USD, open=null, last=516.8, bid=515.76, ask=516.8, high=523.09, low=508.28,avg=null, volume=3522, quoteVolume=null, timestamp=null]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.knowm.xchange.bitcoinium.BitcoiniumAdapterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange BitcoinToYou 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bitcointoyou ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bitcointoyou ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bitcointoyou ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bitcointoyou ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bitcointoyou ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitcointoyou/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.bitcointoyou.BitcointoyouAdaptersTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.213 s - in org.knowm.xchange.bitcointoyou.BitcointoyouAdaptersTest
+[INFO] Running org.knowm.xchange.bitcointoyou.dto.trade.BitcointoyouOrderResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s - in org.knowm.xchange.bitcointoyou.dto.trade.BitcointoyouOrderResponseTest
+[INFO] Running org.knowm.xchange.bitcointoyou.dto.account.BitcointoyouBalanceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.knowm.xchange.bitcointoyou.dto.account.BitcointoyouBalanceTest
+[INFO] Running org.knowm.xchange.bitcointoyou.dto.marketdata.BitcointoyouMarketDataTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in org.knowm.xchange.bitcointoyou.dto.marketdata.BitcointoyouMarketDataTest
+[INFO] Running org.knowm.xchange.bitcointoyou.BitcointoyouExchangeTest
+18:35:25.727 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:25.729 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:25.730 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:25.759 [main] DEBUG org.knowm.xchange.bitcointoyou.BitcointoyouExchange - ExchangeMetaData [currencyPairs={BTC/BRL=CurrencyPairMetaData [tradingFee=0.001, minimumAmount=null, maximumAmount=null, priceScale=8]}, currencies={BTC=CurrencyMetaData [scale=8, withdrawalFee=null]}, publicRateLimits=null, privateRateLimits=[RateLimit [calls=1, timeSpan=10, timeUnit=SECONDS]], shareRateLimits=true]
+18:35:25.783 [main] DEBUG si.mazi.rescu.Config - Configuration from rescu.properties:
+18:35:25.784 [main] DEBUG si.mazi.rescu.Config - httpConnTimeout = 30000
+18:35:25.785 [main] DEBUG si.mazi.rescu.Config - httpReadTimeout = 30000
+18:35:25.785 [main] DEBUG si.mazi.rescu.Config - proxyHost = null
+18:35:25.785 [main] DEBUG si.mazi.rescu.Config - proxyPort = null
+18:35:25.785 [main] DEBUG si.mazi.rescu.Config - ignoreHttpErrorCodes = false
+18:35:25.806 [main] INFO org.knowm.xchange.bitcointoyou.BitcointoyouExchange - Calling Remote Init...
+18:35:25.806 [main] INFO org.knowm.xchange.bitcointoyou.BitcointoyouExchange - No remote initialization implemented for Bitcointoyou. The exchange meta data for this exchange is loaded from a json file containing hard-coded exchange meta-data. This may or may not be OK for you, and you should understand exactly how this works. Each exchange can either 1) rely on the hard-coded json file that comes packaged with XChange's jar, 2) provide your own override json file, 3) properly implement the `remoteInit()` method for the exchange (please submit a pull request so the whole community can benefit) or 4) a combination of hard-coded JSON and remote API calls. For more info see: https://github.com/timmolter/XChange/wiki/Design-Notes#exchange-metadata
+18:35:25.807 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:25.807 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:25.807 [main] DEBUG org.knowm.xchange.ExchangeFactory - Creating default exchange from class name
+18:35:25.813 [main] DEBUG org.knowm.xchange.bitcointoyou.BitcointoyouExchange - ExchangeMetaData [currencyPairs={BTC/BRL=CurrencyPairMetaData [tradingFee=0.001, minimumAmount=null, maximumAmount=null, priceScale=8]}, currencies={BTC=CurrencyMetaData [scale=8, withdrawalFee=null]}, publicRateLimits=null, privateRateLimits=[RateLimit [calls=1, timeSpan=10, timeUnit=SECONDS]], shareRateLimits=true]
+18:35:25.816 [main] INFO org.knowm.xchange.bitcointoyou.BitcointoyouExchange - Calling Remote Init...
+18:35:25.817 [main] INFO org.knowm.xchange.bitcointoyou.BitcointoyouExchange - No remote initialization implemented for Bitcointoyou. The exchange meta data for this exchange is loaded from a json file containing hard-coded exchange meta-data. This may or may not be OK for you, and you should understand exactly how this works. Each exchange can either 1) rely on the hard-coded json file that comes packaged with XChange's jar, 2) provide your own override json file, 3) properly implement the `remoteInit()` method for the exchange (please submit a pull request so the whole community can benefit) or 4) a combination of hard-coded JSON and remote API calls. For more info see: https://github.com/timmolter/XChange/wiki/Design-Notes#exchange-metadata
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 s - in org.knowm.xchange.bitcointoyou.BitcointoyouExchangeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XChange BitFinex 4.3.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xchange-bitfinex ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xchange-bitfinex ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ xchange-bitfinex ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xchange-bitfinex ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ xchange-bitfinex ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitfinex/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.knowm.xchange.bitfinex.v1.dto.marketdata.BitfinexMarketDataJSONTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 s - in org.knowm.xchange.bitfinex.v1.dto.marketdata.BitfinexMarketDataJSONTest
+[INFO] Running org.knowm.xchange.bitfinex.v1.dto.account.BitfinexWalletJSONTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.knowm.xchange.bitfinex.v1.dto.account.BitfinexWalletJSONTest
+[INFO] Running org.knowm.xchange.bitfinex.v1.dto.trade.BitfinexTradeDataJSONTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.541 s - in org.knowm.xchange.bitfinex.v1.dto.trade.BitfinexTradeDataJSONTest
+[INFO] Running org.knowm.xchange.bitfinex.v1.BitfinexAdaptersTest
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.066 s <<< FAILURE! - in org.knowm.xchange.bitfinex.v1.BitfinexAdaptersTest
+[ERROR] testAdaptFundingHistory(org.knowm.xchange.bitfinex.v1.BitfinexAdaptersTest)  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: expected:<offchain transfer> but was:<null>
+	at org.knowm.xchange.bitfinex.v1.BitfinexAdaptersTest.testAdaptFundingHistory(BitfinexAdaptersTest.java:249)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   BitfinexAdaptersTest.testAdaptFundingHistory:249 expected:<offchain transfer> but was:<null>
+[INFO] 
+[ERROR] Tests run: 12, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] XChange ............................................ SUCCESS [  0.250 s]
+[INFO] XChange Core ....................................... SUCCESS [  4.897 s]
+[INFO] XChange Abucoins ................................... SUCCESS [  2.111 s]
+[INFO] XChange ACX.IO ..................................... SUCCESS [  2.614 s]
+[INFO] XChange ANX ........................................ SUCCESS [  3.421 s]
+[INFO] XChange Bibox ...................................... SUCCESS [  2.014 s]
+[INFO] XChange Binance .................................... SUCCESS [  0.071 s]
+[INFO] XChange Bitbay ..................................... SUCCESS [  2.212 s]
+[INFO] XChange BitcoinAverage ............................. SUCCESS [  1.765 s]
+[INFO] XChange Bitcoin Charts ............................. SUCCESS [  0.032 s]
+[INFO] XChange Bitcoin Core ............................... SUCCESS [  2.082 s]
+[INFO] XChange Bitcoin.de ................................. SUCCESS [  2.724 s]
+[INFO] XChange Bitcoinium ................................. SUCCESS [  2.128 s]
+[INFO] XChange BitcoinToYou ............................... SUCCESS [  4.125 s]
+[INFO] XChange BitFinex ................................... FAILURE [  2.711 s]
+[INFO] XChange BitMex ..................................... SKIPPED
+[INFO] XChange BitFlyer ................................... SKIPPED
+[INFO] XChange Bitcoin Bitmarket .......................... SKIPPED
+[INFO] XChange Bitso ...................................... SKIPPED
+[INFO] XChange Bitstamp ................................... SKIPPED
+[INFO] XChange Bittrex .................................... SKIPPED
+[INFO] XChange Bitz ....................................... SKIPPED
+[INFO] XChange Bleutrade .................................. SKIPPED
+[INFO] XChange Blockchain ................................. SKIPPED
+[INFO] XChange BTCC ....................................... SKIPPED
+[INFO] XChange BTCMarkets ................................. SKIPPED
+[INFO] XChange BtcTrade ................................... SKIPPED
+[INFO] XChange BTC Turk ................................... SKIPPED
+[INFO] XChange CampBX ..................................... SKIPPED
+[INFO] XChange C-Cex ...................................... SKIPPED
+[INFO] XChange Cex.io ..................................... SKIPPED
+[INFO] XChange Coinbase ................................... SKIPPED
+[INFO] XChange CoinEgg .................................... SKIPPED
+[INFO] XChange CoinMarketCap .............................. SKIPPED
+[INFO] XChange Coinfloor .................................. SKIPPED
+[INFO] XChange Coinmate ................................... SKIPPED
+[INFO] XChange CryptoFacilities ........................... SKIPPED
+[INFO] XChange Cryptopia .................................. SKIPPED
+[INFO] XChange Cryptonit .................................. SKIPPED
+[INFO] XChange DSX ........................................ SKIPPED
+[INFO] XChange EmpoEX ..................................... SKIPPED
+[INFO] XChange Open Exchange Rates ........................ SKIPPED
+[INFO] XChange Wex ........................................ SKIPPED
+[INFO] XChange Kraken ..................................... SKIPPED
+[INFO] XChange Kucoin ..................................... SKIPPED
+[INFO] XChange GDAX ....................................... SKIPPED
+[INFO] XChange ItBit ...................................... SKIPPED
+[INFO] XChange Independent Reserve ........................ SKIPPED
+[INFO] XChange LakeBTC .................................... SKIPPED
+[INFO] XChange Hitbtc ..................................... SKIPPED
+[INFO] XChange Paymium .................................... SKIPPED
+[INFO] XChange Poloniex ................................... SKIPPED
+[INFO] XChange OKCoin ..................................... SKIPPED
+[INFO] XChange Mercado Bitcoin ............................ SKIPPED
+[INFO] XChange taurus ..................................... SKIPPED
+[INFO] XChange Quoine ..................................... SKIPPED
+[INFO] XChange Ripple ..................................... SKIPPED
+[INFO] XChange The Rock Trading ........................... SKIPPED
+[INFO] XChange Gatecoin ................................... SKIPPED
+[INFO] XChange Vircurex ................................... SKIPPED
+[INFO] XChange Livecoin ................................... SKIPPED
+[INFO] XChange YoBit ...................................... SKIPPED
+[INFO] XChange Paribu ..................................... SKIPPED
+[INFO] XChange Liqui ...................................... SKIPPED
+[INFO] XChange Koineks .................................... SKIPPED
+[INFO] XChange Gate.io .................................... SKIPPED
+[INFO] XChange Koinim ..................................... SKIPPED
+[INFO] XChange Zaif ....................................... SKIPPED
+[INFO] XChange Examples ................................... SKIPPED
+[INFO] XChange Gemini ..................................... SKIPPED
+[INFO] XChange Huobi ...................................... SKIPPED
+[INFO] XChange Kuna ....................................... SKIPPED
+[INFO] XChange Luno ....................................... SKIPPED
+[INFO] XChange QuadrigaCx ................................. SKIPPED
+[INFO] XChange Bitcoin Core ............................... SKIPPED
+[INFO] XChange Vaultoro ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 34.415 s
+[INFO] Finished at: 2020-02-16T18:35:28+01:00
+[INFO] Final Memory: 24M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project xchange-bitfinex: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitfinex/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project xchange-bitfinex: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitfinex/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-360847126-20180401-131007-firstCommit/xchange-bitfinex/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:984)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :xchange-bitfinex
