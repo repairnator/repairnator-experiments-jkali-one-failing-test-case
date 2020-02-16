@@ -1,0 +1,485 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JeroMQ 0.4.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ jeromq ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.11:check (default) @ jeromq ---
+[INFO] Starting audit...
+Audit done.
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jeromq ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zeromq-jeromq-273133810-20170908-033612_bugonly-firstCommit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ jeromq ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ jeromq ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jeromq ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zeromq-jeromq-273133810-20170908-033612_bugonly-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ jeromq ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jeromq ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-zeromq-jeromq-273133810-20170908-033612_bugonly-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 8.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 101.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1336.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running zmq.TestShutdownStress
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.281 sec - in zmq.TestShutdownStress
+Running zmq.TestMsgFlags
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in zmq.TestMsgFlags
+Running zmq.poll.PollerBaseTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in zmq.poll.PollerBaseTest
+Running zmq.socket.reqrep.TestReqCorrelateRelaxed
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in zmq.socket.reqrep.TestReqCorrelateRelaxed
+Running zmq.socket.reqrep.DealerSpecTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1.931 sec <<< FAILURE! - in zmq.socket.reqrep.DealerSpecTest
+testSpecRoundRobinOut(zmq.socket.reqrep.DealerSpecTest)  Time elapsed: 0.579 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: not null
+     but: was null
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at zmq.socket.AbstractSpecTest.recvSeq(AbstractSpecTest.java:46)
+	at zmq.socket.reqrep.DealerSpecTest.roundRobinOut(DealerSpecTest.java:154)
+	at zmq.socket.reqrep.DealerSpecTest.testSpecRoundRobinOut(DealerSpecTest.java:50)
+
+Running zmq.socket.reqrep.ReqSpecTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.847 sec - in zmq.socket.reqrep.ReqSpecTest
+Running zmq.socket.reqrep.RouterHandoverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in zmq.socket.reqrep.RouterHandoverTest
+Running zmq.socket.reqrep.RouterProbeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in zmq.socket.reqrep.RouterProbeTest
+Running zmq.socket.reqrep.TestReqrepTcp
+Starting with port 39805
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in zmq.socket.reqrep.TestReqrepTcp
+Running zmq.socket.reqrep.TestReqrepDevice
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in zmq.socket.reqrep.TestReqrepDevice
+Running zmq.socket.reqrep.RouterSpecTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.208 sec - in zmq.socket.reqrep.RouterSpecTest
+Running zmq.socket.reqrep.TestReqrepInproc
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in zmq.socket.reqrep.TestReqrepInproc
+Running zmq.socket.reqrep.RouterMandatoryTest
+Starting router mandatory HWM test.....Done sending messages.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.097 sec - in zmq.socket.reqrep.RouterMandatoryTest
+Running zmq.socket.reqrep.TestInvalidRep
+addrSize: 5
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in zmq.socket.reqrep.TestInvalidRep
+Running zmq.socket.reqrep.TestRouterMandatory
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.048 sec - in zmq.socket.reqrep.TestRouterMandatory
+Running zmq.socket.reqrep.RepSpecTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 sec - in zmq.socket.reqrep.RepSpecTest
+Running zmq.socket.reqrep.TestReqrepIpc
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in zmq.socket.reqrep.TestReqrepIpc
+Running zmq.socket.stream.StreamEmptyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.051 sec - in zmq.socket.stream.StreamEmptyTest
+Running zmq.socket.stream.StreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.103 sec - in zmq.socket.stream.StreamTest
+Running zmq.socket.pubsub.TestSubForward
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.016 sec - in zmq.socket.pubsub.TestSubForward
+Running zmq.socket.pubsub.PubSubHwmTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.865 sec - in zmq.socket.pubsub.PubSubHwmTest
+Running zmq.socket.pubsub.XPubNodropTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in zmq.socket.pubsub.XPubNodropTest
+Running zmq.socket.pubsub.TestPubsubTcp
+Send.Recv.1.2..End.Done.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.031 sec - in zmq.socket.pubsub.TestPubsubTcp
+Running zmq.socket.pipeline.TestPushPullTcp
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in zmq.socket.pipeline.TestPushPullTcp
+Running zmq.socket.pipeline.PushPullSpecTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.035 sec - in zmq.socket.pipeline.PushPullSpecTest
+Running zmq.socket.pair.TestPairIpc
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in zmq.socket.pair.TestPairIpc
+Running zmq.socket.pair.TestPairInproc
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in zmq.socket.pair.TestPairInproc
+Running zmq.socket.pair.TestPairTcp
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec - in zmq.socket.pair.TestPairTcp
+Running zmq.util.WireTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.util.WireTest
+Running zmq.util.TestUtils
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.util.TestUtils
+Running zmq.util.TestBlob
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.util.TestBlob
+Running zmq.proxy.ProxySingleSocketTest
+.....
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in zmq.proxy.ProxySingleSocketTest
+Running zmq.proxy.ProxyTcpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in zmq.proxy.ProxyTcpTest
+Running zmq.proxy.ProxyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.04 sec - in zmq.proxy.ProxyTest
+Running zmq.proxy.ProxyTerminateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 sec - in zmq.proxy.ProxyTerminateTest
+Running zmq.TestLastEndpoint
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in zmq.TestLastEndpoint
+Running zmq.io.coder.V1DecoderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.io.coder.V1DecoderTest
+Running zmq.io.coder.V1EncoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.io.coder.V1EncoderTest
+Running zmq.io.coder.V2EncoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.io.coder.V2EncoderTest
+Running zmq.io.coder.CustomEncoderTest
+Custom class zmq.io.coder.CustomEncoderTest$WrongEncoder has no required constructor <init>(int bufferSize, long maxMsgSize)
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in zmq.io.coder.CustomEncoderTest
+Running zmq.io.coder.CustomDecoderTest
+Custom class zmq.io.coder.CustomDecoderTest$WrongDecoder has no required constructor <init>(int bufferSize, long maxMsgSize)
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in zmq.io.coder.CustomDecoderTest
+Running zmq.io.coder.V2DecoderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in zmq.io.coder.V2DecoderTest
+Running zmq.io.mechanism.SecurityNullTest
+Test NO ZAP domain
+Test WRONG ZAP domain
+Sending ZAP NULL reply
+Test RIGHT ZAP domain
+Sending ZAP NULL reply
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.278 sec - in zmq.io.mechanism.SecurityNullTest
+Running zmq.io.mechanism.SecurityPlainTest
+Test Correct PLAIN security
+Sending ZAP PLAIN reply
+Test badly configured PLAIN security
+Test wrong authentication PLAIN security
+Sending ZAP PLAIN reply
+Test unauthenticated from vanilla socket PLAIN security
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.782 sec - in zmq.io.mechanism.SecurityPlainTest
+Running zmq.io.mechanism.SecurityCurveTest
+Test Correct CURVE security
+Sending ZAP CURVE reply
+Test bad server key CURVE security
+SessionBase-Dealer[1225] CURVE I: cannot open client HELLO -- wrong server key?
+SessionBase-Dealer[1225] CURVE I: cannot open client HELLO -- wrong server key?
+SessionBase-Dealer[1225] CURVE I: cannot open client HELLO -- wrong server key?
+SessionBase-Dealer[1225] CURVE I: cannot open client HELLO -- wrong server key?
+SessionBase-Dealer[1225] CURVE I: cannot open client HELLO -- wrong server key?
+SessionBase-Dealer[1225] CURVE I: cannot open client HELLO -- wrong server key?
+SessionBase-Dealer[1225] CURVE I: cannot open client HELLO -- wrong server key?
+Test bad client public key CURVE security
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+Test bad client public key CURVE security
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+SessionBase-Dealer[1225] CURVE I: cannot open client INITIATE vouch
+Test bad client credentials CURVE security
+Sending ZAP CURVE reply
+Test NULL client with CURVE security
+Test PLAIN client with CURVE security
+Test unauthenticated from vanilla socket CURVE security
+Test return codes for invalid buffer sizes with CURVE security
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.971 sec - in zmq.io.mechanism.SecurityCurveTest
+Running zmq.io.MetadataTest
+Sending ZAP reply
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in zmq.io.MetadataTest
+Running zmq.io.net.BindSrcAddressTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in zmq.io.net.BindSrcAddressTest
+Running zmq.io.net.TcpAddressTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.io.net.TcpAddressTest
+Running zmq.io.net.TestAddress
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in zmq.io.net.TestAddress
+Running zmq.DiffServerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in zmq.DiffServerTest
+Running zmq.pipe.YQueueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.pipe.YQueueTest
+Running zmq.pipe.ConflateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 sec - in zmq.pipe.ConflateTest
+Running zmq.TestMsg
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in zmq.TestMsg
+Running zmq.ImmediateTest
+Immediate = true
+Immediate = false
+Immediate = false with broken connection.Ping.Message sent.Message send fail.Ping.Message sent.Done
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.386 sec - in zmq.ImmediateTest
+Running zmq.TestConnectDelay
+Scenario 1
+Scenario 2
+Scenario 3.Ping.Message sent.Message send fail.Ping.Message sent.Done
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.372 sec - in zmq.TestConnectDelay
+Running zmq.TestTimeo
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.518 sec - in zmq.TestTimeo
+Running zmq.InprocUnbindTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in zmq.InprocUnbindTest
+Running zmq.TestMonitor
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.005 sec - in zmq.TestMonitor
+Running zmq.TestConnectResolve
+test_connect_resolve running...
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in zmq.TestConnectResolve
+Running zmq.ConnectRidTest
+Test Router 2 Router unnamed
+Test Stream 2 stream
+Test Router 2 Router named
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.157 sec - in zmq.ConnectRidTest
+Running zmq.TestTermEndpoint
+disconnect endpoint test running...
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.108 sec - in zmq.TestTermEndpoint
+Running zmq.TestHwm
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in zmq.TestHwm
+Running zmq.InprocDisconnectTest
+subscribing on 'foo'
+received on subscriber 'foo'
+received on subscriber 'this is foo!'
+received on subscriber 'foo'
+received on subscriber 'this is foo!'
+received on subscriber 'foo'
+received on subscriber 'this is foo!'
+unsubscribing from 'foo'
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 sec - in zmq.InprocDisconnectTest
+Running org.zeromq.ByteBuffersTest
+Test sending direct large message (~15Mb)
+Received ~15Mb msg in 20 millisec.
+Test sending large message (~15Mb)
+Received ~15Mb msg in 33 millisec.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.922 sec - in org.zeromq.ByteBuffersTest
+Running org.zeromq.auth.ZConfigTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.zeromq.auth.ZConfigTest
+Running org.zeromq.auth.ZAuthTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 sec - in org.zeromq.auth.ZAuthTest
+Running org.zeromq.TestEvents
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.274 sec - in org.zeromq.TestEvents
+Running org.zeromq.HighWatermarkTest
+Sending 30000 tasks (50b) to workers
+
+Started worker process #2
+Started dispatcher on tcp://localhost:37757
+Worker #2 recv 0 messages
+Collector recv : 0 messages 
+Dispatcher finished, awaiting for collector finish
+Started worker process #1
+Collector recv : 100 messages 
+Worker #2 recv 7000 messages
+Collector recv : 7000 messages 
+Worker #2 recv 14000 messages
+Collector recv : 14000 messages 
+Worker #2 recv 21000 messages
+Collector recv : 21000 messages 
+Worker #2 recv 28000 messages
+Collector recv : 28000 messages 
+Dispatcher done.
+Collector done.
+Test done in 11268 millis.
+Sending 30000 tasks (50b) to workers
+
+Started worker process #1
+Started dispatcher on tcp://localhost:36679
+Dispatcher finished, awaiting for collector finish
+Worker #1 recv 0 messages
+Collector recv : 0 messages 
+Collector recv : 100 messages 
+Worker #1 recv 7000 messages
+Collector recv : 7000 messages 
+Worker #1 recv 14000 messages
+Collector recv : 14000 messages 
+Worker #1 recv 21000 messages
+Collector recv : 21000 messages 
+Worker #1 recv 28000 messages
+Collector recv : 28000 messages 
+Dispatcher done.
+Collector done.
+Test done in 11588 millis.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.856 sec - in org.zeromq.HighWatermarkTest
+Running org.zeromq.TestReqRouterThreadedTcp
+test Req + Router with polling
+Server started
+Client started
+Client sent message
+Server sent reply
+Client received message
+test Req + Router
+Server started
+Client started
+Client sent message
+Server sent reply
+Client received message
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.033 sec - in org.zeromq.TestReqRouterThreadedTcp
+Running org.zeromq.ZMsgTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.zeromq.ZMsgTest
+Running org.zeromq.ZMonitorTest
+I: Adding event LISTENING
+I: Adding event ACCEPTED
+I: Start monitor for events 40 on Dealer[1368]
+I: Stop monitor for events 40 on Dealer[1368]
+I: Closing monitor Dealer[1368]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec - in org.zeromq.ZMonitorTest
+Running org.zeromq.PubSubTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 sec - in org.zeromq.PubSubTest
+Running org.zeromq.TestZPoller
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 sec - in org.zeromq.TestZPoller
+Running org.zeromq.ZCertStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.zeromq.ZCertStoreTest
+Running org.zeromq.TestZMQ
+Connecting socket to unbind on port 53505
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec - in org.zeromq.TestZMQ
+Running org.zeromq.ReqRepTest
+Large Message received in  682 millis.
+Req/Rep with 2 threads for 50000 messages in 4259 millis.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.045 sec - in org.zeromq.ReqRepTest
+Running org.zeromq.TestZThread
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.026 sec - in org.zeromq.TestZThread
+Running org.zeromq.ZBeaconTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.053 sec - in org.zeromq.ZBeaconTest
+Running org.zeromq.TestPoller
+Sender: not writable
+Receiver Started
+Sender: wrote message
+Receiver Stopped
+Poller test done
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.065 sec - in org.zeromq.TestPoller
+Running org.zeromq.TestZLoop
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in org.zeromq.TestZLoop
+Running org.zeromq.ZSocketTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.zeromq.ZSocketTest
+Running org.zeromq.TestZStar
+No star: Fortune is not here anymore ....
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.zeromq.TestZStar
+Running org.zeromq.TestDisconnectInprocZeromq
+ Cleaning the remains.. subscribing on 'foo'
+received on subscriber 'foo'
+received on subscriber 'this is foo!'
+received on subscriber 'foo'
+received on subscriber 'this is foo!'
+received on subscriber 'foo'
+received on subscriber 'this is foo!'
+unsubscribing from 'foo'
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.513 sec - in org.zeromq.TestDisconnectInprocZeromq
+Running org.zeromq.TestProxy
+Start Dealer-A
+Start Dealer-B
+Start Client-X
+Client-X sent 1st message
+Dealer-B received client identity 436C69656E742D58364AEDC004402F90195A87868C57E70D109A840512B2AF4D1E721EE3C6
+Dealer-B received bottom 
+Dealer-B received data hello
+Client-X received OK hello Dealer-B
+Dealer-A received client identity 436C69656E742D58364AEDC004402F90195A87868C57E70D109A840512B2AF4D1E721EE3C6
+Dealer-A received bottom 
+Dealer-A received data world
+Client-X received OK world Dealer-A
+Start Client-Y
+Client-Y sent 1st message
+Stop Client-X
+Dealer-B received client identity 436C69656E742D590A8A4CD1039B743360AC76E983261DD0D1A4DB07733EDC0D74BE41A873B67FBD42D441B1C6091DA29C1DECC19C574FEAFB58892F19B33A02C6058CAC8A5724A0A099AF89690B660CB56AA68F17E1FBD3CAB741C17CA26B751798B9EAEC1C80853E00F9A201450EB0D63E49E5485693C961AAB123F6B80849AE830D6F0028E28DEB9AC9F1495C4485FFE2EB26C6F5FC6CDB1D9C69C28988A8E3FD79C2AD35B9ABAACBAA1D1FE8C01083A43703EC4D9F25C30D539F80073773A6B1AE5BE10A32FF31F6F2DE05F1FDD78A8B7C4259F128
+Dealer-B received bottom 
+Dealer-B received data hello
+Stop Dealer-B
+Client-Y received OK hello Dealer-B
+Dealer-A received client identity 436C69656E742D590A8A4CD1039B743360AC76E983261DD0D1A4DB07733EDC0D74BE41A873B67FBD42D441B1C6091DA29C1DECC19C574FEAFB58892F19B33A02C6058CAC8A5724A0A099AF89690B660CB56AA68F17E1FBD3CAB741C17CA26B751798B9EAEC1C80853E00F9A201450EB0D63E49E5485693C961AAB123F6B80849AE830D6F0028E28DEB9AC9F1495C4485FFE2EB26C6F5FC6CDB1D9C69C28988A8E3FD79C2AD35B9ABAACBAA1D1FE8C01083A43703EC4D9F25C30D539F80073773A6B1AE5BE10A32FF31F6F2DE05F1FDD78A8B7C4259F128
+Dealer-A received bottom 
+Dealer-A received data world
+Stop Dealer-A
+Client-Y received OK world Dealer-A
+Stop Client-Y
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.138 sec - in org.zeromq.TestProxy
+Running org.zeromq.TestZActor
+.Acting Ready for a hello world.Hi! .Acting Ready for a hello world.Hi! .Acting Finished.
+.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in org.zeromq.TestZActor
+Running org.zeromq.DealerDealerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.zeromq.DealerDealerTest
+Running org.zeromq.util.ZDigestTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.zeromq.util.ZDigestTest
+Running org.zeromq.TestZProxy
+All options sync new hot
+State sync pause
+All options sync new hot with restart
+State sync
+State async
+All options sync new
+All options async new
+All options sync
+All options async
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.894 sec - in org.zeromq.TestZProxy
+Running org.zeromq.TestZContext
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.zeromq.TestZContext
+Running org.zeromq.TestPushPullThreadedTcp
+Sending 500 messages
+Worker received 500 messages
+Test done in 133 millis.
+Worker received 1 messages
+Test done in 14 millis.
+push time :250 millisec.
+last message: hello_299999
+all time :251 millisec.
+Sending 20000 messages to trigger watermark limit
+Worker received 20000 messages
+Test done in 452 millis.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.916 sec - in org.zeromq.TestPushPullThreadedTcp
+
+Results :
+
+Failed tests: 
+  DealerSpecTest.testSpecRoundRobinOut:50->roundRobinOut:154->AbstractSpecTest.recvSeq:46 
+Expected: not null
+     but: was null
+
+Tests run: 186, Failures: 1, Errors: 0, Skipped: 12
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:55 min
+[INFO] Finished at: 2020-02-16T23:18:09+01:00
+[INFO] Final Memory: 22M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jeromq: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zeromq-jeromq-273133810-20170908-033612_bugonly-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jeromq: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zeromq-jeromq-273133810-20170908-033612_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zeromq-jeromq-273133810-20170908-033612_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
