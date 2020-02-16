@@ -1,0 +1,314 @@
+2020-02-16 11:42:11,439 [main] ERROR org.globalbioticinteractions.elton.cmd.CmdLine - unexpected exception
+com.beust.jcommander.MissingCommandException: Expected a command, got bla
+	at com.beust.jcommander.JCommander.parseValues(JCommander.java:779)
+	at com.beust.jcommander.JCommander.parse(JCommander.java:340)
+	at com.beust.jcommander.JCommander.parse(JCommander.java:319)
+	at org.globalbioticinteractions.elton.cmd.CmdLine.run(CmdLine.java:26)
+	at org.globalbioticinteractions.elton.cmd.CmdLineTest.invalidCommand(CmdLineTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Usage: <main class> [command] [command options]
+  Commands:
+    list      List Available Datasets
+      Usage: list [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+          --offline, -o
+            offline
+            Default: false
+
+    update      Update Datasets with Local Repository
+      Usage: update [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    names      List Dataset (Taxon) Names For Local Datasets
+      Usage: names [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    interactions      List Interacting Taxon Pairs For Local Datasets
+      Usage: interactions [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    nanopubs      Generate Nanopubs Describing Interactions in Local Datasets
+      Usage: nanopubs [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    check      Check Dataset Accessibility
+      Usage: check [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+          --offline, -o
+            offline
+            Default: false
+
+    version      Show Version
+      Usage: version
+
+2020-02-16 11:42:11,470 [main] ERROR org.globalbioticinteractions.elton.cmd.CmdLine - unexpected exception
+com.beust.jcommander.MissingCommandException: no command provided
+	at org.globalbioticinteractions.elton.cmd.CmdLine.run(CmdLine.java:14)
+	at org.globalbioticinteractions.elton.cmd.CmdLine.run(CmdLine.java:27)
+	at org.globalbioticinteractions.elton.cmd.CmdLineTest.noCommand(CmdLineTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Usage: <main class> [command] [command options]
+  Commands:
+    list      List Available Datasets
+      Usage: list [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+          --offline, -o
+            offline
+            Default: false
+
+    update      Update Datasets with Local Repository
+      Usage: update [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    names      List Dataset (Taxon) Names For Local Datasets
+      Usage: names [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    interactions      List Interacting Taxon Pairs For Local Datasets
+      Usage: interactions [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    nanopubs      Generate Nanopubs Describing Interactions in Local Datasets
+      Usage: nanopubs [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    check      Check Dataset Accessibility
+      Usage: check [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+          --offline, -o
+            offline
+            Default: false
+
+    version      Show Version
+      Usage: version
+
+@prefix this: <http://purl.org/np/RA96f-eYFLMX8KiI3va4gZhIWKiKeyauntLYn_9f7RZrM> . @prefix sub: <http://purl.org/np/RA96f-eYFLMX8KiI3va4gZhIWKiKeyauntLYn_9f7RZrM#> . @prefix np: <http://www.nanopub.org/nschema#> . @prefix dcterms: <http://purl.org/dc/terms/> . @prefix prov: <http://www.w3.org/ns/prov#> . @prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . @prefix obo: <http://purl.obolibrary.org/obo/> .  sub:Head { 	this: np:hasAssertion sub:Assertion ; 		np:hasProvenance sub:Provenance ; 		np:hasPublicationInfo sub:Pubinfo ; 		a np:Nanopublication . }  sub:Assertion { 	sub:Interaction obo:RO_0000057 sub:Organism_1 , sub:Organism_2 ; 		a obo:GO_0044419 . 	 	sub:Organism_1 obo:RO_0002444 sub:Organism_2 ; 		rdfs:label "Leptoconchus incycloseris" . 	 	sub:Organism_2 rdfs:label "Fungia (Cycloseris) costulata" . }  sub:Provenance { 	sub:Assertion prov:wasDerivedFrom <https://doi.org/10.1007/s13127-011-0039-1> . 	 	<https://doi.org/10.1007/s13127-011-0039-1> dcterms:bibliographicCitation "Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21&#8211;41. doi:10.1007/s13127-011-0039-1" . }  sub:Pubinfo { 	this: dcterms:license <https://creativecommons.org/licenses/by/4.0/> ; 		pav:createdBy <https://doi.org/10.5281/zenodo.998263> ; 		prov:wasDerivedFrom <https://doi.org/10.5281/zenodo.207958> . 	 	<https://doi.org/10.5281/zenodo.207958> dcterms:bibliographicCitation "Jorrit H. Poelen. 2014. Species associations manually extracted from literature." . } 
+2020-02-16 11:42:12,531 [main] ERROR org.eol.globi.data.StudyImporterForGitHubData - failed to import data from repo [globalbioticinteractions/template-dataset]
+org.eol.globi.service.DatasetFinderException: failed to retrieve/cache dataset in namespace [globalbioticinteractions/template-dataset]
+	at org.globalbioticinteractions.dataset.DatasetFinderLocal.datasetFor(DatasetFinderLocal.java:98)
+	at org.eol.globi.service.DatasetFactory.datasetFor(DatasetFactory.java:18)
+	at org.eol.globi.data.StudyImporterForGitHubData.importData(StudyImporterForGitHubData.java:53)
+	at org.globalbioticinteractions.elton.cmd.CmdCheck.check(CmdCheck.java:85)
+	at org.globalbioticinteractions.elton.cmd.CmdCheck.run(CmdCheck.java:37)
+	at org.globalbioticinteractions.elton.cmd.CmdLine.run(CmdLine.java:19)
+	at org.globalbioticinteractions.elton.cmd.CmdCheckTest.runOfflineWith(CmdCheckTest.java:48)
+	at org.globalbioticinteractions.elton.cmd.CmdCheckTest.runCheckNonExisting(CmdCheckTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+actions in Local Datasets
+      Usage: nanopubs [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+
+    check      Check Dataset Accessibility
+      Usage: check [options] [namespace1] [namespace2] ...
+        Options:
+          --cache-dir, -c
+            cache directory
+            Default: ./datasets
+          --offline, -o
+            offline
+            Default: false
+
+    version      Show Version
+      Usage: version
+
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.globalbioticinteractions.elton.cmd.CmdUsageTest
+Running org.globalbioticinteractions.elton.cmd.CmdNamesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in org.globalbioticinteractions.elton.cmd.CmdNamesTest
+Running org.globalbioticinteractions.elton.cmd.CmdNanoPubsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.884 sec - in org.globalbioticinteractions.elton.cmd.CmdNanoPubsTest
+Running org.globalbioticinteractions.elton.cmd.CmdUpdateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.globalbioticinteractions.elton.cmd.CmdUpdateTest
+Running org.globalbioticinteractions.elton.cmd.CmdListTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.globalbioticinteractions.elton.cmd.CmdListTest
+Running org.globalbioticinteractions.elton.cmd.CmdCheckTest
+
+found [11] interactions in [globalbioticinteractions/template-dataset] and encountered [0] warnings and [0] errors
+.
+found [22] interactions in [globalbioticinteractions/template-dataset] and encountered [0] warnings and [0] errors
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.globalbioticinteractions.elton.cmd.CmdCheckTest
+Running org.globalbioticinteractions.elton.util.NanoPubWriterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.globalbioticinteractions.elton.util.NanoPubWriterTest
+Running org.globalbioticinteractions.elton.util.StreamUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.globalbioticinteractions.elton.util.StreamUtilTest
+
+Results :
+
+Failed tests: 
+  CmdInteractionsTest.interactions:37 
+Expected: a string starting with "\tLeptoconchus incycloseris\t\t\t\t\thttp://purl.obolibrary.org/obo/RO_0002444\tparasiteOf\t\tFungia (Cycloseris) costulata\t\t\t\t\t\t\t\t\t\thttps://doi.org/10.1007/s13127-011-0039-1\tGittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1\tglobalbioticinteractions/template-dataset\tJorrit H. Poelen. 2014. Species associations manually extracted from literature.\thttps://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip\t\t631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f\tdev\n"
+     but: was "	Leptoconchus incycloseris					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Fungia (Cycloseris) costulata										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus infungites					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Fungia (Fungia) fungites										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus ingrandifungi					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Sandalolitha dentata										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus ingranulosa					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Fungia (Wellsofungia) granulosa										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus inlimax					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Herpolitha limax										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus inpileus					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Halomitra pileus										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus inpleuractis					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Fungia (Pleuractis) gravis										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus inpleuractis					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Fungia (Pleuractis) moluccensis										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus inpleuractis					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Fungia (Pleuractis) paumotensis										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus massini					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Fungia (Verrillofungia) concinna										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+	Leptoconchus massini					http://purl.obolibrary.org/obo/RO_0002444	parasiteOf		Fungia (Verrillofungia) repanda										http://dx.doi.org/10.1007/s13127-011-0039-1	Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1	globalbioticinteractions/template-dataset	Jorrit H. Poelen. 2014. Species associations manually extracted from literature.	https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip		631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f	dev
+"
+
+Tests run: 18, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.255 s
+[INFO] Finished at: 2020-02-16T11:42:12+01:00
+[INFO] Final Memory: 16M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project elton: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-globalbioticinteractions-elton-381618656-20180521-125110-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project elton: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-globalbioticinteractions-elton-381618656-20180521-125110-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-globalbioticinteractions-elton-381618656-20180521-125110-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
