@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "tnicolas29200/my-batis-dynamic-sql-sqlserver",
-  "bugCommit": "https://github.com/tnicolas29200/my-batis-dynamic-sql-sqlserver/compare/f79c6b08c939...b6aa335bcfce",
-  "failingModule": "/root/workspace/tnicolas29200/my-batis-dynamic-sql-sqlserver/366995529",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.assertj.core.api.SoftAssertionError"
-  ],
-  "totalNumberRunningTests": 69,
-  "failing-test-cases": [
-    {
-      "className": "WhereConditionsTest",
-      "failingMethods": [
-        "WhereConditionsTest#testNotLike()"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:02 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:33:21 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 87564192,
+      "totalMemory": 195543040
+    },
+    "totalDuration": 377,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 295,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          295
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-tnicolas29200-my-batis-dynamic-sql-sqlserver-366995529-20180416-072102-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-tnicolas29200-my-batis-dynamic-sql-sqlserver-366995529-20180416-072102-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 69,
+      "numberPassing": 68,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.assertj.core.api.SoftAssertionError",
-          "failureDetail": "\nThe following assertion failed:\n1) expected:\u003c...ere a.columnString1 [NOT LIKE] #{parameters.p1,jdb...\u003e but was:\u003c...ere a.columnString1 [not like] #{parameters.p1,jdb...\u003e\nat WhereConditionsTest.lambda$test$0(WhereConditionsTest.java:210) expected:\u003c...ere a.columnString1 [NOT LIKE] #{parameters.p1,jdb...\u003e but was:\u003c...ere a.columnString1 [not like] #{parameters.p1,jdb...\u003e\n",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "WhereConditionsTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "WhereConditionsTest",
+        "testMethod": "testNotLike()",
+        "failureName": "org.assertj.core.api.SoftAssertionError",
+        "detail": "\nThe following assertion failed:\n1) expected:\u003c...ere a.columnString1 [NOT LIKE] #{parameters.p1,jdb...\u003e but was:\u003c...ere a.columnString1 [not like] #{parameters.p1,jdb...\u003e\nat WhereConditionsTest.lambda$test$0(WhereConditionsTest.java:210) expected:\u003c...ere a.columnString1 [NOT LIKE] #{parameters.p1,jdb...\u003e but was:\u003c...ere a.columnString1 [not like] #{parameters.p1,jdb...\u003e\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 50,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 23,
+    "numberLines": 0
+  },
+  "commits": {}
 }
