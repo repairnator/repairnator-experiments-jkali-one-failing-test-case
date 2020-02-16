@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 10,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/68180a0e39ff...e271ac1caaf0",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/284982884/languagetool-language-modules/en",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 287,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.en.EnglishPatternRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.en.EnglishPatternRuleTest#testRules"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-284982884-20171008-101148_bugonly-firstCommit/languagetool-language-modules/en",
+    "overallMetrics": {
+      "numberRunning": 277,
+      "numberPassing": 276,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 10,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "English rule THESE_SINGULAR_NOUN[1]:\n\"Could you solve those issue?\"\nErrors expected: 1\nErrors found   : 0\nMessage: Please check whether a plural form of \u0027\\2\u0027 should be used.\nAnalyzed token readings: [/SENT_START*] Could[can/MD*,O]  [ /null*] you[you/PRP,B-NP-singular|E-NP-singular]  [ /null*] solve[solve/VBP,B-VP]  [ /null*] those[those/DT,B-NP-singular]  [ /null*] issue[issue/NN:UN,issue/VB,issue/VBP,E-NP-singular] ?[?/SENT_END*,O]\nMatches: []",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.en.EnglishPatternRuleTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.en.EnglishPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "English rule THESE_SINGULAR_NOUN[1]:\n\"Could you solve those issue?\"\nErrors expected: 1\nErrors found   : 0\nMessage: Please check whether a plural form of \u0027\\2\u0027 should be used.\nAnalyzed token readings: [/SENT_START*] Could[can/MD*,O]  [ /null*] you[you/PRP,B-NP-singular|E-NP-singular]  [ /null*] solve[solve/VBP,B-VP]  [ /null*] those[those/DT,B-NP-singular]  [ /null*] issue[issue/NN:UN,issue/VB,issue/VBP,E-NP-singular] ?[?/SENT_END*,O]\nMatches: []",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 693,
+    "numberTestFiles": 455,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:07 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:01:09 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 195135560,
+      "totalMemory": 409169920
+    },
+    "totalDuration": 4977,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4722,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4722
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-284982884-20171008-101148_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
