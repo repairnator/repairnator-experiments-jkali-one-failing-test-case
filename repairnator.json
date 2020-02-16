@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "zhgzhg/Event-Engine",
-  "bugCommit": "https://github.com/zhgzhg/Event-Engine/compare/4e5bfbf760b4...8ebfdffe4692",
-  "failingModule": "/root/workspace/zhgzhg/Event-Engine/387467623/ee-dispatchers",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.opentest4j.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 34,
-  "failing-test-cases": [
-    {
-      "className": "test.DispatchersTest",
-      "failingMethods": [
-        "configFactoryKafkaInitialCfgTest"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:15:32 PM",
+    "reproductionDateEnd": "Feb 16, 2020 11:25:59 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 79746640,
+      "totalMemory": 805478400
+    },
+    "totalDuration": 625,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 544,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          544
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zhgzhg-Event-Engine-387467623-20180603-200420-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zhgzhg-Event-Engine-387467623-20180603-200420-firstCommit/ee-dispatchers",
+    "overallMetrics": {
+      "numberRunning": 34,
+      "numberPassing": 33,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.opentest4j.AssertionFailedError",
-          "failureDetail": "expected: \u003c[system-events, events, domain-events, emergency-events]\u003e but was: \u003c[events]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "test.DispatchersTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "test.DispatchersTest",
+        "testMethod": "configFactoryKafkaInitialCfgTest",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003c[system-events, events, domain-events, emergency-events]\u003e but was: \u003c[events]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 52,
+    "numberTestFiles": 7,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  },
+  "commits": {}
 }
