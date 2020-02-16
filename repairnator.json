@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "idsc-frazzoli/subare",
-  "bugCommit": "https://github.com/idsc-frazzoli/subare/compare/d31274eadeb2...935bf5972dcb",
-  "failingModule": "/root/workspace/idsc-frazzoli/subare/397417529",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 80,
-  "failing-test-cases": [
-    {
-      "className": "ch.ethz.idsc.subare.demo.airport.AirportTest",
-      "failingMethods": [
-        "testTerminalState"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:57 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:40:40 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 60137640,
+      "totalMemory": 120991744
+    },
+    "totalDuration": 161,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 104,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          104
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-idsc-frazzoli-subare-397417529-20180627-175940-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-idsc-frazzoli-subare-397417529-20180627-175940-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 80,
+      "numberPassing": 79,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.AssertionFailedError",
-          "failureDetail": "expected:\u003c{{0}}\u003e but was:\u003c{0}\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ch.ethz.idsc.subare.demo.airport.AirportTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ch.ethz.idsc.subare.demo.airport.AirportTest",
+        "testMethod": "testTerminalState",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "expected:\u003c{{0}}\u003e but was:\u003c{0}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 278,
+    "numberTestFiles": 34,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 0
+  }
 }
