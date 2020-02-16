@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 18,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/453b88fad71d...3ddf2f460f60",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/283078590/languagetool-language-modules/pt",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 502,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.pt.PortuguesePatternRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.pt.PortuguesePatternRuleTest#testRules"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-283084594-20171004-100440-firstCommit/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 393,
+      "numberPassing": 392,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 18,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Portuguese rule SENTENCE_FRAGMENT[1]:\n\"Apesar de o cão gostar de ladrar.\"\nErrors expected: 1\nErrors found   : 0\nMessage: “\\2” no início de uma frase, requer uma segunda oração. Talvez uma vírgula, ponto de interrogação ou de exclamação estão em falta, ou a frase está incompleta e deve ser ligada à frase que a precede, ou à seguinte.\nAnalyzed token readings: [/SENT_START*] Apesar[Apesar/SP000*]  [ /null*] de[de/SP000]  [ /null*] o[o/DA0MS0]  [ /null*] cão[cão/AQ0MS0,cão/NCMS000]  [ /null*] gostar[gostar/VMN0000,gostar/VMN01S0,gostar/VMN03S0,gostar/VMSF1S0,gostar/VMSF3S0]  [ /null*] de[de/SPS00]  [ /null*] ladrar[ladrar/VMN0000,ladrar/VMSF1S0,ladrar/VMSF3S0] .[./SENT_END*,./_PUNCT*]\nMatches: []",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"ventrolateral\"\n     but: was \"Ventrolateral/A\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 692,
+    "numberTestFiles": 454,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:07 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:49:42 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 202553104,
+      "totalMemory": 524419072
+    },
+    "totalDuration": 691,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 296,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          296
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-283084594-20171004-100440-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
