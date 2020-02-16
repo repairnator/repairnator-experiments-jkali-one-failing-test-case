@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "vidal-community/atom-jaxb",
-  "bugCommit": "https://github.com/vidal-community/atom-jaxb/compare/e7958852742a...1555fa7f4b2c",
-  "failingModule": "/root/workspace/vidal-community/atom-jaxb/380252248",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 15,
-  "failing-test-cases": [
-    {
-      "className": "fr.vidal.oss.jaxb.atom.MarshallingTest",
-      "failingMethods": [
-        "marshalls_custom_structured_element_with_children_duplicate"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:02 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:28:05 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 11143248,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 62,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380252248-20180517-165521-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380252248-20180517-165521-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 15,
+      "numberPassing": 14,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...01:00:00Z\u003c/updated\u003e\n[    \u003cvidal:structured xmlns:vidal\u003d\"http://api.vidal.net/-/spec/vidal-api/1.0/\"\u003e\n        Text one\n        Text two\n        Text three\n    \u003c/vidal:structured\u003e\n]\u003c/feed\u003e\n\"\u003e but was:\u003c...01:00:00Z\u003c/updated\u003e\n[]\u003c/feed\u003e\n\"\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "fr.vidal.oss.jaxb.atom.MarshallingTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "fr.vidal.oss.jaxb.atom.MarshallingTest",
+        "testMethod": "marshalls_custom_structured_element_with_children_duplicate",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...01:00:00Z\u003c/updated\u003e\n[    \u003cvidal:structured xmlns:vidal\u003d\"http://api.vidal.net/-/spec/vidal-api/1.0/\"\u003e\n        Text one\n        Text two\n        Text three\n    \u003c/vidal:structured\u003e\n]\u003c/feed\u003e\n\"\u003e but was:\u003c...01:00:00Z\u003c/updated\u003e\n[]\u003c/feed\u003e\n\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 21,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {}
 }
