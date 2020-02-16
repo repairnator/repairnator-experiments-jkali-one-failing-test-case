@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "jhy/jsoup",
-  "bugCommit": "https://github.com/jhy/jsoup/compare/a97672ad240f...ea00e065f624",
-  "failingModule": "/root/workspace/jhy/jsoup/285353482",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 574,
-  "failing-test-cases": [
-    {
-      "className": "org.jsoup.helper.HttpConnectionTest",
-      "failingMethods": [
-        "org.jsoup.helper.HttpConnectionTest#caseInsensitiveHeaders"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-285353482-20171009-062400_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 570,
+      "numberPassing": 569,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jsoup.helper.HttpConnectionTest",
+        "numberRunning": 21,
+        "numberPassing": 20,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jsoup.helper.HttpConnectionTest",
+        "testMethod": "caseInsensitiveHeaders",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 63,
+    "numberTestFiles": 32,
+    "numberLibrariesFailingModule": 3,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:01 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:40:33 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 195554816,
+      "totalMemory": 975478784
+    },
+    "totalDuration": 149,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 81,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          81
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-285353482-20171009-062400_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
