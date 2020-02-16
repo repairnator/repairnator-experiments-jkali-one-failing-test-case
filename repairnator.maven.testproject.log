@@ -1,0 +1,193 @@
+Feb 16, 2020 6:28:02 PM com.github.sbaudoin.yamllint.rules.RuleFactory getRule
+WARNING: Cannot instantiate rule class com.github.sbaudoin.yamllint.rules.BrokenRule, will ignore it
+java.lang.IllegalStateException: Crash!
+	at com.github.sbaudoin.yamllint.rules.BrokenRule.<init>(BrokenRule.java:5)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.github.sbaudoin.yamllint.rules.RuleFactory.getRule(RuleFactory.java:59)
+	at com.github.sbaudoin.yamllint.YamlLintConfig.validate(YamlLintConfig.java:191)
+	at com.github.sbaudoin.yamllint.YamlLintConfig.<init>(YamlLintConfig.java:51)
+	at com.github.sbaudoin.yamllint.ExtendedYamlLintConfigTest.testExtendRemoveRule(ExtendedYamlLintConfigTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+Feb 16, 2020 6:28:03 PM com.github.sbaudoin.yamllint.rules.RuleFactory getRule
+WARNING: Cannot instantiate rule class com.github.sbaudoin.yamllint.rules.BrokenRule, will ignore it
+java.lang.IllegalStateException: Crash!
+	at com.github.sbaudoin.yamllint.rules.BrokenRule.<init>(BrokenRule.java:5)
+	at sun.reflectTests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec - in com.github.sbaudoin.yamllint.rules.NewLinesTest
+Running com.github.sbaudoin.yamllint.rules.CommentsIndentationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in com.github.sbaudoin.yamllint.rules.CommentsIndentationTest
+Running com.github.sbaudoin.yamllint.rules.IndentationTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.495 sec - in com.github.sbaudoin.yamllint.rules.IndentationTest
+Running com.github.sbaudoin.yamllint.rules.IndentationStackTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.github.sbaudoin.yamllint.rules.IndentationStackTest
+Running com.github.sbaudoin.yamllint.rules.BracketsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in com.github.sbaudoin.yamllint.rules.BracketsTest
+Running com.github.sbaudoin.yamllint.rules.NewLineAtEndOfFileTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in com.github.sbaudoin.yamllint.rules.NewLineAtEndOfFileTest
+Running com.github.sbaudoin.yamllint.rules.TrailingSpacesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.github.sbaudoin.yamllint.rules.TrailingSpacesTest
+Running com.github.sbaudoin.yamllint.rules.TruthyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in com.github.sbaudoin.yamllint.rules.TruthyTest
+Running com.github.sbaudoin.yamllint.rules.KeyOrderingTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in com.github.sbaudoin.yamllint.rules.KeyOrderingTest
+Running com.github.sbaudoin.yamllint.rules.RuleTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.github.sbaudoin.yamllint.rules.RuleTest
+Running com.github.sbaudoin.yamllint.rules.DocumentStartTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.github.sbaudoin.yamllint.rules.DocumentStartTest
+Running com.github.sbaudoin.yamllint.rules.CommentsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.github.sbaudoin.yamllint.rules.CommentsTest
+Running com.github.sbaudoin.yamllint.rules.RuleFactoryTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec <<< FAILURE! - in com.github.sbaudoin.yamllint.rules.RuleFactoryTest
+testGetRule(com.github.sbaudoin.yamllint.rules.RuleFactoryTest)  Time elapsed: 0.108 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3> but was:<4>
+	at com.github.sbaudoin.yamllint.rules.RuleFactoryTest.testGetRule(RuleFactoryTest.java:74)
+
+Running com.github.sbaudoin.yamllint.rules.ColonsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.github.sbaudoin.yamllint.rules.ColonsTest
+Running com.github.sbaudoin.yamllint.rules.KeyDuplicatesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.github.sbaudoin.yamllint.rules.KeyDuplicatesTest
+Running com.github.sbaudoin.yamllint.rules.HyphensTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in com.github.sbaudoin.yamllint.rules.HyphensTest
+Running com.github.sbaudoin.yamllint.rules.CommasTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in com.github.sbaudoin.yamllint.rules.CommasTest
+Running com.github.sbaudoin.yamllint.rules.EmptyLinesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in com.github.sbaudoin.yamllint.rules.EmptyLinesTest
+Running com.github.sbaudoin.yamllint.rules.EmptyValuesTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in com.github.sbaudoin.yamllint.rules.EmptyValuesTest
+Running com.github.sbaudoin.yamllint.rules.LineLengthTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in com.github.sbaudoin.yamllint.rules.LineLengthTest
+Running com.github.sbaudoin.yamllint.rules.BracesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in com.github.sbaudoin.yamllint.rules.BracesTest
+Running com.github.sbaudoin.yamllint.rules.ScalarIndentationTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in com.github.sbaudoin.yamllint.rules.ScalarIndentationTest
+Running com.github.sbaudoin.yamllint.rules.DocumentEndTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.github.sbaudoin.yamllint.rules.DocumentEndTest
+Running com.github.sbaudoin.yamllint.rules.OctalValuesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.github.sbaudoin.yamllint.rules.OctalValuesTest
+Running com.github.sbaudoin.yamllint.FormatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.github.sbaudoin.yamllint.FormatTest
+Running com.github.sbaudoin.yamllint.SpecExamplesTest
+Tests run: 94, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.831 sec - in com.github.sbaudoin.yamllint.SpecExamplesTest
+Running com.github.sbaudoin.yamllint.ExtendedLibraryYamlLintConfigTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.github.sbaudoin.yamllint.ExtendedLibraryYamlLintConfigTest
+Running com.github.sbaudoin.yamllint.CliTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.github.sbaudoin.yamllint.CliTest
+Running com.github.sbaudoin.yamllint.SyntaxErrorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in com.github.sbaudoin.yamllint.SyntaxErrorTest
+Running com.github.sbaudoin.yamllint.YamlLintDirectivesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in com.github.sbaudoin.yamllint.YamlLintDirectivesTest
+Running com.github.sbaudoin.yamllint.LintStreamReaderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.github.sbaudoin.yamllint.LintStreamReaderTest
+Running com.github.sbaudoin.yamllint.LinterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.github.sbaudoin.yamllint.LinterTest
+Running com.github.sbaudoin.yamllint.LintScannerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.github.sbaudoin.yamllint.LintScannerTest
+Running com.github.sbaudoin.yamllint.ParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.github.sbaudoin.yamllint.ParserTest
+Running com.github.sbaudoin.yamllint.SimpleYamlLintConfigTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.github.sbaudoin.yamllint.SimpleYamlLintConfigTest
+
+Results :
+
+Failed tests: 
+  RuleFactoryTest.testGetRule:74 expected:<3> but was:<4>
+
+Tests run: 328, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.342 s
+[INFO] Finished at: 2020-02-16T18:28:06+01:00
+[INFO] Final Memory: 17M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project yamllint: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-sbaudoin-yamllint-390493735-20180610-221803-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project yamllint: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-sbaudoin-yamllint-390493735-20180610-221803-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-sbaudoin-yamllint-390493735-20180610-221803-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+YamlLintConfig.<init>(YamlLintConfig.java:51)
+	at com.github.sbaudoin.yamllint.rules.RuleTester.getConfig(RuleTester.java:33)
+	at com.github.sbaudoin.yamllint.rules.TruthyTest.testEnabled(TruthyTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
