@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "rcarz/jira-client",
-  "bugCommit": "https://github.com/rcarz/jira-client/compare/c9220cb17e13...16c1db2485ed",
-  "failingModule": "/root/workspace/rcarz/jira-client/249397095",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 83,
-  "failing-test-cases": [
-    {
-      "className": "net.rcarz.jiraclient.SearchTest",
-      "failingMethods": [
-        "net.rcarz.jiraclient.SearchTest#testSimpleSearch"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:31 PM",
+    "reproductionDateEnd": "Feb 16, 2020 7:37:19 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 104150048,
+      "totalMemory": 340533248
+    },
+    "totalDuration": 4247,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4198,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4198
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rcarz-jira-client-249404525-20170702-212056-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rcarz-jira-client-249404525-20170702-212056-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 83,
+      "numberPassing": 82,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "with key JRA-1 expected:\u003cJRA[]-1\u003e but was:\u003cJRA[SERVER]-1\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.rcarz.jiraclient.SearchTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.rcarz.jiraclient.SearchTest",
+        "testMethod": "testSimpleSearch",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "with key JRA-1 expected:\u003cJRA[]-1\u003e but was:\u003cJRA[SERVER]-1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 67,
+    "numberTestFiles": 14,
+    "numberLibrariesFailingModule": 22,
+    "numberLines": 0
+  },
+  "commits": {}
 }
