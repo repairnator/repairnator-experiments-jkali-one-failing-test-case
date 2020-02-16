@@ -1,0 +1,524 @@
+Feb 16, 2020 6:27:52 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58375] starting to accept connections
+Feb 16, 2020 6:27:53 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58375] received request: GET / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Feb 16, 2020 6:27:53 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58375] received request: GET /content/ HTTP/1.1 and responded: HTTP/1.1 200 OK
+Feb 16, 2020 6:27:54 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58375] done accepting connections: Socket closed
+Feb 16, 2020 6:27:54 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[49813] starting to accept connections
+Feb 16, 2020 6:27:55 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[49813] done accepting connections: Socket closed
+Feb 16, 2020 6:27:55 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 execute
+INFO: MockWebServer[49813] connection from /127.0.0.1 failed: java.net.SocketException: Socket closed
+Feb 16, 2020 6:27:55 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[51007] starting to accept connections
+Feb 16, 2020 6:27:55 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[51007] received request: GET / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Feb 16, 2020 6:27:55 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[51007] received request: GET /content/ HTTP/1.1 and responded: HTTP/1.1 200 OK
+Feb 16, 2020 6:27:55 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[51007] received request: GET /content/ HTTP/1.1 and responded: HTTP/1.1 200 OK
+Feb 16, 2020 6:27:55 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[51007] done accepting connections: Socket closed
+g: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 72.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1101.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.rewedigital.composer.session.CookieBasedSessionHandlerTest
+18:27:50.693 [main] DEBUG c.r.c.s.CookieBasedSessionHandler - session cookie found
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.828 sec - in com.rewedigital.composer.session.CookieBasedSessionHandlerTest
+Running com.rewedigital.composer.session.LocalSessionIdInterceptorTest
+18:27:50.864 [main] ERROR c.r.c.s.LocalSessionIdInterceptor - Malformatted expires-at: not-a-long - expiring session
+java.lang.NumberFormatException: For input string: "not-a-long"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at com.rewedigital.composer.session.LocalSessionIdInterceptor.parseExpiresAt(LocalSessionIdInterceptor.java:75)
+	at java.util.Optional.map(Optional.java:215)
+	at com.rewedigital.composer.session.LocalSessionIdInterceptor.withExpiration(LocalSessionIdInterceptor.java:49)
+	at com.rewedigital.composer.session.LocalSessionIdInterceptor.afterCreation(LocalSessionIdInterceptor.java:33)
+	at com.rewedigital.composer.session.LocalSessionIdInterceptorTest.exiresSessionIfExiresAtNotParseable(LocalSessionIdInterceptorTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in com.rewedigital.composer.session.LocalSessionIdInterceptorTest
+Running com.rewedigital.composer.session.SessionHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.rewedigital.composer.session.SessionHandlerTest
+Running com.rewedigital.composer.session.SessionConfigurationTest
+18:27:50.947 [main] INFO  c.r.c.session.SessionConfiguration - Registered Session Interceptor of type com.rewedigital.composer.session.LocalSessionIdInterceptor
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in com.rewedigital.composer.session.SessionConfigurationTest
+Running com.rewedigital.composer.session.SessionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.rewedigital.composer.session.SessionTest
+Running com.rewedigital.composer.session.RemoteHttpSessionInterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in com.rewedigital.composer.session.RemoteHttpSessionInterceptorTest
+Running com.rewedigital.composer.configuration.ConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in com.rewedigital.composer.configuration.ConfigurationTest
+Running com.rewedigital.composer.routing.SessionAwareProxyClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in com.rewedigital.composer.routing.SessionAwareProxyClientTest
+Running com.rewedigital.composer.routing.RoutingConfigurationTest
+18:27:51.317 [main] INFO  c.r.c.routing.RoutingConfiguration - Registered local route for path=/test/path/<arg>, method=GET, target=https://target.service/{arg}, type=PROXY with a request ttl=Optional.empty
+18:27:51.338 [main] INFO  c.r.c.routing.RoutingConfiguration - Registered local route for path=/test/path/<arg>, method=GET, target=https://target.service/{arg}, type=PROXY with a request ttl=Optional[PT0.2S]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.rewedigital.composer.routing.RoutingConfigurationTest
+Running com.rewedigital.composer.routing.BackendRoutingTest
+18:27:51.358 [main] DEBUG c.r.composer.routing.BackendRouting - The request Mock for Request, hashCode: 1402302648 matched the backend route com.spotify.apollo.route.RuleMatch@6a2d0a19.
+18:27:51.360 [main] DEBUG c.r.composer.routing.BackendRouting - The request Mock for Request, hashCode: 1187497363 matched the backend route com.spotify.apollo.route.RuleMatch@6a4c4261.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in com.rewedigital.composer.routing.BackendRoutingTest
+Running com.rewedigital.composer.composing.TemplateComposerTest
+18:27:51.469 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<html><head></head><body><content>content</content></body></html>], internalHeadersImpl=Headers{entries=[Content-Type=text/html, x-rd-session-key-content=session-val-content]}} received via [http://mock/] included via [template-path] included via [root]
+18:27:51.526 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<html><head></head><body><content><include path="include-exceeding-max-recursion"><content>fallback</content></include></content></body></html>], internalHeadersImpl=Headers{entries=[Content-Type=text/html]}} received via [include-in-template] included via [template-path] included via [root]
+18:27:51.527 [main] WARN  c.r.c.c.RecursionAwareContentFetcher - Max recursion depth exceeded for [include-exceeding-max-recursion] included via [include-in-template] included via [template-path] included via [root]
+18:27:51.527 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[ <content>fallback</content>], internalHeadersImpl=Headers{entries=[]}} received via [include-exceeding-max-recursion] included via [include-in-template] included via [template-path] included via [root]
+18:27:51.530 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<html><head><link href="css/link" data-rd-options="include" rel="stylesheet"/></head><body><content></content></body></html>], internalHeadersImpl=Headers{entries=[Content-Type=text/html]}} received via [http://mock/] included via [template-path] included via [root]
+18:27:51.535 [main] WARN  c.r.c.c.ValidatingContentFetcher - Content-Type of [http://mock/] is not text/html, returning an empty body.
+18:27:51.535 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=BAD_REQUEST, payload=Optional[ <content><div>default content</div></content>], internalHeadersImpl=Headers{entries=[]}} received via [http://mock/] included via [template-path] included via [root]
+18:27:51.545 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<html><head></head><body><content>content</content></body></html>], internalHeadersImpl=Headers{entries=[Content-Type=text/html]}} received via [http://mock/] included via [template-path] included via [root]
+18:27:51.552 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<html><head><script src="js/link/script.js" data-rd-options="include" type="text/javascript"></script></head><body><content></content></body></html>], internalHeadersImpl=Headers{entries=[Content-Type=text/html]}} received via [http://mock/] included via [template-path] included via [root]
+18:27:51.565 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<html><head></head><body><content><include path="http://other/mock/"></include></content></body></html>], internalHeadersImpl=Headers{entries=[Content-Type=text/html]}} received via [http://mock/] included via [template-path] included via [root]
+18:27:51.566 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<html><head></head><body><content>some content</content></body></html>], internalHeadersImpl=Headers{entries=[Content-Type=text/html]}} received via [http://other/mock/] included via [http://mock/] included via [template-path] included via [root]
+18:27:51.569 [main] WARN  c.r.c.c.ValidatingContentFetcher - Empty path attribute in include found - callstack: [] included via [template-path] included via [root]
+18:27:51.570 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[], internalHeadersImpl=Headers{entries=[]}} received via [] included via [template-path] included via [root]
+18:27:51.571 [main] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<html><head></head><body><content>content</content></body></html>], internalHeadersImpl=Headers{entries=[Content-Type=text/html]}} received via [http://mock/] included via [template-path] included via [root]
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in com.rewedigital.composer.composing.TemplateComposerTest
+Running com.rewedigital.composer.composing.ComposerHtmlConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.rewedigital.composer.composing.ComposerHtmlConfigurationTest
+Running com.rewedigital.composer.composing.ContentMarkupHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.rewedigital.composer.composing.ContentMarkupHandlerTest
+Running com.rewedigital.composer.composing.IncludeMarkupHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.rewedigital.composer.composing.IncludeMarkupHandlerTest
+Running com.rewedigital.composer.composing.ValidatingContentFetcherTest
+18:27:51.631 [main] WARN  c.r.c.c.ValidatingContentFetcher - Content-Type of [/some/path] is not text/html, returning an empty body.
+18:27:51.639 [main] WARN  c.r.c.c.ValidatingContentFetcher - Empty path attribute in include found - callstack: [some-path] included via [root]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in com.rewedigital.composer.composing.ValidatingContentFetcherTest
+Running com.rewedigital.composer.caching.HttpCacheTest
+18:27:51.776 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:51.792 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.794 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+18:27:51.803 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:51.803 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.803 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+18:27:51.808 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:51.809 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.809 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+18:27:51.818 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:51.818 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: null)
+18:27:51.822 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:51.822 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.823 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+18:27:51.824 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:51.826 [main] DEBUG c.r.composer.caching.HttpCache - Serving response for cache key GET_/ from cache (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.827 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.827 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+18:27:51.831 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/?q=1
+18:27:51.832 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/?q=1 (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.832 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/?q=1, max age: 100
+18:27:51.833 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/?q=2
+18:27:51.833 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/?q=2 (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.834 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/?q=2, max age: 100
+18:27:51.838 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:51.853 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=no-store]}})
+18:27:51.855 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:51.855 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=no-store]}})
+18:27:51.857 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/BAD_REQUEST
+18:27:51.857 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/BAD_REQUEST (response: ResponseImpl{status=BAD_REQUEST, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.858 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/BAD_REQUEST
+18:27:51.858 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/BAD_REQUEST (response: ResponseImpl{status=BAD_REQUEST, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.859 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/OK
+18:27:51.859 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/OK (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.859 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/OK, max age: 100
+18:27:51.860 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/OK
+18:27:51.860 [main] DEBUG c.r.composer.caching.HttpCache - Serving response for cache key GET_/OK from cache (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.860 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/OK (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:51.860 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/OK, max age: 100
+18:27:51.862 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/CREATED
+18:27:52.281 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/CREATED (response: ResponseImpl{status=CREATED, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.282 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/CREATED
+18:27:52.283 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/CREATED (response: ResponseImpl{status=CREATED, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.284 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/INTERNAL_SERVER_ERROR
+18:27:52.285 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/INTERNAL_SERVER_ERROR (response: ResponseImpl{status=INTERNAL_SERVER_ERROR, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.285 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/INTERNAL_SERVER_ERROR
+18:27:52.285 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/INTERNAL_SERVER_ERROR (response: ResponseImpl{status=INTERNAL_SERVER_ERROR, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.286 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/TEMPORARY_REDIRECT
+18:27:52.286 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/TEMPORARY_REDIRECT (response: ResponseImpl{status=TEMPORARY_REDIRECT, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.287 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/TEMPORARY_REDIRECT
+18:27:52.287 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/TEMPORARY_REDIRECT (response: ResponseImpl{status=TEMPORARY_REDIRECT, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.292 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/GONE
+18:27:52.292 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/GONE (response: ResponseImpl{status=GONE, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.300 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/GONE, max age: 100
+18:27:52.301 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/GONE
+18:27:52.301 [main] DEBUG c.r.composer.caching.HttpCache - Serving response for cache key GET_/GONE from cache (response: ResponseImpl{status=GONE, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.301 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/GONE (response: ResponseImpl{status=GONE, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.302 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/GONE, max age: 100
+18:27:52.303 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/MOVED_PERMANENTLY
+18:27:52.303 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/MOVED_PERMANENTLY (response: ResponseImpl{status=MOVED_PERMANENTLY, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.303 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/MOVED_PERMANENTLY, max age: 100
+18:27:52.304 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/MOVED_PERMANENTLY
+18:27:52.305 [main] DEBUG c.r.composer.caching.HttpCache - Serving response for cache key GET_/MOVED_PERMANENTLY from cache (response: ResponseImpl{status=MOVED_PERMANENTLY, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.305 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/MOVED_PERMANENTLY (response: ResponseImpl{status=MOVED_PERMANENTLY, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.305 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/MOVED_PERMANENTLY, max age: 100
+18:27:52.306 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/SEE_OTHER
+18:27:52.307 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/SEE_OTHER (response: ResponseImpl{status=SEE_OTHER, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.307 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/SEE_OTHER
+18:27:52.308 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/SEE_OTHER (response: ResponseImpl{status=SEE_OTHER, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.309 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/FORBIDDEN
+18:27:52.315 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/FORBIDDEN (response: ResponseImpl{status=FORBIDDEN, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.316 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/FORBIDDEN
+18:27:52.316 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/FORBIDDEN (response: ResponseImpl{status=FORBIDDEN, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.318 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/BAD_GATEWAY
+18:27:52.318 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/BAD_GATEWAY (response: ResponseImpl{status=BAD_GATEWAY, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.318 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/BAD_GATEWAY
+18:27:52.318 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/BAD_GATEWAY (response: ResponseImpl{status=BAD_GATEWAY, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.328 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for HEAD_/
+18:27:52.328 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key HEAD_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.329 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key HEAD_/, max age: 100
+18:27:52.329 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for HEAD_/
+18:27:52.332 [main] DEBUG c.r.composer.caching.HttpCache - Serving response for cache key HEAD_/ from cache (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.332 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key HEAD_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.332 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key HEAD_/, max age: 100
+18:27:52.335 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:52.336 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.336 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+18:27:52.337 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:52.337 [main] DEBUG c.r.composer.caching.HttpCache - Serving response for cache key GET_/ from cache (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.337 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.338 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+18:27:52.343 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:52.343 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.343 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+18:27:52.344 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_/
+18:27:52.344 [main] DEBUG c.r.composer.caching.HttpCache - Serving response for cache key GET_/ from cache (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.344 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[Cache-Control=max-age=100]}})
+18:27:52.345 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_/, max age: 100
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.704 sec - in com.rewedigital.composer.caching.HttpCacheTest
+Running com.rewedigital.composer.caching.HttpCacheConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.rewedigital.composer.caching.HttpCacheConfigurationTest
+Running com.rewedigital.composer.proxy.ComposingRequestHandlerTest
+18:27:52.380 [main] DEBUG c.r.composer.routing.BackendRouting - The request Mock for Request, hashCode: 1742123174 matched the backend route com.spotify.apollo.route.RuleMatch@42a940dc.
+18:27:52.406 [main] DEBUG c.r.composer.routing.BackendRouting - The request Mock for Request, hashCode: 59789865 matched the backend route com.spotify.apollo.route.RuleMatch@7ebefdfa.
+18:27:52.411 [main] DEBUG c.r.composer.routing.BackendRouting - The request Mock for Request, hashCode: 1964947881 matched the backend route com.spotify.apollo.route.RuleMatch@749ebc39.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in com.rewedigital.composer.proxy.ComposingRequestHandlerTest
+Running com.rewedigital.composer.ComposerTest
+18:27:52.588 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Starting with args: []
+18:27:53.475 [apollo-servicehelper-0] INFO  c.s.apollo.metrics.MetricsModule - Creating SemanticMetricRegistry
+18:27:53.550 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ApolloEnvironmentModule{id=apollo-env}
+18:27:53.553 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module HttpClientModule{id=http.client}
+18:27:53.559 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module MetricsModule{id=metrics}
+18:27:53.559 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module MetricIdModule{id=servicehelper-metric-id}
+18:27:53.559 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ForwardingStubClientModule{id=forwarding-stub-client}
+18:27:53.559 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ErrorHandlingClientDecoratingModule{id=error-handling-client-decorator}
+18:27:53.560 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module HttpCacheModule{id=http-cache}
+18:27:53.560 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Managing lifecycle of com.spotify.apollo.metrics.FastForwardLifecycle
+18:27:53.561 [apollo-servicehelper-0] INFO  c.r.c.routing.RoutingConfiguration - Registered local route for path=/compose, method=GET, target=http://localhost:58375/, type=TEMPLATE with a request ttl=Optional.empty
+18:27:53.565 [apollo-servicehelper-0] INFO  c.r.c.session.SessionConfiguration - Registered Session Interceptor of type com.rewedigital.composer.session.LocalSessionIdInterceptor
+18:27:53.579 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (GET)
+18:27:53.606 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (HEAD)
+18:27:53.606 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (POST)
+18:27:53.606 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (PUT)
+18:27:53.609 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (DELETE)
+18:27:53.610 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (TRACE)
+18:27:53.610 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (OPTIONS)
+18:27:53.610 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (PATCH)
+18:27:53.612 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (GET)
+18:27:53.613 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (HEAD)
+18:27:53.616 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (POST)
+18:27:53.616 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (PUT)
+18:27:53.616 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (DELETE)
+18:27:53.620 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (TRACE)
+18:27:53.620 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (OPTIONS)
+18:27:53.620 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (PATCH)
+18:27:53.658 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /
+18:27:53.658 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: HEAD, uri: /
+18:27:53.658 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: POST, uri: /
+18:27:53.658 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PUT, uri: /
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: DELETE, uri: /
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: TRACE, uri: /
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: OPTIONS, uri: /
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PATCH, uri: /
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /<path:path>
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: HEAD, uri: /<path:path>
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: POST, uri: /<path:path>
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PUT, uri: /<path:path>
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: DELETE, uri: /<path:path>
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: TRACE, uri: /<path:path>
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: OPTIONS, uri: /<path:path>
+18:27:53.659 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PATCH, uri: /<path:path>
+18:27:53.691 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/info
+18:27:53.692 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/config
+18:27:53.692 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/endpoints
+18:27:53.692 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/calls
+18:27:53.700 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Started composer with backend domain ''
+18:27:53.703 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Got instance Service
+18:27:53.761 [main] DEBUG c.r.composer.routing.BackendRouting - The request RequestValue{method=GET, uri=http://composer/compose, parameters={}, service=Optional.empty, payload=Optional.empty, internalHeadersImpl=Headers{entries=[]}, ttl=Optional.empty} matched the backend route com.spotify.apollo.route.RuleMatch@549fc0b3.
+18:27:53.762 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_http://localhost:58375/
+18:27:53.763 [main] DEBUG c.spotify.apollo.test.FallbackClient - Falling back to real client: Could not find any mapping for http://localhost:58375/
+18:27:53.960 [OkHttp http://localhost:58375/] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_http://localhost:58375/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=67 md5=48b0cb0216ae04e866f303c67765aff9]], internalHeadersImpl=Headers{entries=[Content-Length=67, Content-Type=text/html, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874073918, OkHttp-Received-Millis=1581874073950]}})
+18:27:53.969 [OkHttp http://localhost:58375/] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_http://localhost:58375/content/
+18:27:53.969 [OkHttp http://localhost:58375/] DEBUG c.spotify.apollo.test.FallbackClient - Falling back to real client: Could not find any mapping for http://localhost:58375/content/
+18:27:53.997 [OkHttp http://localhost:58375/content/] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_http://localhost:58375/content/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=26 md5=f48aa06aba93fae959369f417526d147]], internalHeadersImpl=Headers{entries=[Content-Length=26, Content-Type=text/html, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874073993, OkHttp-Received-Millis=1581874073996]}})
+18:27:53.997 [OkHttp http://localhost:58375/content/] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<content>content</content>], internalHeadersImpl=Headers{entries=[Content-Length=26, Content-Type=text/html, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874073993, OkHttp-Received-Millis=1581874073996]}} received via [http://localhost:58375/content/] included via [http://localhost:58375/] included via [root]
+18:27:54.013 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Shutting down composer
+18:27:54.013 [apollo-servicehelper-0] INFO  c.s.a.e.ApolloEnvironmentModule - Shutting down Apollo instance
+18:27:54.032 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Starting with args: []
+18:27:54.107 [apollo-servicehelper-0] INFO  c.s.apollo.metrics.MetricsModule - Creating SemanticMetricRegistry
+18:27:54.129 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ApolloEnvironmentModule{id=apollo-env}
+18:27:54.130 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module HttpClientModule{id=http.client}
+18:27:54.130 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module MetricsModule{id=metrics}
+18:27:54.130 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module MetricIdModule{id=servicehelper-metric-id}
+18:27:54.130 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ForwardingStubClientModule{id=forwarding-stub-client}
+18:27:54.130 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ErrorHandlingClientDecoratingModule{id=error-handling-client-decorator}
+18:27:54.131 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module HttpCacheModule{id=http-cache}
+18:27:54.131 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Managing lifecycle of com.spotify.apollo.metrics.FastForwardLifecycle
+18:27:54.132 [apollo-servicehelper-0] INFO  c.r.c.routing.RoutingConfiguration - Registered local route for path=/compose, method=GET, target=http://localhost:49813/, type=TEMPLATE with a request ttl=Optional.empty
+18:27:54.134 [apollo-servicehelper-0] INFO  c.r.c.session.SessionConfiguration - Registered Session Interceptor of type com.rewedigital.composer.session.LocalSessionIdInterceptor
+18:27:54.135 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (GET)
+18:27:54.135 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (HEAD)
+18:27:54.135 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (POST)
+18:27:54.135 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (PUT)
+18:27:54.135 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (DELETE)
+18:27:54.135 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (TRACE)
+18:27:54.135 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (OPTIONS)
+18:27:54.136 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (PATCH)
+18:27:54.136 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (GET)
+18:27:54.136 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (HEAD)
+18:27:54.136 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (POST)
+18:27:54.136 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (PUT)
+18:27:54.137 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (DELETE)
+18:27:54.137 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (TRACE)
+18:27:54.137 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (OPTIONS)
+18:27:54.138 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (PATCH)
+18:27:54.138 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /
+18:27:54.138 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: HEAD, uri: /
+18:27:54.138 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: POST, uri: /
+18:27:54.138 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PUT, uri: /
+18:27:54.139 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: DELETE, uri: /
+18:27:54.139 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: TRACE, uri: /
+18:27:54.139 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: OPTIONS, uri: /
+18:27:54.139 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PATCH, uri: /
+18:27:54.139 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /<path:path>
+18:27:54.140 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: HEAD, uri: /<path:path>
+18:27:54.144 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: POST, uri: /<path:path>
+18:27:54.144 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PUT, uri: /<path:path>
+18:27:54.145 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: DELETE, uri: /<path:path>
+18:27:54.145 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: TRACE, uri: /<path:path>
+18:27:54.145 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: OPTIONS, uri: /<path:path>
+18:27:54.146 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PATCH, uri: /<path:path>
+18:27:54.148 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/info
+18:27:54.148 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/config
+18:27:54.148 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/endpoints
+18:27:54.149 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/calls
+18:27:54.149 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Started composer with backend domain ''
+18:27:54.149 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Got instance Service
+18:27:54.150 [main] DEBUG c.r.composer.routing.BackendRouting - The request RequestValue{method=GET, uri=http://composer/compose, parameters={}, service=Optional.empty, payload=Optional.empty, internalHeadersImpl=Headers{entries=[]}, ttl=Optional.empty} matched the backend route com.spotify.apollo.route.RuleMatch@5b52ce28.
+18:27:54.150 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_http://localhost:49813/
+18:27:54.150 [main] DEBUG c.spotify.apollo.test.FallbackClient - Falling back to real client: Could not find any mapping for http://localhost:49813/
+18:27:55.176 [OkHttp http://localhost:49813/] WARN  c.r.c.c.ErrorHandlingClientDecorator - got exceptional response from RequestValue{method=GET, uri=http://localhost:49813/, parameters={}, service=Optional[composer], payload=Optional.empty, internalHeadersImpl=Headers{entries=[x-rd-session-id=fdc824ce-3786-4247-8b20-4daca2c82351]}, ttl=Optional.empty}, mapping to INTERNAL_SERVER_ERROR
+java.io.IOException: Request Request{method=GET, url=http://localhost:49813/, tag=null} failed
+	at com.spotify.apollo.http.client.TransformingCallback.onFailure(TransformingCallback.java:57)
+	at com.squareup.okhttp.Call$AsyncCall.execute(Call.java:175)
+	at com.squareup.okhttp.internal.NamedRunnable.run(NamedRunnable.java:33)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: timeout
+	at okio.Okio$3.newTimeoutException(Okio.java:207)
+	at okio.AsyncTimeout.exit(AsyncTimeout.java:261)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:215)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:306)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:300)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:196)
+	at com.squareup.okhttp.internal.http.HttpConnection.readResponse(HttpConnection.java:191)
+	at com.squareup.okhttp.internal.http.HttpTransport.readResponseHeaders(HttpTransport.java:80)
+	at com.squareup.okhttp.internal.http.HttpEngine.readNetworkResponse(HttpEngine.java:906)
+	at com.squareup.okhttp.internal.http.HttpEngine.access$300(HttpEngine.java:92)
+	at com.squareup.okhttp.internal.http.HttpEngine$NetworkInterceptorChain.proceed(HttpEngine.java:891)
+	at com.squareup.okhttp.internal.http.HttpEngine.readResponse(HttpEngine.java:749)
+	at com.squareup.okhttp.Call.getResponse(Call.java:268)
+	at com.squareup.okhttp.Call$ApplicationInterceptorChain.proceed(Call.java:224)
+	at com.squareup.okhttp.Call.getResponseWithInterceptorChain(Call.java:195)
+	at com.squareup.okhttp.Call.access$100(Call.java:34)
+	at com.squareup.okhttp.Call$AsyncCall.execute(Call.java:162)
+	... 4 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at okio.Okio$2.read(Okio.java:139)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:211)
+	... 18 common frames omitted
+18:27:55.176 [OkHttp http://localhost:49813/] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_http://localhost:49813/ (response: ResponseImpl{status=INTERNAL_SERVER_ERROR, payload=Optional[ByteString[size=0]], internalHeadersImpl=Headers{entries=[]}})
+18:27:55.180 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Shutting down composer
+18:27:55.180 [apollo-servicehelper-0] INFO  c.s.a.e.ApolloEnvironmentModule - Shutting down Apollo instance
+18:27:55.221 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Starting with args: []
+18:27:55.283 [apollo-servicehelper-0] INFO  c.s.apollo.metrics.MetricsModule - Creating SemanticMetricRegistry
+18:27:55.290 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ApolloEnvironmentModule{id=apollo-env}
+18:27:55.290 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module HttpClientModule{id=http.client}
+18:27:55.290 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module MetricsModule{id=metrics}
+18:27:55.290 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module MetricIdModule{id=servicehelper-metric-id}
+18:27:55.290 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ForwardingStubClientModule{id=forwarding-stub-client}
+18:27:55.290 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module ErrorHandlingClientDecoratingModule{id=error-handling-client-decorator}
+18:27:55.290 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Loaded module HttpCacheModule{id=http-cache}
+18:27:55.290 [apollo-servicehelper-0] INFO  com.spotify.apollo.core.ServiceImpl - Managing lifecycle of com.spotify.apollo.metrics.FastForwardLifecycle
+18:27:55.291 [apollo-servicehelper-0] INFO  c.r.c.routing.RoutingConfiguration - Registered local route for path=/compose, method=GET, target=http://localhost:51007/, type=TEMPLATE with a request ttl=Optional.empty
+18:27:55.291 [apollo-servicehelper-0] INFO  c.r.c.session.SessionConfiguration - Registered Session Interceptor of type com.rewedigital.composer.session.LocalSessionIdInterceptor
+18:27:55.291 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (GET)
+18:27:55.291 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (HEAD)
+18:27:55.291 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (POST)
+18:27:55.291 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (PUT)
+18:27:55.291 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (DELETE)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (TRACE)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (OPTIONS)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route / (PATCH)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (GET)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (HEAD)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (POST)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (PUT)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (DELETE)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (TRACE)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (OPTIONS)
+18:27:55.292 [apollo-servicehelper-0] INFO  c.s.a.environment.RoutingContextImpl - Registering Route /<path:path> (PATCH)
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: HEAD, uri: /
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: POST, uri: /
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PUT, uri: /
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: DELETE, uri: /
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: TRACE, uri: /
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: OPTIONS, uri: /
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PATCH, uri: /
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /<path:path>
+18:27:55.292 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: HEAD, uri: /<path:path>
+18:27:55.293 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: POST, uri: /<path:path>
+18:27:55.293 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PUT, uri: /<path:path>
+18:27:55.293 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: DELETE, uri: /<path:path>
+18:27:55.293 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: TRACE, uri: /<path:path>
+18:27:55.293 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: OPTIONS, uri: /<path:path>
+18:27:55.293 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: PATCH, uri: /<path:path>
+18:27:55.293 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/info
+18:27:55.293 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/config
+18:27:55.294 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/endpoints
+18:27:55.294 [apollo-servicehelper-0] DEBUG c.s.apollo.route.RouteRuleBuilder - Found Route with method: GET, uri: /_meta/0/calls
+18:27:55.294 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Started composer with backend domain ''
+18:27:55.294 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Got instance Service
+18:27:55.301 [main] DEBUG c.r.composer.routing.BackendRouting - The request RequestValue{method=GET, uri=http://composer/compose, parameters={}, service=Optional.empty, payload=Optional.empty, internalHeadersImpl=Headers{entries=[]}, ttl=Optional.empty} matched the backend route com.spotify.apollo.route.RuleMatch@15aa3084.
+18:27:55.301 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_http://localhost:51007/
+18:27:55.301 [main] DEBUG c.spotify.apollo.test.FallbackClient - Falling back to real client: Could not find any mapping for http://localhost:51007/
+18:27:55.341 [OkHttp http://localhost:51007/] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_http://localhost:51007/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=67 md5=2ec93c7005a7a49b7aff5621ad69c863]], internalHeadersImpl=Headers{entries=[Content-Length=67, Content-Type=text/html, Cache-Control=max-age=50, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874075324, OkHttp-Received-Millis=1581874075337]}})
+18:27:55.341 [OkHttp http://localhost:51007/] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_http://localhost:51007/, max age: 50
+18:27:55.342 [OkHttp http://localhost:51007/] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_http://localhost:51007/content/
+18:27:55.342 [OkHttp http://localhost:51007/] DEBUG c.spotify.apollo.test.FallbackClient - Falling back to real client: Could not find any mapping for http://localhost:51007/content/
+18:27:55.409 [OkHttp http://localhost:51007/content/] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_http://localhost:51007/content/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=26 md5=f48aa06aba93fae959369f417526d147]], internalHeadersImpl=Headers{entries=[Content-Length=26, Content-Type=text/html, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874075367, OkHttp-Received-Millis=1581874075370]}})
+18:27:55.411 [OkHttp http://localhost:51007/content/] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<content>content</content>], internalHeadersImpl=Headers{entries=[Content-Length=26, Content-Type=text/html, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874075367, OkHttp-Received-Millis=1581874075370]}} received via [http://localhost:51007/content/] included via [http://localhost:51007/] included via [root]
+18:27:55.416 [main] DEBUG c.r.composer.routing.BackendRouting - The request RequestValue{method=GET, uri=http://composer/compose, parameters={}, service=Optional.empty, payload=Optional.empty, internalHeadersImpl=Headers{entries=[]}, ttl=Optional.empty} matched the backend route com.spotify.apollo.route.RuleMatch@74fbee59.
+18:27:55.416 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_http://localhost:51007/
+18:27:55.416 [main] DEBUG c.r.composer.caching.HttpCache - Serving response for cache key GET_http://localhost:51007/ from cache (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=67 md5=2ec93c7005a7a49b7aff5621ad69c863]], internalHeadersImpl=Headers{entries=[Content-Length=67, Content-Type=text/html, Cache-Control=max-age=50, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874075324, OkHttp-Received-Millis=1581874075337]}})
+18:27:55.416 [main] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_http://localhost:51007/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=67 md5=2ec93c7005a7a49b7aff5621ad69c863]], internalHeadersImpl=Headers{entries=[Content-Length=67, Content-Type=text/html, Cache-Control=max-age=50, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874075324, OkHttp-Received-Millis=1581874075337]}})
+18:27:55.416 [main] DEBUG c.r.composer.caching.HttpCache - caching response for cache key GET_http://localhost:51007/, max age: 50
+18:27:55.417 [main] DEBUG c.r.composer.caching.HttpCache - Querying cache for GET_http://localhost:51007/content/
+18:27:55.418 [main] DEBUG c.spotify.apollo.test.FallbackClient - Falling back to real client: Could not find any mapping for http://localhost:51007/content/
+18:27:55.461 [OkHttp http://localhost:51007/content/] DEBUG c.r.composer.caching.HttpCache - Fetched response for cache key GET_http://localhost:51007/content/ (response: ResponseImpl{status=OK, payload=Optional[ByteString[size=26 md5=f48aa06aba93fae959369f417526d147]], internalHeadersImpl=Headers{entries=[Content-Length=26, Content-Type=text/html, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874075418, OkHttp-Received-Millis=1581874075419]}})
+18:27:55.461 [OkHttp http://localhost:51007/content/] DEBUG c.r.c.composing.IncludedService - included service response: ResponseImpl{status=OK, payload=Optional[<content>content</content>], internalHeadersImpl=Headers{entries=[Content-Length=26, Content-Type=text/html, OkHttp-Selected-Protocol=http/1.1, OkHttp-Sent-Millis=1581874075418, OkHttp-Received-Millis=1581874075419]}} received via [http://localhost:51007/content/] included via [http://localhost:51007/] included via [root]
+18:27:55.464 [apollo-servicehelper-0] INFO  c.spotify.apollo.test.ServiceHelper - Shutting down composer
+18:27:55.464 [apollo-servicehelper-0] INFO  c.s.a.e.ApolloEnvironmentModule - Shutting down Apollo instance
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.043 sec - in com.rewedigital.composer.ComposerTest
+Running com.rewedigital.composer.architecture.DependenciesTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.436 sec <<< FAILURE! - in com.rewedigital.composer.architecture.DependenciesTest
+clientDoesNotRelyOnComposing(com.rewedigital.composer.architecture.DependenciesTest)  Time elapsed: 0.205 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: Comply with rules
+     but: 
+DENIED       com.rewedigital.composer.routing ->           This dependency is forbidden.
+  com.rewedigital.composer.configuration (by com.rewedigital.composer.routing.RoutingConfiguration)
+
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.rewedigital.composer.architecture.DependenciesTest.clientDoesNotRelyOnComposing(DependenciesTest.java:54)
+
+
+Results :
+
+Failed tests: 
+  DependenciesTest.clientDoesNotRelyOnComposing:54 
+Expected: Comply with rules
+     but: 
+DENIED       com.rewedigital.composer.routing ->           This dependency is forbidden.
+  com.rewedigital.composer.configuration (by com.rewedigital.composer.routing.RoutingConfiguration)
+
+
+Tests run: 79, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.780 s
+[INFO] Finished at: 2020-02-16T18:27:56+01:00
+[INFO] Final Memory: 17M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project composer: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rewe-digital-composer-352545329-20180312-220620-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project composer: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rewe-digital-composer-352545329-20180312-220620-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-rewe-digital-composer-352545329-20180312-220620-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
