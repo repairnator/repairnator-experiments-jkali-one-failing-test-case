@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "pholser/junit-quickcheck",
-  "bugCommit": "https://github.com/pholser/junit-quickcheck/compare/f114e5a0e07f...3221ff63c176",
-  "failingModule": "/root/workspace/pholser/junit-quickcheck/242478294/core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 362,
-  "failing-test-cases": [
-    {
-      "className": "com.pholser.junit.quickcheck.PropertyExhaustiveSampleSizeTest",
-      "failingMethods": [
-        "com.pholser.junit.quickcheck.PropertyExhaustiveSampleSizeTest#defaultNumberOfValuesForAPropertyRestrictedByOnly"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:02:03 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:44 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 43374520,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 98,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          7
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-pholser-junit-quickcheck-242478294-20170613-175236_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-pholser-junit-quickcheck-242478294-20170613-175236_bugonly-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 361,
+      "numberPassing": 360,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c[1, 2, 3]\u003e but was:\u003c[-1779374042, -644924951, -1888971435, 1069598297, 552065822, -1127425178, 175893835, 1591286968, -902898475, 1592092828, 223270443, -1993761649, -722383061, 1004839310, 1858650626, -179332556, -977864110, -778768406, 1003371592, 217362872, 1705851280, 9408122, -2054951358, 964263295, -271601598, 820196320, 798164391, 41722387, 611896099, -1653721982, -453320314, -962182348, 161649102, 157568962, -598333082, -317901261, 463768705, -431514510, 976728750, 1829537151, -1681669597, -920696697, -73017273, 2025134464, -1145695609, 590225420, -1711200129, -1938777437, 1602908402, -535425192, 1728941360, 304603317, -1770274086, -1602939774, -1314696671, -1466924171, 1196189424, 1205556245, 2080353707, 1298817123, -1440438176, -155106048, 839036831, -1934677538, 1489936983, -132110384, -903693721, 742609773, 315512773, -977388256, -574887318, -455544996, -444791964, -513577137, -18608203, -1163243126, -1791302665, -1555930253, 961682903, -1396995199, -868546345, 1110254990, -1150142965, 1152325063, 1503716011, -1343495169, -89280612, 892025459, 1491049590, -1904251333, -998194555, -1634527998, 1506246870, -1719637316, -76695465, -894485653, 95285129, -1402505159, -982005921, -1794153360]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.pholser.junit.quickcheck.PropertyExhaustiveSampleSizeTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.pholser.junit.quickcheck.PropertyExhaustiveSampleSizeTest",
+        "testMethod": "defaultNumberOfValuesForAPropertyRestrictedByOnly",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[1, 2, 3]\u003e but was:\u003c[353834863, -1367750793, -1954131067, 2126212313, -1740680102, 697173710, 1171389590, 1878726088, -870145561, 813223131, 577128545, -1706674527, -1607129524, 771995595, 880048141, -183111833, -1936612033, -166554285, 253981508, 966013314, -674410803, 1343548149, 1325655338, 67062686, -331798678, 1372667522, 930395274, 56610770, 1984519496, -1451367713, 1138379602, -281790459, 2022448875, 185814283, -2084675263, 1191701645, -434190595, 2030056800, 135609822, 1998688536, 1948873054, 1143474456, -1707039317, 701414351, 1255558527, 1452830738, -365435237, -57574728, -1078246928, -1611994410, -1950369856, -707376293, -738085578, -2045522730, -1575755704, -383817560, 1761710050, -776988938, 1494210986, 1862046487, -339620898, 771225166, 302178587, -235620591, 471999754, -1970017490, -64017337, 871961998, -459882746, 1156504674, 616248637, 1599066878, 1553454161, 1199545014, -1965600342, -597815188, -948649326, 1546164412, -1840707255, -1852312863, -61142986, -613098804, 464576409, -161530618, 1213663034, 157639499, 1576436945, -1828757748, -1055022775, -1309499600, 1385341457, -1048567600, -1261764343, -1751542076, -1909672743, -1560917447, -2001460047, -1383799128, -612979266, -980685340]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 140,
+    "numberTestFiles": 276,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "commits": {}
 }
