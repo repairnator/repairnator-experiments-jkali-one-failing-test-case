@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "lukasz-szewc/spring-sandbox",
-  "bugCommit": "https://github.com/lukasz-szewc/spring-sandbox/compare/2b42f9dd9473...1d8a4bec6603",
-  "failingModule": "/root/workspace/lukasz-szewc/spring-sandbox/382300796",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "org.luksze.ApplicationTest",
-      "failingMethods": [
-        "testHome"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:38 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:04:01 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 7512224,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 140,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 85,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          85
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lukasz-szewc-spring-sandbox-382300796-20180522-203006-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-lukasz-szewc-spring-sandbox-382300796-20180522-203006-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[200]\u003e but was:\u003c[404]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.luksze.ApplicationTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.luksze.ApplicationTest",
+        "testMethod": "testHome",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[200]\u003e but was:\u003c[404]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 4,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 55,
+    "numberLines": 0
+  }
 }
