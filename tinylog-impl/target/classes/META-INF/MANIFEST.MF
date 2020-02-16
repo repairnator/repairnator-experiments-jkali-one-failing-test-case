@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1581861772972
+Build-Jdk: 1.8.0_202
+Built-By: dginelli
+Bundle-Description: tinylog native logging implementation
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: tinylog implementation
+Bundle-SymbolicName: org.tinylog.impl
+Bundle-Version: 2.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.tinylog.writers;uses:="org.tinylog.core,org.tinylog.
+ writers.raw";version="2.0.0",org.tinylog.writers.raw;version="2.0.0",or
+ g.tinylog.core;uses:="org.tinylog,org.tinylog.provider,org.tinylog.writ
+ ers";version="2.0.0",org.tinylog.pattern;uses:="org.tinylog.core";versi
+ on="2.0.0"
+Import-Package: android.util,org.tinylog;version="[2.0,3)",org.tinylog.c
+ onfiguration;version="[2.0,3)",org.tinylog.core,org.tinylog.pattern,org
+ .tinylog.provider;version="[2.0,3)",org.tinylog.runtime;version="[2.0,3
+ )",org.tinylog.writers,org.tinylog.writers.raw
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007
