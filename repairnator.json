@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:02 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:32:21 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 30956152,
+      "totalMemory": 146296832
+    },
+    "totalDuration": 317,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 250,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          250
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vipshop-vjtools-405238765-20180718-095124-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-vipshop-vjtools-405238765-20180718-095124-firstCommit/vjkit",
+    "overallMetrics": {
+      "numberRunning": 170,
+      "numberPassing": 169,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.vip.vjtools.vjkit.base.RuntimeUtilTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.vip.vjtools.vjkit.base.RuntimeUtilTest",
+        "testMethod": "testRuntime",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003c1\u003e\nto be greater than:\n \u003c1\u003e ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 0,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "commits": {}
+}
