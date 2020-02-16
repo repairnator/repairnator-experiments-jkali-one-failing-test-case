@@ -1,57 +1,119 @@
 {
-  "totalNumberSkippingTests": 9,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "jhy/jsoup",
-  "bugCommit": "https://github.com/jhy/jsoup/compare/4685bd091a69...5ba643ce7b1b",
-  "failingModule": "/root/workspace/jhy/jsoup/290981726",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "skipped",
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 592,
-  "failing-test-cases": [
-    {
-      "className": "org.jsoup.integration.ConnectTest",
-      "failingMethods": [
-        "org.jsoup.integration.ConnectTest#canInterruptBodyStringRead",
-        "org.jsoup.integration.ConnectTest#postFiles",
-        "org.jsoup.integration.ConnectTest#totalTimeout",
-        "org.jsoup.integration.ConnectTest#canInterruptDocumentRead",
-        "org.jsoup.integration.ConnectTest#slowReadOk"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:01 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:57:34 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 108227296,
+      "totalMemory": 628011008
+    },
+    "totalDuration": 1171,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1102,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1102
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-290983775-20171022-021944-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 583,
+      "numberPassing": 582,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 9,
       "failures": [
         {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c439[72]\u003e but was:\u003c439[63]\u003e",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 5,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jsoup.integration.ConnectTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 4
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jsoup.integration.ConnectTest",
+        "testMethod": "postFiles",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c439[72]\u003e but was:\u003c439[63]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 63,
+    "numberTestFiles": 39,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {}
 }
