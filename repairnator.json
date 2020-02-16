@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "jamesagnew/hapi-fhir",
-  "bugCommit": "https://github.com/jamesagnew/hapi-fhir/compare/da2d7c3bc3a1...48520832efee",
-  "failingModule": "/root/workspace/jamesagnew/hapi-fhir/232264190/hapi-fhir-structures-dstu",
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 707,
-  "failing-test-cases": [
-    {
-      "className": "ca.uhn.fhir.rest.client.TagsClientTest",
-      "failingMethods": [
-        "ca.uhn.fhir.rest.client.TagsClientTest#testGetAllTags"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 2:07:56 PM",
+    "reproductionDateEnd": "Feb 16, 2020 2:58:14 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 76373400,
+      "totalMemory": 336867328
+    },
+    "totalDuration": 3013,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2404,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2404
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-232264190-20170515-040908_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesagnew-hapi-fhir-232264190-20170515-040908_bugonly-firstCommit/hapi-fhir-structures-dstu",
+    "overallMetrics": {
+      "numberRunning": 704,
+      "numberPassing": 703,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003chttp://foo/[]_tags\u003e but was:\u003chttp://foo/[/]_tags\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ca.uhn.fhir.rest.client.TagsClientTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ca.uhn.fhir.rest.client.TagsClientTest",
+        "testMethod": "testGetAllTags",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003chttp://foo/[]_tags\u003e but was:\u003chttp://foo/[/]_tags\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3256,
+    "numberTestFiles": 563,
+    "numberLibrariesFailingModule": 55,
+    "numberLines": 0
+  }
 }
