@@ -1,0 +1,41 @@
+2020-02-16 20:18:29,629 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-02-16 20:18:30,391 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2020-02-16 20:18:30,707 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2020-02-16 20:18:30,708 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SHUFFLE, sessionId=
+2020-02-16 20:18:31,141 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2020-02-16 20:18:31,146 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@22bac7bc
+2020-02-16 20:18:31,301 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapred.ReduceTask$ReduceCopier
+2020-02-16 20:18:31,303 INFO org.apache.hadoop.mapred.ReduceTask: ShuffleRamManager: MemoryLimit=141937872, MaxSingleShuffleLimit=35484468
+2020-02-16 20:18:31,307 INFO org.apache.hadoop.mapred.ReduceTask: attempt_20200216201814730_0001_r_000000_0 Thread started: Thread for merging on-disk files
+2020-02-16 20:18:31,307 INFO org.apache.hadoop.mapred.ReduceTask: attempt_20200216201814730_0001_r_000000_0 Thread waiting: Thread for merging on-disk files
+2020-02-16 20:18:31,309 INFO org.apache.hadoop.mapred.ReduceTask: attempt_20200216201814730_0001_r_000000_0 Thread started: Thread for merging in memory files
+2020-02-16 20:18:31,309 INFO org.apache.hadoop.mapred.ReduceTask: attempt_20200216201814730_0001_r_000000_0 Need another 2 map output(s) where 0 is already in progress
+2020-02-16 20:18:31,309 INFO org.apache.hadoop.mapred.ReduceTask: attempt_20200216201814730_0001_r_000000_0 Scheduled 0 outputs (0 slow hosts and0 dup hosts)
+2020-02-16 20:18:31,309 INFO org.apache.hadoop.mapred.ReduceTask: attempt_20200216201814730_0001_r_000000_0 Thread started: Thread for polling Map Completion Events
+2020-02-16 20:18:31,328 INFO org.apache.hadoop.mapred.ReduceTask: attempt_20200216201814730_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2020-02-16 20:18:31,624 INFO org.apache.hadoop.mapred.ReduceTask: attempt_20200216201814730_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2020-02-16 20:18:31,652 INFO org.apache.hadoop.mapred.ReduceTask: GetMapEventsThread exiting
+2020-02-16 20:18:31,653 INFO org.apache.hadoop.mapred.ReduceTask: getMapsEventsThread joined.
+2020-02-16 20:18:31,653 INFO org.apache.hadoop.mapred.ReduceTask: Closed ram manager
+2020-02-16 20:18:31,653 INFO org.apache.hadoop.mapred.ReduceTask: Interleaved on-disk merge complete: 0 files left.
+2020-02-16 20:18:31,653 INFO org.apache.hadoop.mapred.ReduceTask: In-memory merge complete: 2 files left.
+2020-02-16 20:18:31,665 INFO org.apache.hadoop.mapred.Merger: Merging 2 sorted segments
+2020-02-16 20:18:31,665 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 63968 bytes
+2020-02-16 20:18:31,707 INFO org.apache.hadoop.mapred.ReduceTask: Merged 2 segments, 63968 bytes to disk to satisfy reduce memory limit
+2020-02-16 20:18:31,707 INFO org.apache.hadoop.mapred.ReduceTask: Merging 1 files, 63970 bytes from disk
+2020-02-16 20:18:31,708 INFO org.apache.hadoop.mapred.ReduceTask: Merging 0 segments, 0 bytes from memory into reduce
+2020-02-16 20:18:31,708 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2020-02-16 20:18:31,716 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 63966 bytes
+2020-02-16 20:18:32,185 WARN org.apache.hadoop.hdfs.DFSClient: Caught exception 
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.closeResponder(DFSOutputStream.java:951)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.endBlock(DFSOutputStream.java:689)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:878)
+2020-02-16 20:18:32,188 INFO org.apache.hadoop.mapred.Task: Task:attempt_20200216201814730_0001_r_000000_0 is done. And is in the process of commiting
+2020-02-16 20:18:33,312 INFO org.apache.hadoop.mapred.Task: Task attempt_20200216201814730_0001_r_000000_0 is allowed to commit now
+2020-02-16 20:18:33,341 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_20200216201814730_0001_r_000000_0' to cloudgene-bwaOut/0
+2020-02-16 20:18:33,344 INFO org.apache.hadoop.mapred.Task: Task 'attempt_20200216201814730_0001_r_000000_0' done.
+2020-02-16 20:18:33,361 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
