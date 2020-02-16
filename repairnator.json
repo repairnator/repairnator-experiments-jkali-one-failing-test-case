@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 19,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/4f2cdc030245...bf6b0792f706",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/353458296/languagetool-language-modules/de",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 436,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.de.GermanSpellerRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.de.GermanSpellerRuleTest#testGetAdditionalTopSuggestions"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:30 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:08:52 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 30314216,
+      "totalMemory": 81461248
+    },
+    "totalDuration": 438,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-353458296-20180314-190054-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-353458296-20180314-190054-firstCommit/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 417,
+      "numberPassing": 416,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Matches: 1, Suggestions of first match: [Ventrolateral/A]\nExpected: is \"ventrolateral\"\n     but: was \"Ventrolateral/A\"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Matches: 1, Suggestions of first match: [Ventrolateral/A]\nExpected: is \"ventrolateral\"\n     but: was \"Ventrolateral/A\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 490,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {}
 }
