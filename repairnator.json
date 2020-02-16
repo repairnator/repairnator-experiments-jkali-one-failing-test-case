@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "zaza/allegro-rss",
-  "bugCommit": "https://github.com/zaza/allegro-rss/compare/18619ccb66d5bf9a4aa07c16846b0d1aec9c8787...674fef3279fbebf2ebb3d123664cb9e4e81a8d78",
-  "failingModule": "/root/workspace/zaza/allegro-rss/358189241",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1,
-  "failing-test-cases": [
-    {
-      "className": "com.github.zaza.allegro.HerokuAppHealthCheckTest",
-      "failingMethods": [
-        "com.github.zaza.allegro.HerokuAppHealthCheckTest#check"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:15:31 PM",
+    "reproductionDateEnd": "Feb 16, 2020 11:18:06 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25756328,
+      "totalMemory": 119824384
+    },
+    "totalDuration": 153,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 112,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          112
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zaza-allegro-rss-358189241-20180326-005441-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zaza-allegro-rss-358189241-20180326-005441-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c200\u003e but was:\u003c503\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.zaza.allegro.HerokuAppHealthCheckTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.zaza.allegro.HerokuAppHealthCheckTest",
+        "testMethod": "check",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c200\u003e but was:\u003c503\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 4,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 28,
+    "numberLines": 0
+  },
+  "commits": {}
 }
