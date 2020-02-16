@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/metrics",
-  "bugCommit": "https://github.com/dropwizard/metrics/compare/4983107e26be...311cf24c42bf",
-  "failingModule": "/root/workspace/dropwizard/metrics/354788585/metrics-legacy-adapter",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent"
-  ],
-  "totalNumberRunningTests": 673,
-  "failing-test-cases": [
-    {
-      "className": "com.codahale.metrics.Slf4jReporterTest",
-      "failingMethods": [
-        "com.codahale.metrics.Slf4jReporterTest#testReport"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:10 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:41:50 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 33295480,
+      "totalMemory": 90718208
+    },
+    "totalDuration": 277,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          35
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-354788585-20180317-191324-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-354788585-20180317-191324-firstCommit/metrics-httpasyncclient",
+    "overallMetrics": {
+      "numberRunning": 461,
+      "numberPassing": 460,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
-          "failureDetail": "\nArgument(s) are different! Wanted:\nlogger.info(\n    Mock for Marker, hashCode: 1829082639,\n    \"type\u003d{}, name\u003d{}, count\u003d{}\",\n    \"COUNTER\",\n    \"us-nw.test-counter\",\n    100L\n);\n-\u003e at com.codahale.metrics.Slf4jReporterTest.testReport(Slf4jReporterTest.java:53)\nActual invocation has different arguments:\nlogger.info(\n    Mock for Marker, hashCode: 1829082639,\n    \"type\u003dCOUNTER, name\u003dus-nw.test-counter, count\u003d100\"\n);\n-\u003e at io.dropwizard.metrics5.Slf4jReporter$InfoLoggerProxy.log(Slf4jReporter.java:473)\n",
-          "isError": false
+          "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest",
+        "testMethod": "timerIsStoppedCorrectlyWithProvidedFutureCallbackCompleted",
+        "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+        "detail": "\ncontext.stop();\nNever wanted here:\n-\u003e at io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest.timerIsStoppedCorrectlyWithProvidedFutureCallbackCompleted(InstrumentedHttpClientsTimerTest.java:89)\nBut invoked here:\n-\u003e at io.dropwizard.metrics5.httpasyncclient.InstrumentedNHttpClientBuilder$TimingFutureCallback.completed(InstrumentedNHttpClientBuilder.java:97)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 27,
+    "numberPlugins": 0,
+    "numberSourceFiles": 184,
+    "numberTestFiles": 142,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {}
 }
