@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:57 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:49:33 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 48541760,
+      "totalMemory": 138620928
+    },
+    "totalDuration": 693,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 325,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          325
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-huajwang-nightgrass-409415774-20180729-024239-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-huajwang-nightgrass-409415774-20180729-024239-firstCommit/ui",
+    "overallMetrics": {
+      "numberRunning": 7,
+      "numberPassing": 6,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.longmaple.ttmall.ui.ApplicationTests",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.longmaple.ttmall.ui.ApplicationTests",
+        "testMethod": "homePageLoads",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 63,
+    "numberTestFiles": 7,
+    "numberLibrariesFailingModule": 141,
+    "numberLines": 0
+  },
+  "commits": {}
+}
