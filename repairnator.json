@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "spring-projects/spring-hateoas",
-  "bugCommit": "https://github.com/spring-projects/spring-hateoas/commit/f519396e39a6",
-  "failingModule": "/root/workspace/spring-projects/spring-hateoas/235351540",
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 322,
-  "failing-test-cases": [
-    {
-      "className": "org.springframework.hateoas.mvc.SimpleIdentifiableResourceAssemblerTest",
-      "failingMethods": [
-        "org.springframework.hateoas.mvc.SimpleIdentifiableResourceAssemblerTest#convertingToResourcesShouldWork"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:58 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:51:22 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 190527824,
+      "totalMemory": 442945536
+    },
+    "totalDuration": 1461,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1256,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1256
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-235409911-20170523-234702-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-235409911-20170523-234702-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 322,
+      "numberPassing": 321,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: iterable containing [\u003cResource { content: SimpleIdentifiableResourceAssemblerTest.Employee(id\u003d1, name\u003dFrodo), links: [] }\u003e]      but: item 0: was \u003cResource { content: SimpleIdentifiableResourceAssemblerTest.Employee(id\u003d1, name\u003dFrodo), links: [\u003chttp://localhost/employees/1\u003e;rel\u003d\"self\", \u003chttp://localhost/employees\u003e;rel\u003d\"employees\"] }\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.hateoas.mvc.SimpleIdentifiableResourceAssemblerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.hateoas.mvc.SimpleIdentifiableResourceAssemblerTest",
+        "testMethod": "convertingToResourcesShouldWork",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: iterable containing [\u003cResource { content: SimpleIdentifiableResourceAssemblerTest.Employee(id\u003d1, name\u003dFrodo), links: [] }\u003e]\n     but: item 0: was \u003cResource { content: SimpleIdentifiableResourceAssemblerTest.Employee(id\u003d1, name\u003dFrodo), links: [\u003chttp://localhost/employees/1\u003e;rel\u003d\"self\", \u003chttp://localhost/employees\u003e;rel\u003d\"employees\"] }\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 92,
+    "numberTestFiles": 63,
+    "numberLibrariesFailingModule": 43,
+    "numberLines": 0
+  },
+  "commits": {}
 }
