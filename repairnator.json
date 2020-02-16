@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "salesforce/storm-dynamic-spout",
-  "bugCommit": "https://github.com/salesforce/storm-dynamic-spout/compare/bcff14aae545...4c382b8b3bf1",
-  "failingModule": "/root/workspace/salesforce/storm-dynamic-spout/400637628",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 293,
-  "failing-test-cases": [
-    {
-      "className": "LicenseVerificationTest",
-      "failingMethods": [
-        "doTest"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:45 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:33:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 48133648,
+      "totalMemory": 161402880
+    },
+    "totalDuration": 416,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          35
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-salesforce-storm-dynamic-spout-400637628-20180706-000104-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-salesforce-storm-dynamic-spout-400637628-20180706-000104-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 293,
+      "numberPassing": 292,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Found instance of missing license?? /root/workspace/salesforce/storm-dynamic-spout/400637628/src/test/java/com/salesforce/storm/spout/dynamic/filter/NumberFilter.java",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "LicenseVerificationTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "LicenseVerificationTest",
+        "testMethod": "doTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Found instance of missing license?? /scratch/dginelli/workspace/repairnator-repairnator-experiments-salesforce-storm-dynamic-spout-400637628-20180706-000104-firstCommit/src/test/java/com/salesforce/storm/spout/dynamic/filter/NumberFilter.java",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 99,
+    "numberTestFiles": 55,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  },
+  "commits": {}
 }
