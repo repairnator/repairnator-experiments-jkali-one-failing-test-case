@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:39:29 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 7467272,
+      "totalMemory": 98754560
+    },
+    "totalDuration": 141,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 77,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          77
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-donnelldebnam-CodeU-Spring-2018-29-409616646-20180729-224330-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-donnelldebnam-CodeU-Spring-2018-29-409616646-20180729-224330-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 123,
+      "numberPassing": 122,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "codeu.controller.ConversationServletTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "codeu.controller.ConversationServletTest",
+        "testMethod": "testDoPost_BadConversationName",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\nhttpServletRequest.setAttribute(\n    \"error\",\n    \"Please enter only letters and numbers.\"\n);\n-\u003e at codeu.controller.ConversationServletTest.testDoPost_BadConversationName(ConversationServletTest.java:129)\nActual invocation has different arguments:\nhttpServletRequest.setAttribute(\n    \"error\",\n    \"Please enter only letters and numbers. (Only one Hashtag allowed.)\"\n);\n-\u003e at codeu.controller.ConversationServlet.doPost(ConversationServlet.java:141)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 26,
+    "numberTestFiles": 22,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "commits": {}
+}
