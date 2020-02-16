@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "oboehm/jfachwert",
-  "bugCommit": "https://github.com/oboehm/jfachwert/compare/3e1ef35f2d68...697d71185946",
-  "failingModule": "/root/workspace/oboehm/jfachwert/360652744",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 363,
-  "failing-test-cases": [
-    {
-      "className": "de.jfachwert.FachwertFactoryTest",
-      "failingMethods": [
-        "de.jfachwert.FachwertFactoryTest#testValidateAll"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:52 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:06:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 80552328,
+      "totalMemory": 192884736
+    },
+    "totalDuration": 290,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 236,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          236
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360652744-20180331-182302-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360652744-20180331-182302-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 363,
+      "numberPassing": 362,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: a string containing \"TEST\"      but: was \"invalid value for number: \"T\"\"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.jfachwert.FachwertFactoryTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.jfachwert.FachwertFactoryTest",
+        "testMethod": "testValidateAll",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a string containing \"TEST\"\n     but: was \"invalid value for number: \"T\"\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 57,
+    "numberTestFiles": 42,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  }
 }
