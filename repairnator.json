@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "opensagres/xdocreport",
-  "failingModule": "/root/workspace/opensagres/xdocreport/286019674/integrationtests/fr.opensagres.xdocreport.core.test",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 959,
-  "failing-test-cases": [
-    {
-      "className": "fr.opensagres.xdocreport.core.PlatformTest",
-      "failingMethods": [
-        "fr.opensagres.xdocreport.core.PlatformTest#getVersion"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:52 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:12:35 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 48690344,
+      "totalMemory": 109821952
+    },
+    "totalDuration": 640,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-opensagres-xdocreport-286019674-20171010-143058_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-opensagres-xdocreport-286019674-20171010-143058_bugonly-firstCommit/integrationtests/fr.opensagres.xdocreport.core.test",
+    "overallMetrics": {
+      "numberRunning": 955,
+      "numberPassing": 954,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "version should start with 2 but is not found",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "fr.opensagres.xdocreport.core.PlatformTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "fr.opensagres.xdocreport.core.PlatformTest",
+        "testMethod": "getVersion",
+        "failureName": "java.lang.AssertionError",
+        "detail": "version should start with 2 but is not found",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 65,
+    "numberPlugins": 0,
+    "numberSourceFiles": 903,
+    "numberTestFiles": 229,
+    "numberLibrariesFailingModule": 56,
+    "numberLines": 0
+  }
 }
