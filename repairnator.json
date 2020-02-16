@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "tokenopoly/coinbase-commerce-core-jpa",
-  "bugCommit": "https://github.com/tokenopoly/coinbase-commerce-core-jpa/compare/9c3950894093...f66d958d1053",
-  "failingModule": "/root/workspace/tokenopoly/coinbase-commerce-core-jpa/390014405",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 17,
-  "failing-test-cases": [
-    {
-      "className": "com.tokenopoly.coinbridge.coinbase.commerce.model.ChargeTest",
-      "failingMethods": [
-        "coverage"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:02 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:38:27 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 84845592,
+      "totalMemory": 208044032
+    },
+    "totalDuration": 683,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 538,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          538
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-tokenopoly-coinbase-commerce-core-jpa-390014405-20180609-061200-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-tokenopoly-coinbase-commerce-core-jpa-390014405-20180609-061200-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 17,
+      "numberPassing": 16,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003cCharge(code\u003dABC123RF, name\u003dnull, description\u003dnull, logoUrl\u003dnull, hostedUrl\u003dnull, redirectUrl\u003dnull, createdAt\u003dnull, expiresAt\u003dnull, confirmedAt\u003dnull, checkout\u003dnull, timeline\u003dnull, metadata\u003dnull, pricingType\u003dnull, pricing\u003dnull, payments\u003d[], addresses\u003dnull)\u003e but was:\u003cCharge(code\u003dnull, name\u003dnull, description\u003dnull, logoUrl\u003dnull, hostedUrl\u003dnull, redirectUrl\u003dnull, createdAt\u003dnull, expiresAt\u003dnull, confirmedAt\u003dnull, checkout\u003dnull, timeline\u003dnull, metadata\u003dnull, pricingType\u003dnull, pricing\u003dnull, payments\u003d[], addresses\u003dnull)\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.tokenopoly.coinbridge.coinbase.commerce.model.ChargeTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.tokenopoly.coinbridge.coinbase.commerce.model.ChargeTest",
+        "testMethod": "coverage",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cCharge(code\u003dABC123RF, name\u003dnull, description\u003dnull, logoUrl\u003dnull, hostedUrl\u003dnull, redirectUrl\u003dnull, createdAt\u003dnull, expiresAt\u003dnull, confirmedAt\u003dnull, checkout\u003dnull, timeline\u003dnull, metadata\u003dnull, pricingType\u003dnull, pricing\u003dnull, payments\u003d[], addresses\u003dnull)\u003e but was:\u003cCharge(code\u003dnull, name\u003dnull, description\u003dnull, logoUrl\u003dnull, hostedUrl\u003dnull, redirectUrl\u003dnull, createdAt\u003dnull, expiresAt\u003dnull, confirmedAt\u003dnull, checkout\u003dnull, timeline\u003dnull, metadata\u003dnull, pricingType\u003dnull, pricing\u003dnull, payments\u003d[], addresses\u003dnull)\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 16,
+    "numberTestFiles": 12,
+    "numberLibrariesFailingModule": 93,
+    "numberLines": 0
+  },
+  "commits": {}
 }
