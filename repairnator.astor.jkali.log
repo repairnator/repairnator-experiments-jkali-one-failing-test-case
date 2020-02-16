@@ -1,0 +1,426 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/javaparser-core-serialization/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/javaparser-core-serialization/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 0
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/javaparser-core-serialization/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/javaparser-core-serialization/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/jupiter/junit-jupiter-engine/5.0.3/junit-jupiter-engine-5.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/platform/junit-platform-engine/1.0.3/junit-platform-engine-1.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/platform/junit-platform-commons/1.0.3/junit-platform-commons-1.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/jupiter/junit-jupiter-api/5.0.3/junit-jupiter-api-5.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/com/github/javaparser/javaparser-core/3.6.18-SNAPSHOT/javaparser-core-3.6.18-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/javax/json/javax.json-api/1.0/javax.json-api-1.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/glassfish/javax.json/1.0/javax.json-1.0.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 29170 milliseconds (29 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/javaparser-core-serialization/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/javaparser-core-serialization/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/jupiter/junit-jupiter-engine/5.0.3/junit-jupiter-engine-5.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/platform/junit-platform-engine/1.0.3/junit-platform-engine-1.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/platform/junit-platform-commons/1.0.3/junit-platform-commons-1.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/jupiter/junit-jupiter-api/5.0.3/junit-jupiter-api-5.0.3.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/com/github/javaparser/javaparser-core/3.6.18-SNAPSHOT/javaparser-core-3.6.18-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/javax/json/javax.json-api/1.0/javax.json-api-1.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/glassfish/javax.json/1.0/javax.json-1.0.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 2
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 0
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 49, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 50, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 51, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 56, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 57, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 59, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtContinueImpl, suspValue 0.0, line 62, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 61, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 65, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 70, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 71, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 73, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 74, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 76, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 78, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 80, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 82, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 84, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 81, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 79, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 75, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 72, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 69, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtForEachImpl, suspValue 0.0, line 60, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 89, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtThrowImpl, suspValue 0.0, line 91, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 96, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtReturnImpl, suspValue 0.0, line 100, file JavaParserJsonDeserializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 42, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 43, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 44, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 49, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 52, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 54, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 51, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 56, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 58, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 59, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 62, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 63, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 65, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtForEachImpl, suspValue 0.0, line 64, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 67, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtLocalVariableImpl, suspValue 0.0, line 69, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 72, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtForEachImpl, suspValue 0.0, line 71, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 76, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtInvocationImpl, suspValue 0.0, line 78, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 75, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 68, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 61, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtIfImpl, suspValue 0.0, line 60, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createModificationPoints(ProgramVariantFactory.java:192) - --ModificationPoint:CtForEachImpl, suspValue 0.0, line 57, file JavaParserJsonSerializer.java
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 53
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 53, #ops: 0, parent:-]
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[ERROR] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:756) - Initial run of test suite fails
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.7976931348623157E308
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 29170
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/jupiter/junit-jupiter-engine/5.0.3/junit-jupiter-engine-5.0.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/platform/junit-platform-engine/1.0.3/junit-platform-engine-1.0.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/platform/junit-platform-commons/1.0.3/junit-platform-commons-1.0.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/junit/jupiter/junit-jupiter-api/5.0.3/junit-jupiter-api-5.0.3.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/com/github/javaparser/javaparser-core/3.6.18-SNAPSHOT/javaparser-core-3.6.18-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/javax/json/javax.json-api/1.0/javax.json-api-1.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/.m2/org/glassfish/javax.json/1.0/javax.json-1.0.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-415435329-20180813-150101-firstCommit/javaparser-core-serialization
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 49, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `com.github.javaparser.utils.Log.info("Deserializing JSON to Node.") ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 62, pointed element: CtContinueImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtContinueImpl) `continue ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (name.equals(com.github.javaparser.serialization.JavaParserJsonSerializer.SERIALIZED_CLASS_KEY)) [...] ` -topatch--> `if (true) { 	continue; }` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (name.equals(com.github.javaparser.serialization.JavaParserJsonSerializer.SERIALIZED_CLASS_KEY)) [...] ` -topatch--> `if (false) { 	continue; }` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (name.equals(com.github.javaparser.serialization.JavaParserJsonSerializer.SERIALIZED_CLASS_KEY)) [...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 71, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `parameters.put(name, deserializeNodeList(nodeListJson)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 74, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `parameters.put(name, deserializeEnumSet(enumSetJson)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 76, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `parameters.put(name, deserializeObject(nodeJson.getJsonObject(name))) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 80, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `parameters.put(name, nodeJson.getString(name)) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 82, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `parameters.put(name, java.lang.Boolean.parseBoolean(nodeJson.getString(name))) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 84, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalStateException("Don't know how to convert: " + type) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 81, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (type == boolean.class) { 	parameters.put(name, java.lang.Boolean.parseBoolean(nodeJson.getString[...] ` -topatch--> `if (true) { 	parameters.put(name, java.lang.Boolean.parseBoolean(nodeJson.getString(name))); } else [...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 81, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (type == boolean.class) { 	parameters.put(name, java.lang.Boolean.parseBoolean(nodeJson.getString[...] ` -topatch--> `if (false) { 	parameters.put(name, java.lang.Boolean.parseBoolean(nodeJson.getString(name))); } else[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 81, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (type == boolean.class) { 	parameters.put(name, java.lang.Boolean.parseBoolean(nodeJson.getString[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (type == java.lang.String.class) { 	parameters.put(name, nodeJson.getString(name)); } else 	if (t[...] ` -topatch--> `if (true) { 	parameters.put(name, nodeJson.getString(name)); } else { 	if (type == boolean.class) { [...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (type == java.lang.String.class) { 	parameters.put(name, nodeJson.getString(name)); } else 	if (t[...] ` -topatch--> `if (false) { 	parameters.put(name, nodeJson.getString(name)); } else { 	if (type == boolean.class) {[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (type == java.lang.String.class) { 	parameters.put(name, nodeJson.getString(name)); } else 	if (t[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNode()) { 	parameters.put(name, deserializeObject(nodeJson.getJsonObject(nam[...] ` -topatch--> `if (true) { 	parameters.put(name, deserializeObject(nodeJson.getJsonObject(name))); } else { 	java.l[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNode()) { 	parameters.put(name, deserializeObject(nodeJson.getJsonObject(nam[...] ` -topatch--> `if (false) { 	parameters.put(name, deserializeObject(nodeJson.getJsonObject(name))); } else { 	java.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNode()) { 	parameters.put(name, deserializeObject(nodeJson.getJsonObject(nam[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 72, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isEnumSet()) { 	javax.json.JsonArray enumSetJson = nodeJson.getJsonArray(name)[...] ` -topatch--> `if (true) { 	javax.json.JsonArray enumSetJson = nodeJson.getJsonArray(name); 	parameters.put(name, d[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 72, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isEnumSet()) { 	javax.json.JsonArray enumSetJson = nodeJson.getJsonArray(name)[...] ` -topatch--> `if (false) { 	javax.json.JsonArray enumSetJson = nodeJson.getJsonArray(name); 	parameters.put(name, [...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 72, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isEnumSet()) { 	javax.json.JsonArray enumSetJson = nodeJson.getJsonArray(name)[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 69, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNodeList()) { 	javax.json.JsonArray nodeListJson = nodeJson.getJsonArray(nam[...] ` -topatch--> `if (true) { 	javax.json.JsonArray nodeListJson = nodeJson.getJsonArray(name); 	parameters.put(name, [...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 69, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNodeList()) { 	javax.json.JsonArray nodeListJson = nodeJson.getJsonArray(nam[...] ` -topatch--> `if (false) { 	javax.json.JsonArray nodeListJson = nodeJson.getJsonArray(name); 	parameters.put(name,[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 69, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNodeList()) { 	javax.json.JsonArray nodeListJson = nodeJson.getJsonArray(nam[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 60, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.String name : nodeJson.keySet()) { 	if (name.equals(com.github.javaparser.serializati[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 89, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return nodeMetaModel.construct(parameters) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonDeserializer line: 91, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.RuntimeException(e) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 42, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.util.Objects.requireNonNull(node) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 43, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `com.github.javaparser.utils.Log.info("Serializing Node to JSON.") ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 44, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `serialize(null, node, generator) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 52, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `generator.writeStartObject() ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 54, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `generator.writeStartObject(nodeName) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 51, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (nodeName == null) { 	generator.writeStartObject(); } else { 	generator.writeStartObject(nodeName[...] ` -topatch--> `if (true) { 	generator.writeStartObject(); } else { 	generator.writeStartObject(nodeName); }` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 51, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (nodeName == null) { 	generator.writeStartObject(); } else { 	generator.writeStartObject(nodeName[...] ` -topatch--> `if (false) { 	generator.writeStartObject(); } else { 	generator.writeStartObject(nodeName); }` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 51, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (nodeName == null) { 	generator.writeStartObject(); } else { 	generator.writeStartObject(nodeName[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `generator.write(com.github.javaparser.serialization.JavaParserJsonSerializer.SERIALIZED_CLASS_KEY, n[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 63, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `generator.writeStartArray(name) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 65, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `serialize(null, n, generator) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 64, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (com.github.javaparser.ast.Node n : list) { 	serialize(null, n, generator); } ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 67, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `generator.writeEnd() ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 72, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `generator.write(n.name()) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 71, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (java.lang.Enum n : set) { 	generator.write(n.name()); } ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 76, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `serialize(name, ((com.github.javaparser.ast.Node) (value)), generator) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 78, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `generator.write(name, value.toString()) ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNode()) { 	serialize(name, ((com.github.javaparser.ast.Node) (value)), gener[...] ` -topatch--> `if (true) { 	serialize(name, ((com.github.javaparser.ast.Node) (value)), generator); } else { 	gener[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNode()) { 	serialize(name, ((com.github.javaparser.ast.Node) (value)), gener[...] ` -topatch--> `if (false) { 	serialize(name, ((com.github.javaparser.ast.Node) (value)), generator); } else { 	gene[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 75, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNode()) { 	serialize(name, ((com.github.javaparser.ast.Node) (value)), gener[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 68, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isEnumSet()) { 	java.util.EnumSet<? extends java.lang.Enum> set = ((java.util.[...] ` -topatch--> `if (true) { 	java.util.EnumSet<? extends java.lang.Enum> set = ((java.util.EnumSet<? extends java.la[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 68, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isEnumSet()) { 	java.util.EnumSet<? extends java.lang.Enum> set = ((java.util.[...] ` -topatch--> `if (false) { 	java.util.EnumSet<? extends java.lang.Enum> set = ((java.util.EnumSet<? extends java.l[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 68, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isEnumSet()) { 	java.util.EnumSet<? extends java.lang.Enum> set = ((java.util.[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNodeList()) { 	com.github.javaparser.ast.NodeList<com.github.javaparser.ast.[...] ` -topatch--> `if (true) { 	com.github.javaparser.ast.NodeList<com.github.javaparser.ast.Node> list = ((com.github.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNodeList()) { 	com.github.javaparser.ast.NodeList<com.github.javaparser.ast.[...] ` -topatch--> `if (false) { 	com.github.javaparser.ast.NodeList<com.github.javaparser.ast.Node> list = ((com.github[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 61, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (propertyMetaModel.isNodeList()) { 	com.github.javaparser.ast.NodeList<com.github.javaparser.ast.[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 60, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value != null) { 	if (propertyMetaModel.isNodeList()) { 		com.github.javaparser.ast.NodeList<com[...] ` -topatch--> `if (true) { 	if (propertyMetaModel.isNodeList()) { 		com.github.javaparser.ast.NodeList<com.github.j[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 60, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (value != null) { 	if (propertyMetaModel.isNodeList()) { 		com.github.javaparser.ast.NodeList<com[...] ` -topatch--> `if (false) { 	if (propertyMetaModel.isNodeList()) { 		com.github.javaparser.ast.NodeList<com.github.[...]` (spoon.support.reflect.code.CtIfImpl) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 60, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (value != null) { 	if (propertyMetaModel.isNodeList()) { 		com.github.javaparser.ast.NodeList<com[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=com.github.javaparser.serialization.JavaParserJsonSerializer line: 57, pointed element: CtForEachImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForEachImpl) `for (com.github.javaparser.metamodel.PropertyMetaModel propertyMetaModel : nodeMetaModel.getAllPrope[...] ` -topatch--> `-` (null) 
+[ERROR] fr.inria.astor.core.validation.junit.JUnitProcessValidator.executeRegressionTesting(JUnitProcessValidator.java:182) - Any test case for regression testing
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:171) - Time Repair Loop (s): 59.556
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.atEnd(AstorCoreEngine.java:173) - generationsexecuted: 1
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:255) - 
+----SUMMARY_EXECUTION---
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.printFinalStatus(AstorCoreEngine.java:265) - End Repair Search: NOT Found solution
+[INFO ] fr.inria.main.evolution.AstorMain.run(AstorMain.java:190) - Time Total(s): 65.424
