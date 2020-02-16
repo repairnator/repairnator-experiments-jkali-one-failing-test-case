@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/metrics",
-  "failingModule": "/root/workspace/dropwizard/metrics/275831275/metrics-jvm",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 281,
-  "failing-test-cases": [
-    {
-      "className": "com.codahale.metrics.jvm.CpuTimeClockTest",
-      "failingMethods": [
-        "com.codahale.metrics.jvm.CpuTimeClockTest#cpuTimeClock"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:11 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:43:36 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 19697512,
+      "totalMemory": 96288768
+    },
+    "totalDuration": 381,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 104,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          104
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-275833145-20170915-123953-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-275833145-20170915-123953-firstCommit/metrics-graphite",
+    "overallMetrics": {
+      "numberRunning": 380,
+      "numberPassing": 379,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpecting:\n  \u003c1.505473818855E12\u003e\nto be close to:\n  \u003c1.505473819081E12\u003e\nby less than \u003c200.0\u003e but difference was \u003c226.0\u003e.\n(a difference of exactly \u003c200.0\u003e being considered valid)",
-          "isError": false
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.codahale.metrics.graphite.GraphiteRabbitMQTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.codahale.metrics.graphite.GraphiteRabbitMQTest",
+        "testMethod": "measuresFailures",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[1]\u003e but was:\u003c[0]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 21,
+    "numberPlugins": 0,
+    "numberSourceFiles": 122,
+    "numberTestFiles": 105,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  }
 }
