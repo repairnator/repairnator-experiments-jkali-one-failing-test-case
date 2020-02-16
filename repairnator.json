@@ -1,39 +1,119 @@
 {
-  "totalNumberSkippingTests": 23,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "square/okhttp",
-  "bugCommit": "https://github.com/square/okhttp/commit/9da7bdd4b2b3",
-  "failingModule": "/root/workspace/square/okhttp/253257730/okhttp-tests",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError",
-    "skipped"
-  ],
-  "totalNumberRunningTests": 1965,
-  "failing-test-cases": [
-    {
-      "className": "okhttp3.ConnectionCoalescingTest",
-      "failingMethods": [
-        "okhttp3.ConnectionCoalescingTest#coalescesConnectionsToRealSites",
-        "okhttp3.ConnectionCoalescingTest#prefersExistingCompatible"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:58 PM",
+    "reproductionDateEnd": "Feb 16, 2020 7:55:39 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 41574968,
+      "totalMemory": 159215616
+    },
+    "totalDuration": 5316,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 5207,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          5207
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-253257730-20170713-173806_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-253257730-20170713-173806_bugonly-firstCommit/mockwebserver",
+    "overallMetrics": {
+      "numberRunning": 30,
+      "numberPassing": 29,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c1\u003e but was:\u003c2\u003e",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 2,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "okhttp3.mockwebserver.MockWebServerTest",
+        "numberRunning": 28,
+        "numberPassing": 27,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "okhttp3.mockwebserver.MockWebServerTest",
+        "testMethod": "disconnectRequestHalfway",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c512.0\u003e but was:\u003c531.0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberPlugins": 0,
+    "numberSourceFiles": 183,
+    "numberTestFiles": 96,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  }
 }
