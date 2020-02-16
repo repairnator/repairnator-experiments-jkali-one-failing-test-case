@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "wojtekPi/TDD-training8",
-  "bugCommit": "https://github.com/wojtekPi/TDD-training8/compare/491f80e005ce...ea72a97bd558",
-  "failingModule": "/root/workspace/wojtekPi/TDD-training8/355493876",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 12,
-  "failing-test-cases": [
-    {
-      "className": "bank.PaymentServiceTest",
-      "failingMethods": [
-        "bank.PaymentServiceTest#shouldHaveCorrectAmountsAfterTransfer"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:02 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:27:40 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 51918312,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 37,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wojtekPi-TDD-training8-355493876-20180319-190249-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wojtekPi-TDD-training8-355493876-20180319-190249-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 12,
+      "numberPassing": 11,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[9]\u003e but was:\u003c[10]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "bank.PaymentServiceTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "bank.PaymentServiceTest",
+        "testMethod": "shouldHaveCorrectAmountsAfterTransfer",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[9]\u003e but was:\u003c[10]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  },
+  "commits": {}
 }
