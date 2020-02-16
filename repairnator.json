@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 11,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "jhy/jsoup",
-  "bugCommit": "https://github.com/jhy/jsoup/compare/1933e9727c69...26adfcbcb07b",
-  "failingModule": "/root/workspace/jhy/jsoup/378012145",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 669,
-  "failing-test-cases": [
-    {
-      "className": "org.jsoup.nodes.ElementTest",
-      "failingMethods": [
-        "org.jsoup.nodes.ElementTest#testPreviousElementSiblings"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-378012145-20180512-073608-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 658,
+      "numberPassing": 657,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 11,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[a]\u003e but was:\u003c[b]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jsoup.nodes.ElementTest",
+        "numberRunning": 93,
+        "numberPassing": 92,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jsoup.nodes.ElementTest",
+        "testMethod": "testPreviousElementSiblings",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[a]\u003e but was:\u003c[b]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 68,
+    "numberTestFiles": 46,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:01 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:19:16 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 397486392,
+      "totalMemory": 967139328
+    },
+    "totalDuration": 6072,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhy-jsoup-378012145-20180512-073608-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
