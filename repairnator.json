@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "scobos/PracticaFinal_ISI",
-  "bugCommit": "https://github.com/scobos/PracticaFinal_ISI/compare/cbe26ddbad45...10a740218a70",
-  "failingModule": "/root/workspace/scobos/PracticaFinal_ISI/331919708",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 21,
-  "failing-test-cases": [
-    {
-      "className": "urjc.isi.practicaFinal.AppTest",
-      "failingMethods": [
-        "urjc.isi.practicaFinal.AppTest#testCategoriesOf3"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:47 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:30:43 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 32687520,
+      "totalMemory": 108609536
+    },
+    "totalDuration": 234,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 147,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          147
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-scobos-PracticaFinal_ISI-331919708-20180122-183604_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-scobos-PracticaFinal_ISI-331919708-20180122-183604_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 21,
+      "numberPassing": 20,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[Movies release since 2000\u003cbr\u003eAction Movies\u003cbr\u003eOver 250,000 movies\u003cbr\u003e]\u003e but was:\u003c[No se han encontrado resultados para \u0027100 kilos de plomo (2002)\u0027]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "urjc.isi.practicaFinal.AppTest",
+        "numberRunning": 21,
+        "numberPassing": 20,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "urjc.isi.practicaFinal.AppTest",
+        "testMethod": "testCategoriesOf3",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[Movies release since 2000\u003cbr\u003eAction Movies\u003cbr\u003eOver 250,000 movies\u003cbr\u003e]\u003e but was:\u003c[No se han encontrado resultados para \u0027100 kilos de plomo (2002)\u0027]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 14,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  },
+  "commits": {}
 }
