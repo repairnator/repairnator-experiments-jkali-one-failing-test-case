@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:42 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:04:49 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 20575280,
+      "totalMemory": 110186496
+    },
+    "totalDuration": 184,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-milaboratory-milib-419167013-20180822-151320-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-milaboratory-milib-419167013-20180822-151320-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 448,
+      "numberPassing": 447,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 12,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.milaboratory.primitivio.PrimitivIOTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.milaboratory.primitivio.PrimitivIOTest",
+        "testMethod": "testNonReferenceSerialization1",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c40\u003e but was:\u003c60\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 292,
+    "numberTestFiles": 113,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {}
+}
