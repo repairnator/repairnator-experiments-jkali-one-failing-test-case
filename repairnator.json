@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "uwolfer/gerrit-rest-java-client",
-  "failingModule": "/root/workspace/uwolfer/gerrit-rest-java-client/352646963",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 188,
-  "failing-test-cases": [
-    {
-      "className": "com.urswolfer.gerrit.client.rest.http.projects.ProjectApiRestClientTest",
-      "failingMethods": [
-        "com.urswolfer.gerrit.client.rest.http.projects.ProjectApiRestClientTest#testProjectAccess"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:02 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:28:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 39243640,
+      "totalMemory": 106016768
+    },
+    "totalDuration": 63,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          17
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-uwolfer-gerrit-rest-java-client-352646963-20180313-034016-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-uwolfer-gerrit-rest-java-client-352646963-20180313-034016-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 190,
+      "numberPassing": 189,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "   Unexpected method call ProjectsParser.toJson(EasyMock for class com.google.gerrit.extensions.api.access.ProjectAccessInput):",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.urswolfer.gerrit.client.rest.http.projects.ProjectApiRestClientTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.urswolfer.gerrit.client.rest.http.projects.ProjectApiRestClientTest",
+        "testMethod": "testProjectAccess",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\n  Unexpected method call ProjectsParser.toJson(EasyMock for class com.google.gerrit.extensions.api.access.ProjectAccessInput):",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 219,
+    "numberTestFiles": 56,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  },
+  "commits": {}
 }
