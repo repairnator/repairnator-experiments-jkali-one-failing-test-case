@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "swagger-api/swagger-core",
-  "failingModule": "/root/workspace/swagger-api/swagger-core/309551512/modules/swagger-jaxrs2",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 371,
-  "failing-test-cases": [
-    {
-      "className": "io.swagger.v3.jaxrs2.petstore.PetResourceTest",
-      "failingMethods": [
-        "io.swagger.v3.jaxrs2.petstore.PetResourceTest#testOpenAPIDefinitionResource"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:06 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:29:37 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 45270472,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 149,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-swagger-api-swagger-core-309551512-20171130-162559_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-swagger-api-swagger-core-309551512-20171130-162559_bugonly-firstCommit/modules/swagger-jaxrs2",
+    "overallMetrics": {
+      "numberRunning": 371,
+      "numberPassing": 370,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected [openapi: 3.0.0\ninfo:\n  title: Pet Resource Example\n  description: API Definition\n  contact:\n    name: Fred\n    url: http://gigantic-server.com\n    email: Fred@gigagantic-server.com\n  license:\n    name: Apache 2.0\n    url: http://foo.bar\n  version: \"2.0\"\nexternalDocs:\n  description: definition docs desc\nservers:\n- url: http://foo\n  description: server 1\n  variables:\n    var1:\n      description: var 1\n      default: \"1\"\n      enum:\n      - \"1\"\n      - \"2\"\n    var2:\n      description: var 2\n      default: \"1\"\n      enum:\n      - \"1\"\n      - \"2\"\nsecurity:\n- req 1:\n  - a\n  - b\n- req 2:\n  - b\n  - c\ntags:\n- name: Tag 1\n  description: desc 1\n  externalDocs:\n    description: docs desc\n- name: Tag 2\n  description: desc 2\n  externalDocs:\n    description: docs desc 2\n- name: Tag 3\n] but found [openapi: 3.0.0\ninfo:\n  title: Pet Resource Example\n  description: API Definition\n  contact:\n    name: Fred\n    url: http://gigantic-server.com\n    email: Fred@gigagantic-server.com\n  license:\n    name: Apache 2.0\n    url: http://foo.bar\n  version: \"2.0\"\nexternalDocs:\n  description: definition docs desc\nservers:\n- url: http://foo\n  description: server 1\n  variables:\n    var1:\n      description: var 1\n      enum:\n      - \"1\"\n      - \"2\"\n      default: \"1\"\n    var2:\n      description: var 2\n      enum:\n      - \"1\"\n      - \"2\"\n      default: \"1\"\nsecurity:\n- req 1:\n  - a\n  - b\n- req 2:\n  - b\n  - c\ntags:\n- name: Tag 1\n  description: desc 1\n  externalDocs:\n    description: docs desc\n- name: Tag 2\n  description: desc 2\n  externalDocs:\n    description: docs desc 2\n- name: Tag 3\n]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.v3.jaxrs2.petstore.PetResourceTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.v3.jaxrs2.petstore.PetResourceTest",
+        "testMethod": "testOpenAPIDefinitionResource",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [openapi: 3.0.0\ninfo:\n  title: Pet Resource Example\n  description: API Definition\n  contact:\n    name: Fred\n    url: http://gigantic-server.com\n    email: Fred@gigagantic-server.com\n  license:\n    name: Apache 2.0\n    url: http://foo.bar\n  version: \"2.0\"\nexternalDocs:\n  description: definition docs desc\nservers:\n- url: http://foo\n  description: server 1\n  variables:\n    var1:\n      description: var 1\n      default: \"1\"\n      enum:\n      - \"1\"\n      - \"2\"\n    var2:\n      description: var 2\n      default: \"1\"\n      enum:\n      - \"1\"\n      - \"2\"\nsecurity:\n- req 1:\n  - a\n  - b\n- req 2:\n  - b\n  - c\ntags:\n- name: Tag 1\n  description: desc 1\n  externalDocs:\n    description: docs desc\n- name: Tag 2\n  description: desc 2\n  externalDocs:\n    description: docs desc 2\n- name: Tag 3\n] but found [openapi: 3.0.0\ninfo:\n  title: Pet Resource Example\n  description: API Definition\n  contact:\n    name: Fred\n    url: http://gigantic-server.com\n    email: Fred@gigagantic-server.com\n  license:\n    name: Apache 2.0\n    url: http://foo.bar\n  version: \"2.0\"\nexternalDocs:\n  description: definition docs desc\nservers:\n- url: http://foo\n  description: server 1\n  variables:\n    var1:\n      description: var 1\n      enum:\n      - \"1\"\n      - \"2\"\n      default: \"1\"\n    var2:\n      description: var 2\n      enum:\n      - \"1\"\n      - \"2\"\n      default: \"1\"\nsecurity:\n- req 1:\n  - a\n  - b\n- req 2:\n  - b\n  - c\ntags:\n- name: Tag 1\n  description: desc 1\n  externalDocs:\n    description: docs desc\n- name: Tag 2\n  description: desc 2\n  externalDocs:\n    description: docs desc 2\n- name: Tag 3\n]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 180,
+    "numberTestFiles": 222,
+    "numberLibrariesFailingModule": 42,
+    "numberLines": 0
+  },
+  "commits": {}
 }
