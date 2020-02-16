@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:42 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:41 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25313992,
+      "totalMemory": 91869184
+    },
+    "totalDuration": 118,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mhalasa-ParkingMeter-411145289-20180802-083239-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mhalasa-ParkingMeter-411145289-20180802-083239-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 16,
+      "numberPassing": 15,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "touk.parkingmeter.controller.DriverControllerIntegrationTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "touk.parkingmeter.controller.DriverControllerIntegrationTest",
+        "testMethod": "gettingTicketThatDoNotExistShouldReturnNotFound",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c404\u003e but was:\u003c200\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 20,
+    "numberTestFiles": 6,
+    "numberLibrariesFailingModule": 76,
+    "numberLines": 0
+  },
+  "commits": {}
+}
