@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "diakogiannis/EasyDropboxFileHandler",
-  "bugCommit": "https://github.com/diakogiannis/EasyDropboxFileHandler/compare/a75b6ee1d11a3864333e35a12e39a8b1f57223ca...cffe6285b053d994d7780a27b56a5af87a5863f7",
-  "failingModule": "/root/workspace/diakogiannis/EasyDropboxFileHandler/397403508",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 3,
-  "failing-test-cases": [
-    {
-      "className": "com.diakogiannis.alexius.dropbox.files.UtilsTest",
-      "failingMethods": [
-        "testCompaireBrokenFiles"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:38:51 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 21535936,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 103,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          34
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-diakogiannis-EasyDropboxFileHandler-397403508-20180627-172852-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-diakogiannis-EasyDropboxFileHandler-397403508-20180627-172852-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 3,
+      "numberPassing": 2,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Expected exception: java.io.IOException",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.diakogiannis.alexius.dropbox.files.UtilsTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.diakogiannis.alexius.dropbox.files.UtilsTest",
+        "testMethod": "testCompaireBrokenFiles",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: java.io.IOException",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 5,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {}
 }
