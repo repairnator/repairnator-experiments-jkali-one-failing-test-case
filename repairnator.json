@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 19,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/1bced1a2455a...78849746392f",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/353829213/languagetool-language-modules/nl",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 519,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.nl.DutchPatternRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.nl.DutchPatternRuleTest#testRules"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:30 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:52:27 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 66688760,
+      "totalMemory": 256667648
+    },
+    "totalDuration": 3053,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2401,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2401
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-353829213-20180315-144632-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-353829213-20180315-144632-firstCommit/languagetool-language-modules/nl",
+    "overallMetrics": {
+      "numberRunning": 500,
+      "numberPassing": 499,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Dutch: Incorrect suggestions: [korte, beperkte] !\u003d [Korte, korte, beperkte] for rule SUMMIER[1] on input: Mijn summiere terreinkennis blijkt een bondgenoot. expected:\u003c[korte, beperkte]\u003e but was:\u003c[Korte, korte, beperkte]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.nl.DutchPatternRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.nl.DutchPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Dutch: Incorrect suggestions: [korte, beperkte] !\u003d [Korte, korte, beperkte] for rule SUMMIER[1] on input: Mijn summiere terreinkennis blijkt een bondgenoot. expected:\u003c[korte, beperkte]\u003e but was:\u003c[Korte, korte, beperkte]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 490,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  },
+  "commits": {}
 }
