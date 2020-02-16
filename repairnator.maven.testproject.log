@@ -1,0 +1,294 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building atom-jaxb 0.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ atom-jaxb ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (prepare-agent) @ atom-jaxb ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ atom-jaxb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ atom-jaxb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- assertj-assertions-generator-maven-plugin:2.1.0:generate-assertions (generate-assertions) @ atom-jaxb ---
+[INFO] 
+
+====================================
+AssertJ assertions generation report
+====================================
+
+--- Generator input parameters ---
+
+Generating AssertJ assertions for classes in following packages and subpackages:
+- fr.vidal.oss.jaxb.atom.core
+
+Input classes excluded from assertions generation:
+- fr.vidal.oss.jaxb.atom.core.AuthorAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractAuthorAssert
+- fr.vidal.oss.jaxb.atom.core.ContributorAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractContributorAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractObjectFactoryAssert
+- fr.vidal.oss.jaxb.atom.core.ContributorBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractContributorBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.NamespaceAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractNamespaceAssert
+- fr.vidal.oss.jaxb.atom.core.AuthorBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractAuthorBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.SimpleElementBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractSimpleElementBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractDateAdapterAssert
+- fr.vidal.oss.jaxb.atom.core.AdditionalElementAdapterAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractAdditionalElementAdapterAssert
+- fr.vidal.oss.jaxb.atom.core.DateAdapterAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractSimpleElementAssert
+- fr.vidal.oss.jaxb.atom.core.AdditionalElementAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractAdditionalElementAssert
+- fr.vidal.oss.jaxb.atom.core.AtomJaxbAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractAtomJaxbAssert
+- fr.vidal.oss.jaxb.atom.core.AttributeAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractAttributeAssert
+- fr.vidal.oss.jaxb.atom.core.AttributeBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractAttributeBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.CategoryAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractCategoryAssert
+- fr.vidal.oss.jaxb.atom.core.CategoryBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractCategoryBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.ContentTypeAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractContentTypeAssert
+- fr.vidal.oss.jaxb.atom.core.ContentTypeBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractContentTypeBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.ContentsAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractContentsAssert
+- fr.vidal.oss.jaxb.atom.core.ContentsBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractContentsBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.EntryAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractEntryAssert
+- fr.vidal.oss.jaxb.atom.core.EntryBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractEntryBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.FeedAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractFeedAssert
+- fr.vidal.oss.jaxb.atom.core.FeedBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractFeedBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.LinkAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractLinkAssert
+- fr.vidal.oss.jaxb.atom.core.LinkBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractLinkBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.LinkRelAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractLinkRelAssert
+- fr.vidal.oss.jaxb.atom.core.NamespaceBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractNamespaceBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.ObjectFactoryAssert
+- fr.vidal.oss.jaxb.atom.core.SimpleElementAssert
+- fr.vidal.oss.jaxb.atom.core.StructuredElementAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractStructuredElementAssert
+- fr.vidal.oss.jaxb.atom.core.StructuredElementBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractStructuredElementBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.SummaryAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractSummaryAssert
+- fr.vidal.oss.jaxb.atom.core.SummaryBuilderAssert
+- fr.vidal.oss.jaxb.atom.core.AbstractSummaryBuilderAssert
+
+--- Generator results ---
+
+Directory where custom assertions files have been generated:
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions
+
+Custom assertions files generated:
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractAdditionalElementAdapterAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractAdditionalElementAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractAtomJaxbAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractAttributeAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractAttributeBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractAuthorAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractAuthorBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractCategoryAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractCategoryBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractContentTypeAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractContentTypeBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractContentsAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractContentsBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractContributorAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractContributorBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractDateAdapterAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractEntryAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractEntryBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractFeedAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractFeedBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractLinkAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractLinkBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractLinkRelAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractNamespaceAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractNamespaceBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractObjectFactoryAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractSimpleElementAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractSimpleElementBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractStructuredElementAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractStructuredElementBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractStructuredElementTestAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractSummaryAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AbstractSummaryBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AdditionalElementAdapterAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AdditionalElementAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AtomJaxbAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AttributeAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AttributeBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AuthorAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/AuthorBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/CategoryAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/CategoryBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/ContentTypeAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/ContentTypeBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/ContentsAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/ContentsBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/ContributorAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/ContributorBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/DateAdapterAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/EntryAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/EntryBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/FeedAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/FeedBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/LinkAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/LinkBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/LinkRelAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/NamespaceAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/NamespaceBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/ObjectFactoryAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/SimpleElementAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/SimpleElementBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/StructuredElementAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/StructuredElementBuilderAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/StructuredElementTestAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/SummaryAssert.java
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/core/SummaryBuilderAssert.java
+
+Assertions entry point class has been generated in file:
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/Assertions.java
+
+BddAssertions entry point class has been generated in file:
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/BddAssertions.java
+
+SoftAssertions entry point class has been generated in file:
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/SoftAssertions.java
+
+JUnitSoftAssertions entry point class has been generated in file:
+- /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/generated-test-sources/assertj-assertions/fr/vidal/oss/jaxb/atom/JUnitSoftAssertions.java
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ atom-jaxb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ atom-jaxb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 74 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ atom-jaxb ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 6.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 108.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 1185.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running fr.vidal.oss.jaxb.atom.core.StructuredElementTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 sec - in fr.vidal.oss.jaxb.atom.core.StructuredElementTest
+Running fr.vidal.oss.jaxb.atom.MarshallingTest
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.995 sec <<< FAILURE! - in fr.vidal.oss.jaxb.atom.MarshallingTest
+marshalls_custom_structured_element_with_children_duplicate(fr.vidal.oss.jaxb.atom.MarshallingTest)  Time elapsed: 0.058 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...01:00:00Z</updated>
+[    <vidal:structured xmlns:vidal="http://api.vidal.net/-/spec/vidal-api/1.0/">
+        Text one
+        Text two
+        Text three
+    </vidal:structured>
+]</feed>
+"> but was:<...01:00:00Z</updated>
+[]</feed>
+">
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at fr.vidal.oss.jaxb.atom.MarshallingTest.marshalls_custom_structured_element_with_children_duplicate(MarshallingTest.java:406)
+
+Running fr.vidal.oss.jaxb.atom.UnmarshallingTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in fr.vidal.oss.jaxb.atom.UnmarshallingTest
+
+Results :
+
+Failed tests: 
+  MarshallingTest.marshalls_custom_structured_element_with_children_duplicate:406 expected:<...01:00:00Z</updated>
+[    <vidal:structured xmlns:vidal="http://api.vidal.net/-/spec/vidal-api/1.0/">
+        Text one
+        Text two
+        Text three
+    </vidal:structured>
+]</feed>
+"> but was:<...01:00:00Z</updated>
+[]</feed>
+">
+
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.053 s
+[INFO] Finished at: 2020-02-16T18:27:45+01:00
+[INFO] Final Memory: 25M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project atom-jaxb: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project atom-jaxb: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-vidal-community-atom-jaxb-380234297-20180517-162007-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:254)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
