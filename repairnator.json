@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/metrics",
-  "bugCommit": "https://github.com/dropwizard/metrics/compare/23c0593a4957...cd5d0c15c3d8",
-  "failingModule": "/root/workspace/dropwizard/metrics/327280526/metrics-jvm",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 297,
-  "failing-test-cases": [
-    {
-      "className": "io.dropwizard.metrics5.jvm.CpuTimeClockTest",
-      "failingMethods": [
-        "io.dropwizard.metrics5.jvm.CpuTimeClockTest#cpuTimeClock"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:11 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:42:14 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 7228104,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 299,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327280526-20180110-163623_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327280526-20180110-163623_bugonly-firstCommit/metrics-httpasyncclient",
+    "overallMetrics": {
+      "numberRunning": 411,
+      "numberPassing": 410,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpecting:\n  \u003c1.515600685662E12\u003e\nto be close to:\n  \u003c1.51560068623E12\u003e\nby less than \u003c200.0\u003e but difference was \u003c568.0\u003e.\n(a difference of exactly \u003c200.0\u003e being considered valid)",
-          "isError": false
+          "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest",
+        "testMethod": "timerIsStoppedCorrectly",
+        "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+        "detail": "\nWanted but not invoked:\ncontext.stop();\n-\u003e at io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest.timerIsStoppedCorrectly(InstrumentedHttpClientsTimerTest.java:72)\nActually, there were zero interactions with this mock.\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 23,
+    "numberPlugins": 0,
+    "numberSourceFiles": 132,
+    "numberTestFiles": 111,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {}
 }
