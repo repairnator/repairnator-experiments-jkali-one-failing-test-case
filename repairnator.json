@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:57 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:42:41 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 46951752,
+      "totalMemory": 106016768
+    },
+    "totalDuration": 282,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 218,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          218
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesward-osgi-version-maven-plugin-420440299-20180825-112219-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jamesward-osgi-version-maven-plugin-420440299-20180825-112219-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 1,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.jamesward.osgiversion.UnsnapshotMojoTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.jamesward.osgiversion.UnsnapshotMojoTest",
+        "testMethod": "testPlugin",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "expected:\u003c...Version: 1.2.3.alpha-1\nBundle-Description: \n-resourceonly:true\nWebJars-Resource:\\\n/META-INF/resources/webjars/bar/1.2.3-alpha-1,\\\n/webjars-requirejs.js\nProvide-Capability: foo;bar:List\u003cString\u003e\u003d1.2.3.alpha-1\nRequire-Capability: foobar;filter:\u003d\"(barfoo\u003d2.1.4.0)\"\u003e but was:\u003c...SymbolicName: foo.bar\nBundle-Version: 1.2.3.alpha1\n-resourceonly:true\nWebJars-Resource:\\\n/META-INF/resources/webjars/bar/1.2.3.alpha1,\\\n/webjars-requirejs.js\nProvide-Capability: foo;bar:List\u003cString\u003e\u003d1.2.3.alpha1\n\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 39,
+    "numberLines": 0
+  }
+}
