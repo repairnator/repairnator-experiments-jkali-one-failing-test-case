@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "jcabi/jcabi-matchers",
-  "bugCommit": "https://github.com/jcabi/jcabi-matchers/compare/32292f21ab1d7f565aacdcac170895fc3ebc3402...3309069137947c148885770b05b0e63b00547d81",
-  "failingModule": "/root/workspace/jcabi/jcabi-matchers/365815486",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 33,
-  "failing-test-cases": [
-    {
-      "className": "com.jcabi.matchers.W3CMatchersTest",
-      "failingMethods": [
-        "com.jcabi.matchers.W3CMatchersTest#matchesValidHtml"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:58 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:47:05 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 26996600,
+      "totalMemory": 110477312
+    },
+    "totalDuration": 544,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 123,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          123
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jcabi-jcabi-matchers-365815486-20180412-230511-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jcabi-jcabi-matchers-365815486-20180412-230511-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 33,
+      "numberPassing": 32,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: W3C validatorDefaultHtmlValidator(uri\u003dhttp://validator.w3.org/nu/?out\u003dxml\u0026showsource\u003dyes)\n     but: was \"\u003c!DOCTYPE html\u003e\u003chtml\u003e\u003chead\u003e\u003cmeta charset\u003d\u0027UTF-8\u0027/\u003e\u003ctitle\u003ehey\u003c/title\u003e\u003c/head\u003e\u003cbody\u003e\u003c/body\u003e\u003c/html\u003e\"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.jcabi.matchers.W3CMatchersTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.jcabi.matchers.W3CMatchersTest",
+        "testMethod": "matchesValidHtml",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: W3C validatorDefaultHtmlValidator(uri\u003dhttp://validator.w3.org/nu/?out\u003dxml\u0026showsource\u003dyes)\n     but: was \"\u003c!DOCTYPE html\u003e\u003chtml\u003e\u003chead\u003e\u003cmeta charset\u003d\u0027UTF-8\u0027/\u003e\u003ctitle\u003ehey\u003c/title\u003e\u003c/head\u003e\u003cbody\u003e\u003c/body\u003e\u003c/html\u003e\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 12,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 41,
+    "numberLines": 0
+  },
+  "commits": {}
 }
