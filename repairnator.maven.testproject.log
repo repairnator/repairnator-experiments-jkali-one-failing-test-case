@@ -1,0 +1,202 @@
+Feb 16, 2020 3:02:33 PM com.hazelcast.instance.AddressPicker
+INFO: [LOCAL] [dev] [3.10.2] Prefer IPv4 stack is true.
+Feb 16, 2020 3:02:33 PM com.hazelcast.instance.AddressPicker
+INFO: [LOCAL] [dev] [3.10.2] Picked [172.27.245.20]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+Feb 16, 2020 3:02:33 PM com.hazelcast.system
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Hazelcast 3.10.2 (20180606 - 84cfd49) starting at [172.27.245.20]:5701
+Feb 16, 2020 3:02:33 PM com.hazelcast.system
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Copyright (c) 2008-2018, Hazelcast, Inc. All Rights Reserved.
+Feb 16, 2020 3:02:33 PM com.hazelcast.system
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Configured Hazelcast Serialization version: 1
+Feb 16, 2020 3:02:33 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] A non-empty group password is configured for the Hazelcast member. Starting with Hazelcast version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+Feb 16, 2020 3:02:34 PM com.hazelcast.spi.impl.operationservice.impl.BackpressureRegulator
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Backpressure is disabled
+Feb 16, 2020 3:02:34 PM com.hazelcast.spi.impl.operationservice.impl.InboundResponseHandlerSupplier
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Running with 2 response threads
+Feb 16, 2020 3:02:36 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Creating MulticastJoiner
+Feb 16, 2020 3:02:36 PM com.hazelcast.spi.impl.operationexecutor.impl.OperationExecutorImpl
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Starting 2 partition threads and 3 generic threads (1 dedicated for priority tasks)
+Feb 16, 2020 3:02:36 PM com.hazelcast.internal.diagnostics.Diagnostics
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+Feb 16, 2020 3:02:36 PM com.hazelcast.core.LifecycleService
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] [172.27.245.20]:5701 is STARTING
+Feb 16, 2020 3:02:39 PM com.hazelcast.system
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Cluster version set to 3.10
+Feb 16, 2020 3:02:39 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] 
+
+Members {size:1, ver:1} [
+	Member [172.27.245.20]:5701 - 585a6bb3-2bd0-47f8-b5b3-047a328c264f this
+]
+
+Feb 16, 2020 3:02:39 PM com.hazelcast.core.LifecycleService
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] [172.27.245.20]:5701 is STARTED
+Feb 16, 2020 3:02:39 PM com.hazelcast.instance.AddressPicker
+INFO: [LOCAL] [dev] [3.10.2] Prefer IPv4 stack is true.
+Feb 16, 2020 3:02:40 PM com.hazelcast.instance.AddressPicker
+INFO: [LOCAL] [dev] [3.10.2] Picked [172.27.245.20]:5702, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5702], bind any local is true
+Feb 16, 2020 3:02:40 PM com.hazelcast.internal.diagnostics.HealthMonitor
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] processors=1, physical.memory.total=125.2G, physical.memory.free=106.4G, swap.space.total=128.0M, swap.space.free=74.2M, heap.memory.used=9.0M, heap.memory.free=58.8M, heap.memory.total=67.9M, heap.memory.max=1.1G, heap.memory.used/total=12.37%, heap.memory.used/max=0.78[User{username='user', age=19, active=true}]
+[User{username='user', age=19, active=true}]
+Got message Hello to distributed world
+locked
+new value:1
+10
+message to any node
+message to first member
+message to second member
+message to all members
+message to all members
+message to the member that owns the following key
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.999 sec <<< FAILURE! - in io.opentracing.contrib.hazelcast.TracingTest
+testEntryProcessor(io.opentracing.contrib.hazelcast.TracingTest)  Time elapsed: 0.029 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<5>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at io.opentracing.contrib.hazelcast.TracingTest.testEntryProcessor(TracingTest.java:104)
+
+
+Results :
+
+Failed tests: 
+  TracingTest.testEntryProcessor:104 expected:<4> but was:<5>
+
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 24.902 s
+[INFO] Finished at: 2020-02-16T15:02:52+01:00
+[INFO] Final Memory: 17M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project opentracing-hazelcast: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project opentracing-hazelcast: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+51 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Shutting down multicast service...
+Feb 16, 2020 3:02:51 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Shutting down connection manager...
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnection
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Connection[id=1, /172.27.245.20:5701->/172.27.245.20:47041, endpoint=[172.27.245.20]:5702, alive=false, type=MEMBER] closed. Reason: TcpIpConnectionManager is stopping
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnection
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Connection[id=1, /172.27.245.20:47041->/172.27.245.20:5701, endpoint=[172.27.245.20]:5701, alive=false, type=MEMBER] closed. Reason: Connection closed by the other side
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Connecting to /172.27.245.20:5701, timeout: 0, bind-any: true
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Could not connect to: /172.27.245.20:5701. Reason: SocketException[Connection refused to address /172.27.245.20:5701]
+Feb 16, 2020 3:02:51 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Shutting down node engine...
+Feb 16, 2020 3:02:51 PM com.hazelcast.instance.NodeExtension
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Destroying node NodeExtension.
+Feb 16, 2020 3:02:51 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] Hazelcast Shutdown is completed in 986 ms.
+Feb 16, 2020 3:02:51 PM com.hazelcast.core.LifecycleService
+INFO: [172.27.245.20]:5701 [dev] [3.10.2] [172.27.245.20]:5701 is SHUTDOWN
+Feb 16, 2020 3:02:51 PM com.hazelcast.core.LifecycleService
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] [172.27.245.20]:5702 is SHUTTING_DOWN
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Connecting to /172.27.245.20:5701, timeout: 0, bind-any: true
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Could not connect to: /172.27.245.20:5701. Reason: SocketException[Connection refused to address /172.27.245.20:5701]
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Connecting to /172.27.245.20:5701, timeout: 0, bind-any: true
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Could not connect to: /172.27.245.20:5701. Reason: SocketException[Connection refused to address /172.27.245.20:5701]
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Connecting to /172.27.245.20:5701, timeout: 0, bind-any: true
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Could not connect to: /172.27.245.20:5701. Reason: SocketException[Connection refused to address /172.27.245.20:5701]
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Connecting to /172.27.245.20:5701, timeout: 0, bind-any: true
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Could not connect to: /172.27.245.20:5701. Reason: SocketException[Connection refused to address /172.27.245.20:5701]
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Connecting to /172.27.245.20:5701, timeout: 0, bind-any: true
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Could not connect to: /172.27.245.20:5701. Reason: SocketException[Connection refused to address /172.27.245.20:5701]
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Connecting to /172.27.245.20:5701, timeout: 0, bind-any: true
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Could not connect to: /172.27.245.20:5701. Reason: SocketException[Connection refused to address /172.27.245.20:5701]
+Feb 16, 2020 3:02:51 PM com.hazelcast.nio.tcp.TcpIpConnectionErrorHandler
+WARNING: [172.27.245.20]:5702 [dev] [3.10.2] Removing connection to endpoint [172.27.245.20]:5701 Cause => java.net.SocketException {Connection refused to address /172.27.245.20:5701}, Error-Count: 5
+Feb 16, 2020 3:02:51 PM com.hazelcast.internal.cluster.impl.MembershipManager
+WARNING: [172.27.245.20]:5702 [dev] [3.10.2] Member [172.27.245.20]:5701 - 585a6bb3-2bd0-47f8-b5b3-047a328c264f is suspected to be dead for reason: No connection
+Feb 16, 2020 3:02:51 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Starting mastership claim process...
+Feb 16, 2020 3:02:51 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Local MembersView{version=2, members=[MemberInfo{address=[172.27.245.20]:5701, uuid=585a6bb3-2bd0-47f8-b5b3-047a328c264f, liteMember=false, memberListJoinVersion=1}, MemberInfo{address=[172.27.245.20]:5702, uuid=467a3c6b-709a-42f0-a8bc-7ce6af3eb80d, liteMember=false, memberListJoinVersion=2}]} with suspected members: [[172.27.245.20]:5701] and initial addresses to ask: []
+Feb 16, 2020 3:02:51 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] 
+
+Members {size:1, ver:3} [
+	Member [172.27.245.20]:5702 - 467a3c6b-709a-42f0-a8bc-7ce6af3eb80d this
+]
+
+Feb 16, 2020 3:02:51 PM com.hazelcast.internal.cluster.impl.MembershipManager
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Mastership is claimed with: MembersView{version=3, members=[MemberInfo{address=[172.27.245.20]:5702, uuid=467a3c6b-709a-42f0-a8bc-7ce6af3eb80d, liteMember=false, memberListJoinVersion=2}]}
+Feb 16, 2020 3:02:51 PM com.hazelcast.internal.partition.InternalPartitionService
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Fetching most recent partition table! my version: 950
+Feb 16, 2020 3:02:51 PM com.hazelcast.internal.partition.InternalPartitionService
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Most recent partition table version: 950
+Feb 16, 2020 3:02:51 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Partition balance is ok, no need to re-partition cluster data... 
+Feb 16, 2020 3:02:52 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Shutdown request of [172.27.245.20]:5702 is handled
+Feb 16, 2020 3:02:52 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Shutting down multicast service...
+Feb 16, 2020 3:02:52 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Shutting down connection manager...
+Feb 16, 2020 3:02:52 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Shutting down node engine...
+Feb 16, 2020 3:02:52 PM com.hazelcast.instance.NodeExtension
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Destroying node NodeExtension.
+Feb 16, 2020 3:02:52 PM com.hazelcast.instance.Node
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] Hazelcast Shutdown is completed in 1042 ms.
+Feb 16, 2020 3:02:52 PM com.hazelcast.core.LifecycleService
+INFO: [172.27.245.20]:5702 [dev] [3.10.2] [172.27.245.20]:5702 is SHUTDOWN
