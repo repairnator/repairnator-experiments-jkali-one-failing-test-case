@@ -1,0 +1,188 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ImgLib2 Algorithms 0.9.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-rules) @ imglib2-algorithm ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:regex-property (sanitize-version) @ imglib2-algorithm ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ imglib2-algorithm ---
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit
+[INFO] Storing buildNumber: 37f6371b3c3416bb559bd21f8fb555d7457f6de1 at timestamp: 1581849547486
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- scijava-maven-plugin:1.0.0:set-rootdir (set-rootdir) @ imglib2-algorithm ---
+[INFO] Setting rootdir: /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ imglib2-algorithm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ imglib2-algorithm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ imglib2-algorithm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ imglib2-algorithm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ imglib2-algorithm ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 9.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 92.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1227.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.imglib2.algorithm.hough.HoughLineTransformTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.427 sec <<< FAILURE! - in net.imglib2.algorithm.hough.HoughLineTransformTest
+testHoughLineTransformToTarget(net.imglib2.algorithm.hough.HoughLineTransformTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1.0> but was:<0.0>
+	at net.imglib2.algorithm.hough.HoughLineTransformTest.testHoughLineTransformToTarget(HoughLineTransformTest.java:137)
+
+Running net.imglib2.algorithm.neighborhood.PairOfPointsShapeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in net.imglib2.algorithm.neighborhood.PairOfPointsShapeTest
+Running net.imglib2.algorithm.neighborhood.DiamondNeighborhoodTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in net.imglib2.algorithm.neighborhood.DiamondNeighborhoodTest
+Running net.imglib2.algorithm.neighborhood.HypersphereShapeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in net.imglib2.algorithm.neighborhood.HypersphereShapeTest
+Running net.imglib2.algorithm.neighborhood.RectangleShapeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in net.imglib2.algorithm.neighborhood.RectangleShapeTest
+Running net.imglib2.algorithm.neighborhood.DiamondStrelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.615 sec - in net.imglib2.algorithm.neighborhood.DiamondStrelTest
+Running net.imglib2.algorithm.neighborhood.CenteredRectangleShapeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in net.imglib2.algorithm.neighborhood.CenteredRectangleShapeTest
+Running net.imglib2.algorithm.neighborhood.DiamondTipsShapeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in net.imglib2.algorithm.neighborhood.DiamondTipsShapeTest
+Running net.imglib2.algorithm.neighborhood.HorizontalLineShapeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in net.imglib2.algorithm.neighborhood.HorizontalLineShapeTest
+Running net.imglib2.algorithm.neighborhood.RandomAccessiblePairWithNeighborhoodTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.imglib2.algorithm.neighborhood.RandomAccessiblePairWithNeighborhoodTest
+Running net.imglib2.algorithm.neighborhood.PeriodicLineNeighborhoodTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in net.imglib2.algorithm.neighborhood.PeriodicLineNeighborhoodTest
+Running net.imglib2.algorithm.neighborhood.SquareStrelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.235 sec - in net.imglib2.algorithm.neighborhood.SquareStrelTest
+Running net.imglib2.algorithm.neighborhood.DiamondShapeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in net.imglib2.algorithm.neighborhood.DiamondShapeTest
+Running net.imglib2.algorithm.neighborhood.PeriodicLineShapeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in net.imglib2.algorithm.neighborhood.PeriodicLineShapeTest
+Running net.imglib2.algorithm.neighborhood.HorizontalLineNeighborhoodTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in net.imglib2.algorithm.neighborhood.HorizontalLineNeighborhoodTest
+Running net.imglib2.algorithm.neighborhood.DiamondTipsNeighorhoodTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in net.imglib2.algorithm.neighborhood.DiamondTipsNeighorhoodTest
+Running net.imglib2.algorithm.neighborhood.ShapeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in net.imglib2.algorithm.neighborhood.ShapeTest
+Running net.imglib2.algorithm.gradient.PartialDerivativeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in net.imglib2.algorithm.gradient.PartialDerivativeTest
+Running net.imglib2.algorithm.morphology.DilationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 sec - in net.imglib2.algorithm.morphology.DilationTest
+Running net.imglib2.algorithm.morphology.distance.DistanceTransformTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 sec - in net.imglib2.algorithm.morphology.distance.DistanceTransformTest
+Running net.imglib2.algorithm.morphology.ErosionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 sec - in net.imglib2.algorithm.morphology.ErosionTest
+Running net.imglib2.algorithm.morphology.Table2dTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in net.imglib2.algorithm.morphology.Table2dTest
+Running net.imglib2.algorithm.kdtree.VolumetricSearchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in net.imglib2.algorithm.kdtree.VolumetricSearchTest
+Running net.imglib2.algorithm.localextrema.SubpixelLocalizationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in net.imglib2.algorithm.localextrema.SubpixelLocalizationTest
+Running net.imglib2.algorithm.localextrema.LocalExtremaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in net.imglib2.algorithm.localextrema.LocalExtremaTest
+Running net.imglib2.algorithm.fill.FloodFillTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.342 sec - in net.imglib2.algorithm.fill.FloodFillTest
+Running net.imglib2.algorithm.hessian.HessianMatrixTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in net.imglib2.algorithm.hessian.HessianMatrixTest
+Running net.imglib2.algorithm.hessian.HessianMatrixEigenValuesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in net.imglib2.algorithm.hessian.HessianMatrixEigenValuesTest
+Running net.imglib2.algorithm.hessian.ScaleAsFunctionOfPositionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.imglib2.algorithm.hessian.ScaleAsFunctionOfPositionTest
+Running net.imglib2.algorithm.integral.IntegralImgTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.imglib2.algorithm.integral.IntegralImgTest
+Running net.imglib2.algorithm.region.CircleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.478 sec - in net.imglib2.algorithm.region.CircleTest
+Running net.imglib2.algorithm.region.EllipseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in net.imglib2.algorithm.region.EllipseTest
+Running net.imglib2.algorithm.util.GridsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in net.imglib2.algorithm.util.GridsTest
+Running net.imglib2.algorithm.util.ParallelizeOverBlocksTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 sec - in net.imglib2.algorithm.util.ParallelizeOverBlocksTest
+Running tests.labeling.ConnectedComponentsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec - in tests.labeling.ConnectedComponentsTest
+Running tests.labeling.AllConnectedComponentsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec - in tests.labeling.AllConnectedComponentsTest
+Running tests.labeling.WatershedTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in tests.labeling.WatershedTest
+
+Results :
+
+Failed tests: 
+  HoughLineTransformTest.testHoughLineTransformToTarget:137 expected:<1.0> but was:<0.0>
+
+Tests run: 145, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.826 s
+[INFO] Finished at: 2020-02-16T11:39:19+01:00
+[INFO] Final Memory: 25M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project imglib2-algorithm: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project imglib2-algorithm: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-algorithm-379742927-20180516-162308-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
