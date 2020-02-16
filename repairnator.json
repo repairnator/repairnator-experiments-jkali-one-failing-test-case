@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:23 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:29:24 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 142372528,
+      "totalMemory": 321093632
+    },
+    "totalDuration": 179,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 97,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          97
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-princesslana-ErisCasper.java-403251949-20180712-205559-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-princesslana-ErisCasper.java-403251949-20180712-205559-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 61,
+      "numberPassing": 60,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.princesslana.eriscasper.gateway.TestGateway",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.princesslana.eriscasper.gateway.TestGateway",
+        "testMethod": "connect_whenHelloPayload_shouldIdentify",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting\n  \u003cIdentifyPayload{token\u003dhKqlVQ5NictH2JzTjYHbOVY5ZwnkIzzY, properties\u003dConnectionPropertiesPayload{os\u003dLinux, browser\u003dErisCasper.java, device\u003dErisCasper.java}}\u003e\nto have a property or a field named \u003c\"token\"\u003e with value\n  \u003cBotToken{unwrap\u003dhKqlVQ5NictH2JzTjYHbOVY5ZwnkIzzY}\u003e\nbut value was:\n  \u003c\"hKqlVQ5NictH2JzTjYHbOVY5ZwnkIzzY\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 61,
+    "numberTestFiles": 16,
+    "numberLibrariesFailingModule": 41,
+    "numberLines": 0
+  },
+  "commits": {}
+}
