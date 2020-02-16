@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "mmirwaldt/jcomparison",
-  "bugCommit": "https://github.com/mmirwaldt/jcomparison/compare/bc7563352c1b...384709d9cb1e",
-  "failingModule": "/root/workspace/mmirwaldt/jcomparison/361905225/object-impl",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.opentest4j.AssertionFailedError:"
-  ],
-  "totalNumberRunningTests": 969,
-  "failing-test-cases": [
-    {
-      "className": "net.mirwaldt.jcomparison.object.impl.BasicObjectComparatorTest",
-      "failingMethods": [
-        "net.mirwaldt.jcomparison.object.impl.BasicObjectComparatorTest#test_basicObjectComparison"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:42 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:23 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 17300776,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 98,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 16,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          16
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mmirwaldt-jcomparison-361905225-20180404-015610-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mmirwaldt-jcomparison-361905225-20180404-015610-firstCommit/object-impl",
+    "overallMetrics": {
+      "numberRunning": 969,
+      "numberPassing": 968,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "org.opentest4j.AssertionFailedError:",
-          "isError": false
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.mirwaldt.jcomparison.object.impl.BasicObjectComparatorTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.mirwaldt.jcomparison.object.impl.BasicObjectComparatorTest",
+        "testMethod": "test_basicObjectComparison",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 261,
+    "numberTestFiles": 78,
+    "numberLibrariesFailingModule": 20,
+    "numberLines": 0
+  }
 }
