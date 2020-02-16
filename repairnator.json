@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 10,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/922bdda6566c...0c8718e0c39a",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/287652913/languagetool-language-modules/en",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 287,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.en.EnglishPatternRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.en.EnglishPatternRuleTest#testRules"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-287662490-20171013-195127-firstCommit/languagetool-language-modules/en",
+    "overallMetrics": {
+      "numberRunning": 277,
+      "numberPassing": 276,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 10,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "English: Incorrect suggestions: [explain to you] !\u003d [explained to you] for rule EXPLAIN_TO[1] on input: I’ll explained you why I like it. expected:\u003c[explain to you]\u003e but was:\u003c[explained to you]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.en.EnglishPatternRuleTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.en.EnglishPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "English: Incorrect suggestions: [explain to you] !\u003d [explained to you] for rule EXPLAIN_TO[1] on input: I’ll explained you why I like it. expected:\u003c[explain to you]\u003e but was:\u003c[explained to you]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 693,
+    "numberTestFiles": 455,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:07 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:00:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 136414256,
+      "totalMemory": 419233792
+    },
+    "totalDuration": 4960,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4704,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4704
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-287662490-20171013-195127-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
