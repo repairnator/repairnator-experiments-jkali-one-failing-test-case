@@ -1,0 +1,217 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jFachwert 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ jfachwert ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jfachwert ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ jfachwert ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 57 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/target/classes
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/src/main/java/de/jfachwert/AbstractFachwert.java: Some input files use unchecked or unsafe operations.
+[INFO] /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/src/main/java/de/jfachwert/AbstractFachwert.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jfachwert ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ jfachwert ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jfachwert ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 5.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 70.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1046.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.jfachwert.steuer.SteuerIdNrTest
+15:02:33.765 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.steuer.SteuerIdNr seems to be ok
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.541 sec - in de.jfachwert.steuer.SteuerIdNrTest
+Running de.jfachwert.steuer.SteuernummerTest
+15:02:34.007 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.steuer.Steuernummer seems to be ok
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in de.jfachwert.steuer.SteuernummerTest
+Running de.jfachwert.steuer.UStIdNrTest
+15:02:34.027 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.steuer.UStIdNr seems to be ok
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in de.jfachwert.steuer.UStIdNrTest
+Running de.jfachwert.net.DomainnameTest
+15:02:34.053 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.net.Domainname seems to be ok
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in de.jfachwert.net.DomainnameTest
+Running de.jfachwert.net.ChatDienstTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in de.jfachwert.net.ChatDienstTest
+Running de.jfachwert.net.EMailAdresseTest
+15:02:34.090 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.net.EMailAdresse seems to be ok
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.jfachwert.net.EMailAdresseTest
+Running de.jfachwert.net.TelefonnummerTest
+15:02:34.186 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.net.Telefonnummer seems to be ok
+15:02:34.206 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.net.Telefonnummer seems to be ok
+15:02:34.222 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.net.Telefonnummer seems to be ok
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in de.jfachwert.net.TelefonnummerTest
+Running de.jfachwert.net.ChatAccountTest
+15:02:34.281 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.net.ChatAccount seems to be ok
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in de.jfachwert.net.ChatAccountTest
+Running de.jfachwert.pruefung.exception.InvalidValueExceptionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.jfachwert.pruefung.exception.InvalidValueExceptionTest
+Running de.jfachwert.pruefung.exception.PruefzifferExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in de.jfachwert.pruefung.exception.PruefzifferExceptionTest
+Running de.jfachwert.pruefung.exception.IllegalLengthExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.jfachwert.pruefung.exception.IllegalLengthExceptionTest
+Running de.jfachwert.pruefung.exception.NullValueExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.jfachwert.pruefung.exception.NullValueExceptionTest
+Running de.jfachwert.pruefung.exception.LocalizedValidationExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in de.jfachwert.pruefung.exception.LocalizedValidationExceptionTest
+Running de.jfachwert.pruefung.Mod97VerfahrenTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.jfachwert.pruefung.Mod97VerfahrenTest
+Running de.jfachwert.pruefung.NoopVerfahrenTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.jfachwert.pruefung.NoopVerfahrenTest
+Running de.jfachwert.pruefung.EMailValidatorTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in de.jfachwert.pruefung.EMailValidatorTest
+Running de.jfachwert.pruefung.Mod11VerfahrenTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in de.jfachwert.pruefung.Mod11VerfahrenTest
+Running de.jfachwert.pruefung.TelefonnummerValidatorTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in de.jfachwert.pruefung.TelefonnummerValidatorTest
+Running de.jfachwert.rechnung.KundennummerTest
+15:02:34.477 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.rechnung.Kundennummer seems to be ok
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.jfachwert.rechnung.KundennummerTest
+Running de.jfachwert.rechnung.ReferenznummerTest
+15:02:34.495 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.rechnung.Referenznummer seems to be ok
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in de.jfachwert.rechnung.ReferenznummerTest
+Running de.jfachwert.rechnung.BestellnummerTest
+15:02:34.517 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.rechnung.Bestellnummer seems to be ok
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in de.jfachwert.rechnung.BestellnummerTest
+Running de.jfachwert.rechnung.RechnungsmonatTest
+15:02:34.648 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.rechnung.Rechnungsmonat seems to be ok
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in de.jfachwert.rechnung.RechnungsmonatTest
+Running de.jfachwert.rechnung.ArtikelnummerTest
+15:02:34.668 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.rechnung.Artikelnummer seems to be ok
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in de.jfachwert.rechnung.ArtikelnummerTest
+Running de.jfachwert.rechnung.RechnungsnummerTest
+15:02:34.677 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.rechnung.Rechnungsnummer seems to be ok
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in de.jfachwert.rechnung.RechnungsnummerTest
+Running de.jfachwert.FachwertTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.jfachwert.FachwertTest
+Running de.jfachwert.FachwertFactoryTest
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec <<< FAILURE! - in de.jfachwert.FachwertFactoryTest
+testValidateAll(de.jfachwert.FachwertFactoryTest)  Time elapsed: 0.034 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a string containing "TEST"
+     but: was "invalid value for number: "T""
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at de.jfachwert.FachwertFactoryTest.testValidateAll(FachwertFactoryTest.java:130)
+
+Running de.jfachwert.TextTest
+15:02:34.774 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.Text seems to be ok
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in de.jfachwert.TextTest
+Running de.jfachwert.math.NummerTest
+15:02:34.783 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.math.Nummer seems to be ok
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.jfachwert.math.NummerTest
+Running de.jfachwert.math.PackedDecimalTest
+15:02:34.799 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.math.PackedDecimal seems to be ok
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in de.jfachwert.math.PackedDecimalTest
+Running de.jfachwert.bank.BankverbindungTest
+15:02:34.817 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.bank.Bankverbindung seems to be ok
+15:02:34.821 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.bank.Bankverbindung seems to be ok
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in de.jfachwert.bank.BankverbindungTest
+Running de.jfachwert.bank.BLZTest
+15:02:34.834 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.bank.BLZ seems to be ok
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.jfachwert.bank.BLZTest
+Running de.jfachwert.bank.BICTest
+15:02:34.849 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.bank.BIC seems to be ok
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in de.jfachwert.bank.BICTest
+Running de.jfachwert.bank.IBANTest
+15:02:34.872 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.bank.IBAN seems to be ok
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in de.jfachwert.bank.IBANTest
+Running de.jfachwert.bank.KontonummerTest
+15:02:34.885 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.bank.Kontonummer seems to be ok
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in de.jfachwert.bank.KontonummerTest
+Running de.jfachwert.post.PostfachTest
+15:02:34.897 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.post.Postfach seems to be ok
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in de.jfachwert.post.PostfachTest
+Running de.jfachwert.post.AnschriftTest
+15:02:34.921 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.post.Anschrift seems to be ok
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in de.jfachwert.post.AnschriftTest
+Running de.jfachwert.post.PLZTest
+15:02:34.936 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.post.PLZ seems to be ok
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in de.jfachwert.post.PLZTest
+Running de.jfachwert.post.AdresseTest
+15:02:34.950 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.post.Adresse seems to be ok
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in de.jfachwert.post.AdresseTest
+Running de.jfachwert.post.AdressatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.jfachwert.post.AdressatTest
+Running de.jfachwert.post.OrtTest
+15:02:34.966 [main] INFO  patterntesting.runtime.junit.ObjectTester - equals/hashCode implementation of class de.jfachwert.post.Ort seems to be ok
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.jfachwert.post.OrtTest
+
+Results :
+
+Failed tests: 
+  FachwertFactoryTest.testValidateAll:130 
+Expected: a string containing "TEST"
+     but: was "invalid value for number: "T""
+
+Tests run: 364, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.317 s
+[INFO] Finished at: 2020-02-16T15:02:35+01:00
+[INFO] Final Memory: 23M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jfachwert: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jfachwert: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-oboehm-jfachwert-360654047-20180331-182926-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
