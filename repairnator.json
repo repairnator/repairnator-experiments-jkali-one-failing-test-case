@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 26,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/8ae22807d84c...426b00c44a38",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/317387814/languagetool-standalone",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 864,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.RuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.RuleTest#testJavaRules"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-317387814-20171216-172549_bugonly-firstCommit/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 410,
+      "numberPassing": 409,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Did not get the expected rule match for the incorrect example sentence:\nText: Der alte Mann wohnte in einem großen Haus. Es stand in einem großen Garten.\nRule: GERMAN_STYLE_REPEATED_WORD_RULE\nMatches: [GERMAN_STYLE_REPEATED_WORD_RULE:30-36:Stilproblem: Wortwiederholung, GERMAN_STYLE_REPEATED_WORD_RULE:61-67:Stilproblem: Wortwiederholung] expected:\u003c1\u003e but was:\u003c2\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"ventrolateral\"\n     but: was \"Ventrolateral/A\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 726,
+    "numberTestFiles": 466,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:03 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:46:41 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25300280,
+      "totalMemory": 79429632
+    },
+    "totalDuration": 514,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-317387814-20171216-172549_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
