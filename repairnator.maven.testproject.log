@@ -1,0 +1,796 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.kaazing:gateway.client.javascript.bridge:jar:develop-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-resources-plugin is missing. @ org.kaazing:gateway.client.javascript.bridge:[unknown-version], /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/bridge/gateway.client.javascript.bridge/pom.xml, line 58, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Kaazing Gateway
+[INFO] Kaazing Gateway Bridge Parent
+[INFO] Kaazing Gateway Client Javascript Bridge Packaging
+[INFO] Kaazing Gateway Bridge
+[INFO] Test Utils
+[INFO] Resource Address
+[INFO] Kaazing WebSocket Gateway - Server Service Provider Interface
+[INFO] Apache MINA
+[INFO] Apache MINA Parent POM
+[INFO] Apache MINA Core
+[INFO] Apache MINA JavaBeans Integration
+[INFO] Apache MINA OGNL Integration
+[INFO] Apache MINA JMX Integration
+[INFO] Mina Netty Adapter
+[INFO] Gateway Utils
+[INFO] Gateway Security
+[INFO] Tcp Resource Address
+[INFO] Ssl Resource Address
+[INFO] Http Resource Address
+[INFO] Httpx Resource Address
+[INFO] Httpxe Resource Address
+[INFO] Httpxdraft Resource Address
+[INFO] Ws Resource Address
+[INFO] Transport Core
+[INFO] Gateway Service
+[INFO] Wsn Resource Address
+[INFO] Wsdraft Resource Address
+[INFO] Wsxdraft Resource Address
+[INFO] Sse Resource Address
+[INFO] Wsx Resource Address
+[INFO] Rtmp Resource Address
+[INFO] Udp Resource Address
+[INFO] Wse Resource Address
+[INFO] Pipe Resource Address
+[INFO] Echo Service
+[INFO] Kaazing WebSocket Gateway - Server API
+[INFO] Kaazing WebSocket Gateway - Server
+[INFO] BIO Transport
+[INFO] NIO Transport
+[INFO] Pipe Transport
+[INFO] Http Transport
+[INFO] Proxy Service
+[INFO] Broadcast Service
+[INFO] Sse Transport
+[INFO] WS Transport
+[INFO] SSL Transport
+[INFO] WSN Transport
+[INFO] WSEB Transport
+[INFO] Http Balancer Service
+[INFO] Update Check Service
+[INFO] Kaazing WebSocket Gateway - Management
+[INFO] Kaazing Gateway BOM
+[INFO] Kaazing WebSocket Gateway - AMQP Service
+[INFO] Http Directory Service
+[INFO] Http Proxy Service
+[INFO] Update Check Management Service
+[INFO] TURN REST Service
+[INFO] Kaazing Gateway Distribution
+[INFO] Apache MINA Legal
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Kaazing Gateway develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ gateway ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ gateway ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ gateway ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ gateway ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Kaazing Gateway Bridge Parent develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ gateway.bridge.parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ gateway.bridge.parent ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ gateway.bridge.parent ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ gateway.bridge.parent ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Kaazing Gateway Client Javascript Bridge Packaging develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ gateway.client.javascript.bridge ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ gateway.client.javascript.bridge ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ gateway.client.javascript.bridge ---
+[INFO] 
+[INFO] --- unpack-bower-dependency-maven-plugin:1.0.2:unpack (default) @ gateway.client.javascript.bridge ---
+[debug] Git Repo is at https://github.com/kaazing/bower-kaazing-client-javascript-bridge.git
+[debug] Found tag version "1.0.0-1" from tag with name "refs/tags/1.0.0-1"
+[debug] Found tag version "5.0.0-1" from tag with name "refs/tags/5.0.0-1"
+[debug] Found tag version "5.0.0-2" from tag with name "refs/tags/5.0.0-2"
+[debug] Found tag version "5.0.0-3" from tag with name "refs/tags/5.0.0-3"
+[debug] Found tag version "5.0.0-4" from tag with name "refs/tags/5.0.0-4"
+[debug] Found tag version "5.0.0-5" from tag with name "refs/tags/5.0.0-5"
+[debug] Found tag version "5.0.0-6" from tag with name "refs/tags/5.0.0-6"
+[debug] Found tag version "5.0.0-7" from tag with name "refs/tags/5.0.0-7"
+[debug] Found tag version "5.0.0-8" from tag with name "refs/tags/5.0.0-8"
+[debug] Found tag version "5.0.0-9" from tag with name "refs/tags/5.0.0-9"
+[info] version is a range
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources) @ gateway.client.javascript.bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gateway.client.javascript.bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/bridge/gateway.client.javascript.bridge/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ gateway.client.javascript.bridge ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ gateway.client.javascript.bridge ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gateway.client.javascript.bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/bridge/gateway.client.javascript.bridge/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ gateway.client.javascript.bridge ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ gateway.client.javascript.bridge ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Kaazing Gateway Bridge develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ gateway.bridge ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ gateway.bridge ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ gateway.bridge ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default) @ gateway.bridge ---
+[INFO] classes already exists in destination.
+[INFO] gateway.client.java.bridge-5.0.0.5.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ gateway.bridge ---
+[INFO] Executing tasks
+
+main:
+    [unzip] Expanding: /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/bridge/gateway.bridge/target/resources/gateway.client.javascript.bridge.jar into /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/bridge/gateway.bridge/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gateway.bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/bridge/gateway.bridge/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ gateway.bridge ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ gateway.bridge ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gateway.bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/bridge/gateway.bridge/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ gateway.bridge ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ gateway.bridge ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Test Utils develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ test.util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.11:check (default) @ test.util ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.11:check (validate) @ test.util ---
+[INFO] Starting audit...
+Audit done.
+
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ test.util ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test.util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ test.util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ test.util ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test.util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/test.util/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ test.util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ test.util ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/test.util/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom (4 KB at 19.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 108.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar (75 KB at 1721.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.kaazing.test.util.MemoryAppenderTest
+testMemoryAppender(org.kaazing.test.util.MemoryAppenderTest) starting
+Printing last 6 of 6 log messages
+0    org.kaazing.test.util.MemoryAppenderTest [main] TRACE MemoryAppenderTest  - Entering method1
+0    org.kaazing.test.util.MemoryAppenderTest [main] TRACE MemoryAppenderTest  - Exiting method1
+0    org.kaazing.test.util.MemoryAppenderTest [main] TRACE MemoryAppenderTest  - Entering method2
+0    org.kaazing.test.util.MemoryAppenderTest [main] TRACE MemoryAppenderTest  - Exiting method2
+0    org.kaazing.test.util.MemoryAppenderTest [main] TRACE MemoryAppenderTest  - Entering method3
+0    org.kaazing.test.util.MemoryAppenderTest [main] TRACE MemoryAppenderTest  - Exiting method3
+MemoryAppenderTest.testMemoryAppender success (0.04 secs)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in org.kaazing.test.util.MemoryAppenderTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Resource Address develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ gateway.resource.address ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ gateway.resource.address ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ gateway.resource.address ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gateway.resource.address ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/resource.address/spi/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ gateway.resource.address ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ gateway.resource.address ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gateway.resource.address ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ gateway.resource.address ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ gateway.resource.address ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/resource.address/spi/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.kaazing.gateway.resource.address.ResourceAddressFactoryTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.kaazing.gateway.resource.address.ResourceAddressFactoryTest
+Running org.kaazing.gateway.resource.address.uri.URIUtilsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.kaazing.gateway.resource.address.uri.URIUtilsTest
+Running org.kaazing.gateway.resource.address.UriResolveTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.kaazing.gateway.resource.address.UriResolveTest
+Running org.kaazing.gateway.resource.address.ResolveResourceAddressTest
+[test://opaque/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/path0 (test://transport/path) testable]
+  [test://transport/path1 (test://transport/path) testable]
+  [test://transport/path2 (test://transport/path) testable]
+[test://opaque/path0 (test://opaque/path)]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path0 (test://transport/path) testable]
+  [test://transport/path1 (test://transport/path) testable]
+  [test://transport/path2 (test://transport/path) testable]
+[test://opaque/path1 (test://opaque/path)]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path0 (test://transport/path) testable]
+  [test://transport/path1 (test://transport/path) testable]
+  [test://transport/path2 (test://transport/path) testable]
+[test://opaque/path2 (test://opaque/path)]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path0 (test://transport/path) testable]
+  [test://transport/path1 (test://transport/path) testable]
+  [test://transport/path2 (test://transport/path) testable]
+[test://opaque/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+[test://opaque/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+[test://opaque/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+[test://opaque/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport/newpath (test://transport/newpath) testable]
+[test://opaque/path (test://opaque/path)]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+[test://opaque/path (test://opaque/path)]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+[test://opaque/path (test://opaque/path)]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+[test://opaque/path (test://opaque/path)]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+  [test://transport/path (test://transport/path) testable]
+[test://opaque/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport0/newpath (test://transport/newpath) testable]
+  [test://transport1/newpath (test://transport/newpath) testable]
+  [test://transport2/newpath (test://transport/newpath) testable]
+[test://opaque0/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport0/newpath (test://transport/newpath) testable]
+  [test://transport1/newpath (test://transport/newpath) testable]
+  [test://transport2/newpath (test://transport/newpath) testable]
+[test://opaque1/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport0/newpath (test://transport/newpath) testable]
+  [test://transport1/newpath (test://transport/newpath) testable]
+  [test://transport2/newpath (test://transport/newpath) testable]
+[test://opaque2/newpath (test://opaque/newpath)]
+  [test://transport/newpath (test://transport/newpath) testable]
+  [test://transport0/newpath (test://transport/newpath) testable]
+  [test://transport1/newpath (test://transport/newpath) testable]
+  [test://transport2/newpath (test://transport/newpath) testable]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.kaazing.gateway.resource.address.ResolveResourceAddressTest
+Running org.kaazing.gateway.resource.address.ResolutionUtilsTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec - in org.kaazing.gateway.resource.address.ResolutionUtilsTest
+
+Results :
+
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Kaazing WebSocket Gateway - Server Service Provider Interface develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ gateway.server.spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-tools) @ gateway.server.spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ gateway.server.spi ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ gateway.server.spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gateway.server.spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/src/main/resources
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.8.1:jar (javadoc) @ gateway.server.spi ---
+[INFO] 
+Loading source files for package org.kaazing.gateway.server.spi.security...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_202
+Building tree for all the packages and classes...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/AuthenticationToken.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/AuthenticationTokenCallback.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/ExpiringState.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/InetAddressCallback.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/LoginModuleOptions.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/LoginResult.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/LoginResult.Type.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/LoginResultCallback.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/NamedSubjectCallback.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/package-frame.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/package-summary.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/package-tree.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/constant-values.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/LoginModuleOptions.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/InetAddressCallback.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/AuthenticationTokenCallback.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/LoginResultCallback.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/LoginResult.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/LoginResult.Type.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/AuthenticationToken.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/NamedSubjectCallback.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/class-use/ExpiringState.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/org/kaazing/gateway/server/spi/security/package-use.html...
+Building index for all the packages and classes...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/overview-tree.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/index-all.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/allclasses-frame.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/allclasses-noframe.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/index.html...
+Generating /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/apidocs/help-doc.html...
+1 warning
+[WARNING] Javadoc Warnings
+[WARNING] /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/src/main/java/org/kaazing/gateway/server/spi/security/LoginModuleOptions.java:86: warning - @return tag has no arguments.
+[INFO] Building jar: /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/target/gateway.server.spi-develop-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ gateway.server.spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ gateway.server.spi ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gateway.server.spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/server.spi/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ gateway.server.spi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ gateway.server.spi ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache MINA develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ mina-build ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ mina-build ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ mina-build ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ mina-build ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache MINA Parent POM develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ mina-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ mina-parent ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ mina-parent ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.0:process (default) @ mina-parent ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ mina-parent ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache MINA Core develop-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default-enforce) @ mina-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (default) @ mina-core ---
+[INFO] 
+[INFO] --- license-maven-plugin:2.11:check (default) @ mina-core ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.0:process (default) @ mina-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ mina-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/mina.core/core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ mina-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default-animal-sniffer) @ mina-core ---
+[INFO] Checking unresolved references to org.kaazing.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ mina-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ mina-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.3:test (default-test) @ mina-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.pom (2 KB at 80.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.4.3/surefire-providers-2.4.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.4.3/surefire-providers-2.4.3.pom (2 KB at 79.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom (210 B at 9.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.4.3/surefire-junit4-2.4.3.jar (12 KB at 490.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.jar (104 KB at 1356.9 KB/sec)
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/mina.core/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.mina.filter.ssl.KeyStoreFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.apache.mina.transport.socket.nio.DatagramPortUnreachableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 sec
+Running org.apache.mina.util.byteaccess.ByteAccessTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec
+Running org.apache.mina.filter.stream.StreamWriteFilterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.539 sec
+Running org.apache.mina.transport.socket.nio.DatagramRecyclerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.06 sec
+Running org.apache.mina.transport.socket.nio.NioFileRegionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.mina.filter.reqres.RequestResponseFilterTest
+[11:44:10] WARN [org.apache.mina.filter.reqres.RequestResponseFilter] - Unknown request ID '1' for the response message. Timed out already?: org.apache.mina.filter.reqres.RequestResponseFilterTest$Message@58fb7731
+[11:44:10] WARN [org.apache.mina.filter.reqres.RequestResponseFilter] - Unknown request ID '1' for the response message. Timed out already?: org.apache.mina.filter.reqres.RequestResponseFilterTest$Message@dfddc9a
+[11:44:10] WARN [org.apache.mina.filter.reqres.RequestResponseFilter] - Unknown request ID '1' for the response message. Timed out already?: org.apache.mina.filter.reqres.RequestResponseFilterTest$Message@4b9df8a
+[11:44:11] WARN [org.apache.mina.filter.reqres.RequestResponseFilter] - Unknown request ID '1' for the response message. Timed out already?: org.apache.mina.filter.reqres.RequestResponseFilterTest$Message@2b5f4d54
+[11:44:11] WARN [org.apache.mina.filter.reqres.RequestResponseFilter] - Unknown request ID '1' for the response message. Timed out already?: org.apache.mina.filter.reqres.RequestResponseFilterTest$Message@5f7b97da
+[11:44:11] WARN [org.apache.mina.filter.reqres.RequestResponseFilter] - Unknown request ID '1' for the response message. Timed out already?: org.apache.mina.filter.reqres.RequestResponseFilterTest$Message@256f8274
+[11:44:11] WARN [org.apache.mina.filter.reqres.RequestResponseFilter] - Unknown request ID '1' for the response message. Timed out already?: org.apache.mina.filter.reqres.RequestResponseFilterTest$Message@6c5945a7
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 sec
+Running org.apache.mina.core.DefaultIoFilterChainBuilderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.apache.mina.filter.firewall.SubnetIPv4Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.mina.transport.socket.nio.SocketBindTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.232 sec
+Running org.apache.mina.filter.codec.CumulativeProtocolDecoderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.mina.core.IoServiceListenerSupportTest
+[11:44:15] WARN [org.apache.mina.core.filterchain.DefaultIoFilterChain] - Unexpected exception from exceptionCaught handler.
+java.lang.AssertionError: 
+  Unexpected method call exceptionCaught((0x00000030: mina dummy, server, ? => 0.0.0.0/0.0.0.0:8080), java.lang.AssertionError: 
+  Unexpected method call sessionClosed((0x00000030: mina dummy, server, ? => 0.0.0.0/0.0.0.0:8080)):
+    sessionClosed((0x00000030: mina dummy, server, ? => 0.0.0.0/0.0.0.0:8080)): expected: 1, actual: 1 (+1)):
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:29)
+	at org.easymock.internal.ObjectMethodsFilter.invoke(ObjectMethodsFilter.java:56)
+	at com.sun.proxy.$Proxy9.exceptionCaught(Unknown Source)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.exceptionCaught(DefaultIoFilterChain.java:689)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextExceptionCaught(DefaultIoFilterChain.java:478)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1100(DefaultIoFilterChain.java:44)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.exceptionCaught(DefaultIoFilterChain.java:783)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.exceptionCaught(IoFilterAdapter.java:107)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextExceptionCaught(DefaultIoFilterChain.java:478)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireExceptionCaught(DefaultIoFilterChain.java:466)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextSessionClosed(DefaultIoFilterChain.java:395)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$900(DefaultIoFilterChain.java:44)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.sessionClosed(DefaultIoFilterChain.java:773)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.sessionClosed(IoFilterAdapter.java:91)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextSessionClosed(DefaultIoFilterChain.java:393)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireSessionClosed(DefaultIoFilterChain.java:386)
+	at org.apache.mina.core.service.IoServiceListenerSupport.fireSessionDestroyed(IoServiceListenerSupport.java:206)
+	at org.apache.mina.core.IoServiceListenerSupportTest$1.run(IoServiceListenerSupportTest.java:188)
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.025 sec
+Running org.apache.mina.filter.firewall.ConnectionThrottleFilterTest
+[11:44:16] WARN [org.apache.mina.filter.firewall.ConnectionThrottleFilter] - Session connection interval too short
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.003 sec
+Running org.apache.mina.filter.codec.textline.TextLineEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.mina.handler.chain.ChainedIoHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.mina.transport.vmpipe.VmPipeTrafficControlTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.731 sec
+Running org.apache.mina.filter.codec.DemuxingProtocolDecoderBugTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.mina.filter.buffer.BufferedWriteFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.mina.transport.socket.nio.SocketConnectorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Running org.apache.mina.transport.vmpipe.VmPipeSessionCrossCommunicationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.mina.filter.firewall.SubnetIPv6Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.mina.transport.socket.nio.SocketTrafficControlTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.743 sec
+Running org.apache.mina.transport.socket.nio.DatagramTrafficControlTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.724 sec
+Running org.apache.mina.filter.codec.serialization.ObjectSerializationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec
+Running org.apache.mina.transport.socket.nio.DatagramConnectorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running org.apache.mina.util.ExpiringMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.001 sec
+Running org.apache.mina.handler.demux.DemuxingIoHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.mina.util.CircularQueueTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running org.apache.mina.proxy.NTLMTest
+---
+Type 2: Domain name
+Length: 12 bytes
+Data: DOMAIN
+---
+Type 1: Server name
+Length: 12 bytes
+Data: SERVER
+---
+Type 4: DNS domain name
+Length: 20 bytes
+Data: domain.com
+---
+Type 3: Fully qualified DNS hostname
+Length: 34 bytes
+Data: server.domain.com
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec
+Running org.apache.mina.transport.vmpipe.VmPipeEventOrderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.016 sec
+Running org.apache.mina.core.FutureTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.apache.mina.transport.vmpipe.VmPipeBindTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.529 sec
+Running org.apache.mina.filter.util.WrappingFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.mina.proxy.MD4Test
+Testing vector [Wikipedia, l'encyclopedie libre et gratuite]: b94e66e0817dd34dc7858a0c131d4079Testing vector [The quick brown fox jumps over the lazy dog]: 1bee69a46ba811185c194762abaeae90Testing vector [The quick brown fox jumps over the lazy cog]: b86e130ce7028da59e672d56ad0113dfTesting vector []: 31d6cfe0d16ae931b73c59d7e0c089c0Testing vector [a]: bde52cb31de33e46245e05fbdbd6fb24Testing vector [abc]: a448017aaf21d8525fc10ae87aa6729dTesting vector [message digest]: d9130a8164549fe818874806e1c7014bTesting vector [abcdefghijklmnopqrstuvwxyz]: d79e1c308aa5bbcdeea8ed63df412da9Testing vector [ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789]: 043f8582f241db351ce627e153e7f0e4Testing vector [12345678901234567890123456789012345678901234567890123456789012345678901234567890]: e33b4ddc9c38f2199c3e7b164fcc0536@SLTests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.mina.filter.codec.textline.TextLineDecoderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec
+Running org.apache.mina.core.IoBufferTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec
+Running org.apache.mina.proxy.HttpAuthTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.mina.filter.stream.FileRegionWriteFilterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec
+Running org.apache.mina.filter.logging.MdcInjectionFilterTest
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.403 sec <<< FAILURE!
+Running org.apache.mina.transport.socket.nio.DatagramBindTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.109 sec
+Running org.apache.mina.transport.socket.nio.DatagramConfigTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.apache.mina.core.IoFilterChainTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.apache.mina.filter.keepalive.KeepAliveFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.024 sec
+
+Results :
+
+Failed tests: 
+  testOnlyRemoteAddress(org.apache.mina.filter.logging.MdcInjectionFilterTest)
+
+Tests run: 183, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Kaazing Gateway .................................... SUCCESS [  2.266 s]
+[INFO] Kaazing Gateway Bridge Parent ...................... SUCCESS [  0.573 s]
+[INFO] Kaazing Gateway Client Javascript Bridge Packaging . SUCCESS [  3.203 s]
+[INFO] Kaazing Gateway Bridge ............................. SUCCESS [  1.558 s]
+[INFO] Test Utils ......................................... SUCCESS [  3.369 s]
+[INFO] Resource Address ................................... SUCCESS [  1.608 s]
+[INFO] Kaazing WebSocket Gateway - Server Service Provider Interface SUCCESS [  2.945 s]
+[INFO] Apache MINA ........................................ SUCCESS [  0.287 s]
+[INFO] Apache MINA Parent POM ............................. SUCCESS [  1.059 s]
+[INFO] Apache MINA Core ................................... FAILURE [ 47.617 s]
+[INFO] Apache MINA JavaBeans Integration .................. SKIPPED
+[INFO] Apache MINA OGNL Integration ....................... SKIPPED
+[INFO] Apache MINA JMX Integration ........................ SKIPPED
+[INFO] Mina Netty Adapter ................................. SKIPPED
+[INFO] Gateway Utils ...................................... SKIPPED
+[INFO] Gateway Security ................................... SKIPPED
+[INFO] Tcp Resource Address ............................... SKIPPED
+[INFO] Ssl Resource Address ............................... SKIPPED
+[INFO] Http Resource Address .............................. SKIPPED
+[INFO] Httpx Resource Address ............................. SKIPPED
+[INFO] Httpxe Resource Address ............................ SKIPPED
+[INFO] Httpxdraft Resource Address ........................ SKIPPED
+[INFO] Ws Resource Address ................................ SKIPPED
+[INFO] Transport Core ..................................... SKIPPED
+[INFO] Gateway Service .................................... SKIPPED
+[INFO] Wsn Resource Address ............................... SKIPPED
+[INFO] Wsdraft Resource Address ........................... SKIPPED
+[INFO] Wsxdraft Resource Address .......................... SKIPPED
+[INFO] Sse Resource Address ............................... SKIPPED
+[INFO] Wsx Resource Address ............................... SKIPPED
+[INFO] Rtmp Resource Address .............................. SKIPPED
+[INFO] Udp Resource Address ............................... SKIPPED
+[INFO] Wse Resource Address ............................... SKIPPED
+[INFO] Pipe Resource Address .............................. SKIPPED
+[INFO] Echo Service ....................................... SKIPPED
+[INFO] Kaazing WebSocket Gateway - Server API ............. SKIPPED
+[INFO] Kaazing WebSocket Gateway - Server ................. SKIPPED
+[INFO] BIO Transport ...................................... SKIPPED
+[INFO] NIO Transport ...................................... SKIPPED
+[INFO] Pipe Transport ..................................... SKIPPED
+[INFO] Http Transport ..................................... SKIPPED
+[INFO] Proxy Service ...................................... SKIPPED
+[INFO] Broadcast Service .................................. SKIPPED
+[INFO] Sse Transport ...................................... SKIPPED
+[INFO] WS Transport ....................................... SKIPPED
+[INFO] SSL Transport ...................................... SKIPPED
+[INFO] WSN Transport ...................................... SKIPPED
+[INFO] WSEB Transport ..................................... SKIPPED
+[INFO] Http Balancer Service .............................. SKIPPED
+[INFO] Update Check Service ............................... SKIPPED
+[INFO] Kaazing WebSocket Gateway - Management ............. SKIPPED
+[INFO] Kaazing Gateway BOM ................................ SKIPPED
+[INFO] Kaazing WebSocket Gateway - AMQP Service ........... SKIPPED
+[INFO] Http Directory Service ............................. SKIPPED
+[INFO] Http Proxy Service ................................. SKIPPED
+[INFO] Update Check Management Service .................... SKIPPED
+[INFO] TURN REST Service .................................. SKIPPED
+[INFO] Kaazing Gateway Distribution ....................... SKIPPED
+[INFO] Apache MINA Legal .................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:06 min
+[INFO] Finished at: 2020-02-16T11:44:52+01:00
+[INFO] Final Memory: 43M/134M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.4.3:test (default-test) on project mina-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/mina.core/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.4.3:test (default-test) on project mina-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/mina.core/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-kaazing-gateway-212927069-20170320-112359-firstCommit/mina.core/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefirePlugin.execute(SurefirePlugin.java:575)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :mina-core
