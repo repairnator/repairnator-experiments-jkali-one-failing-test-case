@@ -1,0 +1,302 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ImgLib2 Core Library 5.4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-rules) @ imglib2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:regex-property (sanitize-version) @ imglib2 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ imglib2 ---
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit
+[INFO] Storing buildNumber: 31560af7ec059bf374db250b6646ad4f3c14ff3e at timestamp: 1581849530951
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- scijava-maven-plugin:1.0.0:set-rootdir (set-rootdir) @ imglib2 ---
+[INFO] Setting rootdir: /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ imglib2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ imglib2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ imglib2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ imglib2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ imglib2 ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 7.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 108.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1150.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.imglib2.outofbounds.OutOfBoundsBorderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in net.imglib2.outofbounds.OutOfBoundsBorderTest
+Running net.imglib2.outofbounds.OutOfBoundsMirrorSingleBoundaryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in net.imglib2.outofbounds.OutOfBoundsMirrorSingleBoundaryTest
+Running net.imglib2.outofbounds.OutOfBoundsPeriodicTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in net.imglib2.outofbounds.OutOfBoundsPeriodicTest
+Running net.imglib2.outofbounds.OutOfBoundsMirrorDoubleBoundaryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in net.imglib2.outofbounds.OutOfBoundsMirrorDoubleBoundaryTest
+Running net.imglib2.histogram.HistogramNdTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in net.imglib2.histogram.HistogramNdTest
+Running net.imglib2.histogram.Histogram1dTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in net.imglib2.histogram.Histogram1dTest
+Running net.imglib2.histogram.Real1dBinMapperTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in net.imglib2.histogram.Real1dBinMapperTest
+Running net.imglib2.histogram.Integer1dBinMapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.imglib2.histogram.Integer1dBinMapperTest
+Running net.imglib2.TestAbstractRealLocalizable
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in net.imglib2.TestAbstractRealLocalizable
+Running net.imglib2.type.numeric.NumericTypeTest
+Tests run: 476, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.358 sec - in net.imglib2.type.numeric.NumericTypeTest
+Running net.imglib2.type.numeric.integer.UnsignedIntTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.imglib2.type.numeric.integer.UnsignedIntTypeTest
+Running net.imglib2.type.numeric.integer.Unsigned128BitTypeTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec <<< FAILURE! - in net.imglib2.type.numeric.integer.Unsigned128BitTypeTest
+testHashCode(net.imglib2.type.numeric.integer.Unsigned128BitTypeTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<908742> but was:<28171963>
+	at net.imglib2.type.numeric.integer.Unsigned128BitTypeTest.testHashCode(Unsigned128BitTypeTest.java:130)
+
+Running net.imglib2.type.numeric.integer.Unsigned2BitTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.imglib2.type.numeric.integer.Unsigned2BitTypeTest
+Running net.imglib2.type.numeric.integer.Unsigned12BitTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in net.imglib2.type.numeric.integer.Unsigned12BitTypeTest
+Running net.imglib2.type.numeric.integer.ByteTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.imglib2.type.numeric.integer.ByteTypeTest
+Running net.imglib2.type.numeric.integer.ShortTypeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.imglib2.type.numeric.integer.ShortTypeTest
+Running net.imglib2.type.numeric.integer.Unsigned4BitTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in net.imglib2.type.numeric.integer.Unsigned4BitTypeTest
+Running net.imglib2.type.numeric.integer.IntTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.imglib2.type.numeric.integer.IntTypeTest
+Running net.imglib2.type.numeric.integer.UnsignedLongTypeTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.imglib2.type.numeric.integer.UnsignedLongTypeTest
+Running net.imglib2.type.numeric.integer.UnsignedByteTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.imglib2.type.numeric.integer.UnsignedByteTypeTest
+Running net.imglib2.type.numeric.integer.UnsignedVariableBitLengthTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.imglib2.type.numeric.integer.UnsignedVariableBitLengthTypeTest
+Running net.imglib2.type.numeric.integer.UnsignedShortTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.imglib2.type.numeric.integer.UnsignedShortTypeTest
+Running net.imglib2.type.numeric.integer.LongTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.imglib2.type.numeric.integer.LongTypeTest
+Running net.imglib2.type.numeric.complex.ComplexDoubleTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.imglib2.type.numeric.complex.ComplexDoubleTypeTest
+Running net.imglib2.type.numeric.complex.ComplexFloatTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.imglib2.type.numeric.complex.ComplexFloatTypeTest
+Running net.imglib2.type.logic.BitTypeArrayImgSizeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in net.imglib2.type.logic.BitTypeArrayImgSizeTest
+Running net.imglib2.type.logic.BitTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in net.imglib2.type.logic.BitTypeTest
+Running net.imglib2.view.SubsampleIntervalViewTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in net.imglib2.view.SubsampleIntervalViewTest
+Running net.imglib2.view.ConcatenateViewTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.imglib2.view.ConcatenateViewTest
+Running net.imglib2.view.RotationViewTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.imglib2.view.RotationViewTest
+Running net.imglib2.view.RandomAccessTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in net.imglib2.view.RandomAccessTest
+Running net.imglib2.view.SlicingTransformConcatenateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in net.imglib2.view.SlicingTransformConcatenateTest
+Running net.imglib2.view.StackRandomAccessibleIntervalsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.imglib2.view.StackRandomAccessibleIntervalsTest
+Running net.imglib2.view.SequentializeTransformTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.imglib2.view.SequentializeTransformTest
+Running net.imglib2.view.RandomAccessibleIntervalCursorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in net.imglib2.view.RandomAccessibleIntervalCursorTest
+Running net.imglib2.view.MixedTransformConcatenateTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.imglib2.view.MixedTransformConcatenateTest
+Running net.imglib2.view.HyperSlicesViewTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.imglib2.view.HyperSlicesViewTest
+Running net.imglib2.view.TranslationTransformConcatenateTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.imglib2.view.TranslationTransformConcatenateTest
+Running net.imglib2.view.ViewsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.imglib2.view.ViewsTest
+Running net.imglib2.img.list.CopyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 sec - in net.imglib2.img.list.CopyTest
+Running net.imglib2.img.cell.CellContainerFactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.imglib2.img.cell.CellContainerFactoryTest
+Running net.imglib2.img.cell.CellTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.imglib2.img.cell.CellTest
+Running net.imglib2.img.cell.CellContainerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in net.imglib2.img.cell.CellContainerTest
+Running net.imglib2.img.cell.CopyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in net.imglib2.img.cell.CopyTest
+Running net.imglib2.img.cell.CellImgTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.404 sec - in net.imglib2.img.cell.CellImgTest
+Running net.imglib2.img.cell.CellCursorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in net.imglib2.img.cell.CellCursorTest
+Running net.imglib2.img.array.ArrayIterableSubIntervalCursorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec - in net.imglib2.img.array.ArrayIterableSubIntervalCursorTest
+Running net.imglib2.img.array.ArrayImgsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in net.imglib2.img.array.ArrayImgsTest
+Running net.imglib2.img.array.ArrayImgTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.195 sec - in net.imglib2.img.array.ArrayImgTest
+Running net.imglib2.img.planar.CopyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in net.imglib2.img.planar.CopyTest
+Running net.imglib2.img.planar.PlanarIterableSubIntervalCursorTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.462 sec - in net.imglib2.img.planar.PlanarIterableSubIntervalCursorTest
+Running net.imglib2.img.planar.PlanarImgTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.38 sec - in net.imglib2.img.planar.PlanarImgTest
+Running net.imglib2.img.sparse.NtreeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.imglib2.img.sparse.NtreeTest
+Running net.imglib2.img.ImgFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.imglib2.img.ImgFactoryTest
+Running net.imglib2.transform.integer.permutation.SingleDimensionPermutationTransformTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in net.imglib2.transform.integer.permutation.SingleDimensionPermutationTransformTest
+Running net.imglib2.transform.integer.permutation.PermutationTransformTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in net.imglib2.transform.integer.permutation.PermutationTransformTest
+Running net.imglib2.transform.integer.permutation.AbstractPermutationTransformTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.imglib2.transform.integer.permutation.AbstractPermutationTransformTest
+Running net.imglib2.transform.integer.shear.ShearTransformTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in net.imglib2.transform.integer.shear.ShearTransformTest
+Running net.imglib2.loops.LoopUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in net.imglib2.loops.LoopUtilsTest
+Running net.imglib2.loops.ClassCopierTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.imglib2.loops.ClassCopierTest
+Running net.imglib2.loops.ClassCopyProviderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.imglib2.loops.ClassCopyProviderTest
+Running net.imglib2.loops.LoopBuilderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in net.imglib2.loops.LoopBuilderTest
+Running net.imglib2.nearestneighbor.NearestNeighborSearchOnIterableRealIntervalTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.imglib2.nearestneighbor.NearestNeighborSearchOnIterableRealIntervalTest
+Running net.imglib2.nearestneighbor.KDTreeTest
+kdtree setup took: 12 ms.
+comparison (kdtree <-> exhaustive) search took: 35 ms.
+kdtree search took: 0 ms.
+kdtree all together took: 12 ms.
+exhaustive search took: 11 ms.
+kdtree setup took: 1 ms.
+comparison (kdtree <-> exhaustive) search took: 19 ms.
+kdtree search took: 1 ms.
+kdtree all together took: 2 ms.
+exhaustive search took: 3 ms.
+kdtree setup took: 1 ms.
+comparison (kdtree <-> exhaustive) search took: 11 ms.
+kdtree search took: 12 ms.
+kdtree all together took: 13 ms.
+exhaustive search took: 3 ms.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in net.imglib2.nearestneighbor.KDTreeTest
+Running net.imglib2.converter.AbstractConvertedRandomAccessibleIntervalTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.imglib2.converter.AbstractConvertedRandomAccessibleIntervalTest
+Running net.imglib2.converter.ConvertersTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in net.imglib2.converter.ConvertersTest
+Running net.imglib2.BinningTest
+testEdges
+testDistribution
+testEdgeValuesArray
+testCenterValuesArray
+testValues
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in net.imglib2.BinningTest
+Running net.imglib2.RealPointTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in net.imglib2.RealPointTest
+Running net.imglib2.util.RealSumTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.944 sec - in net.imglib2.util.RealSumTest
+Running net.imglib2.util.PartitionTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in net.imglib2.util.PartitionTest
+Running net.imglib2.util.IterablePairTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.imglib2.util.IterablePairTest
+Running net.imglib2.util.KthElementTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in net.imglib2.util.KthElementTest
+Running net.imglib2.util.IntervalIndexerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in net.imglib2.util.IntervalIndexerTest
+Running net.imglib2.util.LinAlgHelpersTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in net.imglib2.util.LinAlgHelpersTest
+Running net.imglib2.util.LocalizablesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.imglib2.util.LocalizablesTest
+Running net.imglib2.util.ImgUtilTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.imglib2.util.ImgUtilTest
+Running net.imglib2.util.UtilTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.imglib2.util.UtilTest
+Running net.imglib2.position.BiConsumerRealRandomAccessibleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.imglib2.position.BiConsumerRealRandomAccessibleTest
+Running net.imglib2.position.transform.FloorOffsetTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in net.imglib2.position.transform.FloorOffsetTest
+Running net.imglib2.position.BiConsumerRandomAccessibleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.imglib2.position.BiConsumerRandomAccessibleTest
+Running net.imglib2.FinalIntervalTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.imglib2.FinalIntervalTest
+Running net.imglib2.PointTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in net.imglib2.PointTest
+Running net.imglib2.RealPointSampleListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in net.imglib2.RealPointSampleListTest
+Running tests.BasicTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in tests.BasicTest
+
+Results :
+
+Failed tests: 
+  Unsigned128BitTypeTest.testHashCode:130 expected:<908742> but was:<28171963>
+
+Tests run: 912, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.506 s
+[INFO] Finished at: 2020-02-16T11:39:06+01:00
+[INFO] Final Memory: 22M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project imglib2: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project imglib2: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-imglib-imglib2-414095400-20180809-164703-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
