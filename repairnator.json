@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "nilsreiter/CorefAnnotator",
-  "bugCommit": "https://github.com/nilsreiter/CorefAnnotator/compare/2ea3f263fa4d...9557f3546aab",
-  "failingModule": "/root/workspace/nilsreiter/CorefAnnotator/382664798",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 24,
-  "failing-test-cases": [
-    {
-      "className": "de.unistuttgart.ims.coref.annotator.document.TestCoreferenceModel",
-      "failingMethods": [
-        "testRemovEntityFromGroup"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:52 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:41:13 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 258528728,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 2358,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2239,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2239
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-382664798-20180523-150823-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-nilsreiter-CorefAnnotator-382664798-20180523-150823-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 24,
+      "numberPassing": 23,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.unistuttgart.ims.coref.annotator.document.TestCoreferenceModel",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.unistuttgart.ims.coref.annotator.document.TestCoreferenceModel",
+        "testMethod": "testRemovEntityFromGroup",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 146,
+    "numberTestFiles": 9,
+    "numberLibrariesFailingModule": 91,
+    "numberLines": 0
+  }
 }
