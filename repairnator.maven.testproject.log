@@ -1,0 +1,285 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spanner-jdbc 0.27-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ spanner-jdbc ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-olavloite-spanner-jdbc-360887112-20180401-164918-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-olavloite-spanner-jdbc-360887112-20180401-164918-firstCommit/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spanner-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 54 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ spanner-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spanner-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 22 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ spanner-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ spanner-jdbc ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-olavloite-spanner-jdbc-360887112-20180401-164918-firstCommit/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running nl.topicus.jdbc.AbstractCloudSpannerFetcherTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in nl.topicus.jdbc.AbstractCloudSpannerFetcherTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerDataSourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.515 s - in nl.topicus.jdbc.CloudSpannerDataSourceTest
+[INFO] Running nl.topicus.jdbc.xa.CloudSpannerXAConnectionTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.352 s - in nl.topicus.jdbc.xa.CloudSpannerXAConnectionTest
+[INFO] Running nl.topicus.jdbc.xa.RecoveredXidTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in nl.topicus.jdbc.xa.RecoveredXidTest
+[INFO] Running nl.topicus.jdbc.xa.CloudSpannerXAExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in nl.topicus.jdbc.xa.CloudSpannerXAExceptionTest
+[INFO] Running nl.topicus.jdbc.xa.CloudSpannerXADataSourceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 s - in nl.topicus.jdbc.xa.CloudSpannerXADataSourceTest
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$SelectStatementTests
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 s - in nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$SelectStatementTests
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$ParameterTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$ParameterTests
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$DDLStatementTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$DDLStatementTests
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$BatchTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$BatchTests
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$InsertStatementTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$InsertStatementTests
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$UpdateStatementTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s - in nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$UpdateStatementTests
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$DeleteStatementTests
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.507 s - in nl.topicus.jdbc.statement.CloudSpannerPreparedStatementTest$DeleteStatementTests
+[INFO] Running nl.topicus.jdbc.statement.AbstractCloudSpannerStatementTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in nl.topicus.jdbc.statement.AbstractCloudSpannerStatementTest
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerParameterMetaDataTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in nl.topicus.jdbc.statement.CloudSpannerParameterMetaDataTest
+[INFO] Running nl.topicus.jdbc.statement.CloudSpannerStatementTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 s - in nl.topicus.jdbc.statement.CloudSpannerStatementTest
+[INFO] Running nl.topicus.jdbc.statement.ValueBinderExpressionVisitorAdapterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in nl.topicus.jdbc.statement.ValueBinderExpressionVisitorAdapterTest
+[INFO] Running nl.topicus.jdbc.statement.UpdateModeTest$UpdateTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 s - in nl.topicus.jdbc.statement.UpdateModeTest$UpdateTests
+[INFO] Running nl.topicus.jdbc.statement.UpdateModeTest$InsertTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in nl.topicus.jdbc.statement.UpdateModeTest$InsertTests
+[INFO] Running nl.topicus.jdbc.statement.InsertWorkerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.081 s - in nl.topicus.jdbc.statement.InsertWorkerTest
+[INFO] Running nl.topicus.jdbc.statement.ConversionResultTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in nl.topicus.jdbc.statement.ConversionResultTest
+[INFO] Running nl.topicus.jdbc.resultset.CloudSpannerResultSetMetaDataTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 s - in nl.topicus.jdbc.resultset.CloudSpannerResultSetMetaDataTest
+[INFO] Running nl.topicus.jdbc.resultset.CloudSpannerResultSetTest
+[INFO] Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.441 s - in nl.topicus.jdbc.resultset.CloudSpannerResultSetTest
+[INFO] Running nl.topicus.jdbc.resultset.AbstractCloudSpannerResultSetTest$UnsupportedMethodsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in nl.topicus.jdbc.resultset.AbstractCloudSpannerResultSetTest$UnsupportedMethodsTest
+[INFO] Running nl.topicus.jdbc.resultset.AbstractCloudSpannerResultSetTest$SupportedMethodsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in nl.topicus.jdbc.resultset.AbstractCloudSpannerResultSetTest$SupportedMethodsTest
+[INFO] Running nl.topicus.jdbc.RunningOperationsStoreTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in nl.topicus.jdbc.RunningOperationsStoreTest
+[INFO] Running nl.topicus.jdbc.CustomStatementsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in nl.topicus.jdbc.CustomStatementsTest
+[INFO] Running nl.topicus.jdbc.MetaDataStoreTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in nl.topicus.jdbc.MetaDataStoreTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerConnectionPoolDataSourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 s - in nl.topicus.jdbc.CloudSpannerConnectionPoolDataSourceTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerDataTypeTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in nl.topicus.jdbc.CloudSpannerDataTypeTest
+[INFO] Running nl.topicus.jdbc.metadata.AbstractCloudSpannerWrapperTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in nl.topicus.jdbc.metadata.AbstractCloudSpannerWrapperTest
+[INFO] Running nl.topicus.jdbc.transaction.XATransactionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in nl.topicus.jdbc.transaction.XATransactionTest
+[INFO] Running nl.topicus.jdbc.transaction.TransactionThreadTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.822 s - in nl.topicus.jdbc.transaction.TransactionThreadTest
+[INFO] Running nl.topicus.jdbc.transaction.CloudSpannerTransactionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in nl.topicus.jdbc.transaction.CloudSpannerTransactionTest
+[INFO] Running nl.topicus.jdbc.DDLStatementTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in nl.topicus.jdbc.DDLStatementTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest
+[ERROR] Tests run: 147, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.121 s <<< FAILURE! - in nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest
+[ERROR] testSupportsSavePoints(nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest)  Time elapsed: 0.02 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: an instance of java.sql.SQLFeatureNotSupportedException
+     but: <org.mockito.exceptions.base.MockitoException: Unable to create mock instance of type 'CloudSpannerConnection'> is a org.mockito.exceptions.base.MockitoException
+Stacktrace was: org.mockito.exceptions.base.MockitoException: Unable to create mock instance of type 'CloudSpannerConnection'
+	at nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest.testSupportsSavePoints(CloudSpannerDatabaseMetaDataTest.java:888)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)
+	at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+Caused by: org.mockito.internal.creation.instance.InstantiationException: 
+Unable to create instance of 'CloudSpannerConnection$MockitoMock$1686670827'.
+Please ensure that the target class has a 0-arg constructor.
+	... 38 more
+
+
+[INFO] Running nl.topicus.jdbc.CloudSpannerDriverTest$DriverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in nl.topicus.jdbc.CloudSpannerDriverTest$DriverTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerDriverTest$ParseURLTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in nl.topicus.jdbc.CloudSpannerDriverTest$ParseURLTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerDriverTest$RegisterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in nl.topicus.jdbc.CloudSpannerDriverTest$RegisterTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerDriverTest$AcceptsURLTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in nl.topicus.jdbc.CloudSpannerDriverTest$AcceptsURLTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerPooledConnectionTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.584 s - in nl.topicus.jdbc.CloudSpannerPooledConnectionTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerArrayTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in nl.topicus.jdbc.CloudSpannerArrayTest
+[INFO] Running nl.topicus.jdbc.LoggerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in nl.topicus.jdbc.LoggerTest
+[INFO] Running nl.topicus.jdbc.util.CloudSpannerConversionUtilTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in nl.topicus.jdbc.util.CloudSpannerConversionUtilTest
+[INFO] Running nl.topicus.jdbc.AbstractCloudSpannerConnectionTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.287 s - in nl.topicus.jdbc.AbstractCloudSpannerConnectionTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerConnectionTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.807 s - in nl.topicus.jdbc.CloudSpannerConnectionTest
+[INFO] Running nl.topicus.jdbc.CloudSpannerDatabaseMetaDataConstantsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in nl.topicus.jdbc.CloudSpannerDatabaseMetaDataConstantsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CloudSpannerDatabaseMetaDataTest.testSupportsSavePoints 
+Expected: an instance of java.sql.SQLFeatureNotSupportedException
+     but: <org.mockito.exceptions.base.MockitoException: Unable to create mock instance of type 'CloudSpannerConnection'> is a org.mockito.exceptions.base.MockitoException
+Stacktrace was: org.mockito.exceptions.base.MockitoException: Unable to create mock instance of type 'CloudSpannerConnection'
+	at nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest.testSupportsSavePoints(CloudSpannerDatabaseMetaDataTest.java:888)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)
+	at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+Caused by: org.mockito.internal.creation.instance.InstantiationException: 
+Unable to create instance of 'CloudSpannerConnection$MockitoMock$1686670827'.
+Please ensure that the target class has a 0-arg constructor.
+	... 38 more
+
+[INFO] 
+[ERROR] Tests run: 553, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 28.939 s
+[INFO] Finished at: 2020-02-16T15:04:03+01:00
+[INFO] Final Memory: 16M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project spanner-jdbc: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-olavloite-spanner-jdbc-360887112-20180401-164918-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project spanner-jdbc: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-olavloite-spanner-jdbc-360887112-20180401-164918-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-olavloite-spanner-jdbc-360887112-20180401-164918-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:984)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
