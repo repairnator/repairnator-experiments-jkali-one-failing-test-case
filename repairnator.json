@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dotwebstack/dotwebstack-framework",
-  "failingModule": "/root/workspace/dotwebstack/dotwebstack-framework/363986485/frontend/ld",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 479,
-  "failing-test-cases": [
-    {
-      "className": "org.dotwebstack.framework.frontend.ld.mappers.DirectEndPointRequestMapperTest",
-      "failingMethods": [
-        "org.dotwebstack.framework.frontend.ld.mappers.DirectEndPointRequestMapperTest#loadRepresentations_MapRepresentation_WithValidData"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:43:19 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 48341680,
+      "totalMemory": 142606336
+    },
+    "totalDuration": 370,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 228,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          228
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit/frontend/ld",
+    "overallMetrics": {
+      "numberRunning": 479,
+      "numberPassing": 478,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: a collection with size \u003c1\u003e\n     but: collection size was \u003c2\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.dotwebstack.framework.frontend.ld.mappers.DirectEndPointRequestMapperTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.dotwebstack.framework.frontend.ld.mappers.DirectEndPointRequestMapperTest",
+        "testMethod": "loadRepresentations_MapRepresentation_WithValidData",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a collection with size \u003c1\u003e\n     but: collection size was \u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 219,
+    "numberTestFiles": 167,
+    "numberLibrariesFailingModule": 122,
+    "numberLines": 0
+  },
+  "commits": {}
 }
