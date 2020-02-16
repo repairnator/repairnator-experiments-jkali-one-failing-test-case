@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 36,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "openmrs/openmrs-core",
-  "failingModule": "/root/workspace/openmrs/openmrs-core/356815145/api",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 3958,
-  "failing-test-cases": [
-    {
-      "className": "org.openmrs.OpenmrsTestsTest",
-      "failingMethods": [
-        "org.openmrs.OpenmrsTestsTest#shouldStartWithShould"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:52 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:17:48 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 877387584,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 952,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 101,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          101
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openmrs-openmrs-core-356815145-20180322-121004-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openmrs-openmrs-core-356815145-20180322-121004-firstCommit/api",
+    "overallMetrics": {
+      "numberRunning": 3922,
+      "numberPassing": 3921,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 36,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "org.openmrs.api.ProgramWorkflowServiceTest#voidPatientProgram_shouleVoidPatientProgram is supposed to either 1) start with \u0027should\u0027 or 2) contain \u0027_should\u0027 but it doesn\u0027t",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.openmrs.OpenmrsTestsTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.openmrs.OpenmrsTestsTest",
+        "testMethod": "shouldStartWithShould",
+        "failureName": "java.lang.AssertionError",
+        "detail": "org.openmrs.api.ProgramWorkflowServiceTest#voidPatientProgram_shouleVoidPatientProgram is supposed to either 1) start with \u0027should\u0027 or 2) contain \u0027_should\u0027 but it doesn\u0027t",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 725,
+    "numberTestFiles": 345,
+    "numberLibrariesFailingModule": 92,
+    "numberLines": 0
+  }
 }
