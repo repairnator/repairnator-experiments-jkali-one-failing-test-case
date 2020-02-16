@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "prestodb/presto",
-  "failingModule": "/root/workspace/prestodb/presto/284491750/presto-resource-group-managers",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 3974,
-  "failing-test-cases": [
-    {
-      "className": "com.facebook.presto.resourceGroups.db.TestResourceGroupsDao",
-      "failingMethods": [
-        "com.facebook.presto.resourceGroups.db.TestResourceGroupsDao#testResourceGroups"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:02:15 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:50:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 283688720,
+      "totalMemory": 952455168
+    },
+    "totalDuration": 2911,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 591,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          591
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-284491750-20171007-042243_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-284491750-20171007-042243_bugonly-firstCommit/presto-resource-group-managers",
+    "overallMetrics": {
+      "numberRunning": 3974,
+      "numberPassing": 3973,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected [ResourceGroupSpec{name\u003dglobal, softMemoryLimit\u003dOptional.empty, maxQueued\u003d100, targetRunning\u003dOptional[100], maxRunning\u003d100, schedulingPolicy\u003dOptional.empty, schedulingWeight\u003dOptional.empty, burstSchedulingWeight\u003dOptional.empty, jmxExport\u003dOptional.empty, softCpuLimit\u003dOptional.empty, hardCpuLimit\u003dOptional.empty, queuedTimeLimit\u003dOptional.empty, runningTimeLimit\u003dOptional.empty}] but found [ResourceGroupSpec{name\u003dglobal, softMemoryLimit\u003dOptional.empty, maxQueued\u003d100, targetRunning\u003dOptional[100], maxRunning\u003d100, schedulingPolicy\u003dOptional.empty, schedulingWeight\u003dOptional.empty, burstSchedulingWeight\u003dOptional.empty, jmxExport\u003dOptional.empty, softCpuLimit\u003dOptional.empty, hardCpuLimit\u003dOptional.empty, queuedTimeLimit\u003dOptional.empty, runningTimeLimit\u003dOptional.empty}]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.facebook.presto.resourceGroups.db.TestResourceGroupsDao",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.facebook.presto.resourceGroups.db.TestResourceGroupsDao",
+        "testMethod": "testResourceGroups",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [ResourceGroupSpec{name\u003dglobal, softMemoryLimit\u003dOptional.empty, maxQueued\u003d100, targetRunning\u003dOptional[100], maxRunning\u003d100, schedulingPolicy\u003dOptional.empty, schedulingWeight\u003dOptional.empty, burstSchedulingWeight\u003dOptional.empty, jmxExport\u003dOptional.empty, softCpuLimit\u003dOptional.empty, hardCpuLimit\u003dOptional.empty, queuedTimeLimit\u003dOptional.empty, runningTimeLimit\u003dOptional.empty}] but found [ResourceGroupSpec{name\u003dglobal, softMemoryLimit\u003dOptional.empty, maxQueued\u003d100, targetRunning\u003dOptional[100], maxRunning\u003d100, schedulingPolicy\u003dOptional.empty, schedulingWeight\u003dOptional.empty, burstSchedulingWeight\u003dOptional.empty, jmxExport\u003dOptional.empty, softCpuLimit\u003dOptional.empty, hardCpuLimit\u003dOptional.empty, queuedTimeLimit\u003dOptional.empty, runningTimeLimit\u003dOptional.empty}]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 50,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3388,
+    "numberTestFiles": 1100,
+    "numberLibrariesFailingModule": 136,
+    "numberLines": 0
+  },
+  "commits": {}
 }
