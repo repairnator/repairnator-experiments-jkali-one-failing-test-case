@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 23,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "square/okhttp",
-  "bugCommit": "https://github.com/square/okhttp/compare/3b878299e7ab...d26f6bf87625",
-  "failingModule": "/root/workspace/square/okhttp/261548722/okhttp-tests",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 1974,
-  "failing-test-cases": [
-    {
-      "className": "okhttp3.EventListenerTest",
-      "failingMethods": [
-        "okhttp3.EventListenerTest#successfulHttpsCallEventSequence"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-261549154-20170806-172943-firstCommit/mockwebserver",
+    "overallMetrics": {
+      "numberRunning": 30,
+      "numberPassing": 29,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c[FetchStart, DnsStart, DnsEnd, ConnectStart, SecureConnectStart, SecureConnectEnd, ConnectEnd, ConnectionAcquired, RequestHeadersStart, RequestHeadersEnd, ResponseHeadersStart, ResponseHeadersEnd, ResponseBodyStart, ResponseBodyEnd, ConnectionReleased, FetchEnd]\u003e but was:\u003c[FetchStart, DnsStart, DnsEnd, ConnectStart, SecureConnectStart, SecureConnectEnd, ConnectEnd, ConnectionAcquired, RequestHeadersStart, RequestHeadersEnd, ResponseHeadersStart, ResponseHeadersEnd, ResponseBodyStart, ConnectionReleased, FetchEnd, ResponseBodyEnd]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "okhttp3.mockwebserver.MockWebServerTest",
+        "numberRunning": 28,
+        "numberPassing": 27,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "okhttp3.mockwebserver.MockWebServerTest",
+        "testMethod": "disconnectRequestHalfway",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c512.0\u003e but was:\u003c530.0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberPlugins": 0,
+    "numberSourceFiles": 183,
+    "numberTestFiles": 98,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:07 PM",
+    "reproductionDateEnd": "Feb 16, 2020 7:58:06 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 70512120,
+      "totalMemory": 168923136
+    },
+    "totalDuration": 5455,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 5325,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          5325
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-261549154-20170806-172943-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
