@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 4,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "timmolter/XChange",
-  "failingModule": "/root/workspace/timmolter/XChange/301755888/xchange-quoine",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 521,
-  "failing-test-cases": [
-    {
-      "className": "org.knowm.xchange.quoine.dto.QuoineAdaptersTest",
-      "failingMethods": [
-        "org.knowm.xchange.quoine.dto.QuoineAdaptersTest#testAdaptTicker"
-      ],
-      "erroringMethods": [],
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2211,
+    "numberTestFiles": 372,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-301755888-20171114-043126_bugonly-firstCommit/xchange-kraken",
+    "overallMetrics": {
+      "numberRunning": 423,
+      "numberPassing": 422,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
       "failures": [
         {
-          "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c227.38[97]6\u003e but was:\u003c227.38[58]6\u003e",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.knowm.xchange.kraken.KrakenAdaptersTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.knowm.xchange.kraken.KrakenAdaptersTest",
+        "testMethod": "testAdaptCurrencyPairs",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected size:\u003c56\u003e but was:\u003c54\u003e in:\n\u003c[EOS/BTC,\n    BTC/CAD,\n    XLM/EUR,\n    REP/BTC,\n    DOGE/BTC,\n    EOS/USD,\n    GNO/EUR,\n    ETC/EUR,\n    XMR/USD,\n    XMR/BTC,\n    MLN/BTC,\n    BTC/USD,\n    ETH/GBP,\n    GNO/BTC,\n    ETC/BTC,\n    ETH/EUR,\n    REP/ETH,\n    XRP/CAD,\n    XRP/EUR,\n    MLN/ETH,\n    BTC/JPY,\n    EOS/ETH,\n    XLM/BTC,\n    XMR/EUR,\n    REP/USD,\n    BCH/EUR,\n    LTC/USD,\n    XRP/BTC,\n    DASH/BTC,\n    ETC/ETH,\n    GNO/ETH,\n    DASH/USD,\n    ETH/USD,\n    ETH/CAD,\n    ZEC/BTC,\n    BCH/BTC,\n    XRP/USD,\n    BTC/GBP,\n    REP/EUR,\n    ZEC/USD,\n    BCH/USD,\n    LTC/EUR,\n    ZEC/EUR,\n    XLM/USD,\n    GNO/USD,\n    EOS/EUR,\n    USDT/USD,\n    DASH/EUR,\n    ETH/BTC,\n    LTC/BTC,\n    ETC/USD,\n    ETH/JPY,\n    BTC/EUR,\n    XRP/JPY]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:09 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:40:35 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 42900680,
+      "totalMemory": 159186944
+    },
+    "totalDuration": 800,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 46,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          46,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 156,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          156
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-301755888-20171114-043126_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
