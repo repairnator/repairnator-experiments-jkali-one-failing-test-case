@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:21 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:51:25 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 200125672,
+      "totalMemory": 377810944
+    },
+    "totalDuration": 839,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 46,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          46
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-error-prone-413405586-20180808-053324-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-error-prone-413405586-20180808-053324-firstCommit/core",
+    "overallMetrics": {
+      "numberRunning": 2961,
+      "numberPassing": 2960,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 35,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.google.errorprone.bugpatterns.android.RestrictToEnforcerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.google.errorprone.bugpatterns.android.RestrictToEnforcerTest",
+        "testMethod": "testPositiveCases",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Test program failed to compile with non Error Prone error: /com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:19: error: package android.support.annotation.RestrictTo does not exist\nimport static android.support.annotation.RestrictTo.Scope.GROUP_ID;\n                                                   ^\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:19: error: static import only from classes and interfaces\nimport static android.support.annotation.RestrictTo.Scope.GROUP_ID;\n^\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:19: error: package android.support.annotation.RestrictTo does not exist\nimport static android.support.annotation.RestrictTo.Scope.GROUP_ID;\n                                                   ^\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:19: error: static import only from classes and interfaces\nimport static android.support.annotation.RestrictTo.Scope.GROUP_ID;\n^\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:21: error: package android.support.annotation does not exist\nimport android.support.annotation.RestrictTo;\n                                 ^\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:30: error: package android.support.annotation does not exist\nimport android.support.annotation.RestrictTo;\n                                 ^\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:37: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n   ^\n  symbol:   class RestrictTo\n  location: class RestrictToEnforcerPositiveCasesApi\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:64: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n   ^\n  symbol:   class RestrictTo\n  location: class RestrictToEnforcerPositiveCasesApi\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:46: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n   ^\n  symbol:   class RestrictTo\n  location: class RestrictToEnforcerPositiveCasesApi\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:61: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n   ^\n  symbol:   class RestrictTo\n  location: class RestrictToEnforcerPositiveCasesApi\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:73: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n   ^\n  symbol:   class RestrictTo\n  location: class RestrictToEnforcerPositiveCases\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:37: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n              ^\n  symbol:   variable GROUP_ID\n  location: class RestrictToEnforcerPositiveCasesApi\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:69: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n   ^\n  symbol:   class RestrictTo\n  location: class RestrictToEnforcerPositiveCases\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:69: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n              ^\n  symbol:   variable GROUP_ID\n  location: class RestrictToEnforcerPositiveCases\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:64: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n              ^\n  symbol:   variable GROUP_ID\n  location: class RestrictToEnforcerPositiveCasesApi\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:79: error: cannot find symbol\n    @RestrictTo(GROUP_ID)\n     ^\n  symbol:   class RestrictTo\n  location: class RestrictedAbstractMethod\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:79: error: cannot find symbol\n    @RestrictTo(GROUP_ID)\n                ^\n  symbol:   variable GROUP_ID\n  location: class RestrictedAbstractMethod\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:46: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n              ^\n  symbol:   variable GROUP_ID\n  location: class RestrictToEnforcerPositiveCasesApi\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:33: error: cannot find symbol\n    @RestrictTo(GROUP_ID)\n     ^\n  symbol:   class RestrictTo\n  location: class RestrictedConstructor\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:33: error: cannot find symbol\n    @RestrictTo(GROUP_ID)\n                ^\n  symbol:   variable GROUP_ID\n  location: class RestrictedConstructor\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:26: error: cannot find symbol\n    @RestrictTo(GROUP_ID)\n     ^\n  symbol:   class RestrictTo\n  location: class RestrictedMethodClass\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:26: error: cannot find symbol\n    @RestrictTo(GROUP_ID)\n                ^\n  symbol:   variable GROUP_ID\n  location: class RestrictedMethodClass\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:61: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n              ^\n  symbol:   variable GROUP_ID\n  location: class RestrictToEnforcerPositiveCasesApi\n/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:73: error: cannot find symbol\n  @RestrictTo(GROUP_ID)\n              ^\n  symbol:   variable GROUP_ID\n  location: class RestrictToEnforcerPositiveCases\n24 errors\n: The subject was expected to be true, but was false",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberPlugins": 0,
+    "numberSourceFiles": 688,
+    "numberTestFiles": 972,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  },
+  "commits": {}
+}
