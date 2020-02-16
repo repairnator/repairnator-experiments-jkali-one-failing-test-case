@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "swagger-api/swagger-core",
-  "bugCommit": "https://github.com/swagger-api/swagger-core/compare/5d75de8254f2...4bd32ad7c5d9",
-  "failingModule": "/root/workspace/swagger-api/swagger-core/268912908/modules/swagger-jaxrs2",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 298,
-  "failing-test-cases": [
-    {
-      "className": "io.swagger.jaxrs2.annotations.responses.RequestBodyTest",
-      "failingMethods": [
-        "io.swagger.jaxrs2.annotations.responses.RequestBodyTest#oneRequestBodyMultipleParameters"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-swagger-api-swagger-core-268912908-20170827-163630_bugonly-firstCommit/modules/swagger-jaxrs2",
+    "overallMetrics": {
+      "numberRunning": 298,
+      "numberPassing": 297,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected [openapi: 3.0.0 paths:   /user:     put:       summary: Modify user       description: Modifying user.       operationId: methodWithRequestBodyWithoutAnnotation       requestBody:         content:           \u0027*/*\u0027:             schema:               $ref: \u0027#/components/schemas/User\u0027       responses:         default:           description: no description     post:       summary: Create user       description: This can only be done by the logged in user.       operationId: methodWithRequestBodyAndTwoParameters       parameters:       - name: name         in: query         schema:           type: string       - name: code         in: query         schema:           type: string       requestBody:         description: Created user object         content:           \u0027*/*\u0027:             schema:               $ref: \u0027#/components/schemas/User\u0027         required: true       responses:         default:           description: no description     delete:       summary: Delete user       description: This can only be done by the logged in user.       operationId: methodWithoutRequestBodyAndTwoParameters       parameters:       - name: name         in: query         schema:           type: string       - name: code         in: query         schema:           type: string       responses:         default:           description: no description   /pet:     put:       summary: Modify pet       description: Modifying pet.       operationId: methodWithRequestBodyWithoutAnnotationAndTwoProduces       requestBody:         content:           application/json:             schema:               $ref: \u0027#/components/schemas/User\u0027           application/xml:             schema:               $ref: \u0027#/components/schemas/User\u0027       responses:         default:           description: no description     post:       summary: Create pet       description: Creating pet.       operationId: methodWithTwoRequestBodyWithoutAnnotationAndTwoProduces       requestBody:         content:           application/json:             schema:               $ref: \u0027#/components/schemas/Pet\u0027           application/xml:             schema:               $ref: \u0027#/components/schemas/Pet\u0027       responses:         default:           description: no description     delete:       summary: Delete pet       description: Deleting pet.       operationId: methodWithOneSimpleRequestBody       requestBody:         content:           application/json:             schema:               type: int           application/xml:             schema:               type: int       responses:         default:           description: no description components:   schemas:     User:       type: object       properties:         id:           type: integer           format: int64         username:           type: string         firstName:           type: string         lastName:           type: string         email:           type: string         password:           type: string         phone:           type: string         userStatus:           type: integer           description: User Status           format: int32           enum:           - null       xml:         name: User     Pet:       type: object       properties:         id:           type: integer           format: int64         category:           $ref: \u0027#/components/schemas/Category\u0027         name:           type: string         photoUrls:           type: array           xml:             wrapped: true           items:             type: string             xml:               name: photoUrl         tags:           type: array           xml:             wrapped: true           items:             $ref: \u0027#/components/schemas/Tag\u0027         status:           type: string           description: pet status in the store           enum:           - available,pending,sold       xml:         name: Pet ] but found [openapi: 3.0.0 paths:   /user:     put:       summary: Modify user       description: Modifying user.       operationId: methodWithRequestBodyWithoutAnnotation       requestBody:         content:           \u0027*/*\u0027:             schema:               $ref: \u0027#/components/schemas/User\u0027       responses:         default:           description: no description     post:       summary: Create user       description: This can only be done by the logged in user.       operationId: methodWithRequestBodyAndTwoParameters       parameters:       - name: name         in: query         schema:           type: string       - name: code         in: query         schema:           type: string       requestBody:         description: Created user object         content:           \u0027*/*\u0027:             schema:               $ref: \u0027#/components/schemas/User\u0027         required: true       responses:         default:           description: no description     delete:       summary: Delete user       description: This can only be done by the logged in user.       operationId: methodWithoutRequestBodyAndTwoParameters       parameters:       - name: name         in: query         schema:           type: string       - name: code         in: query         schema:           type: string       responses:         default:           description: no description   /pet:     put:       summary: Modify pet       description: Modifying pet.       operationId: methodWithRequestBodyWithoutAnnotationAndTwoProduces       requestBody:         content:           \u0027*/*\u0027:             schema:               $ref: \u0027#/components/schemas/User\u0027       responses:         default:           description: no description     post:       summary: Create pet       description: Creating pet.       operationId: methodWithTwoRequestBodyWithoutAnnotationAndTwoProduces       requestBody:         content:           \u0027*/*\u0027:             schema:               $ref: \u0027#/components/schemas/Pet\u0027       responses:         default:           description: no description     delete:       summary: Delete pet       description: Deleting pet.       operationId: methodWithOneSimpleRequestBody       requestBody:         content:           \u0027*/*\u0027:             schema:               type: int       responses:         default:           description: no description components:   schemas:     User:       type: object       properties:         id:           type: integer           format: int64         username:           type: string         firstName:           type: string         lastName:           type: string         email:           type: string         password:           type: string         phone:           type: string         userStatus:           type: integer           description: User Status           format: int32           enum:           - null       xml:         name: User     Pet:       type: object       properties:         id:           type: integer           format: int64         category:           $ref: \u0027#/components/schemas/Category\u0027         name:           type: string         photoUrls:           type: array           xml:             wrapped: true           items:             type: string             xml:               name: photoUrl         tags:           type: array           xml:             wrapped: true           items:             $ref: \u0027#/components/schemas/Tag\u0027         status:           type: string           description: pet status in the store           enum:           - available,pending,sold       xml:         name: Pet ]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.jaxrs2.annotations.responses.RequestBodyTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.jaxrs2.annotations.responses.RequestBodyTest",
+        "testMethod": "oneRequestBodyMultipleParameters",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [openapi: 3.0.0\npaths:\n  /user:\n    put:\n      summary: Modify user\n      description: Modifying user.\n      operationId: methodWithRequestBodyWithoutAnnotation\n      requestBody:\n        content:\n          \u0027*/*\u0027:\n            schema:\n              $ref: \u0027#/components/schemas/User\u0027\n      responses:\n        default:\n          description: no description\n    post:\n      summary: Create user\n      description: This can only be done by the logged in user.\n      operationId: methodWithRequestBodyAndTwoParameters\n      parameters:\n      - name: name\n        in: query\n        schema:\n          type: string\n      - name: code\n        in: query\n        schema:\n          type: string\n      requestBody:\n        description: Created user object\n        content:\n          \u0027*/*\u0027:\n            schema:\n              $ref: \u0027#/components/schemas/User\u0027\n        required: true\n      responses:\n        default:\n          description: no description\n    delete:\n      summary: Delete user\n      description: This can only be done by the logged in user.\n      operationId: methodWithoutRequestBodyAndTwoParameters\n      parameters:\n      - name: name\n        in: query\n        schema:\n          type: string\n      - name: code\n        in: query\n        schema:\n          type: string\n      responses:\n        default:\n          description: no description\n  /pet:\n    put:\n      summary: Modify pet\n      description: Modifying pet.\n      operationId: methodWithRequestBodyWithoutAnnotationAndTwoProduces\n      requestBody:\n        content:\n          application/json:\n            schema:\n              $ref: \u0027#/components/schemas/User\u0027\n          application/xml:\n            schema:\n              $ref: \u0027#/components/schemas/User\u0027\n      responses:\n        default:\n          description: no description\n    post:\n      summary: Create pet\n      description: Creating pet.\n      operationId: methodWithTwoRequestBodyWithoutAnnotationAndTwoProduces\n      requestBody:\n        content:\n          application/json:\n            schema:\n              $ref: \u0027#/components/schemas/Pet\u0027\n          application/xml:\n            schema:\n              $ref: \u0027#/components/schemas/Pet\u0027\n      responses:\n        default:\n          description: no description\n    delete:\n      summary: Delete pet\n      description: Deleting pet.\n      operationId: methodWithOneSimpleRequestBody\n      requestBody:\n        content:\n          application/json:\n            schema:\n              type: int\n          application/xml:\n            schema:\n              type: int\n      responses:\n        default:\n          description: no description\ncomponents:\n  schemas:\n    User:\n      type: object\n      properties:\n        id:\n          type: integer\n          format: int64\n        username:\n          type: string\n        firstName:\n          type: string\n        lastName:\n          type: string\n        email:\n          type: string\n        password:\n          type: string\n        phone:\n          type: string\n        userStatus:\n          type: integer\n          description: User Status\n          format: int32\n          enum:\n          - null\n      xml:\n        name: User\n    Pet:\n      type: object\n      properties:\n        id:\n          type: integer\n          format: int64\n        category:\n          $ref: \u0027#/components/schemas/Category\u0027\n        name:\n          type: string\n        photoUrls:\n          type: array\n          xml:\n            wrapped: true\n          items:\n            type: string\n            xml:\n              name: photoUrl\n        tags:\n          type: array\n          xml:\n            wrapped: true\n          items:\n            $ref: \u0027#/components/schemas/Tag\u0027\n        status:\n          type: string\n          description: pet status in the store\n          enum:\n          - available,pending,sold\n      xml:\n        name: Pet\n] but found [openapi: 3.0.0\npaths:\n  /user:\n    put:\n      summary: Modify user\n      description: Modifying user.\n      operationId: methodWithRequestBodyWithoutAnnotation\n      requestBody:\n        content:\n          \u0027*/*\u0027:\n            schema:\n              $ref: \u0027#/components/schemas/User\u0027\n      responses:\n        default:\n          description: no description\n    post:\n      summary: Create user\n      description: This can only be done by the logged in user.\n      operationId: methodWithRequestBodyAndTwoParameters\n      parameters:\n      - name: name\n        in: query\n        schema:\n          type: string\n      - name: code\n        in: query\n        schema:\n          type: string\n      requestBody:\n        description: Created user object\n        content:\n          \u0027*/*\u0027:\n            schema:\n              $ref: \u0027#/components/schemas/User\u0027\n        required: true\n      responses:\n        default:\n          description: no description\n    delete:\n      summary: Delete user\n      description: This can only be done by the logged in user.\n      operationId: methodWithoutRequestBodyAndTwoParameters\n      parameters:\n      - name: name\n        in: query\n        schema:\n          type: string\n      - name: code\n        in: query\n        schema:\n          type: string\n      responses:\n        default:\n          description: no description\n  /pet:\n    put:\n      summary: Modify pet\n      description: Modifying pet.\n      operationId: methodWithRequestBodyWithoutAnnotationAndTwoProduces\n      requestBody:\n        content:\n          \u0027*/*\u0027:\n            schema:\n              $ref: \u0027#/components/schemas/User\u0027\n      responses:\n        default:\n          description: no description\n    post:\n      summary: Create pet\n      description: Creating pet.\n      operationId: methodWithTwoRequestBodyWithoutAnnotationAndTwoProduces\n      requestBody:\n        content:\n          \u0027*/*\u0027:\n            schema:\n              $ref: \u0027#/components/schemas/Pet\u0027\n      responses:\n        default:\n          description: no description\n    delete:\n      summary: Delete pet\n      description: Deleting pet.\n      operationId: methodWithOneSimpleRequestBody\n      requestBody:\n        content:\n          \u0027*/*\u0027:\n            schema:\n              type: int\n      responses:\n        default:\n          description: no description\ncomponents:\n  schemas:\n    User:\n      type: object\n      properties:\n        id:\n          type: integer\n          format: int64\n        username:\n          type: string\n        firstName:\n          type: string\n        lastName:\n          type: string\n        email:\n          type: string\n        password:\n          type: string\n        phone:\n          type: string\n        userStatus:\n          type: integer\n          description: User Status\n          format: int32\n          enum:\n          - null\n      xml:\n        name: User\n    Pet:\n      type: object\n      properties:\n        id:\n          type: integer\n          format: int64\n        category:\n          $ref: \u0027#/components/schemas/Category\u0027\n        name:\n          type: string\n        photoUrls:\n          type: array\n          xml:\n            wrapped: true\n          items:\n            type: string\n            xml:\n              name: photoUrl\n        tags:\n          type: array\n          xml:\n            wrapped: true\n          items:\n            $ref: \u0027#/components/schemas/Tag\u0027\n        status:\n          type: string\n          description: pet status in the store\n          enum:\n          - available,pending,sold\n      xml:\n        name: Pet\n]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 157,
+    "numberTestFiles": 172,
+    "numberLibrariesFailingModule": 51,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:07 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:57:00 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 214619120,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 1789,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1582,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1582
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-swagger-api-swagger-core-268912908-20170827-163630_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
