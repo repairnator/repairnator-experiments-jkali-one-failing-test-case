@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "openzipkin/zipkin",
-  "failingModule": "/root/workspace/openzipkin/zipkin/367183201/zipkin2",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 226,
-  "failing-test-cases": [
-    {
-      "className": "zipkin2.EndpointTest",
-      "failingMethods": [
-        "zipkin2.EndpointTest#ip_ipv6_addr_compatIpv4"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:52 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:09:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 20854056,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 454,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openzipkin-zipkin-367183201-20180416-162837-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-openzipkin-zipkin-367183201-20180416-162837-firstCommit/zipkin2",
+    "overallMetrics": {
+      "numberRunning": 222,
+      "numberPassing": 221,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c\"43.0.[192].2\"\u003e but was:\u003c\"43.0.[-64].2\"\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "zipkin2.EndpointTest",
+        "numberRunning": 20,
+        "numberPassing": 19,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "zipkin2.EndpointTest",
+        "testMethod": "ip_ipv6_addr_compatIpv4",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"43.0.[192].2\"\u003e but was:\u003c\"43.0.[-64].2\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 30,
+    "numberPlugins": 0,
+    "numberSourceFiles": 252,
+    "numberTestFiles": 178,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  },
+  "commits": {}
 }
