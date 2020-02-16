@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 18,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/b7862646ea36...2dbd54de65fe",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/231895667/languagetool-standalone",
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 797,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.WordListValidatorTest",
-      "failingMethods": [
-        "org.languagetool.rules.WordListValidatorTest#testWordListValidity"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-231906356-20170513-185143-firstCommit/languagetool-standalone",
+    "overallMetrics": {
+      "numberRunning": 779,
+      "numberPassing": 778,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 18,
       "failures": [
         {
           "failureName": "junit.framework.AssertionFailedError",
-          "failureDetail": "Word \u0027cm²\u0027 from /ca/spelling.txt doesn\u0027t match regex: [0-9a-zA-ZöäüÖÄÜßëçèéêáàóòôÈÉÁÀÓÒãñíîşŒ€ūαΑβΒγΓδΔεΕζΖηΗθΘιΙκΚλΛμΜνΝξΞοΟπΠρΡσΣτΤυΥφΦχΧψΨωΩάΆέΈίΊήΉύΎϊϋΰΐœţŚśōżúï·./-]+ - please fix the word or add the character to org.languagetool.rules.WordListValidatorTest if it\u0027s valid",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.WordListValidatorTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.WordListValidatorTest",
+        "testMethod": "testWordListValidity",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Word \u0027cm²\u0027 from /ca/spelling.txt doesn\u0027t match regex: [0-9a-zA-ZöäüÖÄÜßëçèéêáàóòôÈÉÁÀÓÒãñíîşŒ€ūαΑβΒγΓδΔεΕζΖηΗθΘιΙκΚλΛμΜνΝξΞοΟπΠρΡσΣτΤυΥφΦχΧψΨωΩάΆέΈίΊήΉύΎϊϋΰΐœţŚśōżúï·./-]+ - please fix the word or add the character to org.languagetool.rules.WordListValidatorTest if it\u0027s valid",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 44,
+    "numberPlugins": 0,
+    "numberSourceFiles": 669,
+    "numberTestFiles": 438,
+    "numberLibrariesFailingModule": 80,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:07 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:29:42 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 225571256,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6691,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-231906356-20170513-185143-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }

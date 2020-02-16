@@ -1512,3 +1512,6 @@ RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.lang.System.out.pri
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.languagetool.dev.RuleCreator line: 187, pointed element: CtInvocationImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `java.lang.System.exit(1) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.languagetool.dev.RuleCreator line: 183, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((args.length < 1) || (args.length > 2)) { 	java.lang.System.out.println(("Usage: " + org.languag[...] ` -topatch--> `if (true) { 	java.lang.System.out.println(("Usage: " + org.languagetool.dev.RuleCreator.class.getSim[...]` (spoon.support.reflect.code.CtIfImpl) 
