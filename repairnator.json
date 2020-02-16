@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "voyages-sncf-technologies/hesperides",
-  "bugCommit": "https://github.com/voyages-sncf-technologies/hesperides/compare/643382f47b3d...82133a71d7a1",
-  "failingModule": "/root/workspace/voyages-sncf-technologies/hesperides/396857150/domain",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 5,
-  "failing-test-cases": [
-    {
-      "className": "org.hesperides.domain.modules.commands.PropertiesExtractionTest",
-      "failingMethods": [
-        "testExtractPropertyFromStringDefinition"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:01 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:36:52 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 214376240,
+      "totalMemory": 371310592
+    },
+    "totalDuration": 587,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 369,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          369
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-voyages-sncf-technologies-hesperides-396857150-20180626-142651-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-voyages-sncf-technologies-hesperides-396857150-20180626-142651-firstCommit/domain",
+    "overallMetrics": {
+      "numberRunning": 5,
+      "numberPassing": 4,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[a comment]\u003e but was:\u003c[]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.hesperides.domain.modules.commands.PropertiesExtractionTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.hesperides.domain.modules.commands.PropertiesExtractionTest",
+        "testMethod": "testExtractPropertyFromStringDefinition",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[a comment]\u003e but was:\u003c[]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 133,
+    "numberTestFiles": 57,
+    "numberLibrariesFailingModule": 44,
+    "numberLines": 0
+  },
+  "commits": {}
 }
