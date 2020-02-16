@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "globalbioticinteractions/elton",
-  "bugCommit": "https://github.com/globalbioticinteractions/elton/compare/b9aae5969cbd...2a3094b88b70",
-  "failingModule": "/root/workspace/globalbioticinteractions/elton/392890038",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 19,
-  "failing-test-cases": [
-    {
-      "className": "org.globalbioticinteractions.elton.cmd.CmdInteractionsTest",
-      "failingMethods": [
-        "interactions"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:21 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:47:05 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 55061296,
+      "totalMemory": 136695808
+    },
+    "totalDuration": 581,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 279,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          279
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-globalbioticinteractions-elton-392890038-20180615-225547-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-globalbioticinteractions-elton-392890038-20180615-225547-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 19,
+      "numberPassing": 18,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: a string starting with \"\\tLeptoconchus incycloseris\\t\\t\\t\\t\\thttp://purl.obolibrary.org/obo/RO_0002444\\tparasiteOf\\t\\tFungia (Cycloseris) costulata\\t\\t\\t\\t\\t\\t\\t\\t\\t\\thttp://dx.doi.org/10.1007/s13127-011-0039-1\\tGittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1\\tglobalbioticinteractions/template-dataset\\tJorrit H. Poelen. 2014. Species associations manually extracted from literature.\\thttps://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip\\t\\t631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f\\tdev\\n\"      but: was \" Leptoconchus incycloseris     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Cycloseris) costulata           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus infungites     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Fungia) fungites           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus ingrandifungi     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Sandalolitha dentata           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus ingranulosa     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Wellsofungia) granulosa           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus inlimax     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Herpolitha limax           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus inpileus     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Halomitra pileus           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus inpleuractis     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Pleuractis) gravis           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus inpleuractis     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Pleuractis) moluccensis           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus inpleuractis     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Pleuractis) paumotensis           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus massini     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Verrillofungia) concinna           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev  Leptoconchus massini     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Verrillofungia) repanda           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev \"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.globalbioticinteractions.elton.cmd.CmdInteractionsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.globalbioticinteractions.elton.cmd.CmdInteractionsTest",
+        "testMethod": "interactions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a string starting with \"\\tLeptoconchus incycloseris\\t\\t\\t\\t\\thttp://purl.obolibrary.org/obo/RO_0002444\\tparasiteOf\\t\\tFungia (Cycloseris) costulata\\t\\t\\t\\t\\t\\t\\t\\t\\t\\thttp://dx.doi.org/10.1007/s13127-011-0039-1\\tGittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1\\tglobalbioticinteractions/template-dataset\\tJorrit H. Poelen. 2014. Species associations manually extracted from literature.\\thttps://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip\\t\\t631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f\\tdev\\n\"\n     but: was \" Leptoconchus incycloseris     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Cycloseris) costulata           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus infungites     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Fungia) fungites           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus ingrandifungi     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Sandalolitha dentata           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus ingranulosa     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Wellsofungia) granulosa           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus inlimax     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Herpolitha limax           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus inpileus     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Halomitra pileus           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus inpleuractis     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Pleuractis) gravis           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus inpleuractis     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Pleuractis) moluccensis           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus inpleuractis     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Pleuractis) paumotensis           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus massini     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Verrillofungia) concinna           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n Leptoconchus massini     http://purl.obolibrary.org/obo/RO_0002444 parasiteOf  Fungia (Verrillofungia) repanda           https://doi.org/10.1007/s13127-011-0039-1 Gittenberger, A., Gittenberger, E. (2011). Cryptic, adaptive radiation of endoparasitic snails: sibling species of Leptoconchus (Gastropoda: Coralliophilidae) in corals. Org Divers Evol, 11(1), 21–41. doi:10.1007/s13127-011-0039-1 globalbioticinteractions/template-dataset Jorrit H. Poelen. 2014. Species associations manually extracted from literature. https://zenodo.org/record/207958/files/globalbioticinteractions/template-dataset-0.0.2.zip  631d3777cf83e1abea848b59a6589c470cf0c7d0fd99682c4c104481ad9a543f dev\n\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 24,
+    "numberTestFiles": 13,
+    "numberLibrariesFailingModule": 87,
+    "numberLines": 0
+  },
+  "commits": {}
 }
