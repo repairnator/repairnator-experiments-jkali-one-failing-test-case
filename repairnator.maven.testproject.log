@@ -1,0 +1,713 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Logbook
+[INFO] Logbook: API
+[INFO] Logbook: Test
+[INFO] Logbook: Core
+[INFO] Logbook: HTTP Client
+[INFO] Logbook: Servlet
+[INFO] Logbook: Spring Boot Starter
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Logbook 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.9:check (default) @ logbook-parent ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (prepare-agent) @ logbook-parent ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Logbook: API 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.9:check (default) @ logbook-api ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (prepare-agent) @ logbook-api ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-api/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ logbook-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ logbook-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ logbook-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ logbook-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ logbook-api ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-api/target/surefire-reports
+[INFO] parallel='classesAndMethods', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom (7 KB at 15.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 104.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom (4 KB at 97.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom (3 KB at 80.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom (2 KB at 48.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 104.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom (7 KB at 217.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 71.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 897.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar (12 KB at 149.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar (23 KB at 266.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar (26 KB at 301.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 892.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar (150 KB at 1077.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar (168 KB at 1470.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.zalando.logbook.RawHttpRequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.zalando.logbook.RawHttpRequestTest
+Running org.zalando.logbook.RawRequestFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.zalando.logbook.RawRequestFilterTest
+Running org.zalando.logbook.RawResponseFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.zalando.logbook.RawResponseFilterTest
+Running org.zalando.logbook.RawHttpResponseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.zalando.logbook.RawHttpResponseTest
+Running org.zalando.logbook.BaseHttpMessageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.zalando.logbook.BaseHttpMessageTest
+Running org.zalando.logbook.QueryFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.zalando.logbook.QueryFilterTest
+Running org.zalando.logbook.RequestFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.zalando.logbook.RequestFilterTest
+Running org.zalando.logbook.ForwardingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in org.zalando.logbook.ForwardingTest
+Running org.zalando.logbook.HttpMessageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in org.zalando.logbook.HttpMessageTest
+Running org.zalando.logbook.BaseHttpRequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.zalando.logbook.BaseHttpRequestTest
+Running org.zalando.logbook.LogbookFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.zalando.logbook.LogbookFactoryTest
+Running org.zalando.logbook.EnforceCoverageTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.zalando.logbook.EnforceCoverageTest
+Running org.zalando.logbook.BodyFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.zalando.logbook.BodyFilterTest
+Running org.zalando.logbook.BodyReplacerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.zalando.logbook.BodyReplacerTest
+Running org.zalando.logbook.HeaderFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.zalando.logbook.HeaderFilterTest
+Running org.zalando.logbook.HttpLogWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.zalando.logbook.HttpLogWriterTest
+Running org.zalando.logbook.ResponseFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.zalando.logbook.ResponseFilterTest
+Running org.zalando.logbook.RequestURITest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.zalando.logbook.RequestURITest
+Running [3]
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.621 sec - in [3]
+
+Results :
+
+Tests run: 77, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Logbook: Test 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.9:check (default) @ logbook-test ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (prepare-agent) @ logbook-test ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-test/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ logbook-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ logbook-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ logbook-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ logbook-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ logbook-test ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-test/target/surefire-reports
+[INFO] parallel='classesAndMethods', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.zalando.logbook.MockHeadersTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.zalando.logbook.MockHeadersTest
+Running org.zalando.logbook.MockRawHttpResponseTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 sec - in org.zalando.logbook.MockRawHttpResponseTest
+Running org.zalando.logbook.MockHttpResponseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.zalando.logbook.MockHttpResponseTest
+Running org.zalando.logbook.MockRawHttpRequestTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.zalando.logbook.MockRawHttpRequestTest
+Running org.zalando.logbook.MockHttpRequestTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.zalando.logbook.MockHttpRequestTest
+
+Results :
+
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Logbook: Core 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.9:check (default) @ logbook-core ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (prepare-agent) @ logbook-core ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ logbook-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ logbook-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ logbook-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ logbook-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ logbook-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-core/target/surefire-reports
+[INFO] parallel='classesAndMethods', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.zalando.logbook.MediaTypeQueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.zalando.logbook.MediaTypeQueryTest
+Running org.zalando.logbook.RawResponseFiltersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.zalando.logbook.RawResponseFiltersTest
+Running org.zalando.logbook.DefaultHttpLogWriterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.zalando.logbook.DefaultHttpLogWriterTest
+Running org.zalando.logbook.FilteredHttpRequestTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.zalando.logbook.FilteredHttpRequestTest
+Running org.zalando.logbook.QueryFiltersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.zalando.logbook.QueryFiltersTest
+Running org.zalando.logbook.DefaultHttpLogFormatterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.zalando.logbook.DefaultHttpLogFormatterTest
+Running org.zalando.logbook.RawRequestFiltersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.zalando.logbook.RawRequestFiltersTest
+Running org.zalando.logbook.CurlHttpLogFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.zalando.logbook.CurlHttpLogFormatterTest
+Running org.zalando.logbook.BodyFiltersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.zalando.logbook.BodyFiltersTest
+Running org.zalando.logbook.DefaultLogbookTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.zalando.logbook.DefaultLogbookTest
+Running org.zalando.logbook.EnforceCoverageTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.zalando.logbook.EnforceCoverageTest
+Running org.zalando.logbook.GlobTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.zalando.logbook.GlobTest
+Running org.zalando.logbook.ConditionsTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.zalando.logbook.ConditionsTest
+Running org.zalando.logbook.FilteredHttpResponseTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.zalando.logbook.FilteredHttpResponseTest
+Running org.zalando.logbook.DefaultLogbookFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.zalando.logbook.DefaultLogbookFactoryTest
+Running org.zalando.logbook.BodyReplacersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec - in org.zalando.logbook.BodyReplacersTest
+Running org.zalando.logbook.JsonHttpLogFormatterTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.406 sec - in org.zalando.logbook.JsonHttpLogFormatterTest
+Running org.zalando.logbook.ChunkingSpliteratorTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.zalando.logbook.ChunkingSpliteratorTest
+Running [ERROR]
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 sec - in [ERROR]
+Running org.zalando.logbook.HeaderFiltersTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.zalando.logbook.HeaderFiltersTest
+Running org.zalando.logbook.StreamHttpLogWriterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 sec - in org.zalando.logbook.StreamHttpLogWriterTest
+Running org.zalando.logbook.ChunkingHttpLogWriterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.zalando.logbook.ChunkingHttpLogWriterTest
+
+Results :
+
+Tests run: 144, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Logbook: HTTP Client 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.9:check (default) @ logbook-httpclient ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (prepare-agent) @ logbook-httpclient ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-httpclient/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ logbook-httpclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-httpclient/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ logbook-httpclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ logbook-httpclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-httpclient/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ logbook-httpclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ logbook-httpclient ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-httpclient/target/surefire-reports
+[INFO] parallel='classesAndMethods', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.zalando.logbook.httpclient.EnforceCoverageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.zalando.logbook.httpclient.EnforceCoverageTest
+Running org.zalando.logbook.httpclient.LocalRequestTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec - in org.zalando.logbook.httpclient.LocalRequestTest
+Running org.zalando.logbook.httpclient.LogbookHttpInterceptorsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 sec - in org.zalando.logbook.httpclient.LogbookHttpInterceptorsTest
+Running org.zalando.logbook.httpclient.ForwardingHttpAsyncResponseConsumerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.zalando.logbook.httpclient.ForwardingHttpAsyncResponseConsumerTest
+Running org.zalando.logbook.httpclient.RemoteResponseTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.zalando.logbook.httpclient.RemoteResponseTest
+Running org.zalando.logbook.httpclient.LogbookHttpAsyncResponseConsumerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.349 sec - in org.zalando.logbook.httpclient.LogbookHttpAsyncResponseConsumerTest
+
+Results :
+
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Logbook: Servlet 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.9:check (default) @ logbook-servlet ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (prepare-agent) @ logbook-servlet ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-servlet/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ logbook-servlet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-servlet/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ logbook-servlet ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ logbook-servlet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-servlet/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ logbook-servlet ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ logbook-servlet ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-servlet/target/surefire-reports
+[INFO] parallel='classesAndMethods', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.zalando.logbook.servlet.WritingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.541 sec - in org.zalando.logbook.servlet.WritingTest
+Running org.zalando.logbook.servlet.EnforceCoverageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in org.zalando.logbook.servlet.EnforceCoverageTest
+Running org.zalando.logbook.servlet.NullOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.zalando.logbook.servlet.NullOutputStreamTest
+Running org.zalando.logbook.servlet.ErrorDispatchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.zalando.logbook.servlet.ErrorDispatchTest
+Running org.zalando.logbook.servlet.TeeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.527 sec - in org.zalando.logbook.servlet.TeeTest
+Running org.zalando.logbook.servlet.MultiFilterSecurityTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.775 sec - in org.zalando.logbook.servlet.MultiFilterSecurityTest
+Running org.zalando.logbook.servlet.MultiFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 sec - in org.zalando.logbook.servlet.MultiFilterTest
+Running org.zalando.logbook.servlet.AsyncDispatchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 sec - in org.zalando.logbook.servlet.AsyncDispatchTest
+Running org.zalando.logbook.servlet.FormattingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in org.zalando.logbook.servlet.FormattingTest
+Running org.zalando.logbook.servlet.ByteStreamsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.zalando.logbook.servlet.ByteStreamsTest
+Running org.zalando.logbook.servlet.SkipTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.zalando.logbook.servlet.SkipTest
+Running org.zalando.logbook.servlet.HttpSupportTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.249 sec - in org.zalando.logbook.servlet.HttpSupportTest
+Running org.zalando.logbook.servlet.LocalResponseTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.zalando.logbook.servlet.LocalResponseTest
+
+Results :
+
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Logbook: Spring Boot Starter 1.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.9:check (default) @ logbook-spring-boot-starter ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (prepare-agent) @ logbook-spring-boot-starter ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-spring-boot-starter/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ logbook-spring-boot-starter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ logbook-spring-boot-starter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ logbook-spring-boot-starter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ logbook-spring-boot-starter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ logbook-spring-boot-starter ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-spring-boot-starter/target/surefire-reports
+[INFO] parallel='classes', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.ObfuscateHeadersCustomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in org.zalando.logbook.spring.ObfuscateHeadersCustomTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.WriteCustomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.zalando.logbook.spring.WriteCustomTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.FormatStyleDefaultTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.zalando.logbook.spring.FormatStyleDefaultTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.StandardTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.zalando.logbook.spring.StandardTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.FormatStyleCustomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.zalando.logbook.spring.FormatStyleCustomTest
+Running org.zalando.logbook.spring.ExcludeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.zalando.logbook.spring.ExcludeTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.FilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.zalando.logbook.spring.FilterTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.WriteCategoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.zalando.logbook.spring.WriteCategoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.ObfuscateHeadersDefaultTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.zalando.logbook.spring.ObfuscateHeadersDefaultTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.ObfuscateBodyCustomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.zalando.logbook.spring.ObfuscateBodyCustomTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.SecurityFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.zalando.logbook.spring.SecurityFilterTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.FilterDisabledTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.zalando.logbook.spring.FilterDisabledTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.WriteLevelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.zalando.logbook.spring.WriteLevelTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.ObfuscateParametersDefaultTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.zalando.logbook.spring.ObfuscateParametersDefaultTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.ObfuscateParametersCustomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.zalando.logbook.spring.ObfuscateParametersCustomTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.ObfuscateResponseCustomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.zalando.logbook.spring.ObfuscateResponseCustomTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.WriteChunkingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.zalando.logbook.spring.WriteChunkingTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+Running org.zalando.logbook.spring.ObfuscateRequestCustomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.zalando.logbook.spring.ObfuscateRequestCustomTest
+Running org.zalando.logbook.spring.FormatStyleCurlTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec <<< FAILURE! - in org.zalando.logbook.spring.FormatStyleCurlTest
+shouldUseHttpFormatter(org.zalando.logbook.spring.FormatStyleCurlTest)  Time elapsed: 0.047 sec  <<< FAILURE!
+org.mockito.exceptions.verification.junit.ArgumentsAreDifferent: 
+
+Argument(s) are different! Wanted:
+httpLogWriter.writeRequest(
+    request is "curl -v -X GET 'http://localhost/'"
+);
+-> at org.zalando.logbook.spring.FormatStyleCurlTest.shouldUseHttpFormatter(FormatStyleCurlTest.java:53)
+Actual invocation has different arguments:
+httpLogWriter.writeRequest(
+    org.zalando.logbook.DefaultLogbook$SimplePrecorrelation@512bd941
+);
+-> at org.zalando.logbook.DefaultLogbook.write(DefaultLogbook.java:49)
+
+	at org.zalando.logbook.spring.FormatStyleCurlTest.shouldUseHttpFormatter(FormatStyleCurlTest.java:53)
+
+Running org.zalando.logbook.spring.FormatStyleHttpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.zalando.logbook.spring.FormatStyleHttpTest
+
+Results :
+
+Failed tests: 
+  FormatStyleCurlTest.shouldUseHttpFormatter:53 
+Argument(s) are different! Wanted:
+httpLogWriter.writeRequest(
+    request is "curl -v -X GET 'http://localhost/'"
+);
+-> at org.zalando.logbook.spring.FormatStyleCurlTest.shouldUseHttpFormatter(FormatStyleCurlTest.java:53)
+Actual invocation has different arguments:
+httpLogWriter.writeRequest(
+    org.zalando.logbook.DefaultLogbook$SimplePrecorrelation@512bd941
+);
+-> at org.zalando.logbook.DefaultLogbook.write(DefaultLogbook.java:49)
+
+
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Logbook ............................................ SUCCESS [  2.612 s]
+[INFO] Logbook: API ....................................... SUCCESS [  9.701 s]
+[INFO] Logbook: Test ...................................... SUCCESS [  2.774 s]
+[INFO] Logbook: Core ...................................... SUCCESS [  8.798 s]
+[INFO] Logbook: HTTP Client ............................... SUCCESS [  9.494 s]
+[INFO] Logbook: Servlet ................................... SUCCESS [ 11.806 s]
+[INFO] Logbook: Spring Boot Starter ....................... FAILURE [ 19.484 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:05 min
+[INFO] Finished at: 2020-02-16T23:17:30+01:00
+[INFO] Final Memory: 31M/74M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project logbook-spring-boot-starter: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-spring-boot-starter/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project logbook-spring-boot-starter: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-spring-boot-starter/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zalando-logbook-249545345-20170703-105359_bugonly-firstCommit/logbook-spring-boot-starter/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :logbook-spring-boot-starter
