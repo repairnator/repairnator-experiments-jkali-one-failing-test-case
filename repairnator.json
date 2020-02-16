@@ -1,0 +1,118 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:21 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:52:05 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 464409728,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 880,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 169,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          169
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-fqqb-yamcs-421673168-20180828-192801-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-fqqb-yamcs-421673168-20180828-192801-firstCommit/yamcs-core",
+    "overallMetrics": {
+      "numberRunning": 476,
+      "numberPassing": 475,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 14,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.yamcs.IntegrationTest",
+        "numberRunning": 19,
+        "numberPassing": 18,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.yamcs.IntegrationTest",
+        "testMethod": "testRestEvents",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 985,
+    "numberTestFiles": 135,
+    "numberLibrariesFailingModule": 24,
+    "numberLines": 0
+  },
+  "commits": {}
+}
