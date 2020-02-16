@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "perwendel/spark",
-  "failingModule": "/root/workspace/perwendel/spark/267835347",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 292,
-  "failing-test-cases": [
-    {
-      "className": "spark.GenericIntegrationTest",
-      "failingMethods": [
-        "spark.GenericIntegrationTest#testEchoParam3"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:02:05 PM",
+    "reproductionDateEnd": "Feb 16, 2020 4:44:15 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 158611048,
+      "totalMemory": 374689792
+    },
+    "totalDuration": 6128,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-perwendel-spark-267835347-20170824-055232_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-perwendel-spark-267835347-20170824-055232_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 292,
+      "numberPassing": 291,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003cecho: [жξ Ä 聊]\u003e but was:\u003cecho: [?? � ?]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spark.GenericIntegrationTest",
+        "numberRunning": 39,
+        "numberPassing": 38,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spark.GenericIntegrationTest",
+        "testMethod": "testEchoParam3",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cecho: [жξ Ä 聊]\u003e but was:\u003cecho: [?? � ?]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 95,
+    "numberTestFiles": 79,
+    "numberLibrariesFailingModule": 37,
+    "numberLines": 0
+  },
+  "commits": {}
 }
