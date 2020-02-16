@@ -1,0 +1,118 @@
+-------------------------------------------------------------------------------
+Test set: com.google.errorprone.bugpatterns.android.RestrictToEnforcerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec <<< FAILURE! - in com.google.errorprone.bugpatterns.android.RestrictToEnforcerTest
+testPositiveCases(com.google.errorprone.bugpatterns.android.RestrictToEnforcerTest)  Time elapsed: 0.194 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Test program failed to compile with non Error Prone error: /com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:19: error: package android.support.annotation.RestrictTo does not exist
+import static android.support.annotation.RestrictTo.Scope.GROUP_ID;
+                                                   ^
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:19: error: static import only from classes and interfaces
+import static android.support.annotation.RestrictTo.Scope.GROUP_ID;
+^
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:19: error: package android.support.annotation.RestrictTo does not exist
+import static android.support.annotation.RestrictTo.Scope.GROUP_ID;
+                                                   ^
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:19: error: static import only from classes and interfaces
+import static android.support.annotation.RestrictTo.Scope.GROUP_ID;
+^
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:21: error: package android.support.annotation does not exist
+import android.support.annotation.RestrictTo;
+                                 ^
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:30: error: package android.support.annotation does not exist
+import android.support.annotation.RestrictTo;
+                                 ^
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:37: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+   ^
+  symbol:   class RestrictTo
+  location: class RestrictToEnforcerPositiveCasesApi
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:64: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+   ^
+  symbol:   class RestrictTo
+  location: class RestrictToEnforcerPositiveCasesApi
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:46: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+   ^
+  symbol:   class RestrictTo
+  location: class RestrictToEnforcerPositiveCasesApi
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:61: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+   ^
+  symbol:   class RestrictTo
+  location: class RestrictToEnforcerPositiveCasesApi
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:73: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+   ^
+  symbol:   class RestrictTo
+  location: class RestrictToEnforcerPositiveCases
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:37: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+              ^
+  symbol:   variable GROUP_ID
+  location: class RestrictToEnforcerPositiveCasesApi
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:69: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+   ^
+  symbol:   class RestrictTo
+  location: class RestrictToEnforcerPositiveCases
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:69: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+              ^
+  symbol:   variable GROUP_ID
+  location: class RestrictToEnforcerPositiveCases
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:64: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+              ^
+  symbol:   variable GROUP_ID
+  location: class RestrictToEnforcerPositiveCasesApi
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:79: error: cannot find symbol
+    @RestrictTo(GROUP_ID)
+     ^
+  symbol:   class RestrictTo
+  location: class RestrictedAbstractMethod
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:79: error: cannot find symbol
+    @RestrictTo(GROUP_ID)
+                ^
+  symbol:   variable GROUP_ID
+  location: class RestrictedAbstractMethod
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:46: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+              ^
+  symbol:   variable GROUP_ID
+  location: class RestrictToEnforcerPositiveCasesApi
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:33: error: cannot find symbol
+    @RestrictTo(GROUP_ID)
+     ^
+  symbol:   class RestrictTo
+  location: class RestrictedConstructor
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:33: error: cannot find symbol
+    @RestrictTo(GROUP_ID)
+                ^
+  symbol:   variable GROUP_ID
+  location: class RestrictedConstructor
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:26: error: cannot find symbol
+    @RestrictTo(GROUP_ID)
+     ^
+  symbol:   class RestrictTo
+  location: class RestrictedMethodClass
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:26: error: cannot find symbol
+    @RestrictTo(GROUP_ID)
+                ^
+  symbol:   variable GROUP_ID
+  location: class RestrictedMethodClass
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCasesApi.java:61: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+              ^
+  symbol:   variable GROUP_ID
+  location: class RestrictToEnforcerPositiveCasesApi
+/com/google/errorprone/bugpatterns/android/RestrictToEnforcerPositiveCases.java:73: error: cannot find symbol
+  @RestrictTo(GROUP_ID)
+              ^
+  symbol:   variable GROUP_ID
+  location: class RestrictToEnforcerPositiveCases
+24 errors
+: The subject was expected to be true, but was false
+	at com.google.errorprone.bugpatterns.android.RestrictToEnforcerTest.testPositiveCases(RestrictToEnforcerTest.java:41)
+

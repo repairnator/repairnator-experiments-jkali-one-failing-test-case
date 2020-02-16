@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="11.483" tests="66" errors="0" skipped="5" failures="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.boot.class.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/resources.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/rt.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/sunrsasign.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jsse.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jce.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/charsets.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jfr.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/classes"/>
+    <property name="cobertura.skip" value="true"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="user.name" value="dginelli"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="maven.repo.local" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-error-prone-413405586-20180808-053324-firstCommit/.m2"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.boot.library.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/amd64"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="user.timezone" value="Europe/Stockholm"/>
+    <property name="rat.skip" value="true"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.endorsed.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/endorsed"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="user.country" value="US"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.home" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="4.15.0-76-generic"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="os.detected.release" value="ubuntu"/>
+    <property name="user.home" value="/home/d/dginelli"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.library.path" value="/hpc2n/eb/software/Core/Maven/3.6.0/lib:/hpc2n/eb/software/Core/Java/1.8.0_202/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="os.detected.release.like.debian" value="true"/>
+    <property name="dependency-check.skip" value="true"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -e -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-error-prone-413405586-20180808-053324-firstCommit/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="os.detected.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="os.detected.classifier" value="linux-x86_64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="maven.multiModuleProjectDirectory" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-error-prone-413405586-20180808-053324-firstCommit"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.ext.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="os.detected.release.version" value="16.04"/>
+    <property name="user.dir" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-google-error-prone-413405586-20180808-053324-firstCommit"/>
+    <property name="skipITs" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="skip.bower" value="true"/>
+    <property name="skip.npm" value="true"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="os.detected.name" value="linux"/>
+    <property name="license.skip" value="true"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="os.detected.release.like.ubuntu" value="true"/>
+  </properties>
+  <testcase name="testStaticLocked" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.241"/>
+  <testcase name="testInnerClass_enclosingClassLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.177"/>
+  <testcase name="instanceInitializersAreUnchecked" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.114"/>
+  <testcase name="testGuardedStaticFieldAccess_1" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.207"/>
+  <testcase name="testGuardedStaticFieldAccess_2" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.121"/>
+  <testcase name="testGuardedStaticFieldAccess_3" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.213"/>
+  <testcase name="testAliasing" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.131"/>
+  <testcase name="lexicalAccess_namedThisGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.118"/>
+  <testcase name="lexicalAccess_instanceGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.22"/>
+  <testcase name="testSuperAccess_staticLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.136"/>
+  <testcase name="testReadWriteLockIsIgnored" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.213"/>
+  <testcase name="testEnclosingSuperAccess" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.113"/>
+  <testcase name="testMonitorGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.21"/>
+  <testcase name="testStaticMemberClass_staticOuterClassLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.14"/>
+  <testcase name="testSuperAccess_lock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.231"/>
+  <testcase name="testSuperAccess_this" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.655"/>
+  <testcase name="testBadGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.109"/>
+  <testcase name="lexicalAccess_thisGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.191"/>
+  <testcase name="testReadWriteLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.131"/>
+  <testcase name="testInnerClass_thisLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.113"/>
+  <testcase name="testAnonymousClass" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.206"/>
+  <testcase name="synchronizedOnLockMethod_negative" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.123"/>
+  <testcase name="instanceAccess_thisGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.194"/>
+  <testcase name="regression_b27686620" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.136"/>
+  <testcase name="testCtor" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.264"/>
+  <testcase name="testInheritedLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.11"/>
+  <testcase name="lambda" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.114"/>
+  <testcase name="complexLockExpression" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.195"/>
+  <testcase name="suppressLocalVariable" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.121"/>
+  <testcase name="testErrorProneAnnotation" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.199"/>
+  <testcase name="testUnheldInstanceGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.116"/>
+  <testcase name="testOtherClass_staticLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.111"/>
+  <testcase name="multipleLocks" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.212"/>
+  <testcase name="testReadWriteLockCopy" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="instanceAccess_instanceGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.117"/>
+  <testcase name="innerClassMethod" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.198"/>
+  <testcase name="tryWithResources" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="qualifiedMethod" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testBadStaticFieldAccess" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.114"/>
+  <testcase name="testSemaphore" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.21"/>
+  <testcase name="testOtherClass_bad_staticLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.115"/>
+  <testcase name="innerClassTypeQualifier" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0">
+    <skipped message="b/26834754"/>
+  </testcase>
+  <testcase name="i541" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.121"/>
+  <testcase name="testOtherClass_bad_staticLock_alsoSub" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.628"/>
+  <testcase name="testWrongLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.126"/>
+  <testcase name="noSuchMethod" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.187"/>
+  <testcase name="lexicalAccess_lexicalGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.135"/>
+  <testcase name="instanceAccess_lexicalGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.117"/>
+  <testcase name="instanceAccess_namedThisGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.219"/>
+  <testcase name="staticFieldInitializersAreUnchecked" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.131"/>
+  <testcase name="enclosingBlockScope" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.344"/>
+  <testcase name="innerClassMethod_classBoundary" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.226"/>
+  <testcase name="testMonitor" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.281"/>
+  <testcase name="testUnheldItselfGuard" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.115"/>
+  <testcase name="testStaticMemberClass_enclosingInstanceLock" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.117"/>
+  <testcase name="tryWithResourcesAreNotFullyUnsupported" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.219"/>
+  <testcase name="qualfiedType" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0">
+    <skipped message="b/26834754"/>
+  </testcase>
+  <testcase name="testLocked" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.128"/>
+  <testcase name="testGuardedStaticFieldAccess_EnclosingClass" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.193"/>
+  <testcase name="wrongInnerClassInstance" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.114"/>
+  <testcase name="testTransitiveGuardMethodAccess" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.233"/>
+  <testcase name="testLexicalScopingExampleOne" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.162"/>
+  <testcase name="testLexicalScopingExampleTwo" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.117"/>
+  <testcase name="classInitializersAreUnchecked" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.596"/>
+  <testcase name="testBadGuardMethodAccess" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.135"/>
+  <testcase name="instanceFieldInitializersAreUnchecked" classname="com.google.errorprone.bugpatterns.threadsafety.GuardedByCheckerTest" time="0.187"/>
+</testsuite>
