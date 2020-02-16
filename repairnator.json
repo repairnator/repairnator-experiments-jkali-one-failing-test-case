@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "spring-petclinic/spring-petclinic-angularjs",
-  "bugCommit": "https://github.com/spring-petclinic/spring-petclinic-angularjs/compare/d670f16d335f...825e0ababa02",
-  "failingModule": "/root/workspace/spring-petclinic/spring-petclinic-angularjs/360357369/spring-petclinic-server",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 3,
-  "failing-test-cases": [
-    {
-      "className": "org.springframework.samples.petclinic.model.ValidatorTests",
-      "failingMethods": [
-        "org.springframework.samples.petclinic.model.ValidatorTests#shouldNotValidateWhenFirstNameEmpty"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:04 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:32:07 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 29231384,
+      "totalMemory": 101036032
+    },
+    "totalDuration": 299,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 39,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          39
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-petclinic-spring-petclinic-angularjs-360357369-20180330-192604-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-petclinic-spring-petclinic-angularjs-360357369-20180330-192604-firstCommit/spring-petclinic-server",
+    "overallMetrics": {
+      "numberRunning": 3,
+      "numberPassing": 2,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c\"m[ay] not be empty\"\u003e but was:\u003c\"m[ust] not be empty\"\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.samples.petclinic.model.ValidatorTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.samples.petclinic.model.ValidatorTests",
+        "testMethod": "shouldNotValidateWhenFirstNameEmpty",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"m[ay] not be empty\"\u003e but was:\u003c\"m[ust] not be empty\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberPlugins": 0,
+    "numberSourceFiles": 28,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 94,
+    "numberLines": 0
+  },
+  "commits": {}
 }
