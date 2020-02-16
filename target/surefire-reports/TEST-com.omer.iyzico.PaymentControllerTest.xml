@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.omer.iyzico.PaymentControllerTest" time="0.7" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-omerxl-Payment-349541437-20180305-232421-firstCommit"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-omerxl-Payment-349541437-20180305-232421-firstCommit"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="skip.npm" value="true"/>
+    <property name="java.endorsed.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="cobertura.skip" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/hpc2n/eb/software/Core/Maven/3.6.0/lib:/hpc2n/eb/software/Core/Java/1.8.0_202/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="license.skip" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skip.bower" value="true"/>
+    <property name="maven.repo.local" value="/scratch/dginelli/workspace/repairnator-repairnator-experiments-omerxl-Payment-349541437-20180305-232421-firstCommit/.m2"/>
+    <property name="os.version" value="4.15.0-76-generic"/>
+    <property name="user.home" value="/home/d/dginelli"/>
+    <property name="user.timezone" value="Europe/Stockholm"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="dginelli"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="skipITs" value="true"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -e -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/scratch/dginelli/workspace/repairnator-repairnator-experiments-omerxl-Payment-349541437-20180305-232421-firstCommit/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="dependency-check.skip" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/resources.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/rt.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/sunrsasign.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jsse.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jce.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/charsets.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/lib/jfr.jar:/cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="rat.skip" value="true"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="payment_succes" classname="com.omer.iyzico.PaymentControllerTest" time="0.565">
+    <failure message="Response content expected:&lt;Ödeme Alındı&gt; but was:&lt;{&quot;result&quot;:&quot;Ödeme Alındı&quot;}&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response content expected:<Ödeme Alındı> but was:<{"result":"Ödeme Alındı"}>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers$5.match(ContentResultMatchers.java:150)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at com.omer.iyzico.PaymentControllerTest.payment_succes(PaymentControllerTest.java:45)
+]]></failure>
+    <system-out><![CDATA[2020-02-16 15:03:00.610  INFO 809710 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.omer.iyzico.PaymentControllerTest], using SpringBootContextLoader
+2020-02-16 15:03:00.611  INFO 809710 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.omer.iyzico.PaymentControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-02-16 15:03:00.611  INFO 809710 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.omer.iyzico.PaymentControllerTest]: PaymentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-02-16 15:03:00.616  INFO 809710 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.omer.iyzico.Application for test class com.omer.iyzico.PaymentControllerTest
+2020-02-16 15:03:00.633  INFO 809710 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-02-16 15:03:00.636  INFO 809710 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6d6c6b65, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7bc1f3d6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5426d405, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b991de2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@15a06ab7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@610b7496, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3ef124e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@504a79dc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@46a954b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7cbc3737, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@73a378c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4bd2a2e]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.10.RELEASE)
+
+2020-02-16 15:03:00.691  INFO 809710 --- [           main] com.omer.iyzico.PaymentControllerTest    : Starting PaymentControllerTest on b-cn0410.hpc2n.umu.se with PID 809710 (started by dginelli in /scratch/dginelli/workspace/repairnator-repairnator-experiments-omerxl-Payment-349541437-20180305-232421-firstCommit)
+2020-02-16 15:03:00.691  INFO 809710 --- [           main] com.omer.iyzico.PaymentControllerTest    : No active profile set, falling back to default profiles: default
+2020-02-16 15:03:00.693  INFO 809710 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7d78fbb9: startup date [Sun Feb 16 15:03:00 CET 2020]; root of context hierarchy
+2020-02-16 15:03:01.120  INFO 809710 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f5161bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 15:03:01.567  INFO 809710 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-16 15:03:01.568  INFO 809710 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-16 15:03:01.575  INFO 809710 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-16 15:03:01.648  INFO 809710 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2020-02-16 15:03:01.672  INFO 809710 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2020-02-16 15:03:01.694  WARN 809710 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-02-16 15:03:01.695  INFO 809710 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-16 15:03:02.026  INFO 809710 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2020-02-16 15:03:02.026  INFO 809710 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-02-16 15:03:02.146  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logs],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.LogController.logs()
+2020-02-16 15:03:02.148  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logs/{id}],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.LogController.log(java.lang.Integer)
+2020-02-16 15:03:02.150  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/payment],methods=[POST],produces=[application/json]}" onto public java.util.Map com.omer.iyzico.controller.PaymentController.payment(com.omer.iyzico.model.Request)
+2020-02-16 15:03:02.151  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getBinNumber],produces=[application/json]}" onto public com.iyzipay.model.BinNumber com.omer.iyzico.controller.PaymentController.binNumber(java.lang.String)
+2020-02-16 15:03:02.152  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sales],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.SaleController.sales()
+2020-02-16 15:03:02.153  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sales/{id}],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.SaleController.sale(java.lang.Integer)
+2020-02-16 15:03:02.157  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tickets/{id}],methods=[PUT],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.TicketController.editTicket(java.lang.Integer,com.omer.iyzico.model.Ticket)
+2020-02-16 15:03:02.157  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tickets],methods=[GET],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.TicketController.listTickets()
+2020-02-16 15:03:02.157  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tickets/{id}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.TicketController.getTicket(java.lang.Integer)
+2020-02-16 15:03:02.158  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tickets/{id}],methods=[DELETE],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.TicketController.deleteTicket(java.lang.Integer)
+2020-02-16 15:03:02.158  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tickets],methods=[POST],produces=[application/json]}" onto public java.lang.String com.omer.iyzico.controller.TicketController.createTicket(com.omer.iyzico.model.Ticket)
+2020-02-16 15:03:02.163  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-16 15:03:02.167  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-16 15:03:02.208  INFO 809710 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-16 15:03:02.208  INFO 809710 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-16 15:03:02.235  INFO 809710 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-16 15:03:02.400  INFO 809710 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7d78fbb9: startup date [Sun Feb 16 15:03:00 CET 2020]; root of context hierarchy
+2020-02-16 15:03:02.496  INFO 809710 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 470 ms
+2020-02-16 15:03:02.757  INFO 809710 --- [           main] com.omer.iyzico.PaymentControllerTest    : Started PaymentControllerTest in 2.115 seconds (JVM running for 23.621)
+2020-02-16 15:03:03.256  INFO 809710 --- [           main] com.omer.iyzico.checkers.PaymentCheck    : 16.02.2020T15:03:03+0100,-1,5526080000000006
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /payment
+       Parameters = {}
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+
+Handler:
+             Type = com.omer.iyzico.controller.PaymentController
+           Method = public java.util.Map com.omer.iyzico.controller.PaymentController.payment(com.omer.iyzico.model.Request)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"result":"Ödeme Alındı"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="getBinNumber_success" classname="com.omer.iyzico.PaymentControllerTest" time="0.135"/>
+</testsuite>
