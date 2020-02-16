@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "jhpoelen/fb-osmose-bridge",
-  "bugCommit": "https://github.com/jhpoelen/fb-osmose-bridge/compare/a8871be1844c...3803c5922887",
-  "failingModule": "/root/workspace/jhpoelen/fb-osmose-bridge/357250815",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 89,
-  "failing-test-cases": [
-    {
-      "className": "com.github.jhpoelen.fbob.ValidateConfigServiceTest",
-      "failingMethods": [
-        "com.github.jhpoelen.fbob.ValidateConfigServiceTest#validateConfigWithTaxaV2"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:01 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:43:50 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 21274008,
+      "totalMemory": 126963712
+    },
+    "totalDuration": 346,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 185,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          185
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhpoelen-fb-osmose-bridge-357250815-20180323-071359-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jhpoelen-fb-osmose-bridge-357250815-20180323-071359-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 89,
+      "numberPassing": 88,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: a string containing \"biotic\"      got: \"{\\\"groups\\\":[{\\\"name\\\":\\\"Amberjacks\\\",\\\"taxa\\\":[{\\\"name\\\":\\\"Seriola dumerili\\\",\\\"url\\\":\\\"http://fishbase.org/summary/1005\\\"},{\\\"name\\\":\\\"Seriola fasciata\\\",\\\"url\\\":\\\"http://fishbase.org/summary/1006\\\"}],\\\"type\\\":\\\"focal_functional_group\\\"},{\\\"name\\\":\\\"Anchovies and silversides\\\",\\\"taxa\\\":[{\\\"name\\\":\\\"Alosa alabamae\\\",\\\"url\\\":\\\"http://fishbase.org/summary/1575\\\"},{\\\"name\\\":\\\"Anchoa mitchilli\\\",\\\"url\\\":\\\"http://fishbase.org/summary/545\\\"}],\\\"type\\\":\\\"focal_functional_group\\\"},{\\\"name\\\":\\\"Echinoderms and large gastropods\\\",\\\"taxa\\\":[{\\\"name\\\":\\\"Asterias rubens\\\",\\\"url\\\":\\\"http://sealifebase.org/summary/48661\\\"},{\\\"name\\\":\\\"Echinus esculentus\\\",\\\"url\\\":\\\"http://sealifebase.org/summary/49996\\\"}]},{\\\"name\\\":\\\"Small mobile epifauna\\\",\\\"taxa\\\":[{\\\"name\\\":\\\"Hargeria rapax\\\",\\\"url\\\":\\\"http://sealifebase.org/summary/105580\\\"},{\\\"name\\\":\\\"Leptognathia breviremis\\\",\\\"url\\\":\\\"http://sealifebase.org/summary/21993\\\"}]}],\\\"timeStepsPerYear\\\":12}\" ",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.jhpoelen.fbob.ValidateConfigServiceTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.jhpoelen.fbob.ValidateConfigServiceTest",
+        "testMethod": "validateConfigWithTaxaV2",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a string containing \"biotic\"\n     got: \"{\\\"groups\\\":[{\\\"name\\\":\\\"Amberjacks\\\",\\\"taxa\\\":[{\\\"name\\\":\\\"Seriola dumerili\\\",\\\"url\\\":\\\"http://fishbase.org/summary/1005\\\"},{\\\"name\\\":\\\"Seriola fasciata\\\",\\\"url\\\":\\\"http://fishbase.org/summary/1006\\\"}],\\\"type\\\":\\\"focal_functional_group\\\"},{\\\"name\\\":\\\"Anchovies and silversides\\\",\\\"taxa\\\":[{\\\"name\\\":\\\"Alosa alabamae\\\",\\\"url\\\":\\\"http://fishbase.org/summary/1575\\\"},{\\\"name\\\":\\\"Anchoa mitchilli\\\",\\\"url\\\":\\\"http://fishbase.org/summary/545\\\"}],\\\"type\\\":\\\"focal_functional_group\\\"},{\\\"name\\\":\\\"Echinoderms and large gastropods\\\",\\\"taxa\\\":[{\\\"name\\\":\\\"Asterias rubens\\\",\\\"url\\\":\\\"http://sealifebase.org/summary/48661\\\"},{\\\"name\\\":\\\"Echinus esculentus\\\",\\\"url\\\":\\\"http://sealifebase.org/summary/49996\\\"}]},{\\\"name\\\":\\\"Small mobile epifauna\\\",\\\"taxa\\\":[{\\\"name\\\":\\\"Hargeria rapax\\\",\\\"url\\\":\\\"http://sealifebase.org/summary/105580\\\"},{\\\"name\\\":\\\"Leptognathia breviremis\\\",\\\"url\\\":\\\"http://sealifebase.org/summary/21993\\\"}]}],\\\"timeStepsPerYear\\\":12}\"\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 33,
+    "numberTestFiles": 20,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  }
 }
