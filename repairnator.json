@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "pac4j/pac4j",
-  "failingModule": "/root/workspace/pac4j/pac4j/322406277/pac4j-core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 429,
-  "failing-test-cases": [
-    {
-      "className": "org.pac4j.core.profile.converter.StringConverterTests",
-      "failingMethods": [
-        "org.pac4j.core.profile.converter.StringConverterTests#testNotAString"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:02:01 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:08:09 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 86849432,
+      "totalMemory": 185974784
+    },
+    "totalDuration": 365,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 57,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          57
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit/pac4j-core",
+    "overallMetrics": {
+      "numberRunning": 429,
+      "numberPassing": 428,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected null, but was:\u003ctrue\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.pac4j.core.profile.converter.StringConverterTests",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.pac4j.core.profile.converter.StringConverterTests",
+        "testMethod": "testNotAString",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected null, but was:\u003ctrue\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberPlugins": 0,
+    "numberSourceFiles": 461,
+    "numberTestFiles": 156,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  }
 }
