@@ -1,0 +1,147 @@
+line 8 column 4 - Error: <build> is not recognized!
+line 9 column 6 - Error: <plugins> is not recognized!
+line 10 column 8 - Error: <plugin> is not recognized!
+line 11 column 8 - Error: <artifactid> is not recognized!
+line 12 column 8 - Error: <groupid> is not recognized!
+line 14 column 8 - Error: <configuration> is not recognized!
+line 8 column 4 - Error: <build> is not recognized!
+line 9 column 6 - Error: <plugins> is not recognized!
+line 10 column 8 - Error: <plugin> is not recognized!
+line 11 column 8 - Error: <artifactid> is not recognized!
+line 12 column 8 - Error: <groupid> is not recognized!
+line 14 column 8 - Error: <configuration> is not recognized!
+6-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-tcurdt-jdeb-420042693-20180824-131212-firstCommit/target/jacoco.exec,append=true,includes=org/vafer/jdeb/*,excludes=org/vafer/jdeb/shaded/*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jdeb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ jdeb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5.2:descriptor (default-descriptor) @ jdeb ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-annotations mojo extractor found 1 mojo descriptor.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5.2:descriptor (mojo-descriptor) @ jdeb ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-annotations mojo extractor found 1 mojo descriptor.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jdeb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 22 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ jdeb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jdeb ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-tcurdt-jdeb-420042693-20180824-131212-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 5.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 92.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 1125.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.vafer.jdeb.utils.InformationInputStreamTestCase
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in org.vafer.jdeb.utils.InformationInputStreamTestCase
+Running org.vafer.jdeb.utils.UtilsTestCase
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec - in org.vafer.jdeb.utils.UtilsTestCase
+Running org.vafer.jdeb.utils.FilteredFileTestCase
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec <<< FAILURE! - in org.vafer.jdeb.utils.FilteredFileTestCase
+testTokenSubstitutionWithinOpenCloseTokens(org.vafer.jdeb.utils.FilteredFileTestCase)  Time elapsed: 0.022 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<..., config[self.client[]['ALLOW_BATCH_FILTER'])]> but was:<..., config[self.client[[]'ALLOW_BATCH_FILTER'])
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.vafer.jdeb.utils.FilteredFileTestCase.testTokenSubstitutionWithinOpenCloseTokens(FilteredFileTestCase.java:63)
+
+Running org.vafer.jdeb.changes.TextfileChangesProviderTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.vafer.jdeb.changes.TextfileChangesProviderTestCase
+Running org.vafer.jdeb.producers.DataProducerPathTemplateTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.vafer.jdeb.producers.DataProducerPathTemplateTestCase
+Running org.vafer.jdeb.producers.DataProducerFilesTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.352 sec - in org.vafer.jdeb.producers.DataProducerFilesTestCase
+Running org.vafer.jdeb.DebMakerTestCase
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.856 sec - in org.vafer.jdeb.DebMakerTestCase
+Running org.vafer.jdeb.debian.ChangesFileTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.vafer.jdeb.debian.ChangesFileTestCase
+Running org.vafer.jdeb.debian.PackageControlFileTestCase
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.vafer.jdeb.debian.PackageControlFileTestCase
+Running org.vafer.jdeb.debian.ControlFieldTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.vafer.jdeb.debian.ControlFieldTestCase
+Running org.vafer.jdeb.signing.PGPSignerTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 sec - in org.vafer.jdeb.signing.PGPSignerTestCase
+Running org.vafer.jdeb.signing.DebMakerTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in org.vafer.jdeb.signing.DebMakerTestCase
+Running org.vafer.jdeb.DataBuilderTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.12 sec - in org.vafer.jdeb.DataBuilderTestCase
+Running org.vafer.jdeb.maven.DataTestCase
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.vafer.jdeb.maven.DataTestCase
+Running org.vafer.jdeb.mapping.LsMapperTestCase
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.vafer.jdeb.mapping.LsMapperTestCase
+Running org.vafer.jdeb.ant.DebAntTaskTestCase
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.055 sec - in org.vafer.jdeb.ant.DebAntTaskTestCase
+Running org.vafer.jdeb.ant.AntSelectorTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.vafer.jdeb.ant.AntSelectorTestCase
+
+Results :
+
+Failed tests: 
+  FilteredFileTestCase.testTokenSubstitutionWithinOpenCloseTokens:63->Assert.assertEquals:115 expected:<..., config[self.client[]['ALLOW_BATCH_FILTER'])]> but was:<..., config[self.client[[]'ALLOW_BATCH_FILTER'])
+]>
+
+Tests run: 77, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.351 s
+[INFO] Finished at: 2020-02-16T18:28:43+01:00
+[INFO] Final Memory: 20M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project jdeb: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-tcurdt-jdeb-420042693-20180824-131212-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project jdeb: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-tcurdt-jdeb-420042693-20180824-131212-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-tcurdt-jdeb-420042693-20180824-131212-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:254)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
