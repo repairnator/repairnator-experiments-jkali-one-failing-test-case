@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:35 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:03:19 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 45805816,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 101,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-leusonmario-logback-418060269-20180820-053003-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-leusonmario-logback-418060269-20180820-053003-firstCommit/logback-core",
+    "overallMetrics": {
+      "numberRunning": 517,
+      "numberPassing": 516,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "Argument(s) are different! Wanted",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ch.qos.logback.core.net.AbstractSocketAppenderTest",
+        "numberRunning": 26,
+        "numberPassing": 25,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ch.qos.logback.core.net.AbstractSocketAppenderTest",
+        "testMethod": "addsInfoMessageWhenSocketConnectionClosed",
+        "failureName": "Argument(s) are different! Wanted",
+        "detail": "\nArgument(s) are different! Wanted:\ninstrumentedSocketAppender.addInfo(\n    contains(\"connection closed\")\n);\n-\u003e at ch.qos.logback.core.net.AbstractSocketAppenderTest.addsInfoMessageWhenSocketConnectionClosed(AbstractSocketAppenderTest.java:247)\nActual invocation has different arguments:\ninstrumentedSocketAppender.addInfo(\n    \"remote peer localhost:4560: connection failed: java.io.IOException\"\n);\n-\u003e at ch.qos.logback.core.net.AbstractSocketAppender.connectSocketAndDispatchEvents(AbstractSocketAppender.java:195)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 626,
+    "numberTestFiles": 481,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {}
+}
