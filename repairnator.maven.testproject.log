@@ -1,0 +1,318 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] dropwizard-jobs
+[INFO] dropwizard-jobs-core
+[INFO] dropwizard-jobs-guice
+[INFO] dropwizard-jobs-spring
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dropwizard-jobs 3.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default-prepare-agent) @ dropwizard-jobs ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dropwizard-jobs-core 3.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ dropwizard-jobs-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/dropwizard-jobs-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dropwizard-jobs-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ dropwizard-jobs-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dropwizard-jobs-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default-prepare-agent) @ dropwizard-jobs-core ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/dropwizard-jobs-core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ dropwizard-jobs-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/dropwizard-jobs-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 6.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 92.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1064.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.spinscale.dropwizard.jobs.JobManagerTest
+18:29:18.233 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application start:
+18:29:18.250 INFO  d.s.dropwizard.jobs.JobManager -    de.spinscale.dropwizard.jobs.ApplicationStartTestJob
+18:29:18.252 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @Every annotation:
+18:29:18.407 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJob
+18:29:18.408 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJob
+18:29:18.409 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.FooJob
+18:29:18.409 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.FooJob
+18:29:18.419 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJobWithDelay
+18:29:18.420 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJobWithDelay (1s delay)
+18:29:18.422 INFO  d.s.dropwizard.jobs.JobManager - class de.spinscale.dropwizard.jobs.EveryTestJobAlternativeConfiguration is configured in the config file to run every 50ms
+18:29:18.425 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJobAlternativeConfiguration
+18:29:18.425 INFO  d.s.dropwizard.jobs.JobManager -     ${testJob} DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJobAlternativeConfiguration
+18:29:18.426 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @On annotation:
+18:29:18.651 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.OnTestJob
+18:29:18.651 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.de.spinscale.dropwizard.jobs.OnTestJob
+18:29:18.652 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.BarJob
+18:29:18.652 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.BarJob
+18:29:18.652 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:18.661 INFO  d.s.dropwizard.jobs.JobManager -    de.spinscale.dropwizard.jobs.ApplicationStopTestJob
+18:29:20.055 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @Every annotation:
+18:29:20.056 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithNonDefaultConfiguration
+18:29:20.056 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithNonDefaultConfiguration
+18:29:20.056 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @On annotation:
+18:29:20.057 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithNonDefaultConfiguration
+18:29:20.057 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithNonDefaultConfiguration
+18:29:20.057 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:20.706 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application start:
+18:29:20.706 INFO  d.s.dropwizard.jobs.JobManager -    de.spinscale.dropwizard.jobs.ApplicationStartTestJob
+18:29:20.706 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @Every annotation:
+18:29:20.707 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJob
+18:29:20.707 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJob
+18:29:20.707 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.FooJob
+18:29:20.707 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.FooJob
+18:29:20.707 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @On annotation:
+18:29:20.708 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.OnTestJob
+18:29:20.708 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.de.spinscale.dropwizard.jobs.OnTestJob
+18:29:20.709 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.BarJob
+18:29:20.709 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.BarJob
+18:29:20.709 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:21.398 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @On annotation:
+18:29:21.438 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithTimeZoneConfiguration
+18:29:21.439 INFO  d.s.dropwizard.jobs.JobManager -     0 0 13 ? * MON        DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithTimeZoneConfiguration
+18:29:21.449 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration
+18:29:21.454 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration
+18:29:21.455 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:21.459 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @Every annotation:
+18:29:21.461 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithDefaultConfiguration
+18:29:21.461 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithDefaultConfiguration
+18:29:21.462 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithDefaultConfiguration
+18:29:21.463 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:21.568 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application start:
+18:29:21.569 INFO  d.s.dropwizard.jobs.JobManager -    de.spinscale.dropwizard.jobs.ApplicationStartTestJob
+18:29:21.569 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @Every annotation:
+18:29:21.569 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJob
+18:29:21.569 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.EveryTestJob
+18:29:21.569 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.FooJob
+18:29:21.570 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.FooJob
+18:29:21.570 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @On annotation:
+18:29:21.570 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.OnTestJob
+18:29:21.570 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.de.spinscale.dropwizard.jobs.OnTestJob
+18:29:21.571 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.BarJob
+18:29:21.571 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.BarJob
+18:29:21.571 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:22.004 ERROR org.quartz.core.JobRunShell - Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+18:29:22.012 ERROR org.quartz.core.ErrorLogger - Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+18:29:22.177 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @Every annotation:
+18:29:22.178 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithDefaultConfiguration
+18:29:22.178 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithDefaultConfiguration
+18:29:22.178 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @On annotation:
+18:29:22.178 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration
+18:29:22.179 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration
+18:29:22.179 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:22.783 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @Every annotation:
+18:29:22.783 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithDefaultConfiguration
+18:29:22.783 INFO  d.s.dropwizard.jobs.JobManager -     10ms    DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.EveryTestJobWithDefaultConfiguration
+18:29:22.783 INFO  d.s.dropwizard.jobs.JobManager - Jobs with @On annotation:
+18:29:22.784 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key group_one.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithVariableGroupName
+18:29:22.784 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         group_one.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithVariableGroupName
+18:29:22.784 INFO  d.s.dropwizard.jobs.JobManager - scheduled job with key group_two.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithVariableGroupName
+18:29:22.784 INFO  d.s.dropwizard.jobs.JobManager -     0/1 * * * * ?         group_two.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithVariableGroupName
+18:29:22.784 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:23.002 ERROR org.quartz.core.JobRunShell - Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+18:29:23.002 ERROR org.quartz.core.ErrorLogger - Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.342 sec <<< FAILURE! - in de.spinscale.dropwizard.jobs.JobManagerTest
+testJobsWithoutGroupShouldOnlyHaveOneInstance(de.spinscale.dropwizard.jobs.JobManagerTest)  Time elapsed: 0.032 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: <1>
+     but: was <3>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at de.spinscale.dropwizard.jobs.JobManagerTest.testJobsWithoutGroupShouldOnlyHaveOneInstance(JobManagerTest.java:154)
+
+Running de.spinscale.dropwizard.jobs.Hk2JobsBundleTest
+18:29:24.001 ERROR org.quartz.core.JobRunShell - Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+18:29:24.001 ERROR org.quartz.core.ErrorLogger - Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+18:29:25.001 ERROR org.quartz.core.JobRunShell - Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+18:29:25.001 ERROR org.quartz.core.ErrorLogger - Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+18:29:26.000 ERROR org.quartz.core.JobRunShell - Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+18:29:26.001 ERROR org.quartz.core.ErrorLogger - Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+18:29:27.000 ERROR org.quartz.core.JobRunShell - Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+18:29:27.000 ERROR org.quartz.core.ErrorLogger - Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+18:29:27.123 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application start:
+18:29:27.123 INFO  d.s.dropwizard.jobs.JobManager -    de.spinscale.dropwizard.jobs.ApplicationStartTestJob
+18:29:27.123 INFO  d.s.dropwizard.jobs.JobManager - Jobs to run on application stop:
+18:29:27.123 INFO  d.s.dropwizard.jobs.JobManager -    de.spinscale.dropwizard.jobs.ApplicationStopTestJob
+18:29:28.003 ERROR org.quartz.core.JobRunShell - Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+18:29:28.004 ERROR org.quartz.core.ErrorLogger - Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+18:29:29.001 ERROR org.quartz.core.JobRunShell - Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+18:29:29.001 ERROR org.quartz.core.ErrorLogger - Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException: null
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.238 sec - in de.spinscale.dropwizard.jobs.Hk2JobsBundleTest
+Running de.spinscale.dropwizard.jobs.JobsBundleTest
+ERROR [2020-02-16 18:29:30,001] org.quartz.core.JobRunShell: Job DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an unhandled Exception: 
+! java.lang.NullPointerException: null
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+ERROR [2020-02-16 18:29:30,001] org.quartz.core.ErrorLogger: Job (DEFAULT.de.spinscale.dropwizard.jobs.JobManagerTest.OnTestJobWithDefaultConfiguration threw an exception.
+! java.lang.NullPointerException: null
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+! ... 1 common frames omitted
+! Causing: org.quartz.SchedulerException: Job threw an unhandled exception.
+! at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+! at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.902 sec - in de.spinscale.dropwizard.jobs.JobsBundleTest
+Running de.spinscale.dropwizard.jobs.parser.TimeParserUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.spinscale.dropwizard.jobs.parser.TimeParserUtilTest
+
+Results :
+
+Failed tests: 
+  JobManagerTest.testJobsWithoutGroupShouldOnlyHaveOneInstance:154 
+Expected: <1>
+     but: was <3>
+
+Tests run: 15, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] dropwizard-jobs .................................... SUCCESS [  2.048 s]
+[INFO] dropwizard-jobs-core ............................... FAILURE [ 16.814 s]
+[INFO] dropwizard-jobs-guice .............................. SKIPPED
+[INFO] dropwizard-jobs-spring ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.090 s
+[INFO] Finished at: 2020-02-16T18:29:30+01:00
+[INFO] Final Memory: 20M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project dropwizard-jobs-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/dropwizard-jobs-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project dropwizard-jobs-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/dropwizard-jobs-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-spinscale-dropwizard-jobs-289989505-20171019-154332-firstCommit/dropwizard-jobs-core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :dropwizard-jobs-core
