@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "sbaudoin/yamllint",
-  "bugCommit": "https://github.com/sbaudoin/yamllint/compare/bab322e85781...934c396ed349",
-  "failingModule": "/root/workspace/sbaudoin/yamllint/390493735",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "junit.framework.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 328,
-  "failing-test-cases": [
-    {
-      "className": "com.github.sbaudoin.yamllint.rules.RuleFactoryTest",
-      "failingMethods": [
-        "testGetRule"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:46 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:44:25 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 33818448,
+      "totalMemory": 133083136
+    },
+    "totalDuration": 1056,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 966,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          966
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-sbaudoin-yamllint-390493735-20180610-221803-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-sbaudoin-yamllint-390493735-20180610-221803-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 328,
+      "numberPassing": 327,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "junit.framework.AssertionFailedError",
-          "failureDetail": "expected:\u003c3\u003e but was:\u003c2\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.sbaudoin.yamllint.rules.RuleFactoryTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.sbaudoin.yamllint.rules.RuleFactoryTest",
+        "testMethod": "testGetRule",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "expected:\u003c3\u003e but was:\u003c4\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 34,
+    "numberTestFiles": 39,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  }
 }
