@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 18,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/f6fb7ef3790e...b4002c106aee",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/309448408/languagetool-language-modules/pt",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 508,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.pt.PortugueseWordRepeatBeginningRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.pt.PortugueseWordRepeatBeginningRuleTest#testRule"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-309448408-20171130-115617_bugonly-firstCommit/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 399,
+      "numberPassing": 398,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 18,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c0\u003e but was:\u003c1\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"ventrolateral\"\n     but: was \"Ventrolateral/A\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 707,
+    "numberTestFiles": 457,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:03 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:47:20 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 35325320,
+      "totalMemory": 81055744
+    },
+    "totalDuration": 553,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-309448408-20171130-115617_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
