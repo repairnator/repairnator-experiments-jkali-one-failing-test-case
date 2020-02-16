@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 18,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/91c68c95f63b...3b36b8218ec6",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/296942622/languagetool-language-modules/de",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 412,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.de.GermanPatternRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.de.GermanPatternRuleTest#testRules"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-296945161-20171103-204246-firstCommit/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 394,
+      "numberPassing": 393,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 18,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "German: Incorrect suggestions: [niemandem] !\u003d [jemandem] for rule NIEMANDEN[1] on input: Wenn du jemanden Hilfe anbietest, sei aufrichtig. expected:\u003c[niemandem]\u003e but was:\u003c[jemandem]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanPatternRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "German: Incorrect suggestions: [niemandem] !\u003d [jemandem] for rule NIEMANDEN[1] on input: Wenn du jemanden Hilfe anbietest, sei aufrichtig. expected:\u003c[niemandem]\u003e but was:\u003c[jemandem]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 701,
+    "numberTestFiles": 455,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:03 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:46:39 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 33867704,
+      "totalMemory": 99295232
+    },
+    "totalDuration": 512,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          5
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-296945161-20171103-204246-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
