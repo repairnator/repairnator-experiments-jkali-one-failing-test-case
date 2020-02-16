@@ -1,0 +1,936 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for dev:evalme-back:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-data-jpa:jar -> duplicate declaration of version (?) @ line 98, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building evalme-back 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ evalme-back ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ evalme-back ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ evalme-back ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ evalme-back ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 45 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-le-mystere-de-la-salle-jaune-evalme-back-408065593-20180725-153517-firstCommit/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ evalme-back ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-le-mystere-de-la-salle-jaune-evalme-back-408065593-20180725-153517-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom (4 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 94.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar (83 KB at 1502.9 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running dev.repositories.question.QuestionRepositoryJpaTest
+2020-02-16 15:02:19.948  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:20.161  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:20.300  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 138 ms.
+2020-02-16 15:02:20.308  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:20.383  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 75 ms.
+2020-02-16 15:02:20.667  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:23.764  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.711 s - in dev.repositories.question.QuestionRepositoryJpaTest
+[INFO] Running dev.repositories.question.OptionQuestionRepositoryJpaTest
+2020-02-16 15:02:24.275  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:24.277  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:24.364  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 87 ms.
+2020-02-16 15:02:24.365  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:24.577  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 17 ms.
+2020-02-16 15:02:24.620  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:25.365  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.383 s - in dev.repositories.question.OptionQuestionRepositoryJpaTest
+[INFO] Running dev.repositories.question.QuestionRepositoryMemoireTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 s - in dev.repositories.question.QuestionRepositoryMemoireTest
+[INFO] Running dev.repositories.question.OptionQuestionRepositoryMemoireTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 s - in dev.repositories.question.OptionQuestionRepositoryMemoireTest
+[INFO] Running dev.repositories.question.OptionQuestionRepositoryJdbcTest
+2020-02-16 15:02:26.300  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:26.306  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:26.373  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 67 ms.
+2020-02-16 15:02:26.374  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:26.406  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 31 ms.
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 s - in dev.repositories.question.OptionQuestionRepositoryJdbcTest
+[INFO] Running dev.repositories.question.QuestionRepositoryJdbcTest
+2020-02-16 15:02:26.519  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:26.521  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:26.589  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 68 ms.
+2020-02-16 15:02:26.589  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:26.595  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 6 ms.
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 s - in dev.repositories.question.QuestionRepositoryJdbcTest
+[INFO] Running dev.repositories.optionSondage.OptionSondageRepositoryMemoireTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 s - in dev.repositories.optionSondage.OptionSondageRepositoryMemoireTest
+[INFO] Running dev.repositories.optionSondage.OptionSondageRepositoryJpaTest
+2020-02-16 15:02:26.887  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:26.891  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:26.924  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 32 ms.
+2020-02-16 15:02:26.938  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:26.947  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 9 ms.
+2020-02-16 15:02:26.965  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:27.533  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_0_, optionsond0_.description as descript2_9_0_, optionsond0_.libelle as libelle3_9_0_ from option_sondage optionsond0_ where optionsond0_.id=?
+Hibernate: delete from sondage_option_sondage where id_option_sondage=?
+Hibernate: delete from option_sondage where id=?
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_0_, optionsond0_.description as descript2_9_0_, optionsond0_.libelle as libelle3_9_0_ from option_sondage optionsond0_ where optionsond0_.id=?
+Hibernate: update option_sondage set description=?, libelle=? where id=?
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: insert into option_sondage (id, description, libelle) values (null, ?, ?)
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.182 s - in dev.repositories.optionSondage.OptionSondageRepositoryJpaTest
+[INFO] Running dev.repositories.optionSondage.OptionSondageRepositoryDataJpaTest
+2020-02-16 15:02:28.482  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:28.500  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:28.529  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 29 ms.
+2020-02-16 15:02:28.529  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:28.544  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 15 ms.
+2020-02-16 15:02:28.573  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:29.097  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_0_, optionsond0_.description as descript2_9_0_, optionsond0_.libelle as libelle3_9_0_ from option_sondage optionsond0_ where optionsond0_.id=?
+Hibernate: insert into option_sondage (id, description, libelle) values (null, ?, ?)
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_0_, optionsond0_.description as descript2_9_0_, optionsond0_.libelle as libelle3_9_0_ from option_sondage optionsond0_ where optionsond0_.id=?
+Hibernate: delete from sondage_option_sondage where id_option_sondage=?
+Hibernate: delete from option_sondage where id=?
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_0_, optionsond0_.description as descript2_9_0_, optionsond0_.libelle as libelle3_9_0_ from option_sondage optionsond0_ where optionsond0_.id=?
+Hibernate: update option_sondage set description=?, libelle=? where id=?
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+Hibernate: select optionsond0_.id as id1_9_, optionsond0_.description as descript2_9_, optionsond0_.libelle as libelle3_9_ from option_sondage optionsond0_
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.963 s - in dev.repositories.optionSondage.OptionSondageRepositoryDataJpaTest
+[INFO] Running dev.repositories.optionSondage.OptionSondageRepositoryJdbcTest
+2020-02-16 15:02:29.989  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:30.002  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:30.037  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 34 ms.
+2020-02-16 15:02:30.037  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:30.045  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 8 ms.
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in dev.repositories.optionSondage.OptionSondageRepositoryJdbcTest
+[INFO] Running dev.repositories.examen.ExamenRepositoryDataJpaTest
+2020-02-16 15:02:30.261  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:30.262  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:30.301  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 39 ms.
+2020-02-16 15:02:30.302  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:30.311  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 9 ms.
+2020-02-16 15:02:30.329  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:30.800  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select examen0_.id as id1_6_, examen0_.id_classe as id_class3_6_, examen0_.id_quizz as id_quizz4_6_, examen0_.titre as titre2_6_ from examen examen0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.946 s - in dev.repositories.examen.ExamenRepositoryDataJpaTest
+[INFO] Running dev.repositories.examen.ExamenRepositoryJdbcTest
+2020-02-16 15:02:31.059  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:31.060  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:31.099  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 38 ms.
+2020-02-16 15:02:31.101  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:31.104  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 3 ms.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in dev.repositories.examen.ExamenRepositoryJdbcTest
+[INFO] Running dev.repositories.concours.ConcoursRepositoryJdbcTest
+2020-02-16 15:02:31.152  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:31.153  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:31.171  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 17 ms.
+2020-02-16 15:02:31.172  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:31.175  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 3 ms.
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.097 s <<< FAILURE! - in dev.repositories.concours.ConcoursRepositoryJdbcTest
+[ERROR] testFindAll(dev.repositories.concours.ConcoursRepositoryJdbcTest)  Time elapsed: 0.011 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2]> but was:<[3]>
+	at dev.repositories.concours.ConcoursRepositoryJdbcTest.testFindAll(ConcoursRepositoryJdbcTest.java:27)
+
+[INFO] Running dev.repositories.duel.DuelRepositoryJpaTest
+2020-02-16 15:02:31.279  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:31.282  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:31.314  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 31 ms.
+2020-02-16 15:02:31.315  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:31.319  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 3 ms.
+2020-02-16 15:02:31.337  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:31.810  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: insert into duel (id, quizz_id, stagiairea_id, stagiaireb_id) values (null, ?, ?, ?)
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_0_, duel0_.quizz_id as quizz_id2_5_0_, duel0_.stagiairea_id as stagiair3_5_0_, duel0_.stagiaireb_id as stagiair4_5_0_, quizz1_.id as id1_13_1_, quizz1_.titre as titre2_13_1_, stagiaire2_.id as id1_17_2_, stagiaire2_.id_classe as id_class6_17_2_, stagiaire2_.email as email2_17_2_, stagiaire2_.nom as nom3_17_2_, stagiaire2_.photo_url as photo_ur4_17_2_, stagiaire2_.prenom as prenom5_17_2_, classe3_.id as id1_0_3_, classe3_.nom as nom2_0_3_, stagiaire4_.id as id1_17_4_, stagiaire4_.id_classe as id_class6_17_4_, stagiaire4_.email as email2_17_4_, stagiaire4_.nom as nom3_17_4_, stagiaire4_.photo_url as photo_ur4_17_4_, stagiaire4_.prenom as prenom5_17_4_ from duel duel0_ inner join quizz quizz1_ on duel0_.quizz_id=quizz1_.id left outer join stagiaire stagiaire2_ on duel0_.stagiairea_id=stagiaire2_.id left outer join classe classe3_ on stagiaire2_.id_classe=classe3_.id left outer join stagiaire stagiaire4_ on duel0_.stagiaireb_id=stagiaire4_.id where duel0_.id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_0_, duel0_.quizz_id as quizz_id2_5_0_, duel0_.stagiairea_id as stagiair3_5_0_, duel0_.stagiaireb_id as stagiair4_5_0_, quizz1_.id as id1_13_1_, quizz1_.titre as titre2_13_1_, stagiaire2_.id as id1_17_2_, stagiaire2_.id_classe as id_class6_17_2_, stagiaire2_.email as email2_17_2_, stagiaire2_.nom as nom3_17_2_, stagiaire2_.photo_url as photo_ur4_17_2_, stagiaire2_.prenom as prenom5_17_2_, classe3_.id as id1_0_3_, classe3_.nom as nom2_0_3_, stagiaire4_.id as id1_17_4_, stagiaire4_.id_classe as id_class6_17_4_, stagiaire4_.email as email2_17_4_, stagiaire4_.nom as nom3_17_4_, stagiaire4_.photo_url as photo_ur4_17_4_, stagiaire4_.prenom as prenom5_17_4_ from duel duel0_ inner join quizz quizz1_ on duel0_.quizz_id=quizz1_.id left outer join stagiaire stagiaire2_ on duel0_.stagiairea_id=stagiaire2_.id left outer join classe classe3_ on stagiaire2_.id_classe=classe3_.id left outer join stagiaire stagiaire4_ on duel0_.stagiaireb_id=stagiaire4_.id where duel0_.id=?
+Hibernate: delete from duel where id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_0_, duel0_.quizz_id as quizz_id2_5_0_, duel0_.stagiairea_id as stagiair3_5_0_, duel0_.stagiaireb_id as stagiair4_5_0_, quizz1_.id as id1_13_1_, quizz1_.titre as titre2_13_1_, stagiaire2_.id as id1_17_2_, stagiaire2_.id_classe as id_class6_17_2_, stagiaire2_.email as email2_17_2_, stagiaire2_.nom as nom3_17_2_, stagiaire2_.photo_url as photo_ur4_17_2_, stagiaire2_.prenom as prenom5_17_2_, classe3_.id as id1_0_3_, classe3_.nom as nom2_0_3_, stagiaire4_.id as id1_17_4_, stagiaire4_.id_classe as id_class6_17_4_, stagiaire4_.email as email2_17_4_, stagiaire4_.nom as nom3_17_4_, stagiaire4_.photo_url as photo_ur4_17_4_, stagiaire4_.prenom as prenom5_17_4_ from duel duel0_ inner join quizz quizz1_ on duel0_.quizz_id=quizz1_.id left outer join stagiaire stagiaire2_ on duel0_.stagiairea_id=stagiaire2_.id left outer join classe classe3_ on stagiaire2_.id_classe=classe3_.id left outer join stagiaire stagiaire4_ on duel0_.stagiaireb_id=stagiaire4_.id where duel0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: update duel set quizz_id=?, stagiairea_id=?, stagiaireb_id=? where id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.79 s - in dev.repositories.duel.DuelRepositoryJpaTest
+[INFO] Running dev.repositories.duel.DuelRepositoryDataJpaTest
+2020-02-16 15:02:32.164  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:32.164  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:32.203  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 39 ms.
+2020-02-16 15:02:32.203  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:32.206  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 3 ms.
+2020-02-16 15:02:32.219  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:32.631  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: insert into duel (id, quizz_id, stagiairea_id, stagiaireb_id) values (null, ?, ?, ?)
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_0_, duel0_.quizz_id as quizz_id2_5_0_, duel0_.stagiairea_id as stagiair3_5_0_, duel0_.stagiaireb_id as stagiair4_5_0_, quizz1_.id as id1_13_1_, quizz1_.titre as titre2_13_1_, stagiaire2_.id as id1_17_2_, stagiaire2_.id_classe as id_class6_17_2_, stagiaire2_.email as email2_17_2_, stagiaire2_.nom as nom3_17_2_, stagiaire2_.photo_url as photo_ur4_17_2_, stagiaire2_.prenom as prenom5_17_2_, classe3_.id as id1_0_3_, classe3_.nom as nom2_0_3_, stagiaire4_.id as id1_17_4_, stagiaire4_.id_classe as id_class6_17_4_, stagiaire4_.email as email2_17_4_, stagiaire4_.nom as nom3_17_4_, stagiaire4_.photo_url as photo_ur4_17_4_, stagiaire4_.prenom as prenom5_17_4_ from duel duel0_ inner join quizz quizz1_ on duel0_.quizz_id=quizz1_.id left outer join stagiaire stagiaire2_ on duel0_.stagiairea_id=stagiaire2_.id left outer join classe classe3_ on stagiaire2_.id_classe=classe3_.id left outer join stagiaire stagiaire4_ on duel0_.stagiaireb_id=stagiaire4_.id where duel0_.id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_0_, duel0_.quizz_id as quizz_id2_5_0_, duel0_.stagiairea_id as stagiair3_5_0_, duel0_.stagiaireb_id as stagiair4_5_0_ from duel duel0_ where duel0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_ from stagiaire stagiaire0_ where stagiaire0_.id=?
+Hibernate: select classe0_.id as id1_0_1_, classe0_.nom as nom2_0_1_, stagiaires1_.id_classe as id_class6_17_3_, stagiaires1_.id as id1_17_3_, stagiaires1_.id as id1_17_0_, stagiaires1_.id_classe as id_class6_17_0_, stagiaires1_.email as email2_17_0_, stagiaires1_.nom as nom3_17_0_, stagiaires1_.photo_url as photo_ur4_17_0_, stagiaires1_.prenom as prenom5_17_0_ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe where classe0_.id=?
+Hibernate: delete from duel where id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select duel0_.id as id1_5_0_, duel0_.quizz_id as quizz_id2_5_0_, duel0_.stagiairea_id as stagiair3_5_0_, duel0_.stagiaireb_id as stagiair4_5_0_ from duel duel0_ where duel0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_ from stagiaire stagiaire0_ where stagiaire0_.id=?
+Hibernate: select classe0_.id as id1_0_1_, classe0_.nom as nom2_0_1_, stagiaires1_.id_classe as id_class6_17_3_, stagiaires1_.id as id1_17_3_, stagiaires1_.id as id1_17_0_, stagiaires1_.id_classe as id_class6_17_0_, stagiaires1_.email as email2_17_0_, stagiaires1_.nom as nom3_17_0_, stagiaires1_.photo_url as photo_ur4_17_0_, stagiaires1_.prenom as prenom5_17_0_ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe where classe0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: update duel set quizz_id=?, stagiairea_id=?, stagiaireb_id=? where id=?
+Hibernate: select duel0_.id as id1_5_, duel0_.quizz_id as quizz_id2_5_, duel0_.stagiairea_id as stagiair3_5_, duel0_.stagiaireb_id as stagiair4_5_ from duel duel0_
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select quizz0_.id as id1_13_0_, quizz0_.titre as titre2_13_0_ from quizz quizz0_ where quizz0_.id=?
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.982 s - in dev.repositories.duel.DuelRepositoryDataJpaTest
+[INFO] Running dev.repositories.duel.DuelRepositoryJdbcTest
+2020-02-16 15:02:33.047  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:33.048  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:33.074  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 26 ms.
+2020-02-16 15:02:33.074  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:33.077  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 3 ms.
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in dev.repositories.duel.DuelRepositoryJdbcTest
+[INFO] Running dev.repositories.stagiaire.StagiaireRepositoryDataJpaTest
+2020-02-16 15:02:33.237  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:33.237  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:33.265  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 27 ms.
+2020-02-16 15:02:33.265  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:33.268  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 3 ms.
+2020-02-16 15:02:33.280  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:33.744  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: insert into stagiaire (id, id_classe, email, nom, photo_url, prenom) values (null, ?, ?, ?, ?, ?)
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: insert into stagiaire (id, id_classe, email, nom, photo_url, prenom) values (null, ?, ?, ?, ?, ?)
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_ from stagiaire stagiaire0_ where stagiaire0_.id=?
+Hibernate: delete from stagiaire where id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from stagiaire stagiaire0_ left outer join classe classe1_ on stagiaire0_.id_classe=classe1_.id where stagiaire0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_ from stagiaire stagiaire0_ where stagiaire0_.id=?
+Hibernate: select classe0_.id as id1_0_1_, classe0_.nom as nom2_0_1_, stagiaires1_.id_classe as id_class6_17_3_, stagiaires1_.id as id1_17_3_, stagiaires1_.id as id1_17_0_, stagiaires1_.id_classe as id_class6_17_0_, stagiaires1_.email as email2_17_0_, stagiaires1_.nom as nom3_17_0_, stagiaires1_.photo_url as photo_ur4_17_0_, stagiaires1_.prenom as prenom5_17_0_ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe where classe0_.id=?
+Hibernate: update stagiaire set id_classe=?, email=?, nom=?, photo_url=?, prenom=? where id=?
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.966 s - in dev.repositories.stagiaire.StagiaireRepositoryDataJpaTest
+[INFO] Running dev.repositories.stagiaire.StagiaireRepositoryJpaTest
+2020-02-16 15:02:34.128  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:34.129  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:34.184  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 55 ms.
+2020-02-16 15:02:34.184  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:34.188  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 4 ms.
+2020-02-16 15:02:34.207  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:34.590  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: insert into stagiaire (id, id_classe, email, nom, photo_url, prenom) values (null, ?, ?, ?, ?, ?)
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaire0_.id as id1_17_0_, stagiaire0_.id_classe as id_class6_17_0_, stagiaire0_.email as email2_17_0_, stagiaire0_.nom as nom3_17_0_, stagiaire0_.photo_url as photo_ur4_17_0_, stagiaire0_.prenom as prenom5_17_0_ from stagiaire stagiaire0_ where stagiaire0_.id=?
+Hibernate: select classe0_.id as id1_0_1_, classe0_.nom as nom2_0_1_, stagiaires1_.id_classe as id_class6_17_3_, stagiaires1_.id as id1_17_3_, stagiaires1_.id as id1_17_0_, stagiaires1_.id_classe as id_class6_17_0_, stagiaires1_.email as email2_17_0_, stagiaires1_.nom as nom3_17_0_, stagiaires1_.photo_url as photo_ur4_17_0_, stagiaires1_.prenom as prenom5_17_0_ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe where classe0_.id=?
+Hibernate: update stagiaire set id_classe=?, email=?, nom=?, photo_url=?, prenom=? where id=?
+Hibernate: select stagiaire0_.id as id1_17_, stagiaire0_.id_classe as id_class6_17_, stagiaire0_.email as email2_17_, stagiaire0_.nom as nom3_17_, stagiaire0_.photo_url as photo_ur4_17_, stagiaire0_.prenom as prenom5_17_ from stagiaire stagiaire0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.576 s - in dev.repositories.stagiaire.StagiaireRepositoryJpaTest
+[INFO] Running dev.repositories.stagiaire.StagiaireRepositoryMemoireTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in dev.repositories.stagiaire.StagiaireRepositoryMemoireTest
+[INFO] Running dev.repositories.stagiaire.StagiaireRepositoryJdbcTest
+2020-02-16 15:02:34.771  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:34.771  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:34.804  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 33 ms.
+2020-02-16 15:02:34.804  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:34.820  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 2 ms.
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.092 s - in dev.repositories.stagiaire.StagiaireRepositoryJdbcTest
+[INFO] Running dev.repositories.classe.ClasseRepositoryJPATest
+2020-02-16 15:02:34.877  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:34.879  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:34.890  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 10 ms.
+2020-02-16 15:02:34.904  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:34.907  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 3 ms.
+2020-02-16 15:02:34.930  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:35.340  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select classe0_.id as id1_0_, classe0_.nom as nom2_0_ from classe classe0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select stagiaires0_.id_classe as id_class6_17_0_, stagiaires0_.id as id1_17_0_, stagiaires0_.id as id1_17_1_, stagiaires0_.id_classe as id_class6_17_1_, stagiaires0_.email as email2_17_1_, stagiaires0_.nom as nom3_17_1_, stagiaires0_.photo_url as photo_ur4_17_1_, stagiaires0_.prenom as prenom5_17_1_ from stagiaire stagiaires0_ where stagiaires0_.id_classe=?
+Hibernate: delete from classe where id=?
+Hibernate: select classe0_.id as id1_0_, classe0_.nom as nom2_0_ from classe classe0_
+Hibernate: select classe0_.id as id1_0_, classe0_.nom as nom2_0_ from classe classe0_
+Hibernate: select classe0_.id as id1_0_, classe0_.nom as nom2_0_ from classe classe0_
+Hibernate: insert into classe (id, nom) values (null, ?)
+Hibernate: insert into stagiaire (id, id_classe, email, nom, photo_url, prenom) values (null, ?, ?, ?, ?, ?)
+Hibernate: select classe0_.id as id1_0_, classe0_.nom as nom2_0_ from classe classe0_
+Hibernate: select classe0_.id as id1_0_, classe0_.nom as nom2_0_ from classe classe0_
+Hibernate: select classe0_.id as id1_0_1_, classe0_.nom as nom2_0_1_, stagiaires1_.id_classe as id_class6_17_3_, stagiaires1_.id as id1_17_3_, stagiaires1_.id as id1_17_0_, stagiaires1_.id_classe as id_class6_17_0_, stagiaires1_.email as email2_17_0_, stagiaires1_.nom as nom3_17_0_, stagiaires1_.photo_url as photo_ur4_17_0_, stagiaires1_.prenom as prenom5_17_0_ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe where classe0_.id=?
+Hibernate: update classe set nom=? where id=?
+Hibernate: select classe0_.id as id1_0_, classe0_.nom as nom2_0_ from classe classe0_
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 s - in dev.repositories.classe.ClasseRepositoryJPATest
+[INFO] Running dev.repositories.classe.ClasseRepositoryJdbcTest
+2020-02-16 15:02:35.443  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:35.443  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:35.454  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 10 ms.
+2020-02-16 15:02:35.455  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:35.457  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 2 ms.
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in dev.repositories.classe.ClasseRepositoryJdbcTest
+[INFO] Running dev.repositories.classe.ClasseRepositoryDataJpaTest
+2020-02-16 15:02:35.605  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:35.605  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:35.614  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 9 ms.
+2020-02-16 15:02:35.614  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:35.617  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 3 ms.
+2020-02-16 15:02:35.635  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:35.978  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select classe0_.id as id1_0_0_, stagiaires1_.id as id1_17_1_, classe0_.nom as nom2_0_0_, stagiaires1_.id_classe as id_class6_17_1_, stagiaires1_.email as email2_17_1_, stagiaires1_.nom as nom3_17_1_, stagiaires1_.photo_url as photo_ur4_17_1_, stagiaires1_.prenom as prenom5_17_1_, stagiaires1_.id_classe as id_class6_17_0__, stagiaires1_.id as id1_17_0__ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe
+Hibernate: delete from classe where id=?
+Hibernate: select classe0_.id as id1_0_0_, stagiaires1_.id as id1_17_1_, classe0_.nom as nom2_0_0_, stagiaires1_.id_classe as id_class6_17_1_, stagiaires1_.email as email2_17_1_, stagiaires1_.nom as nom3_17_1_, stagiaires1_.photo_url as photo_ur4_17_1_, stagiaires1_.prenom as prenom5_17_1_, stagiaires1_.id_classe as id_class6_17_0__, stagiaires1_.id as id1_17_0__ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe
+Hibernate: select classe0_.id as id1_0_0_, stagiaires1_.id as id1_17_1_, classe0_.nom as nom2_0_0_, stagiaires1_.id_classe as id_class6_17_1_, stagiaires1_.email as email2_17_1_, stagiaires1_.nom as nom3_17_1_, stagiaires1_.photo_url as photo_ur4_17_1_, stagiaires1_.prenom as prenom5_17_1_, stagiaires1_.id_classe as id_class6_17_0__, stagiaires1_.id as id1_17_0__ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe
+Hibernate: select classe0_.id as id1_0_0_, stagiaires1_.id as id1_17_1_, classe0_.nom as nom2_0_0_, stagiaires1_.id_classe as id_class6_17_1_, stagiaires1_.email as email2_17_1_, stagiaires1_.nom as nom3_17_1_, stagiaires1_.photo_url as photo_ur4_17_1_, stagiaires1_.prenom as prenom5_17_1_, stagiaires1_.id_classe as id_class6_17_0__, stagiaires1_.id as id1_17_0__ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe
+Hibernate: insert into classe (id, nom) values (null, ?)
+Hibernate: insert into stagiaire (id, id_classe, email, nom, photo_url, prenom) values (null, ?, ?, ?, ?, ?)
+Hibernate: select classe0_.id as id1_0_0_, stagiaires1_.id as id1_17_1_, classe0_.nom as nom2_0_0_, stagiaires1_.id_classe as id_class6_17_1_, stagiaires1_.email as email2_17_1_, stagiaires1_.nom as nom3_17_1_, stagiaires1_.photo_url as photo_ur4_17_1_, stagiaires1_.prenom as prenom5_17_1_, stagiaires1_.id_classe as id_class6_17_0__, stagiaires1_.id as id1_17_0__ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe
+Hibernate: select classe0_.id as id1_0_0_, stagiaires1_.id as id1_17_1_, classe0_.nom as nom2_0_0_, stagiaires1_.id_classe as id_class6_17_1_, stagiaires1_.email as email2_17_1_, stagiaires1_.nom as nom3_17_1_, stagiaires1_.photo_url as photo_ur4_17_1_, stagiaires1_.prenom as prenom5_17_1_, stagiaires1_.id_classe as id_class6_17_0__, stagiaires1_.id as id1_17_0__ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe
+Hibernate: update classe set nom=? where id=?
+Hibernate: select classe0_.id as id1_0_0_, stagiaires1_.id as id1_17_1_, classe0_.nom as nom2_0_0_, stagiaires1_.id_classe as id_class6_17_1_, stagiaires1_.email as email2_17_1_, stagiaires1_.nom as nom3_17_1_, stagiaires1_.photo_url as photo_ur4_17_1_, stagiaires1_.prenom as prenom5_17_1_, stagiaires1_.id_classe as id_class6_17_0__, stagiaires1_.id as id1_17_0__ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.794 s - in dev.repositories.classe.ClasseRepositoryDataJpaTest
+[INFO] Running dev.repositories.classe.ClasseRepositoryMemoireTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s - in dev.repositories.classe.ClasseRepositoryMemoireTest
+[INFO] Running dev.repositories.sondage.SondageRepositoryMemoireTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 s - in dev.repositories.sondage.SondageRepositoryMemoireTest
+[INFO] Running dev.repositories.sondage.SondageRepositoryDataJpaTest
+2020-02-16 15:02:36.741  INFO   --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2020-02-16 15:02:36.742  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [schema-mysql.sql]
+2020-02-16 15:02:36.752  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [schema-mysql.sql] in 10 ms.
+2020-02-16 15:02:36.760  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [data.sql]
+2020-02-16 15:02:36.762  INFO   --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [data.sql] in 2 ms.
+2020-02-16 15:02:36.795  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: alter table compo_quizz add constraint FKav0vfdua95axyw1hd8fmk3ci9 foreign key (id_question) references question
+Hibernate: alter table compo_quizz add constraint FKi111a3b15wkbk23erliu2i8y4 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKsae5ca6tc6xqnmqawjumajs91 foreign key (id_quizz) references quizz
+Hibernate: alter table concours_quizz add constraint FKrwrtugv77i0k58vu7y7wypx30 foreign key (id_concours) references concours
+Hibernate: alter table concours_stagiaire add constraint FK3ib47v1p2uhnij2tvei7orb2h foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table concours_stagiaire add constraint FKmoaspasdatbrrtu5ra8o9d2p8 foreign key (id_concours) references concours
+Hibernate: alter table duel add constraint FKmv74vgfbcxw3al8gi2gxevs1c foreign key (quizz_id) references quizz
+Hibernate: alter table duel add constraint FK7qqe54dd5egdk20mm2w8xe7ck foreign key (stagiairea_id) references stagiaire
+Hibernate: alter table duel add constraint FKik815ejnl90w9xwslfi3hqm06 foreign key (stagiaireb_id) references stagiaire
+Hibernate: alter table examen add constraint FK5swu9ypmecova7k43q7jxxmjm foreign key (id_classe) references classe
+Hibernate: alter table examen add constraint FKml86yfj8sraoycbf37rog2uyc foreign key (id_quizz) references quizz
+Hibernate: alter table note add constraint FKob8ha92haqdxk0n8doh4aw9eq foreign key (id_examen) references examen
+Hibernate: alter table note add constraint FKdyqpkktr10q7tv9gmbbuchwl2 foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table passage_concours add constraint FKn4xmf63jycphfx5edcxxg80x3 foreign key (id_concours) references concours
+Hibernate: alter table passage_concours add constraint FK62ji4nn8p0x7l25t2f839fp3u foreign key (id_stagiaire) references stagiaire
+Hibernate: alter table question_compo add constraint FKdm7k2htbei1jmw12y2er7oq58 foreign key (id_opt) references option_question
+Hibernate: alter table question_compo add constraint FK33h8q4lp4w4k978dllyx0stde foreign key (id_que) references question
+Hibernate: alter table resultat_question_concours add constraint FK2c5q724b58qfej1nqlwwid8w foreign key (id_passage) references passage_concours
+Hibernate: alter table resultat_question_concours add constraint FK4lu4exexl8uehjktqkb3iiug1 foreign key (id_question) references question
+Hibernate: alter table resultat_question_concours add constraint FK65i58l6ljhobrbfkg3ixu0geq foreign key (id_option_reponse) references option_question
+Hibernate: alter table Sondage add constraint FKjxioj3t6qtf7i6ad8ilsw5l4i foreign key (classe_id) references classe
+Hibernate: alter table sondage_option_sondage add constraint FKtgicxsowci2xylhn2t9nwp2fm foreign key (id_option_sondage) references option_sondage
+Hibernate: alter table sondage_option_sondage add constraint FK1scp5m2s1s712hist63sl5qoh foreign key (id_sondage) references Sondage
+Hibernate: alter table stagiaire add constraint FKmqmr807nsc1o0x2vpn18dhwgv foreign key (id_classe) references classe
+2020-02-16 15:02:37.245  INFO   --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+titre sondage 1
+titre sondage 2
+titre sondage 3
+titre sondage 4
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select sondage0_.id as id1_15_0_, sondage0_.classe_id as classe_i3_15_0_, sondage0_.titre as titre2_15_0_ from Sondage sondage0_ where sondage0_.id=?
+Hibernate: insert into Sondage (id, classe_id, titre) values (null, ?, ?)
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select sondage0_.id as id1_15_0_, sondage0_.classe_id as classe_i3_15_0_, sondage0_.titre as titre2_15_0_, classe1_.id as id1_0_1_, classe1_.nom as nom2_0_1_ from Sondage sondage0_ left outer join classe classe1_ on sondage0_.classe_id=classe1_.id where sondage0_.id=?
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select sondage0_.id as id1_15_0_, sondage0_.classe_id as classe_i3_15_0_, sondage0_.titre as titre2_15_0_ from Sondage sondage0_ where sondage0_.id=?
+Hibernate: select classe0_.id as id1_0_1_, classe0_.nom as nom2_0_1_, stagiaires1_.id_classe as id_class6_17_3_, stagiaires1_.id as id1_17_3_, stagiaires1_.id as id1_17_0_, stagiaires1_.id_classe as id_class6_17_0_, stagiaires1_.email as email2_17_0_, stagiaires1_.nom as nom3_17_0_, stagiaires1_.photo_url as photo_ur4_17_0_, stagiaires1_.prenom as prenom5_17_0_ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe where classe0_.id=?
+Hibernate: delete from sondage_option_sondage where id_sondage=?
+Hibernate: delete from Sondage where id=?
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select sondage0_.id as id1_15_0_, sondage0_.classe_id as classe_i3_15_0_, sondage0_.titre as titre2_15_0_ from Sondage sondage0_ where sondage0_.id=?
+Hibernate: select classe0_.id as id1_0_1_, classe0_.nom as nom2_0_1_, stagiaires1_.id_classe as id_class6_17_3_, stagiaires1_.id as id1_17_3_, stagiaires1_.id as id1_17_0_, stagiaires1_.id_classe as id_class6_17_0_, stagiaires1_.email as email2_17_0_, stagiaires1_.nom as nom3_17_0_, stagiaires1_.photo_url as photo_ur4_17_0_, stagiaires1_.prenom as prenom5_17_0_ from classe classe0_ left outer join stagiaire stagiaires1_ on classe0_.id=stagiaires1_.id_classe where classe0_.id=?
+Hibernate: update Sondage set classe_id=?, titre=? where id=?
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select sondage0_.id as id1_15_, sondage0_.classe_id as classe_i3_15_, sondage0_.titre as titre2_15_ from Sondage sondage0_
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+Hibernate: select classe0_.id as id1_0_0_, classe0_.nom as nom2_0_0_ from classe classe0_ where classe0_.id=?
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.948 s - in dev.repositories.sondage.SondageRepositoryDataJpaTest
+[INFO] Running dev.repositories.QuizzRepositoryMemoireTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in dev.repositories.QuizzRepositoryMemoireTest
+[INFO] Running dev.repositories.UtilisateurRepositoryMemoireTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in dev.repositories.UtilisateurRepositoryMemoireTest
+[INFO] Running dev.repositories.ExamenRepositoryMemoireTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.003 s - in dev.repositories.ExamenRepositoryMemoireTest
+[INFO] Running dev.repositories.ConcoursRepositoryMemoireTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in dev.repositories.ConcoursRepositoryMemoireTest
+[INFO] Running dev.entites.JddStagiaireTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in dev.entites.JddStagiaireTest
+[INFO] Running dev.entites.JddSondageTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 s - in dev.entites.JddSondageTest
+[INFO] Running dev.entites.JddClasseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in dev.entites.JddClasseTest
+[INFO] Running dev.entites.JddOptionSondageTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in dev.entites.JddOptionSondageTest
+[INFO] Running dev.entites.JddExamensTest
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.001 s - in dev.entites.JddExamensTest
+[INFO] Running dev.entites.JddDuelTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in dev.entites.JddDuelTest
+[INFO] Running dev.entites.JddConcoursTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in dev.entites.JddConcoursTest
+[INFO] Running dev.entites.JddUtilisateurTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in dev.entites.JddUtilisateurTest
+[INFO] Running dev.entites.JddQuestionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in dev.entites.JddQuestionTest
+[INFO] Running dev.entites.JddQuizzTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in dev.entites.JddQuizzTest
+2020-02-16 15:02:38.755  INFO   --- [      Thread-20] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.759  INFO   --- [      Thread-22] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.767  INFO   --- [      Thread-10] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.769  INFO   --- [      Thread-12] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.770  INFO   --- [      Thread-16] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.772  INFO   --- [       Thread-6] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.772  INFO   --- [       Thread-5] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.782  INFO   --- [      Thread-13] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.784  INFO   --- [      Thread-14] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.785  INFO   --- [       Thread-9] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.786  INFO   --- [      Thread-23] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.786  INFO   --- [       Thread-1] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.787  INFO   --- [       Thread-2] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.788  INFO   --- [      Thread-11] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.789  INFO   --- [      Thread-15] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.789  INFO   --- [      Thread-21] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.790  INFO   --- [       Thread-8] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.791  INFO   --- [      Thread-18] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.792  INFO   --- [      Thread-17] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2020-02-16 15:02:38.795  INFO   --- [      Thread-26] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ConcoursRepositoryJdbcTest.testFindAll:27 expected:<[2]> but was:<[3]>
+[INFO] 
+[ERROR] Tests run: 146, Failures: 1, Errors: 0, Skipped: 9
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 29.682 s
+[INFO] Finished at: 2020-02-16T15:02:39+01:00
+[INFO] Final Memory: 36M/88M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project evalme-back: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-le-mystere-de-la-salle-jaune-evalme-back-408065593-20180725-153517-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project evalme-back: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-le-mystere-de-la-salle-jaune-evalme-back-408065593-20180725-153517-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-le-mystere-de-la-salle-jaune-evalme-back-408065593-20180725-153517-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1008)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
