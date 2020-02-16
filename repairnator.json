@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dipak-pawar/smart-testing",
-  "bugCommit": "https://github.com/dipak-pawar/smart-testing/compare/cdcdc21baf45...a7e602047821",
-  "failingModule": "/root/workspace/dipak-pawar/smart-testing/330727106/surefire-provider",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 148,
-  "failing-test-cases": [
-    {
-      "className": "org.arquillian.smart.testing.surefire.provider.TestNgParametersTest",
-      "failingMethods": [
-        "org.arquillian.smart.testing.surefire.provider.TestNgParametersTest#should_not_remove_positive_thread_count"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:42:09 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25313616,
+      "totalMemory": 91697152
+    },
+    "totalDuration": 300,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 61,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          61
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dipak-pawar-smart-testing-330727106-20180119-103630_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dipak-pawar-smart-testing-330727106-20180119-103630_bugonly-firstCommit/surefire-provider",
+    "overallMetrics": {
+      "numberRunning": 215,
+      "numberPassing": 214,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 11,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected size:\u003c2\u003e but was:\u003c1\u003e in:\n\u003c{\"parallel\"\u003d\"none\"}\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.arquillian.smart.testing.surefire.provider.TestNgParametersTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.arquillian.smart.testing.surefire.provider.TestNgParametersTest",
+        "testMethod": "should_not_remove_positive_thread_count",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected size:\u003c2\u003e but was:\u003c1\u003e in:\n\u003c{\"parallel\"\u003d\"none\"}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberPlugins": 0,
+    "numberSourceFiles": 165,
+    "numberTestFiles": 125,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "commits": {}
 }
