@@ -1,0 +1,557 @@
+[pool-1-thread-1] WARN io.dropwizard.metrics5.graphite.GraphiteReporter - Unable to report to Graphite
+java.net.UnknownHostException: UNKNOWN-HOST	at io.dropwizard.metrics5.graphite.GraphiteReporter.report(GraphiteReporter.java:252)	at io.dropwizard.metrics5.graphite.GraphiteReporterTest.closesConnectionIfGraphiteIsUnavailable(GraphiteReporterTest.java:418)	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)	at java.lang.reflect.Method.invoke(Method.java:498)	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)	at org.junit.runners.Suite.runChild(Suite.java:128)	at org.junit.runners.Suite.runChild(Suite.java:27)	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)	at java.util.concurrent.FutureTask.run(FutureTask.java:266)	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)	at java.lang.Thread.run(Thread.java:748)
+oding to copy filtered resources.
+[INFO] Copying 71 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ docs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/docs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ docs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ docs ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics BOM 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Annotations for Metrics 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-annotation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-annotation/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-annotation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-annotation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-annotation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-annotation ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Core 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.14.1/surefire-junit47-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.14.1/surefire-junit47-2.14.1.pom (5 KB at 9.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.14.1/surefire-providers-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.14.1/surefire-providers-2.14.1.pom (3 KB at 93.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.14.1/common-junit48-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.14.1/common-junit48-2.14.1.pom (4 KB at 126.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.14.1/common-junit4-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.14.1/common-junit4-2.14.1.pom (2 KB at 71.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.14.1/common-junit3-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.14.1/common-junit3-2.14.1.pom (2 KB at 63.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.14.1/common-java5-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.14.1/common-java5-2.14.1.pom (2 KB at 70.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.14.1/surefire-grouper-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.14.1/surefire-grouper-2.14.1.pom (3 KB at 98.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.14.1/surefire-junit47-2.14.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.14.1/common-junit3-2.14.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.14.1/common-java5-2.14.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.14.1/common-junit48-2.14.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.14.1/common-junit4-2.14.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.14.1/common-junit3-2.14.1.jar (12 KB at 141.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.14.1/common-junit4-2.14.1.jar (16 KB at 219.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.14.1/surefire-grouper-2.14.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.14.1/common-junit48-2.14.1.jar (17 KB at 196.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.14.1/common-java5-2.14.1.jar (55 KB at 517.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.14.1/surefire-junit47-2.14.1.jar (103 KB at 819.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.14.1/surefire-grouper-2.14.1.jar (37 KB at 879.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running io.dropwizard.metrics5.ConsoleReporterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec
+Running io.dropwizard.metrics5.SlidingWindowReservoirTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running io.dropwizard.metrics5.UniformReservoirTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running io.dropwizard.metrics5.HistogramTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Running io.dropwizard.metrics5.TimerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running io.dropwizard.metrics5.MetricRegistryTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Running io.dropwizard.metrics5.CsvReporterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.93 sec
+Running io.dropwizard.metrics5.MetricRegistryListenerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running io.dropwizard.metrics5.ScheduledReporterTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.602 sec
+Running io.dropwizard.metrics5.WeightedSnapshotTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 sec
+Running io.dropwizard.metrics5.MeterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running io.dropwizard.metrics5.InstrumentedThreadFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec
+Running io.dropwizard.metrics5.DerivativeGaugeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.dropwizard.metrics5.SlidingTimeWindowReservoirTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.468 sec
+Running io.dropwizard.metrics5.RatioGaugeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.dropwizard.metrics5.ChunkedAssociativeLongArrayTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running io.dropwizard.metrics5.CachedGaugeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec
+Running io.dropwizard.metrics5.FixedNameCsvFileProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running io.dropwizard.metrics5.ClockTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running io.dropwizard.metrics5.UniformSnapshotTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Running io.dropwizard.metrics5.MeterApproximationTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec
+Running io.dropwizard.metrics5.InstrumentedScheduledExecutorServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.605 sec
+Running io.dropwizard.metrics5.SlidingTimeWindowArrayReservoirTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.816 sec
+Running io.dropwizard.metrics5.InstrumentedExecutorServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Running io.dropwizard.metrics5.CounterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running io.dropwizard.metrics5.MetricFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Running io.dropwizard.metrics5.Slf4jReporterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Running io.dropwizard.metrics5.MetricNameTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running io.dropwizard.metrics5.SharedMetricRegistriesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running io.dropwizard.metrics5.ExponentiallyDecayingReservoirTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.507 sec
+Running io.dropwizard.metrics5.EWMATest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+
+Results :
+
+Tests run: 235, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Benchmarks for Metrics 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-benchmarks ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ metrics-benchmarks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-benchmarks/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-benchmarks ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ metrics-benchmarks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-benchmarks/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-benchmarks ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-benchmarks ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JVM Integration for Metrics 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-jvm ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-jvm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-jvm/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-jvm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-jvm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-jvm/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-jvm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-jvm ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-jvm/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running io.dropwizard.metrics5.jvm.ThreadDumpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Running io.dropwizard.metrics5.jvm.JvmAttributeGaugeSetTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.349 sec
+Running io.dropwizard.metrics5.jvm.BufferPoolMetricSetTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running io.dropwizard.metrics5.jvm.ThreadDeadlockDetectorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running io.dropwizard.metrics5.jvm.CpuTimeClockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running io.dropwizard.metrics5.jvm.ThreadStatesGaugeSetTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running io.dropwizard.metrics5.jvm.MemoryUsageGaugeSetTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec
+Running io.dropwizard.metrics5.jvm.GarbageCollectorMetricSetTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running io.dropwizard.metrics5.jvm.FileDescriptorRatioGaugeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Running io.dropwizard.metrics5.jvm.ClassLoadingGaugeSetTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running io.dropwizard.metrics5.jvm.JmxAttributeGaugeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+
+Results :
+
+Tests run: 62, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Health Checks 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-healthchecks ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-healthchecks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-healthchecks/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-healthchecks ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-healthchecks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-healthchecks/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-healthchecks ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-healthchecks ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-healthchecks/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running io.dropwizard.metrics5.health.AsyncHealthCheckDecoratorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec
+Running io.dropwizard.metrics5.health.HealthCheckTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.746 sec
+Running io.dropwizard.metrics5.health.HealthCheckFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running io.dropwizard.metrics5.health.SharedHealthCheckRegistriesTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec
+Running io.dropwizard.metrics5.health.HealthCheckRegistryTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec
+Running io.dropwizard.metrics5.health.jvm.ThreadDeadlockHealthCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec
+
+Results :
+
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Integration for Ehcache 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-ehcache ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-ehcache ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-ehcache/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-ehcache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-ehcache ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-ehcache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-ehcache ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-ehcache/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running io.dropwizard.metrics5.ehcache.InstrumentedEhcacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+Running io.dropwizard.metrics5.ehcache.InstrumentedCacheDecoratorFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Graphite Integration for Metrics 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-graphite ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-graphite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-graphite/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-graphite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-graphite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-graphite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-graphite ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-graphite/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running io.dropwizard.metrics5.graphite.GraphiteUDPTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.092 sec
+Running io.dropwizard.metrics5.graphite.GraphiteTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 sec
+Running io.dropwizard.metrics5.graphite.GraphiteReporterTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.459 sec
+Running io.dropwizard.metrics5.graphite.GraphiteRabbitMQTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running io.dropwizard.metrics5.graphite.PickledGraphiteTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.501 sec
+Running io.dropwizard.metrics5.graphite.GraphiteSanitizeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.483 sec
+
+Results :
+
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Integration for Apache HttpClient 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-httpclient ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-httpclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpclient/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-httpclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-httpclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpclient/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-httpclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-httpclient ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpclient/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running io.dropwizard.metrics5.httpclient.HttpClientMetricNameStrategiesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec
+Running io.dropwizard.metrics5.httpclient.InstrumentedHttpClientsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 sec
+Running io.dropwizard.metrics5.httpclient.InstrumentedHttpClientConnectionManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.008 sec
+
+Results :
+
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Integration for Apache HttpAsyncClient 5.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-httpasyncclient ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-httpasyncclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpasyncclient/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-httpasyncclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-httpasyncclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpasyncclient/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-httpasyncclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-httpasyncclient ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpasyncclient/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.185 sec
+Running io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.475 sec <<< FAILURE!
+timerIsStoppedCorrectlyWithProvidedFutureCallbackCompleted(io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest)  Time elapsed: 0.787 sec  <<< FAILURE!
+org.mockito.exceptions.verification.NeverWantedButInvoked: 
+context.stop();
+Never wanted here:
+-> at io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest.timerIsStoppedCorrectlyWithProvidedFutureCallbackCompleted(InstrumentedHttpClientsTimerTest.java:89)
+But invoked here:
+-> at io.dropwizard.metrics5.httpasyncclient.InstrumentedNHttpClientBuilder$TimingFutureCallback.completed(InstrumentedNHttpClientBuilder.java:97)
+
+	at io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest.timerIsStoppedCorrectlyWithProvidedFutureCallbackCompleted(InstrumentedHttpClientsTimerTest.java:89)
+
+
+Results :
+
+Failed tests: 
+  InstrumentedHttpClientsTimerTest.timerIsStoppedCorrectlyWithProvidedFutureCallbackCompleted:89 
+context.stop();
+Never wanted here:
+-> at io.dropwizard.metrics5.httpasyncclient.InstrumentedHttpClientsTimerTest.timerIsStoppedCorrectlyWithProvidedFutureCallbackCompleted(InstrumentedHttpClientsTimerTest.java:89)
+But invoked here:
+-> at io.dropwizard.metrics5.httpasyncclient.InstrumentedNHttpClientBuilder$TimingFutureCallback.completed(InstrumentedNHttpClientBuilder.java:97)
+
+
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Metrics Parent ..................................... SUCCESS [  0.445 s]
+[INFO] Metrics Documentation .............................. SUCCESS [  1.676 s]
+[INFO] Metrics BOM ........................................ SUCCESS [  0.010 s]
+[INFO] Annotations for Metrics ............................ SUCCESS [  0.332 s]
+[INFO] Metrics Core ....................................... SUCCESS [ 38.968 s]
+[INFO] Benchmarks for Metrics ............................. SUCCESS [  0.065 s]
+[INFO] JVM Integration for Metrics ........................ SUCCESS [  3.154 s]
+[INFO] Metrics Health Checks .............................. SUCCESS [  3.038 s]
+[INFO] Metrics Integration for Ehcache .................... SUCCESS [  2.410 s]
+[INFO] Graphite Integration for Metrics ................... SUCCESS [  7.153 s]
+[INFO] Metrics Integration for Apache HttpClient .......... SUCCESS [  4.203 s]
+[INFO] Metrics Integration for Apache HttpAsyncClient ..... FAILURE [  9.107 s]
+[INFO] Metrics Integration for JCache ..................... SKIPPED
+[INFO] Metrics Integration for JDBI ....................... SKIPPED
+[INFO] Metrics Integration for JDBI3 ...................... SKIPPED
+[INFO] Metrics Integration for Jersey 2.x ................. SKIPPED
+[INFO] Metrics Integration for Jetty 9.3 and higher ....... SKIPPED
+[INFO] Jackson Integration for Metrics .................... SKIPPED
+[INFO] Metrics Integration for Log4j 2.x .................. SKIPPED
+[INFO] Metrics Integration for Logback .................... SKIPPED
+[INFO] Metrics Integration for Servlets ................... SKIPPED
+[INFO] Metrics Utility Servlets ........................... SKIPPED
+[INFO] Metrics JCStress tests ............................. SKIPPED
+[INFO] Metrics Integration with JMX ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:14 min
+[INFO] Finished at: 2020-02-16T11:41:38+01:00
+[INFO] Final Memory: 27M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.14.1:test (default-test) on project metrics-httpasyncclient: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpasyncclient/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.14.1:test (default-test) on project metrics-httpasyncclient: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpasyncclient/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-327017504-20180109-232750-firstCommit/metrics-httpasyncclient/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:169)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:733)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:631)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :metrics-httpasyncclient
