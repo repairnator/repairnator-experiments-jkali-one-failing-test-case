@@ -1,0 +1,412 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ShopOfHan 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (jacoco-prepare-agent) @ ShopOfHan ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-hanfak-ShopOfHan-331247518-20180120-182908_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-hanfak-ShopOfHan-331247518-20180120-182908_bugonly-firstCommit/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ShopOfHan ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ ShopOfHan ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ShopOfHan ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-hanfak-ShopOfHan-331247518-20180120-182908_bugonly-firstCommit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ ShopOfHan ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 49 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-hanfak-ShopOfHan-331247518-20180120-182908_bugonly-firstCommit/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ ShopOfHan ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-hanfak-ShopOfHan-331247518-20180120-182908_bugonly-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 6.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 72.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 1365.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running hanfak.shopofhan.domain.product.ProductNameTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 sec - in hanfak.shopofhan.domain.product.ProductNameTest
+Running hanfak.shopofhan.domain.product.ProductIdTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in hanfak.shopofhan.domain.product.ProductIdTest
+Running hanfak.shopofhan.infrastructure.database.jdbc.JDBCProductStockRepositoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.861 sec - in hanfak.shopofhan.infrastructure.database.jdbc.JDBCProductStockRepositoryTest
+Running hanfak.shopofhan.infrastructure.database.jdbc.OracleColumnAdaptersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in hanfak.shopofhan.infrastructure.database.jdbc.OracleColumnAdaptersTest
+Running hanfak.shopofhan.infrastructure.database.jdbc.EnhancedPreparedStatementTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in hanfak.shopofhan.infrastructure.database.jdbc.EnhancedPreparedStatementTest
+Running hanfak.shopofhan.infrastructure.database.jdbc.JDBCStockRepositoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.017 sec - in hanfak.shopofhan.infrastructure.database.jdbc.JDBCStockRepositoryTest
+Running hanfak.shopofhan.infrastructure.database.jdbc.EnhancedResultSetTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in hanfak.shopofhan.infrastructure.database.jdbc.EnhancedResultSetTest
+Running hanfak.shopofhan.infrastructure.database.jdbc.JdbcRecordReaderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.215 sec - in hanfak.shopofhan.infrastructure.database.jdbc.JdbcRecordReaderTest
+Running hanfak.shopofhan.infrastructure.monitoring.DatabaseConnectionProbeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in hanfak.shopofhan.infrastructure.monitoring.DatabaseConnectionProbeTest
+Running hanfak.shopofhan.infrastructure.settings.SettingsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in hanfak.shopofhan.infrastructure.settings.SettingsTest
+Running hanfak.shopofhan.infrastructure.settings.PropertiesReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in hanfak.shopofhan.infrastructure.settings.PropertiesReaderTest
+Running hanfak.shopofhan.infrastructure.web.productavailability.productavailabilityById.ProductAvailabilityByIdUnmarshallerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in hanfak.shopofhan.infrastructure.web.productavailability.productavailabilityById.ProductAvailabilityByIdUnmarshallerTest
+Running hanfak.shopofhan.infrastructure.web.productavailability.ProductAvailabilityUnmarshallerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in hanfak.shopofhan.infrastructure.web.productavailability.ProductAvailabilityUnmarshallerTest
+Running hanfak.shopofhan.infrastructure.web.productavailabilityById.ProductAvailabilityByIdUnmarshallerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in hanfak.shopofhan.infrastructure.web.productavailabilityById.ProductAvailabilityByIdUnmarshallerTest
+Running hanfak.shopofhan.wiring.ShopOfHanURLsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec - in hanfak.shopofhan.wiring.ShopOfHanURLsTest
+Running acceptancetests.stockcheck.CheckAmountOfProductAndStockDetailsInStockByIdTest
+2020-02-16 11:38:50 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+request = GET http://localhost:8081/fullProductStockCheck/id/STS1 HTTP/1.1
+2020-02-16 11:38:52 INFO  JettyWebserverBuilder:74 [qtp1783242896-10] - Incoming Request: 2decc2e0-5d0b-42ce-bdcc-0855df7cdce8
+GET http://localhost:8081/fullProductStockCheck/id/STS1 HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+
+2020-02-16 11:38:52 INFO  ProductStockCheckByIdUseCase:22 [qtp1783242896-10] - checking stock by Id 'STS1'
+
+productId = 5234523452345STS1
+2020-02-16 11:38:52 INFO  JettyWebserverBuilder:79 [qtp1783242896-10] - Outgoing Response: 2decc2e0-5d0b-42ce-bdcc-0855df7cdce8
+Duration: 92 ms
+HTTP/1.1 200 OK
+Date: Sun, 16 Feb 2020 10:38:52 GMT
+Content-Type: application/json
+
+{"productName": "SQL then sequel","productId": "STS1","productDescription": "Book about SQL","stock":[{"stockId": "STD1","amountInStock": "0","stockDescription": "Single Pack"},{"stockId": "STD2","amountInStock": "3","stockDescription": "Multi Pack"}]}
+
+blah {"productName": "SQL then sequel","productId": "STS1","productDescription": "Book about SQL","stock":[{"stockId": "STD1","amountInStock": "0","stockDescription": "Single Pack"},{"stockId": "STD2","amountInStock": "3","stockDescription": "Multi Pack"}]}
+2020-02-16 11:38:52 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+2020-02-16 11:38:54 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+request = GET http://localhost:8081/fullProductStockCheck/id/HP1 HTTP/1.1
+2020-02-16 11:38:54 INFO  JettyWebserverBuilder:74 [qtp417764437-20] - Incoming Request: 399852b0-62d8-40c2-8664-289fa6b3a700
+GET http://localhost:8081/fullProductStockCheck/id/HP1 HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+
+2020-02-16 11:38:54 INFO  ProductStockCheckByIdUseCase:22 [qtp417764437-20] - checking stock by Id 'HP1'
+
+productId = 5234523452345HP1
+2020-02-16 11:38:54 INFO  ProductStockCheckByIdUseCase:40 [qtp417764437-20] - Stock not there
+
+2020-02-16 11:38:54 INFO  JettyWebserverBuilder:79 [qtp417764437-20] - Outgoing Response: 399852b0-62d8-40c2-8664-289fa6b3a700
+Duration: 458 ms
+HTTP/1.1 404 Not Found
+Date: Sun, 16 Feb 2020 10:38:54 GMT
+Content-Type: text/plain
+
+Product 'HP1' is not stocked java.lang.IllegalStateException: Product is not found
+
+blah Product 'HP1' is not stocked java.lang.IllegalStateException: Product is not found
+2020-02-16 11:38:54 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+Yatspec output:
+/tmp/acceptancetests/stockcheck/CheckAmountOfProductAndStockDetailsInStockByIdTest.html
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.703 sec - in acceptancetests.stockcheck.CheckAmountOfProductAndStockDetailsInStockByIdTest
+Running acceptancetests.stockcheck.AddStockTest
+2020-02-16 11:38:55 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+POST http://localhost:8081/stock
+Content-Length: 92
+Content-Type: application/json
+
+{"productId" : "CTD1", "stockId" : "STD1", "stockDescription" : "Single Pack", "amount" : 5}
+2020-02-16 11:38:55 INFO  JettyWebserverBuilder:74 [qtp1356061479-30] - Incoming Request: 1d7d9f0e-0f51-49db-b51c-9f2c67548f29
+POST http://localhost:8081/stock HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+Content-Length: 92
+Content-Type: application/json
+
+{"productId" : "CTD1", "stockId" : "STD1", "stockDescription" : "Single Pack", "amount" : 5}
+
+2020-02-16 11:38:55 INFO  JettyWebserverBuilder:79 [qtp1356061479-30] - Outgoing Response: 1d7d9f0e-0f51-49db-b51c-9f2c67548f29
+Duration: 25 ms
+HTTP/1.1 200 OK
+Date: Sun, 16 Feb 2020 10:38:55 GMT
+Content-Type: text/plain
+
+Product with id, 'CTD1', has been added.Stock of '5' items for Product with id, 'CTD1', has been added.
+
+blah Product with id, 'CTD1', has been added.Stock of '5' items for Product with id, 'CTD1', has been added.
+2020-02-16 11:38:55 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+Yatspec output:
+/tmp/acceptancetests/stockcheck/AddStockTest.html
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 sec - in acceptancetests.stockcheck.AddStockTest
+Running acceptancetests.stockcheck.CheckAmountOfProductInStockByIdTest
+2020-02-16 11:38:55 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+request = GET http://localhost:8081/productscheck/id/JOJ1 HTTP/1.1
+2020-02-16 11:38:55 INFO  JettyWebserverBuilder:74 [qtp1411827871-39] - Incoming Request: 3a02cc13-8cd3-4696-ae02-d3c616033e8d
+GET http://localhost:8081/productscheck/id/JOJ1 HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+
+2020-02-16 11:38:55 INFO  ProductCheckByIdUseCase:25 [qtp1411827871-39] - checking stock by Id 'JOJ1'
+
+2020-02-16 11:38:55 INFO  ProductCheckByIdUseCase:33 [qtp1411827871-39] - Stock checked and returned 'ProductStock[productName=Joy Of Java,amountInStock=4]'
+
+2020-02-16 11:38:55 INFO  JettyWebserverBuilder:79 [qtp1411827871-39] - Outgoing Response: 3a02cc13-8cd3-4696-ae02-d3c616033e8d
+Duration: 21 ms
+HTTP/1.1 200 OK
+Date: Sun, 16 Feb 2020 10:38:55 GMT
+Content-Type: application/json
+
+{"productName": "Joy Of Java", "amountInStock": "4"}
+
+blah {"productName": "Joy Of Java", "amountInStock": "4"}
+2020-02-16 11:38:55 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+2020-02-16 11:38:55 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+request = GET http://localhost:8081/productscheck/id/HP1 HTTP/1.1
+2020-02-16 11:38:55 INFO  JettyWebserverBuilder:74 [qtp1717015704-48] - Incoming Request: 92b8747b-54a4-4894-8c22-e229544ae394
+GET http://localhost:8081/productscheck/id/HP1 HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+
+2020-02-16 11:38:55 INFO  ProductCheckByIdUseCase:25 [qtp1717015704-48] - checking stock by Id 'HP1'
+
+2020-02-16 11:38:55 INFO  ProductCheckByIdUseCase:39 [qtp1717015704-48] - Stock checked and returned nothing
+
+2020-02-16 11:38:55 INFO  JettyWebserverBuilder:79 [qtp1717015704-48] - Outgoing Response: 92b8747b-54a4-4894-8c22-e229544ae394
+Duration: 14 ms
+HTTP/1.1 404 Not Found
+Date: Sun, 16 Feb 2020 10:38:55 GMT
+Content-Type: text/plain
+
+Product 'HP1' is not stocked java.lang.IllegalStateException: Product is not found
+
+blah Product 'HP1' is not stocked java.lang.IllegalStateException: Product is not found
+2020-02-16 11:38:55 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+Yatspec output:
+/tmp/acceptancetests/stockcheck/CheckAmountOfProductInStockByIdTest.html
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.525 sec - in acceptancetests.stockcheck.CheckAmountOfProductInStockByIdTest
+Running acceptancetests.stockcheck.AddProductTest
+2020-02-16 11:38:56 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+POST http://localhost:8081/products
+Content-Length: 98
+Content-Type: application/json
+
+{"productName" : "SQL then sequel", "productId" : "STS1", "productDescription" : "Book about SQL"}
+2020-02-16 11:38:56 INFO  JettyWebserverBuilder:74 [qtp1821247347-58] - Incoming Request: 6042cf86-5841-4e5b-b30b-293eb421bcb5
+POST http://localhost:8081/products HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+Content-Length: 98
+Content-Type: application/json
+
+{"productName" : "SQL then sequel", "productId" : "STS1", "productDescription" : "Book about SQL"}
+
+2020-02-16 11:38:56 INFO  AddProductUseCase:28 [qtp1821247347-58] - Product was not added
+
+2020-02-16 11:38:56 INFO  JettyWebserverBuilder:79 [qtp1821247347-58] - Outgoing Response: 6042cf86-5841-4e5b-b30b-293eb421bcb5
+Duration: 13 ms
+HTTP/1.1 404 Not Found
+Date: Sun, 16 Feb 2020 10:38:56 GMT
+Content-Type: text/plain
+
+Product with id, 'STS1', has not been added, as it already exists.
+
+blah Product with id, 'STS1', has not been added, as it already exists.
+2020-02-16 11:38:56 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+2020-02-16 11:38:56 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+POST http://localhost:8081/products
+Content-Length: 104
+Content-Type: application/json
+
+{"productName" : "Clojure then door", "productId" : "CTD1", "productDescription" : "Book about Clojure"}
+2020-02-16 11:38:56 INFO  JettyWebserverBuilder:74 [qtp1737534162-68] - Incoming Request: 2e44e9d8-1a56-48bd-9684-b4f78b275a2c
+POST http://localhost:8081/products HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+Content-Length: 104
+Content-Type: application/json
+
+{"productName" : "Clojure then door", "productId" : "CTD1", "productDescription" : "Book about Clojure"}
+
+2020-02-16 11:38:56 INFO  AddProductUseCase:28 [qtp1737534162-68] - Product was not added
+
+2020-02-16 11:38:56 INFO  JettyWebserverBuilder:79 [qtp1737534162-68] - Outgoing Response: 2e44e9d8-1a56-48bd-9684-b4f78b275a2c
+Duration: 3 ms
+HTTP/1.1 404 Not Found
+Date: Sun, 16 Feb 2020 10:38:56 GMT
+Content-Type: text/plain
+
+Product with id, 'CTD1', has not been added, as it already exists.
+
+2020-02-16 11:38:56 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+Yatspec output:
+/tmp/acceptancetests/stockcheck/AddProductTest.html
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.576 sec <<< FAILURE! - in acceptancetests.stockcheck.AddProductTest
+shouldReturnStockAmountForItem(acceptancetests.stockcheck.AddProductTest)  Time elapsed: 0.199 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[200]> but was:<[404]>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at acceptancetests.thens.Then.theStatusCodeIs(Then.java:33)
+	at acceptancetests.stockcheck.AddProductTest.thenItReturnsAStatusCodeOf(AddProductTest.java:77)
+	at acceptancetests.stockcheck.AddProductTest.shouldReturnStockAmountForItem(AddProductTest.java:27)
+
+Running acceptancetests.stockcheck.CheckAmountOfProductInStockByNameTest
+2020-02-16 11:38:56 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+request = GET http://localhost:8081/productscheck/name/Joy%20Of%20Java HTTP/1.1
+2020-02-16 11:38:56 INFO  JettyWebserverBuilder:74 [qtp1876115290-77] - Incoming Request: c8836b4e-6c84-42d5-9eb1-0fa4b8045102
+GET http://localhost:8081/productscheck/name/Joy%20Of%20Java HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+
+2020-02-16 11:38:56 INFO  ProductCheckByNameUseCase:24 [qtp1876115290-77] - checking stock by Name 'Joy Of Java'
+
+productName***************** = Joy Of Java
+2020-02-16 11:38:56 INFO  ProductCheckByNameUseCase:33 [qtp1876115290-77] - Stock checked and returned 'ProductStock[productName=Joy Of Java,amountInStock=4]'
+
+2020-02-16 11:38:56 INFO  JettyWebserverBuilder:79 [qtp1876115290-77] - Outgoing Response: c8836b4e-6c84-42d5-9eb1-0fa4b8045102
+Duration: 18 ms
+HTTP/1.1 200 OK
+Date: Sun, 16 Feb 2020 10:38:56 GMT
+Content-Type: application/json
+
+{"productName": "Joy Of Java", "amountInStock": "4"}
+
+blah {"productName": "Joy Of Java", "amountInStock": "4"}
+2020-02-16 11:38:56 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+2020-02-16 11:38:56 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+request = GET http://localhost:8081/a/bad/url HTTP/1.1
+2020-02-16 11:38:56 INFO  JettyWebserverBuilder:74 [qtp875734546-87] - Incoming Request: bfffdbf4-e2b1-493c-b939-9316b2628d07
+GET http://localhost:8081/a/bad/url HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+
+2020-02-16 11:38:56 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+2020-02-16 11:38:57 INFO  ShopOfHan:21 [main] - Starting Shop Of Han app
+
+request = GET http://localhost:8081/productscheck/name/Harry%20Potter HTTP/1.1
+2020-02-16 11:38:57 INFO  JettyWebserverBuilder:74 [qtp1334679764-97] - Incoming Request: c214937e-0ae9-4d37-807c-1339721ed23f
+GET http://localhost:8081/productscheck/name/Harry%20Potter HTTP/1.1
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_202)
+Connection: keep-alive
+Host: localhost:8081
+Accept-Encoding: gzip,deflate
+
+2020-02-16 11:38:57 INFO  ProductCheckByNameUseCase:24 [qtp1334679764-97] - checking stock by Name 'Harry Potter'
+
+productName***************** = Harry Potter
+2020-02-16 11:38:57 INFO  ProductCheckByNameUseCase:39 [qtp1334679764-97] - Stock checked and returned nothing
+
+2020-02-16 11:38:57 INFO  JettyWebserverBuilder:79 [qtp1334679764-97] - Outgoing Response: c214937e-0ae9-4d37-807c-1339721ed23f
+Duration: 3 ms
+HTTP/1.1 404 Not Found
+Date: Sun, 16 Feb 2020 10:38:57 GMT
+Content-Type: text/plain
+
+Product 'Harry Potter' is not stocked java.lang.IllegalStateException: Product is not found
+
+blah Product 'Harry Potter' is not stocked java.lang.IllegalStateException: Product is not found
+2020-02-16 11:38:57 INFO  ShopOfHan:44 [main] - Closing Shop Of Han app
+
+Yatspec output:
+/tmp/acceptancetests/stockcheck/CheckAmountOfProductInStockByNameTest.html
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.671 sec - in acceptancetests.stockcheck.CheckAmountOfProductInStockByNameTest
+Running staticanalysis.SQLConventionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in staticanalysis.SQLConventionsTest
+Running staticanalysis.CommentsConventionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in staticanalysis.CommentsConventionsTest
+
+Results :
+
+Failed tests: 
+  AddProductTest.shouldReturnStockAmountForItem:27->thenItReturnsAStatusCodeOf:77 expected:<[200]> but was:<[404]>
+
+Tests run: 60, Failures: 1, Errors: 0, Skipped: 7
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.158 s
+[INFO] Finished at: 2020-02-16T11:38:57+01:00
+[INFO] Final Memory: 26M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project ShopOfHan: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-hanfak-ShopOfHan-331247518-20180120-182908_bugonly-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project ShopOfHan: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-hanfak-ShopOfHan-331247518-20180120-182908_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-hanfak-ShopOfHan-331247518-20180120-182908_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
