@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "omerxl/Payment",
-  "bugCommit": "https://github.com/omerxl/Payment/compare/2525b006936d...7fbe932381a9",
-  "failingModule": "/root/workspace/omerxl/Payment/349541437",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 25,
-  "failing-test-cases": [
-    {
-      "className": "com.omer.iyzico.PaymentControllerTest",
-      "failingMethods": [
-        "com.omer.iyzico.PaymentControllerTest#payment_succes"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:52 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:48:15 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 67801360,
+      "totalMemory": 164503552
+    },
+    "totalDuration": 2780,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2688,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2688
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-omerxl-Payment-349541437-20180305-232421-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-omerxl-Payment-349541437-20180305-232421-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 25,
+      "numberPassing": 24,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Response content expected:\u003cÖdeme Alındı\u003e but was:\u003c{\"result\":\"Ödeme Alındı\"}\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.omer.iyzico.PaymentControllerTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.omer.iyzico.PaymentControllerTest",
+        "testMethod": "payment_succes",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Response content expected:\u003cÖdeme Alındı\u003e but was:\u003c{\"result\":\"Ödeme Alındı\"}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 17,
+    "numberTestFiles": 7,
+    "numberLibrariesFailingModule": 72,
+    "numberLines": 0
+  },
+  "commits": {}
 }
