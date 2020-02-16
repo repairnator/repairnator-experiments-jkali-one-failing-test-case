@@ -1,0 +1,119 @@
+{
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/commons",
+    "overallMetrics": {
+      "numberRunning": 50,
+      "numberPassing": 49,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.javabeanstack.crypto.DigestUtilTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.javabeanstack.crypto.DigestUtilTest",
+        "testMethod": "testDigestAuth_MD5_sess_auth_int",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[0333c838e4efba3588b3a9b6db05b73b]\u003e but was:\u003c[5344eda79ce24158dd3cf01fd198e751]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberPlugins": 0,
+    "numberSourceFiles": 128,
+    "numberTestFiles": 19,
+    "numberLibrariesFailingModule": 5,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:02 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:39:11 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 10939360,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 67,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-jencisopy-JavaBeanStack-421147537-20180827-172453-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  }
+}
