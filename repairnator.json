@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "prestodb/presto",
-  "failingModule": "/root/workspace/prestodb/presto/231297663/presto-resource-group-managers",
-  "hostname": "repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 3131,
-  "failing-test-cases": [
-    {
-      "className": "com.facebook.presto.resourceGroups.TestFileResourceGroupConfigurationManager",
-      "failingMethods": [
-        "com.facebook.presto.resourceGroups.TestFileResourceGroupConfigurationManager#testInvalid"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:02:11 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:42:10 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 351086376,
+      "totalMemory": 952815616
+    },
+    "totalDuration": 2392,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 8,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          8,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 682,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          682
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-231297663-20170511-223153_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-231297663-20170511-223153_bugonly-firstCommit/presto-resource-group-managers",
+    "overallMetrics": {
+      "numberRunning": 3131,
+      "numberPassing": 3130,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected [true] but found [false]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.facebook.presto.resourceGroups.TestFileResourceGroupConfigurationManager",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.facebook.presto.resourceGroups.TestFileResourceGroupConfigurationManager",
+        "testMethod": "testInvalid",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [false]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 47,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3038,
+    "numberTestFiles": 928,
+    "numberLibrariesFailingModule": 133,
+    "numberLines": 0
+  },
+  "commits": {}
 }
