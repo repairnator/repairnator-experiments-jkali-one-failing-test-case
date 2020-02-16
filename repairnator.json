@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "zolezzi/desApp-Grupo-A-012018",
-  "failingModule": "/root/workspace/zolezzi/desApp-Grupo-A-012018/376581267",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 25,
-  "failing-test-cases": [
-    {
-      "className": "edu.unq.desapp.grupo_a.backend.model.UserTest",
-      "failingMethods": [
-        "edu.unq.desapp.grupo_a.backend.model.UserTest#testUserInitialReputation"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:15:32 PM",
+    "reproductionDateEnd": "Feb 16, 2020 11:17:08 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 30835776,
+      "totalMemory": 97259520
+    },
+    "totalDuration": 94,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          30
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zolezzi-desApp-Grupo-A-012018-376581267-20180509-000938-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-zolezzi-desApp-Grupo-A-012018-376581267-20180509-000938-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 25,
+      "numberPassing": 24,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c0\u003e but was:\u003c0.0\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.unq.desapp.grupo_a.backend.model.UserTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.unq.desapp.grupo_a.backend.model.UserTest",
+        "testMethod": "testUserInitialReputation",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c0.0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 59,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 86,
+    "numberLines": 0
+  },
+  "commits": {}
 }
