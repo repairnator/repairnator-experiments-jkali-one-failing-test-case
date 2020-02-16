@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "nablarch/nablarch-example-http-messaging",
-  "bugCommit": "https://github.com/nablarch/nablarch-example-http-messaging/compare/8a9f97098c20...c410654fddfd",
-  "failingModule": "/root/workspace/nablarch/nablarch-example-http-messaging/361036711",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 3,
-  "failing-test-cases": [
-    {
-      "className": "com.nablarch.example.action.ProjectSaveActionRequestTest",
-      "failingMethods": [
-        "com.nablarch.example.action.ProjectSaveActionRequestTest#testAbNormalEnd"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:47 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:05:21 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 21926000,
+      "totalMemory": 97021952
+    },
+    "totalDuration": 212,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 97,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          97
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-nablarch-nablarch-example-http-messaging-361036711-20180402-045142-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-nablarch-nablarch-example-http-messaging-361036711-20180402-045142-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 3,
+      "numberPassing": 2,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "no\u003d[1] case\u003d[バリデーションエラーが発生し、DBにプロジェクトが登録されないこと。]  expected:\u003c...JSON\u003d{\"statusCode\":\"[4]00\"}}]\u003e but was:\u003c...JSON\u003d{\"statusCode\":\"[5]00\"}}]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.nablarch.example.action.ProjectSaveActionRequestTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.nablarch.example.action.ProjectSaveActionRequestTest",
+        "testMethod": "testAbNormalEnd",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "no\u003d[1] case\u003d[バリデーションエラーが発生し、DBにプロジェクトが登録されないこと。]  expected:\u003c...JSON\u003d{\"statusCode\":\"[4]00\"}}]\u003e but was:\u003c...JSON\u003d{\"statusCode\":\"[5]00\"}}]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 11,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 95,
+    "numberLines": 0
+  }
 }
