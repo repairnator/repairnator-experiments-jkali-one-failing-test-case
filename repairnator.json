@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "spring-projects/spring-hateoas",
-  "bugCommit": "https://github.com/spring-projects/spring-hateoas/compare/21976bd0b135...fda3f31b215a",
-  "failingModule": "/root/workspace/spring-projects/spring-hateoas/298224237",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 398,
-  "failing-test-cases": [
-    {
-      "className": "org.springframework.hateoas.alps.JacksonSerializationTest",
-      "failingMethods": [
-        "org.springframework.hateoas.alps.JacksonSerializationTest#writesSampleDocument"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:57 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:56:50 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 38716832,
+      "totalMemory": 373809152
+    },
+    "totalDuration": 1789,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1568,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1568
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-298227599-20171106-230340-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-spring-projects-spring-hateoas-298227599-20171106-230340-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 398,
+      "numberPassing": 397,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c\"{   \"[doc\" : {     \"href\" : \"http://example.org/samples/full/doc.html\"   },   \"descriptors\" : [ {     \"id\" : \"search\",     \"doc\" : {       \"value\" : \"A search form with two inputs.\",       \"format\" : \"TEXT\"     },     \"type\" : \"SAFE\",     \"descriptors\" : [ {       \"href\" : \"#resultType\"     }, {       \"id\" : \"value\",       \"name\" : \"search\",       \"type\" : \"SEMANTIC\"     } ]   }, {     \"id\" : \"resultType\",     \"doc\" : {       \"value\" : \"results format\"     },     \"type\" : \"SEMANTIC\",     \"ext\" : {       \"id\" : \"#ext-range\",       \"href\" : \"http://alps.io/ext/range\",       \"value\" : \"summary,detail\"     }   } ],   \"version\" : \"1.0\"] }\"\u003e but was:\u003c\"{   \"[version\" : \"1.0\",   \"doc\" : {     \"href\" : \"http://example.org/samples/full/doc.html\"   },   \"descriptors\" : [ {     \"id\" : \"search\",     \"doc\" : {       \"value\" : \"A search form with two inputs.\",       \"format\" : \"TEXT\"     },     \"type\" : \"SAFE\",     \"descriptors\" : [ {       \"href\" : \"#resultType\"     }, {       \"id\" : \"value\",       \"name\" : \"search\",       \"type\" : \"SEMANTIC\"     } ]   }, {     \"id\" : \"resultType\",     \"doc\" : {       \"value\" : \"results format\"     },     \"type\" : \"SEMANTIC\",     \"ext\" : {       \"id\" : \"#ext-range\",       \"href\" : \"http://alps.io/ext/range\",       \"value\" : \"summary,detail\"     }   } ]] }\"\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.hateoas.alps.JacksonSerializationTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.hateoas.alps.JacksonSerializationTest",
+        "testMethod": "writesSampleDocument",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"{\n  \"[doc\" : {\n    \"href\" : \"http://example.org/samples/full/doc.html\"\n  },\n  \"descriptors\" : [ {\n    \"id\" : \"search\",\n    \"doc\" : {\n      \"value\" : \"A search form with two inputs.\",\n      \"format\" : \"TEXT\"\n    },\n    \"type\" : \"SAFE\",\n    \"descriptors\" : [ {\n      \"href\" : \"#resultType\"\n    }, {\n      \"id\" : \"value\",\n      \"name\" : \"search\",\n      \"type\" : \"SEMANTIC\"\n    } ]\n  }, {\n    \"id\" : \"resultType\",\n    \"doc\" : {\n      \"value\" : \"results format\"\n    },\n    \"type\" : \"SEMANTIC\",\n    \"ext\" : {\n      \"id\" : \"#ext-range\",\n      \"href\" : \"http://alps.io/ext/range\",\n      \"value\" : \"summary,detail\"\n    }\n  } ],\n  \"version\" : \"1.0\"]\n}\"\u003e but was:\u003c\"{\n  \"[version\" : \"1.0\",\n  \"doc\" : {\n    \"href\" : \"http://example.org/samples/full/doc.html\"\n  },\n  \"descriptors\" : [ {\n    \"id\" : \"search\",\n    \"doc\" : {\n      \"value\" : \"A search form with two inputs.\",\n      \"format\" : \"TEXT\"\n    },\n    \"type\" : \"SAFE\",\n    \"descriptors\" : [ {\n      \"href\" : \"#resultType\"\n    }, {\n      \"id\" : \"value\",\n      \"name\" : \"search\",\n      \"type\" : \"SEMANTIC\"\n    } ]\n  }, {\n    \"id\" : \"resultType\",\n    \"doc\" : {\n      \"value\" : \"results format\"\n    },\n    \"type\" : \"SEMANTIC\",\n    \"ext\" : {\n      \"id\" : \"#ext-range\",\n      \"href\" : \"http://alps.io/ext/range\",\n      \"value\" : \"summary,detail\"\n    }\n  } ]]\n}\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 109,
+    "numberTestFiles": 71,
+    "numberLibrariesFailingModule": 48,
+    "numberLines": 0
+  },
+  "commits": {}
 }
