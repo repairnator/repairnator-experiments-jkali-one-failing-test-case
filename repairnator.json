@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 10,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/9f5f46114b64...db5a28c36f8f",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/317468813/languagetool-language-modules/en",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 301,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.en.MorfologikAustralianSpellerRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.en.MorfologikAustralianSpellerRuleTest#testMorfologikSpeller"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-317468813-20171216-220410_bugonly-firstCommit/languagetool-language-modules/en",
+    "overallMetrics": {
+      "numberRunning": 291,
+      "numberPassing": 290,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 10,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c0\u003e but was:\u003c1\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.en.MorfologikAustralianSpellerRuleTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.en.MorfologikAustralianSpellerRuleTest",
+        "testMethod": "testMorfologikSpeller",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 726,
+    "numberTestFiles": 466,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:02 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:24:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 59350064,
+      "totalMemory": 445759488
+    },
+    "totalDuration": 6399,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-317468813-20171216-220410_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
