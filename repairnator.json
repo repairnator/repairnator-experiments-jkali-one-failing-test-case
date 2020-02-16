@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "rewe-digital/composer",
-  "failingModule": "/root/workspace/rewe-digital/composer/352545329",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 79,
-  "failing-test-cases": [
-    {
-      "className": "com.rewedigital.composer.architecture.DependenciesTest",
-      "failingMethods": [
-        "com.rewedigital.composer.architecture.DependenciesTest#clientDoesNotRelyOnComposing"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:41 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:34:58 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 100983344,
+      "totalMemory": 379056128
+    },
+    "totalDuration": 495,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 414,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          414
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rewe-digital-composer-352545329-20180312-220620-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rewe-digital-composer-352545329-20180312-220620-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 79,
+      "numberPassing": 78,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: Comply with rules      but:  DENIED       com.rewedigital.composer.routing -\u003e           This dependency is forbidden.   com.rewedigital.composer.configuration (by com.rewedigital.composer.routing.RoutingConfiguration) ",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.rewedigital.composer.architecture.DependenciesTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.rewedigital.composer.architecture.DependenciesTest",
+        "testMethod": "clientDoesNotRelyOnComposing",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: Comply with rules\n     but: \nDENIED       com.rewedigital.composer.routing -\u003e           This dependency is forbidden.\n  com.rewedigital.composer.configuration (by com.rewedigital.composer.routing.RoutingConfiguration)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 49,
+    "numberTestFiles": 21,
+    "numberLibrariesFailingModule": 51,
+    "numberLines": 0
+  }
 }
