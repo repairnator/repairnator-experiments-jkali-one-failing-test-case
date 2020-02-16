@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "swagger-api/swagger-core",
-  "failingModule": "/root/workspace/swagger-api/swagger-core/319175213/modules/swagger-core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 579,
-  "failing-test-cases": [
-    {
-      "className": "io.swagger.util.PropertyModelConverterTest",
-      "failingMethods": [
-        "io.swagger.util.PropertyModelConverterTest#testExample"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:06 PM",
+    "reproductionDateEnd": "Feb 16, 2020 7:05:39 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 166946088,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 2309,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1989,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1989
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-swagger-api-swagger-core-319175213-20171220-144300_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-swagger-api-swagger-core-319175213-20171220-144300_bugonly-firstCommit/modules/swagger-core",
+    "overallMetrics": {
+      "numberRunning": 579,
+      "numberPassing": 578,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected [{\n  \"obj\" : {\n    \"b\" : \"ho\",\n    \"a\" : \"hey\"\n  },\n  \"arr\" : [ \"hey\", \"ho\" ],\n  \"double\" : 1.2,\n  \"int\" : 42,\n  \"biginteger\" : 118059162071741130342442,\n  \"long\" : 1099511627776,\n  \"boolean\" : true,\n  \"string\" : \"Arthur Dent\"\n}] but found [{obj\u003d{b\u003dho, a\u003dhey}, arr\u003d[hey, ho], double\u003d1.2, int\u003d42, biginteger\u003d118059162071741130342442, long\u003d1099511627776, boolean\u003dtrue, string\u003dArthur Dent}]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.util.PropertyModelConverterTest",
+        "numberRunning": 26,
+        "numberPassing": 25,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.util.PropertyModelConverterTest",
+        "testMethod": "testExample",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [{\n  \"obj\" : {\n    \"b\" : \"ho\",\n    \"a\" : \"hey\"\n  },\n  \"arr\" : [ \"hey\", \"ho\" ],\n  \"double\" : 1.2,\n  \"int\" : 42,\n  \"biginteger\" : 118059162071741130342442,\n  \"long\" : 1099511627776,\n  \"boolean\" : true,\n  \"string\" : \"Arthur Dent\"\n}] but found [{obj\u003d{b\u003dho, a\u003dhey}, arr\u003d[hey, ho], double\u003d1.2, int\u003d42, biginteger\u003d118059162071741130342442, long\u003d1099511627776, boolean\u003dtrue, string\u003dArthur Dent}]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 177,
+    "numberTestFiles": 393,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  },
+  "commits": {}
 }
