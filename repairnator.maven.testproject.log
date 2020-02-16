@@ -1,0 +1,287 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] junit-quickcheck
+[INFO] junit-quickcheck-core
+[INFO] junit-quickcheck-generators
+[INFO] junit-quickcheck-guava
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building junit-quickcheck 0.8-alpha-7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ junit-quickcheck ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building junit-quickcheck-core 0.8-alpha-7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ junit-quickcheck-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (default-prepare-agent) @ junit-quickcheck-core ---
+[INFO] argLine set to -javaagent:/scratch/dginelli/workspace/repairnator-repairnator-experiments-pholser-junit-quickcheck-242478294-20170613-175236_bugonly-firstCommit/.m2/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/scratch/dginelli/workspace/repairnator-repairnator-experiments-pholser-junit-quickcheck-242478294-20170613-175236_bugonly-firstCommit/core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ junit-quickcheck-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ junit-quickcheck-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ junit-quickcheck-core ---
+[INFO] 
+[INFO] >>> maven-pmd-plugin:3.6:cpd-check (default) > :cpd @ junit-quickcheck-core >>>
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.6:cpd (cpd) @ junit-quickcheck-core ---
+[WARNING] Unable to locate Source XRef to link to - DISABLED
+[WARNING] Unable to locate Source XRef to link to - DISABLED
+[INFO] 
+[INFO] <<< maven-pmd-plugin:3.6:cpd-check (default) < :cpd @ junit-quickcheck-core <<<
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.6:cpd-check (default) @ junit-quickcheck-core ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ junit-quickcheck-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ junit-quickcheck-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ junit-quickcheck-core ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-pholser-junit-quickcheck-242478294-20170613-175236_bugonly-firstCommit/core/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.pholser.junit.quickcheck.internal.ReflectionUtilityClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.pholser.junit.quickcheck.internal.ReflectionUtilityClassTest
+Running com.pholser.junit.quickcheck.internal.SequencesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec - in com.pholser.junit.quickcheck.internal.SequencesTest
+Running com.pholser.junit.quickcheck.internal.GeometricDistributionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.32 sec - in com.pholser.junit.quickcheck.internal.GeometricDistributionTest
+Running com.pholser.junit.quickcheck.internal.ListsUtilityClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.pholser.junit.quickcheck.internal.ListsUtilityClassTest
+Running com.pholser.junit.quickcheck.internal.WeightedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.pholser.junit.quickcheck.internal.WeightedTest
+Running com.pholser.junit.quickcheck.internal.generator.ArrayGeneratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.pholser.junit.quickcheck.internal.generator.ArrayGeneratorTest
+Running com.pholser.junit.quickcheck.internal.generator.CompositeGeneratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in com.pholser.junit.quickcheck.internal.generator.CompositeGeneratorTest
+Running com.pholser.junit.quickcheck.internal.generator.PropertyParameterGenerationContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec - in com.pholser.junit.quickcheck.internal.generator.PropertyParameterGenerationContextTest
+Running com.pholser.junit.quickcheck.internal.generator.ExplicitPropertyParameterGeneratorsChosenWithEqualProbabilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in com.pholser.junit.quickcheck.internal.generator.ExplicitPropertyParameterGeneratorsChosenWithEqualProbabilityTest
+Running com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsForHierarchyOfBigDecimalTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsForHierarchyOfBigDecimalTest
+Running com.pholser.junit.quickcheck.internal.generator.ExplicitGroupOfPropertyParameterGeneratorsChosenWithEqualProbabilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.pholser.junit.quickcheck.internal.generator.ExplicitGroupOfPropertyParameterGeneratorsChosenWithEqualProbabilityTest
+Running com.pholser.junit.quickcheck.internal.generator.ExplicitGroupOfPropertyParameterGeneratorsChosenWithDiscreteProbabilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.pholser.junit.quickcheck.internal.generator.ExplicitGroupOfPropertyParameterGeneratorsChosenWithDiscreteProbabilityTest
+Running com.pholser.junit.quickcheck.internal.generator.OneOfSetOfGeneratorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.pholser.junit.quickcheck.internal.generator.OneOfSetOfGeneratorsTest
+Running com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsForHierarchyOfHashMapTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsForHierarchyOfHashMapTest
+Running com.pholser.junit.quickcheck.internal.generator.PropertyParameterGenerationContextWithNonShrinkingGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.pholser.junit.quickcheck.internal.generator.PropertyParameterGenerationContextWithNonShrinkingGeneratorTest
+Running com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsForHierarchyOfArrayListTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsForHierarchyOfArrayListTest
+Running com.pholser.junit.quickcheck.internal.generator.ConstrainingWhatGeneratorsCanAcceptCertainComponentsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.pholser.junit.quickcheck.internal.generator.ConstrainingWhatGeneratorsCanAcceptCertainComponentsTest
+Running com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsForHierarchyOfInterfaceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsForHierarchyOfInterfaceTest
+Running com.pholser.junit.quickcheck.internal.generator.EnumGeneratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.pholser.junit.quickcheck.internal.generator.EnumGeneratorTest
+Running com.pholser.junit.quickcheck.internal.generator.MissingGeneratorForGivenTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.pholser.junit.quickcheck.internal.generator.MissingGeneratorForGivenTypeTest
+Running com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsWithServiceLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.pholser.junit.quickcheck.internal.generator.RegisteringGeneratorsWithServiceLoaderTest
+Running com.pholser.junit.quickcheck.internal.FakeAnnotatedTypeFactoryUtilityClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.pholser.junit.quickcheck.internal.FakeAnnotatedTypeFactoryUtilityClassTest
+Running com.pholser.junit.quickcheck.internal.ItemsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.pholser.junit.quickcheck.internal.ItemsTest
+Running com.pholser.junit.quickcheck.internal.ItemsUtilityClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.pholser.junit.quickcheck.internal.ItemsUtilityClassTest
+Running com.pholser.junit.quickcheck.internal.CartesianIteratorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in com.pholser.junit.quickcheck.internal.CartesianIteratorTest
+Running com.pholser.junit.quickcheck.internal.RangesUtilityClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.pholser.junit.quickcheck.internal.RangesUtilityClassTest
+Running com.pholser.junit.quickcheck.internal.ListsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.pholser.junit.quickcheck.internal.ListsTest
+Running com.pholser.junit.quickcheck.internal.SequencesUtilityClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.pholser.junit.quickcheck.internal.SequencesUtilityClassTest
+Running com.pholser.junit.quickcheck.internal.RangesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in com.pholser.junit.quickcheck.internal.RangesTest
+Running com.pholser.junit.quickcheck.internal.constraint.ConstraintEvaluatorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in com.pholser.junit.quickcheck.internal.constraint.ConstraintEvaluatorTest
+Running com.pholser.junit.quickcheck.internal.ReflectionTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in com.pholser.junit.quickcheck.internal.ReflectionTest
+Running com.pholser.junit.quickcheck.PropertiesWithExplicitGeneratorsTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.507 sec - in com.pholser.junit.quickcheck.PropertiesWithExplicitGeneratorsTest
+Running com.pholser.junit.quickcheck.FooEqualsHashCodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.01 sec - in com.pholser.junit.quickcheck.FooEqualsHashCodeTest
+Running com.pholser.junit.quickcheck.random.GeneratingRandomValuesTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in com.pholser.junit.quickcheck.random.GeneratingRandomValuesTest
+Running com.pholser.junit.quickcheck.random.GeneratingRandomValuesFromJavaUtilRandomCloneTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.pholser.junit.quickcheck.random.GeneratingRandomValuesFromJavaUtilRandomCloneTest
+Running com.pholser.junit.quickcheck.PropertyValueDiscardRatioTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.pholser.junit.quickcheck.PropertyValueDiscardRatioTest
+Running com.pholser.junit.quickcheck.generator.GenerationStatusOnPropertyParametersTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in com.pholser.junit.quickcheck.generator.GenerationStatusOnPropertyParametersTest
+Running com.pholser.junit.quickcheck.generator.LambdasUtilityClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.pholser.junit.quickcheck.generator.LambdasUtilityClassTest
+Running com.pholser.junit.quickcheck.generator.LambdasTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.pholser.junit.quickcheck.generator.LambdasTest
+Running com.pholser.junit.quickcheck.generator.BoxOfSuperLongPropertyParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.pholser.junit.quickcheck.generator.BoxOfSuperLongPropertyParameterTest
+Running com.pholser.junit.quickcheck.generator.SizeConstrainedPrimitiveIntegerArrayPropertyParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.pholser.junit.quickcheck.generator.SizeConstrainedPrimitiveIntegerArrayPropertyParameterTest
+Running com.pholser.junit.quickcheck.generator.GenOneOfTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.pholser.junit.quickcheck.generator.GenOneOfTest
+Running com.pholser.junit.quickcheck.generator.PropertyParameterGenerationStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.pholser.junit.quickcheck.generator.PropertyParameterGenerationStatusTest
+Running com.pholser.junit.quickcheck.generator.GenFrequencyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.pholser.junit.quickcheck.generator.GenFrequencyTest
+Running com.pholser.junit.quickcheck.generator.PrimitiveIntegerArrayPropertyParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.pholser.junit.quickcheck.generator.PrimitiveIntegerArrayPropertyParameterTest
+Running com.pholser.junit.quickcheck.generator.ThreeDCharArrayPropertyParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.pholser.junit.quickcheck.generator.ThreeDCharArrayPropertyParameterTest
+Running com.pholser.junit.quickcheck.generator.ArrayOfBoxOfHuhPropertyParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.pholser.junit.quickcheck.generator.ArrayOfBoxOfHuhPropertyParameterTest
+Running com.pholser.junit.quickcheck.BasicCapabilitiesOfGeneratorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.pholser.junit.quickcheck.BasicCapabilitiesOfGeneratorTest
+Running com.pholser.junit.quickcheck.ComposedObjectsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 sec - in com.pholser.junit.quickcheck.ComposedObjectsTest
+Running com.pholser.junit.quickcheck.ComponentizedGeneratorsIsolateConfigurationFromComponentsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.pholser.junit.quickcheck.ComponentizedGeneratorsIsolateConfigurationFromComponentsTest
+Running com.pholser.junit.quickcheck.EnumPropertyParameterTypesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in com.pholser.junit.quickcheck.EnumPropertyParameterTypesTest
+Running com.pholser.junit.quickcheck.GenericArrayPropertyParameterTypesTest
+[]
+[Foo[-897250142], com.pholser.junit.quickcheck.internal.Zilch@19ec5357]
+[com.pholser.junit.quickcheck.internal.Zilch@19ec5357]
+[com.pholser.junit.quickcheck.internal.Zilch@19ec5357]
+[Foo[-1167965699], com.pholser.junit.quickcheck.internal.Zilch@19ec5357]
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in com.pholser.junit.quickcheck.GenericArrayPropertyParameterTypesTest
+Running com.pholser.junit.quickcheck.UsualJUnitMachineryOnShrinkingPropertyBasedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in com.pholser.junit.quickcheck.UsualJUnitMachineryOnShrinkingPropertyBasedTest
+Running com.pholser.junit.quickcheck.PairTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.pholser.junit.quickcheck.PairTest
+Running com.pholser.junit.quickcheck.MarkingTypeUsesOnPropertyParametersWithConfigurationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in com.pholser.junit.quickcheck.MarkingTypeUsesOnPropertyParametersWithConfigurationTest
+Running com.pholser.junit.quickcheck.ShrinkingTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.129 sec - in com.pholser.junit.quickcheck.ShrinkingTest
+Running com.pholser.junit.quickcheck.MinimalCounterexampleHookTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.679 sec - in com.pholser.junit.quickcheck.MinimalCounterexampleHookTest
+Running com.pholser.junit.quickcheck.ResolvingGenericPropertyParameterTypesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in com.pholser.junit.quickcheck.ResolvingGenericPropertyParameterTypesTest
+Running com.pholser.junit.quickcheck.UsualJUnitMachineryOnSubclassPropertyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in com.pholser.junit.quickcheck.UsualJUnitMachineryOnSubclassPropertyTest
+Running com.pholser.junit.quickcheck.UsualJUnitMachineryOnPropertyBasedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.pholser.junit.quickcheck.UsualJUnitMachineryOnPropertyBasedTest
+Running com.pholser.junit.quickcheck.PropertyParameterMarkedWithSuperfluousConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.pholser.junit.quickcheck.PropertyParameterMarkedWithSuperfluousConfigurationTest
+Running com.pholser.junit.quickcheck.GeneratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.pholser.junit.quickcheck.GeneratorTest
+Running com.pholser.junit.quickcheck.PropertyParameterGenerationByFieldsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 sec - in com.pholser.junit.quickcheck.PropertyParameterGenerationByFieldsTest
+Running com.pholser.junit.quickcheck.PropertyParameterConfigurationIsolationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in com.pholser.junit.quickcheck.PropertyParameterConfigurationIsolationTest
+Running com.pholser.junit.quickcheck.MapFlatMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.pholser.junit.quickcheck.MapFlatMapTest
+Running com.pholser.junit.quickcheck.PropertyTupleSampleSizeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in com.pholser.junit.quickcheck.PropertyTupleSampleSizeTest
+Running com.pholser.junit.quickcheck.PropertyParameterDiscardRatioTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.pholser.junit.quickcheck.PropertyParameterDiscardRatioTest
+Running com.pholser.junit.quickcheck.PropertyParameterGenerationByConstructorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in com.pholser.junit.quickcheck.PropertyParameterGenerationByConstructorTest
+Running com.pholser.junit.quickcheck.LambdaPropertyParameterTypesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.655 sec - in com.pholser.junit.quickcheck.LambdaPropertyParameterTypesTest
+Running com.pholser.junit.quickcheck.TimesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in com.pholser.junit.quickcheck.TimesTest
+Running com.pholser.junit.quickcheck.FilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.pholser.junit.quickcheck.FilterTest
+Running com.pholser.junit.quickcheck.PropertyExhaustiveSampleSizeTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec <<< FAILURE! - in com.pholser.junit.quickcheck.PropertyExhaustiveSampleSizeTest
+defaultNumberOfValuesForAPropertyRestrictedByOnly(com.pholser.junit.quickcheck.PropertyExhaustiveSampleSizeTest)  Time elapsed: 0.042 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<[1, 2, 3]> but was:<[353834863, -1367750793, -1954131067, 2126212313, -1740680102, 697173710, 1171389590, 1878726088, -870145561, 813223131, 577128545, -1706674527, -1607129524, 771995595, 880048141, -183111833, -1936612033, -166554285, 253981508, 966013314, -674410803, 1343548149, 1325655338, 67062686, -331798678, 1372667522, 930395274, 56610770, 1984519496, -1451367713, 1138379602, -281790459, 2022448875, 185814283, -2084675263, 1191701645, -434190595, 2030056800, 135609822, 1998688536, 1948873054, 1143474456, -1707039317, 701414351, 1255558527, 1452830738, -365435237, -57574728, -1078246928, -1611994410, -1950369856, -707376293, -738085578, -2045522730, -1575755704, -383817560, 1761710050, -776988938, 1494210986, 1862046487, -339620898, 771225166, 302178587, -235620591, 471999754, -1970017490, -64017337, 871961998, -459882746, 1156504674, 616248637, 1599066878, 1553454161, 1199545014, -1965600342, -597815188, -948649326, 1546164412, -1840707255, -1852312863, -61142986, -613098804, 464576409, -161530618, 1213663034, 157639499, 1576436945, -1828757748, -1055022775, -1309499600, 1385341457, -1048567600, -1261764343, -1751542076, -1909672743, -1560917447, -2001460047, -1383799128, -612979266, -980685340]>
+	at com.pholser.junit.quickcheck.PropertyExhaustiveSampleSizeTest.defaultNumberOfValuesForAPropertyRestrictedByOnly(PropertyExhaustiveSampleSizeTest.java:91)
+
+Running com.pholser.junit.quickcheck.runner.PropertyFalsifiedUtilityClassTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.pholser.junit.quickcheck.runner.PropertyFalsifiedUtilityClassTest
+Running com.pholser.junit.quickcheck.UsualJUnitMachineryOnTraitBasedPropertyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 sec - in com.pholser.junit.quickcheck.UsualJUnitMachineryOnTraitBasedPropertyTest
+
+Results :
+
+Failed tests: 
+  PropertyExhaustiveSampleSizeTest.defaultNumberOfValuesForAPropertyRestrictedByOnly:91 expected:<[1, 2, 3]> but was:<[353834863, -1367750793, -1954131067, 2126212313, -1740680102, 697173710, 1171389590, 1878726088, -870145561, 813223131, 577128545, -1706674527, -1607129524, 771995595, 880048141, -183111833, -1936612033, -166554285, 253981508, 966013314, -674410803, 1343548149, 1325655338, 67062686, -331798678, 1372667522, 930395274, 56610770, 1984519496, -1451367713, 1138379602, -281790459, 2022448875, 185814283, -2084675263, 1191701645, -434190595, 2030056800, 135609822, 1998688536, 1948873054, 1143474456, -1707039317, 701414351, 1255558527, 1452830738, -365435237, -57574728, -1078246928, -1611994410, -1950369856, -707376293, -738085578, -2045522730, -1575755704, -383817560, 1761710050, -776988938, 1494210986, 1862046487, -339620898, 771225166, 302178587, -235620591, 471999754, -1970017490, -64017337, 871961998, -459882746, 1156504674, 616248637, 1599066878, 1553454161, 1199545014, -1965600342, -597815188, -948649326, 1546164412, -1840707255, -1852312863, -61142986, -613098804, 464576409, -161530618, 1213663034, 157639499, 1576436945, -1828757748, -1055022775, -1309499600, 1385341457, -1048567600, -1261764343, -1751542076, -1909672743, -1560917447, -2001460047, -1383799128, -612979266, -980685340]>
+
+Tests run: 362, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] junit-quickcheck ................................... SUCCESS [  0.912 s]
+[INFO] junit-quickcheck-core .............................. FAILURE [ 18.249 s]
+[INFO] junit-quickcheck-generators ........................ SKIPPED
+[INFO] junit-quickcheck-guava ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.478 s
+[INFO] Finished at: 2020-02-16T15:03:20+01:00
+[INFO] Final Memory: 23M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project junit-quickcheck-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-pholser-junit-quickcheck-242478294-20170613-175236_bugonly-firstCommit/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project junit-quickcheck-core: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-pholser-junit-quickcheck-242478294-20170613-175236_bugonly-firstCommit/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-pholser-junit-quickcheck-242478294-20170613-175236_bugonly-firstCommit/core/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:320)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:892)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :junit-quickcheck-core
