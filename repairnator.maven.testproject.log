@@ -1,0 +1,169 @@
+Feb 16, 2020 6:28:09 PM de.jollyday.tests.HolidayTest testIsHolidayPerformanceMultithreaded
+INFORMATION: isHoliday took 11.322080291970803 millis average tested with 1096 calls.
+Feb 16, 2020 6:28:11 PM de.jollyday.configuration.impl.URLConfigurationProvider readPropertiesFromURL
+WARNING: Cannot read configuration from 'TestIllegalData'.
+java.net.MalformedURLException: no protocol: TestIllegalData
+	at java.net.URL.<init>(URL.java:593)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at de.jollyday.configuration.impl.URLConfigurationProvider.readPropertiesFromURL(URLConfigurationProvider.java:60)
+	at de.jollyday.configuration.impl.URLConfigurationProvider.getProperties(URLConfigurationProvider.java:49)
+	at de.jollyday.configuration.impl.URLConfigurationProviderTest.testPutConfigurationWithPropertyWithIllegalURL(URLConfigurationProviderTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Feb 16, 2020 6:28:11 PM de.jollyday.configuration.ConfigurationProviderManager addCustomConfigurationProviderProperties
+WARNING: Cannot load configuration from provider class 'java.lang.String'. ClassCastException (Cannot cast java.lang.String to de.jollyday.configuration.ConfigurationProvider).
+Feb 16, 2020 6:28:11 PM de.jollyday.configuration.ConfigurationProviderManager addCustomConfigurationProviderProperties
+WARNING: Cannot load configuration from provider class 'java.lang.String'. ClassCastException (Cannot cast java.lang.String to de.jollyday.configuration.ConfigurationProvider).
+Feb 16, 2020 6:28:11 PM de.jollyday.util.ClassLoadingUtil loadClass
+WARNING: Could not load class with current threads context classloader. Using default. Reason: ClassNotFoundException: 
+Feb 16, 2020 6:28:12 PM de.jollyday.util.XMLUtil unmarshallConfiguration
+WARNING: Could not create JAXB context using the current threads context classloader. Falling back to ObjectFactory class classloader.
+Feb 16, 2020 6:28:13 PM de.jollyday.util.ClassLoadingUtil loadClass
+WARNING: Could not load class with current threads context classloader. Using default. Reason: ClassNotFoundException: ThisIsNoClass
+parsers.FixedWeekdayBetweenFixedParserTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in de.jollyday.tests.parsers.FixedWeekdayBetweenFixedParserTest
+Running de.jollyday.tests.parsers.FixedParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in de.jollyday.tests.parsers.FixedParserTest
+Running de.jollyday.tests.parsers.RelativeToFixedParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in de.jollyday.tests.parsers.RelativeToFixedParserTest
+Running de.jollyday.tests.parsers.RelativeToWeekdayInMonthParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.jollyday.tests.parsers.RelativeToWeekdayInMonthParserTest
+Running de.jollyday.tests.parsers.ChristianHolidayParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.jollyday.tests.parsers.ChristianHolidayParserTest
+Running de.jollyday.tests.parsers.RelativeToEasterSundayParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in de.jollyday.tests.parsers.RelativeToEasterSundayParserTest
+Running de.jollyday.tests.parsers.FixedWeekdayInMonthParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.jollyday.tests.parsers.FixedWeekdayInMonthParserTest
+Running de.jollyday.tests.parsers.FixedWeekdayRelativeToFixedParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in de.jollyday.tests.parsers.FixedWeekdayRelativeToFixedParserTest
+Running de.jollyday.tests.HolidayDescriptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in de.jollyday.tests.HolidayDescriptionTest
+Running de.jollyday.tests.HolidayALTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in de.jollyday.tests.HolidayALTest
+Running de.jollyday.tests.XMLValidationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.974 sec - in de.jollyday.tests.XMLValidationTest
+Running de.jollyday.tests.HolidaySETest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in de.jollyday.tests.HolidaySETest
+Running de.jollyday.tests.HolidayISTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in de.jollyday.tests.HolidayISTest
+Running de.jollyday.tests.HolidayUKTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in de.jollyday.tests.HolidayUKTest
+Running de.jollyday.tests.HolidayDETest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec <<< FAILURE! - in de.jollyday.tests.HolidayDETest
+testManagerDEStructure(de.jollyday.tests.HolidayDETest)  Time elapsed: 0.041 sec  <<< FAILURE!
+java.lang.AssertionError: Number of children wrong. expected:<11> but was:<12>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at de.jollyday.tests.base.AbstractCountryTestBase.compareHierarchies(AbstractCountryTestBase.java:49)
+	at de.jollyday.tests.base.AbstractCountryTestBase.validateCalendarData(AbstractCountryTestBase.java:86)
+	at de.jollyday.tests.HolidayDETest.testManagerDEStructure(HolidayDETest.java:41)
+
+Running de.jollyday.tests.HolidayTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.68 sec - in de.jollyday.tests.HolidayTest
+Running de.jollyday.tests.ISOCodesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in de.jollyday.tests.ISOCodesTest
+Running de.jollyday.tests.HolidayBGTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in de.jollyday.tests.HolidayBGTest
+Running de.jollyday.configuration.impl.DefaultConfigurationProviderContentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.jollyday.configuration.impl.DefaultConfigurationProviderContentTest
+Running de.jollyday.configuration.impl.URLConfigurationProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in de.jollyday.configuration.impl.URLConfigurationProviderTest
+Running de.jollyday.configuration.ConfigurationProviderManagerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.514 sec - in de.jollyday.configuration.ConfigurationProviderManagerTest
+Running de.jollyday.HolidayTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in de.jollyday.HolidayTest
+Running de.jollyday.util.ClassLoadingUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in de.jollyday.util.ClassLoadingUtilTest
+Running de.jollyday.util.XMLUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.559 sec - in de.jollyday.util.XMLUtilTest
+Running de.jollyday.datasource.impl.XmlFileDataSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.203 sec - in de.jollyday.datasource.impl.XmlFileDataSourceTest
+Running de.jollyday.datasource.ConfigurationDataSourceManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in de.jollyday.datasource.ConfigurationDataSourceManagerTest
+Running de.jollyday.parameter.UrlManagerParameterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in de.jollyday.parameter.UrlManagerParameterTest
+Running de.jollyday.parameter.ManagerParametersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in de.jollyday.parameter.ManagerParametersTest
+
+Results :
+
+Failed tests: 
+  HolidayDETest.testManagerDEStructure:41->AbstractCountryTestBase.validateCalendarData:86->AbstractCountryTestBase.compareHierarchies:49 Number of children wrong. expected:<11> but was:<12>
+
+Tests run: 133, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17.476 s
+[INFO] Finished at: 2020-02-16T18:28:13+01:00
+[INFO] Final Memory: 17M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jollyday: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-svendiedrichsen-jollyday-347223109-20180228-122113-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jollyday: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-svendiedrichsen-jollyday-347223109-20180228-122113-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-svendiedrichsen-jollyday-347223109-20180228-122113-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:195)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:861)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:729)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
