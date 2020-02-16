@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "olavloite/spanner-jdbc",
-  "bugCommit": "https://github.com/olavloite/spanner-jdbc/commit/3443101c9262",
-  "failingModule": "/root/workspace/olavloite/spanner-jdbc/360887112",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 553,
-  "failing-test-cases": [
-    {
-      "className": "nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest",
-      "failingMethods": [
-        "nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest#testSupportsSavePoints"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:52 PM",
+    "reproductionDateEnd": "Feb 16, 2020 4:44:13 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 137646152,
+      "totalMemory": 455880704
+    },
+    "totalDuration": 6139,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-olavloite-spanner-jdbc-360887112-20180401-164918-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-olavloite-spanner-jdbc-360887112-20180401-164918-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 553,
+      "numberPassing": 552,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: an instance of java.sql.SQLFeatureNotSupportedException\n     but: \u003corg.mockito.exceptions.base.MockitoException: Unable to create mock instance of type \u0027CloudSpannerConnection\u0027\u003e is a org.mockito.exceptions.base.MockitoException\nStacktrace was: org.mockito.exceptions.base.MockitoException: Unable to create mock instance of type \u0027CloudSpannerConnection\u0027\n at nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest.testSupportsSavePoints(CloudSpannerDatabaseMetaDataTest.java:888)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)\n at org.junit.rules.RunRules.evaluate(RunRules.java:20)\n at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.junit.runners.Suite.runChild(Suite.java:128)\n at org.junit.runners.Suite.runChild(Suite.java:27)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)\n at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)\n at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)\n at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)\n at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)\n at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:159)\n at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)\n at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)\n at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)\n at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)\nCaused by: org.mockito.internal.creation.instance.InstantiationException: \nUnable to create instance of \u0027CloudSpannerConnection$MockitoMock$1324815321\u0027.\nPlease ensure that the target class has a 0-arg constructor.\n ... 38 more\n",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest",
+        "numberRunning": 147,
+        "numberPassing": 146,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest",
+        "testMethod": "testSupportsSavePoints",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: an instance of java.sql.SQLFeatureNotSupportedException\n     but: \u003corg.mockito.exceptions.base.MockitoException: Unable to create mock instance of type \u0027CloudSpannerConnection\u0027\u003e is a org.mockito.exceptions.base.MockitoException\nStacktrace was: org.mockito.exceptions.base.MockitoException: Unable to create mock instance of type \u0027CloudSpannerConnection\u0027\n at nl.topicus.jdbc.CloudSpannerDatabaseMetaDataTest.testSupportsSavePoints(CloudSpannerDatabaseMetaDataTest.java:888)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)\n at org.junit.rules.RunRules.evaluate(RunRules.java:20)\n at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.junit.runners.Suite.runChild(Suite.java:128)\n at org.junit.runners.Suite.runChild(Suite.java:27)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)\n at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)\n at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)\n at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)\n at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)\n at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:159)\n at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)\n at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)\n at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)\n at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)\nCaused by: org.mockito.internal.creation.instance.InstantiationException: \nUnable to create instance of \u0027CloudSpannerConnection$MockitoMock$1686670827\u0027.\nPlease ensure that the target class has a 0-arg constructor.\n ... 38 more\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 54,
+    "numberTestFiles": 51,
+    "numberLibrariesFailingModule": 53,
+    "numberLines": 0
+  },
+  "commits": {}
 }
