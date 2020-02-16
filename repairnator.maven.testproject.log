@@ -1,0 +1,662 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:10 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+Feb 16, 2020 11:42:15 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:19 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+Feb 16, 2020 11:42:23 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2020 11:42:26 AM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+11:42:39,245 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-logging/target/test-classes/logback-test.xml]
+11:42:39,336 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:42:39,336 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:42:39,344 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:42:39,353 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:42:39,401 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to OFF
+11:42:39,401 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:42:39,401 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:42:39,403 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@40ed1802 - Registering current configuration as safe fallback point
+11:42:42,157 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@23c767e6 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:42,158 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@23c767e6 - Propagating INFO level on Logger[com.example.app] onto the JUL framework
+11:42:42,184 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@23c767e6 - Propagating DEBUG level on Logger[com.example.newApp] onto the JUL framework
+11:42:42,184 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [256 KB]
+11:42:42,191 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@267061647 - Will use gz compression
+11:42:42,198 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@267061647 - Will use the pattern /tmp/junit6963323510203499652/example-new-app-%d.log for the active file
+11:42:42,201 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit6963323510203499652/example-new-app-%d.log.gz'.
+11:42:42,201 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:42,227 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:42 CET 2020
+11:42:42,229 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit6963323510203499652/example-new-app.log
+11:42:42,229 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit6963323510203499652/example-new-app.log]
+11:42:42,229 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:42,229 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:42,257 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@23c767e6 - Propagating DEBUG level on Logger[com.example.legacyApp] onto the JUL framework
+11:42:42,841 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@23c767e6 - Propagating DEBUG level on Logger[com.example.notAdditive] onto the JUL framework
+11:42:42,841 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:42,841 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@434249609 - Will use gz compression
+11:42:42,841 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@434249609 - Will use the pattern /tmp/junit6963323510203499652/example-new-app-not-additive-%d.log for the active file
+11:42:42,842 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit6963323510203499652/example-new-app-not-additive-%d.log.gz'.
+11:42:42,842 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:42,842 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:42 CET 2020
+11:42:42,843 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit6963323510203499652/example-new-app-not-additive.log
+11:42:42,843 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit6963323510203499652/example-new-app-not-additive.log]
+11:42:42,843 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:42,843 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:42,851 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Attaching appender named [console-appender] to AsyncAppender.
+11:42:42,851 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Setting discardingThreshold to 51
+11:42:42,852 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:42,852 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@837237183 - Will use gz compression
+11:42:42,852 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@837237183 - Will use the pattern /tmp/junit6963323510203499652/example-%d.log for the active file
+11:42:42,853 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/junit6963323510203499652/example-%d.log.gz'.
+11:42:42,853 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:42,853 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:42 CET 2020
+11:42:42,854 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: /tmp/junit6963323510203499652/example.log
+11:42:42,854 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [/tmp/junit6963323510203499652/example.log]
+11:42:42,854 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:42,854 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:43,147 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Worker thread will flush remaining events before exiting. 
+11:42:43,148 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Queue flush finished successfully within timeout.
+11:42:43,148 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:43,149 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:43,149 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:43,150 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:43,150 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Worker thread will flush remaining events before exiting. 
+11:42:43,150 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Queue flush finished successfully within timeout.
+11:42:43,150 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@29079032 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:42:43,160 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@29079032 - Propagating DEBUG level on Logger[com.example.app] onto the JUL framework
+11:42:43,160 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Attaching appender named [console-appender] to AsyncAppender.
+11:42:43,160 |-INFO in ch.qos.logback.classic.AsyncAppender[async-console-appender] - Setting discardingThreshold to 51
+11:42:43,164 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:43,164 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2121745388 - Will use gz compression
+11:42:43,164 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2121745388 - Will use the pattern ./logs/example-%d.log for the active file
+11:42:43,164 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/example-%d.log.gz'.
+11:42:43,164 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:42:43,165 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 16 11:42:43 CET 2020
+11:42:43,165 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/example.log
+11:42:43,165 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/example.log]
+11:42:43,165 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:43,165 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:43,174 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:43,176 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@2002785788 - Archive files will be limited to [100 MB] each.
+11:42:43,176 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@2002785788 - Will use gz compression
+11:42:43,176 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@2002785788 - Will use the pattern ./logs/max-file-size-example-%d-%i.log for the active file
+11:42:43,177 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7f42e06e - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/max-file-size-example-%d-%i.log.gz'.
+11:42:43,177 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7f42e06e - Roll-over at midnight.
+11:42:43,177 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7f42e06e - Setting initial period to Sun Feb 16 11:42:43 CET 2020
+11:42:43,178 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:43,178 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:43,178 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:43,178 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:43,179 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Setting bufferSize to [8 KB]
+11:42:43,180 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@6ad179b4 - Will use gz compression
+11:42:43,181 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Active log file name: ./logs/max-file-size-example.log
+11:42:43,181 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - File property is set to [./logs/max-file-size-example.log]
+11:42:43,181 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - 'File' option has the same value "./logs/max-file-size-example.log" as that given for appender [file-appender] defined earlier.
+11:42:43,181 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+11:42:43,181 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file-appender] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+11:42:43,181 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Attaching appender named [file-appender] to AsyncAppender.
+11:42:43,181 |-INFO in ch.qos.logback.classic.AsyncAppender[async-file-appender] - Setting discardingThreshold to 51
+11:42:43,195 |-INFO in ch.qos.logback.classic.net.SyslogAppender[syslog-appender] - Defaulting maxMessageSize to [65000]
+11:42:43,197 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Attaching appender named [syslog-appender] to AsyncAppender.
+11:42:43,197 |-INFO in ch.qos.logback.classic.AsyncAppender[async-syslog-appender] - Setting discardingThreshold to 51
+
+2020-02-16 11:43:29.139:INFO::main: Logging initialized @3151ms to org.eclipse.jetty.util.log.StdErrLog
+2020-02-16 11:43:29.225:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:29.277:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:29.285:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:29.287:INFO:oejs.session:main: Scavenging every 660000ms
+2020-02-16 11:43:29.291:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@3e2fc448{/,null,AVAILABLE}
+2020-02-16 11:43:29.293:INFO:oejs.AbstractConnector:main: Started LocalConnector@7df6d113{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:29.294:INFO:oejs.Server:main: Started @3306ms
+2020-02-16 11:43:29.799:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@7df6d113{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:29.810:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:29.813:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@3e2fc448{/,null,UNAVAILABLE}
+2020-02-16 11:43:32.596:INFO::main: Logging initialized @2109ms to org.eclipse.jetty.util.log.StdErrLog
+2020-02-16 11:43:33.701:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler@71529963{/,null,AVAILABLE}
+2020-02-16 11:43:33.749:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:33.750:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:33.752:INFO:oejs.session:main: Scavenging every 600000ms
+2020-02-16 11:43:33.771:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@2d6764b2{/,null,AVAILABLE}
+2020-02-16 11:43:33.813:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@2d6764b2{/,null,UNAVAILABLE}
+2020-02-16 11:43:33.814:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler@71529963{/,null,UNAVAILABLE}
+2020-02-16 11:43:34.891:WARN:oejsh.AbstractHandler:main: No Server set for io.dropwizard.jetty.RoutingHandler@66bacdbc[o.e.j.s.h.ContextHandler$MockitoMock$1742260891@2c6ee758{/,null,UNAVAILABLE}, o.e.j.s.h.ContextHandler$MockitoMock$1742260891@640dc4c6{/,null,UNAVAILABLE}]
+2020-02-16 11:43:34.911:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler$MockitoMock$1742260891@2c6ee758{/,null,AVAILABLE}
+2020-02-16 11:43:34.912:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler$MockitoMock$1742260891@640dc4c6{/,null,AVAILABLE}
+2020-02-16 11:43:34.942:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler$MockitoMock$1742260891@640dc4c6{/,null,UNAVAILABLE}
+2020-02-16 11:43:34.948:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler$MockitoMock$1742260891@2c6ee758{/,null,UNAVAILABLE}
+2020-02-16 11:43:34.952:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler$MockitoMock$1742260891@2125ad3{/,null,AVAILABLE}
+2020-02-16 11:43:34.953:INFO:oejsh.ContextHandler:main: Started o.e.j.s.h.ContextHandler$MockitoMock$1742260891@7a5b769b{/,null,AVAILABLE}
+2020-02-16 11:43:34.955:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler$MockitoMock$1742260891@7a5b769b{/,null,UNAVAILABLE}
+2020-02-16 11:43:34.956:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.h.ContextHandler$MockitoMock$1742260891@2125ad3{/,null,UNAVAILABLE}
+2020-02-16 11:43:34.998:WARN:oejsh.AbstractHandler:main: No Server set for io.dropwizard.jetty.ContextRoutingHandler@34cf294c
+2020-02-16 11:43:38.039:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:38.059:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:38.059:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:38.059:INFO:oejs.session:main: Scavenging every 600000ms
+2020-02-16 11:43:38.061:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@b849fa6{/,null,AVAILABLE}
+2020-02-16 11:43:38.062:INFO:oejs.AbstractConnector:main: Started LocalConnector@79ec57b8{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:38.062:INFO:oejs.Server:main: Started @7574ms
+2020-02-16 11:43:38.485:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@79ec57b8{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:38.485:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:38.485:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@b849fa6{/,null,UNAVAILABLE}
+2020-02-16 11:43:38.491:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:38.494:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:38.494:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:38.494:INFO:oejs.session:main: Scavenging every 660000ms
+2020-02-16 11:43:38.497:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@1ba7db2a{/,null,AVAILABLE}
+2020-02-16 11:43:38.497:INFO:oejs.AbstractConnector:main: Started LocalConnector@762cdf46{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:38.498:INFO:oejs.Server:main: Started @8010ms
+2020-02-16 11:43:38.527:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@762cdf46{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:38.528:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:38.528:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@1ba7db2a{/,null,UNAVAILABLE}
+2020-02-16 11:43:38.534:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:38.539:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:38.540:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:38.540:INFO:oejs.session:main: Scavenging every 660000ms
+2020-02-16 11:43:38.541:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@312819ae{/,null,AVAILABLE}
+2020-02-16 11:43:38.550:INFO:oejs.AbstractConnector:main: Started LocalConnector@4ae2c01b{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:38.550:INFO:oejs.Server:main: Started @8063ms
+2020-02-16 11:43:38.558:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@4ae2c01b{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:38.558:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:38.559:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@312819ae{/,null,UNAVAILABLE}
+2020-02-16 11:43:38.561:INFO:oejs.Server:main: jetty-9.4.7.v20170914
+2020-02-16 11:43:38.566:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-02-16 11:43:38.566:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2020-02-16 11:43:38.566:INFO:oejs.session:main: Scavenging every 660000ms
+2020-02-16 11:43:38.567:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@27ec74a3{/,null,AVAILABLE}
+2020-02-16 11:43:38.567:INFO:oejs.AbstractConnector:main: Started LocalConnector@35ff072c{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:38.567:INFO:oejs.Server:main: Started @8079ms
+2020-02-16 11:43:38.578:INFO:oejs.AbstractConnector:main: Stopped LocalConnector@35ff072c{HTTP/1.1,[http/1.1]}
+2020-02-16 11:43:38.578:INFO:oejs.session:main: Stopped scavenging
+2020-02-16 11:43:38.578:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@27ec74a3{/,null,UNAVAILABLE}
+2,879] com.example.app: Application log
+DEBUG [2020-02-16 10:42:42,881] com.example.newApp: New application debug log
+INFO  [2020-02-16 10:42:42,882] com.example.newApp: New application info log
+DEBUG [2020-02-16 10:42:42,882] com.example.legacyApp: Legacy application debug log
+INFO  [2020-02-16 10:42:42,882] com.example.legacyApp: Legacy application info log
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.793 s - in io.dropwizard.logging.DefaultLoggingFactoryTest
+[INFO] Running io.dropwizard.logging.SyslogAppenderFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in io.dropwizard.logging.SyslogAppenderFactoryTest
+[INFO] Running io.dropwizard.logging.PrefixedThrowableProxyConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.dropwizard.logging.PrefixedThrowableProxyConverterTest
+[INFO] Running io.dropwizard.logging.FileAppenderFactoryTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 s - in io.dropwizard.logging.FileAppenderFactoryTest
+[INFO] Running io.dropwizard.logging.ConsoleAppenderFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in io.dropwizard.logging.ConsoleAppenderFactoryTest
+[INFO] Running io.dropwizard.logging.ExternalLoggingFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in io.dropwizard.logging.ExternalLoggingFactoryTest
+[INFO] Running io.dropwizard.logging.PrefixedExtendedThrowableProxyConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.dropwizard.logging.PrefixedExtendedThrowableProxyConverterTest
+[INFO] Running io.dropwizard.logging.PrefixedRootCauseFirstThrowableProxyConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in io.dropwizard.logging.PrefixedRootCauseFirstThrowableProxyConverterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 51, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Lifecycle Support 1.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-lifecycle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dropwizard-lifecycle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-lifecycle/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ dropwizard-lifecycle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dropwizard-lifecycle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ dropwizard-lifecycle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ dropwizard-lifecycle ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-lifecycle/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.dropwizard.lifecycle.JettyManagedTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.015 s - in io.dropwizard.lifecycle.JettyManagedTest
+[INFO] Running io.dropwizard.lifecycle.ExecutorServiceManagerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.294 s - in io.dropwizard.lifecycle.ExecutorServiceManagerTest
+[INFO] Running io.dropwizard.lifecycle.AutoCloseableManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in io.dropwizard.lifecycle.AutoCloseableManagerTest
+[INFO] Running io.dropwizard.lifecycle.setup.ExecutorServiceBuilderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 s - in io.dropwizard.lifecycle.setup.ExecutorServiceBuilderTest
+[INFO] Running io.dropwizard.lifecycle.setup.LifecycleEnvironmentTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in io.dropwizard.lifecycle.setup.LifecycleEnvironmentTest
+[INFO] Running io.dropwizard.lifecycle.setup.ScheduledExecutorServiceBuilderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in io.dropwizard.lifecycle.setup.ScheduledExecutorServiceBuilderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Metrics Support 1.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-metrics ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dropwizard-metrics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ dropwizard-metrics ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dropwizard-metrics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ dropwizard-metrics ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ dropwizard-metrics ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-metrics/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.dropwizard.metrics.MetricAttributesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 s - in io.dropwizard.metrics.MetricAttributesTest
+[INFO] Running io.dropwizard.metrics.BaseReporterFactoryTest
+[INFO] Tests run: 84, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.707 s - in io.dropwizard.metrics.BaseReporterFactoryTest
+[INFO] Running io.dropwizard.metrics.ConsoleReporterFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in io.dropwizard.metrics.ConsoleReporterFactoryTest
+[INFO] Running io.dropwizard.metrics.CsvReporterFactoryTest
+11:42:50.114 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+11:42:50.122 [main] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.4.1.Final
+11:42:50.169 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+11:42:50.182 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+11:42:50.183 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+11:42:50.184 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+11:42:50.185 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+11:42:50.322 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+11:42:50.322 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+11:42:50.322 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+11:42:50.323 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+11:42:50.323 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+11:42:51.084 [main] DEBUG org.hibernate.validator.internal.metadata.descriptor.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@5dbf5634, groups=[Ljava.lang.Class;@1948ea69}, constraintType=GENERIC}.
+11:42:51.086 [main] DEBUG org.hibernate.validator.internal.metadata.descriptor.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.Size, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@47e4d9d0, min=1, message={javax.validation.constraints.Size.message}, payload=[Ljava.lang.Class;@49798e84, max=2147483647}, constraintType=GENERIC}.
+11:42:51.128 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+11:42:51.139 [main] INFO org.eclipse.jetty.util.log - Logging initialized @3403ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.513 s - in io.dropwizard.metrics.CsvReporterFactoryTest
+[INFO] Running io.dropwizard.metrics.MetricsFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.6 s - in io.dropwizard.metrics.MetricsFactoryTest
+[INFO] Running io.dropwizard.metrics.Slf4jReporterFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.dropwizard.metrics.Slf4jReporterFactoryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 97, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Jersey Support 1.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-jersey ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dropwizard-jersey ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-jersey/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ dropwizard-jersey ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dropwizard-jersey ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ dropwizard-jersey ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ dropwizard-jersey ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-jersey/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.dropwizard.jersey.jackson.JacksonMessageBodyProviderTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.392 s - in io.dropwizard.jersey.jackson.JacksonMessageBodyProviderTest
+[INFO] Running io.dropwizard.jersey.jackson.JsonProcessingExceptionMapperTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.136 s - in io.dropwizard.jersey.jackson.JsonProcessingExceptionMapperTest
+[INFO] Running io.dropwizard.jersey.validation.JerseyViolationExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in io.dropwizard.jersey.validation.JerseyViolationExceptionTest
+[INFO] Running io.dropwizard.jersey.validation.ConstraintViolationExceptionMapperTest
+[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.525 s - in io.dropwizard.jersey.validation.ConstraintViolationExceptionMapperTest
+[INFO] Running io.dropwizard.jersey.validation.ParamValidatorUnwrapperTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in io.dropwizard.jersey.validation.ParamValidatorUnwrapperTest
+[INFO] Running io.dropwizard.jersey.errors.IllegalStateExceptionMapperTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.dropwizard.jersey.errors.IllegalStateExceptionMapperTest
+[INFO] Running io.dropwizard.jersey.errors.ErrorEntityWriterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 s - in io.dropwizard.jersey.errors.ErrorEntityWriterTest
+[INFO] Running io.dropwizard.jersey.errors.LoggingExceptionMapperTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 s - in io.dropwizard.jersey.errors.LoggingExceptionMapperTest
+[INFO] Running io.dropwizard.jersey.errors.EarlyEofExceptionMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.dropwizard.jersey.errors.EarlyEofExceptionMapperTest
+[INFO] Running io.dropwizard.jersey.guava.OptionalFormParamResourceTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.86 s - in io.dropwizard.jersey.guava.OptionalFormParamResourceTest
+[INFO] Running io.dropwizard.jersey.guava.OptionalQueryParamResourceTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.096 s - in io.dropwizard.jersey.guava.OptionalQueryParamResourceTest
+[INFO] Running io.dropwizard.jersey.guava.OptionalMessageBodyWriterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 s - in io.dropwizard.jersey.guava.OptionalMessageBodyWriterTest
+[INFO] Running io.dropwizard.jersey.guava.OptionalCookieParamResourceTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.699 s - in io.dropwizard.jersey.guava.OptionalCookieParamResourceTest
+[INFO] Running io.dropwizard.jersey.guava.OptionalHeaderParamResourceTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.721 s - in io.dropwizard.jersey.guava.OptionalHeaderParamResourceTest
+[INFO] Running io.dropwizard.jersey.params.DurationParamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.dropwizard.jersey.params.DurationParamTest
+[INFO] Running io.dropwizard.jersey.params.UUIDParamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.dropwizard.jersey.params.UUIDParamTest
+[INFO] Running io.dropwizard.jersey.params.DateTimeParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in io.dropwizard.jersey.params.DateTimeParamTest
+[INFO] Running io.dropwizard.jersey.params.InstantParamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in io.dropwizard.jersey.params.InstantParamTest
+[INFO] Running io.dropwizard.jersey.params.NonEmptyStringParamProviderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.342 s - in io.dropwizard.jersey.params.NonEmptyStringParamProviderTest
+[INFO] Running io.dropwizard.jersey.params.IntParamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.dropwizard.jersey.params.IntParamTest
+[INFO] Running io.dropwizard.jersey.params.BooleanParamTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.dropwizard.jersey.params.BooleanParamTest
+[INFO] Running io.dropwizard.jersey.params.LongParamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.dropwizard.jersey.params.LongParamTest
+[INFO] Running io.dropwizard.jersey.params.NonEmptyStringParamTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.dropwizard.jersey.params.NonEmptyStringParamTest
+[INFO] Running io.dropwizard.jersey.params.LocalDateParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.dropwizard.jersey.params.LocalDateParamTest
+[INFO] Running io.dropwizard.jersey.params.SizeParamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in io.dropwizard.jersey.params.SizeParamTest
+[INFO] Running io.dropwizard.jersey.gzip.ConfiguredGZipEncoderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in io.dropwizard.jersey.gzip.ConfiguredGZipEncoderTest
+[INFO] Running io.dropwizard.jersey.caching.CacheControlledResponseFeatureTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.906 s - in io.dropwizard.jersey.caching.CacheControlledResponseFeatureTest
+[INFO] Running io.dropwizard.jersey.filter.AllowedMethodsFilterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.796 s - in io.dropwizard.jersey.filter.AllowedMethodsFilterTest
+[INFO] Running io.dropwizard.jersey.optional.OptionalQueryParamResourceTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.788 s - in io.dropwizard.jersey.optional.OptionalQueryParamResourceTest
+[INFO] Running io.dropwizard.jersey.optional.OptionalHeaderParamResourceTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 s - in io.dropwizard.jersey.optional.OptionalHeaderParamResourceTest
+[INFO] Running io.dropwizard.jersey.optional.OptionalCookieParamResourceTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.647 s - in io.dropwizard.jersey.optional.OptionalCookieParamResourceTest
+[INFO] Running io.dropwizard.jersey.optional.OptionalDoubleMessageBodyWriterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.28 s - in io.dropwizard.jersey.optional.OptionalDoubleMessageBodyWriterTest
+[INFO] Running io.dropwizard.jersey.optional.OptionalIntMessageBodyWriterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 s - in io.dropwizard.jersey.optional.OptionalIntMessageBodyWriterTest
+[INFO] Running io.dropwizard.jersey.optional.OptionalMessageBodyWriterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 s - in io.dropwizard.jersey.optional.OptionalMessageBodyWriterTest
+[INFO] Running io.dropwizard.jersey.optional.OptionalLongMessageBodyWriterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 s - in io.dropwizard.jersey.optional.OptionalLongMessageBodyWriterTest
+[INFO] Running io.dropwizard.jersey.optional.OptionalFormParamResourceTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.661 s - in io.dropwizard.jersey.optional.OptionalFormParamResourceTest
+[INFO] Running io.dropwizard.jersey.sessions.HttpSessionFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in io.dropwizard.jersey.sessions.HttpSessionFactoryTest
+[INFO] Running io.dropwizard.jersey.sessions.FlashFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in io.dropwizard.jersey.sessions.FlashFactoryTest
+[INFO] Running io.dropwizard.jersey.jsr310.OffsetDateTimeParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.dropwizard.jersey.jsr310.OffsetDateTimeParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.ZonedDateTimeParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in io.dropwizard.jersey.jsr310.ZonedDateTimeParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.InstantSecondParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.dropwizard.jersey.jsr310.InstantSecondParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.LocalTimeParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in io.dropwizard.jersey.jsr310.LocalTimeParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.LocalDateTimeParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.dropwizard.jersey.jsr310.LocalDateTimeParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.YearParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.dropwizard.jersey.jsr310.YearParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.InstantParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.dropwizard.jersey.jsr310.InstantParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.YearMonthParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.dropwizard.jersey.jsr310.YearMonthParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.ZoneIdParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.dropwizard.jersey.jsr310.ZoneIdParamTest
+[INFO] Running io.dropwizard.jersey.jsr310.LocalDateParamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.dropwizard.jersey.jsr310.LocalDateParamTest
+[INFO] Running io.dropwizard.jersey.AsyncServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s - in io.dropwizard.jersey.AsyncServletTest
+[INFO] Running io.dropwizard.jersey.DropwizardResourceConfigTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in io.dropwizard.jersey.DropwizardResourceConfigTest
+[INFO] Running io.dropwizard.jersey.setup.JerseyEnvironmentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in io.dropwizard.jersey.setup.JerseyEnvironmentTest
+[INFO] Running io.dropwizard.jersey.JerseyContentTypeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in io.dropwizard.jersey.JerseyContentTypeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 262, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Servlet Support 1.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-servlets ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dropwizard-servlets ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-servlets/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ dropwizard-servlets ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dropwizard-servlets ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ dropwizard-servlets ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ dropwizard-servlets ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-servlets/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.dropwizard.servlets.ServletsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.157 s - in io.dropwizard.servlets.ServletsTest
+[INFO] Running io.dropwizard.servlets.tasks.TaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.dropwizard.servlets.tasks.TaskTest
+[INFO] Running io.dropwizard.servlets.tasks.GarbageCollectionTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.571 s - in io.dropwizard.servlets.tasks.GarbageCollectionTaskTest
+[INFO] Running io.dropwizard.servlets.tasks.PostBodyTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.dropwizard.servlets.tasks.PostBodyTaskTest
+[INFO] Running io.dropwizard.servlets.tasks.LogConfigurationTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in io.dropwizard.servlets.tasks.LogConfigurationTaskTest
+[INFO] Running io.dropwizard.servlets.tasks.TaskServletTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.491 s - in io.dropwizard.servlets.tasks.TaskServletTest
+[INFO] Running io.dropwizard.servlets.CacheBustingFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s - in io.dropwizard.servlets.CacheBustingFilterTest
+[INFO] Running io.dropwizard.servlets.assets.ResourceURLTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in io.dropwizard.servlets.assets.ResourceURLTest
+[INFO] Running io.dropwizard.servlets.assets.AssetServletTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.703 s - in io.dropwizard.servlets.assets.AssetServletTest
+[INFO] Running io.dropwizard.servlets.assets.ByteRangeTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.dropwizard.servlets.assets.ByteRangeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 63, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dropwizard Jetty Support 1.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ dropwizard-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dropwizard-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ dropwizard-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dropwizard-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ dropwizard-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ dropwizard-jetty ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-jetty/target/surefire-reports
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.dropwizard.jetty.RoutingHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.445 s - in io.dropwizard.jetty.RoutingHandlerTest
+[INFO] Running io.dropwizard.jetty.ContextRoutingHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in io.dropwizard.jetty.ContextRoutingHandlerTest
+[INFO] Running io.dropwizard.jetty.HttpsConnectorFactoryTest
+[WARNING] Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.129 s - in io.dropwizard.jetty.HttpsConnectorFactoryTest
+[INFO] Running io.dropwizard.jetty.HttpConnectorFactoryTest
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.175 s <<< FAILURE! - in io.dropwizard.jetty.HttpConnectorFactoryTest
+[ERROR] testBuildConnector(io.dropwizard.jetty.HttpConnectorFactoryTest)  Time elapsed: 0.015 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<30[]> but was:<30[000]>
+	at io.dropwizard.jetty.HttpConnectorFactoryTest.testBuildConnector(HttpConnectorFactoryTest.java:133)
+
+[INFO] Running io.dropwizard.jetty.ServerPushFilterFactoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 s - in io.dropwizard.jetty.ServerPushFilterFactoryTest
+[INFO] Running io.dropwizard.jetty.GzipHandlerFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 s - in io.dropwizard.jetty.GzipHandlerFactoryTest
+[INFO] Running io.dropwizard.jetty.MutableServletContextHandlerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.dropwizard.jetty.MutableServletContextHandlerTest
+[INFO] Running io.dropwizard.jetty.BiDiGzipHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.593 s - in io.dropwizard.jetty.BiDiGzipHandlerTest
+[INFO] Running io.dropwizard.jetty.NonblockingServletHolderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 s - in io.dropwizard.jetty.NonblockingServletHolderTest
+[INFO] Running io.dropwizard.jetty.NetUtilTest
+[WARNING] Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.019 s - in io.dropwizard.jetty.NetUtilTest
+[INFO] Running io.dropwizard.jetty.setup.ServletEnvironmentTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.018 s - in io.dropwizard.jetty.setup.ServletEnvironmentTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HttpConnectorFactoryTest.testBuildConnector:133 expected:<30[]> but was:<30[000]>
+[INFO] 
+[ERROR] Tests run: 68, Failures: 1, Errors: 0, Skipped: 4
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Dropwizard Project ................................. SUCCESS [  0.942 s]
+[INFO] Dropwizard Documentation ........................... SUCCESS [  1.956 s]
+[INFO] Dropwizard BOM ..................................... SUCCESS [  0.127 s]
+[INFO] Dropwizard Utility Classes ......................... SUCCESS [  4.218 s]
+[INFO] Dropwizard Jackson Support ......................... SUCCESS [  4.382 s]
+[INFO] Dropwizard Validation Support ...................... SUCCESS [  3.581 s]
+[INFO] Dropwizard Configuration Support ................... SUCCESS [ 24.860 s]
+[INFO] Dropwizard Logging Support ......................... SUCCESS [  6.877 s]
+[INFO] Dropwizard Lifecycle Support ....................... SUCCESS [  3.291 s]
+[INFO] Dropwizard Metrics Support ......................... SUCCESS [  4.569 s]
+[INFO] Dropwizard Jersey Support .......................... SUCCESS [ 33.617 s]
+[INFO] Dropwizard Servlet Support ......................... SUCCESS [  4.444 s]
+[INFO] Dropwizard Jetty Support ........................... FAILURE [  9.908 s]
+[INFO] Dropwizard Request Logging Support ................. SKIPPED
+[INFO] Dropwizard ......................................... SKIPPED
+[INFO] Dropwizard Test Helpers ............................ SKIPPED
+[INFO] Dropwizard HTTP Client ............................. SKIPPED
+[INFO] Dropwizard Database Support ........................ SKIPPED
+[INFO] Dropwizard JDBI Support ............................ SKIPPED
+[INFO] Dropwizard Migrations .............................. SKIPPED
+[INFO] Dropwizard Hibernate Support ....................... SKIPPED
+[INFO] Dropwizard Authentication .......................... SKIPPED
+[INFO] Dropwizard Asset Bundle ............................ SKIPPED
+[INFO] Dropwizard HTTP/2 Support .......................... SKIPPED
+[INFO] Dropwizard Views ................................... SKIPPED
+[INFO] Dropwizard Freemarker Views ........................ SKIPPED
+[INFO] Dropwizard Mustache Views .......................... SKIPPED
+[INFO] Dropwizard Metrics Support for Graphite ............ SKIPPED
+[INFO] Dropwizard Example Application ..................... SKIPPED
+[INFO] Dropwizard Multipart Form Support .................. SKIPPED
+[INFO] Dropwizard Metrics Support for Ganglia ............. SKIPPED
+[INFO] Dropwizard Archetypes .............................. SKIPPED
+[INFO] Dropwizard Archetype for Simple Java Services ...... SKIPPED
+[INFO] Dropwizard Benchmarks .............................. SKIPPED
+[INFO] Dropwizard End-to-end Tests ........................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:45 min
+[INFO] Finished at: 2020-02-16T11:43:40+01:00
+[INFO] Final Memory: 38M/92M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project dropwizard-jetty: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-jetty/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project dropwizard-jetty: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-jetty/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-dropwizard-288953390-20171017-112538_bugonly-firstCommit/dropwizard-jetty/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:354)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:984)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :dropwizard-jetty
