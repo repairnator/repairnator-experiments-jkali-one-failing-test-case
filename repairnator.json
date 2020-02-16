@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "yeyintphyo/demo-1",
-  "bugCommit": "https://github.com/yeyintphyo/demo-1/compare/35b7abd8591e...e305cfee55a7",
-  "failingModule": "/root/workspace/yeyintphyo/demo-1/360573124",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 6,
-  "failing-test-cases": [
-    {
-      "className": "com.myanmareffective.demo.welcome.TicketRevenueTest",
-      "failingMethods": [
-        "com.myanmareffective.demo.welcome.TicketRevenueTest#oneTicketSoldIsThirtyInRevenue"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:15:32 PM",
+    "reproductionDateEnd": "Feb 16, 2020 11:18:18 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 14471368,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 162,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 44,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          44
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-yeyintphyo-demo-1-360573124-20180331-115902-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-yeyintphyo-demo-1-360573124-20180331-115902-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 6,
+      "numberPassing": 5,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: is \u003c90\u003e\n     but: was \u003c30\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.myanmareffective.demo.welcome.TicketRevenueTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.myanmareffective.demo.welcome.TicketRevenueTest",
+        "testMethod": "oneTicketSoldIsThirtyInRevenue",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003c90\u003e\n     but: was \u003c30\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  },
+  "commits": {}
 }
