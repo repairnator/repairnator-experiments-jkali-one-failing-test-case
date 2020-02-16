@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "sam-rosenthal/java-cssSelector-to-xpath",
-  "bugCommit": "https://github.com/sam-rosenthal/java-cssSelector-to-xpath/compare/e333d4a95218...bff7981ae069",
-  "failingModule": "/root/workspace/sam-rosenthal/java-cssSelector-to-xpath/398058138",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 13,
-  "failing-test-cases": [
-    {
-      "className": "org.sam.rosenthal.cssselectortoxpath.utilities.CssElementCombinatorPairsToXpathTest",
-      "failingMethods": [
-        "convertComplexCssStringToXpathStringTest"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:29 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:32:56 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 27966664,
+      "totalMemory": 166834176
+    },
+    "totalDuration": 385,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 339,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          339
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-sam-rosenthal-java-cssSelector-to-xpath-398058138-20180629-034137-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-sam-rosenthal-java-cssSelector-to-xpath-398058138-20180629-034137-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 13,
+      "numberPassing": 12,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "CssString\u003dTO DO expected:\u003c[Test CI]\u003e but was:\u003c[//TO//DO]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.sam.rosenthal.cssselectortoxpath.utilities.CssElementCombinatorPairsToXpathTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.sam.rosenthal.cssselectortoxpath.utilities.CssElementCombinatorPairsToXpathTest",
+        "testMethod": "convertComplexCssStringToXpathStringTest",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "CssString\u003dTO DO expected:\u003c[Test CI]\u003e but was:\u003c[//TO//DO]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 11,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 22,
+    "numberLines": 0
+  },
+  "commits": {}
 }
