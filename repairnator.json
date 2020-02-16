@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "portux/NAJU-Adebar",
-  "bugCommit": "https://github.com/portux/NAJU-Adebar/compare/33e3eb01d766^...4d7f9a7ffacc",
-  "failingModule": "/root/workspace/portux/NAJU-Adebar/370632545",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 145,
-  "failing-test-cases": [
-    {
-      "className": "de.naju.adebar.model.persons.ParticipantUnitTest",
-      "failingMethods": [
-        "de.naju.adebar.model.persons.ParticipantUnitTest#testCalculateAge"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:02:02 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:25:04 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 91147680,
+      "totalMemory": 207667200
+    },
+    "totalDuration": 1378,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1161,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1161
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-portux-NAJU-Adebar-370632545-20180424-174133-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-portux-NAJU-Adebar-370632545-20180424-174133-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 145,
+      "numberPassing": 144,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected: java.lang.Integer\u003c0\u003e but was: de.naju.adebar.model.core.Age\u003c0\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "de.naju.adebar.model.persons.ParticipantUnitTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "de.naju.adebar.model.persons.ParticipantUnitTest",
+        "testMethod": "testCalculateAge",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected: java.lang.Integer\u003c0\u003e but was: de.naju.adebar.model.core.Age\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 351,
+    "numberTestFiles": 39,
+    "numberLibrariesFailingModule": 136,
+    "numberLines": 0
+  },
+  "commits": {}
 }
