@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "prestodb/presto",
-  "failingModule": "/root/workspace/prestodb/presto/390818818/presto-plugin-toolkit",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 391,
-  "failing-test-cases": [
-    {
-      "className": "com.facebook.presto.plugin.base.security.TestFileBasedAccessControl",
-      "failingMethods": [
-        "testTableRules"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:24 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:49:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 104938472,
+      "totalMemory": 281387008
+    },
+    "totalDuration": 1382,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 7,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          7,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 133,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          133
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-390818818-20180611-173545-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-390818818-20180611-173545-firstCommit/presto-plugin-toolkit",
+    "overallMetrics": {
+      "numberRunning": 391,
+      "numberPassing": 390,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Expected AccessDeniedException to be thrown, but nothing was thrown",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.facebook.presto.plugin.base.security.TestFileBasedAccessControl",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.facebook.presto.plugin.base.security.TestFileBasedAccessControl",
+        "testMethod": "testTableRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected AccessDeniedException to be thrown, but nothing was thrown",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3534,
+    "numberTestFiles": 1246,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  },
+  "commits": {}
 }
