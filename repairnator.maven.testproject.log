@@ -1,0 +1,124 @@
+Feb 16, 2020 11:37:45 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71e7a66b: startup date [Sun Feb 16 11:37:45 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:45 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [jdd-config.xml]
+Feb 16, 2020 11:37:45 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-non-imposables.xml]
+Feb 16, 2020 11:37:45 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-imposables.xml]
+Feb 16, 2020 11:37:45 AM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@71e7a66b: startup date [Sun Feb 16 11:37:45 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:46 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@12028586: startup date [Sun Feb 16 11:37:46 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [jdd-config.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-non-imposables.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-imposables.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@12028586: startup date [Sun Feb 16 11:37:46 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:46 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@15d9bc04: startup date [Sun Feb 16 11:37:46 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [jdd-config.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-non-imposables.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitiTests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.945 sec <<< FAILURE! - in dev.paie.service.GradeServiceJdbcTemplateTest
+test_sauvegarder_liste_mettre_a_jour(dev.paie.service.GradeServiceJdbcTemplateTest)  Time elapsed: 0.268 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at dev.paie.service.GradeServiceJdbcTemplateTest.test_sauvegarder_liste_mettre_a_jour(GradeServiceJdbcTemplateTest.java:41)
+
+Running dev.paie.service.CalculerRemunerationServiceSimpleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 sec - in dev.paie.service.CalculerRemunerationServiceSimpleTest
+
+Results :
+
+Failed tests: 
+  GradeServiceJdbcTemplateTest.test_sauvegarder_liste_mettre_a_jour:41 null
+
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.885 s
+[INFO] Finished at: 2020-02-16T11:37:48+01:00
+[INFO] Final Memory: 21M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project sirh-gestion-paie: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-383637818-20180525-124508-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project sirh-gestion-paie: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-dta-sherlock-sirh-gestion-paie-383637818-20180525-124508-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenClINFO: Loading XML bean definitions from class path resource [jdd-config.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-non-imposables.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-imposables.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@5be6e01c: startup date [Sun Feb 16 11:37:46 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:46 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63355449: startup date [Sun Feb 16 11:37:46 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [app-config.xml]
+Feb 16, 2020 11:37:46 AM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@63355449: startup date [Sun Feb 16 11:37:46 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:47 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@41fbdac4: startup date [Sun Feb 16 11:37:47 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [app-config.xml]
+Feb 16, 2020 11:37:47 AM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@41fbdac4: startup date [Sun Feb 16 11:37:47 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:47 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1dde4cb2: startup date [Sun Feb 16 11:37:47 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [app-config.xml]
+Feb 16, 2020 11:37:47 AM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1dde4cb2: startup date [Sun Feb 16 11:37:47 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:47 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Feb 16, 2020 11:37:47 AM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+Feb 16, 2020 11:37:47 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@22555ebf, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@36ebc363, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45752059, org.springframework.test.context.transaction.TransactionalTestExecutionListener@34e9fd99, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c41ed1d]
+Feb 16, 2020 11:37:47 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@44c03695: startup date [Sun Feb 16 11:37:47 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [jdd-config.xml]
+Feb 16, 2020 11:37:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-non-imposables.xml]
+Feb 16, 2020 11:37:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-imposables.xml]
+Feb 16, 2020 11:37:47 AM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: com.mysql.jdbc.Driver
+Feb 16, 2020 11:37:48 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Feb 16, 2020 11:37:48 AM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+Feb 16, 2020 11:37:48 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6cc4cdb9, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@28194a50, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7f2cfe3f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1a5b6f42, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5038d0b5]
+Feb 16, 2020 11:37:48 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@32115b28: startup date [Sun Feb 16 11:37:48 CET 2020]; root of context hierarchy
+Feb 16, 2020 11:37:48 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [jdd-config.xml]
+Feb 16, 2020 11:37:48 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-non-imposables.xml]
+Feb 16, 2020 11:37:48 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [cotisations-imposables.xml]
+Feb 16, 2020 11:37:48 AM org.springframework.context.support.GenericApplicationContext doClose
+INFO: Closing org.springframework.context.support.GenericApplicationContext@44c03695: startup date [Sun Feb 16 11:37:47 CET 2020]; root of context hierarchy
