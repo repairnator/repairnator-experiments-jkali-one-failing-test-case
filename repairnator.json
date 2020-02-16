@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 2,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "javaparser/javaparser",
-  "failingModule": "/root/workspace/javaparser/javaparser/378355322/javaparser-core-testing",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.opentest4j.AssertionFailedError"
-  ],
-  "totalNumberRunningTests": 1548,
-  "failing-test-cases": [
-    {
-      "className": "com.github.javaparser.modules.ModuleDeclarationTest",
-      "failingMethods": [
-        "com.github.javaparser.modules.ModuleDeclarationTest#fluentInterface"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:54 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:20:28 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 48802392,
+      "totalMemory": 158392320
+    },
+    "totalDuration": 6151,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-378355322-20180513-150142-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-javaparser-javaparser-378355322-20180513-150142-firstCommit/javaparser-core-testing",
+    "overallMetrics": {
+      "numberRunning": 1546,
+      "numberPassing": 1545,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
       "failures": [
         {
           "failureName": "org.opentest4j.AssertionFailedError",
-          "failureDetail": "expected: \u003c@SuppressWarnings(\"module\") \nmodule com.laamella.base {\n    requires transitive java.desktop;\n    exports com.laamella.base.entity.channel;\n    exports com.laamella.base.entity.channel.internal to com.laamella.core;\n    uses com.laamella.base.util.internal.FactoryDelegate;\n    exports foo.bar to other.foo, other.bar;\n    exports foo.bar.x to other.foo, other.bar;\n}\n\u003e but was: \u003c@SuppressWarnings(\"module\")\nmodule com.laamella.base {\n    requires transitive java.desktop;\n    exports com.laamella.base.entity.channel;\n    exports com.laamella.base.entity.channel.internal to com.laamella.core;\n    uses com.laamella.base.util.internal.FactoryDelegate;\n    exports foo.bar to other.foo, other.bar;\n    exports foo.bar.x to other.foo, other.bar;\n}\n\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.javaparser.modules.ModuleDeclarationTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.javaparser.modules.ModuleDeclarationTest",
+        "testMethod": "fluentInterface",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003c@SuppressWarnings(\"module\") \nmodule com.laamella.base {\n    requires transitive java.desktop;\n    exports com.laamella.base.entity.channel;\n    exports com.laamella.base.entity.channel.internal to com.laamella.core;\n    uses com.laamella.base.util.internal.FactoryDelegate;\n    exports foo.bar to other.foo, other.bar;\n    exports foo.bar.x to other.foo, other.bar;\n}\n\u003e but was: \u003c@SuppressWarnings(\"module\")\nmodule com.laamella.base {\n    requires transitive java.desktop;\n    exports com.laamella.base.entity.channel;\n    exports com.laamella.base.entity.channel.internal to com.laamella.core;\n    uses com.laamella.base.util.internal.FactoryDelegate;\n    exports foo.bar to other.foo, other.bar;\n    exports foo.bar.x to other.foo, other.bar;\n}\n\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 604,
+    "numberTestFiles": 242,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  }
 }
