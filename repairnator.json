@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "timmolter/XChange",
-  "failingModule": "/root/workspace/timmolter/XChange/264292127/xchange-btcmarkets",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 334,
-  "failing-test-cases": [
-    {
-      "className": "org.knowm.xchange.btcmarkets.dto.BTCMarketsAdaptersTest",
-      "failingMethods": [
-        "org.knowm.xchange.btcmarkets.dto.BTCMarketsAdaptersTest#shouldAdaptTradeHistory"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:09 PM",
+    "reproductionDateEnd": "Feb 16, 2020 6:41:02 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 80400224,
+      "totalMemory": 189247488
+    },
+    "totalDuration": 828,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 53,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          53,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 202,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          202
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-264292127-20170814-113805_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-timmolter-XChange-264292127-20170814-113805_bugonly-firstCommit/xchange-btcmarkets",
+    "overallMetrics": {
+      "numberRunning": 331,
+      "numberPassing": 330,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c[AUD]\u003e but was:\u003c[BTC]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.knowm.xchange.btcmarkets.dto.BTCMarketsAdaptersTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.knowm.xchange.btcmarkets.dto.BTCMarketsAdaptersTest",
+        "testMethod": "shouldAdaptTradeHistory",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[AUD]\u003e but was:\u003c[BTC]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 62,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2095,
+    "numberTestFiles": 358,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  }
 }
