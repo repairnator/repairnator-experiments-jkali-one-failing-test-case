@@ -1,0 +1,119 @@
+{
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-joshchamberlain-CS471-Assignments-UMLIntro-GitHubTest2-416147149-20180815-011834-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 5,
+      "numberPassing": 4,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.boisestate.cs471.controller.ControllerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.boisestate.cs471.controller.ControllerTest",
+        "testMethod": "testRegisterViewListener",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\niViewUpdateListener.onSortDataRangeChanged(\n    25\n);\n-\u003e at edu.boisestate.cs471.controller.ControllerTest.testRegisterViewListener(ControllerTest.java:36)\nActual invocation has different arguments:\niViewUpdateListener.onSortDataRangeChanged(\n    26\n);\n-\u003e at edu.boisestate.cs471.controller.Controller.registerListener(Controller.java:64)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 21,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:00 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:39:16 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 36287160,
+      "totalMemory": 81096704
+    },
+    "totalDuration": 73,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 27,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          27
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-joshchamberlain-CS471-Assignments-UMLIntro-GitHubTest2-416147149-20180815-011834-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  }
+}
