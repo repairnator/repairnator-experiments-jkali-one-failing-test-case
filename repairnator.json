@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 6,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "hcoles/pitest",
-  "bugCommit": "https://github.com/hcoles/pitest/compare/5d9729bf3eb0...5ca76470949c",
-  "failingModule": "/root/workspace/hcoles/pitest/246894030/pitest-entry",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 1274,
-  "failing-test-cases": [
-    {
-      "className": "org.pitest.mutationtest.build.intercept.timeout.SimpleInfiniteLoopInterceptorTest",
-      "failingMethods": [
-        "org.pitest.mutationtest.build.intercept.timeout.SimpleInfiniteLoopInterceptorTest#shouldNotFindInfiniteLoopsInForLoopWithConditionalBreak"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:26 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:56:06 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 35426488,
+      "totalMemory": 233852928
+    },
+    "totalDuration": 1117,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 991,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          991
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-hcoles-pitest-246894030-20170626-001049_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-hcoles-pitest-246894030-20170626-001049_bugonly-firstCommit/pitest-entry",
+    "overallMetrics": {
+      "numberRunning": 1268,
+      "numberPassing": 1267,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 6,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "[With eclipse compiler matched when it shouldn\u0027t Byte code is \n   L0\n    LINENUMBER 248 L0\n    ICONST_0\n    ISTORE 1\n   L1\n    LINENUMBER 249 L1\n    ICONST_0\n    ISTORE 2\n   L2\n    GOTO L3\n   L4\n    LINENUMBER 250 L4\n   FRAME FULL [org/pitest/mutationtest/build/intercept/timeout/HasForLoops I I] []\n    ILOAD 1\n    BIPUSH 10\n    IF_ICMPLE L5\n   L6\n    LINENUMBER 251 L6\n    GOTO L7\n   L5\n    LINENUMBER 253 L5\n   FRAME FULL [org/pitest/mutationtest/build/intercept/timeout/HasForLoops I I] []\n    IINC 1 1\n   L3\n    LINENUMBER 249 L3\n   FRAME FULL [org/pitest/mutationtest/build/intercept/timeout/HasForLoops I I] []\n    ILOAD 2\n    BIPUSH 10\n    IF_ICMPNE L4\n   L7\n    LINENUMBER 255 L7\n   FRAME FULL [org/pitest/mutationtest/build/intercept/timeout/HasForLoops I] []\n    RETURN\n   L8\n    LOCALVARIABLE this Lorg/pitest/mutationtest/build/intercept/timeout/HasForLoops; L0 L8 0\n    LOCALVARIABLE j I L1 L8 1\n    LOCALVARIABLE i I L2 L7 2\n    MAXSTACK \u003d 2\n    MAXLOCALS \u003d 3\n] expected:\u003c[fals]e\u003e but was:\u003c[tru]e\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.pitest.mutationtest.build.intercept.timeout.SimpleInfiniteLoopInterceptorTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.pitest.mutationtest.build.intercept.timeout.SimpleInfiniteLoopInterceptorTest",
+        "testMethod": "shouldNotFindInfiniteLoopsInForLoopWithConditionalBreak",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "[With eclipse compiler matched when it shouldn\u0027t Byte code is \n   L0\n    LINENUMBER 248 L0\n    ICONST_0\n    ISTORE 1\n   L1\n    LINENUMBER 249 L1\n    ICONST_0\n    ISTORE 2\n   L2\n    GOTO L3\n   L4\n    LINENUMBER 250 L4\n   FRAME FULL [org/pitest/mutationtest/build/intercept/timeout/HasForLoops I I] []\n    ILOAD 1\n    BIPUSH 10\n    IF_ICMPLE L5\n   L6\n    LINENUMBER 251 L6\n    GOTO L7\n   L5\n    LINENUMBER 253 L5\n   FRAME FULL [org/pitest/mutationtest/build/intercept/timeout/HasForLoops I I] []\n    IINC 1 1\n   L3\n    LINENUMBER 249 L3\n   FRAME FULL [org/pitest/mutationtest/build/intercept/timeout/HasForLoops I I] []\n    ILOAD 2\n    BIPUSH 10\n    IF_ICMPNE L4\n   L7\n    LINENUMBER 255 L7\n   FRAME FULL [org/pitest/mutationtest/build/intercept/timeout/HasForLoops I] []\n    RETURN\n   L8\n    LOCALVARIABLE this Lorg/pitest/mutationtest/build/intercept/timeout/HasForLoops; L0 L8 0\n    LOCALVARIABLE j I L1 L8 1\n    LOCALVARIABLE i I L2 L7 2\n    MAXSTACK \u003d 2\n    MAXLOCALS \u003d 3\n] expected:\u003c[fals]e\u003e but was:\u003c[tru]e\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 440,
+    "numberTestFiles": 360,
+    "numberLibrariesFailingModule": 19,
+    "numberLines": 0
+  }
 }
