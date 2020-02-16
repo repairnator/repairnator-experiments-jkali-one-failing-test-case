@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.mage.test.cards.abilities.keywords.ConstellationTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.504 sec <<< FAILURE! - in org.mage.test.cards.abilities.keywords.ConstellationTest
+test_DaxosGotBoostWithLoseFlyAndGotItAgain(org.mage.test.cards.abilities.keywords.ConstellationTest)  Time elapsed: 0.066 sec  <<< FAILURE!
+java.lang.AssertionError: (Hand) Card counts for card Gravity Sphere for PlayerA are not equal  expected:<0> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.mage.test.serverside.base.impl.CardTestPlayerAPIImpl.assertHandCount(CardTestPlayerAPIImpl.java:915)
+	at org.mage.test.cards.abilities.keywords.ConstellationTest.test_DaxosGotBoostWithLoseFlyAndGotItAgain(ConstellationTest.java:152)
+
