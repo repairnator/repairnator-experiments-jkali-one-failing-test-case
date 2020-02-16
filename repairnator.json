@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 35,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "magefree/mage",
-  "bugCommit": "https://github.com/magefree/mage/compare/ad5b719dd2af...0c4784ab6c09",
-  "failingModule": "/root/workspace/magefree/mage/384263031/Mage.Tests",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2245,
-  "failing-test-cases": [
-    {
-      "className": "org.mage.test.AI.basic.CastCreaturesTest",
-      "failingMethods": [
-        "testSimpleCast2"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:39 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:11:03 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 174650000,
+      "totalMemory": 214601728
+    },
+    "totalDuration": 560,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-magefree-mage-384263031-20180527-052158-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-magefree-mage-384263031-20180527-052158-firstCommit/Mage.Tests",
+    "overallMetrics": {
+      "numberRunning": 2210,
+      "numberPassing": 2209,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 35,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "(Battlefield) 2 permanents (Mountain) are not tapped. expected:\u003c2\u003e but was:\u003c0\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.mage.test.cards.abilities.keywords.ConstellationTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.mage.test.cards.abilities.keywords.ConstellationTest",
+        "testMethod": "test_DaxosGotBoostWithLoseFlyAndGotItAgain",
+        "failureName": "java.lang.AssertionError",
+        "detail": "(Hand) Card counts for card Gravity Sphere for PlayerA are not equal  expected:\u003c0\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 36,
+    "numberPlugins": 0,
+    "numberSourceFiles": 20527,
+    "numberTestFiles": 819,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  }
 }
