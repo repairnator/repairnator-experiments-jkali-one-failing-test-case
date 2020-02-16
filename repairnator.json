@@ -1,32 +1,118 @@
 {
-  "totalNumberSkippingTests": 31,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "wro4j/wro4j",
-  "bugCommit": "https://github.com/wro4j/wro4j/compare/741584c0b4e6...481e1a7fd8b0",
-  "failingModule": "/root/workspace/wro4j/wro4j/247510680/wro4j-extensions",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 1158,
-  "failing-test-cases": [
-    {
-      "className": "ro.isdc.wro.extensions.http.handler.TestModelAsJsonRequestHandler",
-      "failingMethods": [
-        "ro.isdc.wro.extensions.http.handler.TestModelAsJsonRequestHandler#shouldNotProvideProxyUriForExternalResources"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wro4j-wro4j-247510680-20170627-151041_bugonly-firstCommit/wro4j-core",
+    "overallMetrics": {
+      "numberRunning": 844,
+      "numberPassing": 843,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 6,
       "failures": [
         {
-          "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...   {\n      \"name\": \"[test\",\n      \"resources\": [\n        {\n          \"type\": \"JS\",\n          \"minimize\": true,\n          \"uri\": \"test.js\",\n          \"proxyUri\": \"/wro/?wroAPI\u003dwroResources\u0026id\u003dtest.js\"\n        }\n      ]\n    },\n    {\n      \"name\": \"external\",\n      \"resources\": [\n        {\n          \"type\": \"JS\",\n          \"minimize\": false,\n          \"uri\": \"https://www.site.com/style.js\",\n          \"proxyUri\": \"https://www.site.com/style.js\"\n        },\n        {\n          \"type\": \"CSS\",\n          \"minimize\": true,\n          \"uri\": \"http://www.site.com/style.css\",\n          \"proxyUri\": \"http://www.site.com/style.cs]s\"\n        }\n      ]...\u003e but was:\u003c...   {\n      \"name\": \"[external\",\n      \"resources\": [\n        {\n          \"type\": \"JS\",\n          \"minimize\": false,\n          \"uri\": \"https://www.site.com/style.js\",\n          \"proxyUri\": \"https://www.site.com/style.js\"\n        },\n        {\n          \"type\": \"CSS\",\n          \"minimize\": true,\n          \"uri\": \"http://www.site.com/style.css\",\n          \"proxyUri\": \"http://www.site.com/style.css\"\n        }\n      ]\n    },\n    {\n      \"name\": \"test\",\n      \"resources\": [\n        {\n          \"type\": \"JS\",\n          \"minimize\": true,\n          \"uri\": \"test.js\",\n          \"proxyUri\": \"/wro/?wroAPI\u003dwroResources\u0026id\u003dtest.j]s\"\n        }\n      ]...\u003e",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ro.isdc.wro.util.concurrent.TestTaskExecutor",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ro.isdc.wro.util.concurrent.TestTaskExecutor",
+        "testMethod": "shouldBeFasterWhenRunningMultipleSlowTasks",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 348,
+    "numberTestFiles": 216,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:27:09 PM",
+    "reproductionDateEnd": "Feb 16, 2020 8:09:36 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 398257112,
+      "totalMemory": 633524224
+    },
+    "totalDuration": 6142,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wro4j-wro4j-247510680-20170627-151041_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
