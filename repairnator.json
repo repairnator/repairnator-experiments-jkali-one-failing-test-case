@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "sad-ufcg/back-end",
-  "failingModule": "/root/workspace/sad-ufcg/back-end/335885445",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 33,
-  "failing-test-cases": [
-    {
-      "className": "com.ufcg.sad.models.questionario.QuestionarioTest",
-      "failingMethods": [
-        "com.ufcg.sad.models.questionario.QuestionarioTest#testQuestionario"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 6:26:45 PM",
+    "reproductionDateEnd": "Feb 16, 2020 8:08:08 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 53260376,
+      "totalMemory": 241418240
+    },
+    "totalDuration": 6081,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-sad-ufcg-back-end-335885445-20180201-004457_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-sad-ufcg-back-end-335885445-20180201-004457_bugonly-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 33,
+      "numberPassing": 32,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected: java.util.ArrayList\u003c[]\u003e but was: java.util.HashSet\u003c[]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.ufcg.sad.models.questionario.QuestionarioTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.ufcg.sad.models.questionario.QuestionarioTest",
+        "testMethod": "testQuestionario",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected: java.util.ArrayList\u003c[]\u003e but was: java.util.HashSet\u003c[]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 65,
+    "numberTestFiles": 19,
+    "numberLibrariesFailingModule": 79,
+    "numberLines": 0
+  }
 }
