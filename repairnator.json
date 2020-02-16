@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 10,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/50d6c588a9e3...e64921f8d4c7",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/310791822/languagetool-language-modules/en",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 291,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.en.EnglishPatternRuleTest",
-      "failingMethods": [
-        "org.languagetool.rules.en.EnglishPatternRuleTest#testRules"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-310791822-20171203-104849_bugonly-firstCommit/languagetool-language-modules/en",
+    "overallMetrics": {
+      "numberRunning": 281,
+      "numberPassing": 280,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 10,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "English rule DIFFERENCE_ABOUT_BETWEEN[26]:\n\"There is not big differenceaabout the week and the weekend to me.\"\nErrors expected: 1\nErrors found   : 0\nMessage: The usual preposition for \"difference\" is \"between\" not \"about\".  Revise: \u003csuggestion\u003edifference between\u003c/suggestion\u003e.\nAnalyzed token readings: [/SENT_START*] There[there/EX*,there/RB*,there/UH*,B-NP-singular|E-NP-singular]  [ /null*] is[be/VBZ,B-VP]  [ /null*] not[not/RB,O]  [ /null*] big[big/JJ,big/RB,B-ADJP]  [ /null*] differenceaabout[differenceaabout/null,B-PP]  [ /null*] the[the/DT,B-NP-singular]  [ /null*] week[week/NN,E-NP-singular]  [ /null*] and[and/CC,O]  [ /null*] the[the/DT,B-NP-singular]  [ /null*] weekend[weekend/NN,E-NP-singular]  [ /null*] to[to/IN,to/TO,B-PP]  [ /null*] me[I/PRP,B-NP-singular|E-NP-singular] .[./.*,./SENT_END*,O]\nMatches: []",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.en.EnglishPatternRuleTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.en.EnglishPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "English rule DIFFERENCE_ABOUT_BETWEEN[26]:\n\"There is not big differenceaabout the week and the weekend to me.\"\nErrors expected: 1\nErrors found   : 0\nMessage: The usual preposition for \"difference\" is \"between\" not \"about\".  Revise: \u003csuggestion\u003edifference between\u003c/suggestion\u003e.\nAnalyzed token readings: [/SENT_START*] There[there/EX*,there/RB*,there/UH*,B-NP-singular|E-NP-singular]  [ /null*] is[be/VBZ,B-VP]  [ /null*] not[not/RB,O]  [ /null*] big[big/JJ,big/RB,B-ADJP]  [ /null*] differenceaabout[differenceaabout/null,B-PP]  [ /null*] the[the/DT,B-NP-singular]  [ /null*] week[week/NN,E-NP-singular]  [ /null*] and[and/CC,O]  [ /null*] the[the/DT,B-NP-singular]  [ /null*] weekend[weekend/NN,E-NP-singular]  [ /null*] to[to/IN,to/TO,B-PP]  [ /null*] me[I/PRP,B-NP-singular|E-NP-singular] .[./.*,./SENT_END*,O]\nMatches: []",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 709,
+    "numberTestFiles": 459,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:03 AM",
+    "reproductionDateEnd": "Feb 16, 2020 1:17:44 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 85665976,
+      "totalMemory": 430981120
+    },
+    "totalDuration": 5979,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 5686,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          5686
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-310791822-20171203-104849_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
