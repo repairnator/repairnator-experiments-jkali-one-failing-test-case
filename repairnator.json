@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "ljtfreitas/java-restify",
-  "bugCommit": "https://github.com/ljtfreitas/java-restify/commit/ba2b513b89e5",
-  "failingModule": "/root/workspace/ljtfreitas/java-restify/375700757/java-restify-json-jsonb-converter",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 729,
-  "failing-test-cases": [
-    {
-      "className": "com.github.ljtfreitas.restify.http.client.message.converter.json.JsonBMessageConverterSpiTest",
-      "failingMethods": [
-        "com.github.ljtfreitas.restify.http.client.message.converter.json.JsonBMessageConverterSpiTest#shouldDiscoveryServiceProviders"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:38 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:05:25 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 29393872,
+      "totalMemory": 97648640
+    },
+    "totalDuration": 222,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ljtfreitas-java-restify-375700757-20180507-034308-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ljtfreitas-java-restify-375700757-20180507-034308-firstCommit/java-restify-json-jsonb-converter",
+    "overallMetrics": {
+      "numberRunning": 729,
+      "numberPassing": 728,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": " Expected: iterable containing [an instance of com.github.ljtfreitas.restify.http.client.message.converter.json.JsonBMessageConverter]      but: No item matched: an instance of com.github.ljtfreitas.restify.http.client.message.converter.json.JsonBMessageConverter",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.ljtfreitas.restify.http.client.message.converter.json.JsonBMessageConverterSpiTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.ljtfreitas.restify.http.client.message.converter.json.JsonBMessageConverterSpiTest",
+        "testMethod": "shouldDiscoveryServiceProviders",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: iterable containing [an instance of com.github.ljtfreitas.restify.http.client.message.converter.json.JsonBMessageConverter]\n     but: No item matched: an instance of com.github.ljtfreitas.restify.http.client.message.converter.json.JsonBMessageConverter",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 41,
+    "numberPlugins": 0,
+    "numberSourceFiles": 494,
+    "numberTestFiles": 216,
+    "numberLibrariesFailingModule": 79,
+    "numberLines": 0
+  },
+  "commits": {}
 }
