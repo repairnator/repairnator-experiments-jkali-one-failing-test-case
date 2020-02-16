@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "dropwizard/metrics",
-  "bugCommit": "https://github.com/dropwizard/metrics/compare/5d53a9858640...ff4573de3681",
-  "failingModule": "/root/workspace/dropwizard/metrics/324657190/metrics-jvm",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 287,
-  "failing-test-cases": [
-    {
-      "className": "com.codahale.metrics.jvm.CpuTimeClockTest",
-      "failingMethods": [
-        "com.codahale.metrics.jvm.CpuTimeClockTest#cpuTimeClock"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:11 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:43:16 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 23726464,
+      "totalMemory": 87678976
+    },
+    "totalDuration": 360,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 98,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          98
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-324661972-20180103-180435-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dropwizard-metrics-324661972-20180103-180435-firstCommit/metrics-core",
+    "overallMetrics": {
+      "numberRunning": 225,
+      "numberPassing": 224,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpecting:\n  \u003c1.514999492138E12\u003e\nto be close to:\n  \u003c1.514999492383E12\u003e\nby less than \u003c200.0\u003e but difference was \u003c245.0\u003e.\n(a difference of exactly \u003c200.0\u003e being considered valid)",
-          "isError": false
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.codahale.metrics.InstrumentedScheduledExecutorServiceTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.codahale.metrics.InstrumentedScheduledExecutorServiceTest",
+        "testMethod": "testScheduleFixedRateCallable",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[0]L\u003e but was:\u003c[1]L\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 23,
+    "numberPlugins": 0,
+    "numberSourceFiles": 130,
+    "numberTestFiles": 110,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  }
 }
