@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "microservicesteam/project-adele",
-  "failingModule": "/root/workspace/microservicesteam/project-adele/367794047/adele-payment-manager",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.junit.ComparisonFailure"
-  ],
-  "totalNumberRunningTests": 55,
-  "failing-test-cases": [
-    {
-      "className": "com.microservicesteam.adele.payment.paypal.PaymentRequestMapperTest",
-      "failingMethods": [
-        "com.microservicesteam.adele.payment.paypal.PaymentRequestMapperTest#mapRequestToPayment"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 3:01:42 PM",
+    "reproductionDateEnd": "Feb 16, 2020 3:07:53 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 39223144,
+      "totalMemory": 127660032
+    },
+    "totalDuration": 368,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 116,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          116
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-microservicesteam-project-adele-367794047-20180417-203750-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-microservicesteam-project-adele-367794047-20180417-203750-firstCommit/adele-payment-manager",
+    "overallMetrics": {
+      "numberRunning": 55,
+      "numberPassing": 54,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "org.junit.ComparisonFailure",
-          "failureDetail": "expected:\u003c...al\": \"10.00\"\n      }[]\n    }\n  ],\n  \"redir...\u003e but was:\u003c...al\": \"10.00\"\n      }[,\n      \"description\": \"This is the payment of your tickets!\",\n      \"item_list\": {\n        \"items\": [\n          {\n            \"name\": \"Adele 2018\",\n            \"description\": \"Adele concert ticket\",\n            \"quantity\": \"1\",\n            \"price\": \"10.00\",\n            \"currency\": \"EUR\"\n          }\n        ]\n      }]\n    }\n  ],\n  \"redir...\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.microservicesteam.adele.payment.paypal.PaymentRequestMapperTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.microservicesteam.adele.payment.paypal.PaymentRequestMapperTest",
+        "testMethod": "mapRequestToPayment",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...al\": \"10.00\"\n      }[]\n    }\n  ],\n  \"redir...\u003e but was:\u003c...al\": \"10.00\"\n      }[,\n      \"description\": \"This is the payment of your tickets!\",\n      \"item_list\": {\n        \"items\": [\n          {\n            \"name\": \"Adele 2018\",\n            \"description\": \"Adele concert ticket\",\n            \"quantity\": \"1\",\n            \"price\": \"10.00\",\n            \"currency\": \"EUR\"\n          }\n        ]\n      }]\n    }\n  ],\n  \"redir...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberPlugins": 0,
+    "numberSourceFiles": 77,
+    "numberTestFiles": 25,
+    "numberLibrariesFailingModule": 36,
+    "numberLines": 0
+  },
+  "commits": {}
 }
