@@ -1,0 +1,193 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.softserve.academy:Spaced.Repetition:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-test:jar -> duplicate declaration of version (?) @ line 144, column 21
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.jayway.jsonpath:json-path:jar -> version (?) vs 2.4.0 @ line 173, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spaced.Repetition 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Spaced.Repetition ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 35 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Spaced.Repetition ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Spaced.Repetition ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Spaced.Repetition ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /scratch/dginelli/workspace/repairnator-repairnator-experiments-koldovsky-orlp-server-335574836-20180131-122314_bugonly-firstCommit/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ Spaced.Repetition ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-koldovsky-orlp-server-335574836-20180131-122314_bugonly-firstCommit/target/surefire-reports
+[INFO] Downloading: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 1.4 KB/sec)
+[INFO] Downloading: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 9.2 KB/sec)
+[INFO] Downloading: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.spring.io/libs-release/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 138.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.softserve.academy.spaced.repetition.controller.UserControllerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.651 sec - in com.softserve.academy.spaced.repetition.controller.UserControllerTest
+Running com.softserve.academy.spaced.repetition.controller.UserProfileControllerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.528 sec - in com.softserve.academy.spaced.repetition.controller.UserProfileControllerTest
+Running com.softserve.academy.spaced.repetition.controller.CourseCommentControllerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.423 sec - in com.softserve.academy.spaced.repetition.controller.CourseCommentControllerTest
+Running com.softserve.academy.spaced.repetition.controller.DeckRatingControllerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in com.softserve.academy.spaced.repetition.controller.DeckRatingControllerTest
+Running com.softserve.academy.spaced.repetition.controller.CourseControllerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.375 sec - in com.softserve.academy.spaced.repetition.controller.CourseControllerTest
+Running com.softserve.academy.spaced.repetition.controller.UserCardQueueControllerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 sec - in com.softserve.academy.spaced.repetition.controller.UserCardQueueControllerTest
+Running com.softserve.academy.spaced.repetition.controller.AuditControllerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in com.softserve.academy.spaced.repetition.controller.AuditControllerTest
+Running com.softserve.academy.spaced.repetition.controller.CardControllerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in com.softserve.academy.spaced.repetition.controller.CardControllerTest
+Running com.softserve.academy.spaced.repetition.controller.CourseRatingControllerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec - in com.softserve.academy.spaced.repetition.controller.CourseRatingControllerTest
+Running com.softserve.academy.spaced.repetition.controller.DeckControllerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 sec - in com.softserve.academy.spaced.repetition.controller.DeckControllerTest
+Running com.softserve.academy.spaced.repetition.service.validator.ValidatorsTest
+ .----------------.  .----------------.  .----------------.  .----------------.
+| .--------------. || .--------------. || .--------------. || .--------------. |
+| |     ____     | || |  _______     | || |   _____      | || |   ______     | |
+| |   .'    `.   | || | |_   __ \    | || |  |_   _|     | || |  |_   __ \   | |
+| |  /  .--.  \  | || |   | |__) |   | || |    | |       | || |    | |__) |  | |
+| |  | |    | |  | || |   |  __ /    | || |    | |   _   | || |    |  ___/   | |
+| |  \  `--'  /  | || |  _| |  \ \_  | || |   _| |__/ |  | || |   _| |_      | |
+| |   `.____.'   | || | |____| |___| | || |  |________|  | || |  |_____|     | |
+| |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'
+2020-02-16 11:42:42.786  INFO 490611 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : Starting ValidatorsTest on b-cn0832.hpc2n.umu.se with PID 490611 (started by dginelli in /scratch/dginelli/workspace/repairnator-repairnator-experiments-koldovsky-orlp-server-335574836-20180131-122314_bugonly-firstCommit)
+2020-02-16 11:42:42.794  INFO 490611 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : The following profiles are active: testdatabase
+2020-02-16 11:42:47.823  INFO 490611 --- [           main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.3 by Boxfuse
+2020-02-16 11:42:47.832  INFO 490611 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:mem:testdb (H2 1.4)
+2020-02-16 11:42:47.999  INFO 490611 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.063s)
+2020-02-16 11:42:48.034  INFO 490611 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2020-02-16 11:42:48.082  INFO 490611 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2020-02-16 11:42:48.095  INFO 490611 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.0 - Create initial schema
+2020-02-16 11:42:48.569  INFO 490611 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1.1 - Fill tables
+2020-02-16 11:42:48.941  INFO 490611 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.916s)
+2020-02-16 11:43:06.726  INFO 490611 --- [           main] c.s.a.s.r.s.validator.ValidatorsTest     : Started ValidatorsTest in 24.66 seconds (JVM running for 33.092)
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.498 sec <<< FAILURE! - in com.softserve.academy.spaced.repetition.service.validator.ValidatorsTest
+testEmailExists(com.softserve.academy.spaced.repetition.service.validator.ValidatorsTest)  Time elapsed: 0.234 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Email already [exists]!> but was:<Email already [used]!>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.softserve.academy.spaced.repetition.service.validator.ValidatorsTest.testEmailExists(ValidatorsTest.java:123)
+
+Running com.softserve.academy.spaced.repetition.service.AccountServiceTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec - in com.softserve.academy.spaced.repetition.service.AccountServiceTest
+Running com.softserve.academy.spaced.repetition.service.FolderServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.softserve.academy.spaced.repetition.service.FolderServiceTest
+Running com.softserve.academy.spaced.repetition.service.DeckCommentServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.softserve.academy.spaced.repetition.service.DeckCommentServiceTest
+Running com.softserve.academy.spaced.repetition.service.RegistrationServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.softserve.academy.spaced.repetition.service.RegistrationServiceTest
+Running com.softserve.academy.spaced.repetition.service.DeckServiceTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in com.softserve.academy.spaced.repetition.service.DeckServiceTest
+Running com.softserve.academy.spaced.repetition.service.AuditServiceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in com.softserve.academy.spaced.repetition.service.AuditServiceTest
+Running com.softserve.academy.spaced.repetition.service.CardServiceTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec - in com.softserve.academy.spaced.repetition.service.CardServiceTest
+Running com.softserve.academy.spaced.repetition.service.CourseServiceTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in com.softserve.academy.spaced.repetition.service.CourseServiceTest
+Running com.softserve.academy.spaced.repetition.service.CourseRatingServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.softserve.academy.spaced.repetition.service.CourseRatingServiceTest
+Running com.softserve.academy.spaced.repetition.service.DeckRatingServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.softserve.academy.spaced.repetition.service.DeckRatingServiceTest
+Running com.softserve.academy.spaced.repetition.service.CardRatingServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.softserve.academy.spaced.repetition.service.CardRatingServiceTest
+Running com.softserve.academy.spaced.repetition.service.UserServiceTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in com.softserve.academy.spaced.repetition.service.UserServiceTest
+Running com.softserve.academy.spaced.repetition.service.UserCardQueueServiceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.softserve.academy.spaced.repetition.service.UserCardQueueServiceTest
+Running com.softserve.academy.spaced.repetition.service.CategoryServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.softserve.academy.spaced.repetition.service.CategoryServiceTest
+Running com.softserve.academy.spaced.repetition.service.CourseCommentServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.softserve.academy.spaced.repetition.service.CourseCommentServiceTest
+Running com.softserve.academy.spaced.repetition.service.AccessToUrlServiceTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.softserve.academy.spaced.repetition.service.AccessToUrlServiceTest
+Running com.softserve.academy.spaced.repetition.service.ImageServiceTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.softserve.academy.spaced.repetition.service.ImageServiceTest
+Running com.softserve.academy.spaced.repetition.service.AccountVerificationByEmailServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.softserve.academy.spaced.repetition.service.AccountVerificationByEmailServiceTest
+Running com.softserve.academy.spaced.repetition.security.service.AuthenticationRestServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.softserve.academy.spaced.repetition.security.service.AuthenticationRestServiceTest
+Running com.softserve.academy.spaced.repetition.security.JwtTokenUtilTest
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImF1ZGllbmNlIjoibW9iaWxlIiwiY3JlYXRlZCI6MTU4MTg0OTc5NjEwNCwiZXhwIjoxNTgxODUwNzkxfQ.1JXWHrnB7RbOgnGSyqQuImlaJ2T0CAhTay24H_raZDmco4Y1YqxPRIK7Du6vCfyKSp0BEOG720zyqSknX_9mWg
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.669 sec - in com.softserve.academy.spaced.repetition.security.JwtTokenUtilTest
+
+Results :
+
+Failed tests: 
+  ValidatorsTest.testEmailExists:123 expected:<Email already [exists]!> but was:<Email already [used]!>
+
+Tests run: 275, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 53.025 s
+[INFO] Finished at: 2020-02-16T11:43:11+01:00
+[INFO] Final Memory: 38M/90M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project Spaced.Repetition: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-koldovsky-orlp-server-335574836-20180131-122314_bugonly-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project Spaced.Repetition: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-koldovsky-orlp-server-335574836-20180131-122314_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-koldovsky-orlp-server-335574836-20180131-122314_bugonly-firstCommit/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:82)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:254)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
