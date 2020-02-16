@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 6,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "keycloak/keycloak",
-  "failingModule": "/root/workspace/keycloak/keycloak/339178562/wildfly/server-subsystem",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 163,
-  "failing-test-cases": [
-    {
-      "className": "org.keycloak.subsystem.server.extension.SubsystemParsingTestCase",
-      "failingMethods": [
-        "org.keycloak.subsystem.server.extension.SubsystemParsingTestCase#testSubsystem"
-      ],
-      "erroringMethods": [],
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-keycloak-keycloak-339178562-20180208-233750-firstCommit/wildfly/server-subsystem",
+    "overallMetrics": {
+      "numberRunning": 157,
+      "numberPassing": 156,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 6,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "ModelNode with type\u003d\u003dSTRING contains an expression formatted string: classpath:${jboss.home.dir}/providers/*",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.keycloak.subsystem.server.extension.SubsystemParsingTestCase",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.keycloak.subsystem.server.extension.SubsystemParsingTestCase",
+        "testMethod": "testSubsystem",
+        "failureName": "java.lang.AssertionError",
+        "detail": "ModelNode with type\u003d\u003dSTRING contains an expression formatted string: classpath:${jboss.home.dir}/providers/*",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 156,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2985,
+    "numberTestFiles": 92,
+    "numberLibrariesFailingModule": 132,
+    "numberLines": 0
+  },
+  "commits": {},
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:38:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 12:26:58 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 81946840,
+      "totalMemory": 881078272
+    },
+    "totalDuration": 2928,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1855,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1855
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-keycloak-keycloak-339178562-20180208-233750-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
