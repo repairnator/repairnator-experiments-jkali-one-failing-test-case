@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "dotwebstack/dotwebstack-framework",
-  "bugCommit": "https://github.com/dotwebstack/dotwebstack-framework/compare/e299f855c156^...4958c183dab6",
-  "failingModule": "/root/workspace/dotwebstack/dotwebstack-framework/369997175/integration-test",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 841,
-  "failing-test-cases": [
-    {
-      "className": "org.dotwebstack.framework.frontend.openapi.OpenApiIntegrationTest",
-      "failingMethods": [
-        "org.dotwebstack.framework.frontend.openapi.OpenApiIntegrationTest#get_GetSpec_ThroughOpenApi"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Feb 16, 2020 11:37:05 AM",
+    "reproductionDateEnd": "Feb 16, 2020 11:40:20 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 46838192,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 191,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-369997175-20180423-105219-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-369997175-20180423-105219-firstCommit/integration-test",
+    "overallMetrics": {
+      "numberRunning": 841,
+      "numberPassing": 840,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\nExpected: \"text/yaml\"\n     but: was \"application/problem+json\"",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.dotwebstack.framework.frontend.openapi.OpenApiIntegrationTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.dotwebstack.framework.frontend.openapi.OpenApiIntegrationTest",
+        "testMethod": "get_GetSpec_ThroughOpenApi",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: \"text/yaml\"\n     but: was \"application/problem+json\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 230,
+    "numberTestFiles": 172,
+    "numberLibrariesFailingModule": 165,
+    "numberLines": 0
+  },
+  "commits": {}
 }
