@@ -1,0 +1,369 @@
+Feb 16, 2020 11:16:12 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: Database already exists
+Feb 16, 2020 11:16:12 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: Database already exists
+[Fatal Error] GameXmlInvalidFormat.xml:13:3: The element type "room_info" must be terminated by the matching end-tag "</room_info>".
+Feb 16, 2020 11:16:14 PM edu.cmu.tartan.xml.XmlParser parseXmlFromFile
+SEVERE: SAXParseException
+[Fatal Error] :13:3: The element type "room_info" must be terminated by the matching end-tag "</room_info>".
+Feb 16, 2020 11:16:14 PM edu.cmu.tartan.xml.XmlParser parseXmlFromString
+SEVERE: SAXParseException
+[Fatal Error] :13:3: The element type "room_info" must be terminated by the matching end-tag "</room_info>".
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForGameStart
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="REQ_GAME_START"><game_start ng_reason="NO_PLAYERS" result="NG"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForGameStart
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="REQ_GAME_START"><game_start ng_reason="OK" result="OK"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForLogin
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="REQ_LOGIN"><login_info ng_reason="OK" result="OK"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForAddUser
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="ADD_USER"><user_info add_result="OK" ng_reason="OK"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForGameUpload
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="UPLOAD_MAP_DESIGN"><game_info ng_reason="INVALID_INFO" result="NG"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForGameUpload
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="UPLOAD_MAP_DESIGN"><game_info ng_reason="OK" result="OK"/></message>
+[Fatal Error] GameXmlInvalidFormat.xml:13:3: The element type "room_info" must be terminated by the matching end-tag "</room_info>".
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlParser parseXmlFromFile
+SEVERE: SAXParseException
+[Fatal Error] GameXmlInvalidFormat.xml:13:3: The element type "room_info" must be terminated by the matching end-tag "</room_info>".
+[Fatal Error] :13:3: The element type "room_info" must be terminated by the matching end-tag "</room_info>".
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlParser parseXmlFromString
+SEVERE: SAXParseException
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForEventMessage
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="EVENT_MESSAGE"><common_info user_id="eventid"/><display text="hello client&#10; this is message from server"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForLogin
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="REQ_LOGIN"><login_info ng_reason="SERVER_BUSY" result="NG"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForAddUser
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="ADD_USER"><user_info id="addUserId" pw="addUserPw"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForEventMessage
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="EVENT_MESSAGE"><common_info user_id="eventId"/><display text="hello client&#10;this is message from server"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForGameStartEnd
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_GAME_END"><common_info user_id="endId"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForHeartBeat
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="HEART_BEAT"><common_info user_id="heartBeatId"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForGameStartEnd
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_GAME_START"><common_info user_id="startId"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForGameEnd
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="GAME_END"><common_info user_id="gameEndId"/><game_result result="win" text="cong"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForUploadMap
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="designer" type="UPLOAD_MAP_DESIGN">
+	<room_info room_cnt="14">
+		<room east="1" index="0" type="normal"/>	<!-- index 0 is start room -->
+		<room east="6" index="1" item_list="shovel-document" north="2" type="normal" west="0"/>
+		<room index="2" north="3" south="1" type="normal" west="4"/>
+		<room index="3" south="2" type="normal"/>
+		<room east="2" index="4" key_item="key:3" lock_item="lock:2" type="lockable" west="5"/>
+		<room east="4" index="5" item_list="torch" type="normal"/>
+		<room index="6" south="7" type="dark" west="1"/>
+		<room index="7" north="6" south="8" type="normal"/>
+		<room east="13" index="8" item_list="microwave" north="7" type="excavatable" west="9"/>
+		<room east="8" index="9" type="normal" west="10"/>
+		<room east="9" index="10" north="12" obstacle="fridge:9" type="obscured" west="11"/>
+		<room east="10" index="11" type="normal"/>
+		<room hidden_item="diamond" index="12" item_list="food" south="10" type="normal"/>
+		<room index="13" require_item="gold:11" type="require" west="8"/>
+		<!-- each room informations..  -->
+	</room_info>
+	<goal_info goal_cnt="3">
+		<goal index="0" object="diamond-shovel" type="collect"/>
+		<goal index="1" object="6-11-12-13" type="explore"/>
+		<goal index="2" object="100" type="point"/>
+	</goal_info>
+</message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForLogin
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_LOGIN"><login_info id="loginUserId" pw="loginUserPw" role="player"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForCommand
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="SEND_COMMAND"><command text="go south" user_id="commandId"/></message>
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.xml.XmlParser parseXmlFromString
+SEVERE: IllegalArgumentException
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.Game configureGame
+SEVERE: Game loading failure. Exception: 
+edu.cmu.tartan.games.InvalidGameException: Game improperly configured
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.Game configureGame
+SEVERE: Game improperly configured
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.LocalGame readGameData
+SEVERE: Game loading failure. Exception: 
+java.io.FileNotFoundException: test_save_load.dat (No such file or directory)
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.LocalGame readGameData
+SEVERE: test_save_load.dat (No such file or directory)
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.Game configureGame
+SEVERE: Game loading failure. Exception: 
+edu.cmu.tartan.games.InvalidGameException: Game improperly configured
+Feb 16, 2020 11:16:15 PM edu.cmu.tartan.Game configureGame
+SEVERE: Game improperly configured
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: Database already exists
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.SocketServer startSocket
+WARNING: Address already in use (Bind failed)
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.DesignerSocketServer startSocket
+WARNING: Address already in use (Bind failed)
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.SocketClient connectToServer
+INFO: Connected to server
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.SocketClient stopSocket
+INFO: Close a client socket
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.SocketClient connectToServer
+INFO: Connected to server
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForLogin
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_LOGIN"><login_info id="designer" pw="fa876f642212ea67a08f0a56fbcf672e4e2c1f51a2d7d6aba6ee84a8bfca2340" role="designer"/></message>
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.SocketClient sendMessage
+INFO: Send to Server : <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_LOGIN"><login_info id="designer" pw="fa876f642212ea67a08f0a56fbcf672e4e2c1f51a2d7d6aba6ee84a8bfca2340" role="designer"/></message>
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.SocketClient receiveMessage
+INFO: Received message : <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="REQ_LOGIN"><login_info ng_reason="OK" result="OK"/></message>
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.SocketClient receiveMessage
+INFO: Received message type : REQ_LOGIN
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForLogin
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_LOGIN"><login_info id="developer" pw="fa876f642212ea67a08f0a56fbcf672e4e2c1f51a2d7d6aba6ee84a8bfca2340" role="player"/></message>
+Feb 16, 2020 11:16:16 PM edu.cmu.tartan.socket.SocketClient sendMessage
+INFO: Send to Server : <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_LOGIN"><login_info id="developer" pw="fa876f642212ea67a08f0a56fbcf672e4e2c1f51a2d7d6aba6ee84a8bfca2340" role="player"/></message>
+Feb 16, 2020 11:16:26 PM edu.cmu.tartan.LocalGame readGameData
+SEVERE: Game loading failure. Exception: 
+java.io.FileNotFoundException: save.dat (No such file or directory)
+Feb 16, 2020 11:16:26 PM edu.cmu.tartan.LocalGame readGameData
+SEVERE: save.dat (No such file or directory)
+Feb 16, 2020 11:16:26 PM edu.cmu.tartan.socket.SocketClient connectToServer
+INFO: Connected to server
+Feb 16, 2020 11:16:26 PM edu.cmu.tartan.socket.SocketClient stopSocket
+INFO: Close a client socket
+Feb 16, 2020 11:16:26 PM edu.cmu.tartan.xml.XmlWriterClient makeXmlForGameStartEnd
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_GAME_END"><common_info user_id=""/></message>
+Feb 16, 2020 11:16:26 PM edu.cmu.tartan.socket.SocketClient sendMessage
+INFO: Send to Server : <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="server" sender="client" type="REQ_GAME_END"><common_info user_id=""/></message>
+Feb 16, 2020 11:16:36 PM edu.cmu.tartan.socket.SocketClient stopSocket
+INFO: Close a client socket
+Feb 16, 2020 11:16:37 PM edu.cmu.tartan.xml.XmlWriter saveXmlStringToFile
+SEVERE: FileNotFoundException
+Feb 16, 2020 11:16:37 PM edu.cmu.tartan.xml.XmlWriter overWriteFile
+SEVERE: IOException
+Feb 16, 2020 11:16:37 PM edu.cmu.tartan.socket.SocketServer login
+INFO: Added a client to a map : false
+Feb 16, 2020 11:16:37 PM edu.cmu.tartan.socket.SocketServer stopSocket
+INFO: Close a server socket
+Feb 16, 2020 11:16:37 PM edu.cmu.tartan.socket.SocketServer login
+INFO: Added a client to a map : false
+Feb 16, 2020 11:16:37 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: Database already exists
+Feb 16, 2020 11:16:37 PM edu.cmu.tartan.socket.SocketServer login
+INFO: Added a client to a map : false
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.UserClientThread stopSocket
+INFO: Closing user connection
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.config.Config readPropertyFile
+SEVERE: FileNotFound : /scratch/dginelli/workspace/repairnator-repairnator-experiments-zhyuny-TartanAdventure-411402096-20180802-195328-firstCommit/resources/config.properties (No such file or directory)
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.Main main
+SEVERE: Properties file doesn't exist. : /scratch/dginelli/workspace/repairnator-repairnator-experiments-zhyuny-TartanAdventure-411402096-20180802-195328-firstCommit/resources/config.properties
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.SocketServer startSocket
+WARNING: Address already in use (Bind failed)
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: Database already exists
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.DesignerSocketServer startSocket
+WARNING: Address already in use (Bind failed)
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForEventMessage
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="EVENT_MESSAGE"><common_info user_id="quit"/><display text="quit exits the game"/></message>
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.SocketServer stopSocket
+INFO: Close a server socket
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.DesignerSocketServer stopSocket
+WARNING: Close a server designer socket
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.config.Config readPropertyFile
+SEVERE: FileNotFound : /scratch/dginelli/workspace/repairnator-repairnator-experiments-zhyuny-TartanAdventure-411402096-20180802-195328-firstCommit/resources/config.properties (No such file or directory)
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.Main main
+SEVERE: Properties file doesn't exist. : /scratch/dginelli/workspace/repairnator-repairnator-experiments-zhyuny-TartanAdventure-411402096-20180802-195328-firstCommit/resources/config.properties
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.Main main
+INFO: Use default config.properties location
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.Main main
+INFO: Use default config.properties location
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.SocketServer startSocket
+WARNING: Address already in use (Bind failed)
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: Database already exists
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.DesignerSocketServer startSocket
+WARNING: Address already in use (Bind failed)
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.xml.XmlWriterServer makeXmlForEventMessage
+INFO: <?xml version="1.0" encoding="UTF-8" standalone="no"?><message receiver="client" sender="server" type="EVENT_MESSAGE"><common_info user_id="quit"/><display text="quit exits the game"/></message>
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.SocketServer stopSocket
+INFO: Close a server socket
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.socket.DesignerSocketServer stopSocket
+WARNING: Close a server designer socket
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: A new database(SQLite) has been created.
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: Database already exists
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: A new database(SQLite) has been created.
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: A new database(SQLite) has been created.
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: A new database(SQLite) has been created.
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: A new database(SQLite) has been created.
+Feb 16, 2020 11:16:39 PM edu.cmu.tartan.db.DbAccessor createNewDatabase
+INFO: A new database(SQLite) has been created.
+estCommandGetwithGameManager
+testInterfaceReset
+SecondTestCommand
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s - in edu.cmu.tartan.TestGameInterface
+[INFO] Running edu.cmu.tartan.item.TestItem
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in edu.cmu.tartan.item.TestItem
+[INFO] Running edu.cmu.tartan.item.TestFood
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in edu.cmu.tartan.item.TestFood
+[INFO] Running edu.cmu.tartan.item.TestStringForItems
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in edu.cmu.tartan.item.TestStringForItems
+[INFO] Running edu.cmu.tartan.item.TestLock
+Room unlocked.
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in edu.cmu.tartan.item.TestLock
+[INFO] Running edu.cmu.tartan.item.TestIKeycardReader
+...
+...
+...
+installed message
+...
+...
+...
+installed message
+...
+...
+...
+installed message
+...
+...
+...
+installed message
+...
+...
+...
+installed message
+...
+...
+...
+installed message
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.818 s - in edu.cmu.tartan.item.TestIKeycardReader
+[INFO] Running edu.cmu.tartan.xml.TestXmlParser
+roomDontHaveKey : shovel
+roomDontHaveKey isLocked: true
+roomDontHaveKey : document
+roomDontHaveKey isLocked: true
+roomHaveKey : key
+roomHaveKey isLocked: false
+[WARNING] Tests run: 52, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.533 s - in edu.cmu.tartan.xml.TestXmlParser
+[INFO] Running edu.cmu.tartan.xml.TestXmlParserClient
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 s - in edu.cmu.tartan.xml.TestXmlParserClient
+[INFO] Running edu.cmu.tartan.TestSaveAndLoad
+Welcome to Tartan Adventure (1.0), by Tartan Inc..
+Game: This is [Collect Item] [Explore Room] [Get Point] Game
+To get help type 'help' ... let's begin
+
+Welcome to Tartan Adventure (1.0), by Tartan Inc..
+Game: This is [Collect Item] [Explore Room] [Get Point] Game
+To get help type 'help' ... let's begin
+
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in edu.cmu.tartan.TestSaveAndLoad
+[INFO] Running edu.cmu.tartan.TestLocalGame
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.325 s - in edu.cmu.tartan.TestLocalGame
+[INFO] Running edu.cmu.tartan.TestNetwork
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 10.584 s <<< FAILURE! - in edu.cmu.tartan.TestNetwork
+[ERROR] testLogin  Time elapsed: 10.58 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at edu.cmu.tartan.TestNetwork.testLogin(TestNetwork.java:87)
+
+[INFO] Running edu.cmu.tartan.client.TestClient
+[WARNING] Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 11.056 s - in edu.cmu.tartan.client.TestClient
+[INFO] Running edu.cmu.tartan.TestGameValidate
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in edu.cmu.tartan.TestGameValidate
+[INFO] Running edu.cmu.tartan.TestRandom
+[WARNING] Tests run: 140, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 2.1 s - in edu.cmu.tartan.TestRandom
+[INFO] Running edu.cmu.tartan.TestMain
+testInvalidArgs
+testServerModeWithInvalidCommand
+testClientModeWithInvalidCommand
+testClientMode
+testInvalidArgsWithNoArgs
+testNoArgsWithNoArgs
+testNoArgs
+testServerMode
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in edu.cmu.tartan.TestMain
+[INFO] Running edu.cmu.tartan.TestGameContext
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in edu.cmu.tartan.TestGameContext
+[INFO] Running edu.cmu.tartan.TestPlayer
+You don't have this item to drop
+You scored 40 points.
+You scored 10 points.
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in edu.cmu.tartan.TestPlayer
+[INFO] Running edu.cmu.tartan.goal.TestGoal
+You scored 20 points.
+You scored 20 points.
+You scored 50 points.
+You scored 50 points.
+You scored 20 points.
+You scored 20 points.
+1 out of 2 rooms.
+You have explored 1 out of 2 rooms.
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in edu.cmu.tartan.goal.TestGoal
+[INFO] Running edu.cmu.tartan.db.TestDbAccessor
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in edu.cmu.tartan.db.TestDbAccessor
+[INFO] Running edu.cmu.tartan.socket.TestUserClientThread
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 s - in edu.cmu.tartan.socket.TestUserClientThread
+[INFO] Running edu.cmu.tartan.TestServerGame
+Welcome to Tartan Adventure (1.0), by Tartan Inc..
+Game: This is [Collect Item] [Explore Room] [Get Point] Game
+To get help type 'help' ... let's begin
+
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in edu.cmu.tartan.TestServerGame
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TestNetwork.testLogin:87 expected: <true> but was: <false>
+[INFO] 
+[ERROR] Tests run: 415, Failures: 1, Errors: 0, Skipped: 11
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 36.892 s
+[INFO] Finished at: 2020-02-16T23:16:40+01:00
+[INFO] Final Memory: 17M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project TartanAdventure: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zhyuny-TartanAdventure-411402096-20180802-195328-firstCommit/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project TartanAdventure: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zhyuny-TartanAdventure-411402096-20180802-195328-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-zhyuny-TartanAdventure-411402096-20180802-195328-firstCommit/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+	at org.apache.maven.plugin.surefire.SurefireHelper.throwException(SurefireHelper.java:240)
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:112)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:364)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1052)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:868)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
