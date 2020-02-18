@@ -19,7 +19,7 @@
 
 ```
 
-Changing the if condition to `if (true)`, the source code runs every time the `then branch`. This means that:
+Changing the if condition to `if (true)`, the program runs every time the `then branch`. This means that:
   
 - The test cases don't cover all the possible behaviours of the program;
 - Is the `else branch` correct?
