@@ -82,3 +82,27 @@ Hypotheses that can be formulated:
 - The test cases don't cover all the possible behaviours of the program;
 - Is the `if condition` correct?
 - Are the values of the objects used to do the comparison correct?
+
+### repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [FifoQueueTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/733c76e58890cea2d4ce004760de719ae04ca826/k8s-api/src/test/java/io/enmasse/k8s/api/cache/FifoQueueTest.java#L50) | [FifoQueue.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/733c76e58890cea2d4ce004760de719ae04ca826/k8s-api/src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java#L54)|
+
+```diff
+--- /src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java
++++ /src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java
+@@ -44,7 +44,6 @@
+ 			return;
+ 		}
+ 		java.util.List<io.enmasse.k8s.api.cache.FifoQueue.Event<T>> events = new java.util.ArrayList<>();
+-		queue.drainTo(events);
+ 		java.lang.String key = null;
+ 		if (event.obj != null) {
+ 			key = keyExtractor.getKey(event.obj);
+```
+Hypotheses that can be formulated:
+
+- Is the method `drainTo` correct?
+- Is the parameter `events` correct?
+- Is the object `queue` correct?
