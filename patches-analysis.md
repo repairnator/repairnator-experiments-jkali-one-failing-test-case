@@ -26,7 +26,25 @@ Changing the if condition to `if (true)`, the program runs every time the `then 
 - Is the `if condition` correct?
 
 
+### repairnator-repairnator-experiments-AxonFramework-AxonFramework-350737857-20180308-102725-firstCommit
 
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| junit.framework.AssertionFailedError | [EmbeddedEventStoreTest.java](https://github.com/dginelli/repairnator-experiments-jkali-one-failing-test-case/blob/d69365603aada28119b8c9c7f43bc766401c16f9/core/src/test/java/org/axonframework/eventsourcing/eventstore/EmbeddedEventStoreTest.java#L213) | [ContextAwareSingleEntryMultiUpcaster.java](https://github.com/dginelli/repairnator-experiments-jkali-one-failing-test-case/blob/d69365603aada28119b8c9c7f43bc766401c16f9/core/src/main/java/org/axonframework/serialization/upcasting/ContextAwareSingleEntryMultiUpcaster.java#L40)|
 
-
-
+```diff
+--- /src/main/java/org/axonframework/serialization/upcasting/ContextAwareSingleEntryMultiUpcaster.java
++++ /src/main/java/org/axonframework/serialization/upcasting/ContextAwareSingleEntryMultiUpcaster.java
+@@ -6,7 +6,7 @@
+ 	public java.util.stream.Stream<T> upcast(java.util.stream.Stream<T> intermediateRepresentations) {
+ 		C context = buildContext();
+ 		return intermediateRepresentations.flatMap(( entry) -> {
+-			if (!canUpcast(entry, context)) {
++			if (false) {
+ 				return java.util.stream.Stream.of(entry);
+ 			}
+ 			return java.util.Objects.requireNonNull(doUpcast(entry, context));
+```
+- The test cases don't cover all the possible behaviours of the program;
+- Is the method used in the `if condition` correct?
+- Is the `then branch` correct?
