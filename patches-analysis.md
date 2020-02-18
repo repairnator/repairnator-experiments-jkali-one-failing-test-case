@@ -19,12 +19,14 @@
 
 ```
 
-Changing the if condition to `if (true)`, the program runs every time the `then branch`. This means that:
+Changing the if condition to `if (true)`, the program runs every time the `then branch`.
+
+Hypotheses that can be formulated:
   
 - The test cases don't cover all the possible behaviours of the program;
 - Is the `else branch` correct?
 - Is the `if condition` correct?
-
+- Is the object used in the if condition correct?
 
 ### repairnator-repairnator-experiments-AxonFramework-AxonFramework-350737857-20180308-102725-firstCommit
 
@@ -45,6 +47,38 @@ Changing the if condition to `if (true)`, the program runs every time the `then 
  			}
  			return java.util.Objects.requireNonNull(doUpcast(entry, context));
 ```
+
+Hypotheses that can be formulated:
+
 - The test cases don't cover all the possible behaviours of the program;
 - Is the method used in the `if condition` correct?
+- Are the object `entry` and  `context` correct?
 - Is the `then branch` correct?
+
+### repairnator-repairnator-experiments-Inmapg-Text-Traffic-Simulator-368867994-20180419-235104-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [VehicleTest.java](https://github.com/dginelli/repairnator-experiments-jkali-one-failing-test-case/blob/af902a319926cfcbb772fbc6913f0a8112987129/src/test/java/pr5/tmodel/VehicleTest.java#L88) | [IniSection.java](https://github.com/dginelli/repairnator-experiments-jkali-one-failing-test-case/blob/af902a319926cfcbb772fbc6913f0a8112987129/src/main/java/pr5/ini/IniSection.java#L176)|
+
+```diff
+--- /src/main/java/pr5/ini/IniSection.java
++++ /src/main/java/pr5/ini/IniSection.java
+@@ -85,7 +85,6 @@
+ 		}
+ 		for (java.lang.String key : this.getKeys()) {
+ 			if (!this.getValue(key).equals(other.getValue(key))) {
+-				return false;
+ 			}
+ 		}
+ 		return true;
+
+```
+
+This type of change makes that the method returns always true.
+
+Hypotheses that can be formulated:
+
+- The test cases don't cover all the possible behaviours of the program;
+- Is the `if condition` correct?
+- Are the values of the objects used to do the comparison correct?
