@@ -23,6 +23,7 @@ Changing the if condition to `if (true)`, the program runs every time the `then 
   
 - The test cases don't cover all the possible behaviours of the program;
 - Is the `else branch` correct?
+- Is the `if condition` correct?
 
 
 
