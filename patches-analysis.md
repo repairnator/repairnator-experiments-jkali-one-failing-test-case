@@ -106,3 +106,42 @@ Hypotheses that can be formulated:
 - Is the method `drainTo` correct?
 - Is the parameter `events` correct?
 - Is the object `queue` correct?
+
+### repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit	
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [TestClassTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/334ae707921ac4021ff2f8fae1e41c4c0866f2fe/src/test/java/org/sqtf/TestClassTest.java#L35) | [TestClass.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/334ae707921ac4021ff2f8fae1e41c4c0866f2fe/src/main/java/org/sqtf/TestClass.java#L158)|
+
+```diff
+--- /src/main/java/org/sqtf/TestClass.java
++++ /src/main/java/org/sqtf/TestClass.java
+@@ -133,27 +133,6 @@
+ 				continue;
+ 			}
+ 			int timeout = m.timeout();
+-			if (params != null) {
+-				java.util.List<java.lang.Object[]> testParameterList = getTestParameters(params.csvfile(), testMethod.getParameterTypes());
+-				if (testParameterList != null) {
+-					for (java.lang.Object[] objects : testParameterList) {
+-						org.sqtf.TestResult result = runTest(testMethod, instance, timeout, objects);
+-						resultCache.add(result);
+-						final org.sqtf.TestResult finalResult = result;
+-						listeners.forEach(( l) -> l.testCompleted(clazz.getSimpleName(), testMethod.getName(), finalResult.passed()));
+-					}
+-				} else {
+-					org.sqtf.TestResult result = new org.sqtf.TestResult(testMethod, new org.sqtf.InvalidTestException(""), 0);
+-					resultCache.add(result);
+-					final org.sqtf.TestResult finalResult = result;
+-					listeners.forEach(( l) -> l.testCompleted(clazz.getSimpleName(), testMethod.getName(), finalResult.passed()));
+-				}
+-			} else {
+-				org.sqtf.TestResult result = runTest(testMethod, instance, timeout);
+-				resultCache.add(result);
+-				final org.sqtf.TestResult finalResult = result;
+-				listeners.forEach(( l) -> l.testCompleted(clazz.getSimpleName(), testMethod.getName(), finalResult.passed()));
+-			}
+ 		}
+ 		listeners.forEach(( l) -> l.classCompleted(clazz.getSimpleName(), testClassPassed.get()));
+ 		finishTime = java.lang.System.currentTimeMillis();
+```
