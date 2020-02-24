@@ -681,3 +681,23 @@ Notes: same patch of the one generated for the repository repairnator-repairnato
  		}
  		this.configure(dbi, configuration);
 ```
+
+### repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+org.mockito.exceptions.verification.WantedButNotInvoked | [EventConsumerImplTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/69e5a5589cfde0b1aa3de94f7ef8a5ee48f95d30/client/src/test/java/org/eclipse/hono/client/impl/EventConsumerImplTest.java#L117) | [AbstractHonoClient.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/69e5a5589cfde0b1aa3de94f7ef8a5ee48f95d30/client/src/main/java/org/eclipse/hono/client/impl/AbstractHonoClient.java#L280) |
+
+```diff
+--- /src/main/java/org/eclipse/hono/client/impl/AbstractHonoClient.java
++++ /src/main/java/org/eclipse/hono/client/impl/AbstractHonoClient.java
+@@ -149,7 +149,7 @@
+ 					org.eclipse.hono.client.impl.AbstractHonoClient.LOG.debug("receiver open attach failed [{}] by peer [{}]: {}", receiver.getRemoteSource(), con.getRemoteContainer(), openAttach.cause().getMessage());
+ 					result.fail(openAttach.cause());
+ 				} else {
+-					if (org.eclipse.hono.client.impl.AbstractHonoClient.LOG.isTraceEnabled()) {
++					if (true) {
+ 						org.eclipse.hono.client.impl.AbstractHonoClient.LOG.trace("receiver open attach succeeded [{}] by peer [{}]", receiver.getRemoteSource(), con.getRemoteContainer());
+ 					}
+ 					result.complete(openAttach.result());
+```
