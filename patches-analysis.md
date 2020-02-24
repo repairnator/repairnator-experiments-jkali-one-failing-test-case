@@ -843,3 +843,30 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  			}
  		}
  ```
+
+### repairnator-repairnator-experiments-jimma-Resteasy-418152299-20180820-125145-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-324189166-20180102-172933_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.IllegalStateException | [JodaDateTimeSqlTimestampTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/repairnator-repairnator-experiments-dropwizard-dropwizard-300099479-20171110-114555_bugonly-firstCommit/dropwizard-jdbi/src/test/java/io/dropwizard/jdbi/timestamps/JodaDateTimeSqlTimestampTest.java) | [DBIFactory.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/9a8b17514874783f452ebab26f3a4e066bfa433d/dropwizard-jdbi/src/main/java/io/dropwizard/jdbi/DBIFactory.java#L138-L142)
+
+```diff
+--- /src/main/java/io/dropwizard/jdbi/DBIFactory.java
++++ /src/main/java/io/dropwizard/jdbi/DBIFactory.java
+@@ -25,7 +25,6 @@
+ 		final org.skife.jdbi.v2.DBI dbi = this.newInstance(dataSource);
+ 		environment.lifecycle().manage(dataSource);
+ 		final java.lang.String validationQuery = configuration.getValidationQuery();
+-		environment.healthChecks().register(name, new io.dropwizard.jdbi.DBIHealthCheck(environment.getHealthCheckExecutorService(), configuration.getValidationQueryTimeout().orElseGet(() -> io.dropwizard.util.Duration.seconds(5)), dbi, validationQuery));
+ 		dbi.setSQLLog(new io.dropwizard.jdbi.logging.LogbackLog(io.dropwizard.jdbi.DBIFactory.LOGGER, ch.qos.logback.classic.Level.TRACE));
+ 		dbi.setTimingCollector(new com.codahale.metrics.jdbi.InstrumentedTimingCollector(environment.metrics(), new io.dropwizard.jdbi.DBIFactory.SanerNamingStrategy()));
+ 		if (configuration.isAutoCommentsEnabled()) {
+```
