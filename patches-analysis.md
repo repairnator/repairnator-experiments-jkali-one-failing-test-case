@@ -641,4 +641,43 @@ Notes: same patch of the one generated for the repository repairnator-repairnato
  			dbi.setStatementRewriter(new io.dropwizard.jdbi.NamePrependingStatementRewriter(new org.skife.jdbi.v2.ColonPrefixNamedParamStatementRewriter()));
 ```
 
-`Notes: same patch of the one generated for the repository repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit`
+```Notes: 
+- Same patch of the one generated for the repository repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit;
+- The precise failing test case is not available.
+```
+
+### repairnator-repairnator-experiments-globalbioticinteractions-nomer-384572134-20180528-061207-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-259860799-20170801-191529_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-393247699-20180617-105250-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-eclipse-ditto-388737744-20180606-164013-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.IllegalStateException | [JodaDateTimeSqlTimestampTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/repairnator-repairnator-experiments-dropwizard-dropwizard-279538331-20170925-165443_bugonly-firstCommit/dropwizard-jdbi/src/test/java/io/dropwizard/jdbi/timestamps/JodaDateTimeSqlTimestampTest.java) | [DBIFactory.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/e295db7c95b08adbf73abb1cb3dfc648101fac73/dropwizard-jdbi/src/main/java/io/dropwizard/jdbi/DBIFactory.java#L151) |
+
+```diff
+--- /src/main/java/io/dropwizard/jdbi/DBIFactory.java
++++ /src/main/java/io/dropwizard/jdbi/DBIFactory.java
+@@ -28,7 +28,7 @@
+ 		environment.healthChecks().register(name, new io.dropwizard.jdbi.DBIHealthCheck(environment.getHealthCheckExecutorService(), configuration.getValidationQueryTimeout().orElseGet(() -> io.dropwizard.util.Duration.seconds(5)), dbi, validationQuery));
+ 		dbi.setSQLLog(new io.dropwizard.jdbi.logging.LogbackLog(io.dropwizard.jdbi.DBIFactory.LOGGER, ch.qos.logback.classic.Level.TRACE));
+ 		dbi.setTimingCollector(new com.codahale.metrics.jdbi.InstrumentedTimingCollector(environment.metrics(), new io.dropwizard.jdbi.DBIFactory.SanerNamingStrategy()));
+-		if (configuration.isAutoCommentsEnabled()) {
++		if (false) {
+ 			dbi.setStatementRewriter(new io.dropwizard.jdbi.NamePrependingStatementRewriter(new org.skife.jdbi.v2.ColonPrefixNamedParamStatementRewriter()));
+ 		}
+ 		this.configure(dbi, configuration);
+```
