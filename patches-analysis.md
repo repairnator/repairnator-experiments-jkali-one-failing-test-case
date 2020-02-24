@@ -346,3 +346,23 @@ Hypotheses that can be formulated:
  		}
 ```
 
+### repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [ContinuousSamplerParametricTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7d5cad3df578cf7467be89478ede91b74d684ed7/commons-rng-sampling/src/test/java/org/apache/commons/rng/sampling/distribution/ContinuousSamplerParametricTest.java#L52) | [RejectionInversionZipfSampler.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7d5cad3df578cf7467be89478ede91b74d684ed7/commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java#L60-L62) |
+
+```diff
+--- /src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java
++++ /src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java
+@@ -22,9 +22,6 @@
+ 
+ 	public RejectionInversionZipfSampler(org.apache.commons.rng.UniformRandomProvider rng, int numberOfElements, double exponent) {
+ 		super(rng);
+-		if (numberOfElements <= 0) {
+-			throw new java.lang.IllegalArgumentException("number of elements is not strictly positive: " + numberOfElements);
+-		}
+ 		if (exponent <= 0) {
+ 			throw new java.lang.IllegalArgumentException("exponent is not strictly positive: " + exponent);
+ 		}
+```
