@@ -701,3 +701,51 @@ org.mockito.exceptions.verification.WantedButNotInvoked | [EventConsumerImplTest
  					}
  					result.complete(openAttach.result());
 ```
+
+### repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1e713a7c013058d5e930ce89b6f83b94251c3b29/src/test/java/com/cronutils/Issue215Test.java#L25) | [BetweenDayOfWeekValueGenerator.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1e713a7c013058d5e930ce89b6f83b94251c3b29/src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java#L64) |
+
+```diff
+--- /src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java
++++ /src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java
+@@ -20,10 +20,9 @@
+ 		com.cronutils.model.field.expression.Between between = ((com.cronutils.model.field.expression.Between) (cronField.getExpression()));
+ 		int from = ((java.lang.Integer) (between.getFrom().getValue()));
+ 		int to = ((java.lang.Integer) (between.getTo().getValue()));
+-		while (from <= to) {
+-			dowValidValues.add(from);
++		while (from <= to)
+ 			from += 1;
+-		} 
++
+ 	}
+ 
+ 	@java.lang.Override
+```
+
+### repairnator-repairnator-experiments-languagetool-org-languagetool-232261155-20170515-035437-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-358392819-20180326-151558-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.IllegalStateException | [TcpSocketAppenderFactoryTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/bacc3dea71eff27027520bebcedf78ba779482c1/dropwizard-logging/src/test/java/io/dropwizard/logging/TcpSocketAppenderFactoryTest.java#L67) | [DropwizardLayout.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/bacc3dea71eff27027520bebcedf78ba779482c1/dropwizard-logging/src/main/java/io/dropwizard/logging/DropwizardLayout.java#L19) |
+
+```diff
+--- /src/main/java/io/dropwizard/logging/DropwizardLayout.java
++++ /src/main/java/io/dropwizard/logging/DropwizardLayout.java
+@@ -4,7 +4,6 @@
+ public class DropwizardLayout extends ch.qos.logback.classic.PatternLayout {
+ 	public DropwizardLayout(ch.qos.logback.classic.LoggerContext context, java.util.TimeZone timeZone) {
+ 		super();
+-		setOutputPatternAsHeader(false);
+ 		getDefaultConverterMap().put("ex", io.dropwizard.logging.PrefixedThrowableProxyConverter.class.getName());
+ 		getDefaultConverterMap().put("xEx", io.dropwizard.logging.PrefixedExtendedThrowableProxyConverter.class.getName());
+ 		getDefaultConverterMap().put("rEx", io.dropwizard.logging.PrefixedRootCauseFirstThrowableProxyConverter.class.getName());
+```
+
