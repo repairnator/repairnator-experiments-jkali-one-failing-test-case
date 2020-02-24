@@ -203,3 +203,23 @@ Hypotheses that can be formulated:
 ```
 
 `Notes: same patch of the one generated for the repository repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit`
+
+### repairnator-repairnator-experiments-Hellojungle-rocketmq-421420531-20180828-082343-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| org.apache.rocketmq.client.exception.MQClientException | [DefaultMQProducerTest](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b6b2cdd0d3152a29813af70b447b4c8c80df7b4c/client/src/test/java/org/apache/rocketmq/client/producer/DefaultMQProducerTest.java#L202) | [ClientLogger.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b6b2cdd0d3152a29813af70b447b4c8c80df7b4c/client/src/main/java/org/apache/rocketmq/client/log/ClientLogger.java#L109)
+
+```diff
+--- /src/main/java/org/apache/rocketmq/client/log/ClientLogger.java
++++ /src/main/java/org/apache/rocketmq/client/log/ClientLogger.java
+@@ -76,7 +76,7 @@
+ 	}
+ 
+ 	public static org.slf4j.Logger getLog() {
+-		if (org.apache.rocketmq.client.log.ClientLogger.log == null) {
++		if (true) {
+ 			org.apache.rocketmq.client.log.ClientLogger.log = org.apache.rocketmq.client.log.ClientLogger.createLogger(org.apache.rocketmq.common.constant.LoggerName.CLIENT_LOGGER_NAME);
+ 			return org.apache.rocketmq.client.log.ClientLogger.log;
+ 		} else {
+```
