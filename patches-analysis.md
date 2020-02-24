@@ -1020,3 +1020,6 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  			quality = 0;
 ```
 
+### repairnator-repairnator-experiments-resteasy-Resteasy-278556619-20170922-121552_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
