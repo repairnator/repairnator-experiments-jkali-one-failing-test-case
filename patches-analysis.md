@@ -366,3 +366,43 @@ Hypotheses that can be formulated:
  			throw new java.lang.IllegalArgumentException("exponent is not strictly positive: " + exponent);
  		}
 ```
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-418176682-20180820-133142-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-biojava-biojava-377834863-20180511-194927-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-388143247-20180605-095251-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-415746260-20180814-065639-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-371414052-20180426-085631-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.Exception | [ZKClientTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/6f69cbfedb6897b65bc5a1a7a8fdd54c516215bc/twill-zookeeper/src/test/java/org/apache/twill/zookeeper/ZKClientTest.java#L347) | [InMemoryZKServer.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/6f69cbfedb6897b65bc5a1a7a8fdd54c516215bc/twill-zookeeper/src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java#L105) |
+
+```diff
+--- /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
++++ /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
+@@ -67,7 +67,7 @@
+ 
+ 	private java.net.InetSocketAddress getAddress(int port) {
+ 		int socketPort = (port < 0) ? 0 : port;
+-		if (java.lang.Boolean.parseBoolean(java.lang.System.getProperties().getProperty("twill.zk.server.localhost", "true"))) {
++		if (false) {
+ 			return new java.net.InetSocketAddress(java.net.InetAddress.getLoopbackAddress(), socketPort);
+ 		} else {
+ 			return new java.net.InetSocketAddress(socketPort);
+```
