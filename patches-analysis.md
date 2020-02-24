@@ -928,3 +928,22 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  	}
  }
 ```
+
+### repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [ScnlParserTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7a102271bb4afef361762612372dc520fdfc91fb/src/test/java/gov/usgs/volcanoes/core/args/parser/ScnlParserTest.java#L67) | [Scnl.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7a102271bb4afef361762612372dc520fdfc91fb/src/main/java/gov/usgs/volcanoes/core/data/Scnl.java#L150)
+
+```diff
+--- /src/main/java/gov/usgs/volcanoes/core/data/Scnl.java
++++ /src/main/java/gov/usgs/volcanoes/core/data/Scnl.java
+@@ -82,7 +82,6 @@
+ 
+ 	public static gov.usgs.volcanoes.core.data.Scnl parse(java.lang.String scnlString) throws gov.usgs.volcanoes.core.util.UtilException {
+ 		if (scnlString.indexOf("$") == (-1)) {
+-			return gov.usgs.volcanoes.core.data.Scnl.parse(scnlString, " ");
+ 		}
+ 		return gov.usgs.volcanoes.core.data.Scnl.parse(scnlString, gov.usgs.volcanoes.core.data.Scnl.DELIMITER);
+ 	}
+```
