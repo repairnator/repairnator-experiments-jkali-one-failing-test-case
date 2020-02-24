@@ -546,3 +546,38 @@ Notes: same patch of the one generated for the repository repairnator-repairnato
  				}
  			} else {
 ```
+
+### repairnator-repairnator-experiments-biojava-biojava-260555282-20170803-130555-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-369933586-20180423-064032-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-biojava-biojava-259519094-20170731-225703_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-biojava-biojava-310880849-20171203-163336-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [DirectEndPointRequestMapperTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/f1b4847020795def5ebf06ee012da718fae6b2ee/frontend/ld/src/test/java/org/dotwebstack/framework/frontend/ld/mappers/DirectEndPointRequestMapperTest.java#L131) | [DirectEndPointRequestMapper.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/f1b4847020795def5ebf06ee012da718fae6b2ee/frontend/ld/src/main/java/org/dotwebstack/framework/frontend/ld/mappers/DirectEndPointRequestMapper.java#L66) |
+
+```diff
+--- /src/main/java/org/dotwebstack/framework/frontend/ld/mappers/DirectEndPointRequestMapper.java
++++ /src/main/java/org/dotwebstack/framework/frontend/ld/mappers/DirectEndPointRequestMapper.java
+@@ -44,7 +44,6 @@
+ 		java.lang.String basePath = endPoint.getStage().getFullPath();
+ 		java.lang.String absolutePath = basePath.concat(endPoint.getPathPattern());
+ 		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> deleteService = java.util.Optional.ofNullable(endPoint.getDeleteService());
+-		deleteService.ifPresent(( service) -> registerTransaction(service, javax.ws.rs.HttpMethod.DELETE, absolutePath, httpConfiguration));
+ 		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> postService = java.util.Optional.ofNullable(endPoint.getPostService());
+ 		postService.ifPresent(( service) -> registerTransaction(service, javax.ws.rs.HttpMethod.POST, absolutePath, httpConfiguration));
+ 		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> putService = java.util.Optional.ofNullable(endPoint.getPutService());
+```
