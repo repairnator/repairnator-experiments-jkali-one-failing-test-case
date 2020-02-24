@@ -988,3 +988,35 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  				throw new java.lang.RuntimeException((((("External command [" + com.google.common.base.Joiner.on(" ").join(command)) + "] exited with [") + p.exitValue()) + "], output: ") + output);
  			}
 ```
+
+### repairnator-repairnator-experiments-resteasy-Resteasy-278678009-20170922-183223_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-ryhita-gilded-rose-349620528-20180306-041741-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [ItemTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/test/java/fr/esiea/ItemTest.java#L24) | [BackstagePassesItem.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/main/java/fr/esiea/BackstagePassesItem.java#L19) |
+
+```diff
+--- /src/main/java/fr/esiea/BackstagePassesItem.java
++++ /src/main/java/fr/esiea/BackstagePassesItem.java
+@@ -15,11 +15,11 @@
+ 				quality++;
+ 
+ 		}
+-		if (this.sellIn < 6)
+-			if (this.quality < fr.esiea.Item.MAX_QUALITY)
+-				quality++;
+-
+-
++		if (false) {
++			if (this.quality < fr.esiea.Item.MAX_QUALITY) {
++				this.quality++;
++			}
++		}
+ 		if (this.sellIn < fr.esiea.Item.SELLIN_IS_OVER)
+ 			quality = 0;
+```
+
