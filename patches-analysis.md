@@ -406,3 +406,41 @@ Hypotheses that can be formulated:
  		} else {
  			return new java.net.InetSocketAddress(socketPort);
 ```
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-388077977-20180605-041500-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-369013010-20180420-102003-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-biojava-biojava-258611489-20170728-175148_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-biojava-biojava-259521132-20170802-204702_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-twill-356030973-20180320-212647-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.Exception | [ZKClientTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b810d2347ec6054de28ef2d7637222047f1b1cec/twill-zookeeper/src/test/java/org/apache/twill/zookeeper/ZKClientTest.java#L347) | [InMemoryZKServer.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b810d2347ec6054de28ef2d7637222047f1b1cec/twill-zookeeper/src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java#L105) |
+
+```diff
+--- /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
++++ /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
+@@ -67,7 +67,7 @@
+ 
+ 	private java.net.InetSocketAddress getAddress(int port) {
+ 		int socketPort = (port < 0) ? 0 : port;
+-		if (java.lang.Boolean.parseBoolean(java.lang.System.getProperties().getProperty("twill.zk.server.localhost", "true"))) {
++		if (false) {
+ 			return new java.net.InetSocketAddress(java.net.InetAddress.getLoopbackAddress(), socketPort);
+ 		} else {
+ 			return new java.net.InetSocketAddress(socketPort);
+```
+
+Notes: same patch of the one generated for the repository repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit
