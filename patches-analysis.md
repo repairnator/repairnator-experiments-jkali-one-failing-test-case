@@ -177,3 +177,29 @@ Hypotheses that can be formulated:
 - Is the `if condition` correct?
 - Is the method `canMakeNfa` correct?
 - Is the parameter `clause` correct?
+
+### repairnator-repairnator-experiments-EnMasseProject-enmasse-377294634-20180510-191135-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-EnMasseProject-enmasse-391947972-20180613-225909-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.util.concurrent.TimeoutException | [SyncRequestClientTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/ec163b4d84a3a0bb765d5ca79618adf4726576e1/amqp-utils/src/test/java/io/enmasse/amqp/SyncRequestClientTest.java#L82) | [Artemis.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/ec163b4d84a3a0bb765d5ca79618adf4726576e1/amqp-utils/src/main/java/io/enmasse/amqp/Artemis.java#L103)|
+
+```diff
+--- /src/main/java/io/enmasse/amqp/Artemis.java
++++ /src/main/java/io/enmasse/amqp/Artemis.java
+@@ -83,7 +83,7 @@
+ 		source.setDynamic(true);
+ 		receiver.setSource(source);
+ 		receiver.openHandler(( h) -> {
+-			if (h.succeeded()) {
++			if (true) {
+ 				promise.complete(new io.enmasse.amqp.Artemis(vertx.getOrCreateContext(), connection, sender, receiver, h.result().getRemoteSource().getAddress(), replies));
+ 			} else {
+ 				if (retries > io.enmasse.amqp.Artemis.maxRetries) {
+```
+
+`Notes: same patch of the one generated for the repository repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit`
