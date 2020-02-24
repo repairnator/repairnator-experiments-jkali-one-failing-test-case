@@ -911,3 +911,20 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  		java.util.Map<java.lang.String, java.lang.String> map = new java.util.HashMap<>();
 ```
 
+### repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [TracingTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/ccfdce406eff9cd15ae478dc1c93989f596259fc/src/test/java/io/opentracing/contrib/hazelcast/TracingTest.java#L98) | [TracingEntryBackupProcessor.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/ccfdce406eff9cd15ae478dc1c93989f596259fc/src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java#L47)
+
+```diff
+--- /src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java
++++ /src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java
+@@ -20,7 +20,6 @@
+ 		io.opentracing.Span span = io.opentracing.contrib.hazelcast.TracingHelper.buildSpan("process", parent, traceWithActiveSpanOnly);
+ 		span.setTag("entryBackupProcessor", io.opentracing.contrib.hazelcast.TracingHelper.nullableClass(entryBackupProcessor));
+ 		span.setTag("entry", io.opentracing.contrib.hazelcast.TracingHelper.nullable(entry));
+-		io.opentracing.contrib.hazelcast.TracingHelper.decorateAction(() -> entryBackupProcessor.processBackup(entry), span);
+ 	}
+ }
+```
