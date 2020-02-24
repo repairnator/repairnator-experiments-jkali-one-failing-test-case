@@ -444,3 +444,30 @@ Hypotheses that can be formulated:
 ```
 
 Notes: same patch of the one generated for the repository repairnator-repairnator-experiments-chtyim-twill-356031025-20180320-212226-firstCommit
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-415698145-20180814-025307-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [ContinuousSamplerParametricTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/57fe5c9531d90f7d21b67a302248dc1a7791eacf/commons-rng-sampling/src/test/java/org/apache/commons/rng/sampling/distribution/ContinuousSamplerParametricTest.java#L52) | [RejectionInversionZipfSampler.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/57fe5c9531d90f7d21b67a302248dc1a7791eacf/commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java#L60-L62) |
+
+```diff
+--- /src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java
++++ /src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java
+@@ -22,9 +22,6 @@
+ 
+ 	public RejectionInversionZipfSampler(org.apache.commons.rng.UniformRandomProvider rng, int numberOfElements, double exponent) {
+ 		super(rng);
+-		if (numberOfElements <= 0) {
+-			throw new java.lang.IllegalArgumentException("number of elements is not strictly positive: " + numberOfElements);
+-		}
+ 		if (exponent <= 0) {
+ 			throw new java.lang.IllegalArgumentException("exponent is not strictly positive: " + exponent);
+ 		}
+```
+
+`Notes: same patch of the one generated for the repository repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit`
