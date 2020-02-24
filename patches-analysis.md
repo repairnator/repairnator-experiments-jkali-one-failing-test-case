@@ -208,7 +208,7 @@ Hypotheses that can be formulated:
 
 | failure type | failing test case | changed file |
 |--------------|-------------------|--------------|
-| org.apache.rocketmq.client.exception.MQClientException | [DefaultMQProducerTest](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b6b2cdd0d3152a29813af70b447b4c8c80df7b4c/client/src/test/java/org/apache/rocketmq/client/producer/DefaultMQProducerTest.java#L202) | [ClientLogger.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b6b2cdd0d3152a29813af70b447b4c8c80df7b4c/client/src/main/java/org/apache/rocketmq/client/log/ClientLogger.java#L109)
+| org.apache.rocketmq.client.exception.MQClientException | [DefaultMQProducerTest](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b6b2cdd0d3152a29813af70b447b4c8c80df7b4c/client/src/test/java/org/apache/rocketmq/client/producer/DefaultMQProducerTest.java#L202) | [ClientLogger.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b6b2cdd0d3152a29813af70b447b4c8c80df7b4c/client/src/main/java/org/apache/rocketmq/client/log/ClientLogger.java#L109) |
 
 ```diff
 --- /src/main/java/org/apache/rocketmq/client/log/ClientLogger.java
@@ -227,3 +227,54 @@ Hypotheses that can be formulated:
 ### repairnator-repairnator-experiments-alibaba-Sentinel-408450759-20180726-131316-firstCommit
 
 `To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-KGreg314-ivt-lab-380634197-20180518-125533-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [GT4500Test.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/56c6b18912d8305128accfb32537b6c4f2d3c955/src/test/java/hu/bme/mit/spaceship/GT4500Test.java#L140) | [GT4500.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/56c6b18912d8305128accfb32537b6c4f2d3c955/src/main/java/hu/bme/mit/spaceship/GT4500.java#L42) |
+        
+```diff
+--- /src/main/java/hu/bme/mit/spaceship/GT4500.java
++++ /src/main/java/hu/bme/mit/spaceship/GT4500.java
+@@ -20,25 +20,25 @@
+ 	@java.lang.Override
+ 	public boolean fireTorpedo(hu.bme.mit.spaceship.FiringMode firingMode) {
+ 		boolean firingSuccess = false;
+-		if (firingMode == hu.bme.mit.spaceship.FiringMode.SINGLE) {
+-			if (wasPrimaryFiredLast) {
+-				if (!secondaryTorpedoStore.isEmpty()) {
+-					firingSuccess = secondaryTorpedoStore.fire(1);
+-					wasPrimaryFiredLast = false;
++		if (true) {
++			if (this.wasPrimaryFiredLast) {
++				if (!this.secondaryTorpedoStore.isEmpty()) {
++					firingSuccess = this.secondaryTorpedoStore.fire(1);
++					this.wasPrimaryFiredLast = false;
+ 				} else {
+-					if (!primaryTorpedoStore.isEmpty()) {
+-						firingSuccess = primaryTorpedoStore.fire(1);
+-						wasPrimaryFiredLast = true;
++					if (!this.primaryTorpedoStore.isEmpty()) {
++						firingSuccess = this.primaryTorpedoStore.fire(1);
++						this.wasPrimaryFiredLast = true;
+ 					}
+ 				}
+ 			} else {
+-				if (!primaryTorpedoStore.isEmpty()) {
+-					firingSuccess = primaryTorpedoStore.fire(1);
+-					wasPrimaryFiredLast = true;
++				if (!this.primaryTorpedoStore.isEmpty()) {
++					firingSuccess = this.primaryTorpedoStore.fire(1);
++					this.wasPrimaryFiredLast = true;
+ 				} else {
+-					if (!secondaryTorpedoStore.isEmpty()) {
+-						firingSuccess = secondaryTorpedoStore.fire(1);
+-						wasPrimaryFiredLast = false;
++					if (!this.secondaryTorpedoStore.isEmpty()) {
++						firingSuccess = this.secondaryTorpedoStore.fire(1);
++						this.wasPrimaryFiredLast = false;
+ 					}
+ 				}
+ 			}
+```
