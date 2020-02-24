@@ -278,3 +278,30 @@ Hypotheses that can be formulated:
  				}
  			}
 ```
+
+### repairnator-repairnator-experiments-Mistahmilla-SudokuSolver-372495757-20180428-211304-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+|java.lang.AssertionError | [NakedSubsetTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/a6fb43806c5e0d1be616fed9f90e609e0f8987f0/src/test/java/NakedSubsetTest.java#L10) | [NakedSubset.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/a6fb43806c5e0d1be616fed9f90e609e0f8987f0/src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java#L37)
+
+```diff
+--- /src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
++++ /src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
+@@ -28,12 +28,12 @@
+ 								}
+ 							}
+ 						}
+-						if (count >= 2) {
++						if (true) {
+ 							for (int x = section.getMinX(); x < section.getMaxX(); x++) {
+ 								for (int y = section.getMinY(); y < section.getMaxY(); y++) {
+ 									if (squares[x][y] != 'x') {
+-										board.getSquare(x, y).removePossibleValue(a);
+-										board.getSquare(x, y).removePossibleValue(b);
++										this.board.getSquare(x, y).removePossibleValue(a);
++										this.board.getSquare(x, y).removePossibleValue(b);
+ 									}
+ 								}
+ 							}
+```
