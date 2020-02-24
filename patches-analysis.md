@@ -749,3 +749,25 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  		getDefaultConverterMap().put("rEx", io.dropwizard.logging.PrefixedRootCauseFirstThrowableProxyConverter.class.getName());
 ```
 
+### repairnator-repairnator-experiments-dropwizard-dropwizard-259860788-20170801-191527_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-375524651-20180506-150610-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.IllegalStateException | [TcpSocketAppenderFactoryTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/6a382d64470467e399dd4e021be1026838c38455/dropwizard-logging/src/test/java/io/dropwizard/logging/TcpSocketAppenderFactoryTest.java#L67) | [DefaultLoggingFactory.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/6a382d64470467e399dd4e021be1026838c38455/dropwizard-logging/src/main/java/io/dropwizard/logging/DefaultLoggingFactory.java#L248) |
+
+```diff
+--- /src/main/java/io/dropwizard/logging/DefaultLoggingFactory.java
++++ /src/main/java/io/dropwizard/logging/DefaultLoggingFactory.java
+@@ -171,7 +171,6 @@
+ 
+ 	private ch.qos.logback.classic.Logger configureLoggers(java.lang.String name) {
+ 		final ch.qos.logback.classic.Logger root = loggerContext.getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME);
+-		loggerContext.reset();
+ 		final ch.qos.logback.classic.jul.LevelChangePropagator propagator = new ch.qos.logback.classic.jul.LevelChangePropagator();
+ 		propagator.setContext(loggerContext);
+ 		propagator.setResetJUL(true);
+```
