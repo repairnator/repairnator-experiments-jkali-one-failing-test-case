@@ -890,3 +890,24 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  		} else {
  			return null;
 ```
+
+### repairnator-repairnator-experiments-nablarch-nablarch-example-http-messaging-361036711-20180402-045142-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| org.junit.ComparisonFailure | [ProjectSaveActionRequestTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/79c9730a263b15c2f46e38ce2355ac4ceb73b5aa/src/test/java/com/nablarch/example/action/ProjectSaveActionRequestTest.java#L36) | [ProjectSaveAction.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/79c9730a263b15c2f46e38ce2355ac4ceb73b5aa/src/main/java/com/nablarch/example/action/ProjectSaveAction.java#L92) |
+
+```diff
+--- /src/main/java/com/nablarch/example/action/ProjectSaveAction.java
++++ /src/main/java/com/nablarch/example/action/ProjectSaveAction.java
+@@ -17,7 +17,7 @@
+ 	protected nablarch.fw.messaging.ResponseMessage onError(java.lang.Throwable e, nablarch.fw.messaging.RequestMessage requestMessage, nablarch.fw.ExecutionContext context) {
+ 		requestMessage.setFormatterOfReply(com.nablarch.example.action.ProjectSaveAction.createFormatter());
+ 		java.lang.String statusCode = java.lang.String.valueOf(nablarch.fw.web.HttpResponse.Status.INTERNAL_SERVER_ERROR.getStatusCode());
+-		if (e instanceof nablarch.core.message.ApplicationException) {
++		if (true) {
+ 			statusCode = java.lang.String.valueOf(nablarch.fw.web.HttpResponse.Status.BAD_REQUEST.getStatusCode());
+ 		}
+ 		java.util.Map<java.lang.String, java.lang.String> map = new java.util.HashMap<>();
+```
+
