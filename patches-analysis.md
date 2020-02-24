@@ -802,3 +802,23 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  		return rewriter.rewrite(sql, params, ctx);
  	}
 ```
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.IllegalStateException" | [JodaDateTimeSqlTimestampTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/repairnator-repairnator-experiments-dropwizard-dropwizard-316114281-20171213-225745_bugonly-firstCommit/dropwizard-jdbi/src/test/java/io/dropwizard/jdbi/timestamps/JodaDateTimeSqlTimestampTest.java) | [OptionalArgumentFactory.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/e5b4c086e319dbcf281cc4d8e7ac3f2008065769/dropwizard-jdbi/src/main/java/io/dropwizard/jdbi/args/OptionalArgumentFactory.java#L68) |
+
+```diff
+--- /src/main/java/io/dropwizard/jdbi/args/OptionalArgumentFactory.java
++++ /src/main/java/io/dropwizard/jdbi/args/OptionalArgumentFactory.java
+@@ -55,7 +55,7 @@
+ 		if ("com.microsoft.sqlserver.jdbc.SQLServerDriver".equals(jdbcDriver)) {
+ 			return new io.dropwizard.jdbi.args.OptionalArgumentFactory.MsSqlOptionalArgument(value);
+ 		} else {
+-			if ("oracle.jdbc.OracleDriver".equals(jdbcDriver)) {
++			if (true) {
+ 				return new io.dropwizard.jdbi.args.OptionalArgumentFactory.DefaultOptionalArgument(value, java.sql.Types.NULL);
+ 			}
+ 		}
+```
