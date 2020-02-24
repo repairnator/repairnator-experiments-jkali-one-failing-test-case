@@ -325,3 +325,24 @@ Hypotheses that can be formulated:
  			type = ptype.getRawType();
  		}
 ```
+
+### repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit
+
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [AudioAsStimuliProviderTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/0be223d625c501f7bc73b43a4bddc72d4c04f610/AdaptiveVocabularyAssessmentModule/src/test/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/service/AudioAsStimuliProviderTest.java#L378) | [RandomIndexing.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/0be223d625c501f7bc73b43a4bddc72d4c04f610/AdaptiveVocabularyAssessmentModule/src/main/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/RandomIndexing.java#L104) |
+
+```diff
+--- /src/main/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/RandomIndexing.java
++++ /src/main/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/RandomIndexing.java
+@@ -68,7 +68,6 @@
+ 				int offset = offsetBuffer.get(indOffset);
+ 				retVal.add((i * blockSize) + offset);
+ 				offsetBuffer.remove(new java.lang.Integer(offset));
+-				offsetBuffer.remove(new java.lang.Integer(offset - 1));
+ 				offsetBuffer.remove(new java.lang.Integer(offset + 1));
+ 			}
+ 		}
+```
+
