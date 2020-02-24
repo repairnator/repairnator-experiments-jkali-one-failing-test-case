@@ -969,3 +969,22 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  		return new org.knowm.xchange.dto.meta.ExchangeMetaData(pairs, currencies, originalMetaData == null ? null : originalMetaData.getPublicRateLimits(), originalMetaData == null ? null : originalMetaData.getPrivateRateLimits(), originalMetaData == null ? null : originalMetaData.isShareRateLimits());
  	}
 ```
+
+### repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [DefaultCommandRunnerTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/fe9d8b810c7588a47bfe920c51118545d3e563b8/core/src/test/java/com/github/swissquote/cartnotzet/core/runtime/DefaultCommandRunnerTest.java#L18) | [DefaultCommandRunner.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/fe9d8b810c7588a47bfe920c51118545d3e563b8/core/src/main/java/com/github/swissquote/carnotzet/core/runtime/DefaultCommandRunner.java#L90) |
+
+```diff
+--- /src/main/java/com/github/swissquote/carnotzet/core/runtime/DefaultCommandRunner.java
++++ /src/main/java/com/github/swissquote/carnotzet/core/runtime/DefaultCommandRunner.java
+@@ -67,7 +67,6 @@
+ 			java.lang.Process p = pb.start();
+ 			p.waitFor();
+ 			java.lang.String output = org.apache.commons.io.FileUtils.readFileToString(tmp);
+-			output = output.trim();
+ 			if (p.exitValue() != 0) {
+ 				throw new java.lang.RuntimeException((((("External command [" + com.google.common.base.Joiner.on(" ").join(command)) + "] exited with [") + p.exitValue()) + "], output: ") + output);
+ 			}
+```
