@@ -822,3 +822,24 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  			}
  		}
 ```
+
+### repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| org.mockito.exceptions.verification.WantedButNotInvoked | [InstrumentedHttpClientsTimerTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/a4c63c4e90c74ed014b2a73fbe69796681eca160/metrics-httpasyncclient/src/test/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedHttpClientsTimerTest.java#L55) | [InstrumentedNHttpClientBuilder.java.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/a4c63c4e90c74ed014b2a73fbe69796681eca160/metrics-httpasyncclient/src/main/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedNHttpClientBuilder.java#L106) |
+
+```diff
+--- /src/main/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedNHttpClientBuilder.java
++++ /src/main/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedNHttpClientBuilder.java
+@@ -85,8 +85,8 @@
+ 		@java.lang.Override
+ 		public void failed(java.lang.Exception ex) {
+ 			timerContext.stop();
+-			if (callback != null) {
+-				callback.failed(ex);
++			if (true) {
++				this.callback.failed(ex);
+ 			}
+ 		}
+ ```
