@@ -581,3 +581,22 @@ Notes: same patch of the one generated for the repository repairnator-repairnato
  		postService.ifPresent(( service) -> registerTransaction(service, javax.ws.rs.HttpMethod.POST, absolutePath, httpConfiguration));
  		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> putService = java.util.Optional.ofNullable(endPoint.getPutService());
 ```
+
+### repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| org.opentest4j.AssertionFailedError | [TestRequest](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/12171dada351fd2bfe999f8dd10cb0931829b5fb/src/test/java/com/http/TestRequest.java#L11) | [http/Request.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/12171dada351fd2bfe999f8dd10cb0931829b5fb/src/main/java/com/http/Request.java#L398) |
+
+```diff
+--- /src/main/java/com/http/Request.java
++++ /src/main/java/com/http/Request.java
+@@ -235,7 +235,6 @@
+ 		header.put("Accept-Encoding", "gzip, deflate, br");
+ 		header.put("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+ 		header.put("Connection", "Keep-Alive");
+-		this.setHeader(header);
+ 	}
+ 
+ 	public java.lang.String getContent() {
+```
