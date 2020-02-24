@@ -621,3 +621,24 @@ Notes: same patch of the one generated for the repository repairnator-repairnato
 ```
 
 `Notes: The precise failing test case is not available`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-324212976-20180102-184011-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.IllegalStateException | [JodaDateTimeSqlTimestampTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit/dropwizard-jdbi/src/test/java/io/dropwizard/jdbi/timestamps/JodaDateTimeSqlTimestampTest.java) | [DBIFactory.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/18ef37b9a23f2e14e979b586616bcf4120f16c6c/dropwizard-jdbi/src/main/java/io/dropwizard/jdbi/DBIFactory.java#L145) |
+
+```diff
+--- /src/main/java/io/dropwizard/jdbi/DBIFactory.java
++++ /src/main/java/io/dropwizard/jdbi/DBIFactory.java
+@@ -26,7 +26,6 @@
+ 		environment.lifecycle().manage(dataSource);
+ 		final java.lang.String validationQuery = configuration.getValidationQuery();
+ 		environment.healthChecks().register(name, new io.dropwizard.jdbi.DBIHealthCheck(environment.getHealthCheckExecutorService(), configuration.getValidationQueryTimeout().orElseGet(() -> io.dropwizard.util.Duration.seconds(5)), dbi, validationQuery));
+-		dbi.setSQLLog(new io.dropwizard.jdbi.logging.LogbackLog(io.dropwizard.jdbi.DBIFactory.LOGGER, ch.qos.logback.classic.Level.TRACE));
+ 		dbi.setTimingCollector(new com.codahale.metrics.jdbi.InstrumentedTimingCollector(environment.metrics(), new io.dropwizard.jdbi.DBIFactory.SanerNamingStrategy()));
+ 		if (configuration.isAutoCommentsEnabled()) {
+ 			dbi.setStatementRewriter(new io.dropwizard.jdbi.NamePrependingStatementRewriter(new org.skife.jdbi.v2.ColonPrefixNamedParamStatementRewriter()));
+```
+
+`Notes: same patch of the one generated for the repository repairnator-repairnator-experiments-dropwizard-dropwizard-279515036-20170925-155015_bugonly-firstCommit`
