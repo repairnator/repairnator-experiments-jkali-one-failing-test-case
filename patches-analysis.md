@@ -145,3 +145,35 @@ Hypotheses that can be formulated:
  		listeners.forEach(( l) -> l.classCompleted(clazz.getSimpleName(), testClassPassed.get()));
  		finishTime = java.lang.System.currentTimeMillis();
 ```
+
+### repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [TestSearchesNfa.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/c1030c0d5a7d02ec040004b75ef067afe51d0f2f/core/src/test/java/nl/inl/blacklab/search/fimatch/TestSearchesNfa.java#L62) | [BLSpanOrQuery.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/c1030c0d5a7d02ec040004b75ef067afe51d0f2f/core/src/main/java/nl/inl/blacklab/search/lucene/BLSpanOrQuery.java#L586)|
+
+```diff
+--- /src/main/java/nl/inl/blacklab/search/lucene/BLSpanOrQuery.java
++++ /src/main/java/nl/inl/blacklab/search/lucene/BLSpanOrQuery.java
+@@ -489,9 +489,9 @@
+ 	public boolean canMakeNfa() {
+ 		for (org.apache.lucene.search.spans.SpanQuery cl : getClauses()) {
+ 			nl.inl.blacklab.search.lucene.BLSpanQuery clause = ((nl.inl.blacklab.search.lucene.BLSpanQuery) (cl));
+-			if (!clause.canMakeNfa())
++			if (true) {
+ 				return false;
+-
++			}
+ 		}
+ 		return true;
+ 	}
+```
+
+This type of change makes that the method returns always false.
+
+Hypotheses that can be formulated:
+
+- The test cases don't cover all the possible behaviours of the program;
+- Is the `if condition` correct?
+- Is the method `canMakeNfa` correct?
+- Is the parameter `clause` correct?
