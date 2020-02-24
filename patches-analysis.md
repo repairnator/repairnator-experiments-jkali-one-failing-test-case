@@ -494,3 +494,55 @@ Notes: same patch of the one generated for the repository repairnator-repairnato
  		appendStackDistanceOfTestcaseToResult(createTestcaseIdentifier(description));
  	}
  ```
+
+### repairnator-repairnator-experiments-biojava-biojava-259292743-20170731-112130_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-369913800-20180423-043047-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-387769319-20180604-150306-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-biojava-biojava-289263006-20171018-004957_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-387894182-20180605-034400-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-incubator-dubbo-418173916-20180820-134741-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-biojava-biojava-293931100-20171028-014156_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-biojava-biojava-375532124-20180506-152108-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [DefaultClusterServiceTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/0d0ebd0dc2bb7f81967c94e3471208eb9cdeacf7/cluster/src/test/java/io/atomix/cluster/impl/DefaultClusterServiceTest.java#L60) | [DefaultClusterService.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/0d0ebd0dc2bb7f81967c94e3471208eb9cdeacf7/cluster/src/main/java/io/atomix/cluster/impl/DefaultClusterService.java#L200) |
+
+```diff
+--- /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
++++ /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
+@@ -91,7 +91,7 @@
+ 			io.atomix.cluster.impl.PhiAccrualFailureDetector failureDetector = failureDetectors.computeIfAbsent(node.id(), ( n) -> new io.atomix.cluster.impl.PhiAccrualFailureDetector());
+ 			double phi = failureDetector.phi();
+ 			if ((phi > 0) && ((phi >= phiFailureThreshold) || ((java.lang.System.currentTimeMillis() - failureDetector.lastUpdated()) > io.atomix.cluster.impl.DefaultClusterService.DEFAULT_FAILURE_TIME))) {
+-				if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) {
++				if (true) {
+ 					deactivateNode(node);
+ 				}
+ 			} else {
+```
