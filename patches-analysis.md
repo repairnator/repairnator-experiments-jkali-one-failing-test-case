@@ -283,7 +283,7 @@ Hypotheses that can be formulated:
 
 | failure type | failing test case | changed file |
 |--------------|-------------------|--------------|
-|java.lang.AssertionError | [NakedSubsetTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/a6fb43806c5e0d1be616fed9f90e609e0f8987f0/src/test/java/NakedSubsetTest.java#L10) | [NakedSubset.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/a6fb43806c5e0d1be616fed9f90e609e0f8987f0/src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java#L37)
+|java.lang.AssertionError | [NakedSubsetTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/a6fb43806c5e0d1be616fed9f90e609e0f8987f0/src/test/java/NakedSubsetTest.java#L10) | [NakedSubset.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/a6fb43806c5e0d1be616fed9f90e609e0f8987f0/src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java#L37) |
 
 ```diff
 --- /src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
@@ -304,4 +304,24 @@ Hypotheses that can be formulated:
  									}
  								}
  							}
+```
+
+### repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [JAXBCodecTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/e0bce64b0c5ab9575e0bf9a6ed56977ca1f849d5/jaxb/src/test/java/feign/jaxb/JAXBCodecTest.java#L180) | [JAXBDecoder.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/e0bce64b0c5ab9575e0bf9a6ed56977ca1f849d5/jaxb/src/main/java/feign/jaxb/JAXBDecoder.java#L73) |
+
+```diff
+--- /src/main/java/feign/jaxb/JAXBDecoder.java
++++ /src/main/java/feign/jaxb/JAXBDecoder.java
+@@ -24,7 +24,7 @@
+ 		if (response.body() == null)
+ 			return null;
+ 
+-		if (type instanceof java.lang.reflect.ParameterizedType) {
++		if (false) {
+ 			java.lang.reflect.ParameterizedType ptype = ((java.lang.reflect.ParameterizedType) (type));
+ 			type = ptype.getRawType();
+ 		}
 ```
