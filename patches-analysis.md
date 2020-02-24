@@ -471,3 +471,26 @@ Notes: same patch of the one generated for the repository repairnator-repairnato
 ```
 
 `Notes: same patch of the one generated for the repository repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit`
+
+### repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| org.junit.ComparisonFailure | [SurefireTestListenerTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit/test-analyzer-sdist/src/test/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/SurefireTestListenerTest.java) extends [AbstractSurefireTestListenerTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1b63f1b13f9ceae558c20cb8752636502f2846e8/test-analyzer-sdist/src/test/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/AbstractSurefireTestListenerTest.java#L37)| [AbstractSurefireTestListener.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1b63f1b13f9ceae558c20cb8752636502f2846e8/test-analyzer-sdist/src/main/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/AbstractSurefireTestListener.java#L128) |
+
+```diff
+--- /src/main/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/AbstractSurefireTestListener.java
++++ /src/main/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/AbstractSurefireTestListener.java
+@@ -80,10 +80,9 @@
+ 
+ 	@java.lang.Override
+ 	public synchronized void testFinished(org.junit.runner.Description description) throws java.lang.Exception {
+-		if (m_currentTestcaseFailed) {
+-			writeCommentToResultFile("Failing test case: " + createTestcaseIdentifier(description).get());
++		if (m_currentTestcaseFailed)
+ 			return;
+-		}
++
+ 		appendStackDistanceOfTestcaseToResult(createTestcaseIdentifier(description));
+ 	}
+ ```
