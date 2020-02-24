@@ -870,3 +870,23 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  		dbi.setTimingCollector(new com.codahale.metrics.jdbi.InstrumentedTimingCollector(environment.metrics(), new io.dropwizard.jdbi.DBIFactory.SanerNamingStrategy()));
  		if (configuration.isAutoCommentsEnabled()) {
 ```
+
+### repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [StringConverterTests.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/test/java/org/pac4j/core/profile/converter/StringConverterTests.java#L32) | [StringConverter.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/main/java/org/pac4j/core/profile/converter/StringConverter.java#L17)
+
+```diff
+--- /src/main/java/org/pac4j/core/profile/converter/StringConverter.java
++++ /src/main/java/org/pac4j/core/profile/converter/StringConverter.java
+@@ -8,7 +8,7 @@
+ 
+ 	@java.lang.Override
+ 	protected java.lang.String internalConvert(final java.lang.Object attribute) {
+-		if (null != attribute) {
++		if (false) {
+ 			return attribute.toString();
+ 		} else {
+ 			return null;
+```
