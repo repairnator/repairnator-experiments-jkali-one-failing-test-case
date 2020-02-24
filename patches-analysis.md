@@ -771,3 +771,34 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  		propagator.setContext(loggerContext);
  		propagator.setResetJUL(true);
 ```
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-276723236-20170918-085046_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-languagetool-org-languagetool-231985354-20170514-015137-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-293263116-20171026-193406_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| org.h2.jdbc.JdbcSQLException | [JodaDateTimeSqlTimestampTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/repairnator-repairnator-experiments-dropwizard-dropwizard-300124879-20171110-125652-firstCommit/dropwizard-jdbi/src/test/java/io/dropwizard/jdbi/timestamps/JodaDateTimeSqlTimestampTest.java) | [NamePrependingStatementRewriter.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/f7947d5e6806a6a2c905a102840581478a702513/dropwizard-jdbi/src/main/java/io/dropwizard/jdbi/NamePrependingStatementRewriter.java#L27) |
+
+```diff
+--- /src/main/java/io/dropwizard/jdbi/NamePrependingStatementRewriter.java
++++ /src/main/java/io/dropwizard/jdbi/NamePrependingStatementRewriter.java
+@@ -20,7 +20,6 @@
+ 			query.append(ctx.getSqlObjectMethod().getName());
+ 			query.append(" */ ");
+ 			query.append(sql);
+-			return rewriter.rewrite(query.toString(), params, ctx);
+ 		}
+ 		return rewriter.rewrite(sql, params, ctx);
+ 	}
+```
