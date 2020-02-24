@@ -947,3 +947,25 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
  		return gov.usgs.volcanoes.core.data.Scnl.parse(scnlString, gov.usgs.volcanoes.core.data.Scnl.DELIMITER);
  	}
 ```
+
+### repairnator-repairnator-experiments-timmolter-XChange-301755888-20171114-043126_bugonly-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [KrakenAdaptersTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b1ee5e7192d9f63771084a9060e5dc65332579e4/xchange-kraken/src/test/java/org/knowm/xchange/kraken/KrakenAdaptersTest.java#L92) | [KrakenAdapters.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/b1ee5e7192d9f63771084a9060e5dc65332579e4/xchange-kraken/src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java#L275-L279) |
+
+```diff
+--- /src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java
++++ /src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java
+@@ -175,11 +175,6 @@
+ 		}
+ 		java.util.Map<org.knowm.xchange.currency.Currency, org.knowm.xchange.dto.meta.CurrencyMetaData> currencies = new java.util.HashMap<>();
+ 		currencies.putAll(originalMetaData.getCurrencies());
+-		for (java.lang.String krakenAssetCode : krakenAssets.keySet()) {
+-			org.knowm.xchange.kraken.dto.marketdata.KrakenAsset krakenAsset = krakenAssets.get(krakenAssetCode);
+-			org.knowm.xchange.currency.Currency currencyCode = org.knowm.xchange.kraken.KrakenAdapters.adaptCurrency(krakenAssetCode);
+-			currencies.put(currencyCode, new org.knowm.xchange.dto.meta.CurrencyMetaData(krakenAsset.getScale()));
+-		}
+ 		return new org.knowm.xchange.dto.meta.ExchangeMetaData(pairs, currencies, originalMetaData == null ? null : originalMetaData.getPublicRateLimits(), originalMetaData == null ? null : originalMetaData.getPrivateRateLimits(), originalMetaData == null ? null : originalMetaData.isShareRateLimits());
+ 	}
+```
