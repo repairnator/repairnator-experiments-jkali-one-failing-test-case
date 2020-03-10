@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "debezium/debezium",
-  "failingModule": "/root/workspace/debezium/debezium/314664721/debezium-core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 291,
-  "failing-test-cases": [
-    {
-      "className": "io.debezium.util.StringsTest",
-      "failingMethods": [
-        "io.debezium.util.StringsTest#regexSplit"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 10, 2020 10:31:29 AM",
+    "reproductionDateEnd": "Mar 10, 2020 11:04:37 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 355330912,
+      "totalMemory": 815095808
+    },
+    "totalDuration": 1985,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1755,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1755
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-debezium-debezium-314664721-20171211-101244_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-debezium-debezium-314664721-20171211-101244_bugonly-firstCommit/debezium-core",
+    "overallMetrics": {
+      "numberRunning": 291,
+      "numberPassing": 290,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "\u003c[\u0027a\\\\\u0027, \u0027b\u0027]\u003e does not contain element(s):\u003c[\u0027a\\,b\u0027]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.util.StringsTest",
+        "numberRunning": 42,
+        "numberPassing": 41,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.util.StringsTest",
+        "testMethod": "regexSplit",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\u003c[\u0027a\\\\\u0027, \u0027b\u0027]\u003e does not contain element(s):\u003c[\u0027a\\,b\u0027]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberPlugins": 0,
+    "numberSourceFiles": 222,
+    "numberTestFiles": 120,
+    "numberLibrariesFailingModule": 39,
+    "numberLines": 0
+  }
 }
