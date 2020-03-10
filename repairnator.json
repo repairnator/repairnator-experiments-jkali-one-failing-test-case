@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 216,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/jackrabbit-oak",
-  "bugCommit": "https://github.com/apache/jackrabbit-oak/compare/16bb7ae735c1...5f27cc825df2",
-  "failingModule": "/root/workspace/apache/jackrabbit-oak/350359885/oak-lucene",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 8882,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorTest",
-      "failingMethods": [
-        "org.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorTest#inaccessibleWorkDirGivesNoop"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 10, 2020 10:31:29 AM",
+    "reproductionDateEnd": "Mar 10, 2020 12:42:23 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 458928376,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 7850,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-350359885-20180307-163413-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-350359885-20180307-163413-firstCommit/oak-lucene",
+    "overallMetrics": {
+      "numberRunning": 8666,
+      "numberPassing": 8665,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 216,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Unwritable existing root folder must have NOOP active blob collector expected:\u003corg.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorFactory$1@5496c165\u003e but was:\u003corg.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobCollectorFactory$ActiveDeletedBlobCollectorImpl@51a8313b\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobSyncTrackerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.plugins.index.lucene.directory.ActiveDeletedBlobSyncTrackerTest",
+        "testMethod": "syncActiveDeletionWithBlobTracker",
+        "failureName": "java.lang.AssertionError",
+        "detail": "First GC should delete some chunks",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 35,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2189,
+    "numberTestFiles": 1550,
+    "numberLibrariesFailingModule": 159,
+    "numberLines": 0
+  }
 }
