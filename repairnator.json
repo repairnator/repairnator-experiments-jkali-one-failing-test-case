@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "prestodb/presto",
-  "failingModule": "/root/workspace/prestodb/presto/290289003/presto-tests",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "org.testng.internal.thread.ThreadTimeoutException"
-  ],
-  "totalNumberRunningTests": 6304,
-  "failing-test-cases": [
-    {
-      "className": "com.facebook.presto.execution.resourceGroups.db.TestQueues",
-      "failingMethods": [
-        "com.facebook.presto.execution.resourceGroups.db.TestQueues#testTooManyQueries"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 10, 2020 10:31:31 AM",
+    "reproductionDateEnd": "Mar 10, 2020 11:22:33 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 104957256,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 3058,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 877,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          877
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-290289003-20171020-064639_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-290289003-20171020-064639_bugonly-firstCommit/presto-main",
+    "overallMetrics": {
+      "numberRunning": 3958,
+      "numberPassing": 3957,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "org.testng.internal.thread.ThreadTimeoutException",
-          "failureDetail": "Method com.facebook.presto.execution.resourceGroups.db.TestQueues.testTooManyQueries() didn\u0027t finish within the time-out 90000",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.facebook.presto.operator.TestExchangeClient",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.facebook.presto.operator.TestExchangeClient",
+        "testMethod": "testBufferLimit",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c5.36s\u003e to be less than \u003c5.00s\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 51,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3394,
+    "numberTestFiles": 1102,
+    "numberLibrariesFailingModule": 144,
+    "numberLines": 0
+  }
 }
