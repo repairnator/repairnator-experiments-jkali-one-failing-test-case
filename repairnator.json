@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "twitter/GraphJet",
-  "bugCommit": "https://github.com/twitter/GraphJet/compare/331819750e88...496ae7c169ec",
-  "failingModule": "/root/workspace/twitter/GraphJet/202811198/graphjet-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 90,
-  "failing-test-cases": [
-    {
-      "className": "com.twitter.graphjet.bipartite.MultiSegmentPowerLawBipartiteGraphTest",
-      "failingMethods": [
-        "com.twitter.graphjet.bipartite.MultiSegmentPowerLawBipartiteGraphTest#testMultiSegmentReverseIterationIncompleteLiveSegment"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 10, 2020 10:31:33 AM",
+    "reproductionDateEnd": "Mar 10, 2020 12:16:36 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 119352128,
+      "totalMemory": 374423552
+    },
+    "totalDuration": 6300,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-twitter-GraphJet-202813643-20170218-005134-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-twitter-GraphJet-202813643-20170218-005134-firstCommit/graphjet-core",
+    "overallMetrics": {
+      "numberRunning": 90,
+      "numberPassing": 89,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c[43]\u003e but was:\u003c[42]\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.twitter.graphjet.bipartite.MultiSegmentPowerLawBipartiteGraphTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.twitter.graphjet.bipartite.MultiSegmentPowerLawBipartiteGraphTest",
+        "testMethod": "testMultiSegmentReverseIterationIncompleteLiveSegment",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[43]\u003e but was:\u003c[42]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 188,
+    "numberTestFiles": 47,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  }
 }
