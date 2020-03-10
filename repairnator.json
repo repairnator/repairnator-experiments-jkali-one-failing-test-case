@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/flink",
-  "failingModule": "/root/workspace/apache/flink/205225246/flink-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2141,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.flink.util.FileUtilsTest",
-      "failingMethods": [
-        "org.apache.flink.util.FileUtilsTest#testDeleteDirectory"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 10, 2020 2:52:47 PM",
+    "reproductionDateEnd": "Mar 10, 2020 5:06:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 576222712,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 8033,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 14,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          14,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 5700,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          5700
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-flink-205225246-20170226-130240_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-flink-205225246-20170226-130240_bugonly-firstCommit/flink-runtime",
+    "overallMetrics": {
+      "numberRunning": 4486,
+      "numberPassing": 4485,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 9,
       "failures": [
         {
-          "failureName": "java.lang.AssertionError",
-          "failureDetail": "this should fail with an exception",
-          "isError": false
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.flink.runtime.clusterframework.BootstrapToolsTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.flink.runtime.clusterframework.BootstrapToolsTest",
+        "testMethod": "testGetTaskManagerShellCommand",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...ctMemorySize\u003d256m   []org.apache.flink.run...\u003e but was:\u003c...ctMemorySize\u003d256m   [ ]org.apache.flink.run...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 72,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2817,
+    "numberTestFiles": 1694,
+    "numberLibrariesFailingModule": 85,
+    "numberLines": 0
+  }
 }
