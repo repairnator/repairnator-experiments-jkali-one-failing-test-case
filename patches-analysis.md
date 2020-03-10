@@ -1050,4 +1050,8 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
 
 ### repairnator-repairnator-experiments-apache-jackrabbit-oak-356668758-20180322-030515-firstCommit
 
+`To be analyzed because there are too many failing test cases`
+
 ### repairnator-repairnator-experiments-apache-jackrabbit-oak-411705869-20180803-141709-firstCommit
+
+`To be analyzed because there are too many failing test cases`
