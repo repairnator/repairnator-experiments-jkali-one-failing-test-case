@@ -1023,3 +1023,31 @@ java.lang.AssertionError | [com.cronutils.Issue215Test](https://github.com/repai
 ### repairnator-repairnator-experiments-resteasy-Resteasy-278556619-20170922-121552_bugonly-firstCommit
 
 `To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-apache-jackrabbit-oak-326667103-20180109-055015_bugonly-firstCommit
+
+`To be analyzed because there are too many failing test cases`
+
+### repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit
+
+| failure type | failing test case | changed file |
+|--------------|-------------------|--------------|
+| java.lang.AssertionError | [HTTPServerTest](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/71c0bd6a1787ecf0b75534b73ddda4046cb6d220/api-server/src/test/java/io/enmasse/api/server/HTTPServerTest.java#L75) | [APIGroupVersion.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/71c0bd6a1787ecf0b75534b73ddda4046cb6d220/api-server/src/main/java/io/enmasse/api/v1/types/APIGroupVersion.java#L25) |
+
+```diff
+--- /src/main/java/io/enmasse/api/v1/types/APIGroupVersion.java
++++ /src/main/java/io/enmasse/api/v1/types/APIGroupVersion.java
+@@ -13,7 +13,6 @@
+ 
+ 	public APIGroupVersion(java.lang.String groupVersion, java.lang.String version) {
+ 		this.groupVersion = groupVersion;
+-		this.version = version;
+ 	}
+ 
+ 	@com.fasterxml.jackson.annotation.JsonProperty("groupVersion")
+
+```
+
+### repairnator-repairnator-experiments-apache-jackrabbit-oak-356668758-20180322-030515-firstCommit
+
+### repairnator-repairnator-experiments-apache-jackrabbit-oak-411705869-20180803-141709-firstCommit
