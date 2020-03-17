@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 5,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "acsukesh/incubator-servicecomb-java-chassis",
-  "bugCommit": "https://github.com/acsukesh/incubator-servicecomb-java-chassis/compare/1a84a1b3c173...04a1033fb4f5",
-  "failingModule": "/root/workspace/acsukesh/incubator-servicecomb-java-chassis/360169529/common/common-rest",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.NullPointerException"
-  ],
-  "totalNumberRunningTests": 1190,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.servicecomb.common.rest.definition.TestRestOperationMeta",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.apache.servicecomb.common.rest.definition.TestRestOperationMeta#testCreateProduceProcessorsTextAndWildcard"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:34:33 PM",
+    "reproductionDateEnd": "Mar 17, 2020 4:44:14 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 43443624,
+      "totalMemory": 91750400
+    },
+    "totalDuration": 578,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-acsukesh-incubator-servicecomb-java-chassis-360169529-20180330-094106-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-acsukesh-incubator-servicecomb-java-chassis-360169529-20180330-094106-firstCommit/handlers/handler-flowcontrol-qps",
+    "overallMetrics": {
+      "numberRunning": 1229,
+      "numberPassing": 1228,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
       "failures": [
         {
-          "failureName": "java.lang.NullPointerException",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.qps.TestProviderQpsFlowControlHandler",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.qps.TestProviderQpsFlowControlHandler",
+        "testMethod": "testGlobalQpsControl",
+        "failureName": "java.lang.AssertionError",
+        "detail": "An exception is expected!",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 63,
+    "numberPlugins": 0,
+    "numberSourceFiles": 869,
+    "numberTestFiles": 516,
+    "numberLibrariesFailingModule": 97,
+    "numberLines": 0
+  }
 }
