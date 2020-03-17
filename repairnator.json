@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 17, 2020 4:36:12 PM",
+    "reproductionDateEnd": "Mar 17, 2020 6:31:53 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 98383448,
+      "totalMemory": 331976704
+    },
+    "totalDuration": 6939,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-aodn-geoserver-build-402025355-20180710-034414-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-aodn-geoserver-build-402025355-20180710-034414-firstCommit/src/aggregator",
+    "overallMetrics": {
+      "numberRunning": 84,
+      "numberPassing": 83,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "au.org.emii.aggregator.NetcdfAggregatorTest",
+        "numberRunning": 18,
+        "numberPassing": 17,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "au.org.emii.aggregator.NetcdfAggregatorTest",
+        "testMethod": "testCarsDepth",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...ONGITUDE\u003d1);\n      :[_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_weighted_standard_deviation_of_sea_water_salinity\";\n      :units \u003d \"1e-3\";\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n\n    short PSAL_sumofwgts(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d -32768S; // short\n      :long_name \u003d \"sum_of_weights_for_sea_water_salinity\";\n      :units \u003d 1.0; // double\n\n    float SLC2(DAY_OF_YEAR\u003d1, DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"DAY_OF_YEAR LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d \"umole kg-1\";\n      :_ChunkSizes \u003d 1024, 2, 1, 1; // int\n\n    float SLC2_RMSresid(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_RMS_of_residuals_wrt_full_temporal_mapping_of_moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d \"umole kg-1\";\n\n    float SLC2_RMSspatialresid(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"inter-seasonal_RMS_of_residuals_wrt_spatial_mean_of_moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d \"umole kg-1\";\n\n    float SLC2_anomaly(DAY_OF_YEAR\u003d1, DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"DAY_OF_YEAR LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"moles_of_silicate_per_unit_mass_in_sea_water_anomaly\";\n      :units \u003d \"umole kg-1\";\n      :_ChunkSizes \u003d 1024, 2, 1, 1; // int\n\n    float SLC2_mean(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_mean_of_moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d \"umole kg-1\";\n\n    short SLC2_sumofwgts(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d -32768S; // short\n      :long_name \u003d \"sum_of_weights_for_moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d 1.0; // double\n\n    float TEMP(DAY_OF_YEAR\u003d1, DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"DAY_OF_YEAR LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"sea_water_temperature\";\n      :units \u003d \"Celsius\";\n      :_ChunkSizes \u003d 1024, 2, 1, 1; // int\n\n    float TEMP_RMSresid(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_RMS_of_residuals_wrt_full_temporal_mapping_of_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n\n    float TEMP_RMSspatialresid(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"inter-seasonal_RMS_of_residuals_wrt_spatial_mean_of_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n\n    float TEMP_anomaly(DAY_OF_YEAR\u003d1, DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"DAY_OF_YEAR LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"sea_water_temperature_anomaly\";\n      :units \u003d \"Celsius\";\n      :_ChunkSizes \u003d 1024, 2, 1, 1; // int\n\n    float TEMP_map_error(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_Standard_Error_of_mapping_for_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n\n    float TEMP_mean(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_mean_of_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n\n    float TEMP_std_dev(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_weighted_standard_deviation_of_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH]\";\n\n    short TEMP_s...\u003e but was:\u003c...ONGITUDE\u003d1);\n      :[coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_weighted_standard_deviation_of_sea_water_salinity\";\n      :units \u003d \"1e-3\";\n\n    short PSAL_sumofwgts(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d -32768S; // short\n      :long_name \u003d \"sum_of_weights_for_sea_water_salinity\";\n      :units \u003d 1.0; // double\n\n    float SLC2(DAY_OF_YEAR\u003d1, DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"DAY_OF_YEAR LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d \"umole kg-1\";\n      :_ChunkSizes \u003d 1024, 2, 1, 1; // int\n\n    float SLC2_RMSresid(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_RMS_of_residuals_wrt_full_temporal_mapping_of_moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d \"umole kg-1\";\n\n    float SLC2_RMSspatialresid(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"inter-seasonal_RMS_of_residuals_wrt_spatial_mean_of_moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d \"umole kg-1\";\n\n    float SLC2_anomaly(DAY_OF_YEAR\u003d1, DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"DAY_OF_YEAR LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"moles_of_silicate_per_unit_mass_in_sea_water_anomaly\";\n      :units \u003d \"umole kg-1\";\n      :_ChunkSizes \u003d 1024, 2, 1, 1; // int\n\n    float SLC2_mean(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_mean_of_moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d \"umole kg-1\";\n\n    short SLC2_sumofwgts(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d -32768S; // short\n      :long_name \u003d \"sum_of_weights_for_moles_of_silicate_per_unit_mass_in_sea_water\";\n      :units \u003d 1.0; // double\n\n    float TEMP(DAY_OF_YEAR\u003d1, DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"DAY_OF_YEAR LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"sea_water_temperature\";\n      :units \u003d \"Celsius\";\n      :_ChunkSizes \u003d 1024, 2, 1, 1; // int\n\n    float TEMP_RMSresid(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_RMS_of_residuals_wrt_full_temporal_mapping_of_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n\n    float TEMP_RMSspatialresid(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"inter-seasonal_RMS_of_residuals_wrt_spatial_mean_of_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n\n    float TEMP_anomaly(DAY_OF_YEAR\u003d1, DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"DAY_OF_YEAR LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"sea_water_temperature_anomaly\";\n      :units \u003d \"Celsius\";\n      :_ChunkSizes \u003d 1024, 2, 1, 1; // int\n\n    float TEMP_map_error(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_Standard_Error_of_mapping_for_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n\n    float TEMP_mean(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_mean_of_sea_water_temperature\";\n      :units \u003d \"Celsius\";\n\n    float TEMP_std_dev(DEPTH\u003d2, LATITUDE\u003d1, LONGITUDE\u003d1);\n      :coordinates \u003d \"LATITUDE LONGITUDE DEPTH\";\n      :_FillValue \u003d 1.17549435E-38f; // float\n      :long_name \u003d \"intra_and_inter-seasonal_weighted_standard_deviation_of_sea_water_temperature\";\n      :units \u003d \"Celsius]\";\n\n    short TEMP_s...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberPlugins": 0,
+    "numberSourceFiles": 150,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 37,
+    "numberLines": 0
+  }
+}
