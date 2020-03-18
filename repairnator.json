@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:30:31 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:58:55 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 13148240,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 1699,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 596,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          596
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-403447416-20180713-102123-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-incubator-dubbo-403447416-20180713-102123-firstCommit/dubbo-registry/dubbo-registry-multicast",
+    "overallMetrics": {
+      "numberRunning": 1215,
+      "numberPassing": 1214,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 9,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.dubbo.registry.multicast.MulticastRegistryTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.dubbo.registry.multicast.MulticastRegistryTest",
+        "testMethod": "testSubscribe",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cdubbo://130.239.24[0.190]/org.apache.dubbo.te...\u003e but was:\u003cdubbo://130.239.24[1.137]/org.apache.dubbo.te...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberPlugins": 0,
+    "numberSourceFiles": 745,
+    "numberTestFiles": 634,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  }
+}
