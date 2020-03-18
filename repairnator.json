@@ -1,0 +1,119 @@
+{
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-diamondblack-incubator-dubbo-402309814-20180710-193614-firstCommit/dubbo-registry/dubbo-registry-multicast",
+    "overallMetrics": {
+      "numberRunning": 1214,
+      "numberPassing": 1213,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 9,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.dubbo.registry.multicast.MulticastRegistryTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.dubbo.registry.multicast.MulticastRegistryTest",
+        "testMethod": "testSubscribe",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cdubbo://130.239.24[1.62]/org.apache.dubbo.te...\u003e but was:\u003cdubbo://130.239.24[0.237]/org.apache.dubbo.te...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberPlugins": 0,
+    "numberSourceFiles": 742,
+    "numberTestFiles": 634,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 10:56:55 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 15441936,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 1529,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 316,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          316
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-diamondblack-incubator-dubbo-402309814-20180710-193614-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  }
+}
