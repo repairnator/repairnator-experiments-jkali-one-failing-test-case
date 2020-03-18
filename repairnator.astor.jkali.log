@@ -7484,3 +7484,12 @@ java.io.IOException: Permission denied
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+[WARN ] org.apache.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:189) -  [DUBBO] Failed to save registry store file, cause: Permission denied, dubbo version: 2.7.0-SNAPSHOT, current host: 130.239.242.52
+java.io.IOException: Permission denied
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1012)
+	at org.apache.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:153)
+	at org.apache.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
