@@ -3882,3 +3882,18 @@ Caused by: java.util.concurrent.TimeoutException: null
 12:17:19.929 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to INACTIVE
 12:17:19.929 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Transitioning to INACTIVE
 12:17:19.935 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to FOLLOWER
+12:17:21.086 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to CANDIDATE
+12:17:21.086 [raft-server-1] INFO  i.a.p.raft.roles.CandidateRole - RaftServer{1}{role=CANDIDATE} - Starting election
+12:17:21.095 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to LEADER
+12:17:21.095 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Found leader 1
+12:17:21.096 [raft-server-1] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{1} - Server started successfully!
+12:17:21.133 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to PROMOTABLE
+12:17:21.134 [raft-server-2] INFO  i.a.p.r.c.impl.RaftClusterContext - RaftServer{2} - Successfully joined via 1
+12:17:21.391 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Found leader 1
+12:17:22.636 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to FOLLOWER
+12:17:22.638 [raft-server-2] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{2} - Server started successfully!
+12:17:22.639 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to INACTIVE
+12:17:22.655 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to INACTIVE
+12:17:22.752 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Transitioning to FOLLOWER
+12:17:22.795 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to FOLLOWER
+12:17:22.853 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Transitioning to FOLLOWER
