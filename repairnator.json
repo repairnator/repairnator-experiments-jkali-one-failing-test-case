@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "druid-io/druid",
-  "failingModule": "/root/workspace/druid-io/druid/364290489/api",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 378,
-  "failing-test-cases": [
-    {
-      "className": "io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.druid.data.input.impl.prefetch.PrefetchableTextFilesFirehoseFactoryTest#testReconnectWithCacheAndPrefetch"
-      ],
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-364290489-20180410-031638-firstCommit/extensions-contrib/distinctcount",
+    "overallMetrics": {
+      "numberRunning": 85536,
+      "numberPassing": 85535,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 91,
       "failures": [
         {
-          "failureName": "java.lang.RuntimeException",
-          "failureDetail": "java.util.concurrent.TimeoutException",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.druid.query.aggregation.distinctcount.DistinctCountGroupByQueryTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.druid.query.aggregation.distinctcount.DistinctCountGroupByQueryTest",
+        "testMethod": "testGroupByWithDistinctCountAgg",
+        "failureName": "java.lang.AssertionError",
+        "detail": "distinct-count: Expected expectedResultsIter to be exhausted, next element was MapBasedRow{timestamp\u003d1970-01-01T00:00:00.000Z, event\u003d{UV\u003d2, client_type\u003diphone, rows\u003d2}}",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 52,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2476,
+    "numberTestFiles": 903,
+    "numberLibrariesFailingModule": 84,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 11:10:33 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 42323792,
+      "totalMemory": 109789184
+    },
+    "totalDuration": 2347,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          17
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-druid-io-druid-364290489-20180410-031638-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
     }
-  ]
+  }
 }
