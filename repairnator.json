@@ -1,0 +1,119 @@
+{
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ctripcorp-apollo-412640203-20180806-152244-firstCommit/apollo-configservice",
+    "overallMetrics": {
+      "numberRunning": 436,
+      "numberPassing": 435,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.ctrip.framework.apollo.configservice.service.AppNamespaceServiceWithCacheTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.ctrip.framework.apollo.configservice.service.AppNamespaceServiceWithCacheTest",
+        "testMethod": "testAppNamespace",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected null, but was:\u003cAppNamespace{id\u003d5, dataChangeLastModifiedTime\u003dWed Mar 18 10:33:51 CET 2020, name\u003danotherPublicNamespace, appId\u003dsomeAppId, isPublic\u003dtrue}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberPlugins": 0,
+    "numberSourceFiles": 465,
+    "numberTestFiles": 121,
+    "numberLibrariesFailingModule": 165,
+    "numberLines": 0
+  },
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 10:31:21 AM",
+    "reproductionDateEnd": "Mar 18, 2020 11:58:12 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 369688912,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 5208,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 5005,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          5005
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ctripcorp-apollo-412640203-20180806-152244-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  }
+}
