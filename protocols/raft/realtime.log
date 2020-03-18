@@ -6729,3 +6729,40 @@ Caused by: java.util.concurrent.TimeoutException: null
 12:18:26.327 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
 12:18:26.327 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
 12:18:26.327 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:27.237 [raft-server-1] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{1}{role=FOLLOWER} - java.net.ConnectException
+12:18:27.237 [raft-server-1] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{1}{role=FOLLOWER} - java.net.ConnectException
+12:18:27.237 [raft-server-1] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{1}{role=FOLLOWER} - java.net.ConnectException
+12:18:27.672 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:27.673 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:27.673 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:28.552 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:28.552 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:28.552 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:28.584 [raft-server-1] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{1}{role=FOLLOWER} - java.net.ConnectException
+12:18:28.584 [raft-server-1] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{1}{role=FOLLOWER} - java.net.ConnectException
+12:18:28.584 [raft-server-1] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{1}{role=FOLLOWER} - java.net.ConnectException
+12:18:28.829 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Transitioning to FOLLOWER
+12:18:29.329 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:29.329 [raft-server-2] WARN  i.a.p.raft.roles.FollowerRole - RaftServer{2}{role=FOLLOWER} - java.net.ConnectException
+12:18:29.329 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to CANDIDATE
+12:18:29.330 [raft-server-2] INFO  i.a.p.raft.roles.CandidateRole - RaftServer{2}{role=CANDIDATE} - Starting election
+12:18:29.332 [raft-server-2] WARN  i.a.p.raft.roles.CandidateRole - RaftServer{2}{role=CANDIDATE} - java.net.ConnectException
+12:18:29.332 [raft-server-2] WARN  i.a.p.raft.roles.CandidateRole - RaftServer{2}{role=CANDIDATE} - java.net.ConnectException
+12:18:29.351 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Transitioning to LEADER
+12:18:29.351 [raft-server-2] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{2} - Found leader 2
+12:18:29.351 [raft-server-2] WARN  i.a.p.raft.roles.LeaderAppender - RaftServer{2} - Failed to configure 4
+12:18:29.351 [raft-server-2] WARN  i.a.p.raft.roles.LeaderAppender - RaftServer{2} - Failed to configure 5
+12:18:29.351 [raft-server-2] WARN  i.a.p.raft.roles.LeaderAppender - RaftServer{2} - Failed to configure 4
+12:18:29.351 [raft-server-2] WARN  i.a.p.raft.roles.LeaderAppender - RaftServer{2} - Failed to configure 5
+12:18:29.352 [raft-server-1] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{1} - Found leader 2
+12:18:29.352 [raft-server-3] INFO  i.a.protocols.raft.impl.RaftContext - RaftServer{3} - Found leader 2
+12:18:29.352 [raft-server-2] WARN  i.a.p.raft.roles.LeaderAppender - RaftServer{2} - Failed to configure 4
+12:18:29.352 [raft-server-2] WARN  i.a.p.raft.roles.LeaderAppender - RaftServer{2} - Failed to configure 5
+12:18:29.353 [raft-server-2] WARN  i.a.p.raft.roles.LeaderAppender - RaftServer{2} - Failed to configure 4
+12:18:29.353 [raft-server-2] WARN  i.a.p.raft.roles.LeaderAppender - RaftServer{2} - Failed to configure 5
+12:18:30.522 [raft-server-3] INFO  i.a.p.r.c.impl.RaftClusterContext - RaftServer{3} - Successfully joined via 2
+12:18:30.522 [raft-server-3] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{3} - Server started successfully!
+12:18:30.523 [raft-server-2] INFO  i.a.p.r.c.impl.RaftClusterContext - RaftServer{2} - Successfully joined via 3
+12:18:30.523 [raft-server-2] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{2} - Server started successfully!
+12:18:30.819 [raft-server-1] INFO  i.a.p.r.c.impl.RaftClusterContext - RaftServer{1} - Successfully joined via 3
+12:18:30.819 [raft-server-1] INFO  i.a.p.raft.impl.DefaultRaftServer - RaftServer{1} - Server started successfully!
