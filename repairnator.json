@@ -1,32 +1,118 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "scottleedavis/mattermost-remind",
-  "bugCommit": "https://github.com/scottleedavis/mattermost-remind/compare/afc2ace8a985...5e58d7f3c1b3",
-  "failingModule": "/root/workspace/scottleedavis/mattermost-remind/398431681",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.time.format.DateTimeParseException"
-  ],
-  "totalNumberRunningTests": 4,
-  "failing-test-cases": [
-    {
-      "className": "scottleedavis.mattermost.remind.reminders.OccurrenceTests",
-      "failingMethods": [],
-      "erroringMethods": [
-        "calculateOn"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:38:20 PM",
+    "reproductionDateEnd": "Mar 19, 2020 8:36:30 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 48036864,
+      "totalMemory": 324743168
+    },
+    "totalDuration": 3487,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 3390,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          3390
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-scottleedavis-mattermost-remind-398431681-20180629-233445-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-scottleedavis-mattermost-remind-398431681-20180629-233445-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 4,
+      "numberPassing": 3,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.time.format.DateTimeParseException",
-          "failureDetail": "Text \u00277 09:00\u0027 could not be parsed at index 0",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "scottleedavis.mattermost.remind.reminders.OccurrenceTests",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "scottleedavis.mattermost.remind.reminders.OccurrenceTests",
+        "testMethod": "calculateOn",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 22,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  }
 }
