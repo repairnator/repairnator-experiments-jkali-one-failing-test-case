@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 25,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/17ed3a050902...8ba718a34b58",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/285933922/languagetool-standalone",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.io.IOException"
-  ],
-  "totalNumberRunningTests": 838,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.tagging.disambiguation.rules.StandaloneDisambiguationRuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.tagging.disambiguation.rules.StandaloneDisambiguationRuleTest#testDisambiguationRuleTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:52:59 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:04:12 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 178836448,
+      "totalMemory": 464392192
+    },
+    "totalDuration": 669,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 380,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          380
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-285938391-20171010-101847-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-285938391-20171010-101847-firstCommit/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 394,
+      "numberPassing": 393,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 18,
       "failures": [
         {
-          "failureName": "java.io.IOException",
-          "failureDetail": "Cannot load or parse \u0027/org/languagetool/resource/pt/disambiguation.xml\u0027",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"ventrolateral\"\n     but: was \"Ventrolateral/A\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 693,
+    "numberTestFiles": 455,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  }
 }
