@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:50:58 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:08:09 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 55098472,
+      "totalMemory": 146157568
+    },
+    "totalDuration": 1025,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 67,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          67
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-eclipse-ditto-407599059-20180724-213504-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-eclipse-ditto-407599059-20180724-213504-firstCommit/services/concierge/batch",
+    "overallMetrics": {
+      "numberRunning": 4030,
+      "numberPassing": 4029,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.eclipse.ditto.services.concierge.batch.actors.BatchCoordinatorActorTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.eclipse.ditto.services.concierge.batch.actors.BatchCoordinatorActorTest",
+        "testMethod": "batchExecutesOnlyOnce",
+        "failureName": "java.lang.AssertionError",
+        "detail": "assertion failed: timeout (3 seconds) while expecting 3 messages (got 2)",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 89,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1558,
+    "numberTestFiles": 940,
+    "numberLibrariesFailingModule": 123,
+    "numberLines": 0
+  }
+}
