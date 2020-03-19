@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 24,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/be2518ba4cd3...52a3043c3cbc",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/317404972/languagetool-server",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.languagetool.server.PortBindingException"
-  ],
-  "totalNumberRunningTests": 801,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.server.HTTPSServerTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.server.HTTPSServerTest#runRequestLimitationTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:53:09 AM",
+    "reproductionDateEnd": "Mar 19, 2020 12:46:45 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 79098072,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6811,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6158,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6158
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-317404972-20171216-182659_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-317404972-20171216-182659_bugonly-firstCommit/languagetool-standalone",
+    "overallMetrics": {
+      "numberRunning": 838,
+      "numberPassing": 837,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 26,
       "failures": [
         {
-          "failureName": "org.languagetool.server.PortBindingException",
-          "failureDetail": "LanguageTool HTTPS server could not be started on host \"localhost\", port 8081.\nMaybe something else is running on that port already?",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.RuleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.RuleTest",
+        "testMethod": "testJavaRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Did not get the expected rule match for the incorrect example sentence:\nText: Der alte Mann wohnte in einem großen Haus. Es stand in einem großen Garten.\nRule: GERMAN_STYLE_REPEATED_WORD_RULE\nMatches: [GERMAN_STYLE_REPEATED_WORD_RULE:30-36:Stilproblem: Wortwiederholung, GERMAN_STYLE_REPEATED_WORD_RULE:61-67:Stilproblem: Wortwiederholung] expected:\u003c1\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 726,
+    "numberTestFiles": 466,
+    "numberLibrariesFailingModule": 85,
+    "numberLines": 0
+  }
 }
