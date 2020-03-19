@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "mincong-h/java-examples",
-  "bugCommit": "https://github.com/mincong-h/java-examples/compare/3014b658f7a3...f410d5a9c7c9",
-  "failingModule": "/root/workspace/mincong-h/java-examples/370937468/basic",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.io.IOException"
-  ],
-  "totalNumberRunningTests": 25,
-  "failing-test-cases": [
-    {
-      "className": "io.mincongh.io.PathTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.mincongh.io.PathTest#readOnly"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:58:04 AM",
+    "reproductionDateEnd": "Mar 19, 2020 10:59:47 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 19263296,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 98,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          7
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mincong-h-java-examples-370937468-20180425-095057-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-mincong-h-java-examples-370937468-20180425-095057-firstCommit/basic",
+    "overallMetrics": {
+      "numberRunning": 25,
+      "numberPassing": 24,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "java.io.IOException",
-          "failureDetail": "Mount point not found",
-          "isError": true
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.mincongh.io.PathTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.mincongh.io.PathTest",
+        "testMethod": "readOnly",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[fals]e\u003e but was:\u003c[tru]e\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberPlugins": 0,
+    "numberSourceFiles": 91,
+    "numberTestFiles": 88,
+    "numberLibrariesFailingModule": 4,
+    "numberLines": 0
+  }
 }
