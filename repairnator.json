@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 25,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/21ac8912545f...0d83b519320b",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/305720237/languagetool-standalone",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 843,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.RuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.rules.RuleTest#testJavaRules"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:56:03 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:04:12 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 26216896,
+      "totalMemory": 85569536
+    },
+    "totalDuration": 486,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          7
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-305726961-20171122-112730-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-305726961-20171122-112730-firstCommit/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 398,
+      "numberPassing": 397,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 18,
       "failures": [
         {
-          "failureName": "java.lang.RuntimeException",
-          "failureDetail": "Rule id occurs more than once: \u0027WIKIPEDIA_COMMON_ERRORS\u0027, language: Galician",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"ventrolateral\"\n     but: was \"Ventrolateral/A\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 706,
+    "numberTestFiles": 457,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  }
 }
