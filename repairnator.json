@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "rabbitmq/rabbitmq-perf-test",
-  "failingModule": "/root/workspace/rabbitmq/rabbitmq-perf-test/353140690",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.awaitility.core.ConditionTimeoutException"
-  ],
-  "totalNumberRunningTests": 61,
-  "failing-test-cases": [
-    {
-      "className": "com.rabbitmq.perf.MessageCountTimeLimitTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.rabbitmq.perf.MessageCountTimeLimitTest#consumerCount{int, int}[1]"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:04:16 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:07:38 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 19582504,
+      "totalMemory": 105967616
+    },
+    "totalDuration": 200,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 46,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          46,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 58,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          58
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rabbitmq-rabbitmq-perf-test-353140690-20180314-024016-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rabbitmq-rabbitmq-perf-test-353140690-20180314-024016-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 61,
+      "numberPassing": 60,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "org.awaitility.core.ConditionTimeoutException",
-          "failureDetail": "Lambda expression in com.rabbitmq.perf.MessageCountTimeLimitTest: expected \u003ctrue\u003e but was \u003cfalse\u003e within 5 seconds.",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.rabbitmq.perf.MessageCountTimeLimitTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.rabbitmq.perf.MessageCountTimeLimitTest",
+        "testMethod": "producerCount{int, int}[1]",
+        "failureName": "java.lang.AssertionError",
+        "detail": "10 messages should have been published by now\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 58,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  }
 }
