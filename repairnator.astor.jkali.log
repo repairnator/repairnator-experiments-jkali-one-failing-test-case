@@ -1,0 +1,665 @@
+[INFO ] fr.inria.main.evolution.AstorMain.setupLogging(AstorMain.java:272) - Log file at: /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:982) - Source folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/mockwebserver/src/main/java]
+[INFO ] fr.inria.main.AbstractMain.determineSourceFolders(AbstractMain.java:1001) - Source Test folders: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/mockwebserver/src/test/java]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:911) - Test retrieved from classes: 2
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/mockwebserver/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/mockwebserver/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okhttp3/okhttp/3.10.0-SNAPSHOT/okhttp-3.10.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okhttp3/okhttp-testing-support/3.10.0-SNAPSHOT/okhttp-testing-support-3.10.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/org/bouncycastle/bcprov-jdk15on/1.50/bcprov-jdk15on-1.50.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.calculateSuspicious(AstorCoreEngine.java:925) - Setting up the max to 134810 milliseconds (134 sec)
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:720) - 
+---- Creating spoon model
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildSpoonModel(MutationSupporter.java:236) - Creating model,  Code location from working folder: /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/mockwebserver/src/main/java
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:67) - building model: /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/mockwebserver/src/main/java, compliance level: 8
+[INFO ] fr.inria.astor.core.manipulation.MutationSupporter.buildModel(MutationSupporter.java:81) - Classpath (Dependencies) for building SpoonModel: [/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okhttp3/okhttp/3.10.0-SNAPSHOT/okhttp-3.10.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okhttp3/okhttp-testing-support/3.10.0-SNAPSHOT/okhttp-testing-support-3.10.0-SNAPSHOT.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/org/bouncycastle/bcprov-jdk15on/1.50/bcprov-jdk15on-1.50.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar, /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initModel(AstorCoreEngine.java:790) - Number of CtTypes created: 10
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.initPopulation(AstorCoreEngine.java:724) - 
+---- Initial suspicious size: 185
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:134) - Total suspicious from FL: 185,  183
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createProgramInstance(ProgramVariantFactory.java:143) - Total ModPoint created: 183
+[INFO ] fr.inria.astor.core.solutionsearch.population.ProgramVariantFactory.createInitialPopulation(ProgramVariantFactory.java:82) - Creating program variant #1, [Variant id: 1, #gens: 183, #ops: 0, parent:-]
+[INFO ] fr.inria.astor.core.solutionsearch.AstorCoreEngine.setFitnessOfPopulation(AstorCoreEngine.java:765) - The original fitness is : 1.0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:66) - ----------------------------
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:67) - ---Configuration properties:---Execution values
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:alternativecompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoredTestCases= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:workingDirectory= /proj/nobackup/snic2020-10-10/dginelli/astor
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:manipulatesuper= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:validation= process
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4testexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:operatorspace= suppression
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:disablelog= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:binjavafolder= /target/classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:synthesis_depth= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltartestpackagetoexclude= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfitnessinitialpopulation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuiteresultfolder= evosuite
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:flthreshold= 0.1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:regressionforfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:collectonlyusedmethod= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:preservelinenumbers= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax2= 134810
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:tmax1= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probagenmutation= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nomodificationconvergence= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:diff_type= relative
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:targetelementprocessor= statements
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srctestfolder= src/test/java
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forceExecuteRegression= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:clusteringfilename= clustering.csv
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logtestexecution= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_buggy_class= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:numberExecutions= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumbersolutions= 3
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evo_affected_by_op= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:population= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:considerzerovaluesusp= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxCombinationVariableLimit= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:loglevel= INFO
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savesolution= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:javacompliancelevel= 8
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:uniqueoptogen= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:gzoltarpackagetonotinstrument= junit.framework
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectIdentifier= AstorJKali-repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:modificationpointnavigation= weight
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:stopfirst= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:multipointmodification= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:elementsToMutate= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jsonoutputname= astor_output
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoDSE= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bintestfolder= /target/test-classes
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:testbystep= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:version-location= ./math-version/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:reintroduce= PARENTS:ORIGINAL
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:executorjar= ./lib/jtestex7.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxGeneration= 200
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:max_synthesis_step= 10000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:projectinfocommand= com.github.tdurieux:project-config-maven-plugin:info
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxVarCombination= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtime= 100
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvmversion= 1.8.0_202
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:commandTrunk= 50000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:faultlocalization= CoCoSpoon
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetmodel= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxsuspcandidates= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mode= jkali
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:learningdir= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:jvm4evosuitetestexecution= /cvmfs/ebsw.hpc2n.umu.se/amd64_ubuntu1604_common/software/Core/Java/1.8.0_202/bin
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:filterfaultlocalization= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:mutationrate= 1 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pathToMVNRepository= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resourcesfolder= /src/main/resources:/src/test/resources:
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:runjava7code= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:timezone= Europe/Paris
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evoRunOnBuggyClass= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:limitbysuspicious= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logsattemps= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:dependenciespath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okhttp3/okhttp/3.10.0-SNAPSHOT/okhttp-3.10.0-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/com/squareup/okhttp3/okhttp-testing-support/3.10.0-SNAPSHOT/okhttp-testing-support-3.10.0-SNAPSHOT.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/org/bouncycastle/bcprov-jdk15on/1.50/bcprov-jdk15on-1.50.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/junit/junit/4.12/junit-4.12.jar:/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logpatternlayout= [%-5p] %l - %m%n
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:packageToInstrument= 
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:skipfaultlocalization= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:scope= package
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:transformingredient= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxnumvariablesperingredient= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:logfilepath= /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/repairnator.astor.jkali.log
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:parsesourcefromoriginal= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:pvariantfoldername= variant-
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savespoonmodelondisk= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:srcjavafolder= src/main/java/
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:ignoreflakyinfl= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:cleantemplates= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:applyCrossover= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxmodificationpoints= 1000
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:duplicateingredientsinspace= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:metid= 0
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:continuewhenmodelfail= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:saveall= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:seed= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:savecompletepatched= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:resetoperations= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:processoutputinfile= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:location= /scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316104587-20171213-223203_bugonly-firstCommit/mockwebserver
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:probabilistictransformation= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:overridemaxtime= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:outputjsonresult= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:allpoints= false
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:bugId= 280
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:evosuitetimeout= 120
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:maxtimefactor= 10
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:nrPlaceholders= 1
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:69) - p:forcesubprocesskilling= true
+[INFO ] fr.inria.astor.core.setup.ConfigurationProperties.print(ConfigurationProperties.java:71) - ----------------------------
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 811, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `source.skip(toSkip) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 195, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.bodyLimit = maxBodyLength ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 399, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `okhttp3.mockwebserver.MockWebServer.logger.info( (((this + " connection from ") + raw.getInetAddress[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 588, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `contentLength = java.lang.Long.parseLong(header.substring(15).trim()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 612, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `hasBody = contentLength > 0 ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 613, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `throttledTransfer(policy, socket, source, okio.Okio.buffer(requestBody), contentLength, true) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 810, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (toSkip > 0) { 	source.skip(toSkip); } ` -topatch--> `if (true) { 	source.skip(toSkip); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 810, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (toSkip > 0) { 	source.skip(toSkip); } ` -topatch--> `if (false) { 	source.skip(toSkip); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 810, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (toSkip > 0) { 	source.skip(toSkip); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 807, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `source.read(buffer, toRead) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 806, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (toRead > 0) { 	source.read(buffer, toRead); } ` -topatch--> `if (true) { 	source.read(this.buffer, toRead); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 806, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (toRead > 0) { 	source.read(buffer, toRead); } ` -topatch--> `if (false) { 	source.read(this.buffer, toRead); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 806, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (toRead > 0) { 	source.read(buffer, toRead); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 813, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `remainingByteCount -= toRead ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 814, pointed element: CtOperatorAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtOperatorAssignmentImpl) `receivedByteCount += byteCount ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 208, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.socketPolicy = socketPolicy ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 725, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 725, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (byteCount == 0) 	return; ` -topatch--> `if (true) { 	return;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 762990
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 725, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (byteCount == 0) 	return; ` -topatch--> `if (false) { 	return;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 725, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (byteCount == 0) 	return; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 737, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int b = 0; b < bytesPerPeriod;) {  	long toRead = java.lang.Math.min(byteCount, bytesPerPeriod [...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 772106
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 736, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (!socket.isClosed()) { 	for (int b = 0; b < bytesPerPeriod;) {  		long toRead = java.lang.Math[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 784997
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 69, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `responseQueue.add(response) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 795121
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 275, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `((okhttp3.mockwebserver.QueueDispatcher) (dispatcher)).enqueueResponse(response.clone()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 804849
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 62, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `result.headers = headers.build().newBuilder() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 64, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return result ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 63, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `result.promises = new java.util.ArrayList<>(promises) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `responseQueue.add(okhttp3.mockwebserver.QueueDispatcher.DEAD_LETTER) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 56, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (result == okhttp3.mockwebserver.QueueDispatcher.DEAD_LETTER) 	responseQueue.add(okhttp3.mockwebs[...] ` -topatch--> `if (true) { 	this.responseQueue.add(okhttp3.mockwebserver.QueueDispatcher.DEAD_LETTER);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 56, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (result == okhttp3.mockwebserver.QueueDispatcher.DEAD_LETTER) 	responseQueue.add(okhttp3.mockwebs[...] ` -topatch--> `if (false) { 	this.responseQueue.add(okhttp3.mockwebserver.QueueDispatcher.DEAD_LETTER);}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 56, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (result == okhttp3.mockwebserver.QueueDispatcher.DEAD_LETTER) 	responseQueue.add(okhttp3.mockwebs[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 63, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return peek ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (peek != null) 	return peek; ` -topatch--> `if (true) { 	return peek;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 821589
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (peek != null) 	return peek; ` -topatch--> `if (false) { 	return peek;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 63, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (peek != null) 	return peek; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 42, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((requestLine != null) && requestLine.equals("GET /favicon.ico HTTP/1.1")) { 	okhttp3.mockwebserv[...] ` -topatch--> `if (true) { 	okhttp3.mockwebserver.QueueDispatcher.logger.info("served " + requestLine); 	return new[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 42, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((requestLine != null) && requestLine.equals("GET /favicon.ico HTTP/1.1")) { 	okhttp3.mockwebserv[...] ` -topatch--> `if (false) { 	okhttp3.mockwebserver.QueueDispatcher.logger.info("served " + requestLine); 	return ne[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 42, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((requestLine != null) && requestLine.equals("GET /favicon.ico HTTP/1.1")) { 	okhttp3.mockwebserv[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((failFastResponse != null) && (responseQueue.peek() == null)) {  	return failFastResponse; } ` -topatch--> `if (true) {  	return this.failFastResponse; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 835616
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((failFastResponse != null) && (responseQueue.peek() == null)) {  	return failFastResponse; } ` -topatch--> `if (false) {  	return this.failFastResponse; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 47, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((failFastResponse != null) && (responseQueue.peek() == null)) {  	return failFastResponse; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 332, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (java.util.Iterator<java.net.Socket> s = openClientSockets.iterator(); s.hasNext();) { 	okhttp3.[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 571, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `request = source.readUtf8LineStrict() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 575, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (request.length() == 0) { 	return null; } ` -topatch--> `if (true) { 	return null; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 575, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (request.length() == 0) { 	return null; } ` -topatch--> `if (false) { 	return null; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 575, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (request.length() == 0) { 	return null; } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 587, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((contentLength == (-1)) && lowercaseHeader.startsWith("content-length:")) { 	contentLength = jav[...] ` -topatch--> `if (true) { 	contentLength = java.lang.Long.parseLong(header.substring(15).trim()); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 853039
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 587, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((contentLength == (-1)) && lowercaseHeader.startsWith("content-length:")) { 	contentLength = jav[...] ` -topatch--> `if (false) { 	contentLength = java.lang.Long.parseLong(header.substring(15).trim()); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 587, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((contentLength == (-1)) && lowercaseHeader.startsWith("content-length:")) { 	contentLength = jav[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 585, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `okhttp3.internal.Internal.instance.addLenient(headers, header) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 584, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while ((header = source.readUtf8LineStrict()).length() != 0) { 	okhttp3.internal.Internal.instance.a[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 864756
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 594, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (lowercaseHeader.startsWith("expect:") &&  lowercaseHeader.substring(7).trim().equalsIgnoreCase("[...] ` -topatch--> `if (true)  { 	expectContinue = true; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 594, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (lowercaseHeader.startsWith("expect:") &&  lowercaseHeader.substring(7).trim().equalsIgnoreCase("[...] ` -topatch--> `if (false)  { 	expectContinue = true; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 594, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (lowercaseHeader.startsWith("expect:") &&  lowercaseHeader.substring(7).trim().equalsIgnoreCase("[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 590, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (lowercaseHeader.startsWith("transfer-encoding:") &&  lowercaseHeader.substring(18).trim().equals[...] ` -topatch--> `if (true)  { 	chunked = true; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 875307
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 590, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (lowercaseHeader.startsWith("transfer-encoding:") &&  lowercaseHeader.substring(18).trim().equals[...] ` -topatch--> `if (false)  { 	chunked = true; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 590, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (lowercaseHeader.startsWith("transfer-encoding:") &&  lowercaseHeader.substring(18).trim().equals[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 600, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (expectContinue && (dispatcher.peek().getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.EXP[...] ` -topatch--> `if (true) { 	sink.writeUtf8("HTTP/1.1 100 Continue\r\n"); 	sink.writeUtf8("Content-Length: 0\r\n"); [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 600, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (expectContinue && (dispatcher.peek().getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.EXP[...] ` -topatch--> `if (false) { 	sink.writeUtf8("HTTP/1.1 100 Continue\r\n"); 	sink.writeUtf8("Content-Length: 0\r\n");[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 600, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (expectContinue && (dispatcher.peek().getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.EXP[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 611, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (contentLength != (-1)) { 	hasBody = contentLength > 0; 	throttledTransfer(policy, socket, source[...] ` -topatch--> `if (true) { 	hasBody = contentLength > 0; 	throttledTransfer(policy, socket, source, okio.Okio.buffe[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 885493
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 611, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (contentLength != (-1)) { 	hasBody = contentLength > 0; 	throttledTransfer(policy, socket, source[...] ` -topatch--> `if (false) { 	hasBody = contentLength > 0; 	throttledTransfer(policy, socket, source, okio.Okio.buff[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 611, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (contentLength != (-1)) { 	hasBody = contentLength > 0; 	throttledTransfer(policy, socket, source[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 629, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (hasBody && (!okhttp3.internal.http.HttpMethod.permitsRequestBody(method))) { 	throw new java.lan[...] ` -topatch--> `if (true) { 	throw new java.lang.IllegalArgumentException("Request must not have a body: " + request[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 894093
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 629, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (hasBody && (!okhttp3.internal.http.HttpMethod.permitsRequestBody(method))) { 	throw new java.lan[...] ` -topatch--> `if (false) { 	throw new java.lang.IllegalArgumentException("Request must not have a body: " + reques[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 629, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (hasBody && (!okhttp3.internal.http.HttpMethod.permitsRequestBody(method))) { 	throw new java.lan[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 410, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (sslSocketFactory != null) { 	if (tunnelProxy) { 		createTunnel(); 	} 	okhttp3.mockwebserver.Sock[...] ` -topatch--> `if (true) { 	if (this.tunnelProxy) { 		createTunnel(); 	} 	okhttp3.mockwebserver.SocketPolicy socket[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 901893
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 410, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (sslSocketFactory != null) { 	if (tunnelProxy) { 		createTunnel(); 	} 	okhttp3.mockwebserver.Sock[...] ` -topatch--> `if (false) { 	if (this.tunnelProxy) { 		createTunnel(); 	} 	okhttp3.mockwebserver.SocketPolicy socke[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 410, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (sslSocketFactory != null) { 	if (tunnelProxy) { 		createTunnel(); 	} 	okhttp3.mockwebserver.Sock[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 441, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (protocol == okhttp3.Protocol.HTTP_2) { 	okhttp3.mockwebserver.MockWebServer.Http2SocketHandler h[...] ` -topatch--> `if (true) { 	okhttp3.mockwebserver.MockWebServer.Http2SocketHandler http2SocketHandler = new okhttp3[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 441, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (protocol == okhttp3.Protocol.HTTP_2) { 	okhttp3.mockwebserver.MockWebServer.Http2SocketHandler h[...] ` -topatch--> `if (false) { 	okhttp3.mockwebserver.MockWebServer.Http2SocketHandler http2SocketHandler = new okhttp[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 441, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (protocol == okhttp3.Protocol.HTTP_2) { 	okhttp3.mockwebserver.MockWebServer.Http2SocketHandler h[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 438, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `socket = raw ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 451, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (protocol != okhttp3.Protocol.HTTP_1_1) { 	throw new java.lang.AssertionError(); } ` -topatch--> `if (true) { 	throw new java.lang.AssertionError(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 910937
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 451, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (protocol != okhttp3.Protocol.HTTP_1_1) { 	throw new java.lang.AssertionError(); } ` -topatch--> `if (false) { 	throw new java.lang.AssertionError(); }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 451, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (protocol != okhttp3.Protocol.HTTP_1_1) { 	throw new java.lang.AssertionError(); } ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 458, pointed element: CtWhileImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtWhileImpl) `while (processOneRequest(socket, source, sink)) { }  ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 497, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `requestCount.incrementAndGet() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 498, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `requestQueue.add(request) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 919930
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 495, pointed element: CtReturnImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtReturnImpl) `return false ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 495, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (request == null) 	return false; ` -topatch--> `if (true) { 	return false;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 495, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (request == null) 	return false; ` -topatch--> `if (false) { 	return false;}` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 495, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (request == null) 	return false; ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 46, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.body = body ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 45, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.bodySize = bodySize ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 44, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.chunkSizes = chunkSizes ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 505, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (response.getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.NO_RESPONSE) {  	if (source.exh[...] ` -topatch--> `if (true) {  	if (source.exhausted()) { 		return false;} 	throw new java.net.ProtocolException("unex[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 929163
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 505, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (response.getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.NO_RESPONSE) {  	if (source.exh[...] ` -topatch--> `if (false) {  	if (source.exhausted()) { 		return false;} 	throw new java.net.ProtocolException("une[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 505, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (response.getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.NO_RESPONSE) {  	if (source.exh[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 43, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.headers = headers ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 42, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.requestLine = requestLine ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 501, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (response.getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.DISCONNECT_AFTER_REQUEST) { 	so[...] ` -topatch--> `if (true) { 	socket.close(); 	return false; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 936534
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 501, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (response.getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.DISCONNECT_AFTER_REQUEST) { 	so[...] ` -topatch--> `if (false) { 	socket.close(); 	return false; }` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 501, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (response.getSocketPolicy() == okhttp3.mockwebserver.SocketPolicy.DISCONNECT_AFTER_REQUEST) { 	so[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 515, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (requestWantsWebSockets && responseWantsWebSockets) { 	handleWebSocketUpgrade(socket, source, sin[...] ` -topatch--> `if (true) { 	handleWebSocketUpgrade(socket, source, sink, request, response); 	reuseSocket = false; [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 943419
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 515, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (requestWantsWebSockets && responseWantsWebSockets) { 	handleWebSocketUpgrade(socket, source, sin[...] ` -topatch--> `if (false) { 	handleWebSocketUpgrade(socket, source, sink, request, response); 	reuseSocket = false;[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 515, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (requestWantsWebSockets && responseWantsWebSockets) { 	handleWebSocketUpgrade(socket, source, sin[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 949550
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 52, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (requestLine != null) { 	int methodEnd = requestLine.indexOf(' '); 	int pathEnd = requestLine.ind[...] ` -topatch--> `if (true) { 	int methodEnd = requestLine.indexOf(' '); 	int pathEnd = requestLine.indexOf(' ', metho[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 953037
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 52, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (requestLine != null) { 	int methodEnd = requestLine.indexOf(' '); 	int pathEnd = requestLine.ind[...] ` -topatch--> `if (false) { 	int methodEnd = requestLine.indexOf(' '); 	int pathEnd = requestLine.indexOf(' ', meth[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 957412
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 52, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (requestLine != null) { 	int methodEnd = requestLine.indexOf(' '); 	int pathEnd = requestLine.ind[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 48, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.tlsVersion = (socket instanceof javax.net.ssl.SSLSocket) ?  okhttp3.TlsVersion.forJavaName(((ja[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 47, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.sequenceNumber = sequenceNumber ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 61, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.requestUrl = okhttp3.HttpUrl.parse(java.lang.String.format("%s://%s:%s%s", scheme, hostname, po[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 56, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.path = requestLine.substring(methodEnd + 1, pathEnd) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.RecordedRequest line: 55, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.method = requestLine.substring(0, methodEnd) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 801, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `remainingByteCount = bodyLimit ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 348, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `socket = serverSocket.accept() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 354, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (socketPolicy == okhttp3.mockwebserver.SocketPolicy.DISCONNECT_AT_START) { 	dispatchBookkeepingRe[...] ` -topatch--> `if (true) { 	dispatchBookkeepingRequest(0, socket); 	socket.close(); } else { 	this.openClientSocket[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 965594
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 354, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (socketPolicy == okhttp3.mockwebserver.SocketPolicy.DISCONNECT_AT_START) { 	dispatchBookkeepingRe[...] ` -topatch--> `if (false) { 	dispatchBookkeepingRequest(0, socket); 	socket.close(); } else { 	this.openClientSocke[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 354, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (socketPolicy == okhttp3.mockwebserver.SocketPolicy.DISCONNECT_AT_START) { 	dispatchBookkeepingRe[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 971421
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 359, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `serveConnection(socket) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 974146
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 358, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `openClientSockets.add(socket) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 392, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `executor.execute(new okhttp3.internal.NamedRunnable("MockWebServer %s", raw.getRemoteSocketAddress()[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 981248
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 689, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sink.writeUtf8(response.getStatus()) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 690, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sink.writeUtf8("\r\n") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 984885
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 688, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sleepIfDelayed(response.getBodyDelay(java.util.concurrent.TimeUnit.MILLISECONDS)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 699, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sink.writeUtf8("\r\n") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 988452
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 697, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sink.writeUtf8("\r\n") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 991312
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 695, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sink.writeUtf8(": ") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 994108
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 696, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sink.writeUtf8(headers.value(i)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 996930
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 693, pointed element: CtForImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtForImpl) `for (int i = 0, size = headers.size(); i < size; i++) { 	sink.writeUtf8(headers.name(i)); 	sink.writ[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 999826
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 694, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `sink.writeUtf8(headers.name(i)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 2052
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 709, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (delayMs != 0) { 	try { 		java.lang.Thread.sleep(delayMs); 	} catch (java.lang.InterruptedExcepti[...] ` -topatch--> `if (true) { 	try { 		java.lang.Thread.sleep(delayMs); 	} catch (java.lang.InterruptedException e) { [...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 709, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (delayMs != 0) { 	try { 		java.lang.Thread.sleep(delayMs); 	} catch (java.lang.InterruptedExcepti[...] ` -topatch--> `if (false) { 	try { 		java.lang.Thread.sleep(delayMs); 	} catch (java.lang.InterruptedException e) {[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 709, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (delayMs != 0) { 	try { 		java.lang.Thread.sleep(delayMs); 	} catch (java.lang.InterruptedExcepti[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 158, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `before() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 153, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `before() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 92, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.status = status ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 7615
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((code >= 100) && (code < 200)) { 	reason = "Informational"; } else 	if ((code >= 200) && (code <[...] ` -topatch--> `if (true) { 	reason = "Informational"; } else { 	if ((code >= 200) && (code < 300)) { 		reason = "OK[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((code >= 100) && (code < 200)) { 	reason = "Informational"; } else 	if ((code >= 200) && (code <[...] ` -topatch--> `if (false) { 	reason = "Informational"; } else { 	if ((code >= 200) && (code < 300)) { 		reason = "O[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 77, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((code >= 100) && (code < 200)) { 	reason = "Informational"; } else 	if ((code >= 200) && (code <[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 80, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `reason = "OK" ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((code >= 200) && (code < 300)) { 	reason = "OK"; } else 	if ((code >= 300) && (code < 400)) { 		[...] ` -topatch--> `if (true) { 	reason = "OK"; } else { 	if ((code >= 300) && (code < 400)) { 		reason = "Redirection";[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if ((code >= 200) && (code < 300)) { 	reason = "OK"; } else 	if ((code >= 300) && (code < 400)) { 		[...] ` -topatch--> `if (false) { 	reason = "OK"; } else { 	if ((code >= 300) && (code < 400)) { 		reason = "Redirection"[...]` (spoon.support.reflect.code.CtIfImpl) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 79, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if ((code >= 200) && (code < 300)) { 	reason = "OK"; } else 	if ((code >= 300) && (code < 400)) { 		[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 56, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setHeader("Content-Length", 0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 14888
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 55, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `setResponseCode(200) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 17932
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 142, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `removeHeader(name) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 154, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `headers.removeAll(name) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockResponse line: 124, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `headers.add(name, java.lang.String.valueOf(value)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 21675
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.QueueDispatcher line: 73, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `responseQueue.add(okhttp3.mockwebserver.QueueDispatcher.DEAD_LETTER) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 385, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `shutdown() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 146, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `start() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 280, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `start(0) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 290, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `start(java.net.InetAddress.getByName("localhost"), port) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 301, pointed element: CtInvocationImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `start(new java.net.InetSocketAddress(inetAddress, port)) ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 315, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `serverSocket = serverSocketFactory.createServerSocket() ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 313, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `executor = java.util.concurrent.Executors.newCachedThreadPool(okhttp3.internal.Util.threadFactory("M[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 314, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `this.inetSocketAddress = inetSocketAddress ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 311, pointed element: CtAssignmentImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtAssignmentImpl) `started = true ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:179) - The Process that runs JUnit test cases did not terminate within waitTime of 134 seconds
+[INFO ] fr.inria.astor.core.validation.junit.LaucherJUnitProcess.killProcess(LaucherJUnitProcess.java:181) - Killed the Process that runs JUnit test cases 25368
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 310, pointed element: CtThrowImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+RemoveOp:(spoon.support.reflect.code.CtThrowImpl) `throw new java.lang.IllegalStateException("start() already called") ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=okhttp3.mockwebserver.MockWebServer line: 310, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (started) 	throw new java.lang.IllegalStateException("start() already called"); ` -topatch--> `if (true) { 	throw new java.lang.IllegalStateException("start() already called");}` (spoon.support.reflect.code.CtIfImpl) 
