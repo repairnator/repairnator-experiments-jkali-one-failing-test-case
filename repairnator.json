@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 1,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "scalecube/scalecube",
-  "bugCommit": "https://github.com/scalecube/scalecube/compare/b0d07a09aa85...8d2b3b2ca8bf",
-  "failingModule": "/root/workspace/scalecube/scalecube/355269669/ipc",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.IndexOutOfBoundsException"
-  ],
-  "totalNumberRunningTests": 231,
-  "failing-test-cases": [
-    {
-      "className": "io.scalecube.ipc.ListeningServerStreamTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.scalecube.ipc.ListeningServerStreamTest#testServerStreamRemotePartyClosed"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:38:20 PM",
+    "reproductionDateEnd": "Mar 19, 2020 9:12:57 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 68617192,
+      "totalMemory": 231649280
+    },
+    "totalDuration": 5673,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 4802,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          4802
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-355269669-20180319-102642-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-scalecube-scalecube-355269669-20180319-102642-firstCommit/ipc",
+    "overallMetrics": {
+      "numberRunning": 230,
+      "numberPassing": 229,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
       "failures": [
         {
-          "failureName": "java.lang.IndexOutOfBoundsException",
-          "failureDetail": "Index: 0, Size: 0",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.scalecube.ipc.ListeningServerStreamTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.scalecube.ipc.ListeningServerStreamTest",
+        "testMethod": "testServerStreamRemotePartyClosed",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Did not receive enough values in time. Expected: 2, Actual: 1",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberPlugins": 0,
+    "numberSourceFiles": 125,
+    "numberTestFiles": 58,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  }
 }
