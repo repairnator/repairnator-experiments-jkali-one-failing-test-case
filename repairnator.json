@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 25,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "languagetool-org/languagetool",
-  "bugCommit": "https://github.com/languagetool-org/languagetool/compare/8a6a34b8c300...47ab7b860187",
-  "failingModule": "/root/workspace/languagetool-org/languagetool/289366722/languagetool-standalone",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.lang.RuntimeException"
-  ],
-  "totalNumberRunningTests": 838,
-  "failing-test-cases": [
-    {
-      "className": "org.languagetool.rules.RuleTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "org.languagetool.rules.RuleTest#testJavaRules"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:56:03 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:03:39 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 20391688,
+      "totalMemory": 82276352
+    },
+    "totalDuration": 451,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          7
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-289366722-20171018-085232_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-languagetool-org-languagetool-289366722-20171018-085232_bugonly-firstCommit/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 394,
+      "numberPassing": 393,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 18,
       "failures": [
         {
-          "failureName": "java.lang.RuntimeException",
-          "failureDetail": "java.lang.RuntimeException: Could not check sentence (language: German): \u0027Dies ist ein Bandwurmsatz, der immer weiter geht, obwohl das kein guter Stil ist, den man eigentlich berücksichtigen sollte, obwohl es auch andere Meinungen gibt, die aber in der Minderzahl sind, w...\u0027",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"ventrolateral\"\n     but: was \"Ventrolateral/A\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberPlugins": 0,
+    "numberSourceFiles": 695,
+    "numberTestFiles": 455,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  }
 }
