@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 10:53:26 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:21:01 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 180109232,
+      "totalMemory": 399679488
+    },
+    "totalDuration": 1649,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 3,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 1043,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          1043
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-htynkn-incubator-dubbo-420542548-20180825-190536-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-htynkn-incubator-dubbo-420542548-20180825-190536-firstCommit/dubbo-cluster",
+    "overallMetrics": {
+      "numberRunning": 1111,
+      "numberPassing": 1110,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 8,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.dubbo.rpc.cluster.support.AbstractClusterInvokerTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.dubbo.rpc.cluster.support.AbstractClusterInvokerTest",
+        "testMethod": "testBindingAttachment",
+        "failureName": "java.lang.AssertionError",
+        "detail": "set attachment failed!",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberPlugins": 0,
+    "numberSourceFiles": 762,
+    "numberTestFiles": 667,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  }
+}
