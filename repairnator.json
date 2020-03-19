@@ -1,75 +1,119 @@
 {
-  "totalNumberSkippingTests": 25,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "square/okhttp",
-  "failingModule": "/root/workspace/square/okhttp/316098741/okhttp-tests",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.io.IOException",
-    "skipped"
-  ],
-  "totalNumberRunningTests": 2021,
-  "failing-test-cases": [
-    {
-      "className": "okhttp3.URLConnectionTest",
-      "failingMethods": [
-        "okhttp3.URLConnectionTest#postBodiesRetransmittedOnIpAddressProblems",
-        "okhttp3.URLConnectionTest#postBodiesRetransmittedOnAuthProblems",
-        "okhttp3.URLConnectionTest#cookiesAndTrailers",
-        "okhttp3.URLConnectionTest#pooledConnectionProblemsNotReportedToProxySelector",
-        "okhttp3.URLConnectionTest#deflateCompression",
-        "okhttp3.URLConnectionTest#setSslSocketFactoryFailsOnJdk9",
-        "okhttp3.URLConnectionTest#testPooledConnectionsDetectHttp10"
-      ],
-      "erroringMethods": [
-        "okhttp3.URLConnectionTest#streamedBodyIsRetriedOnHttp2Shutdown"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:39:04 PM",
+    "reproductionDateEnd": "Mar 19, 2020 9:22:16 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 14536248,
+      "totalMemory": 155590656
+    },
+    "totalDuration": 6187,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 2,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6021,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6021
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316098741-20171213-221904_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-square-okhttp-316098741-20171213-221904_bugonly-firstCommit/mockwebserver",
+    "overallMetrics": {
+      "numberRunning": 31,
+      "numberPassing": 30,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
-          "failureName": "java.io.IOException",
-          "failureDetail": "a valid ssl session was not established",
-          "isError": true
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
-        },
-        {
-          "failureName": "skipped",
-          "failureDetail": "skipped",
-          "isError": false
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 7,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "okhttp3.mockwebserver.MockWebServerTest",
+        "numberRunning": 29,
+        "numberPassing": 28,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "okhttp3.mockwebserver.MockWebServerTest",
+        "testMethod": "disconnectRequestHalfway",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c512.0\u003e but was:\u003c543.0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberPlugins": 0,
+    "numberSourceFiles": 185,
+    "numberTestFiles": 99,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  }
 }
