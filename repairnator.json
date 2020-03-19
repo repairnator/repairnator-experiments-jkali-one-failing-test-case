@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:38:20 PM",
+    "reproductionDateEnd": "Mar 19, 2020 7:41:52 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 6261592,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 208,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-salesforce-reactive-grpc-404626779-20180716-233713-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-salesforce-reactive-grpc-404626779-20180716-233713-firstCommit/reactor/reactor-grpc-stub",
+    "overallMetrics": {
+      "numberRunning": 189,
+      "numberPassing": 188,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 94,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.salesforce.reactorgrpc.stub.GrpcRetryTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.salesforce.reactorgrpc.stub.GrpcRetryTest",
+        "testMethod": "manyToOneRetryAfter",
+        "failureName": "java.lang.AssertionError",
+        "detail": "VerifySubscriber timed out on reactor.core.publisher.SerializedSubscriber@58112bc4",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberPlugins": 0,
+    "numberSourceFiles": 33,
+    "numberTestFiles": 57,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  }
+}
