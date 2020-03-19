@@ -1,32 +1,118 @@
 {
-  "totalNumberSkippingTests": 6,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "wro4j/wro4j",
-  "bugCommit": "https://github.com/wro4j/wro4j/compare/03604d2c961f...685cf55dd45f",
-  "failingModule": "/root/workspace/wro4j/wro4j/247513075/wro4j-core",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "ro.isdc.wro.WroRuntimeException"
-  ],
-  "totalNumberRunningTests": 850,
-  "failing-test-cases": [
-    {
-      "className": "ro.isdc.wro.model.resource.support.change.TestResourceWatcher",
-      "failingMethods": [],
-      "erroringMethods": [
-        "ro.isdc.wro.model.resource.support.change.TestResourceWatcher#shouldCheckForChangeAsynchronously"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 7:41:14 PM",
+    "reproductionDateEnd": "Mar 19, 2020 9:23:48 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 183920712,
+      "totalMemory": 668082176
+    },
+    "totalDuration": 6150,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wro4j-wro4j-247513075-20170627-152158_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-wro4j-wro4j-247513075-20170627-152158_bugonly-firstCommit/wro4j-core",
+    "overallMetrics": {
+      "numberRunning": 844,
+      "numberPassing": 843,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 6,
       "failures": [
         {
-          "failureName": "ro.isdc.wro.WroRuntimeException",
-          "failureDetail": "Timeout of 300ms exceeded.",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ro.isdc.wro.util.concurrent.TestTaskExecutor",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ro.isdc.wro.util.concurrent.TestTaskExecutor",
+        "testMethod": "shouldBeFasterWhenRunningMultipleSlowTasks",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberPlugins": 0,
+    "numberSourceFiles": 348,
+    "numberTestFiles": 216,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  }
 }
