@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "rabbitmq/rabbitmq-perf-test",
-  "bugCommit": "https://github.com/rabbitmq/rabbitmq-perf-test/compare/44a7c76f6f04...122fbdb4bc2d",
-  "failingModule": "/root/workspace/rabbitmq/rabbitmq-perf-test/355753633",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "org.awaitility.core.ConditionTimeoutException"
-  ],
-  "totalNumberRunningTests": 61,
-  "failing-test-cases": [
-    {
-      "className": "com.rabbitmq.perf.MessageCountTimeLimitTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "com.rabbitmq.perf.MessageCountTimeLimitTest#consumerCount{int, int}[1]"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 19, 2020 11:05:04 AM",
+    "reproductionDateEnd": "Mar 19, 2020 11:09:19 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 35810216,
+      "totalMemory": 114573312
+    },
+    "totalDuration": 253,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 47,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          47
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rabbitmq-rabbitmq-perf-test-355753633-20180320-100949-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-rabbitmq-rabbitmq-perf-test-355753633-20180320-100949-firstCommit",
+    "overallMetrics": {
+      "numberRunning": 61,
+      "numberPassing": 60,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
-          "failureName": "org.awaitility.core.ConditionTimeoutException",
-          "failureDetail": "Lambda expression in com.rabbitmq.perf.MessageCountTimeLimitTest: expected \u003ctrue\u003e but was \u003cfalse\u003e within 5 seconds.",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.rabbitmq.perf.MessageCountTimeLimitTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.rabbitmq.perf.MessageCountTimeLimitTest",
+        "testMethod": "producerCount{int, int}[3]",
+        "failureName": "java.lang.AssertionError",
+        "detail": "100 messages should have been published by now\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 58,
+    "numberTestFiles": 8,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  }
 }
