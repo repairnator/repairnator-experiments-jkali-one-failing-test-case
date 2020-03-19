@@ -1,0 +1,11 @@
+--- /src/main/java/io/dropwizard/sharding/DBShardingBundle.java
++++ /src/main/java/io/dropwizard/sharding/DBShardingBundle.java
+@@ -65,7 +65,6 @@
+ 	public void run(T configuration, io.dropwizard.setup.Environment environment) {
+ 		sessionFactories = shardBundles.stream().map(io.dropwizard.hibernate.HibernateBundle::getSessionFactory).collect(java.util.stream.Collectors.toList());
+ 		environment.admin().addTask(new io.dropwizard.sharding.admin.BlacklistShardTask(shardManager));
+-		environment.admin().addTask(new io.dropwizard.sharding.admin.UnblacklistShardTask(shardManager));
+ 	}
+ 
+ 	@java.lang.Override
+
