@@ -28,6 +28,22 @@ Hypotheses that can be formulated:
 - Is the `if condition` correct?
 - Is the object used in the if condition correct?
 
+Information about the Travis CI build and Human fix
+
+- Travis CI Build: https://api.travis-ci.org/v3/build/378592651;
+- Event type: push;
+- Build Number: 7084;
+- "@href": "/v3/repo/9309130/branch/custom-resources-api-server"
+
+----------------------------
+        
+- Next Travis CI Build: https://api.travis-ci.org/v3/build/378592663;
+- Event type: pull request (id 1170)
+- Number: 7085;
+- Pull request: https://github.com/EnMasseProject/enmasse/pull/1170
+
+The build didn't pass the tests, but the changes have been force-pushed into master branch. Thus, it means that the developers ignored the results of test cases.
+
 ### repairnator-repairnator-experiments-AxonFramework-AxonFramework-350737857-20180308-102725-firstCommit
 
 | failure type | failing test case | changed file |
