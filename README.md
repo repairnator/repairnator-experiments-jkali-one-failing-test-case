@@ -14,4 +14,4 @@ The structure of the repository is as follows:
 
 ## Statistics
 
-There are currently 1.684 (excluding `master` branch) branches, each of them associated with a failure, and there are 72 Kali patches.
+There are currently 1.683 (excluding `master` branch) branches, each of them associated with a failure, and there are 72 Kali patches.
