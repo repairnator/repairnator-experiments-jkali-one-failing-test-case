@@ -1,0 +1,11 @@
+--- /src/main/java/org/apache/jackrabbit/oak/security/authentication/ldap/impl/LdapIdentityProperties.java
++++ /src/main/java/org/apache/jackrabbit/oak/security/authentication/ldap/impl/LdapIdentityProperties.java
+@@ -31,7 +31,6 @@
+ 
+ 	@java.lang.Override
+ 	public java.lang.Object remove(java.lang.Object key) {
+-		keyMapping.remove(convert(key));
+ 		return super.remove(key);
+ 	}
+ 
+

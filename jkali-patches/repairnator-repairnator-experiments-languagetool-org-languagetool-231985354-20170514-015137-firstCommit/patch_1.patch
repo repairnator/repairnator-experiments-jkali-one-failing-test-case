@@ -1,0 +1,11 @@
+--- /src/main/java/org/languagetool/server/HTTPServer.java
++++ /src/main/java/org/languagetool/server/HTTPServer.java
+@@ -22,7 +22,6 @@
+ 
+ 	public HTTPServer(org.languagetool.server.HTTPServerConfig config, boolean runInternally, java.lang.String host, java.util.Set<java.lang.String> allowedIps) {
+ 		this.port = config.getPort();
+-		this.host = host;
+ 		try {
+ 			java.net.InetSocketAddress address = (host != null) ? new java.net.InetSocketAddress(host, port) : new java.net.InetSocketAddress(port);
+ 			server = com.sun.net.httpserver.HttpServer.create(address, 0);
+

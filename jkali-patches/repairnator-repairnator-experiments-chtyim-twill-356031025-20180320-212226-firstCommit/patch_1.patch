@@ -1,0 +1,12 @@
+--- /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
++++ /src/main/java/org/apache/twill/internal/zookeeper/InMemoryZKServer.java
+@@ -67,7 +67,7 @@
+ 
+ 	private java.net.InetSocketAddress getAddress(int port) {
+ 		int socketPort = (port < 0) ? 0 : port;
+-		if (java.lang.Boolean.parseBoolean(java.lang.System.getProperties().getProperty("twill.zk.server.localhost", "true"))) {
++		if (false) {
+ 			return new java.net.InetSocketAddress(java.net.InetAddress.getLoopbackAddress(), socketPort);
+ 		} else {
+ 			return new java.net.InetSocketAddress(socketPort);
+

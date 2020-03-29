@@ -1,0 +1,11 @@
+--- /src/main/java/com/http/Request.java
++++ /src/main/java/com/http/Request.java
+@@ -235,7 +235,6 @@
+ 		header.put("Accept-Encoding", "gzip, deflate, br");
+ 		header.put("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+ 		header.put("Connection", "Keep-Alive");
+-		this.setHeader(header);
+ 	}
+ 
+ 	public java.lang.String getContent() {
+

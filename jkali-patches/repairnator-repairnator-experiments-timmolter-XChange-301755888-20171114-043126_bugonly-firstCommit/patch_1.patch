@@ -1,0 +1,15 @@
+--- /src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java
++++ /src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java
+@@ -175,11 +175,6 @@
+ 		}
+ 		java.util.Map<org.knowm.xchange.currency.Currency, org.knowm.xchange.dto.meta.CurrencyMetaData> currencies = new java.util.HashMap<>();
+ 		currencies.putAll(originalMetaData.getCurrencies());
+-		for (java.lang.String krakenAssetCode : krakenAssets.keySet()) {
+-			org.knowm.xchange.kraken.dto.marketdata.KrakenAsset krakenAsset = krakenAssets.get(krakenAssetCode);
+-			org.knowm.xchange.currency.Currency currencyCode = org.knowm.xchange.kraken.KrakenAdapters.adaptCurrency(krakenAssetCode);
+-			currencies.put(currencyCode, new org.knowm.xchange.dto.meta.CurrencyMetaData(krakenAsset.getScale()));
+-		}
+ 		return new org.knowm.xchange.dto.meta.ExchangeMetaData(pairs, currencies, originalMetaData == null ? null : originalMetaData.getPublicRateLimits(), originalMetaData == null ? null : originalMetaData.getPrivateRateLimits(), originalMetaData == null ? null : originalMetaData.isShareRateLimits());
+ 	}
+ 
+

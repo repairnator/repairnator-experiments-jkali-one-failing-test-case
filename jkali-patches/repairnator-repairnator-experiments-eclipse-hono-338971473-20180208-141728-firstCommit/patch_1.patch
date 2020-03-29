@@ -1,0 +1,12 @@
+--- /src/main/java/org/eclipse/hono/client/impl/AbstractHonoClient.java
++++ /src/main/java/org/eclipse/hono/client/impl/AbstractHonoClient.java
+@@ -149,7 +149,7 @@
+ 					org.eclipse.hono.client.impl.AbstractHonoClient.LOG.debug("receiver open attach failed [{}] by peer [{}]: {}", receiver.getRemoteSource(), con.getRemoteContainer(), openAttach.cause().getMessage());
+ 					result.fail(openAttach.cause());
+ 				} else {
+-					if (org.eclipse.hono.client.impl.AbstractHonoClient.LOG.isTraceEnabled()) {
++					if (true) {
+ 						org.eclipse.hono.client.impl.AbstractHonoClient.LOG.trace("receiver open attach succeeded [{}] by peer [{}]", receiver.getRemoteSource(), con.getRemoteContainer());
+ 					}
+ 					result.complete(openAttach.result());
+

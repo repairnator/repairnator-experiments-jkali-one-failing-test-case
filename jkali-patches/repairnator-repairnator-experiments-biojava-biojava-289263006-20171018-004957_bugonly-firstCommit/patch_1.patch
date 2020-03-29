@@ -1,0 +1,11 @@
+--- /src/main/java/org/biojava/nbio/core/sequence/template/AbstractSequence.java
++++ /src/main/java/org/biojava/nbio/core/sequence/template/AbstractSequence.java
+@@ -67,7 +67,6 @@
+ 			this.setFeaturesKeyWord(((org.biojava.nbio.core.sequence.features.FeaturesKeyWordInterface) (sequenceStorage)));
+ 		}
+ 		if (proxyLoader instanceof org.biojava.nbio.core.sequence.features.DatabaseReferenceInterface) {
+-			this.setDatabaseReferences(((org.biojava.nbio.core.sequence.features.DatabaseReferenceInterface) (sequenceStorage)));
+ 		}
+ 		if (proxyLoader instanceof org.biojava.nbio.core.sequence.features.FeatureRetriever) {
+ 			this.setFeatureRetriever(((org.biojava.nbio.core.sequence.features.FeatureRetriever) (sequenceStorage)));
+

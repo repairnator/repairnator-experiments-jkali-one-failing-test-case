@@ -1,0 +1,12 @@
+--- /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
++++ /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
+@@ -91,7 +91,7 @@
+ 			io.atomix.cluster.impl.PhiAccrualFailureDetector failureDetector = failureDetectors.computeIfAbsent(node.id(), ( n) -> new io.atomix.cluster.impl.PhiAccrualFailureDetector());
+ 			double phi = failureDetector.phi();
+ 			if ((phi > 0) && ((phi >= phiFailureThreshold) || ((java.lang.System.currentTimeMillis() - failureDetector.lastUpdated()) > io.atomix.cluster.impl.DefaultClusterService.DEFAULT_FAILURE_TIME))) {
+-				if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) {
++				if (true) {
+ 					deactivateNode(node);
+ 				}
+ 			} else {
+

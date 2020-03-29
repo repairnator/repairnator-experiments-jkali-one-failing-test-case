@@ -1,0 +1,11 @@
+--- /src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java
++++ /src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java
+@@ -20,7 +20,6 @@
+ 		io.opentracing.Span span = io.opentracing.contrib.hazelcast.TracingHelper.buildSpan("process", parent, traceWithActiveSpanOnly);
+ 		span.setTag("entryBackupProcessor", io.opentracing.contrib.hazelcast.TracingHelper.nullableClass(entryBackupProcessor));
+ 		span.setTag("entry", io.opentracing.contrib.hazelcast.TracingHelper.nullable(entry));
+-		io.opentracing.contrib.hazelcast.TracingHelper.decorateAction(() -> entryBackupProcessor.processBackup(entry), span);
+ 	}
+ }
+ 
+

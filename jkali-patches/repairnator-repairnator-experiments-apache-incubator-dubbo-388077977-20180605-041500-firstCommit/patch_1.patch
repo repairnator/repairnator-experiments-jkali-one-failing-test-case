@@ -1,0 +1,11 @@
+--- /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyHelper.java
++++ /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyHelper.java
+@@ -5,7 +5,6 @@
+ 	public static void setNettyLoggerFactory() {
+ 		org.jboss.netty.logging.InternalLoggerFactory factory = org.jboss.netty.logging.InternalLoggerFactory.getDefaultFactory();
+ 		if ((factory == null) || (!(factory instanceof com.alibaba.dubbo.remoting.transport.netty.NettyHelper.DubboLoggerFactory))) {
+-			org.jboss.netty.logging.InternalLoggerFactory.setDefaultFactory(new com.alibaba.dubbo.remoting.transport.netty.NettyHelper.DubboLoggerFactory());
+ 		}
+ 	}
+ 
+

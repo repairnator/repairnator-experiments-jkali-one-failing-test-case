@@ -1,0 +1,11 @@
+--- /src/main/java/io/dropwizard/jdbi/NamePrependingStatementRewriter.java
++++ /src/main/java/io/dropwizard/jdbi/NamePrependingStatementRewriter.java
+@@ -20,7 +20,6 @@
+ 			query.append(ctx.getSqlObjectMethod().getName());
+ 			query.append(" */ ");
+ 			query.append(sql);
+-			return rewriter.rewrite(query.toString(), params, ctx);
+ 		}
+ 		return rewriter.rewrite(sql, params, ctx);
+ 	}
+

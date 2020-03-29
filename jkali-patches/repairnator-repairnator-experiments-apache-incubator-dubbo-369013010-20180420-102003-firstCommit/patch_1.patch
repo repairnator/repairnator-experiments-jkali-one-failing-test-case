@@ -1,0 +1,13 @@
+--- /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyChannel.java
++++ /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyChannel.java
+@@ -36,9 +36,6 @@
+ 	}
+ 
+ 	static void removeChannelIfDisconnected(org.jboss.netty.channel.Channel ch) {
+-		if ((ch != null) && (!ch.isConnected())) {
+-			com.alibaba.dubbo.remoting.transport.netty.NettyChannel.channelMap.remove(ch);
+-		}
+ 	}
+ 
+ 	public java.net.InetSocketAddress getLocalAddress() {
+

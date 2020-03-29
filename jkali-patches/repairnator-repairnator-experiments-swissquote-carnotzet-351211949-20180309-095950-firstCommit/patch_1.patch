@@ -1,0 +1,11 @@
+--- /src/main/java/com/github/swissquote/carnotzet/core/runtime/DefaultCommandRunner.java
++++ /src/main/java/com/github/swissquote/carnotzet/core/runtime/DefaultCommandRunner.java
+@@ -67,7 +67,6 @@
+ 			java.lang.Process p = pb.start();
+ 			p.waitFor();
+ 			java.lang.String output = org.apache.commons.io.FileUtils.readFileToString(tmp);
+-			output = output.trim();
+ 			if (p.exitValue() != 0) {
+ 				throw new java.lang.RuntimeException((((("External command [" + com.google.common.base.Joiner.on(" ").join(command)) + "] exited with [") + p.exitValue()) + "], output: ") + output);
+ 			}
+

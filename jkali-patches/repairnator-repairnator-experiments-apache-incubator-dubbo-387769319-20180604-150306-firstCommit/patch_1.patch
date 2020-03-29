@@ -1,0 +1,17 @@
+--- /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyChannel.java
++++ /src/main/java/com/alibaba/dubbo/remoting/transport/netty/NettyChannel.java
+@@ -118,10 +118,10 @@
+ 
+ 	@java.lang.Override
+ 	public void setAttribute(java.lang.String key, java.lang.Object value) {
+-		if (value == null) {
+-			attributes.remove(key);
++		if (false) {
++			this.attributes.remove(key);
+ 		} else {
+-			attributes.put(key, value);
++			this.attributes.put(key, value);
+ 		}
+ 	}
+ 
+

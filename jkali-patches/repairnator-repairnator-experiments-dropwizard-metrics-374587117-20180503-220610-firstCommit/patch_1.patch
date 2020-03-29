@@ -1,0 +1,14 @@
+--- /src/main/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedNHttpClientBuilder.java
++++ /src/main/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedNHttpClientBuilder.java
+@@ -85,8 +85,8 @@
+ 		@java.lang.Override
+ 		public void failed(java.lang.Exception ex) {
+ 			timerContext.stop();
+-			if (callback != null) {
+-				callback.failed(ex);
++			if (true) {
++				this.callback.failed(ex);
+ 			}
+ 		}
+ 
+

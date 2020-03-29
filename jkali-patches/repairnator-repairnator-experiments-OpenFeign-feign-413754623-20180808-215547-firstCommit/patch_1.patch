@@ -1,0 +1,12 @@
+--- /src/main/java/feign/jaxb/JAXBDecoder.java
++++ /src/main/java/feign/jaxb/JAXBDecoder.java
+@@ -24,7 +24,7 @@
+ 		if (response.body() == null)
+ 			return null;
+ 
+-		if (type instanceof java.lang.reflect.ParameterizedType) {
++		if (false) {
+ 			java.lang.reflect.ParameterizedType ptype = ((java.lang.reflect.ParameterizedType) (type));
+ 			type = ptype.getRawType();
+ 		}
+

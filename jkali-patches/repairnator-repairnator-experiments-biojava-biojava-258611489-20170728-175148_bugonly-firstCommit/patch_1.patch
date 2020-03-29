@@ -1,0 +1,12 @@
+--- /src/main/java/org/biojava/nbio/core/sequence/views/WindowedSequence.java
++++ /src/main/java/org/biojava/nbio/core/sequence/views/WindowedSequence.java
+@@ -67,7 +67,7 @@
+ 
+ 		@java.lang.Override
+ 		public org.biojava.nbio.core.sequence.template.SequenceView<C> next() {
+-			if (!hasNext()) {
++			if (false) {
+ 				throw new java.util.NoSuchElementException();
+ 			}
+ 			org.biojava.nbio.core.sequence.template.SequenceView<C> v = seq.getSubSequence(currentIndex, currentIndex + offset);
+

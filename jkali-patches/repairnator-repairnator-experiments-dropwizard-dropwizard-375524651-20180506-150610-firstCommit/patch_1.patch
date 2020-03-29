@@ -1,0 +1,11 @@
+--- /src/main/java/io/dropwizard/logging/DefaultLoggingFactory.java
++++ /src/main/java/io/dropwizard/logging/DefaultLoggingFactory.java
+@@ -171,7 +171,6 @@
+ 
+ 	private ch.qos.logback.classic.Logger configureLoggers(java.lang.String name) {
+ 		final ch.qos.logback.classic.Logger root = loggerContext.getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME);
+-		loggerContext.reset();
+ 		final ch.qos.logback.classic.jul.LevelChangePropagator propagator = new ch.qos.logback.classic.jul.LevelChangePropagator();
+ 		propagator.setContext(loggerContext);
+ 		propagator.setResetJUL(true);
+

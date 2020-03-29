@@ -1,0 +1,11 @@
+--- /src/main/java/org/biojava/nbio/core/sequence/io/ProteinSequenceCreator.java
++++ /src/main/java/org/biojava/nbio/core/sequence/io/ProteinSequenceCreator.java
+@@ -16,7 +16,6 @@
+ 	@java.lang.Override
+ 	public org.biojava.nbio.core.sequence.template.AbstractSequence<org.biojava.nbio.core.sequence.compound.AminoAcidCompound> getSequence(java.util.List<org.biojava.nbio.core.sequence.compound.AminoAcidCompound> list) {
+ 		org.biojava.nbio.core.sequence.loader.ArrayListProxySequenceReader<org.biojava.nbio.core.sequence.compound.AminoAcidCompound> store = new org.biojava.nbio.core.sequence.loader.ArrayListProxySequenceReader<org.biojava.nbio.core.sequence.compound.AminoAcidCompound>();
+-		store.setCompoundSet(compoundSet);
+ 		store.setContents(list);
+ 		return new org.biojava.nbio.core.sequence.ProteinSequence(store);
+ 	}
+

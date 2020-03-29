@@ -1,0 +1,12 @@
+--- /src/main/java/org/biojava/nbio/core/sequence/template/AbstractCompoundTranslator.java
++++ /src/main/java/org/biojava/nbio/core/sequence/template/AbstractCompoundTranslator.java
+@@ -89,7 +89,7 @@
+ 		java.util.List<java.util.List<T>> currentWorkingList = new java.util.ArrayList<java.util.List<T>>();
+ 		for (int i = 0; i < size; i++) {
+ 			boolean last = i == (size - 1);
+-			if (last) {
++			if (true) {
+ 				addCompoundToLists(workingList, compounds.get(i));
+ 				if (!currentWorkingList.isEmpty()) {
+ 					workingList.addAll(currentWorkingList);
+

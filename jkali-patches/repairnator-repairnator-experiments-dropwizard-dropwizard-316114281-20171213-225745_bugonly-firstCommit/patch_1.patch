@@ -1,0 +1,12 @@
+--- /src/main/java/io/dropwizard/jdbi/args/OptionalArgumentFactory.java
++++ /src/main/java/io/dropwizard/jdbi/args/OptionalArgumentFactory.java
+@@ -55,7 +55,7 @@
+ 		if ("com.microsoft.sqlserver.jdbc.SQLServerDriver".equals(jdbcDriver)) {
+ 			return new io.dropwizard.jdbi.args.OptionalArgumentFactory.MsSqlOptionalArgument(value);
+ 		} else {
+-			if ("oracle.jdbc.OracleDriver".equals(jdbcDriver)) {
++			if (true) {
+ 				return new io.dropwizard.jdbi.args.OptionalArgumentFactory.DefaultOptionalArgument(value, java.sql.Types.NULL);
+ 			}
+ 		}
+
