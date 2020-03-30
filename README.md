@@ -20,7 +20,7 @@ There are currently 1.683 (excluding `master` branch) branches, each of them ass
 
 ### EnMasseProject-enmasse-353457987-20180314-185443
 
-- **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit).
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit)
 
 - **Information about the failure**:
 
@@ -75,7 +75,7 @@ index 213c76fef1..ec7b7fda7f 100644
 
 ### Inmapg-Text-Traffic-Simulator-368867994-20180419-235104
 
-- **Branch associated with the failure**: [repairnator-repairnator-experiments-Inmapg-Text-Traffic-Simulator-368867994-20180419-235104-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-Inmapg-Text-Traffic-Simulator-368867994-20180419-235104-firstCommit).
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-Inmapg-Text-Traffic-Simulator-368867994-20180419-235104-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-Inmapg-Text-Traffic-Simulator-368867994-20180419-235104-firstCommit)
 
 - **Information about the failure**:
 
@@ -126,4 +126,71 @@ index 2248632..ca127a5 100755
          correct.setValue("faulty", "2");
          result = vehicle.generateReport(2);
          assertEquals(correct, result);
+```
+
+### KGreg314-ivt-lab-380634197-20180518-125533
+
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-KGreg314-ivt-lab-380634197-20180518-125533-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-KGreg314-ivt-lab-380634197-20180518-125533-firstCommit)
+
+- **Information about the failure**:
+
+| Failure type | Failing test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.AssertionError | [GT4500Test.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/56c6b18912d8305128accfb32537b6c4f2d3c955/src/test/java/hu/bme/mit/spaceship/GT4500Test.java#L151) | [GT4500.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/56c6b18912d8305128accfb32537b6c4f2d3c955/src/main/java/hu/bme/mit/spaceship/GT4500.java#L38)|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/hu/bme/mit/spaceship/GT4500.java
++++ /src/main/java/hu/bme/mit/spaceship/GT4500.java
+@@ -20,25 +20,25 @@
+ @java.lang.Override
+ public boolean fireTorpedo(hu.bme.mit.spaceship.FiringMode firingMode) {
+  boolean firingSuccess = false;
+- if (firingMode == hu.bme.mit.spaceship.FiringMode.SINGLE) {
+     if (wasPrimaryFiredLast) {
+      if (!secondaryTorpedoStore.isEmpty()) {
+       firingSuccess = secondaryTorpedoStore.fire(1);
+       wasPrimaryFiredLast = false;
++ if (true) {
+     if (wasPrimaryFiredLast) {
+      if (!secondaryTorpedoStore.isEmpty()) {
+       firingSuccess = this.secondaryTorpedoStore.fire(1);
+       this.wasPrimaryFiredLast = false;
+```
+
+- **Analysis of the patch**: 
+- **Useful information for the developer**:
+- **Fix of the source code**:
+
+```diff
+From 5669e29937d3a18c4ac17d5e33ba2dd03cd5ec75 Mon Sep 17 00:00:00 2001
+From: meres <kgreg314@gmail.com>
+Date: Fri, 18 May 2018 04:05:40 -0700
+Subject: [PATCH] Add JoCoCo & Implement ALL firing mode perfectly
+
+diff --git a/src/main/java/hu/bme/mit/spaceship/GT4500.java b/src/main/java/hu/bme/mit/spaceship/GT4500.java
+index 48160c0..bbcd26d 100644
+--- a/src/main/java/hu/bme/mit/spaceship/GT4500.java
++++ b/src/main/java/hu/bme/mit/spaceship/GT4500.java
+@@ -78,7 +78,18 @@ public boolean fireTorpedo(FiringMode firingMode) {
+      else{
+         // try to fire both of the torpedo stores
+         //TODO implement feature
+-	firingSuccess = true;
++        if (! primaryTorpedoStore.isEmpty() && ! secondaryTorpedoStore.isEmpty()) {
++          boolean successPrimary = primaryTorpedoStore.fire(1);
++	        boolean successSecondary = secondaryTorpedoStore.fire(1);
++	        firingSuccess = successPrimary || successSecondary;
++          wasPrimaryFiredLast = false;
++        } else if (! primaryTorpedoStore.isEmpty()) {
++            firingSuccess = primaryTorpedoStore.fire(1);
++            wasPrimaryFiredLast = true;          
++        } else if (! secondaryTorpedoStore.isEmpty()) {
++            firingSuccess = secondaryTorpedoStore.fire(1);
++            wasPrimaryFiredLast = false;          
++        }
+ 
+         
+     }
 ```
