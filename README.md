@@ -43,10 +43,4 @@ There are currently 1.683 (excluding `master` branch) branches, each of them ass
  			key = keyExtractor.getKey(event.obj);
 ```
 
-- Analysis of the patch: in this case, the problem is related to the test case that checks the correct behavior of the method in which AstorJKaly applied the change. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/EnMasseProject/enmasse/pull/1058/commits/848ff42b0ed3fa5888778957ac8daca909c98072) to handle the error occured with the use of method `draintTo` removed by AstorJKali to create the patch.
-
-
-
-
-
-
+- **Analysis of the patch**: in this case, the problem is related to the test case that checks the correct behavior of the method in which AstorJKaly applied the change. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/EnMasseProject/enmasse/pull/1058/commits/848ff42b0ed3fa5888778957ac8daca909c98072) to handle the error occured with the use of method `draintTo` removed by AstorJKali to create the patch.
