@@ -15,3 +15,38 @@ The structure of the repository is as follows:
 ## Statistics
 
 There are currently 1.683 (excluding `master` branch) branches, each of them associated with a failure, and there are 72 Kali patches.
+
+## Patch Analysis
+
+### EnMasseProject-enmasse-353457987-20180314-185443
+
+- The branch associated with the failure is this one: [repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-353457987-20180314-185443-firstCommit).
+
+- Information about the failure:
+
+| Failure type | Failing test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| org.mockito.exceptions.verification.TooLittleActualInvocations | [FifoQueueTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/733c76e58890cea2d4ce004760de719ae04ca826/k8s-api/src/test/java/io/enmasse/k8s/api/cache/FifoQueueTest.java#L64) | [FifoQueue.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/733c76e58890cea2d4ce004760de719ae04ca826/k8s-api/src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java#L54)|
+
+- The Kali patch is this one:
+
+```diff
+--- /src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java
++++ /src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java
+@@ -44,7 +44,6 @@
+ 			return;
+ 		}
+ 		java.util.List<io.enmasse.k8s.api.cache.FifoQueue.Event<T>> events = new java.util.ArrayList<>();
+-		queue.drainTo(events);
+ 		java.lang.String key = null;
+ 		if (event.obj != null) {
+ 			key = keyExtractor.getKey(event.obj);
+```
+
+- Analysis of the patch: in this case, the problem is related to the test case that checks the correct behavior of the method in which AstorJKaly applied the change. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/EnMasseProject/enmasse/pull/1058/commits/848ff42b0ed3fa5888778957ac8daca909c98072) to handle the error occured with the use of method `draintTo` removed by AstorJKali to create the patch.
+
+
+
+
+
+
