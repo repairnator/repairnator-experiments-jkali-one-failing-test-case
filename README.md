@@ -44,7 +44,7 @@ There are currently 1.683 (excluding `master` branch) branches, each of them ass
 ```
 
 - **Analysis of the patch**: the problem is related to the test case that checks the correct behavior of the [method](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/733c76e58890cea2d4ce004760de719ae04ca826/k8s-api/src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java#L46) changed by AstorJKali. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/EnMasseProject/enmasse/pull/1058/commits/848ff42b0ed3fa5888778957ac8daca909c98072) to handle the error associated with the use of method `draintTo`, that is the method removed by AstorJKali to create the patch.
-- ** Useful information for the developer**: the Kali patch suggested that there was a problem with the method `drainTo` or with the test case `testRemove` that checks the behavior of that method. In this case, since the method `drainTo` is a method of the JDK, there is more probability that the error is not related to that method, but in the way used to test it. Thus, the developer can start to analyze the problem focusing on the test case, checking if it is correct or not.
+- **Useful information for the developer**: the Kali patch suggested that there was a problem with the method `drainTo` or with the test case `testRemove` that checks the behavior of that method. In this case, since the method `drainTo` is a method of the JDK, there is more probability that the error is not related to that method, but in the way used to test it. Thus, the developer can start to analyze the problem focusing on the test case, checking if it is correct or not.
 
 - Fix of the test case:
 
