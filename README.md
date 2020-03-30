@@ -43,4 +43,32 @@ There are currently 1.683 (excluding `master` branch) branches, each of them ass
  			key = keyExtractor.getKey(event.obj);
 ```
 
-- **Analysis of the patch**: in this case, the problem is related to the test case that checks the correct behavior of the [method](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/733c76e58890cea2d4ce004760de719ae04ca826/k8s-api/src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java#L46) changed by AstorJKali. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/EnMasseProject/enmasse/pull/1058/commits/848ff42b0ed3fa5888778957ac8daca909c98072) to handle the error associated with the use of method `draintTo`, that is the method removed by AstorJKali to create the patch.
+- **Analysis of the patch**: the problem is related to the test case that checks the correct behavior of the [method](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/733c76e58890cea2d4ce004760de719ae04ca826/k8s-api/src/main/java/io/enmasse/k8s/api/cache/FifoQueue.java#L46) changed by AstorJKali. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/EnMasseProject/enmasse/pull/1058/commits/848ff42b0ed3fa5888778957ac8daca909c98072) to handle the error associated with the use of method `draintTo`, that is the method removed by AstorJKali to create the patch.
+- ** Useful information for the developer**: the Kali patch suggested that there was a problem with the method `drainTo` or with the test case `testRemove` that checks the behavior of that method. In this case, since the method `drainTo` is a method of the JDK, there is more probability that the error is not related to that method, but in the way used to test it. Thus, the developer can start to analyze the problem focusing on the test case, checking if it is correct or not.
+
+- Fix of the test case:
+
+```diff
+From 848ff42b0ed3fa5888778957ac8daca909c98072 Mon Sep 17 00:00:00 2001
+From: Ulf Lilleengen <lulf@redhat.com>
+Date: Wed, 14 Mar 2018 20:29:54 +0100
+Subject: [PATCH] Fix test to handle drain
+
+---
+ .../src/test/java/io/enmasse/k8s/api/cache/FifoQueueTest.java   | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/k8s-api/src/test/java/io/enmasse/k8s/api/cache/FifoQueueTest.java b/k8s-api/src/test/java/io/enmasse/k8s/api/cache/FifoQueueTest.java
+index 213c76fef1..ec7b7fda7f 100644
+--- a/k8s-api/src/test/java/io/enmasse/k8s/api/cache/FifoQueueTest.java
++++ b/k8s-api/src/test/java/io/enmasse/k8s/api/cache/FifoQueueTest.java
+@@ -61,7 +61,7 @@ public void testRemove() throws Exception {
+         assertTrue(queue.list().isEmpty());
+ 
+         queue.pop(mockProc, 0, TimeUnit.SECONDS);
+-        verify(mockProc, times(2)).process(eq("k1"));
++        verify(mockProc).process(eq("k1"));
+         assertTrue(queue.listKeys().isEmpty());
+         assertTrue(queue.list().isEmpty());
+     }
+```
