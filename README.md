@@ -72,3 +72,58 @@ index 213c76fef1..ec7b7fda7f 100644
          assertTrue(queue.list().isEmpty());
      }
 ```
+
+### Inmapg-Text-Traffic-Simulator-368867994-20180419-235104
+
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-Inmapg-Text-Traffic-Simulator-368867994-20180419-235104-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-Inmapg-Text-Traffic-Simulator-368867994-20180419-235104-firstCommit).
+
+- **Information about the failure**:
+
+| Failure type | Failing test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| java.lang.AssertionError | [VehicleTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/af902a319926cfcbb772fbc6913f0a8112987129/src/test/java/pr5/tmodel/VehicleTest.java#L115) | [IniSection.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/af902a319926cfcbb772fbc6913f0a8112987129/src/main/java/pr5/ini/IniSection.java#L176)|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/pr5/ini/IniSection.java
++++ /src/main/java/pr5/ini/IniSection.java
+@@ -85,7 +85,6 @@
+ 		}
+ 		for (java.lang.String key : this.getKeys()) {
+ 			if (!this.getValue(key).equals(other.getValue(key))) {
+-				return false;
+ 			}
+ 		}
+ 		return true;
+```
+
+- **Analysis of the patch**: the problem is related to the test case that checks the correct behavior of the [method](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/af902a319926cfcbb772fbc6913f0a8112987129/src/main/java/pr5/ini/IniSection.java#L159) changed by AstorJKali. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/Inmapg/Traffic-Simulator/commit/e59608185c3f326d46eb82371614d5ee354a9ba9) to handle the failure during the comparison of two `Vehicle` objects.
+- **Useful information for the developer**: the Kali patch suggested that there was a problem with the method `equals` or with the test case `VehicleFaultyTest` that checks the behavior of that method.
+
+- **Fix of the test case**:
+
+```diff
+From e59608185c3f326d46eb82371614d5ee354a9ba9 Mon Sep 17 00:00:00 2001
+From: Inma <Inma@eduroam162180.eduroam.ucm.es>
+Date: Thu, 19 Apr 2018 23:54:13 +0200
+Subject: [PATCH] Fixing VehicleTest class
+
+---
+ src/test/java/pr5/tmodel/VehicleTest.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/test/java/pr5/tmodel/VehicleTest.java b/src/test/java/pr5/tmodel/VehicleTest.java
+index 2248632..ca127a5 100755
+--- a/src/test/java/pr5/tmodel/VehicleTest.java
++++ b/src/test/java/pr5/tmodel/VehicleTest.java
+@@ -109,7 +109,7 @@ public void VehicleFaultyTest(){
+         assertEquals(correct, result);
+         vehicle.makeFaulty(2);
+         correct.setValue("time", "2");
+-        correct.setValue("speed", "10");
++        correct.setValue("speed", "0");
+         correct.setValue("faulty", "2");
+         result = vehicle.generateReport(2);
+         assertEquals(correct, result);
+```
