@@ -16,6 +16,10 @@ The structure of the repository is as follows:
 
 There are currently 1.683 (excluding `master` branch) branches, each of them associated with a failure, and there are 72 Kali patches.
 
+## Builds to be re-executed
+
+- **EnMasseProject-enmasse-377294634-20180510-191135**: the reproduction of the failure generated `four erroring test cases` (three `java.net.BindException` and one `java.util.concurrent.TimeoutException`) instead of only one failing test case. I tried to run the program in local (without using Repairnator), but it passed all the test cases.
+
 ## Patch Analysis
 
 ### EnMasseProject-enmasse-353457987-20180314-185443
