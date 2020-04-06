@@ -57,7 +57,7 @@ There are currently 1.683 (excluding `master` branch) branches, each of them ass
 From 848ff42b0ed3fa5888778957ac8daca909c98072 Mon Sep 17 00:00:00 2001
 From: Ulf Lilleengen <lulf@redhat.com>
 Date: Wed, 14 Mar 2018 20:29:54 +0100
-Subject: [PATCH] Fix test to handle drain
+Subject: Fix test to handle drain
 
 ---
  .../src/test/java/io/enmasse/k8s/api/cache/FifoQueueTest.java   | 2 +-
