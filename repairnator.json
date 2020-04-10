@@ -1,31 +1,118 @@
 {
-  "totalNumberSkippingTests": 12,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 1,
-  "repo": "atomix/atomix",
-  "bugCommit": "https://github.com/atomix/atomix/compare/54f68f75c0c1...c46908854d77",
-  "failingModule": "/root/workspace/atomix/atomix/389974194/core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 0,
-  "error-types": [
-    "java.util.concurrent.TimeoutException"
-  ],
-  "totalNumberRunningTests": 1007,
-  "failing-test-cases": [
-    {
-      "className": "io.atomix.core.value.impl.RaftAtomicValueTest",
-      "failingMethods": [],
-      "erroringMethods": [
-        "io.atomix.core.value.impl.RaftAtomicValueTest"
-      ],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 11, 2020 1:48:33 AM",
+    "reproductionDateEnd": "Apr 11, 2020 3:36:09 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 537381056,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 6452,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-389974194-20180609-023520-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-atomix-atomix-389974194-20180609-023520-firstCommit/protocols/raft",
+    "overallMetrics": {
+      "numberRunning": 795,
+      "numberPassing": 794,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
-          "failureName": "java.util.concurrent.TimeoutException:",
-          "isError": true
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 0,
-      "nbErrors": 1
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.atomix.protocols.raft.RaftTest",
+        "numberRunning": 64,
+        "numberPassing": 63,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.atomix.protocols.raft.RaftTest",
+        "testMethod": "testBlockOnEvent",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberPlugins": 0,
+    "numberSourceFiles": 857,
+    "numberTestFiles": 136,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  }
 }
