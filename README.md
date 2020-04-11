@@ -14,7 +14,13 @@ The structure of the repository is as follows:
 
 ## Statistics
 
-There are currently 1.683 (excluding `master` branch) branches, each of them associated with a failure, and there are 72 cases in which AstorJKali succeeded to generate one patch.
+The builds collected in the dataset [repairnator-experiments](https://github.com/repairnator/repairnator-experiments) with only one failing test case are 2.381. In the following table, there are the different states of the builds detected by Repairnator during the analysis:
+
+|                        | Test error | Patched | Not clonable | Not buildable | Not checked out | Not testable | Not failing|
+|--------------------------|:--------:|:--------:|:------------:|:-------------:|---------------:|--------------:|-------:|
+| **Number of the builds** | 1.640    | 71       |     -        | 275           | -              | 49            | 252    |
+
+In this repository there are 1.684 branches (excluding `master` branch), each of them associated with a failure.
 
 ## Builds to be re-executed
 
