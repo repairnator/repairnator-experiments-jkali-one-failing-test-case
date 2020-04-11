@@ -16,7 +16,7 @@ The structure of the repository is as follows:
 
 The builds collected in the dataset [repairnator-experiments](https://github.com/repairnator/repairnator-experiments) with only one failing test case are 2.381. In the following table, there are the different states of the builds detected by Repairnator during the analysis:
 
-|                        | Test error | Patched | Not clonable | Not buildable | Not checked out | Not testable | Not failing|
+|                        | Failing | Patched | Not clonable | Not buildable | Not checked out | Not testable | Not failing|
 |--------------------------|:--------:|:--------:|:------------:|:-------------:|---------------:|--------------:|-------:|
 | **Number of the builds** | 1.640    | 71       |     -        | 275           | -              | 49            | 252    |
 
