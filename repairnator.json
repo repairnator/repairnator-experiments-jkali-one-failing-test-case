@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 12, 2020 8:08:03 PM",
+    "reproductionDateEnd": "Apr 12, 2020 8:16:39 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 50141352,
+      "totalMemory": 214204416
+    },
+    "totalDuration": 513,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 146,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          146
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-netarchivesuite-netarchivesuite-408598426-20180726-190715-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-netarchivesuite-netarchivesuite-408598426-20180726-190715-firstCommit/archive/archive-core",
+    "overallMetrics": {
+      "numberRunning": 323,
+      "numberPassing": 322,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 20,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.netarkivet.archive.bitarchive.distribute.BitarchiveServerTester",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.netarkivet.archive.bitarchive.distribute.BitarchiveServerTester",
+        "testMethod": "testVisitUploadMessage",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Number of listeners on queue [Queue \u0027DEV_TWO_ANY_BA\u0027] should be 1 before upload. expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 36,
+    "numberPlugins": 0,
+    "numberSourceFiles": 691,
+    "numberTestFiles": 406,
+    "numberLibrariesFailingModule": 85,
+    "numberLines": 0
+  }
+}
