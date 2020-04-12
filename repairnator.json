@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "prestodb/presto",
-  "failingModule": "/root/workspace/prestodb/presto/264447658/presto-main",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 3816,
-  "failing-test-cases": [
-    {
-      "className": "com.facebook.presto.sql.planner.optimizations.TestReorderJoins",
-      "failingMethods": [
-        "com.facebook.presto.sql.planner.optimizations.TestReorderJoins#testEliminateCrossJoinPreserveFilters"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 12, 2020 8:08:03 PM",
+    "reproductionDateEnd": "Apr 12, 2020 8:50:34 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 353787072,
+      "totalMemory": 1117114368
+    },
+    "totalDuration": 2547,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 813,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          813
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-270167605-20170830-234013-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-prestodb-presto-270167605-20170830-234013-firstCommit/presto-main",
+    "overallMetrics": {
+      "numberRunning": 3816,
+      "numberPassing": 3815,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Plan does not match, expected [\n\n- anyTree\n    - node(JoinNode)\n        JoinMatcher{equiCriteria\u003d[L_ORDERKEY \u003d O_ORDERKEY]}\n        - anyTree\n            - node(JoinNode)\n                JoinMatcher{equiCriteria\u003d[P_PARTKEY \u003d L_PARTKEY]}\n                - anyTree\n                    - node(TableScanNode)\n                        TableScanMatcher{expectedTableName\u003dpart}\n                        bind P_PARTKEY -\u003e Column part:partkey\n                - anyTree\n                    - node(FilterNode)\n                        FilterMatcher{predicate\u003d(\"R\" \u003d \u0027L_RETURNFLAG\u0027)}\n                        - node(TableScanNode)\n                            TableScanMatcher{expectedTableName\u003dlineitem}\n                            bind L_PARTKEY -\u003e Column lineitem:partkey\n                            bind L_ORDERKEY -\u003e Column lineitem:orderkey\n                            bind L_RETURNFLAG -\u003e Column lineitem:returnflag\n        - anyTree\n            - node(FilterNode)\n                FilterMatcher{predicate\u003d(\"O_SHIPPRIORITY\" \u003e\u003d 10)}\n                - node(TableScanNode)\n                    TableScanMatcher{expectedTableName\u003dorders}\n                    bind O_ORDERKEY -\u003e Column orders:orderkey\n                    bind O_SHIPPRIORITY -\u003e Column orders:shippriority\n\n] but found [\n\n- Output[orderkey] \u003d\u003e [orderkey_2:bigint]\n        Cost: {rows: 120350, bytes: ?}\n        orderkey :\u003d orderkey_2\n    - InnerJoin[(\"orderkey_2\" \u003d \"orderkey\")][$hashvalue_11, $hashvalue_12] \u003d\u003e [orderkey_2:bigint]\n            Cost: {rows: 120350, bytes: ?}\n        - Project[] \u003d\u003e [orderkey_2:bigint, $hashvalue_11:bigint]\n                Cost: {rows: 60175, bytes: ?}\n                $hashvalue_11 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"orderkey_2\"), 0))\n            - InnerJoin[(\"partkey\" \u003d \"partkey_3\")][$hashvalue, $hashvalue_9] \u003d\u003e [orderkey_2:bigint]\n                    Cost: {rows: 60175, bytes: ?}\n                - ScanProject[table \u003d local:tpch:part:sf0.01, originalConstraint \u003d true] \u003d\u003e [partkey:bigint, $hashvalue:bigint]\n                        Cost: {rows: 2000, bytes: ?}/{rows: 2000, bytes: ?}\n                        $hashvalue :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"partkey\"), 0))\n                        partkey :\u003d tpch:partkey\n                - LocalExchange[SINGLE] () \u003d\u003e orderkey_2:bigint, partkey_3:bigint, $hashvalue_9:bigint\n                        Cost: {rows: 30087, bytes: ?}\n                    - ScanFilterProject[table \u003d local:tpch:lineitem:sf0.01, originalConstraint \u003d (\u0027R\u0027 \u003d \"returnflag\"), filterPredicate \u003d (\u0027R\u0027 \u003d \"returnflag\")] \u003d\u003e [orderkey_2:bigint, partkey_3:bigint, $hashvalue_10:bigint]\n                            Cost: {rows: 60175, bytes: ?}/{rows: 30087, bytes: ?}/{rows: 30087, bytes: ?}\n                            $hashvalue_10 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"partkey_3\"), 0))\n                            orderkey_2 :\u003d tpch:orderkey\n                            partkey_3 :\u003d tpch:partkey\n                            returnflag :\u003d tpch:returnflag\n        - LocalExchange[SINGLE] () \u003d\u003e orderkey:bigint, $hashvalue_12:bigint\n                Cost: {rows: 7500, bytes: ?}\n            - ScanFilterProject[table \u003d local:tpch:orders:sf0.01, originalConstraint \u003d (\"shippriority\" \u003e\u003d 10), filterPredicate \u003d (\"shippriority\" \u003e\u003d 10)] \u003d\u003e [orderkey:bigint, $hashvalue_13:bigint]\n                    Cost: {rows: 15000, bytes: ?}/{rows: 7500, bytes: ?}/{rows: 7500, bytes: ?}\n                    $hashvalue_13 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"orderkey\"), 0))\n                    orderkey :\u003d tpch:orderkey\n                    shippriority :\u003d tpch:shippriority\n\n] which resolves to [\n\n- Output[orderkey] \u003d\u003e [orderkey_2:bigint]\n        Cost: {rows: 120350, bytes: ?}\n        orderkey :\u003d orderkey_2\n    - InnerJoin[(\"orderkey_2\" \u003d \"orderkey\")][$hashvalue_11, $hashvalue_12] \u003d\u003e [orderkey_2:bigint]\n            Cost: {rows: 120350, bytes: ?}\n        - Project[] \u003d\u003e [orderkey_2:bigint, $hashvalue_11:bigint]\n                Cost: {rows: 60175, bytes: ?}\n                $hashvalue_11 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"orderkey_2\"), 0))\n            - InnerJoin[(\"partkey\" \u003d \"partkey_3\")][$hashvalue, $hashvalue_9] \u003d\u003e [orderkey_2:bigint]\n                    Cost: {rows: 60175, bytes: ?}\n                - ScanProject[table \u003d local:tpch:part:sf0.01, originalConstraint \u003d true] \u003d\u003e [partkey:bigint, $hashvalue:bigint]\n                        Cost: {rows: 2000, bytes: ?}/{rows: 2000, bytes: ?}\n                        $hashvalue :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"partkey\"), 0))\n                        partkey :\u003d tpch:partkey\n                - LocalExchange[SINGLE] () \u003d\u003e orderkey_2:bigint, partkey_3:bigint, $hashvalue_9:bigint\n                        Cost: {rows: 30087, bytes: ?}\n                    - ScanFilterProject[table \u003d local:tpch:lineitem:sf0.01, originalConstraint \u003d (\u0027R\u0027 \u003d \"returnflag\"), filterPredicate \u003d (\u0027R\u0027 \u003d \"returnflag\")] \u003d\u003e [orderkey_2:bigint, partkey_3:bigint, $hashvalue_10:bigint]\n                            Cost: {rows: 60175, bytes: ?}/{rows: 30087, bytes: ?}/{rows: 30087, bytes: ?}\n                            $hashvalue_10 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"partkey_3\"), 0))\n                            orderkey_2 :\u003d tpch:orderkey\n                            partkey_3 :\u003d tpch:partkey\n                            returnflag :\u003d tpch:returnflag\n        - LocalExchange[SINGLE] () \u003d\u003e orderkey:bigint, $hashvalue_12:bigint\n                Cost: {rows: 7500, bytes: ?}\n            - ScanFilterProject[table \u003d local:tpch:orders:sf0.01, originalConstraint \u003d (\"shippriority\" \u003e\u003d 10), filterPredicate \u003d (\"shippriority\" \u003e\u003d 10)] \u003d\u003e [orderkey:bigint, $hashvalue_13:bigint]\n                    Cost: {rows: 15000, bytes: ?}/{rows: 7500, bytes: ?}/{rows: 7500, bytes: ?}\n                    $hashvalue_13 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"orderkey\"), 0))\n                    orderkey :\u003d tpch:orderkey\n                    shippriority :\u003d tpch:shippriority\n\n]",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.facebook.presto.sql.planner.optimizations.TestReorderJoins",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.facebook.presto.sql.planner.optimizations.TestReorderJoins",
+        "testMethod": "testEliminateCrossJoinPreserveFilters",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Plan does not match, expected [\n\n- anyTree\n    - node(JoinNode)\n        JoinMatcher{equiCriteria\u003d[L_ORDERKEY \u003d O_ORDERKEY]}\n        - anyTree\n            - node(JoinNode)\n                JoinMatcher{equiCriteria\u003d[P_PARTKEY \u003d L_PARTKEY]}\n                - anyTree\n                    - node(TableScanNode)\n                        TableScanMatcher{expectedTableName\u003dpart}\n                        bind P_PARTKEY -\u003e Column part:partkey\n                - anyTree\n                    - node(FilterNode)\n                        FilterMatcher{predicate\u003d(\"R\" \u003d \u0027L_RETURNFLAG\u0027)}\n                        - node(TableScanNode)\n                            TableScanMatcher{expectedTableName\u003dlineitem}\n                            bind L_PARTKEY -\u003e Column lineitem:partkey\n                            bind L_ORDERKEY -\u003e Column lineitem:orderkey\n                            bind L_RETURNFLAG -\u003e Column lineitem:returnflag\n        - anyTree\n            - node(FilterNode)\n                FilterMatcher{predicate\u003d(\"O_SHIPPRIORITY\" \u003e\u003d 10)}\n                - node(TableScanNode)\n                    TableScanMatcher{expectedTableName\u003dorders}\n                    bind O_ORDERKEY -\u003e Column orders:orderkey\n                    bind O_SHIPPRIORITY -\u003e Column orders:shippriority\n\n] but found [\n\n- Output[orderkey] \u003d\u003e [orderkey_2:bigint]\n        Cost: {rows: 120350, bytes: ?}\n        orderkey :\u003d orderkey_2\n    - InnerJoin[(\"orderkey_2\" \u003d \"orderkey\")][$hashvalue_11, $hashvalue_12] \u003d\u003e [orderkey_2:bigint]\n            Cost: {rows: 120350, bytes: ?}\n        - Project[] \u003d\u003e [orderkey_2:bigint, $hashvalue_11:bigint]\n                Cost: {rows: 60175, bytes: ?}\n                $hashvalue_11 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"orderkey_2\"), 0))\n            - InnerJoin[(\"partkey\" \u003d \"partkey_3\")][$hashvalue, $hashvalue_9] \u003d\u003e [orderkey_2:bigint]\n                    Cost: {rows: 60175, bytes: ?}\n                - ScanProject[table \u003d local:tpch:part:sf0.01, originalConstraint \u003d true] \u003d\u003e [partkey:bigint, $hashvalue:bigint]\n                        Cost: {rows: 2000, bytes: ?}/{rows: 2000, bytes: ?}\n                        $hashvalue :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"partkey\"), 0))\n                        partkey :\u003d tpch:partkey\n                - LocalExchange[SINGLE] () \u003d\u003e orderkey_2:bigint, partkey_3:bigint, $hashvalue_9:bigint\n                        Cost: {rows: 30087, bytes: ?}\n                    - ScanFilterProject[table \u003d local:tpch:lineitem:sf0.01, originalConstraint \u003d (\u0027R\u0027 \u003d \"returnflag\"), filterPredicate \u003d (\u0027R\u0027 \u003d \"returnflag\")] \u003d\u003e [orderkey_2:bigint, partkey_3:bigint, $hashvalue_10:bigint]\n                            Cost: {rows: 60175, bytes: ?}/{rows: 30087, bytes: ?}/{rows: 30087, bytes: ?}\n                            $hashvalue_10 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"partkey_3\"), 0))\n                            orderkey_2 :\u003d tpch:orderkey\n                            partkey_3 :\u003d tpch:partkey\n                            returnflag :\u003d tpch:returnflag\n        - LocalExchange[SINGLE] () \u003d\u003e orderkey:bigint, $hashvalue_12:bigint\n                Cost: {rows: 7500, bytes: ?}\n            - ScanFilterProject[table \u003d local:tpch:orders:sf0.01, originalConstraint \u003d (\"shippriority\" \u003e\u003d 10), filterPredicate \u003d (\"shippriority\" \u003e\u003d 10)] \u003d\u003e [orderkey:bigint, $hashvalue_13:bigint]\n                    Cost: {rows: 15000, bytes: ?}/{rows: 7500, bytes: ?}/{rows: 7500, bytes: ?}\n                    $hashvalue_13 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"orderkey\"), 0))\n                    orderkey :\u003d tpch:orderkey\n                    shippriority :\u003d tpch:shippriority\n\n] which resolves to [\n\n- Output[orderkey] \u003d\u003e [orderkey_2:bigint]\n        Cost: {rows: 120350, bytes: ?}\n        orderkey :\u003d orderkey_2\n    - InnerJoin[(\"orderkey_2\" \u003d \"orderkey\")][$hashvalue_11, $hashvalue_12] \u003d\u003e [orderkey_2:bigint]\n            Cost: {rows: 120350, bytes: ?}\n        - Project[] \u003d\u003e [orderkey_2:bigint, $hashvalue_11:bigint]\n                Cost: {rows: 60175, bytes: ?}\n                $hashvalue_11 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"orderkey_2\"), 0))\n            - InnerJoin[(\"partkey\" \u003d \"partkey_3\")][$hashvalue, $hashvalue_9] \u003d\u003e [orderkey_2:bigint]\n                    Cost: {rows: 60175, bytes: ?}\n                - ScanProject[table \u003d local:tpch:part:sf0.01, originalConstraint \u003d true] \u003d\u003e [partkey:bigint, $hashvalue:bigint]\n                        Cost: {rows: 2000, bytes: ?}/{rows: 2000, bytes: ?}\n                        $hashvalue :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"partkey\"), 0))\n                        partkey :\u003d tpch:partkey\n                - LocalExchange[SINGLE] () \u003d\u003e orderkey_2:bigint, partkey_3:bigint, $hashvalue_9:bigint\n                        Cost: {rows: 30087, bytes: ?}\n                    - ScanFilterProject[table \u003d local:tpch:lineitem:sf0.01, originalConstraint \u003d (\u0027R\u0027 \u003d \"returnflag\"), filterPredicate \u003d (\u0027R\u0027 \u003d \"returnflag\")] \u003d\u003e [orderkey_2:bigint, partkey_3:bigint, $hashvalue_10:bigint]\n                            Cost: {rows: 60175, bytes: ?}/{rows: 30087, bytes: ?}/{rows: 30087, bytes: ?}\n                            $hashvalue_10 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"partkey_3\"), 0))\n                            orderkey_2 :\u003d tpch:orderkey\n                            partkey_3 :\u003d tpch:partkey\n                            returnflag :\u003d tpch:returnflag\n        - LocalExchange[SINGLE] () \u003d\u003e orderkey:bigint, $hashvalue_12:bigint\n                Cost: {rows: 7500, bytes: ?}\n            - ScanFilterProject[table \u003d local:tpch:orders:sf0.01, originalConstraint \u003d (\"shippriority\" \u003e\u003d 10), filterPredicate \u003d (\"shippriority\" \u003e\u003d 10)] \u003d\u003e [orderkey:bigint, $hashvalue_13:bigint]\n                    Cost: {rows: 15000, bytes: ?}/{rows: 7500, bytes: ?}/{rows: 7500, bytes: ?}\n                    $hashvalue_13 :\u003d \"combine_hash\"(BIGINT \u00270\u0027, COALESCE(\"$operator$hash_code\"(\"orderkey\"), 0))\n                    orderkey :\u003d tpch:orderkey\n                    shippriority :\u003d tpch:shippriority\n\n]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 49,
+    "numberPlugins": 0,
+    "numberSourceFiles": 3332,
+    "numberTestFiles": 1085,
+    "numberLibrariesFailingModule": 144,
+    "numberLines": 0
+  }
 }
