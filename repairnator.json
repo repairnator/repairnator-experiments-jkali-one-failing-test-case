@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 192,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/jackrabbit-oak",
-  "bugCommit": "https://github.com/apache/jackrabbit-oak/compare/1eaf27398e5e...c19af6a17183",
-  "failingModule": "/root/workspace/apache/jackrabbit-oak/284243676/oak-jcr",
-  "hostname": "spirals-librepair",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 7608,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.jackrabbit.oak.jcr.observation.ObservationQueueFullWarnTest",
-      "failingMethods": [
-        "org.apache.jackrabbit.oak.jcr.observation.ObservationQueueFullWarnTest#testQueueFullThenFlushing[SegmentTar]"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 12, 2020 8:09:11 PM",
+    "reproductionDateEnd": "Apr 12, 2020 10:11:21 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 754307552,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 7325,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-284243676-20171006-184558_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-284243676-20171006-184558_bugonly-firstCommit/oak-jcr",
+    "overallMetrics": {
+      "numberRunning": 7416,
+      "numberPassing": 7415,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 192,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Just filled queue must not convert local-\u003eexternal expected:\u003c6\u003e but was:\u003c4\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.jcr.observation.ObservationQueueFullWarnTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.jcr.observation.ObservationQueueFullWarnTest",
+        "testMethod": "testQueueFullThenFlushing[SegmentTar]",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Just filled queue must not convert local-\u003eexternal expected:\u003c6\u003e but was:\u003c4\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 36,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2181,
+    "numberTestFiles": 1502,
+    "numberLibrariesFailingModule": 81,
+    "numberLines": 0
+  }
 }
