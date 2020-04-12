@@ -1,0 +1,119 @@
+{
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 12, 2020 8:08:03 PM",
+    "reproductionDateEnd": "Apr 12, 2020 8:56:40 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 82461104,
+      "totalMemory": 242634752
+    },
+    "totalDuration": 2914,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 2706,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          2706
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ponchofiesta-kitodo-mediaserver-415465074-20180813-160957-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-ponchofiesta-kitodo-mediaserver-415465074-20180813-160957-firstCommit/kitodo-mediaserver-ui",
+    "overallMetrics": {
+      "numberRunning": 93,
+      "numberPassing": 92,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.kitodo.mediaserver.ui.works.WorkControllerTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.kitodo.mediaserver.ui.works.WorkControllerTest",
+        "testMethod": "testSearchWork",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Model attribute \u0027page\u0027\nExpected: hasProperty(\"content\", a collection with size \u003c1\u003e)\n     but: property \u0027content\u0027 collection size was \u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberPlugins": 0,
+    "numberSourceFiles": 84,
+    "numberTestFiles": 18,
+    "numberLibrariesFailingModule": 102,
+    "numberLines": 0
+  }
+}
