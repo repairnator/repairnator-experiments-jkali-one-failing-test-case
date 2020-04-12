@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 154,
-  "bugType": "failing_passing",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/jackrabbit-oak",
-  "bugCommit": "https://github.com/apache/jackrabbit-oak/compare/c7038987d1a9...5aec0a46147a",
-  "failingModule": "/root/workspace/apache/jackrabbit-oak/226381342/oak-tarmk-standby",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 5959,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.jackrabbit.oak.plugins.segment.standby.BrokenNetworkTest",
-      "failingMethods": [
-        "org.apache.jackrabbit.oak.plugins.segment.standby.BrokenNetworkTest#testProxySSLSkippedBytesIntermediateChange"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 12, 2020 8:08:01 PM",
+    "reproductionDateEnd": "Apr 12, 2020 8:35:11 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 100875736,
+      "totalMemory": 231714816
+    },
+    "totalDuration": 1626,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 158,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          158
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-226475974-20170427-193059-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-jackrabbit-oak-226475974-20170427-193059-firstCommit/oak-pojosr",
+    "overallMetrics": {
+      "numberRunning": 6372,
+      "numberPassing": 6371,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 158,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c{ root \u003d { ... } }\u003e but was:\u003c{ root : { } }\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.run.osgi.LuceneSupportTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.jackrabbit.oak.run.osgi.LuceneSupportTest",
+        "testMethod": "fullTextSearch",
+        "failureName": "java.lang.AssertionError",
+        "detail": "RetryLoop failed, condition is false after 30 seconds: ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 25,
+    "numberPlugins": 0,
+    "numberSourceFiles": 1649,
+    "numberTestFiles": 1050,
+    "numberLibrariesFailingModule": 80,
+    "numberLines": 0
+  }
 }
