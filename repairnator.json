@@ -1,31 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "apache/flink",
-  "failingModule": "/root/workspace/apache/flink/219300924/flink-core",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2144,
-  "failing-test-cases": [
-    {
-      "className": "org.apache.flink.util.FileUtilsTest",
-      "failingMethods": [
-        "org.apache.flink.util.FileUtilsTest#testDeleteDirectory"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 12, 2020 8:09:07 PM",
+    "reproductionDateEnd": "Apr 12, 2020 10:31:44 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 3368320,
+      "totalMemory": 1131216896
+    },
+    "totalDuration": 8553,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 1,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-flink-219300924-20170406-213158_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-apache-flink-219300924-20170406-213158_bugonly-firstCommit/flink-runtime",
+    "overallMetrics": {
+      "numberRunning": 4662,
+      "numberPassing": 4661,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 13,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "this should fail with an exception",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.flink.runtime.jobmanager.JobManagerRegistrationTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.flink.runtime.jobmanager.JobManagerRegistrationTest",
+        "testMethod": "The JobManager should handle repeated registration calls",
+        "failureName": "java.lang.AssertionError",
+        "detail": "assertion failed: timeout (19999922150 nanoseconds) during expectMsgClass waiting for class org.apache.flink.runtime.messages.JobManagerMessages$LeaderSessionMessage",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 72,
+    "numberPlugins": 0,
+    "numberSourceFiles": 2945,
+    "numberTestFiles": 1796,
+    "numberLibrariesFailingModule": 85,
+    "numberLines": 0
+  }
 }
