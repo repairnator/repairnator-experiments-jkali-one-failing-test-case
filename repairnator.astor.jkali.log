@@ -337,3 +337,6 @@ RemoveOp:(spoon.support.reflect.code.CtIfImpl) `if (org.apache.jackrabbit.oak.co
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.jackrabbit.oak.run.osgi.OakOSGiRepositoryFactory line: 376, pointed element: CtInvocationImpl
 [INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
 RemoveOp:(spoon.support.reflect.code.CtInvocationImpl) `registry.registerService(javax.management.MBeanServer.class.getName(),  platformMBeanServer, mbeanPr[...] ` -topatch--> `-` (null) 
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:59) - mod_point MP=org.apache.jackrabbit.oak.run.osgi.ConfigTracker line: 100, pointed element: CtIfImpl
+[INFO ] fr.inria.astor.core.solutionsearch.ExhaustiveSearchEngine.startEvolution(ExhaustiveSearchEngine.java:60) - -->op: OP_INSTANCE:
+ReplaceIfBooleanOp:(spoon.support.reflect.code.CtIfImpl) `if (jsonFilePath == null) { 	return configs; } ` -topatch--> `if (true) { 	return configs; }` (spoon.support.reflect.code.CtIfImpl) 
