@@ -20,7 +20,7 @@ The builds collected in the dataset [repairnator-experiments](https://github.com
 |--------------------------|:--------:|:--------:|:------------:|:-------------:|---------------:|--------------:|-------:|
 | **Number of the builds** | 1.685    | 73       |     -        | 275           | -              | 50            | 262    |
 
-In this repository there are 1.684 branches (excluding `master` branch), each of them associated with a failure.
+In this repository there are 1.763 branches (excluding `master` branch), each of them associated with a failure.
 
 ## Builds to be re-executed
 
