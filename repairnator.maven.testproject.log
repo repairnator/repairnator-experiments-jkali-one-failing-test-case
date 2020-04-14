@@ -1,0 +1,174 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Cassandra Reaper project
+[INFO] Cassandra Reaper server
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cassandra Reaper project 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cassandra Reaper server 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ cassandra-reaper ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server
+[INFO] Storing buildNumber: d08ac1e at timestamp: 1586878515594
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ cassandra-reaper ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cassandra-reaper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 48 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cassandra-reaper ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (default) @ cassandra-reaper ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cassandra-reaper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cassandra-reaper ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ cassandra-reaper ---
+[INFO] Surefire report directory: /scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom (4 KB at 9.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 108.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar (75 KB at 1345.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.cassandrareaper.resources.view.RepairRunStatusTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in io.cassandrareaper.resources.view.RepairRunStatusTest
+Running io.cassandrareaper.resources.view.NodesStatusTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in io.cassandrareaper.resources.view.NodesStatusTest
+Running io.cassandrareaper.resources.view.RepairScheduleStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.938 sec - in io.cassandrareaper.resources.view.RepairScheduleStatusTest
+Running io.cassandrareaper.resources.ClusterResourceTest
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.995 sec <<< FAILURE! - in io.cassandrareaper.resources.ClusterResourceTest
+testAddExistingCluster(io.cassandrareaper.resources.ClusterResourceTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<303> but was:<307>
+	at io.cassandrareaper.resources.ClusterResourceTest.testAddExistingCluster(ClusterResourceTest.java:92)
+
+Running io.cassandrareaper.resources.RepairRunResourceTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.703 sec - in io.cassandrareaper.resources.RepairRunResourceTest
+Running io.cassandrareaper.service.HeartTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.389 sec - in io.cassandrareaper.service.HeartTest
+Running io.cassandrareaper.service.RepairRunServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in io.cassandrareaper.service.RepairRunServiceTest
+Running io.cassandrareaper.service.ClusterRepairSchedulerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in io.cassandrareaper.service.ClusterRepairSchedulerTest
+Running io.cassandrareaper.service.AutoSchedulingManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in io.cassandrareaper.service.AutoSchedulingManagerTest
+Running io.cassandrareaper.service.SegmentRunnerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.18 sec - in io.cassandrareaper.service.SegmentRunnerTest
+Running io.cassandrareaper.service.SnapshotManagerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec - in io.cassandrareaper.service.SnapshotManagerTest
+Running io.cassandrareaper.service.RepairRunnerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.096 sec - in io.cassandrareaper.service.RepairRunnerTest
+Running io.cassandrareaper.service.SegmentGeneratorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in io.cassandrareaper.service.SegmentGeneratorTest
+Running io.cassandrareaper.service.RingRangeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.cassandrareaper.service.RingRangeTest
+Running io.cassandrareaper.service.RepairManagerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in io.cassandrareaper.service.RepairManagerTest
+Running io.cassandrareaper.jmx.JmxConnectionsInitializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in io.cassandrareaper.jmx.JmxConnectionsInitializerTest
+Running io.cassandrareaper.jmx.JmxProxyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.cassandrareaper.jmx.JmxProxyTest
+Running io.cassandrareaper.jmx.JmxAddressesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.cassandrareaper.jmx.JmxAddressesTest
+Running io.cassandrareaper.ReaperApplicationConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.669 sec - in io.cassandrareaper.ReaperApplicationConfigurationTest
+Running io.cassandrareaper.core.ClusterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.cassandrareaper.core.ClusterTest
+Running io.cassandrareaper.AssertionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.cassandrareaper.AssertionTest
+
+Results :
+
+Failed tests: 
+  ClusterResourceTest.testAddExistingCluster:92 expected:<303> but was:<307>
+
+Tests run: 116, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Cassandra Reaper project ........................... SUCCESS [  0.002 s]
+[INFO] Cassandra Reaper server ............................ FAILURE [ 47.620 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 47.861 s
+[INFO] Finished at: 2020-04-14T17:36:00+02:00
+[INFO] Final Memory: 36M/185M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project cassandra-reaper: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project cassandra-reaper: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server/target/surefire-reports for the individual test results.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: There are test failures.
+
+Please refer to /scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server/target/surefire-reports for the individual test results.
+	at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution(SurefireHelper.java:91)
+	at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary(SurefirePlugin.java:318)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:880)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:739)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	... 20 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :cassandra-reaper
