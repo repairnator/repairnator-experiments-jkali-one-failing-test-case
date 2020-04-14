@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 0,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "thelastpickle/cassandra-reaper",
-  "bugCommit": "https://github.com/thelastpickle/cassandra-reaper/compare/583669554841...47112a8c0529",
-  "failingModule": "/root/workspace/thelastpickle/cassandra-reaper/367037037/src/server",
-  "hostname": "spirals-vortex.lille.inria.fr",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 116,
-  "failing-test-cases": [
-    {
-      "className": "io.cassandrareaper.resources.ClusterResourceTest",
-      "failingMethods": [
-        "io.cassandrareaper.resources.ClusterResourceTest#testAddExistingCluster"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 14, 2020 5:33:59 PM",
+    "reproductionDateEnd": "Apr 14, 2020 7:16:31 PM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 25434816,
+      "totalMemory": 257679360
+    },
+    "totalDuration": 6149,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 6000,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          6000
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-thelastpickle-cassandra-reaper-367037037-20180416-101446-firstCommit/src/server",
+    "overallMetrics": {
+      "numberRunning": 116,
+      "numberPassing": 115,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "expected:\u003c303\u003e but was:\u003c307\u003e",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cassandrareaper.resources.ClusterResourceTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cassandrareaper.resources.ClusterResourceTest",
+        "testMethod": "testAddExistingCluster",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c303\u003e but was:\u003c307\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 84,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 182,
+    "numberLines": 0
+  }
 }
