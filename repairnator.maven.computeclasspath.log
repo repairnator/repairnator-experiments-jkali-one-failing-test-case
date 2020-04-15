@@ -1,0 +1,100 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/atlassian/maven/plugins/maven-clover2-plugin/4.0.6/maven-clover2-plugin-4.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/atlassian/maven/plugins/maven-clover2-plugin/4.0.6/maven-clover2-plugin-4.0.6.pom (21 KB at 25.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/atlassian/pom/central-pom/3.0.90/central-pom-3.0.90.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/atlassian/pom/central-pom/3.0.90/central-pom-3.0.90.pom (5 KB at 117.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/atlassian/pom/base-pom/3.0.90/base-pom-3.0.90.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/atlassian/pom/base-pom/3.0.90/base-pom-3.0.90.pom (29 KB at 573.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/atlassian/maven/plugins/maven-clover2-plugin/4.0.6/maven-clover2-plugin-4.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/atlassian/maven/plugins/maven-clover2-plugin/4.0.6/maven-clover2-plugin-4.0.6.jar (137 KB at 2206.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom (7 KB at 290.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar (34 KB at 1190.4 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RESTEasy Main testsuite: Legacy integration tests 4.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: http://repository.jboss.org/nexus/content/groups/public/org/jboss/resteasy/resteasy-testsuite/4.0.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: http://repository.jboss.org/nexus/content/groups/public/org/jboss/resteasy/resteasy-testsuite/4.0.0-SNAPSHOT/resteasy-testsuite-4.0.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.599 s
+[INFO] Finished at: 2020-04-15T02:56:06+02:00
+[INFO] Final Memory: 19M/67M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project resteasy-legacy-integration-tests: Could not resolve dependencies for project org.jboss.resteasy:resteasy-legacy-integration-tests:jar:4.0.0-SNAPSHOT: Failed to collect dependencies at org.jboss.resteasy:arquillian-utils:jar:4.0.0-SNAPSHOT: Failed to read artifact descriptor for org.jboss.resteasy:arquillian-utils:jar:4.0.0-SNAPSHOT: Could not find artifact org.jboss.resteasy:resteasy-testsuite:pom:4.0.0-SNAPSHOT in jboss (http://repository.jboss.org/nexus/content/groups/public/) -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal on project resteasy-legacy-integration-tests: Could not resolve dependencies for project org.jboss.resteasy:resteasy-legacy-integration-tests:jar:4.0.0-SNAPSHOT: Failed to collect dependencies at org.jboss.resteasy:arquillian-utils:jar:4.0.0-SNAPSHOT
+	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies(LifecycleDependencyResolver.java:221)
+	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.resolveProjectDependencies(LifecycleDependencyResolver.java:127)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.ensureDependenciesAreResolved(MojoExecutor.java:245)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:199)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.project.DependencyResolutionException: Could not resolve dependencies for project org.jboss.resteasy:resteasy-legacy-integration-tests:jar:4.0.0-SNAPSHOT: Failed to collect dependencies at org.jboss.resteasy:arquillian-utils:jar:4.0.0-SNAPSHOT
+	at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve(DefaultProjectDependenciesResolver.java:180)
+	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies(LifecycleDependencyResolver.java:195)
+	... 23 more
+Caused by: org.eclipse.aether.collection.DependencyCollectionException: Failed to collect dependencies at org.jboss.resteasy:arquillian-utils:jar:4.0.0-SNAPSHOT
+	at org.eclipse.aether.internal.impl.DefaultDependencyCollector.collectDependencies(DefaultDependencyCollector.java:291)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.collectDependencies(DefaultRepositorySystem.java:316)
+	at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve(DefaultProjectDependenciesResolver.java:172)
+	... 24 more
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.jboss.resteasy:arquillian-utils:jar:4.0.0-SNAPSHOT
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:329)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:198)
+	at org.eclipse.aether.internal.impl.DefaultDependencyCollector.resolveCachedArtifactDescriptor(DefaultDependencyCollector.java:535)
+	at org.eclipse.aether.internal.impl.DefaultDependencyCollector.getArtifactDescriptorResult(DefaultDependencyCollector.java:519)
+	at org.eclipse.aether.internal.impl.DefaultDependencyCollector.processDependency(DefaultDependencyCollector.java:409)
+	at org.eclipse.aether.internal.impl.DefaultDependencyCollector.processDependency(DefaultDependencyCollector.java:363)
+	at org.eclipse.aether.internal.impl.DefaultDependencyCollector.process(DefaultDependencyCollector.java:351)
+	at org.eclipse.aether.internal.impl.DefaultDependencyCollector.collectDependencies(DefaultDependencyCollector.java:254)
+	... 26 more
+Caused by: org.apache.maven.model.resolution.UnresolvableModelException: Could not find artifact org.jboss.resteasy:resteasy-testsuite:pom:4.0.0-SNAPSHOT in jboss (http://repository.jboss.org/nexus/content/groups/public/)
+	at org.apache.maven.repository.internal.DefaultModelResolver.resolveModel(DefaultModelResolver.java:177)
+	at org.apache.maven.repository.internal.DefaultModelResolver.resolveModel(DefaultModelResolver.java:226)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1000)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:320)
+	... 33 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.jboss.resteasy:resteasy-testsuite:pom:4.0.0-SNAPSHOT in jboss (http://repository.jboss.org/nexus/content/groups/public/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at org.apache.maven.repository.internal.DefaultModelResolver.resolveModel(DefaultModelResolver.java:173)
+	... 38 more
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.jboss.resteasy:resteasy-testsuite:pom:4.0.0-SNAPSHOT in jboss (http://repository.jboss.org/nexus/content/groups/public/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 41 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
