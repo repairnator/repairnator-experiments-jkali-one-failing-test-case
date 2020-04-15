@@ -1,32 +1,119 @@
 {
-  "totalNumberSkippingTests": 3,
-  "bugType": "only_fail",
-  "totalNumberErroringTests": 0,
-  "repo": "resteasy/Resteasy",
-  "bugCommit": "https://github.com/resteasy/Resteasy/compare/fb5e2032aab2...6eb66ea01131",
-  "failingModule": "/root/workspace/resteasy/Resteasy/258325429/testsuite/integration-tests",
-  "hostname": "spirals-repairnator",
-  "totalNumberFailingTests": 1,
-  "error-types": [
-    "java.lang.AssertionError"
-  ],
-  "totalNumberRunningTests": 2531,
-  "failing-test-cases": [
-    {
-      "className": "org.jboss.resteasy.test.providers.sse.SseTest",
-      "failingMethods": [
-        "org.jboss.resteasy.test.providers.sse.SseTest#testSseEvent"
-      ],
-      "erroringMethods": [],
+  "builds": {},
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Apr 15, 2020 2:36:22 AM",
+    "reproductionDateEnd": "Apr 15, 2020 2:56:15 AM",
+    "machineInfo": {
+      "numberCPU": 1,
+      "freeMemory": 49890872,
+      "totalMemory": 71041024
+    },
+    "totalDuration": 1189,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "building": {
+        "nbSteps": 3,
+        "totalDuration": 0,
+        "stepNames": [
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutPatchedBuild"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0
+        ]
+      },
+      "testing": {
+        "nbSteps": 0,
+        "totalDuration": 0,
+        "stepNames": [],
+        "stepDurations": []
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 0,
+        "stepNames": [
+          "AstorJKali"
+        ],
+        "stepDurations": [
+          0
+        ]
+      }
+    },
+    "projectRootPomPath": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-resteasy-Resteasy-258325429-20170728-000736_bugonly-firstCommit/pom.xml"
+  },
+  "repository": {
+    "githubId": 0,
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {},
+  "tests": {
+    "failingModule": "/scratch/dginelli/workspace/repairnator-repairnator-experiments-resteasy-Resteasy-258325429-20170728-000736_bugonly-firstCommit/testsuite/legacy-integration-tests",
+    "overallMetrics": {
+      "numberRunning": 1147,
+      "numberPassing": 1146,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
       "failures": [
         {
           "failureName": "java.lang.AssertionError",
-          "failureDetail": "Waiting for event to be delivered has timed out.",
-          "isError": false
+          "isError": false,
+          "occurrences": 1
         }
-      ],
-      "nbFailures": 1,
-      "nbErrors": 0
-    }
-  ]
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jboss.resteasy.test.asynch.JaxrsAsyncServletTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jboss.resteasy.test.asynch.JaxrsAsyncServletTest",
+        "testMethod": "testResumeObject",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Wrong time of request",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 0,
+    "numberTestFiles": 0,
+    "numberLibrariesFailingModule": 0,
+    "numberLines": 0
+  }
 }
