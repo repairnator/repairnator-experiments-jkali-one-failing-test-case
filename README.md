@@ -207,3 +207,49 @@ index 48160c0..bbcd26d 100644
          
      }
 ```
+
+### apache-commons-rng-354875355-20180318-011906
+
+### apache-commons-rng-403087258-20180712-141947
+
+### atomix-atomix-365170225-20180411-171152
+
+### BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538
+
+### cqse-test-analyzer-397786068-20180628-145935
+
+### dotwebstack-dotwebstack-framework-363986485-20180409-090844
+
+### dropwizard-metrics-374587117-20180503-220610-firstCommit
+
+### eclipse-hono-338971473-20180208-141728-firstCommit
+
+### EnMasseProject-enmasse-378592651-20180514-093752-firstCommit
+
+### EnMasseProject-enmasse-387846982-20180604-173506-firstCommit
+
+### INL-BlackLab-214962527-20170325-134416-firstCommit
+
+### jguyet-HttpRequest-400611810-20180705-224946
+
+### jmrozanec-cron-utils-249918159-20170704-112646_bugonly
+
+### Mistahmilla-SudokuSolver-372495757-20180428-211304
+
+### MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150
+
+### nablarch-nablarch-example-http-messaging-361036711-20180402-045142
+
+### OpenFeign-feign-413754623-20180808-215547
+
+### opentracing-contrib-java-hazelcast-390335750-20180610-103253
+
+### pac4j-pac4j-322406277-20171228-030236_bugonly
+
+### ryhita-gilded-rose-349620528-20180306-041741
+
+### swissquote-carnotzet-351211949-20180309-095950
+
+### timmolter-XChange-301755888-20171114-043126_bugonly
+
+### usgs-volcano-core-408694507-20180726-231401
