@@ -310,6 +310,8 @@ index 48160c0..bbcd26d 100644
 + if (this.nodes.get(node.id()).getState() == State.ACTIVE)
 ```
 
+**Pull Request History**: [https://github.com/atomix/atomix/pull/484/](https://github.com/atomix/atomix/pull/484/)
+
 ### BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit)
