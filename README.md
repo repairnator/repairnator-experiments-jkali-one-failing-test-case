@@ -236,6 +236,10 @@ index 48160c0..bbcd26d 100644
 
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### apache-commons-rng-403087258-20180712-141947
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit)
@@ -264,6 +268,10 @@ index 48160c0..bbcd26d 100644
 
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### atomix-atomix-365170225-20180411-171152
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit)
@@ -289,6 +297,10 @@ index 48160c0..bbcd26d 100644
  				}
  			} else {
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538
 
@@ -336,6 +348,10 @@ index 48160c0..bbcd26d 100644
 
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### cqse-test-analyzer-397786068-20180628-145935
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit)
@@ -365,6 +381,10 @@ index 48160c0..bbcd26d 100644
  	}
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### dotwebstack-dotwebstack-framework-363986485-20180409-090844
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit)
@@ -389,6 +409,11 @@ index 48160c0..bbcd26d 100644
  		postService.ifPresent(( service) -> registerTransaction(service, javax.ws.rs.HttpMethod.POST, absolutePath, httpConfiguration));
  		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> putService = java.util.Optional.ofNullable(endPoint.getPutService());
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### dropwizard-metrics-374587117-20180503-220610-firstCommit
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit)
@@ -416,6 +441,10 @@ index 48160c0..bbcd26d 100644
  		}
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### eclipse-hono-338971473-20180208-141728-firstCommit
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit)
@@ -441,6 +470,10 @@ index 48160c0..bbcd26d 100644
  					}
  					result.complete(openAttach.result());
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### EnMasseProject-enmasse-378592651-20180514-093752-firstCommit
 
@@ -468,6 +501,10 @@ index 48160c0..bbcd26d 100644
  				if (retries > io.enmasse.amqp.Artemis.maxRetries) {
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### EnMasseProject-enmasse-387846982-20180604-173506-firstCommit
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit)
@@ -492,6 +529,10 @@ index 48160c0..bbcd26d 100644
  
  	@com.fasterxml.jackson.annotation.JsonProperty("groupVersion")
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### INL-BlackLab-214962527-20170325-134416-firstCommit
 
@@ -522,6 +563,10 @@ index 48160c0..bbcd26d 100644
  	}
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### jguyet-HttpRequest-400611810-20180705-224946
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit)
@@ -546,6 +591,10 @@ index 48160c0..bbcd26d 100644
  
  	public java.lang.String getContent() {
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### jmrozanec-cron-utils-249918159-20170704-112646_bugonly
 
@@ -576,6 +625,10 @@ index 48160c0..bbcd26d 100644
  
  	@java.lang.Override
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### Mistahmilla-SudokuSolver-372495757-20180428-211304
 
@@ -610,6 +663,10 @@ index 48160c0..bbcd26d 100644
  							}
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit)
@@ -634,6 +691,10 @@ index 48160c0..bbcd26d 100644
  			}
  		}
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### nablarch-nablarch-example-http-messaging-361036711-20180402-045142
 
@@ -661,6 +722,10 @@ index 48160c0..bbcd26d 100644
  		java.util.Map<java.lang.String, java.lang.String> map = new java.util.HashMap<>();
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### OpenFeign-feign-413754623-20180808-215547
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit)
@@ -687,6 +752,10 @@ index 48160c0..bbcd26d 100644
  		}
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### opentracing-contrib-java-hazelcast-390335750-20180610-103253
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit)
@@ -710,6 +779,10 @@ index 48160c0..bbcd26d 100644
  	}
  }
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### pac4j-pac4j-322406277-20171228-030236_bugonly
 
@@ -736,6 +809,10 @@ index 48160c0..bbcd26d 100644
  		} else {
  			return null;
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### ryhita-gilded-rose-349620528-20180306-041741
 
@@ -770,6 +847,10 @@ index 48160c0..bbcd26d 100644
  			quality = 0;
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### swissquote-carnotzet-351211949-20180309-095950
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit)
@@ -794,6 +875,10 @@ index 48160c0..bbcd26d 100644
  				throw new java.lang.RuntimeException((((("External command [" + com.google.common.base.Joiner.on(" ").join(command)) + "] exited with [") + p.exitValue()) + "], output: ") + output);
  			}
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
 
 ### timmolter-XChange-301755888-20171114-043126_bugonly
 
@@ -823,6 +908,10 @@ index 48160c0..bbcd26d 100644
  	}
 ```
 
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
+
 ### usgs-volcano-core-408694507-20180726-231401
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit)
@@ -847,3 +936,7 @@ index 48160c0..bbcd26d 100644
  		return gov.usgs.volcanoes.core.data.Scnl.parse(scnlString, gov.usgs.volcanoes.core.data.Scnl.DELIMITER);
  	}
 ```
+
+- **Overview**:
+- **Reason why the patch has been generated**:
+- **Useful information for the developer**:
