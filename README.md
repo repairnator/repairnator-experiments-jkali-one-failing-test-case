@@ -216,7 +216,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [ContinuousSamplerParametricTest.java]() | [RejectionInversionZipfSampler.java]()|
+| java.lang.AssertionError | [ContinuousSamplerParametricTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7d5cad3df578cf7467be89478ede91b74d684ed7/commons-rng-sampling/src/test/java/org/apache/commons/rng/sampling/distribution/ContinuousSamplerParametricTest.java#L53) | [RejectionInversionZipfSampler.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7d5cad3df578cf7467be89478ede91b74d684ed7/commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java#L60-L62)|
 
 - **Kali patch**:
 
@@ -233,7 +233,6 @@ index 48160c0..bbcd26d 100644
  		if (exponent <= 0) {
  			throw new java.lang.IllegalArgumentException("exponent is not strictly positive: " + exponent);
  		}
-
 ```
 
 - **Overview**:
@@ -280,7 +279,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [DefaultClusterServiceTest.java]() | [DefaultClusterService.java]()|
+| java.lang.AssertionError | [DefaultClusterServiceTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/0d0ebd0dc2bb7f81967c94e3471208eb9cdeacf7/cluster/src/test/java/io/atomix/cluster/impl/DefaultClusterServiceTest.java#L195) | [DefaultClusterService.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/0d0ebd0dc2bb7f81967c94e3471208eb9cdeacf7/cluster/src/main/java/io/atomix/cluster/impl/DefaultClusterService.java#L200)|
 
 - **Kali patch**:
 
@@ -298,9 +297,18 @@ index 48160c0..bbcd26d 100644
  			} else {
 ```
 
-- **Overview**:
-- **Reason why the patch has been generated**:
-- **Useful information for the developer**:
+- **Overview**: The error is related to the status check of a `Node`.
+
+- **Reason why the patch has been generated**: AstorJKali managed to create a patch, because changing the `if condition`, it forced the execution of method `deactivateNode`. This method uses [another way](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/0d0ebd0dc2bb7f81967c94e3471208eb9cdeacf7/cluster/src/main/java/io/atomix/cluster/impl/DefaultClusterService.java#L289) to get the `node` onject (it uses the node id, and it gets the node based on this id, checking in a Map), so that when its status is checked, it is `ACTIVE` (and not `INACTIVE`), and thus the method `deactivate(Node)` is executed in full. In this way, the node is deactivated and the assertion is satisfied.
+
+- **Useful information for the developer**: The developer can see how the status of Node is got in the method [`deactivateNode`](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/0d0ebd0dc2bb7f81967c94e3471208eb9cdeacf7/cluster/src/main/java/io/atomix/cluster/impl/DefaultClusterService.java#L288), and use the same way to check the status in the `if condition` changed by AstorJKali. Indeed, in this way, all the test cases pass.
+
+- **Possible fix**:
+
+```diff
+- if (node.getState() == State.ACTIVE) {
++ if (this.nodes.get(node.id()).getState() == State.ACTIVE)
+```
 
 ### BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538
 
