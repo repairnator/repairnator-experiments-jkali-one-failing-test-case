@@ -218,6 +218,24 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [ContinuousSamplerParametricTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java
++++ /src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java
+@@ -22,9 +22,6 @@
+ 
+ 	public RejectionInversionZipfSampler(org.apache.commons.rng.UniformRandomProvider rng, int numberOfElements, double exponent) {
+ 		super(rng);
+-		if (numberOfElements <= 0) {
+-			throw new java.lang.IllegalArgumentException("number of elements is not strictly positive: " + numberOfElements);
+-		}
+ 		if (exponent <= 0) {
+ 			throw new java.lang.IllegalArgumentException("exponent is not strictly positive: " + exponent);
+ 		}
+
+```
+
 ### apache-commons-rng-403087258-20180712-141947
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit)
@@ -227,6 +245,24 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError| [ContinuousSamplerParametricTest.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java
++++ /src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java
+@@ -22,9 +22,6 @@
+ 
+ 	public RejectionInversionZipfSampler(org.apache.commons.rng.UniformRandomProvider rng, int numberOfElements, double exponent) {
+ 		super(rng);
+-		if (numberOfElements <= 0) {
+-			throw new java.lang.IllegalArgumentException("number of elements is not strictly positive: " + numberOfElements);
+-		}
+ 		if (exponent <= 0) {
+ 			throw new java.lang.IllegalArgumentException("exponent is not strictly positive: " + exponent);
+ 		}
+
+```
 
 ### atomix-atomix-365170225-20180411-171152
 
@@ -238,6 +274,22 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [DefaultClusterServiceTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
++++ /src/main/java/io/atomix/cluster/impl/DefaultClusterService.java
+@@ -91,7 +91,7 @@
+ 			io.atomix.cluster.impl.PhiAccrualFailureDetector failureDetector = failureDetectors.computeIfAbsent(node.id(), ( n) -> new io.atomix.cluster.impl.PhiAccrualFailureDetector());
+ 			double phi = failureDetector.phi();
+ 			if ((phi > 0) && ((phi >= phiFailureThreshold) || ((java.lang.System.currentTimeMillis() - failureDetector.lastUpdated()) > io.atomix.cluster.impl.DefaultClusterService.DEFAULT_FAILURE_TIME))) {
+-				if (node.getState() == io.atomix.cluster.Node.State.ACTIVE) {
++				if (true) {
+ 					deactivateNode(node);
+ 				}
+ 			} else {
+```
+
 ### BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit)
@@ -247,6 +299,42 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [TestClassTest.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/sqtf/TestClass.java
++++ /src/main/java/org/sqtf/TestClass.java
+@@ -133,27 +133,6 @@
+ 				continue;
+ 			}
+ 			int timeout = m.timeout();
+-			if (params != null) {
+-				java.util.List<java.lang.Object[]> testParameterList = getTestParameters(params.csvfile(), testMethod.getParameterTypes());
+-				if (testParameterList != null) {
+-					for (java.lang.Object[] objects : testParameterList) {
+-						org.sqtf.TestResult result = runTest(testMethod, instance, timeout, objects);
+-						resultCache.add(result);
+-						final org.sqtf.TestResult finalResult = result;
+-						listeners.forEach(( l) -> l.testCompleted(clazz.getSimpleName(), testMethod.getName(), finalResult.passed()));
+-					}
+-				} else {
+-					org.sqtf.TestResult result = new org.sqtf.TestResult(testMethod, new org.sqtf.InvalidTestException(""), 0);
+-					resultCache.add(result);
+-					final org.sqtf.TestResult finalResult = result;
+-					listeners.forEach(( l) -> l.testCompleted(clazz.getSimpleName(), testMethod.getName(), finalResult.passed()));
+-				}
+-			} else {
+-				org.sqtf.TestResult result = runTest(testMethod, instance, timeout);
+-				resultCache.add(result);
+-				final org.sqtf.TestResult finalResult = result;
+-				listeners.forEach(( l) -> l.testCompleted(clazz.getSimpleName(), testMethod.getName(), finalResult.passed()));
+-			}
+ 		}
+ 		listeners.forEach(( l) -> l.classCompleted(clazz.getSimpleName(), testClassPassed.get()));
+ 		finishTime = java.lang.System.currentTimeMillis();
+
+```
 
 ### cqse-test-analyzer-397786068-20180628-145935
 
@@ -258,6 +346,25 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | org.junit.ComparisonFailure | [SurefireTestListenerTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/AbstractSurefireTestListener.java
++++ /src/main/java/de/tum/in/niedermr/ta/extensions/analysis/workflows/stackdistance/maven/AbstractSurefireTestListener.java
+@@ -80,10 +80,9 @@
+ 
+ 	@java.lang.Override
+ 	public synchronized void testFinished(org.junit.runner.Description description) throws java.lang.Exception {
+-		if (m_currentTestcaseFailed) {
+-			writeCommentToResultFile("Failing test case: " + createTestcaseIdentifier(description).get());
++		if (m_currentTestcaseFailed)
+ 			return;
+-		}
++
+ 		appendStackDistanceOfTestcaseToResult(createTestcaseIdentifier(description));
+ 	}
+```
+
 ### dotwebstack-dotwebstack-framework-363986485-20180409-090844
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit)
@@ -268,6 +375,20 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [DirectEndPointRequestMapperTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/dotwebstack/framework/frontend/ld/mappers/DirectEndPointRequestMapper.java
++++ /src/main/java/org/dotwebstack/framework/frontend/ld/mappers/DirectEndPointRequestMapper.java
+@@ -44,7 +44,6 @@
+ 		java.lang.String basePath = endPoint.getStage().getFullPath();
+ 		java.lang.String absolutePath = basePath.concat(endPoint.getPathPattern());
+ 		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> deleteService = java.util.Optional.ofNullable(endPoint.getDeleteService());
+-		deleteService.ifPresent(( service) -> registerTransaction(service, javax.ws.rs.HttpMethod.DELETE, absolutePath, httpConfiguration));
+ 		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> postService = java.util.Optional.ofNullable(endPoint.getPostService());
+ 		postService.ifPresent(( service) -> registerTransaction(service, javax.ws.rs.HttpMethod.POST, absolutePath, httpConfiguration));
+ 		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> putService = java.util.Optional.ofNullable(endPoint.getPutService());
+```
 ### dropwizard-metrics-374587117-20180503-220610-firstCommit
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit)
@@ -277,6 +398,23 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | org.mockito.exceptions.verification.WantedButNotInvoked | [InstrumentedHttpClientsTimerTest.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedNHttpClientBuilder.java
++++ /src/main/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedNHttpClientBuilder.java
+@@ -85,8 +85,8 @@
+ 		@java.lang.Override
+ 		public void failed(java.lang.Exception ex) {
+ 			timerContext.stop();
+-			if (callback != null) {
+-				callback.failed(ex);
++			if (true) {
++				this.callback.failed(ex);
+ 			}
+ 		}
+```
 
 ### eclipse-hono-338971473-20180208-141728-firstCommit
 
@@ -288,6 +426,22 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | org.mockito.exceptions.verification.WantedButNotInvoked | [EventConsumerImplTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/eclipse/hono/client/impl/AbstractHonoClient.java
++++ /src/main/java/org/eclipse/hono/client/impl/AbstractHonoClient.java
+@@ -149,7 +149,7 @@
+ 					org.eclipse.hono.client.impl.AbstractHonoClient.LOG.debug("receiver open attach failed [{}] by peer [{}]: {}", receiver.getRemoteSource(), con.getRemoteContainer(), openAttach.cause().getMessage());
+ 					result.fail(openAttach.cause());
+ 				} else {
+-					if (org.eclipse.hono.client.impl.AbstractHonoClient.LOG.isTraceEnabled()) {
++					if (true) {
+ 						org.eclipse.hono.client.impl.AbstractHonoClient.LOG.trace("receiver open attach succeeded [{}] by peer [{}]", receiver.getRemoteSource(), con.getRemoteContainer());
+ 					}
+ 					result.complete(openAttach.result());
+```
+
 ### EnMasseProject-enmasse-378592651-20180514-093752-firstCommit
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit)
@@ -297,6 +451,22 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [ArtemisTest.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/io/enmasse/amqp/Artemis.java
++++ /src/main/java/io/enmasse/amqp/Artemis.java
+@@ -83,7 +83,7 @@
+ 		source.setDynamic(true);
+ 		receiver.setSource(source);
+ 		receiver.openHandler(( h) -> {
+-			if (h.succeeded()) {
++			if (true) {
+ 				promise.complete(new io.enmasse.amqp.Artemis(vertx.getOrCreateContext(), connection, sender, receiver, h.result().getRemoteSource().getAddress(), replies));
+ 			} else {
+ 				if (retries > io.enmasse.amqp.Artemis.maxRetries) {
+```
 
 ### EnMasseProject-enmasse-387846982-20180604-173506-firstCommit
 
@@ -308,6 +478,21 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [HTTPServerTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/io/enmasse/api/v1/types/APIGroupVersion.java
++++ /src/main/java/io/enmasse/api/v1/types/APIGroupVersion.java
+@@ -13,7 +13,6 @@
+ 
+ 	public APIGroupVersion(java.lang.String groupVersion, java.lang.String version) {
+ 		this.groupVersion = groupVersion;
+-		this.version = version;
+ 	}
+ 
+ 	@com.fasterxml.jackson.annotation.JsonProperty("groupVersion")
+```
+
 ### INL-BlackLab-214962527-20170325-134416-firstCommit
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit)
@@ -317,6 +502,25 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [TestSearchesNfa.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/nl/inl/blacklab/search/lucene/BLSpanOrQuery.java
++++ /src/main/java/nl/inl/blacklab/search/lucene/BLSpanOrQuery.java
+@@ -489,9 +489,9 @@
+ 	public boolean canMakeNfa() {
+ 		for (org.apache.lucene.search.spans.SpanQuery cl : getClauses()) {
+ 			nl.inl.blacklab.search.lucene.BLSpanQuery clause = ((nl.inl.blacklab.search.lucene.BLSpanQuery) (cl));
+-			if (!clause.canMakeNfa())
++			if (true) {
+ 				return false;
+-
++			}
+ 		}
+ 		return true;
+ 	}
+```
 
 ### jguyet-HttpRequest-400611810-20180705-224946
 
@@ -328,6 +532,21 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | org.opentest4j.AssertionFailedError | [TestRequest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/com/http/Request.java
++++ /src/main/java/com/http/Request.java
+@@ -235,7 +235,6 @@
+ 		header.put("Accept-Encoding", "gzip, deflate, br");
+ 		header.put("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+ 		header.put("Connection", "Keep-Alive");
+-		this.setHeader(header);
+ 	}
+ 
+ 	public java.lang.String getContent() {
+```
+
 ### jmrozanec-cron-utils-249918159-20170704-112646_bugonly
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit)
@@ -337,6 +556,26 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [Issue215Test.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java
++++ /src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java
+@@ -20,10 +20,9 @@
+ 		com.cronutils.model.field.expression.Between between = ((com.cronutils.model.field.expression.Between) (cronField.getExpression()));
+ 		int from = ((java.lang.Integer) (between.getFrom().getValue()));
+ 		int to = ((java.lang.Integer) (between.getTo().getValue()));
+-		while (from <= to) {
+-			dowValidValues.add(from);
++		while (from <= to)
+ 			from += 1;
+-		} 
++
+ 	}
+ 
+ 	@java.lang.Override
+```
 
 ### Mistahmilla-SudokuSolver-372495757-20180428-211304
 
@@ -348,6 +587,29 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [NakedSubsetTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
++++ /src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
+@@ -28,12 +28,12 @@
+ 								}
+ 							}
+ 						}
+-						if (count >= 2) {
++						if (true) {
+ 							for (int x = section.getMinX(); x < section.getMaxX(); x++) {
+ 								for (int y = section.getMinY(); y < section.getMaxY(); y++) {
+ 									if (squares[x][y] != 'x') {
+-										board.getSquare(x, y).removePossibleValue(a);
+-										board.getSquare(x, y).removePossibleValue(b);
++										this.board.getSquare(x, y).removePossibleValue(a);
++										this.board.getSquare(x, y).removePossibleValue(b);
+ 									}
+ 								}
+ 							}
+```
+
 ### MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit)
@@ -357,6 +619,21 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [AudioAsStimuliProviderTest.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/RandomIndexing.java
++++ /src/main/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/RandomIndexing.java
+@@ -68,7 +68,6 @@
+ 				int offset = offsetBuffer.get(indOffset);
+ 				retVal.add((i * blockSize) + offset);
+ 				offsetBuffer.remove(new java.lang.Integer(offset));
+-				offsetBuffer.remove(new java.lang.Integer(offset - 1));
+ 				offsetBuffer.remove(new java.lang.Integer(offset + 1));
+ 			}
+ 		}
+```
 
 ### nablarch-nablarch-example-http-messaging-361036711-20180402-045142
 
@@ -368,6 +645,22 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | org.junit.ComparisonFailure | [ProjectSaveActionRequestTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/com/nablarch/example/action/ProjectSaveAction.java
++++ /src/main/java/com/nablarch/example/action/ProjectSaveAction.java
+@@ -17,7 +17,7 @@
+ 	protected nablarch.fw.messaging.ResponseMessage onError(java.lang.Throwable e, nablarch.fw.messaging.RequestMessage requestMessage, nablarch.fw.ExecutionContext context) {
+ 		requestMessage.setFormatterOfReply(com.nablarch.example.action.ProjectSaveAction.createFormatter());
+ 		java.lang.String statusCode = java.lang.String.valueOf(nablarch.fw.web.HttpResponse.Status.INTERNAL_SERVER_ERROR.getStatusCode());
+-		if (e instanceof nablarch.core.message.ApplicationException) {
++		if (true) {
+ 			statusCode = java.lang.String.valueOf(nablarch.fw.web.HttpResponse.Status.BAD_REQUEST.getStatusCode());
+ 		}
+ 		java.util.Map<java.lang.String, java.lang.String> map = new java.util.HashMap<>();
+```
+
 ### OpenFeign-feign-413754623-20180808-215547
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit)
@@ -377,6 +670,22 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [JAXBCodecTest.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/feign/jaxb/JAXBDecoder.java
++++ /src/main/java/feign/jaxb/JAXBDecoder.java
+@@ -24,7 +24,7 @@
+ 		if (response.body() == null)
+ 			return null;
+ 
+-		if (type instanceof java.lang.reflect.ParameterizedType) {
++		if (false) {
+ 			java.lang.reflect.ParameterizedType ptype = ((java.lang.reflect.ParameterizedType) (type));
+ 			type = ptype.getRawType();
+ 		}
+```
 
 ### opentracing-contrib-java-hazelcast-390335750-20180610-103253
 
@@ -388,6 +697,20 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [TracingTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java
++++ /src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java
+@@ -20,7 +20,6 @@
+ 		io.opentracing.Span span = io.opentracing.contrib.hazelcast.TracingHelper.buildSpan("process", parent, traceWithActiveSpanOnly);
+ 		span.setTag("entryBackupProcessor", io.opentracing.contrib.hazelcast.TracingHelper.nullableClass(entryBackupProcessor));
+ 		span.setTag("entry", io.opentracing.contrib.hazelcast.TracingHelper.nullable(entry));
+-		io.opentracing.contrib.hazelcast.TracingHelper.decorateAction(() -> entryBackupProcessor.processBackup(entry), span);
+ 	}
+ }
+```
+
 ### pac4j-pac4j-322406277-20171228-030236_bugonly
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit)
@@ -397,6 +720,22 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [StringConverterTests.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/pac4j/core/profile/converter/StringConverter.java
++++ /src/main/java/org/pac4j/core/profile/converter/StringConverter.java
+@@ -8,7 +8,7 @@
+ 
+ 	@java.lang.Override
+ 	protected java.lang.String internalConvert(final java.lang.Object attribute) {
+-		if (null != attribute) {
++		if (false) {
+ 			return attribute.toString();
+ 		} else {
+ 			return null;
+```
 
 ### ryhita-gilded-rose-349620528-20180306-041741
 
@@ -408,6 +747,29 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [ItemTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/fr/esiea/BackstagePassesItem.java
++++ /src/main/java/fr/esiea/BackstagePassesItem.java
+@@ -15,11 +15,11 @@
+ 				quality++;
+ 
+ 		}
+-		if (this.sellIn < 6)
+-			if (this.quality < fr.esiea.Item.MAX_QUALITY)
+-				quality++;
+-
+-
++		if (false) {
++			if (this.quality < fr.esiea.Item.MAX_QUALITY) {
++				this.quality++;
++			}
++		}
+ 		if (this.sellIn < fr.esiea.Item.SELLIN_IS_OVER)
+ 			quality = 0;
+```
+
 ### swissquote-carnotzet-351211949-20180309-095950
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit)
@@ -417,6 +779,21 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [DefaultCommandRunnerTest.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/com/github/swissquote/carnotzet/core/runtime/DefaultCommandRunner.java
++++ /src/main/java/com/github/swissquote/carnotzet/core/runtime/DefaultCommandRunner.java
+@@ -67,7 +67,6 @@
+ 			java.lang.Process p = pb.start();
+ 			p.waitFor();
+ 			java.lang.String output = org.apache.commons.io.FileUtils.readFileToString(tmp);
+-			output = output.trim();
+ 			if (p.exitValue() != 0) {
+ 				throw new java.lang.RuntimeException((((("External command [" + com.google.common.base.Joiner.on(" ").join(command)) + "] exited with [") + p.exitValue()) + "], output: ") + output);
+ 			}
+```
 
 ### timmolter-XChange-301755888-20171114-043126_bugonly
 
@@ -428,6 +805,24 @@ index 48160c0..bbcd26d 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [KrakenAdaptersTest.java]() | []()|
 
+- **Kali patch**:
+
+```diff
+--- /src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java
++++ /src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java
+@@ -175,11 +175,6 @@
+ 		}
+ 		java.util.Map<org.knowm.xchange.currency.Currency, org.knowm.xchange.dto.meta.CurrencyMetaData> currencies = new java.util.HashMap<>();
+ 		currencies.putAll(originalMetaData.getCurrencies());
+-		for (java.lang.String krakenAssetCode : krakenAssets.keySet()) {
+-			org.knowm.xchange.kraken.dto.marketdata.KrakenAsset krakenAsset = krakenAssets.get(krakenAssetCode);
+-			org.knowm.xchange.currency.Currency currencyCode = org.knowm.xchange.kraken.KrakenAdapters.adaptCurrency(krakenAssetCode);
+-			currencies.put(currencyCode, new org.knowm.xchange.dto.meta.CurrencyMetaData(krakenAsset.getScale()));
+-		}
+ 		return new org.knowm.xchange.dto.meta.ExchangeMetaData(pairs, currencies, originalMetaData == null ? null : originalMetaData.getPublicRateLimits(), originalMetaData == null ? null : originalMetaData.getPrivateRateLimits(), originalMetaData == null ? null : originalMetaData.isShareRateLimits());
+ 	}
+```
+
 ### usgs-volcano-core-408694507-20180726-231401
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit)
@@ -437,3 +832,18 @@ index 48160c0..bbcd26d 100644
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [ScnlParserTest.java]() | []()|
+
+- **Kali patch**:
+
+```diff
+--- /src/main/java/gov/usgs/volcanoes/core/data/Scnl.java
++++ /src/main/java/gov/usgs/volcanoes/core/data/Scnl.java
+@@ -82,7 +82,6 @@
+ 
+ 	public static gov.usgs.volcanoes.core.data.Scnl parse(java.lang.String scnlString) throws gov.usgs.volcanoes.core.util.UtilException {
+ 		if (scnlString.indexOf("$") == (-1)) {
+-			return gov.usgs.volcanoes.core.data.Scnl.parse(scnlString, " ");
+ 		}
+ 		return gov.usgs.volcanoes.core.data.Scnl.parse(scnlString, gov.usgs.volcanoes.core.data.Scnl.DELIMITER);
+ 	}
+```
