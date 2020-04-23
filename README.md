@@ -210,7 +210,7 @@ index 48160c0..bbcd26d 100644
 
 ### apache-commons-rng-354875355-20180318-011906
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit)
 
 - **Information about the failure**:
 
@@ -220,7 +220,7 @@ index 48160c0..bbcd26d 100644
 
 ### apache-commons-rng-403087258-20180712-141947
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit)
 
 - **Information about the failure**:
 
@@ -230,7 +230,7 @@ index 48160c0..bbcd26d 100644
 
 ### atomix-atomix-365170225-20180411-171152
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit)
 
 - **Information about the failure**:
 
@@ -240,7 +240,7 @@ index 48160c0..bbcd26d 100644
 
 ### BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-BradleyWood-Software-Quality-Test-Framework-351075282-20180309-001538-firstCommit)
 
 - **Information about the failure**:
 
@@ -250,7 +250,7 @@ index 48160c0..bbcd26d 100644
 
 ### cqse-test-analyzer-397786068-20180628-145935
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-cqse-test-analyzer-397786068-20180628-145935-firstCommit)
 
 - **Information about the failure**:
 
@@ -260,7 +260,7 @@ index 48160c0..bbcd26d 100644
 
 ### dotwebstack-dotwebstack-framework-363986485-20180409-090844
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit)
 
 - **Information about the failure**:
 
@@ -270,7 +270,7 @@ index 48160c0..bbcd26d 100644
 
 ### dropwizard-metrics-374587117-20180503-220610-firstCommit
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit)
 
 - **Information about the failure**:
 
@@ -280,7 +280,7 @@ index 48160c0..bbcd26d 100644
 
 ### eclipse-hono-338971473-20180208-141728-firstCommit
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit)
 
 - **Information about the failure**:
 
@@ -290,7 +290,7 @@ index 48160c0..bbcd26d 100644
 
 ### EnMasseProject-enmasse-378592651-20180514-093752-firstCommit
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit)
 
 - **Information about the failure**:
 
@@ -300,7 +300,7 @@ index 48160c0..bbcd26d 100644
 
 ### EnMasseProject-enmasse-387846982-20180604-173506-firstCommit
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit)
 
 - **Information about the failure**:
 
@@ -310,7 +310,7 @@ index 48160c0..bbcd26d 100644
 
 ### INL-BlackLab-214962527-20170325-134416-firstCommit
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit)
 
 - **Information about the failure**:
 
@@ -320,7 +320,7 @@ index 48160c0..bbcd26d 100644
 
 ### jguyet-HttpRequest-400611810-20180705-224946
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit)
 
 - **Information about the failure**:
 
@@ -330,7 +330,7 @@ index 48160c0..bbcd26d 100644
 
 ### jmrozanec-cron-utils-249918159-20170704-112646_bugonly
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit)
 
 - **Information about the failure**:
 
@@ -340,7 +340,7 @@ index 48160c0..bbcd26d 100644
 
 ### Mistahmilla-SudokuSolver-372495757-20180428-211304
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-Mistahmilla-SudokuSolver-372495757-20180428-211304-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-Mistahmilla-SudokuSolver-372495757-20180428-211304-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-Mistahmilla-SudokuSolver-372495757-20180428-211304-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-Mistahmilla-SudokuSolver-372495757-20180428-211304-firstCommit)
 
 - **Information about the failure**:
 
@@ -350,7 +350,7 @@ index 48160c0..bbcd26d 100644
 
 ### MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit)
 
 - **Information about the failure**:
 
@@ -360,7 +360,7 @@ index 48160c0..bbcd26d 100644
 
 ### nablarch-nablarch-example-http-messaging-361036711-20180402-045142
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-nablarch-nablarch-example-http-messaging-361036711-20180402-045142-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-nablarch-nablarch-example-http-messaging-361036711-20180402-045142-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-nablarch-nablarch-example-http-messaging-361036711-20180402-045142-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-nablarch-nablarch-example-http-messaging-361036711-20180402-045142-firstCommit)
 
 - **Information about the failure**:
 
@@ -370,7 +370,7 @@ index 48160c0..bbcd26d 100644
 
 ### OpenFeign-feign-413754623-20180808-215547
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-OpenFeign-feign-413754623-20180808-215547-firstCommit)
 
 - **Information about the failure**:
 
@@ -380,7 +380,7 @@ index 48160c0..bbcd26d 100644
 
 ### opentracing-contrib-java-hazelcast-390335750-20180610-103253
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit)
 
 - **Information about the failure**:
 
@@ -390,7 +390,7 @@ index 48160c0..bbcd26d 100644
 
 ### pac4j-pac4j-322406277-20171228-030236_bugonly
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-pac4j-pac4j-322406277-20171228-030236_bugonly-firstCommit)
 
 - **Information about the failure**:
 
@@ -400,7 +400,7 @@ index 48160c0..bbcd26d 100644
 
 ### ryhita-gilded-rose-349620528-20180306-041741
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-ryhita-gilded-rose-349620528-20180306-041741-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-ryhita-gilded-rose-349620528-20180306-041741-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-ryhita-gilded-rose-349620528-20180306-041741-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-ryhita-gilded-rose-349620528-20180306-041741-firstCommit)
 
 - **Information about the failure**:
 
@@ -410,7 +410,7 @@ index 48160c0..bbcd26d 100644
 
 ### swissquote-carnotzet-351211949-20180309-095950
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit)
 
 - **Information about the failure**:
 
@@ -420,7 +420,7 @@ index 48160c0..bbcd26d 100644
 
 ### timmolter-XChange-301755888-20171114-043126_bugonly
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-timmolter-XChange-301755888-20171114-043126_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-timmolter-XChange-301755888-20171114-043126_bugonly-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-timmolter-XChange-301755888-20171114-043126_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-timmolter-XChange-301755888-20171114-043126_bugonly-firstCommit)
 
 - **Information about the failure**:
 
@@ -430,7 +430,7 @@ index 48160c0..bbcd26d 100644
 
 ### usgs-volcano-core-408694507-20180726-231401
 
-**Branch associated with the failure**: [repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit)
 
 - **Information about the failure**:
 
