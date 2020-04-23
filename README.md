@@ -216,7 +216,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [ContinuousSamplerParametricTest.java]() | []()|
+| java.lang.AssertionError | [ContinuousSamplerParametricTest.java]() | [RejectionInversionZipfSampler.java]()|
 
 - **Kali patch**:
 
@@ -244,7 +244,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError| [ContinuousSamplerParametricTest.java]() | []()|
+| java.lang.AssertionError| [ContinuousSamplerParametricTest.java]() | [RejectionInversionZipfSampler.java]()|
 
 - **Kali patch**:
 
@@ -272,7 +272,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [DefaultClusterServiceTest.java]() | []()|
+| java.lang.AssertionError | [DefaultClusterServiceTest.java]() | [DefaultClusterService.java]()|
 
 - **Kali patch**:
 
@@ -298,7 +298,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [TestClassTest.java]() | []()|
+| java.lang.AssertionError | [TestClassTest.java]() | [TestClass.java]()|
 
 - **Kali patch**:
 
@@ -344,7 +344,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| org.junit.ComparisonFailure | [SurefireTestListenerTest.java]() | []()|
+| org.junit.ComparisonFailure | [SurefireTestListenerTest.java]() | [AbstractSurefireTestListener.java]()|
 
 - **Kali patch**:
 
@@ -373,7 +373,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [DirectEndPointRequestMapperTest.java]() | []()|
+| java.lang.AssertionError | [DirectEndPointRequestMapperTest.java]() | [DirectEndPointRequestMapper.java]()|
 
 - **Kali patch**:
 
@@ -397,7 +397,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| org.mockito.exceptions.verification.WantedButNotInvoked | [InstrumentedHttpClientsTimerTest.java]() | []()|
+| org.mockito.exceptions.verification.WantedButNotInvoked | [InstrumentedHttpClientsTimerTest.java]() | [InstrumentedNHttpClientBuilder.java]()|
 
 - **Kali patch**:
 
@@ -424,7 +424,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| org.mockito.exceptions.verification.WantedButNotInvoked | [EventConsumerImplTest.java]() | []()|
+| org.mockito.exceptions.verification.WantedButNotInvoked | [EventConsumerImplTest.java]() | [AbstractHonoClient.java]()|
 
 - **Kali patch**:
 
@@ -450,7 +450,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [ArtemisTest.java]() | []()|
+| java.lang.AssertionError | [ArtemisTest.java]() | [Artemis.java]()|
 
 - **Kali patch**:
 
@@ -476,7 +476,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [HTTPServerTest.java]() | []()|
+| java.lang.AssertionError | [HTTPServerTest.java]() | [APIGroupVersion.java]()|
 
 - **Kali patch**:
 
@@ -501,7 +501,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [TestSearchesNfa.java]() | []()|
+| java.lang.AssertionError | [TestSearchesNfa.java]() | [BLSpanOrQuery.java]()|
 
 - **Kali patch**:
 
@@ -530,7 +530,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| org.opentest4j.AssertionFailedError | [TestRequest.java]() | []()|
+| org.opentest4j.AssertionFailedError | [TestRequest.java]() | [Request.java]()|
 
 - **Kali patch**:
 
@@ -555,7 +555,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [Issue215Test.java]() | []()|
+| java.lang.AssertionError | [Issue215Test.java]() | [BetweenDayOfWeekValueGenerator.java]()|
 
 - **Kali patch**:
 
@@ -585,7 +585,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [NakedSubsetTest.java]() | []()|
+| java.lang.AssertionError | [NakedSubsetTest.java]() | [NakedSubset.java]()|
 
 - **Kali patch**:
 
@@ -618,7 +618,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [AudioAsStimuliProviderTest.java]() | []()|
+| java.lang.AssertionError | [AudioAsStimuliProviderTest.java]() | [RandomIndexing.java]()|
 
 - **Kali patch**:
 
@@ -643,7 +643,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| org.junit.ComparisonFailure | [ProjectSaveActionRequestTest.java]() | []()|
+| org.junit.ComparisonFailure | [ProjectSaveActionRequestTest.java]() | [ProjectSaveAction.java]()|
 
 - **Kali patch**:
 
@@ -669,7 +669,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [JAXBCodecTest.java]() | []()|
+| java.lang.AssertionError | [JAXBCodecTest.java]() | [JAXBDecoder.java]()|
 
 - **Kali patch**:
 
@@ -695,7 +695,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [TracingTest.java]() | []()|
+| java.lang.AssertionError | [TracingTest.java]() | [TracingEntryBackupProcessor.java]()|
 
 - **Kali patch**:
 
@@ -719,7 +719,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [StringConverterTests.java]() | []()|
+| java.lang.AssertionError | [StringConverterTests.java]() | [StringConverter.java]()|
 
 - **Kali patch**:
 
@@ -745,7 +745,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [ItemTest.java]() | []()|
+| java.lang.AssertionError | [ItemTest.java]() | [BackstagePassesItem.java]()|
 
 - **Kali patch**:
 
@@ -778,7 +778,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [DefaultCommandRunnerTest.java]() | []()|
+| java.lang.AssertionError | [DefaultCommandRunnerTest.java]() | [DefaultCommandRunner.java]()|
 
 - **Kali patch**:
 
@@ -803,7 +803,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [KrakenAdaptersTest.java]() | []()|
+| java.lang.AssertionError | [KrakenAdaptersTest.java]() | [KrakenAdapters.java]()|
 
 - **Kali patch**:
 
@@ -831,7 +831,7 @@ index 48160c0..bbcd26d 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [ScnlParserTest.java]() | []()|
+| java.lang.AssertionError | [ScnlParserTest.java]() | [Scnl.java]()|
 
 - **Kali patch**:
 
