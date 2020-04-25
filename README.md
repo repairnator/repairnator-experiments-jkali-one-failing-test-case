@@ -443,7 +443,7 @@ index 6d3a65bd..2536406b 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [DirectEndPointRequestMapperTest.java]() | [DirectEndPointRequestMapper.java]()|
+| java.lang.AssertionError | [DirectEndPointRequestMapperTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/f1b4847020795def5ebf06ee012da718fae6b2ee/frontend/ld/src/test/java/org/dotwebstack/framework/frontend/ld/mappers/DirectEndPointRequestMapperTest.java#L145) | [DirectEndPointRequestMapper.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/f1b4847020795def5ebf06ee012da718fae6b2ee/frontend/ld/src/main/java/org/dotwebstack/framework/frontend/ld/mappers/DirectEndPointRequestMapper.java#L66-L67)|
 
 - **Kali patch**:
 
