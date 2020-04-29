@@ -848,7 +848,7 @@ index 6d3a65bd..2536406b 100644
 
 | Failure type | Failure details |Failing test case | Changed file by AstorJKali |
 |--------------|-----------------|------------------|----------------------------|
-| java.lang.AssertionError | java.lang.AssertionError: expected null, but was:<true> | [StringConverterTests.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/test/java/org/pac4j/core/profile/converter/StringConverterTests.java#L33) | [StringConverter.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/main/java/org/pac4j/core/profile/converter/StringConverter.java#L17)|
+| java.lang.AssertionError | java.lang.AssertionError: expected null, but was:`<true>` | [StringConverterTests.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/test/java/org/pac4j/core/profile/converter/StringConverterTests.java#L33) | [StringConverter.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/main/java/org/pac4j/core/profile/converter/StringConverter.java#L17)|
 
 - **Kali patch**:
 
