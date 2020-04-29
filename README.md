@@ -967,7 +967,10 @@ index 6d3a65bd..2536406b 100644
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-usgs-volcano-core-408694507-20180726-231401-firstCommit)
 
 - **Failing Travic CI Build**: [https://api.travis-ci.org/v3/build/408694507](https://api.travis-ci.org/v3/build/408694507)
+
 - **Passed Travis CI Build**: [https://api.travis-ci.org/v3/build/408705348](https://api.travis-ci.org/v3/build/408705348)
+
+- **Pull Request**: [https://github.com/usgs/volcano-core/pull/81](https://github.com/usgs/volcano-core/pull/81)
 
 - **Information about the failure**:
 
