@@ -909,7 +909,7 @@ index 6d3a65bd..2536406b 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [DefaultCommandRunnerTest.java]() | [DefaultCommandRunner.java]()|
+| java.lang.AssertionError | [DefaultCommandRunnerTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/fe9d8b810c7588a47bfe920c51118545d3e563b8/core/src/test/java/com/github/swissquote/cartnotzet/core/runtime/DefaultCommandRunnerTest.java#L36) | [DefaultCommandRunner.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/fe9d8b810c7588a47bfe920c51118545d3e563b8/core/src/main/java/com/github/swissquote/carnotzet/core/runtime/DefaultCommandRunner.java#L90)|
 
 - **Kali patch**:
 
