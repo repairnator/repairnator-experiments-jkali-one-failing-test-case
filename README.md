@@ -872,7 +872,7 @@ index 6d3a65bd..2536406b 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [ItemTest.java]() | [BackstagePassesItem.java]()|
+| java.lang.AssertionError | [ItemTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/test/java/fr/esiea/ItemTest.java#L35) | [BackstagePassesItem.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/main/java/fr/esiea/BackstagePassesItem.java#L19)|
 
 - **Kali patch**:
 
@@ -884,15 +884,8 @@ index 6d3a65bd..2536406b 100644
  
  		}
 -		if (this.sellIn < 6)
--			if (this.quality < fr.esiea.Item.MAX_QUALITY)
--				quality++;
--
--
 +		if (false) {
-+			if (this.quality < fr.esiea.Item.MAX_QUALITY) {
-+				this.quality++;
-+			}
-+		}
+
  		if (this.sellIn < fr.esiea.Item.SELLIN_IS_OVER)
  			quality = 0;
 ```
