@@ -814,6 +814,8 @@ index 6d3a65bd..2536406b 100644
 
 - **Passed Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/390336220](https://api.travis-ci.org/v3/build/390336220)
 
+- **Pull Request**: [https://github.com/opentracing-contrib/java-hazelcast/pull/1](https://github.com/opentracing-contrib/java-hazelcast/pull/1)
+
 - **Information about the failure**:
 
 | Failure type | Failure details   |Failing test case           | Changed file by AstorJKali |
@@ -834,8 +836,10 @@ index 6d3a65bd..2536406b 100644
  }
 ```
 
-- **Overview**: the problem is related to the test case that checks the size of a List of MockSpan. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/opentracing-contrib/java-hazelcast/compare/df979e1e40d8...c9140902f4d9) to fix the bug.
+- **Overview**: the problem is related to the test case that checks the size of a List of MockSpan. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/opentracing-contrib/java-hazelcast/compare/df979e1e40d8...c9140902f4d9) to fix the bug. In particular, looking at the commit history of the [pull request](https://github.com/opentracing-contrib/java-hazelcast/pull/1/commits), the developer restored the previous version of the test case.
+
 - **Reason why the patch has been generated**:
+
 - **Useful information for the developer**:
 
 - **Human fix**:
