@@ -682,7 +682,7 @@ index 6d3a65bd..2536406b 100644
  	@java.lang.Override
 ```
 
-- **Overview**: the problem is related to the implementation of the method `isMatch`. Indeed, looking at the [commit history of the project](https://github.com/pangyikhei/cron-utils/commit/bdd688a3fb01b7120c240fdd7bb2a96410a0881d), the developer changed this method to fix the bug.
+- **Overview**: the problem is related to the implementation of the method [`isMatch`](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1e713a7c013058d5e930ce89b6f83b94251c3b29/src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java#L127). Indeed, looking at the [commit history of the project](https://github.com/pangyikhei/cron-utils/commit/bdd688a3fb01b7120c240fdd7bb2a96410a0881d), the developer changed this method to fix the bug. The test case fails because the expected date and the next date generated with the method [`nextExecution`](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1e713a7c013058d5e930ce89b6f83b94251c3b29/src/main/java/com/cronutils/model/time/ExecutionTime.java#L142) are not equal.
 
 - **Reason why the patch has been generated**:
 
