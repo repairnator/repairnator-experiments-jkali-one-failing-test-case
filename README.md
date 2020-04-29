@@ -810,11 +810,15 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-opentracing-contrib-java-hazelcast-390335750-20180610-103253-firstCommit)
 
+- **Failing Travic CI Build**: [https://api.travis-ci.org/v3/build/390335750](https://api.travis-ci.org/v3/build/390335750)
+
+- **Passed Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/390336220](https://api.travis-ci.org/v3/build/390336220)
+
 - **Information about the failure**:
 
-| Failure type | Failing test case | Changed file by AstorJKali |
+| Failure type | Failure details   |Failing test case           | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [TracingTest.java]() | [TracingEntryBackupProcessor.java]()|
+| java.lang.AssertionError | java.lang.AssertionError: expected:<4> but was:`<5>` | [TracingTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/ccfdce406eff9cd15ae478dc1c93989f596259fc/src/test/java/io/opentracing/contrib/hazelcast/TracingTest.java#L104) | [TracingEntryBackupProcessor.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/ccfdce406eff9cd15ae478dc1c93989f596259fc/src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java#L47)|
 
 - **Kali patch**:
 
@@ -830,9 +834,27 @@ index 6d3a65bd..2536406b 100644
  }
 ```
 
-- **Overview**:
+- **Overview**: the problem is related to the test case that checks the size of a List of MockSpan. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/opentracing-contrib/java-hazelcast/compare/df979e1e40d8...c9140902f4d9) to fix the bug.
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
+
+- **Human fix**:
+
+```diff
+diff --git a/src/test/java/io/opentracing/contrib/hazelcast/TracingTest.java b/src/test/java/io/opentracing/contrib/hazelcast/TracingTest.java
+index 53574a9..e44b260 100644
+--- a/src/test/java/io/opentracing/contrib/hazelcast/TracingTest.java
++++ b/src/test/java/io/opentracing/contrib/hazelcast/TracingTest.java
+@@ -101,7 +101,7 @@ public void testEntryProcessor() {
+     map.executeOnKey("key", new TestEntryProcessor());
+     System.out.println("new value:" + map.get("key"));
+     List<MockSpan> spans = tracer.finishedSpans();
+-    assertEquals(4, spans.size());
++    assertEquals(5, spans.size());
+     checkSpans(spans);
+     assertNull(tracer.activeSpan());
+   }
+```
 
 ### pac4j-pac4j-322406277-20171228-030236_bugonly
 
