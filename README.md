@@ -817,7 +817,7 @@ index 6d3a65bd..2536406b 100644
 - **Information about the failure**:
 
 | Failure type | Failure details   |Failing test case           | Changed file by AstorJKali |
-|--------------|-------------------|----------------------------|
+|--------------|-------------------|----------------------------|------------------------------|
 | java.lang.AssertionError | java.lang.AssertionError: expected:<4> but was:`<5>` | [TracingTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/ccfdce406eff9cd15ae478dc1c93989f596259fc/src/test/java/io/opentracing/contrib/hazelcast/TracingTest.java#L104) | [TracingEntryBackupProcessor.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/ccfdce406eff9cd15ae478dc1c93989f596259fc/src/main/java/io/opentracing/contrib/hazelcast/TracingEntryBackupProcessor.java#L47)|
 
 - **Kali patch**:
