@@ -868,6 +868,10 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-ryhita-gilded-rose-349620528-20180306-041741-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-ryhita-gilded-rose-349620528-20180306-041741-firstCommit)
 
+- **Failing Travic CI Build**: [https://api.travis-ci.org/v3/build/349620528](https://api.travis-ci.org/v3/build/349620528)
+
+- **Passing Travis CI Build** [https://api.travis-ci.org/v3/build/349620958](https://api.travis-ci.org/v3/build/349620958)
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
@@ -886,17 +890,39 @@ index 6d3a65bd..2536406b 100644
 -		if (this.sellIn < 6)
 +		if (false) {
 
- 		if (this.sellIn < fr.esiea.Item.SELLIN_IS_OVER)
- 			quality = 0;
+ 		if(this.quality < MAX_QUALITY)
+				quality ++;
 ```
 
 - **Overview**:
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
 
+-**Human fix**:
+
+```diff
+diff --git a/src/test/java/fr/esiea/ItemTest.java b/src/test/java/fr/esiea/ItemTest.java
+index c9d6737..ec41dfa 100644
+--- a/src/test/java/fr/esiea/ItemTest.java
++++ b/src/test/java/fr/esiea/ItemTest.java
+@@ -32,7 +32,7 @@ public void updateItemTest(){
+      		items[i].updateQuality();
+      	assertEquals(12, items[0].quality);
+     	assertEquals(22, items[1].quality);
+-   		assertEquals(12, items[2].quality);
++   		assertEquals(13, items[2].quality);
+     	assertEquals(0, items[3].quality);
+     	assertEquals(0, items[4].quality);
+     }
+```
+
 ### swissquote-carnotzet-351211949-20180309-095950
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-swissquote-carnotzet-351211949-20180309-095950-firstCommit)
+
+- **Failing Travis CI build**: [https://api.travis-ci.org/v3/build/351211949](https://api.travis-ci.org/v3/build/351211949)
+
+- **Passing Travis CI build**: [https://api.travis-ci.org/v3/build/285899658](https://api.travis-ci.org/v3/build/285899658)
 
 - **Information about the failure**:
 
