@@ -866,9 +866,9 @@ index 6d3a65bd..2536406b 100644
  			return null;
 ```
 
-- **Overview**:
-- **Reason why the patch has been generated**:
-- **Useful information for the developer**:
+- **Overview**: The problem is related to the method [`internalConverter`](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/main/java/org/pac4j/core/profile/converter/StringConverter.java#L16), whose override has been done in the failing commit. This commit belongs to a [pull request](https://github.com/pac4j/pac4j/pull/1076) that has not been accepted. Indeed, removing the override of this method, the program passes all the test cases.
+- **Reason why the patch has been generated**: AstorJKali managed to create a patch because it removes [this `return` statement](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/main/java/org/pac4j/core/profile/converter/StringConverter.java#L18) in the method `internalConverter`, and so the method returns `null` as the test case expects. This is the correct behaviour. Indeed, removing this return statement, the method returns `null` as the superclass `AbstractAttributeConverter` [method](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1ab03205851c3535cf782909f288c4f9d1630f17/pac4j-core/src/main/java/org/pac4j/core/profile/converter/AbstractAttributeConverter.java#L44) does.
+- **Useful information for the developer**: The Kali patch changed the piece of code added in the commit that changed the status of build from `passed` to `failed`. This means that the patch allows the developer to focus direclty on the new piece of code to understand which is the error. In this specific case, the change has not been accepted, so it is correct to remove the functionality. 
 
 ### ryhita-gilded-rose-349620528-20180306-041741
 
