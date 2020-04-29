@@ -874,9 +874,9 @@ index 6d3a65bd..2536406b 100644
 
 - **Information about the failure**:
 
-| Failure type | Failing test case | Changed file by AstorJKali |
-|--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [ItemTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/test/java/fr/esiea/ItemTest.java#L35) | [BackstagePassesItem.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/main/java/fr/esiea/BackstagePassesItem.java#L19)|
+| Failure type | Failure details |Failing test case | Changed file by AstorJKali |
+|--------------|--------------- |----|----------------------------|
+| java.lang.AssertionError | java.lang.AssertionError: expected:<12> but was:<13> |[ItemTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/test/java/fr/esiea/ItemTest.java#L35) | [BackstagePassesItem.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/main/java/fr/esiea/BackstagePassesItem.java#L19)|
 
 - **Kali patch**:
 
@@ -894,9 +894,9 @@ index 6d3a65bd..2536406b 100644
 				quality ++;
 ```
 
-- **Overview**:
-- **Reason why the patch has been generated**:
-- **Useful information for the developer**:
+- **Overview**: the problem is related to the test case that checks the correct behavior of the method [updateQuality](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/22fa712df21b7215a3596cfc42e56cc85154f309/src/main/java/fr/esiea/BackstagePassesItem.java#L11). Indeed, in a [later commit](https://github.com/ryhita/gilded-rose/compare/9dbd8ad8bcd8...11f8e4370ec5), the developer changed the test case to fix the problem.
+- **Reason why the patch has been generated**: AstorJKali managed to create a patch because the failing test case had an error in the comparison of the quality values. Since the patch removes a piece of code that increments the value of that property, during the comparison the value got by the method updateQuality is the same that the text case expected, and so the test case passes.
+- **Useful information for the developer**: the developer can focus on the method updateQuality and checks if it is correct or not. In this case, the method is correct, so she can then focus on the failing test case and checks its correctness.
 
 -**Human fix**:
 
@@ -993,7 +993,7 @@ index c9d6737..ec41dfa 100644
 
 - **Information about the failure**:
 
-| Failure type | Detail    | Failing test case | Changed file by AstorJKali |
+| Failure type | Failure details    | Failing test case | Changed file by AstorJKali |
 |--------------|-----------|-------------------|----------------------------|
 | java.lang.AssertionError |Expected exception: com.martiansoftware.jsap.ParseException| [ScnlParserTest.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7a102271bb4afef361762612372dc520fdfc91fb/src/test/java/gov/usgs/volcanoes/core/args/parser/ScnlParserTest.java#L67) | [Scnl.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7a102271bb4afef361762612372dc520fdfc91fb/src/main/java/gov/usgs/volcanoes/core/data/Scnl.java#L150)|
 
