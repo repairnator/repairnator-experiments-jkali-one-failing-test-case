@@ -650,11 +650,17 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-jmrozanec-cron-utils-249918159-20170704-112646_bugonly-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/249918159](https://api.travis-ci.org/v3/build/249918159)
+
+- **Passed Travis CI Build**: [https://api.travis-ci.org/v3/build/252055770](https://api.travis-ci.org/v3/build/252055770)
+
+- **Pull Request**: [https://github.com/jmrozanec/cron-utils/pull/216](https://github.com/jmrozanec/cron-utils/pull/216)
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [Issue215Test.java]() | [BetweenDayOfWeekValueGenerator.java]()|
+| java.lang.AssertionError | [Issue215Test.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1e713a7c013058d5e930ce89b6f83b94251c3b29/src/test/java/com/cronutils/Issue215Test.java#L29) | [BetweenDayOfWeekValueGenerator.java](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/1e713a7c013058d5e930ce89b6f83b94251c3b29/src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java#L64)|
 
 - **Kali patch**:
 
@@ -676,9 +682,41 @@ index 6d3a65bd..2536406b 100644
  	@java.lang.Override
 ```
 
-- **Overview**:
+- **Overview**: the problem is related to the implementation of the method `isMatch`. Indeed, looking at the [commit history of the project](https://github.com/pangyikhei/cron-utils/commit/bdd688a3fb01b7120c240fdd7bb2a96410a0881d), the developer changed this method to fix the bug.
+
 - **Reason why the patch has been generated**:
+
 - **Useful information for the developer**:
+
+- **Human fix**:
+
+```diff
+diff --git a/src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java b/src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java
+index dc392e0..1b71cc0 100644
+--- a/src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java
++++ b/src/main/java/com/cronutils/model/time/generator/BetweenDayOfWeekValueGenerator.java
+@@ -125,6 +125,19 @@ public int generatePreviousValue(int reference) throws NoSuchValueException {
+ 
+ 	@Override
+ 	public boolean isMatch(int value) {
+-        return dowValidValues.contains(LocalDate.of(year, month, value).getDayOfWeek().getValue());
++        // DayOfWeek getValue returns 1 (Monday) - 7 (Sunday),
++        // so we should factor in the monday DoW used to generate
++        // the valid DoW values
++        int localDateDoW = LocalDate.of(year, month, value).getDayOfWeek().getValue();
++
++        // Sunday's value is mondayDoWValue-1 when generating the valid values
++        // Ex.
++        // cron4j 0(Sun)-6(Sat), mondayDoW = 1
++        // quartz 1(Sun)-7(Sat), mondayDoW = 2
++
++        // modulo 7 to convert Sunday from 7 to 0 and adjust to match the mondayDoWValue
++        int cronDoW = localDateDoW % 7 + (mondayDoWValue.getMondayDoWValue() - 1);
++
++        return dowValidValues.contains(cronDoW);
+ 	}
+ }
+```
 
 ### Mistahmilla-SudokuSolver-372495757-20180428-211304
 
