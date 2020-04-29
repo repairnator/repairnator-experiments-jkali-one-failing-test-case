@@ -840,7 +840,9 @@ index 6d3a65bd..2536406b 100644
 
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/322406277](https://api.travis-ci.org/v3/build/322406277)
 
-- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/322480496](https://api.travis-ci.org/v3/build/322480496)
+- **Passing Travis CI Build**: No Human patch has been found. The pull request has been closed without merging it into the upstream branch.
+
+- **Pull Request**: [https://github.com/pac4j/pac4j/pull/1076](https://github.com/pac4j/pac4j/pull/1076)
 
 - **Information about the failure**:
 
