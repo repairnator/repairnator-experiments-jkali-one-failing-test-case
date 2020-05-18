@@ -724,6 +724,9 @@ index dc392e0..1b71cc0 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [NakedSubsetTest.java]() | [NakedSubset.java]()|
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/372495757](https://api.travis-ci.org/v3/build/372495757)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/372498016](https://api.travis-ci.org/v3/build/372498016)
+
 - **Kali patch**:
 
 ```diff
@@ -751,6 +754,52 @@ index dc392e0..1b71cc0 100644
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
 
+- **Human fix**:
+
+```diff
+From 229c47bc92a84129548f5e079de9c10126dde064 Mon Sep 17 00:00:00 2001
+From: Matt <miller@cycop.org>
+Date: Sat, 28 Apr 2018 15:19:20 -0400
+Subject: NakedSubset bug fix
+
+---
+ .../java/org/mistahmilla/sudoku/solvers/NakedSubset.java | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java b/src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
+index 1fed9fb..cc7f3c7 100644
+--- a/src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
++++ b/src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java
+@@ -19,13 +19,14 @@ public void eliminate(){
+         //go through each square and identify squares that have the same
+         for (int a = 1; a <=9; a++){
+             for(int b = 1; b<=9; b++){
++
+                 if (a!=b) {
+                     for (int i = 0; i < bs.length; i++) {
+                         squares = new char[9][9];
+                         section = bs[i];
+                         count = 0;
+-                        for (int x = section.getMinX(); x < section.getMaxX(); x++) {
+-                            for (int y = section.getMinY(); y < section.getMaxY(); y++) {
++                        for (int x = section.getMinX(); x <= section.getMaxX(); x++) {
++                            for (int y = section.getMinY(); y <= section.getMaxY(); y++) {
+                                 if (board.getSquare(x, y).getPossibleValues().contains(Integer.valueOf(a))
+                                         && board.getSquare(x, y).getPossibleValues().contains(Integer.valueOf(b))
+                                         && board.getSquare(x, y).getPossibleValues().size() == 2) {
+@@ -35,8 +36,8 @@ public void eliminate(){
+                             }
+                         }
+                         if (count >= 2) {
+-                            for (int x = section.getMinX(); x < section.getMaxX(); x++) {
+-                                for (int y = section.getMinY(); y < section.getMaxY(); y++) {
++                            for (int x = section.getMinX(); x <= section.getMaxX(); x++) {
++                                for (int y = section.getMinY(); y <= section.getMaxY(); y++) {
+                                     if (squares[x][y] != 'x') {
+                                         board.getSquare(x, y).removePossibleValue(a);
+                                         board.getSquare(x, y).removePossibleValue(b);
+```
+
 ### MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-MPI-ExperimentGroup-ExperimentTemplate-384776966-20180528-170150-firstCommit)
@@ -764,7 +813,7 @@ index dc392e0..1b71cc0 100644
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/384776966](https://api.travis-ci.org/v3/build/384776966)
 - **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/385186961](https://api.travis-ci.org/v3/build/385186961)
 
-(There are different changes, so it is necessary to find which is the ont that fixes the build)
+(There are different changes, so it is necessary to find which is the one that fixes the build)
 
 - **Kali patch**:
 
