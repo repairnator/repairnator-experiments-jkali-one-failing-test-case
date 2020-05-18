@@ -790,6 +790,9 @@ index dc392e0..1b71cc0 100644
 |--------------|-------------------|----------------------------|
 | org.junit.ComparisonFailure | [ProjectSaveActionRequestTest.java]() | [ProjectSaveAction.java]()|
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/361036711](https://api.travis-ci.org/v3/build/361036711)
+- **Passing Travis CI Build**: Not found - Failure introduced after changing the version number in pom.xml file
+
 - **Kali patch**:
 
 ```diff
