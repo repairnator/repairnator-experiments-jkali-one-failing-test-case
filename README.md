@@ -1043,6 +1043,11 @@ index 88fb2d0..a2bf241 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [KrakenAdaptersTest.java]() | [KrakenAdapters.java]()|
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/301755888](https://api.travis-ci.org/v3/build/301755888)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/301845998](https://api.travis-ci.org/v3/build/301845998)
+
+- **Pull Request**: [https://github.com/timmolter/XChange/pull/1888](https://github.com/timmolter/XChange/pull/1888)
+
 - **Kali patch**:
 
 ```diff
@@ -1064,6 +1069,24 @@ index 88fb2d0..a2bf241 100644
 - **Overview**:
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
+
+- **Human fix**:
+
+```diff
+diff --git a/xchange-quoine/src/test/java/org/knowm/xchange/quoine/dto/QuoineAdaptersTest.java b/xchange-quoine/src/test/java/org/knowm/xchange/quoine/dto/QuoineAdaptersTest.java
+index e0df7b23d1..1f9830a061 100644
+--- a/xchange-quoine/src/test/java/org/knowm/xchange/quoine/dto/QuoineAdaptersTest.java
++++ b/xchange-quoine/src/test/java/org/knowm/xchange/quoine/dto/QuoineAdaptersTest.java
+@@ -42,7 +42,7 @@ public void testAdaptTicker() throws IOException {
+     // Verify that the example data was unmarshalled correctly
+     assertThat(ticker.getAsk()).isEqualTo(new BigDecimal("227.09383"));
+     assertThat(ticker.getBid()).isEqualTo(new BigDecimal("226.78383"));
+-    assertThat(ticker.getLast()).isEqualTo(new BigDecimal("227.38976"));
++    assertThat(ticker.getLast()).isEqualTo(new BigDecimal("227.38586"));
+     assertThat(ticker.getVolume()).isEqualTo(new BigDecimal("0.16"));
+     assertThat(ticker.getCurrencyPair()).isEqualTo(CurrencyPair.BTC_USD);
+   }
+```
 
 ### usgs-volcano-core-408694507-20180726-231401
 
