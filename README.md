@@ -820,6 +820,13 @@ index dc392e0..1b71cc0 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [JAXBCodecTest.java]() | [JAXBDecoder.java]()|
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/413754623](https://api.travis-ci.org/v3/build/413754623)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/414226861](https://api.travis-ci.org/v3/build/414226861)
+
+- **Pull Request**: [https://github.com/OpenFeign/feign/pull/758](https://github.com/OpenFeign/feign/pull/758)
+
+**The reason of failure is different (here, there is an error about the version of Java used, but the error in the reality was another one)**.
+
 - **Kali patch**:
 
 ```diff
