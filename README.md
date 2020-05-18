@@ -22,10 +22,6 @@ The builds collected in the dataset [repairnator-experiments](https://github.com
 
 In this repository there are 1.763 branches (excluding `master` branch), each of them associated with a failure.
 
-## Builds to be re-executed
-
-- **EnMasseProject-enmasse-377294634-20180510-191135**: the reproduction of the failure generated `four erroring test cases` (three `java.net.BindException` and one `java.util.concurrent.TimeoutException`) instead of only one failing test case. I tried to run the program in local (without using Repairnator), but it passed all the test cases.
-
 ## Patch Analysis
 
 ### EnMasseProject-enmasse-353457987-20180314-185443
