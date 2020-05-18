@@ -761,6 +761,11 @@ index dc392e0..1b71cc0 100644
 |--------------|-------------------|----------------------------|
 | java.lang.AssertionError | [AudioAsStimuliProviderTest.java]() | [RandomIndexing.java]()|
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/384776966](https://api.travis-ci.org/v3/build/384776966)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/385186961](https://api.travis-ci.org/v3/build/385186961)
+
+(There are different changes, so it is necessary to find which is the ont that fixes the build)
+
 - **Kali patch**:
 
 ```diff
