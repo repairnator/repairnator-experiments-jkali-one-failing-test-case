@@ -988,7 +988,7 @@ index c9d6737..ec41dfa 100644
 
 - **Failing Travis CI build**: [https://api.travis-ci.org/v3/build/351211949](https://api.travis-ci.org/v3/build/351211949)
 
-- **Passing Travis CI build**: [https://api.travis-ci.org/v3/build/285899658](https://api.travis-ci.org/v3/build/285899658)
+- **Passing Travis CI build**: [https://api.travis-ci.org/v3/build/351216009](https://api.travis-ci.org/v3/build/351216009)
 
 - **Information about the failure**:
 
@@ -1014,6 +1014,24 @@ index c9d6737..ec41dfa 100644
 - **Overview**:
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
+
+- **Human fix**:
+
+```diff
+diff --git a/core/src/test/java/com/github/swissquote/cartnotzet/core/runtime/DefaultCommandRunnerTest.java b/core/src/test/java/com/github/swissquote/cartnotzet/core/runtime/DefaultCommandRunnerTest.java
+index 88fb2d0..a2bf241 100644
+--- a/core/src/test/java/com/github/swissquote/cartnotzet/core/runtime/DefaultCommandRunnerTest.java
++++ b/core/src/test/java/com/github/swissquote/cartnotzet/core/runtime/DefaultCommandRunnerTest.java
+@@ -33,7 +33,7 @@ public void test_large_output() throws Exception {
+ 				2, TimeUnit.SECONDS, true);
+ 
+ 		// Then
+-		Assert.assertThat(actual, Is.is(expected));
++		Assert.assertThat(actual, Is.is(expected.trim()));
+ 	}
+ 
+ }
+ ```
 
 ### timmolter-XChange-301755888-20171114-043126_bugonly
 
