@@ -480,6 +480,9 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dropwizard-metrics-374587117-20180503-220610-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/374587117](https://api.travis-ci.org/v3/build/374587117)
+- **Passing Travis CI Build**: There are many failing builds before the passed one: [https://api.travis-ci.org/v3/build/374594213](https://api.travis-ci.org/v3/build/374594213)
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
@@ -511,6 +514,11 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit)
 
+- **Failing Travis CI Build**: [https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/edit/master/README.md](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/edit/master/README.md)
+- **Passing Travis CI Build**: Not found (To be investigated)
+
+- **Pull Request**: [https://github.com/eclipse/hono/pull/481](https://github.com/eclipse/hono/pull/481) It has not accepted.
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
@@ -541,6 +549,9 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/378592651](https://api.travis-ci.org/v3/build/378592651)
+- **Passing Travis CI Build**: Not found
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
@@ -570,6 +581,9 @@ index 6d3a65bd..2536406b 100644
 ### EnMasseProject-enmasse-387846982-20180604-173506-firstCommit
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit)
+
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/387846982](https://api.travis-ci.org/v3/build/387846982)
+- **Passing Travis CI Build**: It seems that the failing build actually has "passed" as state
 
 - **Information about the failure**:
 
