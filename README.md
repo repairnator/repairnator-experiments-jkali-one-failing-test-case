@@ -208,6 +208,9 @@ index 48160c0..bbcd26d 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/354875355](https://api.travis-ci.org/v3/build/354875355), but the failure was already present in the build [345795215](https://api.travis-ci.org/v3/build/345795215) after adding new test cases (in particualar, the test case [testShuffle](https://github.com/apache/commons-rng/compare/9d3bb19049ba...1b0e32ec0ead).
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/380157732](https://api.travis-ci.org/v3/build/380157732) - It is not clear why the build now passes all the test cases.
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
