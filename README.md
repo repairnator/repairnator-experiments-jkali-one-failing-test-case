@@ -583,7 +583,7 @@ index 6d3a65bd..2536406b 100644
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-387846982-20180604-173506-firstCommit)
 
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/387846982](https://api.travis-ci.org/v3/build/387846982)
-- **Passing Travis CI Build**: It seems that the failing build actually has "passed" as state
+- **Passing Travis CI Build**: It seems that the failing build actually has "passed" as state.
 
 - **Information about the failure**:
 
@@ -613,6 +613,9 @@ index 6d3a65bd..2536406b 100644
 ### INL-BlackLab-214962527-20170325-134416-firstCommit
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-INL-BlackLab-214962527-20170325-134416-firstCommit)
+
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/214962527](https://api.travis-ci.org/v3/build/214962527)
+- **Passing Travis CI Build**: It seems that the failing build actually has "passed" as state.
 
 - **Information about the failure**:
 
@@ -647,6 +650,9 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-jguyet-HttpRequest-400611810-20180705-224946-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/400611810](https://api.travis-ci.org/v3/build/400611810)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/400614135](https://api.travis-ci.org/v3/build/400614135)
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
@@ -671,6 +677,33 @@ index 6d3a65bd..2536406b 100644
 - **Overview**:
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
+
+- **Human fix**:
+
+```diff
+From 35e068c4c53f25ee8df2108b02ee4b8b9cba27f9 Mon Sep 17 00:00:00 2001
+From: jguyet <jguyet@student.42.fr>
+Date: Thu, 5 Jul 2018 22:52:53 +0200
+Subject: Update google test return code 302
+
+---
+ src/test/java/com/http/TestRequest.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/test/java/com/http/TestRequest.java b/src/test/java/com/http/TestRequest.java
+index a0d5b94..b1ada21 100644
+--- a/src/test/java/com/http/TestRequest.java
++++ b/src/test/java/com/http/TestRequest.java
+@@ -14,7 +14,7 @@ public void testStatusOK() {
+  		
+  		r.setGET().setUrl("http://www.google.com").setProtocolHttp().setDefaultHeader();
+  		r.execute();
+- 		assertEquals(200, r.getStatusCode());
++ 		assertEquals(302, r.getStatusCode());
+  	}
+ 	
+ 	@Test
+```
 
 ### jmrozanec-cron-utils-249918159-20170704-112646_bugonly
 
