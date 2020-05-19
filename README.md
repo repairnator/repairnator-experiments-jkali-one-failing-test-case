@@ -1281,3 +1281,65 @@ index 0b603de6..2eab1105 100644
    }
  }
  ```
+
+### apache-incubator-dubbo-403447416-20180713-102123
+
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-403447416-20180713-102123-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-403447416-20180713-102123-firstCommit)
+
+- **Failing Travic CI Build**: [https://api.travis-ci.org/v3/build/403447416](https://api.travis-ci.org/v3/build/403447416)
+
+- **Passed Travis CI Build**: It seems that the failing build actually has "passed" as state.
+
+- **Information about the failure**:
+
+### apache-incubator-dubbo-415750114-20180814-073311
+
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-415750114-20180814-073311-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-415750114-20180814-073311-firstCommit)
+
+- **Failing Travic CI Build**: [https://api.travis-ci.org/v3/build/415750114](https://api.travis-ci.org/v3/build/415750114)
+
+- **Passed Travis CI Build**: The pull request has not been accepted
+
+- **Pull Request**: [https://github.com/apache/dubbo/pull/2292](https://github.com/apache/dubbo/pull/2292)
+
+- **Information about the failure**:
+
+### eclipse-ditto-402096641-20180710-102844
+
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit)
+
+- **Failing Travic CI Build**: [https://api.travis-ci.org/v3/build/402096641](https://api.travis-ci.org/v3/build/402096641)
+
+- **Passed Travis CI Build**: [https://api.travis-ci.org/v3/build/402117788](https://api.travis-ci.org/v3/build/402117788) - There are too many changes.
+
+- **Pull Request**: [https://github.com/apache/dubbo/pull/2292](https://github.com/apache/dubbo/pull/2292)
+
+- **Information about the failure**:
+
+### eclipse-ditto-407599059-20180724-213504
+
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-ditto-407599059-20180724-213504-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-eclipse-ditto-407599059-20180724-213504-firstCommit)
+
+- **Failing Travic CI Build**: [https://api.travis-ci.org/v3/build/407599059](https://api.travis-ci.org/v3/build/407599059)
+
+- **Passed Travis CI Build**: [https://api.travis-ci.org/v3/build/408013716](https://api.travis-ci.org/v3/build/408013716) - There are too failing builds before the passed one.
+
+- **Pull Request**: [https://github.com/eclipse/ditto/pull/194](https://github.com/eclipse/ditto/pull/194)
+
+- **Information about the failure**:
+
+### santanusinha-dropwizard-db-sharding-bundle-415477949-20180813-165531
+
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-santanusinha-dropwizard-db-sharding-bundle-415477949-20180813-165531-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-santanusinha-dropwizard-db-sharding-bundle-415477949-20180813-165531-firstCommit)
+
+- **Failing Travic CI Build**: [https://api.travis-ci.org/v3/build/415477949](https://api.travis-ci.org/v3/build/415477949)
+
+- **Passed Travis CI Build**: It seems that the failing build actually has "passed" as state.
+
+- **Pull Request**: [https://github.com/santanusinha/dropwizard-db-sharding-bundle/pull/21](https://github.com/santanusinha/dropwizard-db-sharding-bundle/pull/21)
+
+- **Information about the failure**:
+
+
+
+
