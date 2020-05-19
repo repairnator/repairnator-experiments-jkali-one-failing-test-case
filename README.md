@@ -242,6 +242,9 @@ index 48160c0..bbcd26d 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-403087258-20180712-141947-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/403087258](https://api.travis-ci.org/v3/build/403087258)
+- **Passing Travis CI Build**: Not found, because there are many builds after the failing one, and none of them pass.
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
@@ -273,6 +276,9 @@ index 48160c0..bbcd26d 100644
 ### atomix-atomix-365170225-20180411-171152
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-atomix-atomix-365170225-20180411-171152-firstCommit)
+
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/365170225](https://api.travis-ci.org/v3/build/365170225)
+- **Passing Travis CI Build**: Not found, because there are many builds after the failing one, and none of them pass.
 
 - **Information about the failure**:
 
@@ -438,6 +444,11 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-dotwebstack-dotwebstack-framework-363986485-20180409-090844-firstCommit)
 
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/363986485](https://api.travis-ci.org/v3/build/363986485)
+- **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/363988926](https://api.travis-ci.org/v3/build/363988926)
+
+- **Pull Request**: [https://github.com/dotwebstack/dotwebstack-framework/pull/134](https://github.com/dotwebstack/dotwebstack-framework/pull/134)
+
 - **Information about the failure**:
 
 | Failure type | Failing test case | Changed file by AstorJKali |
@@ -462,6 +473,8 @@ index 6d3a65bd..2536406b 100644
 - **Overview**:
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
+
+- **Human fix (to be investigated, because the failing build doesn't fail in local)**: [https://github.com/dotwebstack/dotwebstack-framework/compare/1b00a5f10ebd...07e0e7854b35](https://github.com/dotwebstack/dotwebstack-framework/compare/1b00a5f10ebd...07e0e7854b35)
 
 ### dropwizard-metrics-374587117-20180503-220610-firstCommit
 
