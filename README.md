@@ -208,8 +208,10 @@ index 48160c0..bbcd26d 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-commons-rng-354875355-20180318-011906-firstCommit)
 
-- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/354875355](https://api.travis-ci.org/v3/build/354875355), but the failure was already present in the build [345795215](https://api.travis-ci.org/v3/build/345795215) after adding new test cases (in particualar, the test case [testShuffle](https://github.com/apache/commons-rng/compare/9d3bb19049ba...1b0e32ec0ead).
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/354875355](https://api.travis-ci.org/v3/build/354875355), but the failure was already present in the build [345795215](https://api.travis-ci.org/v3/build/345795215) after adding new test cases (in particualar, the test case [testShuffle](https://github.com/apache/commons-rng/compare/9d3bb19049ba...1b0e32ec0ead)).
 - **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/380157732](https://api.travis-ci.org/v3/build/380157732) - It is not clear why the build now passes all the test cases.
+- **Listing of builds**: [https://api.travis-ci.org/v3/repo/commons-rng/9756669/builds?offset=507](https://api.travis-ci.org/v3/repo/commons-rng/9756669/builds?offset=507)
+
 
 - **Information about the failure**:
 
@@ -514,7 +516,7 @@ index 6d3a65bd..2536406b 100644
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-eclipse-hono-338971473-20180208-141728-firstCommit)
 
-- **Failing Travis CI Build**: [https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/edit/master/README.md](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/edit/master/README.md)
+- **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/338971473](https://api.travis-ci.org/v3/build/338971473)
 - **Passing Travis CI Build**: Not found (To be investigated)
 
 - **Pull Request**: [https://github.com/eclipse/hono/pull/481](https://github.com/eclipse/hono/pull/481) It has not accepted.
