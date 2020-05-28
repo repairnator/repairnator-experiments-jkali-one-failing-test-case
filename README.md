@@ -236,8 +236,8 @@ index 48160c0..bbcd26d 100644
  		}
 ```
 
-- **Overview**:
-- **Reason why the patch has been generated**:
+- **Overview**: It's a flaky test case. The test case fails when the method `check()` of class `ContinuousSamplerParametricTest` enters in [this if branch](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/blob/7d5cad3df578cf7467be89478ede91b74d684ed7/commons-rng-sampling/src/test/java/org/apache/commons/rng/sampling/distribution/ContinuousSamplerParametricTest.java#L127). The condition is satisfied when the ratio between the number of failures and the number of tests is greater then a certain threshold (0.05).
+- **Reason why the patch has been generated**: Since the Kali patch removes the instruction that throws an exception, even though a test case should terminate with a failure, actually it doesn't occur, and so the number of failing test cases doesn't increment. 
 - **Useful information for the developer**:
 
 ### apache-commons-rng-403087258-20180712-141947
