@@ -1326,6 +1326,31 @@ index 0b603de6..2eab1105 100644
 
 - **Information about the failure**:
 
+| Failure type | Failing test case | Changed file by AstorJKali |
+|--------------|-------------------|----------------------------|
+| org.junit.ComparisonFailure | [MulticastRegistryTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/73edc903a64b57b3662366023811b6837bb01706/dubbo-registry/dubbo-registry-multicast/src/test/java/org/apache/dubbo/registry/multicast/MulticastRegistryTest.java#L125) | [MulticastRegistry.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/73edc903a64b57b3662366023811b6837bb01706/dubbo-registry/dubbo-registry-multicast/src/main/java/org/apache/dubbo/registry/multicast/MulticastRegistry.java#L413)|
+
+- **Kali patch**
+
+```diff
+--- /src/main/java/org/apache/dubbo/registry/multicast/MulticastRegistry.java
++++ /src/main/java/org/apache/dubbo/registry/multicast/MulticastRegistry.java
+@@ -348,7 +348,7 @@
+ 				urls.addAll(cacheUrls);
+ 			}
+ 		}
+-		if (urls.isEmpty()) {
++		if (true) {
+ 			for (org.apache.dubbo.common.URL u : getRegistered()) {
+ 				if (org.apache.dubbo.common.utils.UrlUtils.isMatch(url, u)) {
+ 					urls.add(u);
+```
+
+
+**Overview**: The pull request has been closed, so the developes didn't accept the proposed change.
+**Reason why the patch has been generated**: 
+**Useful information for the developer**:
+
 ### eclipse-ditto-402096641-20180710-102844
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-eclipse-ditto-402096641-20180710-102844-firstCommit)
