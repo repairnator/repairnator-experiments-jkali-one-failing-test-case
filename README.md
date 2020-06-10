@@ -476,7 +476,7 @@ index 6d3a65bd..2536406b 100644
  		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> putService = java.util.Optional.ofNullable(endPoint.getPutService());
 ```
 
-- **Overview**:
+- **Overview**: The build fails due to a [change in a test case](https://github.com/dotwebstack/dotwebstack-framework/pull/134/commits/1b00a5f10ebd6864b36919de8d66ea870559135c).
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
 
