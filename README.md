@@ -253,7 +253,7 @@ The test case fails only when a certain condition is satisifed. Since the Kali p
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError| [ContinuousSamplerParametricTest.java]() | [RejectionInversionZipfSampler.java]()|
+| java.lang.AssertionError| [ContinuousSamplerParametricTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/57fe5c9531d90f7d21b67a302248dc1a7791eacf/commons-rng-sampling/src/test/java/org/apache/commons/rng/sampling/distribution/ContinuousSamplerParametricTest.java#L53) | [RejectionInversionZipfSampler.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/57fe5c9531d90f7d21b67a302248dc1a7791eacf/commons-rng-sampling/src/main/java/org/apache/commons/rng/sampling/distribution/RejectionInversionZipfSampler.java#L60-L62)|
 
 - **Kali patch**:
 
@@ -273,9 +273,7 @@ The test case fails only when a certain condition is satisifed. Since the Kali p
 
 ```
 
-- **Overview**:
-- **Reason why the patch has been generated**:
-- **Useful information for the developer**:
+- **Overview**: Equal to the build apache-commons-rng-354875355-20180318-011906
 
 ### atomix-atomix-365170225-20180411-171152
 
