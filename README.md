@@ -1298,6 +1298,22 @@ index 0b603de6..2eab1105 100644
 
 - **Information about the failure**:
 
+- **Kali Patch**:
+
+```diff
+--- /src/main/java/org/apache/dubbo/registry/multicast/MulticastRegistry.java
++++ /src/main/java/org/apache/dubbo/registry/multicast/MulticastRegistry.java
+@@ -145,7 +145,7 @@
+ 	}
+ 
+ 	private void receive(java.lang.String msg, java.net.InetSocketAddress remoteAddress) {
+-		if (org.apache.dubbo.registry.multicast.MulticastRegistry.logger.isInfoEnabled()) {
++		if (true) {
+ 			org.apache.dubbo.registry.multicast.MulticastRegistry.logger.info((("Receive multicast message: " + msg) + " from ") + remoteAddress);
+ 		}
+ 		if (msg.startsWith(org.apache.dubbo.common.Constants.REGISTER)) {
+```
+
 ### apache-incubator-dubbo-415750114-20180814-073311
 
 - **Branch associated with the failure**: [repairnator-repairnator-experiments-apache-incubator-dubbo-415750114-20180814-073311-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-apache-incubator-dubbo-415750114-20180814-073311-firstCommit)
