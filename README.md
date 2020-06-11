@@ -1174,7 +1174,7 @@ index 88fb2d0..a2bf241 100644
 
 | Failure type | Failure details | Failing test case | Changed file by AstorJKali |
 |--------------|----------------|-------------------|----------------------------|
-| java.lang.AssertionError | Expected size:<56> but was:<54> | [KrakenAdaptersTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/b1ee5e7192d9f63771084a9060e5dc65332579e4/xchange-kraken/src/test/java/org/knowm/xchange/kraken/KrakenAdaptersTest.java#L102) | [KrakenAdapters.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/b1ee5e7192d9f63771084a9060e5dc65332579e4/xchange-kraken/src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java#L275-L278)|
+| java.lang.AssertionError | expected:<227.38[97]6> but was:<227.38[58]6> | [QuoineAdaptersTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/b1ee5e7192d9f63771084a9060e5dc65332579e4/xchange-quoine/src/test/java/org/knowm/xchange/quoine/dto/QuoineAdaptersTest.java#L45) | [KrakenAdapters.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/b1ee5e7192d9f63771084a9060e5dc65332579e4/xchange-kraken/src/main/java/org/knowm/xchange/kraken/KrakenAdapters.java#L275-L278)|
 
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/301755888](https://api.travis-ci.org/v3/build/301755888)
 - **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/301845998](https://api.travis-ci.org/v3/build/301845998)
