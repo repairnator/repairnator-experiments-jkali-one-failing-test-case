@@ -480,6 +480,8 @@ index 6d3a65bd..2536406b 100644
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
 
+- **List of builds**: [https://api.travis-ci.org/v3/repo/dotwebstack-framework/14454011/builds?offset=2900](https://api.travis-ci.org/v3/repo/dotwebstack-framework/14454011/builds?offset=2900)
+
 - **Human fix (to be investigated, because the failing build doesn't fail in local)**: [https://github.com/dotwebstack/dotwebstack-framework/compare/1b00a5f10ebd...07e0e7854b35](https://github.com/dotwebstack/dotwebstack-framework/compare/1b00a5f10ebd...07e0e7854b35)
 
 ### dropwizard-metrics-374587117-20180503-220610-firstCommit
