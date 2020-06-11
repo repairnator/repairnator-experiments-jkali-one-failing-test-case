@@ -1144,8 +1144,8 @@ index c9d6737..ec41dfa 100644
  			}
 ```
 
-- **Overview**:
-- **Reason why the patch has been generated**:
+- **Overview**: The build fails after introducing an instruction to trim the output, but the test case has not been updtated to support this change.
+- **Reason why the patch has been generated**: jKali manages to create a Kali patch because it removed exactly the instruction that make the build fail.
 - **Useful information for the developer**:
 
 - **Human fix**:
