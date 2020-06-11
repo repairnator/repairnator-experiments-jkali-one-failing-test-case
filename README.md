@@ -1387,6 +1387,21 @@ index 0b603de6..2eab1105 100644
 
 - **Information about the failure**:
 
+| Failure type | Failure details | Failing test case | Changed file by AstorJKali |
+|--------------|-----------------|-------------------|----------------------------|
+| java.lang.AssertionError | Should have errored out | [ShardManagerTest](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/f7ad5d505ce69c42e153316d445f8a37c1844f97/src/test/java/io/dropwizard/sharding/sharding/ShardManagerTest.java#L43) | [DBShardingBundle](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/f7ad5d505ce69c42e153316d445f8a37c1844f97/src/main/java/io/dropwizard/sharding/DBShardingBundle.java#L121)|
 
+- **Kali patch**:
 
-
+```diff
+--- /src/main/java/io/dropwizard/sharding/DBShardingBundle.java
++++ /src/main/java/io/dropwizard/sharding/DBShardingBundle.java
+@@ -65,7 +65,6 @@
+ 	public void run(T configuration, io.dropwizard.setup.Environment environment) {
+ 		sessionFactories = shardBundles.stream().map(io.dropwizard.hibernate.HibernateBundle::getSessionFactory).collect(java.util.stream.Collectors.toList());
+ 		environment.admin().addTask(new io.dropwizard.sharding.admin.BlacklistShardTask(shardManager));
+-		environment.admin().addTask(new io.dropwizard.sharding.admin.UnblacklistShardTask(shardManager));
+ 	}
+ 
+ 	@java.lang.Override
+```
