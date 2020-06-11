@@ -1199,7 +1199,7 @@ index 88fb2d0..a2bf241 100644
  	}
 ```
 
-- **Overview**:
+- **Overview**: Failing test case is different from the one fixed by the developer. The Kali patch doesn't work.
 - **Reason why the patch has been generated**:
 - **Useful information for the developer**:
 
