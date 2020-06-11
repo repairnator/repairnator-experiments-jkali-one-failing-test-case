@@ -411,7 +411,7 @@ The build was failing also before this one.
 ```
 
 - **Overview**: The problem is related to the comparison between the value returned by a test case and a .txt file with the expected output.
-- **Reason why the patch has been generated**: AstorJKali managed to create the patch because it removed the instruction that adds the line missing in the expected output. In this way, the content of file and the expected output are equal.
+- **Reason why the patch has been generated**: AstorJKali managed to create the patch because it removed the instruction that adds the line missing in the expected output. In this way, the content of file and the expected output are equal. Adding a new test case that checks if the output contains a line with an exception, it would avoid the generation of the Kali patch.
 - **Useful information for the developer**:
 
 - **Travis CI Fixed Build information**: [https://api.travis-ci.org/v3/build/397848105](https://api.travis-ci.org/v3/build/397848105)
