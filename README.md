@@ -665,7 +665,7 @@ index 6d3a65bd..2536406b 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| org.opentest4j.AssertionFailedError | [TestRequest.java]() | [Request.java]()|
+| org.opentest4j.AssertionFailedError | [TestRequest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/12171dada351fd2bfe999f8dd10cb0931829b5fb/src/test/java/com/http/TestRequest.java#L17) | [Request.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/12171dada351fd2bfe999f8dd10cb0931829b5fb/src/main/java/com/http/Request.java#L398)|
 
 - **Kali patch**:
 
@@ -682,9 +682,9 @@ index 6d3a65bd..2536406b 100644
  	public java.lang.String getContent() {
 ```
 
-- **Overview**:
-- **Reason why the patch has been generated**:
-- **Useful information for the developer**:
+- **Overview**: The problem is related to a failure in the test case. Indeed, looking at the commit history of the project, the developer [changed the test case](https://github.com/jguyet/HttpRequest/compare/81927710850c...35e068c4c53f) to fix the problem.
+- **Reason why the patch has been generated**: jKali managed to create the patch because the test case doesn't check if the header is empty or not. Indeed, adding for example this instruction `assertFalse(r.getHeader().isEmpty());` in the test method [`testStatusOK`](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/12171dada351fd2bfe999f8dd10cb0931829b5fb/src/test/java/com/http/TestRequest.java#L11) the patch generate from jKali doesn't work.
+- **Useful information for the developer**: The patch indicated that there is something strange with the header tested in the test case. If the developer knows that the test case is correct, she can focus on the test case to understand if it is correct or not.
 
 - **Human fix**:
 
