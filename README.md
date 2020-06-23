@@ -793,7 +793,7 @@ index dc392e0..1b71cc0 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [NakedSubsetTest.java]() | [NakedSubset.java]()|
+| java.lang.AssertionError | [NakedSubsetTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/a6fb43806c5e0d1be616fed9f90e609e0f8987f0/src/test/java/NakedSubsetTest.java#L15) | [NakedSubset.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/a6fb43806c5e0d1be616fed9f90e609e0f8987f0/src/main/java/org/mistahmilla/sudoku/solvers/NakedSubset.java#L37)|
 
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/372495757](https://api.travis-ci.org/v3/build/372495757)
 - **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/372498016](https://api.travis-ci.org/v3/build/372498016)
