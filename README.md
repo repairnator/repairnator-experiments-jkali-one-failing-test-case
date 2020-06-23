@@ -879,7 +879,7 @@ index 1fed9fb..cc7f3c7 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [AudioAsStimuliProviderTest.java]() | [RandomIndexing.java]()|
+| java.lang.AssertionError | [AudioAsStimuliProviderTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/0be223d625c501f7bc73b43a4bddc72d4c04f610/AdaptiveVocabularyAssessmentModule/src/test/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/service/AudioAsStimuliProviderTest.java#L433) | [RandomIndexing.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/0be223d625c501f7bc73b43a4bddc72d4c04f610/AdaptiveVocabularyAssessmentModule/src/main/java/nl/mpi/tg/eg/frinex/adaptivevocabularyassessment/client/RandomIndexing.java#L104)|
 
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/384776966](https://api.travis-ci.org/v3/build/384776966)
 - **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/385186961](https://api.travis-ci.org/v3/build/385186961)
