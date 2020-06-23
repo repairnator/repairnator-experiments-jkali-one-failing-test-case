@@ -555,7 +555,7 @@ index 6d3a65bd..2536406b 100644
 
 ### EnMasseProject-enmasse-378592651-20180514-093752-firstCommit
 
-- **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit)
+- **Branch associated with the failure**: [repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit](https://github.com/repairnator/repairnator-experiments-jkali-one-failing-test-case/tree/repairnator-repairnator-experiments-EnMasseProject-enmasse-378592651-20180514-093752-firstCommit)
 
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/378592651](https://api.travis-ci.org/v3/build/378592651)
 - **Passing Travis CI Build**: Not found
