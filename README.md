@@ -946,7 +946,7 @@ index 1fed9fb..cc7f3c7 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [JAXBCodecTest.java]() | [JAXBDecoder.java]()|
+| java.lang.AssertionError | [JAXBCodecTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/e0bce64b0c5ab9575e0bf9a6ed56977ca1f849d5/jaxb/src/test/java/feign/jaxb/JAXBCodecTest.java#L180) | [JAXBDecoder.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/e0bce64b0c5ab9575e0bf9a6ed56977ca1f849d5/jaxb/src/main/java/feign/jaxb/JAXBDecoder.java#L73)|
 
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/413754623](https://api.travis-ci.org/v3/build/413754623)
 - **Passing Travis CI Build**: [https://api.travis-ci.org/v3/build/414226861](https://api.travis-ci.org/v3/build/414226861)
