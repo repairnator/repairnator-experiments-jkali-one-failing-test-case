@@ -525,7 +525,7 @@ index 6d3a65bd..2536406b 100644
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/338971473](https://api.travis-ci.org/v3/build/338971473)
 - **Passing Travis CI Build**: Not found (To be investigated)
 
-- **Pull Request**: [https://github.com/eclipse/hono/pull/481](https://github.com/eclipse/hono/pull/481) It has not accepted.
+- **Pull Request**: [https://github.com/eclipse/hono/pull/481](https://github.com/eclipse/hono/pull/481)
 
 - **Information about the failure**:
 
