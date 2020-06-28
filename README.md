@@ -495,7 +495,7 @@ index 6d3a65bd..2536406b 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| org.mockito.exceptions.verification.WantedButNotInvoked | [InstrumentedHttpClientsTimerTest.java]() | [InstrumentedNHttpClientBuilder.java]()|
+| org.mockito.exceptions.verification.WantedButNotInvoked | [InstrumentedHttpClientsTimerTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/a4c63c4e90c74ed014b2a73fbe69796681eca160/metrics-httpasyncclient/src/test/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedHttpClientsTimerTest.java#L55) | [InstrumentedNHttpClientBuilder.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/a4c63c4e90c74ed014b2a73fbe69796681eca160/metrics-httpasyncclient/src/main/java/io/dropwizard/metrics5/httpasyncclient/InstrumentedNHttpClientBuilder.java#L106)|
 
 - **Kali patch**:
 
@@ -507,11 +507,7 @@ index 6d3a65bd..2536406b 100644
  		public void failed(java.lang.Exception ex) {
  			timerContext.stop();
 -			if (callback != null) {
--				callback.failed(ex);
 +			if (true) {
-+				this.callback.failed(ex);
- 			}
- 		}
 ```
 
 - **Overview**:
