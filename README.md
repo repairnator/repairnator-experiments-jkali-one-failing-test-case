@@ -476,9 +476,9 @@ index 6d3a65bd..2536406b 100644
  		final java.util.Optional<org.dotwebstack.framework.frontend.ld.service.Service> putService = java.util.Optional.ofNullable(endPoint.getPutService());
 ```
 
-- **Overview**: The build fails due to a [change in a test case](https://github.com/dotwebstack/dotwebstack-framework/pull/134/commits/1b00a5f10ebd6864b36919de8d66ea870559135c).
+- **Overview**: The build fails due to a [change in a test case](https://github.com/dotwebstack/dotwebstack-framework/pull/134/commits/1b00a5f10ebd6864b36919de8d66ea870559135c). Looking at the [commit history](https://github.com/dotwebstack/dotwebstack-framework/pull/134/commits/461d32c1733dbcfc979df4bd8eee28ece3f6883a#) of the project, the develoer restored the previous versione of the test case.
 - **Reason why the patch has been generated**:
-- **Useful information for the developer**:
+- **Useful information for the developer**: 
 
 - **List of builds**: [https://api.travis-ci.org/v3/repo/dotwebstack-framework/14454011/builds?offset=2900](https://api.travis-ci.org/v3/repo/dotwebstack-framework/14454011/builds?offset=2900)
 
