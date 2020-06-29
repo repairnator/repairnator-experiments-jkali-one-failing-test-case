@@ -510,8 +510,8 @@ index 6d3a65bd..2536406b 100644
 +			if (true) {
 ```
 
-- **Overview**:
-- **Reason why the patch has been generated**:
+- **Overview**: The failure is related to a flaky test case. Indeed, it can fails due to a timeout, but not for other reasons.
+- **Reason why the patch has been generated**: The Kali patch changed a piece of code that is not executed by the failing test case.
 - **Useful information for the developer**:
 
 ### eclipse-hono-338971473-20180208-141728-firstCommit
