@@ -560,7 +560,7 @@ index 6d3a65bd..2536406b 100644
 
 | Failure type | Failing test case | Changed file by AstorJKali |
 |--------------|-------------------|----------------------------|
-| java.lang.AssertionError | [ArtemisTest.java]() | [Artemis.java]()|
+| java.lang.AssertionError | [ArtemisTest.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/264c0730fa98673eb06a24fe0c28c8398cf77cdf/amqp-utils/src/test/java/io/enmasse/amqp/ArtemisTest.java#L57) | [Artemis.java](https://github.com/repairnator/repairnator-experiments-one-failing-test-case/blob/264c0730fa98673eb06a24fe0c28c8398cf77cdf/amqp-utils/src/main/java/io/enmasse/amqp/Artemis.java#L103)|
 
 - **Kali patch**:
 
