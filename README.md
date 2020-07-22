@@ -282,7 +282,7 @@ The test case fails only when a certain condition is satisifed. Since the Kali p
 - **Failing Travis CI Build**: [https://api.travis-ci.org/v3/build/365170225](https://api.travis-ci.org/v3/build/365170225)
 - **Passing Travis CI Build**: Not found, because there are many builds after the failing one, and none of them pass.
 - **List of Builds**: [https://api.travis-ci.org/v3/repo/atomix/1833868/builds?offset=1500](https://api.travis-ci.org/v3/repo/atomix/1833868/builds?offset=1500)
-- **Next passed Build**:[https://api.travis-ci.org/v3/build/365716340](https://api.travis-ci.org/v3/build/365716340)
+- **Next passed Build**: [https://api.travis-ci.org/v3/build/365716340](https://api.travis-ci.org/v3/build/365716340)
 
 The build was failing also before this one.
 
